@@ -5,279 +5,419 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
+  - {name: CN_1962 | 9.74Mb, server: download.cn.connecat.com, port: 60003, type: vmess, uuid: cb3cef47-cb7d-386f-af3b-452345d17816, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: download.cn.connecat.com}}, udp: true}
+  - {name: Australia-A1-沪日, server: china-sh.cu01.898868.xyz, port: 32437, type: vmess, uuid: f923621d-9cde-4db2-855f-8947e56db704, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: china-f4s-az-hk.898868.xyz, network: ws, ws-opts: {path: /nana, headers: {Host: as1.qcjs.one}}, udp: true}
+  - {name: 日本3|中日链路|Netflix, server: hncu.relay.qchwnd.moe, port: 44616, type: trojan, password: 3ece2cd7-076d-4e9f-8a23-e7d9b4e3f62e, sni: jpkirin.node.qchwnd.moe, skip-cert-verify: true, udp: true}
+  - {name: Japan-C2-沪日, server: china-gy1-axecc.898868.xyz, port: 10535, type: trojan, password: f923621d-9cde-4db2-855f-8947e56db704, sni: jpc2.qcjs.one, skip-cert-verify: true, udp: true}
+  - {name: Japan-C1-沪日-流媒体解锁, server: china-gy1-axecc.898868.xyz, port: 16575, type: trojan, password: f923621d-9cde-4db2-855f-8947e56db704, sni: jpc1.qcjs.one, skip-cert-verify: true, udp: true}
+  - {name: "[沪日]美国1", server: hncu.relay.qchwnd.moe, port: 44610, type: trojan, password: 3ece2cd7-076d-4e9f-8a23-e7d9b4e3f62e, sni: usgt.node.qchwnd.moe, skip-cert-verify: true, udp: true}
+  - {name: _CN_n523_275, server: sxqxj.cn, port: 2164, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ws, headers: {Host: sxqxj.cn}}, udp: true}
+  - {name: Singapore-C3-沪日, server: china-gy1-axecc.898868.xyz, port: 24418, type: trojan, password: f923621d-9cde-4db2-855f-8947e56db704, sni: sgc3.qcjs.one, skip-cert-verify: true, udp: true}
+  - {name: _CN_n523_403, server: sxqxj.cn, port: 2164, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ws, headers: {Host: sxqxj.cn}}, udp: true}
+  - {name: Japan-C6-沪日, server: china-sh.cu01.898868.xyz, port: 26052, type: trojan, password: f923621d-9cde-4db2-855f-8947e56db704, sni: jpc6.qcjs.one, skip-cert-verify: true, udp: true}
+  - {name: Japan-C5-沪日, server: china-sh.cu01.898868.xyz, port: 14594, type: trojan, password: f923621d-9cde-4db2-855f-8947e56db704, sni: jpc5.qcjs.one, skip-cert-verify: true, udp: true}
   - {name: CN_1978 |82.50Mb, server: transit1.fanqiang.eu, port: 15021, type: trojan, password: 5b19f39d-31ba-44ce-bff8-034d517f47e1, skip-cert-verify: true, udp: true}
+  - {name: Singapore-C4-沪日, server: china-gy1-axecc.898868.xyz, port: 52164, type: trojan, password: f923621d-9cde-4db2-855f-8947e56db704, sni: sgc4.qcjs.one, skip-cert-verify: true, udp: true}
+  - {name: Germany-C1-沪日, server: china-sh.cu01.898868.xyz, port: 38650, type: trojan, password: f923621d-9cde-4db2-855f-8947e56db704, sni: ger1.qcjs.one, skip-cert-verify: true, udp: true}
   - {name: CN_1960 |22.81Mb, server: transit1.fanqiang.eu, port: 15020, type: trojan, password: 5b19f39d-31ba-44ce-bff8-034d517f47e1, skip-cert-verify: true, udp: true}
+  - {name: America-C4-沪日, server: china-gy1-axecc.898868.xyz, port: 28058, type: trojan, password: f923621d-9cde-4db2-855f-8947e56db704, sni: usc4.qcjs.one, skip-cert-verify: true, udp: true}
   - {name: CN_1961 |19.03Mb, server: transit1.fanqiang.eu, port: 15023, type: trojan, password: 5b19f39d-31ba-44ce-bff8-034d517f47e1, skip-cert-verify: true, udp: true}
+  - {name: America-C6-沪日, server: china-gy1-axecc.898868.xyz, port: 39271, type: trojan, password: f923621d-9cde-4db2-855f-8947e56db704, sni: usc6.qcjs.one, skip-cert-verify: true, udp: true}
+  - {name: Japan-C4-沪日, server: china-gy1-axecc.898868.xyz, port: 37103, type: trojan, password: f923621d-9cde-4db2-855f-8947e56db704, sni: jpc4.qcjs.one, skip-cert-verify: true, udp: true}
+  - {name: America-C3-沪日, server: china-gy1-axecc.898868.xyz, port: 21779, type: trojan, password: f923621d-9cde-4db2-855f-8947e56db704, sni: usc3.qcjs.one, skip-cert-verify: true, udp: true}
+  - {name: "[沪日]俄罗斯2", server: hncu.relay.qchwnd.moe, port: 44606, type: trojan, password: 3ece2cd7-076d-4e9f-8a23-e7d9b4e3f62e, sni: ru.node.qchwnd.moe, skip-cert-verify: true, udp: true}
+  - {name: America-C5-沪日, server: china-gy1-axecc.898868.xyz, port: 59740, type: trojan, password: f923621d-9cde-4db2-855f-8947e56db704, sni: usc5.qcjs.one, skip-cert-verify: true, udp: true}
   - {name: CN_1951 |36.96Mb, server: transit1.fanqiang.eu, port: 15002, type: trojan, password: 5b19f39d-31ba-44ce-bff8-034d517f47e1, skip-cert-verify: true, udp: true}
   - {name: CN_1975 | 3.03Mb, server: transit1.fanqiang.eu, port: 15018, type: trojan, password: 5b19f39d-31ba-44ce-bff8-034d517f47e1, skip-cert-verify: true, udp: true}
   - {name: CN_1954 |16.59Mb, server: transit1.fanqiang.eu, port: 15011, type: trojan, password: 5b19f39d-31ba-44ce-bff8-034d517f47e1, skip-cert-verify: true, udp: true}
   - {name: CN_1983 |15.96Mb, server: transit1.fanqiang.eu, port: 15024, type: trojan, password: 5b19f39d-31ba-44ce-bff8-034d517f47e1, skip-cert-verify: true, udp: true}
+  - {name: 日本 08 IIJ, server: 4f38f6b4-bed0-40e9-aad8-72a2bc218407.zj.node.touhou.place, port: 8204, type: vmess, uuid: 77775b5f-507d-33a3-835b-cb016980d58c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: 0300fb7f-47ae-403c-b42e-5c5f69a3f4ba.jp.node.touhou.place, network: ws, ws-opts: {path: /ws, headers: {Host: 0300fb7f-47ae-403c-b42e-5c5f69a3f4ba.jp.node.touhou.place}}, udp: true}
+  - {name: Singapore-C2-广港, server: china-gy-axecc.898868.xyz, port: 47064, type: trojan, password: f923621d-9cde-4db2-855f-8947e56db704, sni: sgc2.qcjs.one, skip-cert-verify: true, udp: true}
+  - {name: Norway-C1-沪日, server: china-gy1-axecc.898868.xyz, port: 34620, type: trojan, password: f923621d-9cde-4db2-855f-8947e56db704, sni: nwc1.qcjs.one, skip-cert-verify: true, udp: true}
   - {name: CN_1956 |13.55Mb, server: transit1.fanqiang.eu, port: 15008, type: trojan, password: 5b19f39d-31ba-44ce-bff8-034d517f47e1, skip-cert-verify: true, udp: true}
   - {name: CN_1962 |26.09Mb, server: transit1.fanqiang.eu, port: 15007, type: trojan, password: 5b19f39d-31ba-44ce-bff8-034d517f47e1, skip-cert-verify: true, udp: true}
   - {name: CN_1966 |19.67Mb, server: transit1.fanqiang.eu, port: 15006, type: trojan, password: 5b19f39d-31ba-44ce-bff8-034d517f47e1, skip-cert-verify: true, udp: true}
-  - {name: 香港-tg频道:@ripaojiedian, server: gz.cm.abc-api.top, port: 28897, type: ss, cipher: chacha20-ietf-poly1305, password: 1d88a43d-2f4e-4aba-a146-bf2325549314, udp: true}
+  - {name: America-C1-沪港, server: china-gy1-axecc.898868.xyz, port: 17681, type: trojan, password: f923621d-9cde-4db2-855f-8947e56db704, sni: usc1.qcjs.one, skip-cert-verify: true, udp: true}
+  - {name: Canada-A1-广港, server: china-gy1-axecc.898868.xyz, port: 10181, type: vmess, uuid: f923621d-9cde-4db2-855f-8947e56db704, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: china-f4s-az-hk.898868.xyz, network: ws, ws-opts: {path: /nana, headers: {Host: ca1.qcjs.one}}, udp: true}
+  - {name: HK_2437 |16.32Mb, server: yyyy.wwwbhjy.com, port: 2443, type: vmess, uuid: dee32eb7-e190-4c6f-dd27-aa9c82cd5490, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /8a76fb13/, headers: {Host: yyyy.wwwbhjy.com}}, udp: true}
+  - {name: 台湾 01 HiNet, server: dcd0a341-43f5-4258-97ec-a1ed2ba50173.gz.node.touhou.place, port: 8401, type: vmess, uuid: c41d89bc-ccbe-11eb-8aa6-f23c91d8700f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: b748096a-b0d8-4467-a550-941dd0016303.tw.node.touhou.place, network: ws, ws-opts: {path: /ws, headers: {Host: b748096a-b0d8-4467-a550-941dd0016303.tw.node.touhou.place}}, udp: true}
   - {name: US_3059, server: hkaz3.xmrth-node.xyz, port: 14389, type: vmess, uuid: b3f8c67e-aae9-3122-9dd5-4946a6ea7956, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /index, headers: {Host: hkaz3.xmrth-node.xyz}}, udp: true}
+  - {name: Singapore-C6-广港, server: china-gy-axecc.898868.xyz, port: 11467, type: trojan, password: f923621d-9cde-4db2-855f-8947e56db704, sni: sgc6.qcjs.one, skip-cert-verify: true, udp: true}
   - {name: CN_1984 |11.19Mb, server: transit1.fanqiang.eu, port: 15013, type: trojan, password: 5b19f39d-31ba-44ce-bff8-034d517f47e1, skip-cert-verify: true, udp: true}
+  - {name: Singapore-C5-佛电, server: fsct.195382.xyz, port: 32287, type: trojan, password: f923621d-9cde-4db2-855f-8947e56db704, sni: sgc5.qcjs.one, skip-cert-verify: true, udp: true}
   - {name: _576 |68.93Mb, server: momuz.sulink.cn, port: 19016, type: ss, cipher: aes-256-cfb, password: z20010608, udp: true}
-  - {name: CN-高速节点购买：v1.mk/vip, server: sh.moonfree.top, port: 11267, type: vmess, uuid: 6e9eeae6-c3d1-439e-9f7a-213fe09b2dbe, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: rackedgeuk510.moonfree.top}}, udp: true}
-  - {name: CN_1859 | 8.32Mb, server: 14.29.124.168, port: 25279, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: _548 | 9.45Mb, server: 14.29.124.168, port: 25220, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: _油管频道：全网最强白嫖, server: 14.29.124.168, port: 25266, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: _536 |13.26Mb, server: 14.29.124.168, port: 25296, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: _285 |15.12Mb, server: 14.29.124.168, port: 25256, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: _youtube：全网最强白嫖, server: 14.29.124.168, port: 25267, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: _1461 | 4.63Mb, server: 175.178.163.153, port: 443, type: vmess, uuid: 4a2faefb-e947-48c2-a9a3-403659433f36, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: CN_1941 | 3.90Mb, server: 211.91.243.240, port: 31203, type: vmess, uuid: b8aaa6e1-f0b3-b9ec-3dfc-bb226c167b33, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: 首尔-tg频道:@ripaojiedian, server: 20.214.186.248, port: 8313, type: ss, cipher: chacha20-ietf-poly1305, password: ljqdalu13.., udp: true}
-  - {name: CN_1936 | 9.22Mb, server: 211.91.243.240, port: 31225, type: vmess, uuid: b8aaa6e1-f0b3-b9ec-3dfc-bb226c167b33, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: 翻墙党fanqiangdang.com, server: 80.251.208.30, port: 22223, type: vmess, uuid: 5ce411c8-da98-44f5-ac1b-3b32ccdd8ce7, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /echo}, udp: true}
-  - {name: Relay_🇺🇸US-🇺🇸US_3076, server: inap003.xmrth-node.xyz, port: 11565, type: vmess, uuid: ff51ca4a-6050-3e26-a037-88b0dd62d138, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /index, headers: {Host: inap003.xmrth-node.xyz}}, udp: true}
-  - {name: "@wbnet_🇷🇺_RU_442", server: 213.183.53.208, port: 9037, type: ss, cipher: aes-256-cfb, password: TN2YqghxeFDKZfLU, udp: true}
-  - {name: _633, server: 213.183.59.214, port: 9025, type: ss, cipher: aes-256-cfb, password: XPtzA9sCug3SPR4c, udp: true}
-  - {name: CN-高速节点购买：v1.mk/vip 2, server: 521hk.fans8.xyz, port: 80, type: vmess, uuid: 7f4ff2e1-c08f-35bd-afe7-4a6a386907aa, alterId: 2, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ray, headers: {Host: 521hk.fans8.xyz}}, udp: true}
+  - {name: England-A1-沪日, server: china-gy1-axecc.898868.xyz, port: 46725, type: vmess, uuid: f923621d-9cde-4db2-855f-8947e56db704, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: azjp.9218561.xyz, network: ws, ws-opts: {path: /nana, headers: {Host: uk1.qcjs.one}}, udp: true}
+  - {name: 新加坡 01 HE, server: dcd0a341-43f5-4258-97ec-a1ed2ba50173.gz.node.touhou.place, port: 8603, type: vmess, uuid: c41408aa-ccbe-11eb-8aa6-f23c91d8700f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: 53f6f863-65f9-43c5-ac0f-09a9c51b3713.sg.node.touhou.place, network: ws, ws-opts: {path: /ws, headers: {Host: 53f6f863-65f9-43c5-ac0f-09a9c51b3713.sg.node.touhou.place}}, udp: true}
+  - {name: India-C1-广港, server: china-gy-axecc.898868.xyz, port: 22231, type: trojan, password: f923621d-9cde-4db2-855f-8947e56db704, sni: inc1.qcjs.one, skip-cert-verify: true, udp: true}
+  - {name: Germany-C2-莞港, server: china-gy-axecc.898868.xyz, port: 30157, type: trojan, password: f923621d-9cde-4db2-855f-8947e56db704, sni: ger2.qcjs.one, skip-cert-verify: true, udp: true}
+  - {name: Japan-C3-广港, server: china-gy-axecc.898868.xyz, port: 39440, type: trojan, password: f923621d-9cde-4db2-855f-8947e56db704, sni: jpc3.qcjs.one, skip-cert-verify: true, udp: true}
+  - {name: 香港 02 电信/深港专线（2.5x）, server: 33837ddc-243b-4f60-91c1-11bd9b602eed.hk.node.touhou.place, port: 563, type: vmess, uuid: c41408aa-ccbe-11eb-8aa6-f23c91d8700f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: 33837ddc-243b-4f60-91c1-11bd9b602eed.hk.node.touhou.place, network: ws, ws-opts: {path: /ws, headers: {Host: 33837ddc-243b-4f60-91c1-11bd9b602eed.hk.node.touhou.place}}, udp: true}
+  - {name: 美国 05 GIA CN2（1.3x）, server: 98d033b8-6928-4e27-99ab-142ed34f9491.zj.node.touhou.place, port: 8105, type: vmess, uuid: c41d89bc-ccbe-11eb-8aa6-f23c91d8700f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: 2b76936e-174e-4ed7-a2cb-3e6c6b05e666.us.node.touhou.place, network: ws, ws-opts: {path: /ws, headers: {Host: 2b76936e-174e-4ed7-a2cb-3e6c6b05e666.us.node.touhou.place}}, udp: true}
+  - {name: _CN_14, server: 14.29.124.168, port: 25219, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
   - {name: CN_1862 | 3.12Mb, server: 14.29.124.168, port: 25231, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: "@wbnet_🇷🇺_RU_438", server: 213.183.53.208, port: 9030, type: ss, cipher: aes-256-cfb, password: GeregetR8cvQHzYr, udp: true}
-  - {name: "@wbnet_🇷🇺_RU_466", server: 213.183.53.208, port: 9097, type: ss, cipher: aes-256-cfb, password: Sn5B7jTqr76aCJT8, udp: true}
-  - {name: 美国-3.50MB/s(Youtube:不良林), server: s2.upyun.online, port: 12340, type: trojan, password: 316b40c0-0dab-4ea1-9666-ac1658b033b2, skip-cert-verify: true, udp: true}
-  - {name: 韩国2-tg频道:@ripaojiedian, server: 172.96.192.58, port: 254, type: ss, cipher: aes-256-cfb, password: bwhskrskr03, udp: true}
-  - {name: "@wbnet_🇷🇺_RU_456", server: 213.183.53.208, port: 9061, type: ss, cipher: aes-256-cfb, password: 4R3hUfZ2FHhDmNcP, udp: true}
-  - {name: US_4258 | 9.76Mb, server: us8.fanqiang.eu, port: 19999, type: trojan, password: 5b19f39d-31ba-44ce-bff8-034d517f47e1, skip-cert-verify: true, udp: true}
-  - {name: "@wbnet_🇷🇺_RU_436", server: 213.183.53.208, port: 9026, type: ss, cipher: aes-256-cfb, password: QWDDvVE9npNurQfA, udp: true}
-  - {name: "@wbnet_🇷🇺_RU_458", server: 213.183.53.208, port: 9070, type: ss, cipher: aes-256-cfb, password: bf7v334KKDV3YDhH, udp: true}
-  - {name: "@wbnet_🇳🇱_NL_770", server: 213.183.59.211, port: 9040, type: ss, cipher: aes-256-cfb, password: p9z5BVADH2YFs3MN, udp: true}
-  - {name: "@wbnet_🇷🇺_RU_618", server: 213.183.53.208, port: 9020, type: ss, cipher: aes-256-cfb, password: BNmAXXxAHYpTRdzu, udp: true}
-  - {name: "@wbnet_🇳🇱_NL_768", server: 213.183.59.211, port: 9037, type: ss, cipher: aes-256-cfb, password: TN2YqghxeFDKZfLU, udp: true}
-  - {name: _1430 | 2.28Mb, server: 213.183.59.214, port: 9056, type: ss, cipher: aes-256-cfb, password: rNBfNuuANFCAk7KB, udp: true}
-  - {name: _油管频道：最网最强白嫖, server: 213.183.59.214, port: 9032, type: ss, cipher: aes-256-cfb, password: UWZQeLRWnkqgkseq, udp: true}
-  - {name: _1434 | 3.34Mb, server: 213.183.59.214, port: 9088, type: ss, cipher: aes-256-cfb, password: f8npKgNzdkss2ytn, udp: true}
-  - {name: US_2102 |17.20Mb, server: ussc.scsevers.cf, port: 443, type: trojan, password: sharecentre, skip-cert-verify: true, udp: true}
+  - {name: CN-高速节点购买：v1.mk/vip, server: sh.moonfree.top, port: 11267, type: vmess, uuid: 6e9eeae6-c3d1-439e-9f7a-213fe09b2dbe, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: rackedgeuk510.moonfree.top}}, udp: true}
+  - {name: _CN_n523_128, server: 14.29.124.168, port: 25233, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: _CN_n523_138, server: 14.29.124.168, port: 25241, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: _CN_n523_124, server: 14.29.124.168, port: 25252, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: _CN_n523_108, server: 14.29.124.168, port: 25235, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: _CN_n523_127, server: 14.29.124.168, port: 25247, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: _CN_24, server: 14.29.124.168, port: 25287, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: _CN_n523_137, server: 14.29.124.168, port: 25293, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: 欢迎使用Welink345 请定期更新订阅, server: tw.node.qchwnd.moe, port: 44608, type: trojan, password: 3ece2cd7-076d-4e9f-8a23-e7d9b4e3f62e, skip-cert-verify: true, udp: true}
+  - {name: 日本 01 电信/沪日专线（3x）, server: 49e89cc2-696a-4683-ba3e-60304878a4ff.jp.node.touhou.place, port: 563, type: vmess, uuid: c41408aa-ccbe-11eb-8aa6-f23c91d8700f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: 49e89cc2-696a-4683-ba3e-60304878a4ff.jp.node.touhou.place, network: ws, ws-opts: {path: /ws, headers: {Host: 49e89cc2-696a-4683-ba3e-60304878a4ff.jp.node.touhou.place}}, udp: true}
+  - {name: 香港 11 HKBN家宽（0.1x）, server: 98d033b8-6928-4e27-99ab-142ed34f9491.zj.node.touhou.place, port: 8303, type: vmess, uuid: 77775b5f-507d-33a3-835b-cb016980d58c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: 8214318c-9d73-4d60-9539-cffec761e29a.hk.node.touhou.place, network: ws, ws-opts: {path: /ws, headers: {Host: 8214318c-9d73-4d60-9539-cffec761e29a.hk.node.touhou.place}}, udp: true}
+  - {name: 日本 10 IIJ, server: 4f38f6b4-bed0-40e9-aad8-72a2bc218407.zj.node.touhou.place, port: 8206, type: vmess, uuid: 77775b5f-507d-33a3-835b-cb016980d58c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: ba3355fa-e4f3-4c04-8fed-1f9f72b65d43.jp.node.touhou.place, network: ws, ws-opts: {path: /ws, headers: {Host: ba3355fa-e4f3-4c04-8fed-1f9f72b65d43.jp.node.touhou.place}}, udp: true}
+  - {name: 日本 02 电信/沪日专线（3x）, server: 0b32cd5b-e021-4031-81f6-98a411d66ca1.jp.node.touhou.place, port: 563, type: vmess, uuid: c41408aa-ccbe-11eb-8aa6-f23c91d8700f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: 0b32cd5b-e021-4031-81f6-98a411d66ca1.jp.node.touhou.place, network: ws, ws-opts: {path: /ws, headers: {Host: 0b32cd5b-e021-4031-81f6-98a411d66ca1.jp.node.touhou.place}}, udp: true}
+  - {name: _US_n523_303, server: s1.upyun.online, port: 12340, type: trojan, password: c0276440-f163-4f40-a08c-78b158ce6c4f, sni: s1.upyun.online, skip-cert-verify: true, udp: true}
+  - {name: 日本 12 IIJ IPv6, server: 4f38f6b4-bed0-40e9-aad8-72a2bc218407.zj.node.touhou.place, port: 8208, type: vmess, uuid: 77775b5f-507d-33a3-835b-cb016980d58c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: e7150955-922b-45a7-8243-e14f7ef4c847.jp.node.touhou.place, network: ws, ws-opts: {path: /ws, headers: {Host: e7150955-922b-45a7-8243-e14f7ef4c847.jp.node.touhou.place}}, udp: true}
+  - {name: _US_美国->🇸🇬_SG_新加坡, server: s2.upyun.online, port: 12340, type: trojan, password: c0276440-f163-4f40-a08c-78b158ce6c4f, skip-cert-verify: true, udp: true}
+  - {name: JP_678_31.59Mb |16.31Mb, server: tt6.tjvpn.top, port: 443, type: trojan, password: 0cb2cd1f-870b-485c-914a-60aba39eed39, skip-cert-verify: true, udp: true}
+  - {name: _US_n523_305, server: s1.upyun.online, port: 12340, type: trojan, password: 316b40c0-0dab-4ea1-9666-ac1658b033b2, skip-cert-verify: true, udp: true}
+  - {name: 香港 12 NTT IPv6, server: 83041227-55a7-4080-b7e1-9dfc7478ddb0.gz.node.touhou.place, port: 8304, type: vmess, uuid: c41408aa-ccbe-11eb-8aa6-f23c91d8700f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: 80734281-3acd-4fc0-b9a3-e5b70d1fe385.hk.node.touhou.place, network: ws, ws-opts: {path: /ws, headers: {Host: 80734281-3acd-4fc0-b9a3-e5b70d1fe385.hk.node.touhou.place}}, udp: true}
+  - {name: Relay_🇯🇵JP-🇯🇵JP_793, server: jgw2.gaox.ml, port: 443, type: trojan, password: f2117e99-9b6e-47fd-b0a9-634a0b15b998, skip-cert-verify: true, udp: true}
+  - {name: CN_1936 | 9.22Mb, server: 211.91.243.240, port: 31225, type: vmess, uuid: b8aaa6e1-f0b3-b9ec-3dfc-bb226c167b33, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: BGP-01-香港-多地优化, server: iepl-zebra.19900101.xyz, port: 902, type: ss, cipher: chacha20-ietf, password: Gqre0R, plugin: obfs, plugin-opts: {mode: http, host: 1d2e3501.itunes.apple.com}, udp: true}
+  - {name: 日本 18 IIJ, server: 4f38f6b4-bed0-40e9-aad8-72a2bc218407.zj.node.touhou.place, port: 8214, type: vmess, uuid: 77775b5f-507d-33a3-835b-cb016980d58c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: be662f35-a828-4abc-8670-2c9578b23ed3.jp.node.touhou.place, network: ws, ws-opts: {path: /ws, headers: {Host: be662f35-a828-4abc-8670-2c9578b23ed3.jp.node.touhou.place}}, udp: true}
+  - {name: SG_2931 |22.79Mb, server: 523hk1.fans8.xyz, port: 443, type: vmess, uuid: 7f4ff2e1-c08f-35bd-afe7-4a6a386907aa, alterId: 2, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ray, headers: {Host: 523hk1.fans8.xyz}}, udp: true}
+  - {name: 日本 16 IIJ, server: 4f38f6b4-bed0-40e9-aad8-72a2bc218407.zj.node.touhou.place, port: 8212, type: vmess, uuid: 77775b5f-507d-33a3-835b-cb016980d58c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: 0f26c8e0-b624-4f5f-9a3d-2476e036a987.jp.node.touhou.place, network: ws, ws-opts: {path: /ws, headers: {Host: 0f26c8e0-b624-4f5f-9a3d-2476e036a987.jp.node.touhou.place}}, udp: true}
+  - {name: 美国-249.8KB/s(Youtube:不良林), server: v5.ssrsub.com, port: 443, type: vmess, uuid: 620d82a8-22ba-4945-90ba-a2bed1cde1d2, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /api/v3/download.getFile, headers: {Host: v5.ssrsub.com}}, udp: true}
+  - {name: _US_n523_89, server: 51us.fans8.xyz, port: 80, type: vmess, uuid: 7f4ff2e1-c08f-35bd-afe7-4a6a386907aa, alterId: 2, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ray, headers: {Host: 51us.fans8.xyz}}, udp: true}
+  - {name: Relay_🇺🇸US-🇺🇸US_3076, server: inap003.xmrth-node.xyz, port: 11565, type: vmess, uuid: ff51ca4a-6050-3e26-a037-88b0dd62d138, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /index, headers: {Host: inap003.xmrth-node.xyz}}, udp: true}
   - {name: _515 | 8.23Mb, server: 14.29.124.168, port: 25283, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: "@wbnet_🇨🇭_CH_632", server: 185.126.116.119, port: 9027, type: ss, cipher: aes-256-cfb, password: EXN3S3eQpjE7EJu8, udp: true}
-  - {name: "@wbnet_🇨🇭_CH_646", server: 185.126.116.119, port: 9053, type: ss, cipher: aes-256-cfb, password: SBM7R883jBmnqe6C, udp: true}
+  - {name: 澳大利亚 01 NTT IPv6, server: 98d033b8-6928-4e27-99ab-142ed34f9491.zj.node.touhou.place, port: 8602, type: vmess, uuid: 77775b5f-507d-33a3-835b-cb016980d58c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: 357f5334-ae92-41f1-b8bb-e16498bbfb75.au.node.touhou.place, network: ws, ws-opts: {path: /ws, headers: {Host: 357f5334-ae92-41f1-b8bb-e16498bbfb75.au.node.touhou.place}}, udp: true}
+  - {name: US_3133, server: 205.185.124.145, port: 85, type: vmess, uuid: 887a1c68-4665-3e74-a911-4e2be6f2e82f, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /v2ray}, udp: true}
+  - {name: bulink自建免费19线 三网, server: la49.bulinkxyz.xyz, port: 443, type: vmess, uuid: dd01617b-7f89-45e1-89e7-d9ddcf15a210, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: America-A2, server: 152.70.123.141, port: 80, type: vmess, uuid: f923621d-9cde-4db2-855f-8947e56db704, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: n523_255, server: v4.ssrsub.com, port: 443, type: vmess, uuid: 620d82a8-22ba-4945-90ba-a2bed1cde1d2, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /api/v3/download.getFile, headers: {Host: v4.ssrsub.com}}, udp: true}
+  - {name: "@wbnet_🇷🇺_RU_440", server: 213.183.53.208, port: 9032, type: ss, cipher: aes-256-cfb, password: UWZQeLRWnkqgkseq, udp: true}
+  - {name: _CN_n523_132, server: 14.29.124.168, port: 25259, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: 日本2-tg频道:@ripaojiedian, server: jp3.2046.gq, port: 8443, type: vmess, uuid: 1eedf4cc-dba4-4a5e-9e57-cc0470c0a45d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: jp3.2046.gq}}, udp: true}
+  - {name: _HK_n523_90, server: 511hk.fans8.xyz, port: 80, type: vmess, uuid: 7f4ff2e1-c08f-35bd-afe7-4a6a386907aa, alterId: 2, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ray, headers: {Host: 511hk.fans8.xyz}}, udp: true}
+  - {name: 美国2-tg频道:@ripaojiedian, server: guil.tk, port: 443, type: vmess, uuid: 547b10f4-ccf7-4324-82a9-efb961c77b9e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /rxcevws, headers: {Host: guil.tk}}, udp: true}
+  - {name: "@wbnet_🇷🇺_RU_442", server: 213.183.53.208, port: 9037, type: ss, cipher: aes-256-cfb, password: TN2YqghxeFDKZfLU, udp: true}
   - {name: "@wbnet_🇷🇺_RU_426", server: 213.183.53.208, port: 9007, type: ss, cipher: aes-256-cfb, password: kSPmvwdFzGMMW5pY, udp: true}
-  - {name: "@wbnet_🇷🇺_RU_432", server: 213.183.53.208, port: 9018, type: ss, cipher: aes-256-cfb, password: fG2artUmHfNT2cX7, udp: true}
-  - {name: "@wbnet_🇳🇱_NL_307", server: 213.183.59.190, port: 9046, type: ss, cipher: aes-256-cfb, password: NvS8N4Vf8qAGPSCL, udp: true}
-  - {name: "@wbnet_🇳🇱_NL_781", server: 213.183.59.211, port: 9084, type: ss, cipher: aes-256-cfb, password: c3NtHJ5ujV2tGDfj, udp: true}
-  - {name: "@wbnet_🇳🇱_NL_742", server: 213.183.59.229, port: 9026, type: ss, cipher: aes-256-cfb, password: QWDDvVE9npNurQfA, udp: true}
-  - {name: "@wbnet_🇨🇭_CH_628", server: 185.126.116.119, port: 9020, type: ss, cipher: aes-256-cfb, password: BNmAXXxAHYpTRdzu, udp: true}
-  - {name: "@wbnet_🇨🇭_CH_630", server: 185.126.116.119, port: 9025, type: ss, cipher: aes-256-cfb, password: XPtzA9sCug3SPR4c, udp: true}
-  - {name: "@wbnet_🇨🇭_CH_631", server: 185.126.116.119, port: 9026, type: ss, cipher: aes-256-cfb, password: QWDDvVE9npNurQfA, udp: true}
-  - {name: "@wbnet_🇨🇭_CH_636", server: 185.126.116.119, port: 9033, type: ss, cipher: aes-256-cfb, password: UTJA57ypk2XKQpnm, udp: true}
-  - {name: "@wbnet_🇨🇭_CH_640", server: 185.126.116.119, port: 9041, type: ss, cipher: aes-256-cfb, password: U6qnYRhfyDmn8sgn, udp: true}
-  - {name: "@wbnet_🇨🇭_CH_661", server: 185.126.116.119, port: 9094, type: ss, cipher: aes-256-cfb, password: rpgbNnU9rDDU4aWZ, udp: true}
-  - {name: "@wbnet_🇳🇱_NL_294", server: 213.183.59.190, port: 9019, type: ss, cipher: aes-256-cfb, password: GA9KzeEgvfxNrgmM, udp: true}
-  - {name: ｜NL｜荷兰｜openit.ml｜273, server: 213.183.59.211, port: 9050, type: ss, cipher: aes-256-cfb, password: FG5ddLsMPbV5CutE, udp: true}
-  - {name: _油管频道：最网最强白嫖 2, server: 213.183.59.214, port: 9094, type: ss, cipher: aes-256-cfb, password: rpgbNnU9rDDU4aWZ, udp: true}
-  - {name: _NL_荷兰_2598, server: 213.183.59.229, port: 9043, type: ss, cipher: aes-256-cfb, password: HSZuyJQcWe8dxNdF, udp: true}
+  - {name: _1051 | 5.95Mb, server: 213.183.53.177, port: 9010, type: ss, cipher: aes-256-cfb, password: f63gg8EruDnUrmz4, udp: true}
+  - {name: 美国-3.50MB/s(Youtube:不良林), server: s2.upyun.online, port: 12340, type: trojan, password: 316b40c0-0dab-4ea1-9666-ac1658b033b2, skip-cert-verify: true, udp: true}
+  - {name: _CN_n523_68, server: bgpv2.ktyjsq.com, port: 12205, type: vmess, uuid: 9ea70d57-9cb6-3bd0-ae41-5601e516dcc6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _RU_俄罗斯联邦_1, server: 185.4.65.6, port: 21247, type: ss, cipher: aes-256-cfb, password: vDS9G2p, udp: true}
+  - {name: _CN_n523_130, server: 14.29.124.168, port: 25238, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: US_4258 | 9.76Mb, server: us8.fanqiang.eu, port: 19999, type: trojan, password: 5b19f39d-31ba-44ce-bff8-034d517f47e1, skip-cert-verify: true, udp: true}
+  - {name: "[负载均衡]韩国1", server: ocikr.node.qchwnd.moe, port: 44600, type: trojan, password: 3ece2cd7-076d-4e9f-8a23-e7d9b4e3f62e, sni: cdn.qchwnd.moe, skip-cert-verify: true, udp: true}
+  - {name: _691 | 2.08Mb, server: 213.183.59.214, port: 9011, type: ss, cipher: aes-256-cfb, password: M3t2ZEQcMGRWBjRa, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
+      - CN_1962 | 9.74Mb
+      - Australia-A1-沪日
+      - 日本3|中日链路|Netflix
+      - Japan-C2-沪日
+      - Japan-C1-沪日-流媒体解锁
+      - "[沪日]美国1"
+      - _CN_n523_275
+      - Singapore-C3-沪日
+      - _CN_n523_403
+      - Japan-C6-沪日
+      - Japan-C5-沪日
       - CN_1978 |82.50Mb
+      - Singapore-C4-沪日
+      - Germany-C1-沪日
       - CN_1960 |22.81Mb
+      - America-C4-沪日
       - CN_1961 |19.03Mb
+      - America-C6-沪日
+      - Japan-C4-沪日
+      - America-C3-沪日
+      - "[沪日]俄罗斯2"
+      - America-C5-沪日
       - CN_1951 |36.96Mb
       - CN_1975 | 3.03Mb
       - CN_1954 |16.59Mb
       - CN_1983 |15.96Mb
+      - 日本 08 IIJ
+      - Singapore-C2-广港
+      - Norway-C1-沪日
       - CN_1956 |13.55Mb
       - CN_1962 |26.09Mb
       - CN_1966 |19.67Mb
-      - 香港-tg频道:@ripaojiedian
+      - America-C1-沪港
+      - Canada-A1-广港
+      - HK_2437 |16.32Mb
+      - 台湾 01 HiNet
       - US_3059
+      - Singapore-C6-广港
       - CN_1984 |11.19Mb
+      - Singapore-C5-佛电
       - _576 |68.93Mb
-      - CN-高速节点购买：v1.mk/vip
-      - CN_1859 | 8.32Mb
-      - _548 | 9.45Mb
-      - _油管频道：全网最强白嫖
-      - _536 |13.26Mb
-      - _285 |15.12Mb
-      - _youtube：全网最强白嫖
-      - _1461 | 4.63Mb
-      - CN_1941 | 3.90Mb
-      - 首尔-tg频道:@ripaojiedian
-      - CN_1936 | 9.22Mb
-      - 翻墙党fanqiangdang.com
-      - Relay_🇺🇸US-🇺🇸US_3076
-      - "@wbnet_🇷🇺_RU_442"
-      - _633
-      - CN-高速节点购买：v1.mk/vip 2
+      - England-A1-沪日
+      - 新加坡 01 HE
+      - India-C1-广港
+      - Germany-C2-莞港
+      - Japan-C3-广港
+      - 香港 02 电信/深港专线（2.5x）
+      - 美国 05 GIA CN2（1.3x）
+      - _CN_14
       - CN_1862 | 3.12Mb
-      - "@wbnet_🇷🇺_RU_438"
-      - "@wbnet_🇷🇺_RU_466"
-      - 美国-3.50MB/s(Youtube:不良林)
-      - 韩国2-tg频道:@ripaojiedian
-      - "@wbnet_🇷🇺_RU_456"
-      - US_4258 | 9.76Mb
-      - "@wbnet_🇷🇺_RU_436"
-      - "@wbnet_🇷🇺_RU_458"
-      - "@wbnet_🇳🇱_NL_770"
-      - "@wbnet_🇷🇺_RU_618"
-      - "@wbnet_🇳🇱_NL_768"
-      - _1430 | 2.28Mb
-      - _油管频道：最网最强白嫖
-      - _1434 | 3.34Mb
-      - US_2102 |17.20Mb
+      - CN-高速节点购买：v1.mk/vip
+      - _CN_n523_128
+      - _CN_n523_138
+      - _CN_n523_124
+      - _CN_n523_108
+      - _CN_n523_127
+      - _CN_24
+      - _CN_n523_137
+      - 欢迎使用Welink345 请定期更新订阅
+      - 日本 01 电信/沪日专线（3x）
+      - 香港 11 HKBN家宽（0.1x）
+      - 日本 10 IIJ
+      - 日本 02 电信/沪日专线（3x）
+      - _US_n523_303
+      - 日本 12 IIJ IPv6
+      - _US_美国->🇸🇬_SG_新加坡
+      - JP_678_31.59Mb |16.31Mb
+      - _US_n523_305
+      - 香港 12 NTT IPv6
+      - Relay_🇯🇵JP-🇯🇵JP_793
+      - CN_1936 | 9.22Mb
+      - BGP-01-香港-多地优化
+      - 日本 18 IIJ
+      - SG_2931 |22.79Mb
+      - 日本 16 IIJ
+      - 美国-249.8KB/s(Youtube:不良林)
+      - _US_n523_89
+      - Relay_🇺🇸US-🇺🇸US_3076
       - _515 | 8.23Mb
-      - "@wbnet_🇨🇭_CH_632"
-      - "@wbnet_🇨🇭_CH_646"
+      - 澳大利亚 01 NTT IPv6
+      - US_3133
+      - bulink自建免费19线 三网
+      - America-A2
+      - n523_255
+      - "@wbnet_🇷🇺_RU_440"
+      - _CN_n523_132
+      - 日本2-tg频道:@ripaojiedian
+      - _HK_n523_90
+      - 美国2-tg频道:@ripaojiedian
+      - "@wbnet_🇷🇺_RU_442"
       - "@wbnet_🇷🇺_RU_426"
-      - "@wbnet_🇷🇺_RU_432"
-      - "@wbnet_🇳🇱_NL_307"
-      - "@wbnet_🇳🇱_NL_781"
-      - "@wbnet_🇳🇱_NL_742"
-      - "@wbnet_🇨🇭_CH_628"
-      - "@wbnet_🇨🇭_CH_630"
-      - "@wbnet_🇨🇭_CH_631"
-      - "@wbnet_🇨🇭_CH_636"
-      - "@wbnet_🇨🇭_CH_640"
-      - "@wbnet_🇨🇭_CH_661"
-      - "@wbnet_🇳🇱_NL_294"
-      - ｜NL｜荷兰｜openit.ml｜273
-      - _油管频道：最网最强白嫖 2
-      - _NL_荷兰_2598
+      - _1051 | 5.95Mb
+      - 美国-3.50MB/s(Youtube:不良林)
+      - _CN_n523_68
+      - _RU_俄罗斯联邦_1
+      - _CN_n523_130
+      - US_4258 | 9.76Mb
+      - "[负载均衡]韩国1"
+      - _691 | 2.08Mb
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
+      - CN_1962 | 9.74Mb
+      - Australia-A1-沪日
+      - 日本3|中日链路|Netflix
+      - Japan-C2-沪日
+      - Japan-C1-沪日-流媒体解锁
+      - "[沪日]美国1"
+      - _CN_n523_275
+      - Singapore-C3-沪日
+      - _CN_n523_403
+      - Japan-C6-沪日
+      - Japan-C5-沪日
       - CN_1978 |82.50Mb
+      - Singapore-C4-沪日
+      - Germany-C1-沪日
       - CN_1960 |22.81Mb
+      - America-C4-沪日
       - CN_1961 |19.03Mb
+      - America-C6-沪日
+      - Japan-C4-沪日
+      - America-C3-沪日
+      - "[沪日]俄罗斯2"
+      - America-C5-沪日
       - CN_1951 |36.96Mb
       - CN_1975 | 3.03Mb
       - CN_1954 |16.59Mb
       - CN_1983 |15.96Mb
+      - 日本 08 IIJ
+      - Singapore-C2-广港
+      - Norway-C1-沪日
       - CN_1956 |13.55Mb
       - CN_1962 |26.09Mb
       - CN_1966 |19.67Mb
-      - 香港-tg频道:@ripaojiedian
+      - America-C1-沪港
+      - Canada-A1-广港
+      - HK_2437 |16.32Mb
+      - 台湾 01 HiNet
       - US_3059
+      - Singapore-C6-广港
       - CN_1984 |11.19Mb
+      - Singapore-C5-佛电
       - _576 |68.93Mb
-      - CN-高速节点购买：v1.mk/vip
-      - CN_1859 | 8.32Mb
-      - _548 | 9.45Mb
-      - _油管频道：全网最强白嫖
-      - _536 |13.26Mb
-      - _285 |15.12Mb
-      - _youtube：全网最强白嫖
-      - _1461 | 4.63Mb
-      - CN_1941 | 3.90Mb
-      - 首尔-tg频道:@ripaojiedian
-      - CN_1936 | 9.22Mb
-      - 翻墙党fanqiangdang.com
-      - Relay_🇺🇸US-🇺🇸US_3076
-      - "@wbnet_🇷🇺_RU_442"
-      - _633
-      - CN-高速节点购买：v1.mk/vip 2
+      - England-A1-沪日
+      - 新加坡 01 HE
+      - India-C1-广港
+      - Germany-C2-莞港
+      - Japan-C3-广港
+      - 香港 02 电信/深港专线（2.5x）
+      - 美国 05 GIA CN2（1.3x）
+      - _CN_14
       - CN_1862 | 3.12Mb
-      - "@wbnet_🇷🇺_RU_438"
-      - "@wbnet_🇷🇺_RU_466"
-      - 美国-3.50MB/s(Youtube:不良林)
-      - 韩国2-tg频道:@ripaojiedian
-      - "@wbnet_🇷🇺_RU_456"
-      - US_4258 | 9.76Mb
-      - "@wbnet_🇷🇺_RU_436"
-      - "@wbnet_🇷🇺_RU_458"
-      - "@wbnet_🇳🇱_NL_770"
-      - "@wbnet_🇷🇺_RU_618"
-      - "@wbnet_🇳🇱_NL_768"
-      - _1430 | 2.28Mb
-      - _油管频道：最网最强白嫖
-      - _1434 | 3.34Mb
-      - US_2102 |17.20Mb
+      - CN-高速节点购买：v1.mk/vip
+      - _CN_n523_128
+      - _CN_n523_138
+      - _CN_n523_124
+      - _CN_n523_108
+      - _CN_n523_127
+      - _CN_24
+      - _CN_n523_137
+      - 欢迎使用Welink345 请定期更新订阅
+      - 日本 01 电信/沪日专线（3x）
+      - 香港 11 HKBN家宽（0.1x）
+      - 日本 10 IIJ
+      - 日本 02 电信/沪日专线（3x）
+      - _US_n523_303
+      - 日本 12 IIJ IPv6
+      - _US_美国->🇸🇬_SG_新加坡
+      - JP_678_31.59Mb |16.31Mb
+      - _US_n523_305
+      - 香港 12 NTT IPv6
+      - Relay_🇯🇵JP-🇯🇵JP_793
+      - CN_1936 | 9.22Mb
+      - BGP-01-香港-多地优化
+      - 日本 18 IIJ
+      - SG_2931 |22.79Mb
+      - 日本 16 IIJ
+      - 美国-249.8KB/s(Youtube:不良林)
+      - _US_n523_89
+      - Relay_🇺🇸US-🇺🇸US_3076
       - _515 | 8.23Mb
-      - "@wbnet_🇨🇭_CH_632"
-      - "@wbnet_🇨🇭_CH_646"
+      - 澳大利亚 01 NTT IPv6
+      - US_3133
+      - bulink自建免费19线 三网
+      - America-A2
+      - n523_255
+      - "@wbnet_🇷🇺_RU_440"
+      - _CN_n523_132
+      - 日本2-tg频道:@ripaojiedian
+      - _HK_n523_90
+      - 美国2-tg频道:@ripaojiedian
+      - "@wbnet_🇷🇺_RU_442"
       - "@wbnet_🇷🇺_RU_426"
-      - "@wbnet_🇷🇺_RU_432"
-      - "@wbnet_🇳🇱_NL_307"
-      - "@wbnet_🇳🇱_NL_781"
-      - "@wbnet_🇳🇱_NL_742"
-      - "@wbnet_🇨🇭_CH_628"
-      - "@wbnet_🇨🇭_CH_630"
-      - "@wbnet_🇨🇭_CH_631"
-      - "@wbnet_🇨🇭_CH_636"
-      - "@wbnet_🇨🇭_CH_640"
-      - "@wbnet_🇨🇭_CH_661"
-      - "@wbnet_🇳🇱_NL_294"
-      - ｜NL｜荷兰｜openit.ml｜273
-      - _油管频道：最网最强白嫖 2
-      - _NL_荷兰_2598
+      - _1051 | 5.95Mb
+      - 美国-3.50MB/s(Youtube:不良林)
+      - _CN_n523_68
+      - _RU_俄罗斯联邦_1
+      - _CN_n523_130
+      - US_4258 | 9.76Mb
+      - "[负载均衡]韩国1"
+      - _691 | 2.08Mb
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
+      - CN_1962 | 9.74Mb
+      - Australia-A1-沪日
+      - 日本3|中日链路|Netflix
+      - Japan-C2-沪日
+      - Japan-C1-沪日-流媒体解锁
+      - "[沪日]美国1"
+      - _CN_n523_275
+      - Singapore-C3-沪日
+      - _CN_n523_403
+      - Japan-C6-沪日
+      - Japan-C5-沪日
       - CN_1978 |82.50Mb
+      - Singapore-C4-沪日
+      - Germany-C1-沪日
       - CN_1960 |22.81Mb
+      - America-C4-沪日
       - CN_1961 |19.03Mb
+      - America-C6-沪日
+      - Japan-C4-沪日
+      - America-C3-沪日
+      - "[沪日]俄罗斯2"
+      - America-C5-沪日
       - CN_1951 |36.96Mb
       - CN_1975 | 3.03Mb
       - CN_1954 |16.59Mb
       - CN_1983 |15.96Mb
+      - 日本 08 IIJ
+      - Singapore-C2-广港
+      - Norway-C1-沪日
       - CN_1956 |13.55Mb
       - CN_1962 |26.09Mb
       - CN_1966 |19.67Mb
-      - 香港-tg频道:@ripaojiedian
+      - America-C1-沪港
+      - Canada-A1-广港
+      - HK_2437 |16.32Mb
+      - 台湾 01 HiNet
       - US_3059
+      - Singapore-C6-广港
       - CN_1984 |11.19Mb
+      - Singapore-C5-佛电
       - _576 |68.93Mb
-      - CN-高速节点购买：v1.mk/vip
-      - CN_1859 | 8.32Mb
-      - _548 | 9.45Mb
-      - _油管频道：全网最强白嫖
-      - _536 |13.26Mb
-      - _285 |15.12Mb
-      - _youtube：全网最强白嫖
-      - _1461 | 4.63Mb
-      - CN_1941 | 3.90Mb
-      - 首尔-tg频道:@ripaojiedian
-      - CN_1936 | 9.22Mb
-      - 翻墙党fanqiangdang.com
-      - Relay_🇺🇸US-🇺🇸US_3076
-      - "@wbnet_🇷🇺_RU_442"
-      - _633
-      - CN-高速节点购买：v1.mk/vip 2
+      - England-A1-沪日
+      - 新加坡 01 HE
+      - India-C1-广港
+      - Germany-C2-莞港
+      - Japan-C3-广港
+      - 香港 02 电信/深港专线（2.5x）
+      - 美国 05 GIA CN2（1.3x）
+      - _CN_14
       - CN_1862 | 3.12Mb
-      - "@wbnet_🇷🇺_RU_438"
-      - "@wbnet_🇷🇺_RU_466"
-      - 美国-3.50MB/s(Youtube:不良林)
-      - 韩国2-tg频道:@ripaojiedian
-      - "@wbnet_🇷🇺_RU_456"
-      - US_4258 | 9.76Mb
-      - "@wbnet_🇷🇺_RU_436"
-      - "@wbnet_🇷🇺_RU_458"
-      - "@wbnet_🇳🇱_NL_770"
-      - "@wbnet_🇷🇺_RU_618"
-      - "@wbnet_🇳🇱_NL_768"
-      - _1430 | 2.28Mb
-      - _油管频道：最网最强白嫖
-      - _1434 | 3.34Mb
-      - US_2102 |17.20Mb
+      - CN-高速节点购买：v1.mk/vip
+      - _CN_n523_128
+      - _CN_n523_138
+      - _CN_n523_124
+      - _CN_n523_108
+      - _CN_n523_127
+      - _CN_24
+      - _CN_n523_137
+      - 欢迎使用Welink345 请定期更新订阅
+      - 日本 01 电信/沪日专线（3x）
+      - 香港 11 HKBN家宽（0.1x）
+      - 日本 10 IIJ
+      - 日本 02 电信/沪日专线（3x）
+      - _US_n523_303
+      - 日本 12 IIJ IPv6
+      - _US_美国->🇸🇬_SG_新加坡
+      - JP_678_31.59Mb |16.31Mb
+      - _US_n523_305
+      - 香港 12 NTT IPv6
+      - Relay_🇯🇵JP-🇯🇵JP_793
+      - CN_1936 | 9.22Mb
+      - BGP-01-香港-多地优化
+      - 日本 18 IIJ
+      - SG_2931 |22.79Mb
+      - 日本 16 IIJ
+      - 美国-249.8KB/s(Youtube:不良林)
+      - _US_n523_89
+      - Relay_🇺🇸US-🇺🇸US_3076
       - _515 | 8.23Mb
-      - "@wbnet_🇨🇭_CH_632"
-      - "@wbnet_🇨🇭_CH_646"
+      - 澳大利亚 01 NTT IPv6
+      - US_3133
+      - bulink自建免费19线 三网
+      - America-A2
+      - n523_255
+      - "@wbnet_🇷🇺_RU_440"
+      - _CN_n523_132
+      - 日本2-tg频道:@ripaojiedian
+      - _HK_n523_90
+      - 美国2-tg频道:@ripaojiedian
+      - "@wbnet_🇷🇺_RU_442"
       - "@wbnet_🇷🇺_RU_426"
-      - "@wbnet_🇷🇺_RU_432"
-      - "@wbnet_🇳🇱_NL_307"
-      - "@wbnet_🇳🇱_NL_781"
-      - "@wbnet_🇳🇱_NL_742"
-      - "@wbnet_🇨🇭_CH_628"
-      - "@wbnet_🇨🇭_CH_630"
-      - "@wbnet_🇨🇭_CH_631"
-      - "@wbnet_🇨🇭_CH_636"
-      - "@wbnet_🇨🇭_CH_640"
-      - "@wbnet_🇨🇭_CH_661"
-      - "@wbnet_🇳🇱_NL_294"
-      - ｜NL｜荷兰｜openit.ml｜273
-      - _油管频道：最网最强白嫖 2
-      - _NL_荷兰_2598
+      - _1051 | 5.95Mb
+      - 美国-3.50MB/s(Youtube:不良林)
+      - _CN_n523_68
+      - _RU_俄罗斯联邦_1
+      - _CN_n523_130
+      - US_4258 | 9.76Mb
+      - "[负载均衡]韩国1"
+      - _691 | 2.08Mb
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -296,284 +436,435 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
+      - CN_1962 | 9.74Mb
+      - Australia-A1-沪日
+      - 日本3|中日链路|Netflix
+      - Japan-C2-沪日
+      - Japan-C1-沪日-流媒体解锁
+      - "[沪日]美国1"
+      - _CN_n523_275
+      - Singapore-C3-沪日
+      - _CN_n523_403
+      - Japan-C6-沪日
+      - Japan-C5-沪日
       - CN_1978 |82.50Mb
+      - Singapore-C4-沪日
+      - Germany-C1-沪日
       - CN_1960 |22.81Mb
+      - America-C4-沪日
       - CN_1961 |19.03Mb
+      - America-C6-沪日
+      - Japan-C4-沪日
+      - America-C3-沪日
+      - "[沪日]俄罗斯2"
+      - America-C5-沪日
       - CN_1951 |36.96Mb
       - CN_1975 | 3.03Mb
       - CN_1954 |16.59Mb
       - CN_1983 |15.96Mb
+      - 日本 08 IIJ
+      - Singapore-C2-广港
+      - Norway-C1-沪日
       - CN_1956 |13.55Mb
       - CN_1962 |26.09Mb
       - CN_1966 |19.67Mb
-      - 香港-tg频道:@ripaojiedian
+      - America-C1-沪港
+      - Canada-A1-广港
+      - HK_2437 |16.32Mb
+      - 台湾 01 HiNet
       - US_3059
+      - Singapore-C6-广港
       - CN_1984 |11.19Mb
+      - Singapore-C5-佛电
       - _576 |68.93Mb
-      - CN-高速节点购买：v1.mk/vip
-      - CN_1859 | 8.32Mb
-      - _548 | 9.45Mb
-      - _油管频道：全网最强白嫖
-      - _536 |13.26Mb
-      - _285 |15.12Mb
-      - _youtube：全网最强白嫖
-      - _1461 | 4.63Mb
-      - CN_1941 | 3.90Mb
-      - 首尔-tg频道:@ripaojiedian
-      - CN_1936 | 9.22Mb
-      - 翻墙党fanqiangdang.com
-      - Relay_🇺🇸US-🇺🇸US_3076
-      - "@wbnet_🇷🇺_RU_442"
-      - _633
-      - CN-高速节点购买：v1.mk/vip 2
+      - England-A1-沪日
+      - 新加坡 01 HE
+      - India-C1-广港
+      - Germany-C2-莞港
+      - Japan-C3-广港
+      - 香港 02 电信/深港专线（2.5x）
+      - 美国 05 GIA CN2（1.3x）
+      - _CN_14
       - CN_1862 | 3.12Mb
-      - "@wbnet_🇷🇺_RU_438"
-      - "@wbnet_🇷🇺_RU_466"
-      - 美国-3.50MB/s(Youtube:不良林)
-      - 韩国2-tg频道:@ripaojiedian
-      - "@wbnet_🇷🇺_RU_456"
-      - US_4258 | 9.76Mb
-      - "@wbnet_🇷🇺_RU_436"
-      - "@wbnet_🇷🇺_RU_458"
-      - "@wbnet_🇳🇱_NL_770"
-      - "@wbnet_🇷🇺_RU_618"
-      - "@wbnet_🇳🇱_NL_768"
-      - _1430 | 2.28Mb
-      - _油管频道：最网最强白嫖
-      - _1434 | 3.34Mb
-      - US_2102 |17.20Mb
+      - CN-高速节点购买：v1.mk/vip
+      - _CN_n523_128
+      - _CN_n523_138
+      - _CN_n523_124
+      - _CN_n523_108
+      - _CN_n523_127
+      - _CN_24
+      - _CN_n523_137
+      - 欢迎使用Welink345 请定期更新订阅
+      - 日本 01 电信/沪日专线（3x）
+      - 香港 11 HKBN家宽（0.1x）
+      - 日本 10 IIJ
+      - 日本 02 电信/沪日专线（3x）
+      - _US_n523_303
+      - 日本 12 IIJ IPv6
+      - _US_美国->🇸🇬_SG_新加坡
+      - JP_678_31.59Mb |16.31Mb
+      - _US_n523_305
+      - 香港 12 NTT IPv6
+      - Relay_🇯🇵JP-🇯🇵JP_793
+      - CN_1936 | 9.22Mb
+      - BGP-01-香港-多地优化
+      - 日本 18 IIJ
+      - SG_2931 |22.79Mb
+      - 日本 16 IIJ
+      - 美国-249.8KB/s(Youtube:不良林)
+      - _US_n523_89
+      - Relay_🇺🇸US-🇺🇸US_3076
       - _515 | 8.23Mb
-      - "@wbnet_🇨🇭_CH_632"
-      - "@wbnet_🇨🇭_CH_646"
+      - 澳大利亚 01 NTT IPv6
+      - US_3133
+      - bulink自建免费19线 三网
+      - America-A2
+      - n523_255
+      - "@wbnet_🇷🇺_RU_440"
+      - _CN_n523_132
+      - 日本2-tg频道:@ripaojiedian
+      - _HK_n523_90
+      - 美国2-tg频道:@ripaojiedian
+      - "@wbnet_🇷🇺_RU_442"
       - "@wbnet_🇷🇺_RU_426"
-      - "@wbnet_🇷🇺_RU_432"
-      - "@wbnet_🇳🇱_NL_307"
-      - "@wbnet_🇳🇱_NL_781"
-      - "@wbnet_🇳🇱_NL_742"
-      - "@wbnet_🇨🇭_CH_628"
-      - "@wbnet_🇨🇭_CH_630"
-      - "@wbnet_🇨🇭_CH_631"
-      - "@wbnet_🇨🇭_CH_636"
-      - "@wbnet_🇨🇭_CH_640"
-      - "@wbnet_🇨🇭_CH_661"
-      - "@wbnet_🇳🇱_NL_294"
-      - ｜NL｜荷兰｜openit.ml｜273
-      - _油管频道：最网最强白嫖 2
-      - _NL_荷兰_2598
+      - _1051 | 5.95Mb
+      - 美国-3.50MB/s(Youtube:不良林)
+      - _CN_n523_68
+      - _RU_俄罗斯联邦_1
+      - _CN_n523_130
+      - US_4258 | 9.76Mb
+      - "[负载均衡]韩国1"
+      - _691 | 2.08Mb
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 香港-tg频道:@ripaojiedian
+      - Singapore-C2-广港
+      - America-C1-沪港
+      - Canada-A1-广港
+      - 台湾 01 HiNet
+      - Singapore-C6-广港
+      - India-C1-广港
+      - Germany-C2-莞港
+      - Japan-C3-广港
+      - 香港 02 电信/深港专线（2.5x）
+      - 香港 11 HKBN家宽（0.1x）
+      - 香港 12 NTT IPv6
+      - BGP-01-香港-多地优化
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
+      - CN_1962 | 9.74Mb
+      - Australia-A1-沪日
+      - 日本3|中日链路|Netflix
+      - Japan-C2-沪日
+      - Japan-C1-沪日-流媒体解锁
+      - "[沪日]美国1"
+      - _CN_n523_275
+      - Singapore-C3-沪日
+      - _CN_n523_403
+      - Japan-C6-沪日
+      - Japan-C5-沪日
       - CN_1978 |82.50Mb
+      - Singapore-C4-沪日
+      - Germany-C1-沪日
       - CN_1960 |22.81Mb
+      - America-C4-沪日
       - CN_1961 |19.03Mb
+      - America-C6-沪日
+      - Japan-C4-沪日
+      - America-C3-沪日
+      - "[沪日]俄罗斯2"
+      - America-C5-沪日
       - CN_1951 |36.96Mb
       - CN_1975 | 3.03Mb
       - CN_1954 |16.59Mb
       - CN_1983 |15.96Mb
+      - 日本 08 IIJ
+      - Singapore-C2-广港
+      - Norway-C1-沪日
       - CN_1956 |13.55Mb
       - CN_1962 |26.09Mb
       - CN_1966 |19.67Mb
-      - 香港-tg频道:@ripaojiedian
+      - America-C1-沪港
+      - Canada-A1-广港
+      - HK_2437 |16.32Mb
+      - 台湾 01 HiNet
       - US_3059
+      - Singapore-C6-广港
       - CN_1984 |11.19Mb
+      - Singapore-C5-佛电
       - _576 |68.93Mb
-      - CN-高速节点购买：v1.mk/vip
-      - CN_1859 | 8.32Mb
-      - _548 | 9.45Mb
-      - _油管频道：全网最强白嫖
-      - _536 |13.26Mb
-      - _285 |15.12Mb
-      - _youtube：全网最强白嫖
-      - _1461 | 4.63Mb
-      - CN_1941 | 3.90Mb
-      - 首尔-tg频道:@ripaojiedian
-      - CN_1936 | 9.22Mb
-      - 翻墙党fanqiangdang.com
-      - Relay_🇺🇸US-🇺🇸US_3076
-      - "@wbnet_🇷🇺_RU_442"
-      - _633
-      - CN-高速节点购买：v1.mk/vip 2
+      - England-A1-沪日
+      - 新加坡 01 HE
+      - India-C1-广港
+      - Germany-C2-莞港
+      - Japan-C3-广港
+      - 香港 02 电信/深港专线（2.5x）
+      - 美国 05 GIA CN2（1.3x）
+      - _CN_14
       - CN_1862 | 3.12Mb
-      - "@wbnet_🇷🇺_RU_438"
-      - "@wbnet_🇷🇺_RU_466"
-      - 美国-3.50MB/s(Youtube:不良林)
-      - 韩国2-tg频道:@ripaojiedian
-      - "@wbnet_🇷🇺_RU_456"
-      - US_4258 | 9.76Mb
-      - "@wbnet_🇷🇺_RU_436"
-      - "@wbnet_🇷🇺_RU_458"
-      - "@wbnet_🇳🇱_NL_770"
-      - "@wbnet_🇷🇺_RU_618"
-      - "@wbnet_🇳🇱_NL_768"
-      - _1430 | 2.28Mb
-      - _油管频道：最网最强白嫖
-      - _1434 | 3.34Mb
-      - US_2102 |17.20Mb
+      - CN-高速节点购买：v1.mk/vip
+      - _CN_n523_128
+      - _CN_n523_138
+      - _CN_n523_124
+      - _CN_n523_108
+      - _CN_n523_127
+      - _CN_24
+      - _CN_n523_137
+      - 欢迎使用Welink345 请定期更新订阅
+      - 日本 01 电信/沪日专线（3x）
+      - 香港 11 HKBN家宽（0.1x）
+      - 日本 10 IIJ
+      - 日本 02 电信/沪日专线（3x）
+      - _US_n523_303
+      - 日本 12 IIJ IPv6
+      - _US_美国->🇸🇬_SG_新加坡
+      - JP_678_31.59Mb |16.31Mb
+      - _US_n523_305
+      - 香港 12 NTT IPv6
+      - Relay_🇯🇵JP-🇯🇵JP_793
+      - CN_1936 | 9.22Mb
+      - BGP-01-香港-多地优化
+      - 日本 18 IIJ
+      - SG_2931 |22.79Mb
+      - 日本 16 IIJ
+      - 美国-249.8KB/s(Youtube:不良林)
+      - _US_n523_89
+      - Relay_🇺🇸US-🇺🇸US_3076
       - _515 | 8.23Mb
-      - "@wbnet_🇨🇭_CH_632"
-      - "@wbnet_🇨🇭_CH_646"
+      - 澳大利亚 01 NTT IPv6
+      - US_3133
+      - bulink自建免费19线 三网
+      - America-A2
+      - n523_255
+      - "@wbnet_🇷🇺_RU_440"
+      - _CN_n523_132
+      - 日本2-tg频道:@ripaojiedian
+      - _HK_n523_90
+      - 美国2-tg频道:@ripaojiedian
+      - "@wbnet_🇷🇺_RU_442"
       - "@wbnet_🇷🇺_RU_426"
-      - "@wbnet_🇷🇺_RU_432"
-      - "@wbnet_🇳🇱_NL_307"
-      - "@wbnet_🇳🇱_NL_781"
-      - "@wbnet_🇳🇱_NL_742"
-      - "@wbnet_🇨🇭_CH_628"
-      - "@wbnet_🇨🇭_CH_630"
-      - "@wbnet_🇨🇭_CH_631"
-      - "@wbnet_🇨🇭_CH_636"
-      - "@wbnet_🇨🇭_CH_640"
-      - "@wbnet_🇨🇭_CH_661"
-      - "@wbnet_🇳🇱_NL_294"
-      - ｜NL｜荷兰｜openit.ml｜273
-      - _油管频道：最网最强白嫖 2
-      - _NL_荷兰_2598
+      - _1051 | 5.95Mb
+      - 美国-3.50MB/s(Youtube:不良林)
+      - _CN_n523_68
+      - _RU_俄罗斯联邦_1
+      - _CN_n523_130
+      - US_4258 | 9.76Mb
+      - "[负载均衡]韩国1"
+      - _691 | 2.08Mb
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
+      - CN_1962 | 9.74Mb
+      - Australia-A1-沪日
+      - 日本3|中日链路|Netflix
+      - Japan-C2-沪日
+      - Japan-C1-沪日-流媒体解锁
+      - "[沪日]美国1"
+      - _CN_n523_275
+      - Singapore-C3-沪日
+      - _CN_n523_403
+      - Japan-C6-沪日
+      - Japan-C5-沪日
       - CN_1978 |82.50Mb
+      - Singapore-C4-沪日
+      - Germany-C1-沪日
       - CN_1960 |22.81Mb
+      - America-C4-沪日
       - CN_1961 |19.03Mb
+      - America-C6-沪日
+      - Japan-C4-沪日
+      - America-C3-沪日
+      - "[沪日]俄罗斯2"
+      - America-C5-沪日
       - CN_1951 |36.96Mb
       - CN_1975 | 3.03Mb
       - CN_1954 |16.59Mb
       - CN_1983 |15.96Mb
+      - 日本 08 IIJ
+      - Singapore-C2-广港
+      - Norway-C1-沪日
       - CN_1956 |13.55Mb
       - CN_1962 |26.09Mb
       - CN_1966 |19.67Mb
-      - 香港-tg频道:@ripaojiedian
+      - America-C1-沪港
+      - Canada-A1-广港
+      - HK_2437 |16.32Mb
+      - 台湾 01 HiNet
       - US_3059
+      - Singapore-C6-广港
       - CN_1984 |11.19Mb
+      - Singapore-C5-佛电
       - _576 |68.93Mb
-      - CN-高速节点购买：v1.mk/vip
-      - CN_1859 | 8.32Mb
-      - _548 | 9.45Mb
-      - _油管频道：全网最强白嫖
-      - _536 |13.26Mb
-      - _285 |15.12Mb
-      - _youtube：全网最强白嫖
-      - _1461 | 4.63Mb
-      - CN_1941 | 3.90Mb
-      - 首尔-tg频道:@ripaojiedian
-      - CN_1936 | 9.22Mb
-      - 翻墙党fanqiangdang.com
-      - Relay_🇺🇸US-🇺🇸US_3076
-      - "@wbnet_🇷🇺_RU_442"
-      - _633
-      - CN-高速节点购买：v1.mk/vip 2
+      - England-A1-沪日
+      - 新加坡 01 HE
+      - India-C1-广港
+      - Germany-C2-莞港
+      - Japan-C3-广港
+      - 香港 02 电信/深港专线（2.5x）
+      - 美国 05 GIA CN2（1.3x）
+      - _CN_14
       - CN_1862 | 3.12Mb
-      - "@wbnet_🇷🇺_RU_438"
-      - "@wbnet_🇷🇺_RU_466"
-      - 美国-3.50MB/s(Youtube:不良林)
-      - 韩国2-tg频道:@ripaojiedian
-      - "@wbnet_🇷🇺_RU_456"
-      - US_4258 | 9.76Mb
-      - "@wbnet_🇷🇺_RU_436"
-      - "@wbnet_🇷🇺_RU_458"
-      - "@wbnet_🇳🇱_NL_770"
-      - "@wbnet_🇷🇺_RU_618"
-      - "@wbnet_🇳🇱_NL_768"
-      - _1430 | 2.28Mb
-      - _油管频道：最网最强白嫖
-      - _1434 | 3.34Mb
-      - US_2102 |17.20Mb
+      - CN-高速节点购买：v1.mk/vip
+      - _CN_n523_128
+      - _CN_n523_138
+      - _CN_n523_124
+      - _CN_n523_108
+      - _CN_n523_127
+      - _CN_24
+      - _CN_n523_137
+      - 欢迎使用Welink345 请定期更新订阅
+      - 日本 01 电信/沪日专线（3x）
+      - 香港 11 HKBN家宽（0.1x）
+      - 日本 10 IIJ
+      - 日本 02 电信/沪日专线（3x）
+      - _US_n523_303
+      - 日本 12 IIJ IPv6
+      - _US_美国->🇸🇬_SG_新加坡
+      - JP_678_31.59Mb |16.31Mb
+      - _US_n523_305
+      - 香港 12 NTT IPv6
+      - Relay_🇯🇵JP-🇯🇵JP_793
+      - CN_1936 | 9.22Mb
+      - BGP-01-香港-多地优化
+      - 日本 18 IIJ
+      - SG_2931 |22.79Mb
+      - 日本 16 IIJ
+      - 美国-249.8KB/s(Youtube:不良林)
+      - _US_n523_89
+      - Relay_🇺🇸US-🇺🇸US_3076
       - _515 | 8.23Mb
-      - "@wbnet_🇨🇭_CH_632"
-      - "@wbnet_🇨🇭_CH_646"
+      - 澳大利亚 01 NTT IPv6
+      - US_3133
+      - bulink自建免费19线 三网
+      - America-A2
+      - n523_255
+      - "@wbnet_🇷🇺_RU_440"
+      - _CN_n523_132
+      - 日本2-tg频道:@ripaojiedian
+      - _HK_n523_90
+      - 美国2-tg频道:@ripaojiedian
+      - "@wbnet_🇷🇺_RU_442"
       - "@wbnet_🇷🇺_RU_426"
-      - "@wbnet_🇷🇺_RU_432"
-      - "@wbnet_🇳🇱_NL_307"
-      - "@wbnet_🇳🇱_NL_781"
-      - "@wbnet_🇳🇱_NL_742"
-      - "@wbnet_🇨🇭_CH_628"
-      - "@wbnet_🇨🇭_CH_630"
-      - "@wbnet_🇨🇭_CH_631"
-      - "@wbnet_🇨🇭_CH_636"
-      - "@wbnet_🇨🇭_CH_640"
-      - "@wbnet_🇨🇭_CH_661"
-      - "@wbnet_🇳🇱_NL_294"
-      - ｜NL｜荷兰｜openit.ml｜273
-      - _油管频道：最网最强白嫖 2
-      - _NL_荷兰_2598
+      - _1051 | 5.95Mb
+      - 美国-3.50MB/s(Youtube:不良林)
+      - _CN_n523_68
+      - _RU_俄罗斯联邦_1
+      - _CN_n523_130
+      - US_4258 | 9.76Mb
+      - "[负载均衡]韩国1"
+      - _691 | 2.08Mb
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - CN_1962 | 9.74Mb
+      - Australia-A1-沪日
+      - 日本3|中日链路|Netflix
+      - Japan-C2-沪日
+      - Japan-C1-沪日-流媒体解锁
+      - "[沪日]美国1"
+      - _CN_n523_275
+      - Singapore-C3-沪日
+      - _CN_n523_403
+      - Japan-C6-沪日
+      - Japan-C5-沪日
       - CN_1978 |82.50Mb
+      - Singapore-C4-沪日
+      - Germany-C1-沪日
       - CN_1960 |22.81Mb
+      - America-C4-沪日
       - CN_1961 |19.03Mb
+      - America-C6-沪日
+      - Japan-C4-沪日
+      - America-C3-沪日
+      - "[沪日]俄罗斯2"
+      - America-C5-沪日
       - CN_1951 |36.96Mb
       - CN_1975 | 3.03Mb
       - CN_1954 |16.59Mb
       - CN_1983 |15.96Mb
+      - 日本 08 IIJ
+      - Singapore-C2-广港
+      - Norway-C1-沪日
       - CN_1956 |13.55Mb
       - CN_1962 |26.09Mb
       - CN_1966 |19.67Mb
-      - 香港-tg频道:@ripaojiedian
+      - America-C1-沪港
+      - Canada-A1-广港
+      - HK_2437 |16.32Mb
+      - 台湾 01 HiNet
       - US_3059
+      - Singapore-C6-广港
       - CN_1984 |11.19Mb
+      - Singapore-C5-佛电
       - _576 |68.93Mb
-      - CN-高速节点购买：v1.mk/vip
-      - CN_1859 | 8.32Mb
-      - _548 | 9.45Mb
-      - _油管频道：全网最强白嫖
-      - _536 |13.26Mb
-      - _285 |15.12Mb
-      - _youtube：全网最强白嫖
-      - _1461 | 4.63Mb
-      - CN_1941 | 3.90Mb
-      - 首尔-tg频道:@ripaojiedian
-      - CN_1936 | 9.22Mb
-      - 翻墙党fanqiangdang.com
-      - Relay_🇺🇸US-🇺🇸US_3076
-      - "@wbnet_🇷🇺_RU_442"
-      - _633
-      - CN-高速节点购买：v1.mk/vip 2
+      - England-A1-沪日
+      - 新加坡 01 HE
+      - India-C1-广港
+      - Germany-C2-莞港
+      - Japan-C3-广港
+      - 香港 02 电信/深港专线（2.5x）
+      - 美国 05 GIA CN2（1.3x）
+      - _CN_14
       - CN_1862 | 3.12Mb
-      - "@wbnet_🇷🇺_RU_438"
-      - "@wbnet_🇷🇺_RU_466"
-      - 美国-3.50MB/s(Youtube:不良林)
-      - 韩国2-tg频道:@ripaojiedian
-      - "@wbnet_🇷🇺_RU_456"
-      - US_4258 | 9.76Mb
-      - "@wbnet_🇷🇺_RU_436"
-      - "@wbnet_🇷🇺_RU_458"
-      - "@wbnet_🇳🇱_NL_770"
-      - "@wbnet_🇷🇺_RU_618"
-      - "@wbnet_🇳🇱_NL_768"
-      - _1430 | 2.28Mb
-      - _油管频道：最网最强白嫖
-      - _1434 | 3.34Mb
-      - US_2102 |17.20Mb
+      - CN-高速节点购买：v1.mk/vip
+      - _CN_n523_128
+      - _CN_n523_138
+      - _CN_n523_124
+      - _CN_n523_108
+      - _CN_n523_127
+      - _CN_24
+      - _CN_n523_137
+      - 欢迎使用Welink345 请定期更新订阅
+      - 日本 01 电信/沪日专线（3x）
+      - 香港 11 HKBN家宽（0.1x）
+      - 日本 10 IIJ
+      - 日本 02 电信/沪日专线（3x）
+      - _US_n523_303
+      - 日本 12 IIJ IPv6
+      - _US_美国->🇸🇬_SG_新加坡
+      - JP_678_31.59Mb |16.31Mb
+      - _US_n523_305
+      - 香港 12 NTT IPv6
+      - Relay_🇯🇵JP-🇯🇵JP_793
+      - CN_1936 | 9.22Mb
+      - BGP-01-香港-多地优化
+      - 日本 18 IIJ
+      - SG_2931 |22.79Mb
+      - 日本 16 IIJ
+      - 美国-249.8KB/s(Youtube:不良林)
+      - _US_n523_89
+      - Relay_🇺🇸US-🇺🇸US_3076
       - _515 | 8.23Mb
-      - "@wbnet_🇨🇭_CH_632"
-      - "@wbnet_🇨🇭_CH_646"
+      - 澳大利亚 01 NTT IPv6
+      - US_3133
+      - bulink自建免费19线 三网
+      - America-A2
+      - n523_255
+      - "@wbnet_🇷🇺_RU_440"
+      - _CN_n523_132
+      - 日本2-tg频道:@ripaojiedian
+      - _HK_n523_90
+      - 美国2-tg频道:@ripaojiedian
+      - "@wbnet_🇷🇺_RU_442"
       - "@wbnet_🇷🇺_RU_426"
-      - "@wbnet_🇷🇺_RU_432"
-      - "@wbnet_🇳🇱_NL_307"
-      - "@wbnet_🇳🇱_NL_781"
-      - "@wbnet_🇳🇱_NL_742"
-      - "@wbnet_🇨🇭_CH_628"
-      - "@wbnet_🇨🇭_CH_630"
-      - "@wbnet_🇨🇭_CH_631"
-      - "@wbnet_🇨🇭_CH_636"
-      - "@wbnet_🇨🇭_CH_640"
-      - "@wbnet_🇨🇭_CH_661"
-      - "@wbnet_🇳🇱_NL_294"
-      - ｜NL｜荷兰｜openit.ml｜273
-      - _油管频道：最网最强白嫖 2
-      - _NL_荷兰_2598
+      - _1051 | 5.95Mb
+      - 美国-3.50MB/s(Youtube:不良林)
+      - _CN_n523_68
+      - _RU_俄罗斯联邦_1
+      - _CN_n523_130
+      - US_4258 | 9.76Mb
+      - "[负载均衡]韩国1"
+      - _691 | 2.08Mb
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -589,70 +880,105 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - CN_1962 | 9.74Mb
+      - Australia-A1-沪日
+      - 日本3|中日链路|Netflix
+      - Japan-C2-沪日
+      - Japan-C1-沪日-流媒体解锁
+      - "[沪日]美国1"
+      - _CN_n523_275
+      - Singapore-C3-沪日
+      - _CN_n523_403
+      - Japan-C6-沪日
+      - Japan-C5-沪日
       - CN_1978 |82.50Mb
+      - Singapore-C4-沪日
+      - Germany-C1-沪日
       - CN_1960 |22.81Mb
+      - America-C4-沪日
       - CN_1961 |19.03Mb
+      - America-C6-沪日
+      - Japan-C4-沪日
+      - America-C3-沪日
+      - "[沪日]俄罗斯2"
+      - America-C5-沪日
       - CN_1951 |36.96Mb
       - CN_1975 | 3.03Mb
       - CN_1954 |16.59Mb
       - CN_1983 |15.96Mb
+      - 日本 08 IIJ
+      - Singapore-C2-广港
+      - Norway-C1-沪日
       - CN_1956 |13.55Mb
       - CN_1962 |26.09Mb
       - CN_1966 |19.67Mb
-      - 香港-tg频道:@ripaojiedian
+      - America-C1-沪港
+      - Canada-A1-广港
+      - HK_2437 |16.32Mb
+      - 台湾 01 HiNet
       - US_3059
+      - Singapore-C6-广港
       - CN_1984 |11.19Mb
+      - Singapore-C5-佛电
       - _576 |68.93Mb
-      - CN-高速节点购买：v1.mk/vip
-      - CN_1859 | 8.32Mb
-      - _548 | 9.45Mb
-      - _油管频道：全网最强白嫖
-      - _536 |13.26Mb
-      - _285 |15.12Mb
-      - _youtube：全网最强白嫖
-      - _1461 | 4.63Mb
-      - CN_1941 | 3.90Mb
-      - 首尔-tg频道:@ripaojiedian
-      - CN_1936 | 9.22Mb
-      - 翻墙党fanqiangdang.com
-      - Relay_🇺🇸US-🇺🇸US_3076
-      - "@wbnet_🇷🇺_RU_442"
-      - _633
-      - CN-高速节点购买：v1.mk/vip 2
+      - England-A1-沪日
+      - 新加坡 01 HE
+      - India-C1-广港
+      - Germany-C2-莞港
+      - Japan-C3-广港
+      - 香港 02 电信/深港专线（2.5x）
+      - 美国 05 GIA CN2（1.3x）
+      - _CN_14
       - CN_1862 | 3.12Mb
-      - "@wbnet_🇷🇺_RU_438"
-      - "@wbnet_🇷🇺_RU_466"
-      - 美国-3.50MB/s(Youtube:不良林)
-      - 韩国2-tg频道:@ripaojiedian
-      - "@wbnet_🇷🇺_RU_456"
-      - US_4258 | 9.76Mb
-      - "@wbnet_🇷🇺_RU_436"
-      - "@wbnet_🇷🇺_RU_458"
-      - "@wbnet_🇳🇱_NL_770"
-      - "@wbnet_🇷🇺_RU_618"
-      - "@wbnet_🇳🇱_NL_768"
-      - _1430 | 2.28Mb
-      - _油管频道：最网最强白嫖
-      - _1434 | 3.34Mb
-      - US_2102 |17.20Mb
+      - CN-高速节点购买：v1.mk/vip
+      - _CN_n523_128
+      - _CN_n523_138
+      - _CN_n523_124
+      - _CN_n523_108
+      - _CN_n523_127
+      - _CN_24
+      - _CN_n523_137
+      - 欢迎使用Welink345 请定期更新订阅
+      - 日本 01 电信/沪日专线（3x）
+      - 香港 11 HKBN家宽（0.1x）
+      - 日本 10 IIJ
+      - 日本 02 电信/沪日专线（3x）
+      - _US_n523_303
+      - 日本 12 IIJ IPv6
+      - _US_美国->🇸🇬_SG_新加坡
+      - JP_678_31.59Mb |16.31Mb
+      - _US_n523_305
+      - 香港 12 NTT IPv6
+      - Relay_🇯🇵JP-🇯🇵JP_793
+      - CN_1936 | 9.22Mb
+      - BGP-01-香港-多地优化
+      - 日本 18 IIJ
+      - SG_2931 |22.79Mb
+      - 日本 16 IIJ
+      - 美国-249.8KB/s(Youtube:不良林)
+      - _US_n523_89
+      - Relay_🇺🇸US-🇺🇸US_3076
       - _515 | 8.23Mb
-      - "@wbnet_🇨🇭_CH_632"
-      - "@wbnet_🇨🇭_CH_646"
+      - 澳大利亚 01 NTT IPv6
+      - US_3133
+      - bulink自建免费19线 三网
+      - America-A2
+      - n523_255
+      - "@wbnet_🇷🇺_RU_440"
+      - _CN_n523_132
+      - 日本2-tg频道:@ripaojiedian
+      - _HK_n523_90
+      - 美国2-tg频道:@ripaojiedian
+      - "@wbnet_🇷🇺_RU_442"
       - "@wbnet_🇷🇺_RU_426"
-      - "@wbnet_🇷🇺_RU_432"
-      - "@wbnet_🇳🇱_NL_307"
-      - "@wbnet_🇳🇱_NL_781"
-      - "@wbnet_🇳🇱_NL_742"
-      - "@wbnet_🇨🇭_CH_628"
-      - "@wbnet_🇨🇭_CH_630"
-      - "@wbnet_🇨🇭_CH_631"
-      - "@wbnet_🇨🇭_CH_636"
-      - "@wbnet_🇨🇭_CH_640"
-      - "@wbnet_🇨🇭_CH_661"
-      - "@wbnet_🇳🇱_NL_294"
-      - ｜NL｜荷兰｜openit.ml｜273
-      - _油管频道：最网最强白嫖 2
-      - _NL_荷兰_2598
+      - _1051 | 5.95Mb
+      - 美国-3.50MB/s(Youtube:不良林)
+      - _CN_n523_68
+      - _RU_俄罗斯联邦_1
+      - _CN_n523_130
+      - US_4258 | 9.76Mb
+      - "[负载均衡]韩国1"
+      - _691 | 2.08Mb
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
