@@ -5,463 +5,331 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 日本 02|AzureCloud|大阪|1.0, server: bilibili.hzyd.bili.cat, port: 20001, type: vmess, uuid: a7bf7513-c9de-3d77-9a03-644389baf14b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /soda, headers: {Host: bilibili.hzyd.bili.cat}}, udp: true}
-  - {name: "深港专线5[倍率:2.5]", server: 42.157.196.243, port: 54164, type: ss, cipher: chacha20-ietf, password: NBrsJn, udp: true}
-  - {name: _CN_n_10, server: south-ingress.from.element.mxnodes.cc, port: 20941, type: ss, cipher: aes-256-gcm, password: 26685757-d050-41a7-a200-d044229c28be, udp: true}
-  - {name: _CN_n_39, server: south-ingress.from.element.mxnodes.cc, port: 20942, type: ss, cipher: aes-256-gcm, password: 26685757-d050-41a7-a200-d044229c28be, udp: true}
-  - {name: "深港专线4[倍率:2.5]", server: 42.157.196.245, port: 54164, type: ss, cipher: chacha20-ietf, password: NBrsJn, udp: true}
-  - {name: "广东移动转台湾HiNet[M][倍率:1]", server: 120.233.185.84, port: 24163, type: ss, cipher: chacha20-ietf, password: NBrsJn, udp: true}
-  - {name: "深港专线转香港HGC商宽8[倍率:2.5]", server: 42.157.196.249, port: 54164, type: ss, cipher: chacha20-ietf, password: NBrsJn, udp: true}
-  - {name: _CN_n523_403, server: sxqxj.cn, port: 2164, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ws, headers: {Host: sxqxj.cn}}, udp: true}
-  - {name: "湖南联通转日本NTT[倍率:0.8]", server: 116.129.254.5, port: 4569, type: ss, cipher: chacha20-ietf, password: 4EyS3nbpwetIJvPQ, plugin: obfs, plugin-opts: {mode: http, host: 663a437393.microsoft.com}, udp: true}
-  - {name: "深港专线转香港HGC商宽7[倍率:2.5]", server: 42.157.196.246, port: 24163, type: ss, cipher: chacha20-ietf, password: NBrsJn, udp: true}
-  - {name: _油管频道：全网最强白嫖, server: 117.28.242.156, port: 2164, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ws, headers: {Host: sxqxj.cn}}, udp: true}
-  - {name: "长沙联通转台湾HiNet2[倍率:1]", server: 116.129.253.131, port: 54164, type: ss, cipher: chacha20-ietf, password: NBrsJn, udp: true}
-  - {name: _1544 |39.60Mb, server: 116.129.254.29, port: 3389, type: trojan, password: e37c6d7efa845d60, skip-cert-verify: true, udp: true}
-  - {name: "长沙联通转香港icable[M][倍率:0.9]", server: 116.129.253.141, port: 24163, type: ss, cipher: chacha20-ietf, password: NBrsJn, udp: true}
-  - {name: "广州移动转台湾HiNet[M][倍率:1]", server: 120.233.185.99, port: 4569, type: ss, cipher: chacha20-ietf, password: 4EyS3nbpwetIJvPQ, plugin: obfs, plugin-opts: {mode: http, host: 663a437393.microsoft.com}, udp: true}
-  - {name: "广东移动转香港HKT[M][倍率:0.9]", server: 120.233.185.87, port: 24163, type: ss, cipher: chacha20-ietf, password: NBrsJn, udp: true}
-  - {name: _1539 |54.57Mb, server: 116.129.254.29, port: 3389, type: trojan, password: a170b44c2dfac9e6, skip-cert-verify: true, udp: true}
-  - {name: _1538 |47.55Mb, server: 116.129.254.47, port: 3389, type: trojan, password: a170b44c2dfac9e6, skip-cert-verify: true, udp: true}
+  - {name: 韩国首尔-tg频道:@ripaojiedian, server: zf3.qimengsdf.ml, port: 49996, type: vmess, uuid: 96b5a34b-55e8-40a4-85ba-1f7ba208d43e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: CN_387 | 9.27Mb, server: 117.28.242.156, port: 2164, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ws}, udp: true}
-  - {name: "长沙联通转日本NTT[M][倍率:0.8]", server: 116.129.253.138, port: 54164, type: ss, cipher: chacha20-ietf, password: NBrsJn, udp: true}
-  - {name: "长沙联通转香港NTT[倍率:0.8]", server: 116.129.253.139, port: 54164, type: ss, cipher: chacha20-ietf, password: NBrsJn, udp: true}
-  - {name: "长沙联通转日本NTT5[倍率:0.8]", server: 116.129.253.160, port: 24163, type: ss, cipher: chacha20-ietf, password: NBrsJn, udp: true}
-  - {name: "湖南联通转美国Cera2[倍率:0.8]", server: 116.129.254.13, port: 24163, type: ss, cipher: chacha20-ietf, password: NBrsJn, udp: true}
-  - {name: "长沙联通转日本NTT2[M][倍率:0.8]", server: 116.129.253.138, port: 24163, type: ss, cipher: chacha20-ietf, password: NBrsJn, udp: true}
-  - {name: _1542 |20.09Mb, server: 116.129.254.47, port: 3389, type: trojan, password: e37c6d7efa845d60, skip-cert-verify: true, udp: true}
-  - {name: "湖南联通转香港HKT2[M][倍率:0.9]", server: 116.129.254.25, port: 24163, type: ss, cipher: chacha20-ietf, password: NBrsJn, udp: true}
-  - {name: "广州移动转香港NTT3[倍率:0.9]", server: 120.233.185.97, port: 24163, type: ss, cipher: chacha20-ietf, password: NBrsJn, udp: true}
-  - {name: "湖南联通转日本NTT3[M][倍率:0.8]", server: 116.129.254.16, port: 24163, type: ss, cipher: chacha20-ietf, password: NBrsJn, udp: true}
-  - {name: 香港 02|HKT-GT|尖沙咀区|1.0, server: ddns.cscncu.paolu.icu, port: 19113, type: vmess, uuid: a7bf7513-c9de-3d77-9a03-644389baf14b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /soda, headers: {Host: ddns.cscncu.paolu.icu}}, udp: true}
-  - {name: CN_1997 |48.14Mb, server: 116.129.254.29, port: 3389, type: trojan, password: f6f2072a2e4cfc91, skip-cert-verify: true, udp: true}
-  - {name: "广东移动转日本NTT[倍率:0.8]", server: 120.233.185.88, port: 54164, type: ss, cipher: chacha20-ietf, password: NBrsJn, udp: true}
-  - {name: "长沙联通转日本NTT3[M][倍率:0.8]", server: 116.129.253.149, port: 54164, type: ss, cipher: chacha20-ietf, password: NBrsJn, udp: true}
-  - {name: "湖南联通转美国DP[M][倍率:0.8]", server: 116.129.254.12, port: 24163, type: ss, cipher: chacha20-ietf, password: NBrsJn, udp: true}
-  - {name: "深港专线转香港HGC商宽6[倍率:2.5]", server: 42.157.196.194, port: 54164, type: ss, cipher: chacha20-ietf, password: NBrsJn, udp: true}
-  - {name: _CN_n523_275, server: sxqxj.cn, port: 2164, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ws, headers: {Host: sxqxj.cn}}, udp: true}
-  - {name: "广州移动转香港NTT[倍率:0.8]", server: 120.233.185.99, port: 65520, type: ss, cipher: chacha20-ietf, password: 4EyS3nbpwetIJvPQ, plugin: obfs, plugin-opts: {mode: http, host: 663a437393.microsoft.com}, udp: true}
-  - {name: 韩国 04|한국|Microsoft|釜山|1.0, server: ddns.cscncu.paolu.icu, port: 16790, type: vmess, uuid: a7bf7513-c9de-3d77-9a03-644389baf14b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /soda, headers: {Host: ddns.cscncu.paolu.icu}}, udp: true}
-  - {name: "长沙联通转韩国NTT[倍率:1]", server: 116.129.253.148, port: 24163, type: ss, cipher: chacha20-ietf, password: NBrsJn, udp: true}
-  - {name: "湖南联通转德国HE[倍率:0.8]", server: 116.129.254.12, port: 54164, type: ss, cipher: chacha20-ietf, password: NBrsJn, udp: true}
-  - {name: "深港专线转香港Azure[倍率:2.5]", server: 42.157.196.249, port: 24163, type: ss, cipher: chacha20-ietf, password: NBrsJn, udp: true}
-  - {name: "长沙联通转日本NTT4[倍率:0.8]", server: 116.129.253.193, port: 65520, type: ss, cipher: chacha20-ietf, password: 4EyS3nbpwetIJvPQ, plugin: obfs, plugin-opts: {mode: http, host: 663a437393.microsoft.com}, udp: true}
-  - {name: "湖南联通转日本Azure[倍率:1]", server: 116.129.254.13, port: 54164, type: ss, cipher: chacha20-ietf, password: NBrsJn, udp: true}
-  - {name: 香港07 @BPJC_Group, server: bbbbbbppppppjchongkong01.zztcloud.xyz, port: 40057, type: trojan, password: 0eda8c72-2388-4981-980a-b9be087ee8ec, sni: bbbbbbppppppjchongkong01.zztcloud.xyz, skip-cert-verify: true, udp: true}
-  - {name: 香港|V2Ray|流媒体解锁, server: 120.232.190.78, port: 30013, type: vmess, uuid: 75988c53-4f2e-3083-99d4-a2cc768b67b2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /ws, headers: {Host: 120.232.190.78}}, udp: true}
-  - {name: "湖南联通转香港HKT3[M][倍率:0.9]", server: 116.129.254.16, port: 54164, type: ss, cipher: chacha20-ietf, password: NBrsJn, udp: true}
-  - {name: "长沙联通转美国DP[M][倍率:0.8]", server: 116.129.253.160, port: 54164, type: ss, cipher: chacha20-ietf, password: NBrsJn, udp: true}
-  - {name: "长沙联通转香港HKBN[倍率:0.9]", server: 116.129.253.137, port: 54164, type: ss, cipher: chacha20-ietf, password: NBrsJn, udp: true}
-  - {name: "湖南联通转美国HE[倍率:0.8]", server: 116.129.254.5, port: 4566, type: ss, cipher: chacha20-ietf, password: 4EyS3nbpwetIJvPQ, plugin: obfs, plugin-opts: {mode: http, host: 663a437393.microsoft.com}, udp: true}
-  - {name: "湖南联通转香港Azure2[倍率:0.9]", server: 116.129.254.15, port: 54164, type: ss, cipher: chacha20-ietf, password: NBrsJn, udp: true}
-  - {name: "长沙联通转香港HKT17[M][倍率:0.9]", server: 116.129.253.149, port: 24163, type: ss, cipher: chacha20-ietf, password: NBrsJn, udp: true}
-  - {name: "广东移动转日本Webarena2[倍率:0.8]", server: 120.233.185.82, port: 24163, type: ss, cipher: chacha20-ietf, password: NBrsJn, udp: true}
-  - {name: "广州移动转香港AWS[倍率:0.9]", server: 120.233.185.92, port: 54164, type: ss, cipher: chacha20-ietf, password: NBrsJn, udp: true}
-  - {name: "广州移动转韩国NTT[倍率:0.8]", server: 120.233.185.99, port: 65521, type: ss, cipher: chacha20-ietf, password: 4EyS3nbpwetIJvPQ, plugin: obfs, plugin-opts: {mode: http, host: 663a437393.microsoft.com}, udp: true}
-  - {name: "深港专线转香港HGC商宽[倍率:2.5]", server: 42.157.196.247, port: 24163, type: ss, cipher: chacha20-ietf, password: NBrsJn, udp: true}
-  - {name: "广东移动转香港AWS[倍率:0.9]", server: 120.233.185.82, port: 54164, type: ss, cipher: chacha20-ietf, password: NBrsJn, udp: true}
-  - {name: _CN_n_68, server: cm-jm.okvpn.xyz, port: 20003, type: trojan, password: f42df431-2c52-4502-a572-694c41a4e4c9, sni: cm-jm.okvpn.xyz, skip-cert-verify: true, udp: true}
-  - {name: "长沙联通转美国HE[倍率:0.8]", server: 116.129.253.131, port: 24163, type: ss, cipher: chacha20-ietf, password: NBrsJn, udp: true}
-  - {name: 日本2-tg频道:@ripaojiedian, server: 120.233.187.199, port: 20014, type: trojan, password: 59845c5b-bf53-3fcf-acbd-f0c16986df73, sni: node.franxx.codes, skip-cert-verify: true, udp: true}
-  - {name: 香港06 @BPJC_Group, server: bbbbbbppppppjchongkong01.zztcloud.xyz, port: 40056, type: trojan, password: 0eda8c72-2388-4981-980a-b9be087ee8ec, sni: bbbbbbppppppjchongkong01.zztcloud.xyz, skip-cert-verify: true, udp: true}
-  - {name: SG A 001, server: hkaz1.xmrth-node.xyz, port: 16073, type: vmess, uuid: 0de48b14-07c6-3c8b-9fda-a7187c65c9f5, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /index, headers: {Host: www.baidu.com}}, udp: true}
-  - {name: "湖南联通转英国Azure[倍率:0.9]", server: 116.129.254.5, port: 4564, type: ss, cipher: chacha20-ietf, password: 4EyS3nbpwetIJvPQ, plugin: obfs, plugin-opts: {mode: http, host: 663a437393.microsoft.com}, udp: true}
-  - {name: CN_1985 |53.45Mb, server: 116.129.254.47, port: 3389, type: trojan, password: c3c448da2363a6f7, skip-cert-verify: true, udp: true}
-  - {name: 香港02 @BPJC_Group, server: bbbbbbppppppjchongkong01.zztcloud.xyz, port: 40052, type: trojan, password: 0eda8c72-2388-4981-980a-b9be087ee8ec, sni: bbbbbbppppppjchongkong01.zztcloud.xyz, skip-cert-verify: true, udp: true}
-  - {name: "湖南联通转香港Azure[倍率:0.9]", server: 116.129.254.5, port: 24163, type: ss, cipher: chacha20-ietf, password: NBrsJn, udp: true}
-  - {name: "湖南联通转韩国Azure[倍率:0.9]", server: 116.129.254.28, port: 24163, type: ss, cipher: chacha20-ietf, password: NBrsJn, udp: true}
-  - {name: _CN_n_33, server: w7.v2mmy.xyz, port: 44827, type: ss, cipher: aes-128-gcm, password: 85f09120-7a89-41f5-b284-6bdcf2e3ed17, udp: true}
-  - {name: "广东移动转香港NTT[倍率:0.8]", server: 120.233.185.83, port: 24163, type: ss, cipher: chacha20-ietf, password: NBrsJn, udp: true}
-  - {name: _CN_n_32, server: w3.v2mmy.xyz, port: 44816, type: ss, cipher: aes-128-gcm, password: 85f09120-7a89-41f5-b284-6bdcf2e3ed17, udp: true}
-  - {name: 香港08 @BPJC_Group, server: bbbbbbppppppjchongkong01.zztcloud.xyz, port: 40058, type: trojan, password: 0eda8c72-2388-4981-980a-b9be087ee8ec, sni: bbbbbbppppppjchongkong01.zztcloud.xyz, skip-cert-verify: true, udp: true}
-  - {name: _CN_n_49, server: w7.v2mmy.xyz, port: 44828, type: ss, cipher: aes-128-gcm, password: 85f09120-7a89-41f5-b284-6bdcf2e3ed17, udp: true}
-  - {name: "广东移动转马来西亚TM[M][倍率:1]", server: 120.233.185.86, port: 54164, type: ss, cipher: chacha20-ietf, password: NBrsJn, udp: true}
-  - {name: "深港专线转香港HGC[倍率:2.5]", server: 42.157.196.243, port: 24163, type: ss, cipher: chacha20-ietf, password: NBrsJn, udp: true}
-  - {name: 香港09 @BPJC_Group, server: bbbbbbppppppjchongkong01.zztcloud.xyz, port: 40059, type: trojan, password: 0eda8c72-2388-4981-980a-b9be087ee8ec, sni: bbbbbbppppppjchongkong01.zztcloud.xyz, skip-cert-verify: true, udp: true}
-  - {name: "广州移动转美国Azure[倍率:1]", server: 120.233.185.92, port: 24163, type: ss, cipher: chacha20-ietf, password: NBrsJn, udp: true}
-  - {name: _CN_n_59, server: cm-jm.okvpn.xyz, port: 20005, type: trojan, password: f42df431-2c52-4502-a572-694c41a4e4c9, sni: cm-jm.okvpn.xyz, skip-cert-verify: true, udp: true}
-  - {name: HK3|10G|WS, server: 20.24.84.244, port: 80, type: vmess, uuid: b5083ecf-adf8-4f1f-823d-70aafaad2007, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: "深港专线2[倍率:2.5]", server: 211.99.100.26, port: 24163, type: ss, cipher: chacha20-ietf, password: NBrsJn, udp: true}
-  - {name: 香港10 @BPJC_Group, server: bbbbbbppppppjchongkong01.zztcloud.xyz, port: 40060, type: trojan, password: c2a64d79-65ae-4818-89cf-c3060886cfcf, sni: bbbbbbppppppjchongkong01.zztcloud.xyz, skip-cert-verify: true, udp: true}
-  - {name: SG A 003, server: hkaz3.xmrth-node.xyz, port: 14389, type: vmess, uuid: 0de48b14-07c6-3c8b-9fda-a7187c65c9f5, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /index, headers: {Host: www.baidu.com}}, udp: true}
-  - {name: "长沙联通转香港Azure[倍率:1]", server: 116.129.253.193, port: 54164, type: ss, cipher: chacha20-ietf, password: NBrsJn, udp: true}
-  - {name: 香港03 @BPJC_Group, server: bbbbbbppppppjchongkong01.zztcloud.xyz, port: 40053, type: trojan, password: 0eda8c72-2388-4981-980a-b9be087ee8ec, sni: bbbbbbppppppjchongkong01.zztcloud.xyz, skip-cert-verify: true, udp: true}
-  - {name: SG A 005, server: hkaz5.xmrth-node.xyz, port: 15839, type: vmess, uuid: 0de48b14-07c6-3c8b-9fda-a7187c65c9f5, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /index, headers: {Host: www.baidu.com}}, udp: true}
-  - {name: "长沙联通转德国VU[倍率:0.8]", server: 116.129.253.193, port: 65521, type: ss, cipher: chacha20-ietf, password: 4EyS3nbpwetIJvPQ, plugin: obfs, plugin-opts: {mode: http, host: 663a437393.microsoft.com}, udp: true}
-  - {name: 香港04 @BPJC_Group, server: bbbbbbppppppjchongkong01.zztcloud.xyz, port: 40054, type: trojan, password: 0eda8c72-2388-4981-980a-b9be087ee8ec, sni: bbbbbbppppppjchongkong01.zztcloud.xyz, skip-cert-verify: true, udp: true}
-  - {name: 香港07 @BPJC_Group 2, server: bbbbbbppppppjchongkong01.zztcloud.xyz, port: 40057, type: trojan, password: c2a64d79-65ae-4818-89cf-c3060886cfcf, sni: bbbbbbppppppjchongkong01.zztcloud.xyz, skip-cert-verify: true, udp: true}
-  - {name: SG A 004, server: hkaz4.xmrth-node.xyz, port: 15380, type: vmess, uuid: 5200fa2b-dd65-3d98-81d5-c071ff0cbecb, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /index, headers: {Host: www.baidu.com}}, udp: true}
-  - {name: "广州移动转美国DP[M][倍率:0.8]", server: 120.233.185.95, port: 24163, type: ss, cipher: chacha20-ietf, password: NBrsJn, udp: true}
-  - {name: 香港01 电报群@BPJC_Group, server: bbbbbbppppppjchongkong01.zztcloud.xyz, port: 40051, type: trojan, password: 0eda8c72-2388-4981-980a-b9be087ee8ec, sni: bbbbbbppppppjchongkong01.zztcloud.xyz, skip-cert-verify: true, udp: true}
-  - {name: SG A 002, server: hkaz2.xmrth-node.xyz, port: 15437, type: vmess, uuid: 5200fa2b-dd65-3d98-81d5-c071ff0cbecb, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /index, headers: {Host: www.baidu.com}}, udp: true}
-  - {name: 香港03 @BPJC_Group 2, server: bbbbbbppppppjchongkong01.zztcloud.xyz, port: 40053, type: trojan, password: c2a64d79-65ae-4818-89cf-c3060886cfcf, sni: bbbbbbppppppjchongkong01.zztcloud.xyz, skip-cert-verify: true, udp: true}
-  - {name: SG A 004 2, server: hkaz4.xmrth-node.xyz, port: 15380, type: vmess, uuid: 0de48b14-07c6-3c8b-9fda-a7187c65c9f5, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /index, headers: {Host: www.baidu.com}}, udp: true}
-  - {name: "深港专线转香港HKTB[M][倍率:2.5]", server: 211.99.100.21, port: 4567, type: ss, cipher: chacha20-ietf, password: 4EyS3nbpwetIJvPQ, plugin: obfs, plugin-opts: {mode: http, host: 663a437393.microsoft.com}, udp: true}
-  - {name: 香港08 @BPJC_Group 2, server: bbbbbbppppppjchongkong01.zztcloud.xyz, port: 40058, type: trojan, password: c2a64d79-65ae-4818-89cf-c3060886cfcf, sni: bbbbbbppppppjchongkong01.zztcloud.xyz, skip-cert-verify: true, udp: true}
-  - {name: "深港专线转香港HGC商宽3[倍率:2.5]", server: 211.99.100.20, port: 24163, type: ss, cipher: chacha20-ietf, password: NBrsJn, udp: true}
-  - {name: "深港专线转香港HKTA[M][倍率:2.5]", server: 42.157.196.245, port: 24163, type: ss, cipher: chacha20-ietf, password: NBrsJn, udp: true}
-  - {name: 香港02 @BPJC_Group 2, server: bbbbbbppppppjchongkong01.zztcloud.xyz, port: 40052, type: trojan, password: c2a64d79-65ae-4818-89cf-c3060886cfcf, sni: bbbbbbppppppjchongkong01.zztcloud.xyz, skip-cert-verify: true, udp: true}
-  - {name: SG A 002 2, server: hkaz2.xmrth-node.xyz, port: 15437, type: vmess, uuid: 0de48b14-07c6-3c8b-9fda-a7187c65c9f5, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /index, headers: {Host: www.baidu.com}}, udp: true}
-  - {name: SG A 005 2, server: hkaz5.xmrth-node.xyz, port: 15839, type: vmess, uuid: 5200fa2b-dd65-3d98-81d5-c071ff0cbecb, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /index, headers: {Host: www.baidu.com}}, udp: true}
-  - {name: "湖南联通转阿根廷NTT[倍率:0.8]", server: 116.129.254.28, port: 54164, type: ss, cipher: chacha20-ietf, password: NBrsJn, udp: true}
-  - {name: HK4|10G|WS|独享|1.5x, server: 20.205.39.20, port: 80, type: vmess, uuid: b5083ecf-adf8-4f1f-823d-70aafaad2007, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: SG A 006, server: hkaz6.xmrth-node.xyz, port: 13890, type: vmess, uuid: 0de48b14-07c6-3c8b-9fda-a7187c65c9f5, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /index, headers: {Host: www.baidu.com}}, udp: true}
-  - {name: 香港05 @BPJC_Group, server: bbbbbbppppppjchongkong01.zztcloud.xyz, port: 40055, type: trojan, password: c2a64d79-65ae-4818-89cf-c3060886cfcf, sni: bbbbbbppppppjchongkong01.zztcloud.xyz, skip-cert-verify: true, udp: true}
-  - {name: 香港06 @BPJC_Group 2, server: bbbbbbppppppjchongkong01.zztcloud.xyz, port: 40056, type: trojan, password: c2a64d79-65ae-4818-89cf-c3060886cfcf, sni: bbbbbbppppppjchongkong01.zztcloud.xyz, skip-cert-verify: true, udp: true}
-  - {name: SG A 003 2, server: hkaz3.xmrth-node.xyz, port: 14389, type: vmess, uuid: 5200fa2b-dd65-3d98-81d5-c071ff0cbecb, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /index, headers: {Host: www.baidu.com}}, udp: true}
-  - {name: HK 104, server: hkaz4.xmrth-node.xyz, port: 15866, type: vmess, uuid: 0de48b14-07c6-3c8b-9fda-a7187c65c9f5, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /index, headers: {Host: www.baidu.com}}, udp: true}
-  - {name: 香港01 电报群@BPJC_Group 2, server: bbbbbbppppppjchongkong01.zztcloud.xyz, port: 40051, type: trojan, password: c2a64d79-65ae-4818-89cf-c3060886cfcf, sni: bbbbbbppppppjchongkong01.zztcloud.xyz, skip-cert-verify: true, udp: true}
-  - {name: SG A 006 2, server: hkaz6.xmrth-node.xyz, port: 13890, type: vmess, uuid: 5200fa2b-dd65-3d98-81d5-c071ff0cbecb, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /index, headers: {Host: www.baidu.com}}, udp: true}
-  - {name: _CN_n_26, server: cm.pikap.one, port: 10070, type: vmess, uuid: 56fbf558-6954-4d3d-a1d6-ecb5f0d0a112, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: "广东移动转香港CM[M][倍率:0.9]", server: 120.233.185.84, port: 54164, type: ss, cipher: chacha20-ietf, password: NBrsJn, udp: true}
-  - {name: 香港09 @BPJC_Group 2, server: bbbbbbppppppjchongkong01.zztcloud.xyz, port: 40059, type: trojan, password: c2a64d79-65ae-4818-89cf-c3060886cfcf, sni: bbbbbbppppppjchongkong01.zztcloud.xyz, skip-cert-verify: true, udp: true}
+  - {name: CN_1882 |13.29Mb, server: 14.29.124.168, port: 25210, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_1877 |23.07Mb, server: 14.29.124.168, port: 25295, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_1869 |95.42Mb, server: 14.29.124.168, port: 25230, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: _639 |24.79Mb, server: 14.29.124.168, port: 25294, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: _577 |64.21Mb, server: 14.29.124.168, port: 25267, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: _632 |85.95Mb, server: 14.29.124.168, port: 25241, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: HK_2339 |42.41Mb, server: yyyy.wwwbhjy.com, port: 2443, type: vmess, uuid: dee32eb7-e190-4c6f-dd27-aa9c82cd5490, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /8a76fb13/, headers: {Host: yyyy.wwwbhjy.com}}, udp: true}
+  - {name: Relay_🇨🇳CN-🇨🇳CN_09, server: sxqxj.cn, port: 2164, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ws, headers: {Host: sxqxj.cn}}, udp: true}
+  - {name: sg, server: rr002.zhuan666.top, port: 11202, type: ss, cipher: chacha20-ietf-poly1305, password: 5527dbd6-5ee2-431d-9c2f-2b818624f4ef, udp: true}
+  - {name: 台湾-tg频道:@ripaojiedian, server: zf2.qimengsdf.ml, port: 27928, type: vmess, uuid: 96b5a34b-55e8-40a4-85ba-1f7ba208d43e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _571 |60.11Mb, server: 14.29.124.168, port: 25217, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: 香港3-tg频道:@ripaojiedian, server: 120.233.185.4, port: 20207, type: vmess, uuid: 5a26cc45-3e1a-4d33-8d1a-e19a5e6058b8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /general/hk/UlRZek9VSTFNME01UVRJNFF6SkNSVVZFTXpKRk5VUTFSREUxUVRJMU16SXhRVVZETkRFeE56b3lPVGd3TURZek1ERTNNVFV3TlRneU56ZzBPakUyTlRNM09UTXlNekl3TURBNk1UWTFNemN3TmpnNU56Y3pNenBzVEhac1BVdzBMSEJzWVhROVNFSXNaRWxrUFRFd0xWSk5XREl3TlRFdE9HSm1aVEpoTnpnek4yUmpORFl3WlRjMlpqZGxNRFF3TVRSaU5XVmtNRFE9}, udp: true}
+  - {name: Japan 04, server: JP-Anycast.yukimo-node.xyz, port: 8003, type: ssr, cipher: aes-256-cfb, password: xzkvpE, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 40:m318a1, obfs-param: HK2SCH1300489a940.wns.windows.com, udp: true}
+  - {name: Japan 05, server: JP-Anycast.yukimo-node.xyz, port: 8004, type: ssr, cipher: aes-256-cfb, password: xzkvpE, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 40:m318a1, obfs-param: HK2SCH1300489a940.wns.windows.com, udp: true}
+  - {name: ccc.wodaming.cf, server: lll.wodaming.cf, port: 443, type: vmess, uuid: 48fd10df-1206-4faf-905e-3f178c7d7585, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: cc.wodaming.cf, network: ws, ws-opts: {path: /ray, headers: {Host: cc.wodaming.cf}}, udp: true}
+  - {name: haxx.wodaming.cf-clone, server: lll.wodaming.cf, port: 443, type: vmess, uuid: 48fd10df-1206-4faf-905e-3f178c7d7585, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: hax.wodaming.cf, network: ws, ws-opts: {path: /ray, headers: {Host: hax.wodaming.cf}}, udp: true}
+  - {name: 日本-9.15MB/s(Youtube:不良林), server: 139.162.124.250, port: 28443, type: trojan, password: fca82897-b178-4824-9c75-abe60c103dda, skip-cert-verify: true, udp: true}
+  - {name: United States 01, server: JP-Anycast.yukimo-node.xyz, port: 8006, type: ssr, cipher: aes-256-cfb, password: xzkvpE, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 40:m318a1, obfs-param: HK2SCH1300489a940.wns.windows.com, udp: true}
+  - {name: _ 4.18Mb |10.30Mb, server: cmrelay01.yiyorelay.xyz, port: 7706, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 67249:ojZU44, obfs-param: microsoft.com, udp: true}
+  - {name: Japan 02, server: JP-Anycast.yukimo-node.xyz, port: 8001, type: ssr, cipher: aes-256-cfb, password: xzkvpE, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 40:m318a1, obfs-param: HK2SCH1300489a940.wns.windows.com, udp: true}
+  - {name: SG_2826 |23.95Mb, server: sh.moonfree.top, port: 11263, type: vmess, uuid: 6e9eeae6-c3d1-439e-9f7a-213fe09b2dbe, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: ocrb1.moonfree.top}}, udp: true}
+  - {name: 35.包括V2ray和Trojan, server: yqy2355.china-cdn-net.com, port: 2355, type: trojan, password: ca0fa66e-3495-360a-8ad1-1f3043450c40, sni: cdn-debian.org, skip-cert-verify: true, udp: true}
+  - {name: Japan 01, server: JP-Anycast.yukimo-node.xyz, port: 8000, type: ssr, cipher: aes-256-cfb, password: xzkvpE, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 40:m318a1, obfs-param: HK2SCH1300489a940.wns.windows.com, udp: true}
+  - {name: Japan 03, server: JP-Anycast.yukimo-node.xyz, port: 8002, type: ssr, cipher: aes-256-cfb, password: xzkvpE, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 40:m318a1, obfs-param: HK2SCH1300489a940.wns.windows.com, udp: true}
+  - {name: JP 001, server: jpaws001.xmrth-node.xyz, port: 15347, type: vmess, uuid: 5200fa2b-dd65-3d98-81d5-c071ff0cbecb, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /index, headers: {Host: www.baidu.com}}, udp: true}
+  - {name: 35.包括V2ray和Trojan 2, server: yqy2355.china-cdn-net.com, port: 2355, type: trojan, password: 7626036c-4e62-3b3f-8ef6-12904afdf830, sni: cdn-debian.org, skip-cert-verify: true, udp: true}
+  - {name: 37.长期套餐覆盖IPLC专线, server: yqy2357.china-cdn-net.com, port: 2357, type: trojan, password: 7626036c-4e62-3b3f-8ef6-12904afdf830, sni: cdn-debian.org, skip-cert-verify: true, udp: true}
+  - {name: Canada 01, server: JP-Anycast.yukimo-node.xyz, port: 8007, type: ssr, cipher: aes-256-cfb, password: xzkvpE, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 40:m318a1, obfs-param: HK2SCH1300489a940.wns.windows.com, udp: true}
+  - {name: 33.公益等级線路嚴格限速, server: yqy2353.china-cdn-net.com, port: 2353, type: trojan, password: ca0fa66e-3495-360a-8ad1-1f3043450c40, sni: cdn-debian.org, skip-cert-verify: true, udp: true}
+  - {name: 免费梯子https://t.me/mftizi, server: d04.v2.gay, port: 443, type: vmess, uuid: 48fd10df-1206-4faf-905e-3f178c7d7585, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ray, headers: {Host: ww.wodaming.cf}}, udp: true}
+  - {name: 31.『ChinaG』几鸡-学习助理, server: yqy2351.china-cdn-net.com, port: 2351, type: trojan, password: ca0fa66e-3495-360a-8ad1-1f3043450c40, sni: cdn-debian.org, skip-cert-verify: true, udp: true}
+  - {name: _1449 |16.53Mb, server: sh.moonfree.top, port: 11262, type: vmess, uuid: 6e9eeae6-c3d1-439e-9f7a-213fe09b2dbe, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: sh.moonfree.top}}, udp: true}
+  - {name: US_2844, server: 35.77.93.10, port: 62161, type: vmess, uuid: 2b9a17a4-ec71-4629-8564-05fcf9b6e3a7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 新加坡3, server: xjpf1.xn--mesv7f5toqlp.club, port: 11114, type: trojan, password: 90b5b3f9-8273-4f04-8d11-b0f255fdb111, sni: xjpf1.xn--mesv7f5toqlp.club, skip-cert-verify: true, udp: true}
+  - {name: 新加坡5, server: xjpf1.xn--mesv7f5toqlp.club, port: 11113, type: trojan, password: 90b5b3f9-8273-4f04-8d11-b0f255fdb111, sni: xjpf1.xn--mesv7f5toqlp.club, skip-cert-verify: true, udp: true}
+  - {name: 新加坡2, server: xjpf1.xn--mesv7f5toqlp.club, port: 11111, type: trojan, password: 90b5b3f9-8273-4f04-8d11-b0f255fdb111, sni: xjpf1.xn--mesv7f5toqlp.club, skip-cert-verify: true, udp: true}
+  - {name: 韩国KR-tg频道:@ripaojiedian, server: 20.214.142.218, port: 8313, type: ss, cipher: chacha20-ietf-poly1305, password: ljqdalu13.., udp: true}
+  - {name: 33.公益等级線路嚴格限速 2, server: yqy2353.china-cdn-net.com, port: 2353, type: trojan, password: 7626036c-4e62-3b3f-8ef6-12904afdf830, sni: cdn-debian.org, skip-cert-verify: true, udp: true}
+  - {name: US_1955 |27.14Mb, server: 35.77.93.10, port: 62161, type: vmess, uuid: 2b9a17a4-ec71-4629-8564-05fcf9b6e3a7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 新加坡 05  停机卡免流(其他请更换host), server: 18.136.196.90, port: 80, type: vmess, uuid: 0eda8c72-2388-4981-980a-b9be087ee8ec, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: a.189.cn}}, udp: true}
+  - {name: 36.中继中转隧道线路覆盖, server: yqy2356.china-cdn-net.com, port: 2356, type: trojan, password: 7626036c-4e62-3b3f-8ef6-12904afdf830, sni: cdn-debian.org, skip-cert-verify: true, udp: true}
+  - {name: qqq.wodaming.cf, server: lll.wodaming.cf, port: 443, type: vmess, uuid: 48fd10df-1206-4faf-905e-3f178c7d7585, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: qq.wodaming.cf, network: ws, ws-opts: {path: /ray, headers: {Host: qq.wodaming.cf}}, udp: true}
+  - {name: 韩国 01 白嫖机场群:@BPJC_Group, server: tshdfkcccc.xn--mesv7f5toqlp.club, port: 11111, type: trojan, password: 96bab8f0-5707-49fa-b124-2f83496e96aa, sni: tshdfkcccc.xn--mesv7f5toqlp.club, skip-cert-verify: true, udp: true}
+  - {name: "香港HKT[ws]", server: hkt.comefromchinatown.com, port: 153, type: vmess, uuid: c32fe3ae-f3fe-11ea-9777-f23c9164ca5d, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: broadcastlv.chat.bilibili.com}}, udp: true}
+  - {name: 36.中继中转隧道线路覆盖 2, server: yqy2356.china-cdn-net.com, port: 2356, type: trojan, password: ca0fa66e-3495-360a-8ad1-1f3043450c40, sni: cdn-debian.org, skip-cert-verify: true, udp: true}
+  - {name: 31.『ChinaG』几鸡-学习助理 2, server: yqy2351.china-cdn-net.com, port: 2351, type: trojan, password: 7626036c-4e62-3b3f-8ef6-12904afdf830, sni: cdn-debian.org, skip-cert-verify: true, udp: true}
+  - {name: 美国4|tg频道:@ripaojiedian, server: 67.229.154.34, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: b4b2140ea45e, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: wxw1000muslines007.fengchiline.live, path: "", tls: true, mux: true, skip-cert-verify: true}, udp: true}
+  - {name: 美国(yudou66.com 玉豆分享), server: 51us.fans8.xyz, port: 80, type: vmess, uuid: 7f4ff2e1-c08f-35bd-afe7-4a6a386907aa, alterId: 2, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ray, headers: {Host: 51us.fans8.xyz}}, udp: true}
+  - {name: 美国1|tg频道:@ripaojiedian, server: 67.198.210.66, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 3e4a431348b9, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: wxw1000muslines004.fengchiline.live, path: "", tls: true, mux: true, skip-cert-verify: true}, udp: true}
+  - {name: US-高速节点推荐：v1.mk/vip, server: ruvds.testx.eu.org, port: 443, type: vmess, uuid: 0e7036c1-6de1-4a83-ef4f-e0d56c67fa10, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: "/vmess-share/?ed=2048", headers: {Host: ruvds.testx.eu.org}}, udp: true}
+  - {name: bulink自建免费10线 三网, server: la41.bulink.xyz.fobzs.com, port: 443, type: vmess, uuid: dd01617b-7f89-45e1-89e7-d9ddcf15a210, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ws, headers: {Host: la41.bulink.xyz.fobzs.com}}, udp: true}
+  - {name: bulink自建免费55线 三网, server: den55.bulink.xyz.fobzs.com, port: 443, type: vmess, uuid: dd01617b-7f89-45e1-89e7-d9ddcf15a210, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ws, headers: {Host: den55.bulink.xyz.fobzs.com}}, udp: true}
+  - {name: bulink自建免费19线 三网, server: la49.bulinkxyz.xyz, port: 443, type: vmess, uuid: dd01617b-7f89-45e1-89e7-d9ddcf15a210, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: 美国-5.66MB/s(Youtube:不良林), server: app.ssfree.ru, port: 443, type: vmess, uuid: 3b1c107c-de9f-11ec-871a-000017022008, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /getweather, headers: {Host: app.ssfree.ru}}, udp: true}
+  - {name: Relay_🇺🇸US-🇩🇪DE_22, server: 172.64.147.71, port: 443, type: vmess, uuid: 80e098a1-f768-3dfb-b97f-6c3a5d34bcd8, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /xxX8, headers: {Host: sg.wweblog.pw}}, udp: true}
+  - {name: NL_1338, server: 213.183.59.190, port: 9043, type: ss, cipher: aes-256-cfb, password: HSZuyJQcWe8dxNdF, udp: true}
+  - {name: Relay_🇨🇳CN-🇭🇰HK_249, server: 14.29.124.174, port: 11045, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: _CN_中国->🇭🇰_HK_香港, server: 139.219.130.70, port: 443, type: ss, cipher: aes-256-cfb, password: E4DNMf73kHPrd8Qq7aqGPf7f, udp: true}
+  - {name: CN_312 |10.16Mb, server: 14.29.124.174, port: 11016, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: NL_1384, server: 213.183.59.214, port: 9046, type: ss, cipher: aes-256-cfb, password: NvS8N4Vf8qAGPSCL, udp: true}
+  - {name: CN_1883 | 6.79Mb, server: 14.29.124.174, port: 11008, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: NL_1268, server: 213.183.59.214, port: 9041, type: ss, cipher: aes-256-cfb, password: U6qnYRhfyDmn8sgn, udp: true}
+  - {name: _ 4.80Mb | 2.41Mb, server: 213.183.59.214, port: 9056, type: ss, cipher: aes-256-cfb, password: rNBfNuuANFCAk7KB, udp: true}
+  - {name: _148 |45.84Mb, server: 14.29.124.174, port: 11049, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: _CN_中国->🇭🇰_HK_香港 2, server: fkgfw-prod.i.sxl.cn, port: 443, type: ss, cipher: aes-256-cfb, password: E4DNMf73kHPrd8Qq7aqGPf7f, udp: true}
+  - {name: Japan 06, server: JP-Anycast.yukimo-node.xyz, port: 8005, type: ssr, cipher: aes-256-cfb, password: xzkvpE, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 40:m318a1, obfs-param: HK2SCH1300489a940.wns.windows.com, udp: true}
+  - {name: NL_1269, server: 213.183.59.214, port: 9043, type: ss, cipher: aes-256-cfb, password: HSZuyJQcWe8dxNdF, udp: true}
+  - {name: NL_1455, server: 213.183.59.190, port: 9024, type: ss, cipher: aes-256-cfb, password: BejrQvtu9sqUeNuZ, udp: true}
+  - {name: _NL_荷兰, server: 213.183.59.214, port: 9003, type: ss, cipher: aes-256-cfb, password: JdmRK9gMEqFgs8nP, udp: true}
+  - {name: NL_1292, server: 213.183.59.190, port: 9038, type: ss, cipher: aes-256-cfb, password: gYCYXfkUQEs2TaJQ, udp: true}
+  - {name: NL_1322, server: 213.183.59.214, port: 9058, type: ss, cipher: aes-256-cfb, password: dML2sfhbVwvtfNPe, udp: true}
+  - {name: t.me/wbnet_🇳🇱_NL_1373, server: 213.183.59.190, port: 9038, type: ss, cipher: aes-256-cfb, password: gYCYXfkUQEs2TaJQ, udp: true}
+  - {name: NL_1348, server: 213.183.59.214, port: 9064, type: ss, cipher: aes-256-cfb, password: cp8pRSUAyLhTfVWH, udp: true}
+  - {name: 34.捐赠解锁更多协议线路, server: yqy2354.china-cdn-net.com, port: 2354, type: trojan, password: 7626036c-4e62-3b3f-8ef6-12904afdf830, sni: cdn-debian.org, skip-cert-verify: true, udp: true}
+  - {name: t.me/wbnet_🇳🇱_NL_1372, server: 213.183.59.190, port: 9037, type: ss, cipher: aes-256-cfb, password: TN2YqghxeFDKZfLU, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 日本 02|AzureCloud|大阪|1.0
-      - 深港专线5[倍率:2.5]
-      - _CN_n_10
-      - _CN_n_39
-      - 深港专线4[倍率:2.5]
-      - 广东移动转台湾HiNet[M][倍率:1]
-      - 深港专线转香港HGC商宽8[倍率:2.5]
-      - _CN_n523_403
-      - 湖南联通转日本NTT[倍率:0.8]
-      - 深港专线转香港HGC商宽7[倍率:2.5]
-      - _油管频道：全网最强白嫖
-      - 长沙联通转台湾HiNet2[倍率:1]
-      - _1544 |39.60Mb
-      - 长沙联通转香港icable[M][倍率:0.9]
-      - 广州移动转台湾HiNet[M][倍率:1]
-      - 广东移动转香港HKT[M][倍率:0.9]
-      - _1539 |54.57Mb
-      - _1538 |47.55Mb
+      - 韩国首尔-tg频道:@ripaojiedian
       - CN_387 | 9.27Mb
-      - 长沙联通转日本NTT[M][倍率:0.8]
-      - 长沙联通转香港NTT[倍率:0.8]
-      - 长沙联通转日本NTT5[倍率:0.8]
-      - 湖南联通转美国Cera2[倍率:0.8]
-      - 长沙联通转日本NTT2[M][倍率:0.8]
-      - _1542 |20.09Mb
-      - 湖南联通转香港HKT2[M][倍率:0.9]
-      - 广州移动转香港NTT3[倍率:0.9]
-      - 湖南联通转日本NTT3[M][倍率:0.8]
-      - 香港 02|HKT-GT|尖沙咀区|1.0
-      - CN_1997 |48.14Mb
-      - 广东移动转日本NTT[倍率:0.8]
-      - 长沙联通转日本NTT3[M][倍率:0.8]
-      - 湖南联通转美国DP[M][倍率:0.8]
-      - 深港专线转香港HGC商宽6[倍率:2.5]
-      - _CN_n523_275
-      - 广州移动转香港NTT[倍率:0.8]
-      - 韩国 04|한국|Microsoft|釜山|1.0
-      - 长沙联通转韩国NTT[倍率:1]
-      - 湖南联通转德国HE[倍率:0.8]
-      - 深港专线转香港Azure[倍率:2.5]
-      - 长沙联通转日本NTT4[倍率:0.8]
-      - 湖南联通转日本Azure[倍率:1]
-      - 香港07 @BPJC_Group
-      - 香港|V2Ray|流媒体解锁
-      - 湖南联通转香港HKT3[M][倍率:0.9]
-      - 长沙联通转美国DP[M][倍率:0.8]
-      - 长沙联通转香港HKBN[倍率:0.9]
-      - 湖南联通转美国HE[倍率:0.8]
-      - 湖南联通转香港Azure2[倍率:0.9]
-      - 长沙联通转香港HKT17[M][倍率:0.9]
-      - 广东移动转日本Webarena2[倍率:0.8]
-      - 广州移动转香港AWS[倍率:0.9]
-      - 广州移动转韩国NTT[倍率:0.8]
-      - 深港专线转香港HGC商宽[倍率:2.5]
-      - 广东移动转香港AWS[倍率:0.9]
-      - _CN_n_68
-      - 长沙联通转美国HE[倍率:0.8]
-      - 日本2-tg频道:@ripaojiedian
-      - 香港06 @BPJC_Group
-      - SG A 001
-      - 湖南联通转英国Azure[倍率:0.9]
-      - CN_1985 |53.45Mb
-      - 香港02 @BPJC_Group
-      - 湖南联通转香港Azure[倍率:0.9]
-      - 湖南联通转韩国Azure[倍率:0.9]
-      - _CN_n_33
-      - 广东移动转香港NTT[倍率:0.8]
-      - _CN_n_32
-      - 香港08 @BPJC_Group
-      - _CN_n_49
-      - 广东移动转马来西亚TM[M][倍率:1]
-      - 深港专线转香港HGC[倍率:2.5]
-      - 香港09 @BPJC_Group
-      - 广州移动转美国Azure[倍率:1]
-      - _CN_n_59
-      - HK3|10G|WS
-      - 深港专线2[倍率:2.5]
-      - 香港10 @BPJC_Group
-      - SG A 003
-      - 长沙联通转香港Azure[倍率:1]
-      - 香港03 @BPJC_Group
-      - SG A 005
-      - 长沙联通转德国VU[倍率:0.8]
-      - 香港04 @BPJC_Group
-      - 香港07 @BPJC_Group 2
-      - SG A 004
-      - 广州移动转美国DP[M][倍率:0.8]
-      - 香港01 电报群@BPJC_Group
-      - SG A 002
-      - 香港03 @BPJC_Group 2
-      - SG A 004 2
-      - 深港专线转香港HKTB[M][倍率:2.5]
-      - 香港08 @BPJC_Group 2
-      - 深港专线转香港HGC商宽3[倍率:2.5]
-      - 深港专线转香港HKTA[M][倍率:2.5]
-      - 香港02 @BPJC_Group 2
-      - SG A 002 2
-      - SG A 005 2
-      - 湖南联通转阿根廷NTT[倍率:0.8]
-      - HK4|10G|WS|独享|1.5x
-      - SG A 006
-      - 香港05 @BPJC_Group
-      - 香港06 @BPJC_Group 2
-      - SG A 003 2
-      - HK 104
-      - 香港01 电报群@BPJC_Group 2
-      - SG A 006 2
-      - _CN_n_26
-      - 广东移动转香港CM[M][倍率:0.9]
-      - 香港09 @BPJC_Group 2
+      - CN_1882 |13.29Mb
+      - CN_1877 |23.07Mb
+      - CN_1869 |95.42Mb
+      - _639 |24.79Mb
+      - _577 |64.21Mb
+      - _632 |85.95Mb
+      - HK_2339 |42.41Mb
+      - Relay_🇨🇳CN-🇨🇳CN_09
+      - sg
+      - 台湾-tg频道:@ripaojiedian
+      - _571 |60.11Mb
+      - 香港3-tg频道:@ripaojiedian
+      - Japan 04
+      - Japan 05
+      - ccc.wodaming.cf
+      - haxx.wodaming.cf-clone
+      - 日本-9.15MB/s(Youtube:不良林)
+      - United States 01
+      - _ 4.18Mb |10.30Mb
+      - Japan 02
+      - SG_2826 |23.95Mb
+      - 35.包括V2ray和Trojan
+      - Japan 01
+      - Japan 03
+      - JP 001
+      - 35.包括V2ray和Trojan 2
+      - 37.长期套餐覆盖IPLC专线
+      - Canada 01
+      - 33.公益等级線路嚴格限速
+      - 免费梯子https://t.me/mftizi
+      - 31.『ChinaG』几鸡-学习助理
+      - _1449 |16.53Mb
+      - US_2844
+      - 新加坡3
+      - 新加坡5
+      - 新加坡2
+      - 韩国KR-tg频道:@ripaojiedian
+      - 33.公益等级線路嚴格限速 2
+      - US_1955 |27.14Mb
+      - 新加坡 05  停机卡免流(其他请更换host)
+      - 36.中继中转隧道线路覆盖
+      - qqq.wodaming.cf
+      - 韩国 01 白嫖机场群:@BPJC_Group
+      - 香港HKT[ws]
+      - 36.中继中转隧道线路覆盖 2
+      - 31.『ChinaG』几鸡-学习助理 2
+      - 美国4|tg频道:@ripaojiedian
+      - 美国(yudou66.com 玉豆分享)
+      - 美国1|tg频道:@ripaojiedian
+      - US-高速节点推荐：v1.mk/vip
+      - bulink自建免费10线 三网
+      - bulink自建免费55线 三网
+      - bulink自建免费19线 三网
+      - 美国-5.66MB/s(Youtube:不良林)
+      - Relay_🇺🇸US-🇩🇪DE_22
+      - NL_1338
+      - Relay_🇨🇳CN-🇭🇰HK_249
+      - _CN_中国->🇭🇰_HK_香港
+      - CN_312 |10.16Mb
+      - NL_1384
+      - CN_1883 | 6.79Mb
+      - NL_1268
+      - _ 4.80Mb | 2.41Mb
+      - _148 |45.84Mb
+      - _CN_中国->🇭🇰_HK_香港 2
+      - Japan 06
+      - NL_1269
+      - NL_1455
+      - _NL_荷兰
+      - NL_1292
+      - NL_1322
+      - t.me/wbnet_🇳🇱_NL_1373
+      - NL_1348
+      - 34.捐赠解锁更多协议线路
+      - t.me/wbnet_🇳🇱_NL_1372
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 日本 02|AzureCloud|大阪|1.0
-      - 深港专线5[倍率:2.5]
-      - _CN_n_10
-      - _CN_n_39
-      - 深港专线4[倍率:2.5]
-      - 广东移动转台湾HiNet[M][倍率:1]
-      - 深港专线转香港HGC商宽8[倍率:2.5]
-      - _CN_n523_403
-      - 湖南联通转日本NTT[倍率:0.8]
-      - 深港专线转香港HGC商宽7[倍率:2.5]
-      - _油管频道：全网最强白嫖
-      - 长沙联通转台湾HiNet2[倍率:1]
-      - _1544 |39.60Mb
-      - 长沙联通转香港icable[M][倍率:0.9]
-      - 广州移动转台湾HiNet[M][倍率:1]
-      - 广东移动转香港HKT[M][倍率:0.9]
-      - _1539 |54.57Mb
-      - _1538 |47.55Mb
+      - 韩国首尔-tg频道:@ripaojiedian
       - CN_387 | 9.27Mb
-      - 长沙联通转日本NTT[M][倍率:0.8]
-      - 长沙联通转香港NTT[倍率:0.8]
-      - 长沙联通转日本NTT5[倍率:0.8]
-      - 湖南联通转美国Cera2[倍率:0.8]
-      - 长沙联通转日本NTT2[M][倍率:0.8]
-      - _1542 |20.09Mb
-      - 湖南联通转香港HKT2[M][倍率:0.9]
-      - 广州移动转香港NTT3[倍率:0.9]
-      - 湖南联通转日本NTT3[M][倍率:0.8]
-      - 香港 02|HKT-GT|尖沙咀区|1.0
-      - CN_1997 |48.14Mb
-      - 广东移动转日本NTT[倍率:0.8]
-      - 长沙联通转日本NTT3[M][倍率:0.8]
-      - 湖南联通转美国DP[M][倍率:0.8]
-      - 深港专线转香港HGC商宽6[倍率:2.5]
-      - _CN_n523_275
-      - 广州移动转香港NTT[倍率:0.8]
-      - 韩国 04|한국|Microsoft|釜山|1.0
-      - 长沙联通转韩国NTT[倍率:1]
-      - 湖南联通转德国HE[倍率:0.8]
-      - 深港专线转香港Azure[倍率:2.5]
-      - 长沙联通转日本NTT4[倍率:0.8]
-      - 湖南联通转日本Azure[倍率:1]
-      - 香港07 @BPJC_Group
-      - 香港|V2Ray|流媒体解锁
-      - 湖南联通转香港HKT3[M][倍率:0.9]
-      - 长沙联通转美国DP[M][倍率:0.8]
-      - 长沙联通转香港HKBN[倍率:0.9]
-      - 湖南联通转美国HE[倍率:0.8]
-      - 湖南联通转香港Azure2[倍率:0.9]
-      - 长沙联通转香港HKT17[M][倍率:0.9]
-      - 广东移动转日本Webarena2[倍率:0.8]
-      - 广州移动转香港AWS[倍率:0.9]
-      - 广州移动转韩国NTT[倍率:0.8]
-      - 深港专线转香港HGC商宽[倍率:2.5]
-      - 广东移动转香港AWS[倍率:0.9]
-      - _CN_n_68
-      - 长沙联通转美国HE[倍率:0.8]
-      - 日本2-tg频道:@ripaojiedian
-      - 香港06 @BPJC_Group
-      - SG A 001
-      - 湖南联通转英国Azure[倍率:0.9]
-      - CN_1985 |53.45Mb
-      - 香港02 @BPJC_Group
-      - 湖南联通转香港Azure[倍率:0.9]
-      - 湖南联通转韩国Azure[倍率:0.9]
-      - _CN_n_33
-      - 广东移动转香港NTT[倍率:0.8]
-      - _CN_n_32
-      - 香港08 @BPJC_Group
-      - _CN_n_49
-      - 广东移动转马来西亚TM[M][倍率:1]
-      - 深港专线转香港HGC[倍率:2.5]
-      - 香港09 @BPJC_Group
-      - 广州移动转美国Azure[倍率:1]
-      - _CN_n_59
-      - HK3|10G|WS
-      - 深港专线2[倍率:2.5]
-      - 香港10 @BPJC_Group
-      - SG A 003
-      - 长沙联通转香港Azure[倍率:1]
-      - 香港03 @BPJC_Group
-      - SG A 005
-      - 长沙联通转德国VU[倍率:0.8]
-      - 香港04 @BPJC_Group
-      - 香港07 @BPJC_Group 2
-      - SG A 004
-      - 广州移动转美国DP[M][倍率:0.8]
-      - 香港01 电报群@BPJC_Group
-      - SG A 002
-      - 香港03 @BPJC_Group 2
-      - SG A 004 2
-      - 深港专线转香港HKTB[M][倍率:2.5]
-      - 香港08 @BPJC_Group 2
-      - 深港专线转香港HGC商宽3[倍率:2.5]
-      - 深港专线转香港HKTA[M][倍率:2.5]
-      - 香港02 @BPJC_Group 2
-      - SG A 002 2
-      - SG A 005 2
-      - 湖南联通转阿根廷NTT[倍率:0.8]
-      - HK4|10G|WS|独享|1.5x
-      - SG A 006
-      - 香港05 @BPJC_Group
-      - 香港06 @BPJC_Group 2
-      - SG A 003 2
-      - HK 104
-      - 香港01 电报群@BPJC_Group 2
-      - SG A 006 2
-      - _CN_n_26
-      - 广东移动转香港CM[M][倍率:0.9]
-      - 香港09 @BPJC_Group 2
+      - CN_1882 |13.29Mb
+      - CN_1877 |23.07Mb
+      - CN_1869 |95.42Mb
+      - _639 |24.79Mb
+      - _577 |64.21Mb
+      - _632 |85.95Mb
+      - HK_2339 |42.41Mb
+      - Relay_🇨🇳CN-🇨🇳CN_09
+      - sg
+      - 台湾-tg频道:@ripaojiedian
+      - _571 |60.11Mb
+      - 香港3-tg频道:@ripaojiedian
+      - Japan 04
+      - Japan 05
+      - ccc.wodaming.cf
+      - haxx.wodaming.cf-clone
+      - 日本-9.15MB/s(Youtube:不良林)
+      - United States 01
+      - _ 4.18Mb |10.30Mb
+      - Japan 02
+      - SG_2826 |23.95Mb
+      - 35.包括V2ray和Trojan
+      - Japan 01
+      - Japan 03
+      - JP 001
+      - 35.包括V2ray和Trojan 2
+      - 37.长期套餐覆盖IPLC专线
+      - Canada 01
+      - 33.公益等级線路嚴格限速
+      - 免费梯子https://t.me/mftizi
+      - 31.『ChinaG』几鸡-学习助理
+      - _1449 |16.53Mb
+      - US_2844
+      - 新加坡3
+      - 新加坡5
+      - 新加坡2
+      - 韩国KR-tg频道:@ripaojiedian
+      - 33.公益等级線路嚴格限速 2
+      - US_1955 |27.14Mb
+      - 新加坡 05  停机卡免流(其他请更换host)
+      - 36.中继中转隧道线路覆盖
+      - qqq.wodaming.cf
+      - 韩国 01 白嫖机场群:@BPJC_Group
+      - 香港HKT[ws]
+      - 36.中继中转隧道线路覆盖 2
+      - 31.『ChinaG』几鸡-学习助理 2
+      - 美国4|tg频道:@ripaojiedian
+      - 美国(yudou66.com 玉豆分享)
+      - 美国1|tg频道:@ripaojiedian
+      - US-高速节点推荐：v1.mk/vip
+      - bulink自建免费10线 三网
+      - bulink自建免费55线 三网
+      - bulink自建免费19线 三网
+      - 美国-5.66MB/s(Youtube:不良林)
+      - Relay_🇺🇸US-🇩🇪DE_22
+      - NL_1338
+      - Relay_🇨🇳CN-🇭🇰HK_249
+      - _CN_中国->🇭🇰_HK_香港
+      - CN_312 |10.16Mb
+      - NL_1384
+      - CN_1883 | 6.79Mb
+      - NL_1268
+      - _ 4.80Mb | 2.41Mb
+      - _148 |45.84Mb
+      - _CN_中国->🇭🇰_HK_香港 2
+      - Japan 06
+      - NL_1269
+      - NL_1455
+      - _NL_荷兰
+      - NL_1292
+      - NL_1322
+      - t.me/wbnet_🇳🇱_NL_1373
+      - NL_1348
+      - 34.捐赠解锁更多协议线路
+      - t.me/wbnet_🇳🇱_NL_1372
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 日本 02|AzureCloud|大阪|1.0
-      - 深港专线5[倍率:2.5]
-      - _CN_n_10
-      - _CN_n_39
-      - 深港专线4[倍率:2.5]
-      - 广东移动转台湾HiNet[M][倍率:1]
-      - 深港专线转香港HGC商宽8[倍率:2.5]
-      - _CN_n523_403
-      - 湖南联通转日本NTT[倍率:0.8]
-      - 深港专线转香港HGC商宽7[倍率:2.5]
-      - _油管频道：全网最强白嫖
-      - 长沙联通转台湾HiNet2[倍率:1]
-      - _1544 |39.60Mb
-      - 长沙联通转香港icable[M][倍率:0.9]
-      - 广州移动转台湾HiNet[M][倍率:1]
-      - 广东移动转香港HKT[M][倍率:0.9]
-      - _1539 |54.57Mb
-      - _1538 |47.55Mb
+      - 韩国首尔-tg频道:@ripaojiedian
       - CN_387 | 9.27Mb
-      - 长沙联通转日本NTT[M][倍率:0.8]
-      - 长沙联通转香港NTT[倍率:0.8]
-      - 长沙联通转日本NTT5[倍率:0.8]
-      - 湖南联通转美国Cera2[倍率:0.8]
-      - 长沙联通转日本NTT2[M][倍率:0.8]
-      - _1542 |20.09Mb
-      - 湖南联通转香港HKT2[M][倍率:0.9]
-      - 广州移动转香港NTT3[倍率:0.9]
-      - 湖南联通转日本NTT3[M][倍率:0.8]
-      - 香港 02|HKT-GT|尖沙咀区|1.0
-      - CN_1997 |48.14Mb
-      - 广东移动转日本NTT[倍率:0.8]
-      - 长沙联通转日本NTT3[M][倍率:0.8]
-      - 湖南联通转美国DP[M][倍率:0.8]
-      - 深港专线转香港HGC商宽6[倍率:2.5]
-      - _CN_n523_275
-      - 广州移动转香港NTT[倍率:0.8]
-      - 韩国 04|한국|Microsoft|釜山|1.0
-      - 长沙联通转韩国NTT[倍率:1]
-      - 湖南联通转德国HE[倍率:0.8]
-      - 深港专线转香港Azure[倍率:2.5]
-      - 长沙联通转日本NTT4[倍率:0.8]
-      - 湖南联通转日本Azure[倍率:1]
-      - 香港07 @BPJC_Group
-      - 香港|V2Ray|流媒体解锁
-      - 湖南联通转香港HKT3[M][倍率:0.9]
-      - 长沙联通转美国DP[M][倍率:0.8]
-      - 长沙联通转香港HKBN[倍率:0.9]
-      - 湖南联通转美国HE[倍率:0.8]
-      - 湖南联通转香港Azure2[倍率:0.9]
-      - 长沙联通转香港HKT17[M][倍率:0.9]
-      - 广东移动转日本Webarena2[倍率:0.8]
-      - 广州移动转香港AWS[倍率:0.9]
-      - 广州移动转韩国NTT[倍率:0.8]
-      - 深港专线转香港HGC商宽[倍率:2.5]
-      - 广东移动转香港AWS[倍率:0.9]
-      - _CN_n_68
-      - 长沙联通转美国HE[倍率:0.8]
-      - 日本2-tg频道:@ripaojiedian
-      - 香港06 @BPJC_Group
-      - SG A 001
-      - 湖南联通转英国Azure[倍率:0.9]
-      - CN_1985 |53.45Mb
-      - 香港02 @BPJC_Group
-      - 湖南联通转香港Azure[倍率:0.9]
-      - 湖南联通转韩国Azure[倍率:0.9]
-      - _CN_n_33
-      - 广东移动转香港NTT[倍率:0.8]
-      - _CN_n_32
-      - 香港08 @BPJC_Group
-      - _CN_n_49
-      - 广东移动转马来西亚TM[M][倍率:1]
-      - 深港专线转香港HGC[倍率:2.5]
-      - 香港09 @BPJC_Group
-      - 广州移动转美国Azure[倍率:1]
-      - _CN_n_59
-      - HK3|10G|WS
-      - 深港专线2[倍率:2.5]
-      - 香港10 @BPJC_Group
-      - SG A 003
-      - 长沙联通转香港Azure[倍率:1]
-      - 香港03 @BPJC_Group
-      - SG A 005
-      - 长沙联通转德国VU[倍率:0.8]
-      - 香港04 @BPJC_Group
-      - 香港07 @BPJC_Group 2
-      - SG A 004
-      - 广州移动转美国DP[M][倍率:0.8]
-      - 香港01 电报群@BPJC_Group
-      - SG A 002
-      - 香港03 @BPJC_Group 2
-      - SG A 004 2
-      - 深港专线转香港HKTB[M][倍率:2.5]
-      - 香港08 @BPJC_Group 2
-      - 深港专线转香港HGC商宽3[倍率:2.5]
-      - 深港专线转香港HKTA[M][倍率:2.5]
-      - 香港02 @BPJC_Group 2
-      - SG A 002 2
-      - SG A 005 2
-      - 湖南联通转阿根廷NTT[倍率:0.8]
-      - HK4|10G|WS|独享|1.5x
-      - SG A 006
-      - 香港05 @BPJC_Group
-      - 香港06 @BPJC_Group 2
-      - SG A 003 2
-      - HK 104
-      - 香港01 电报群@BPJC_Group 2
-      - SG A 006 2
-      - _CN_n_26
-      - 广东移动转香港CM[M][倍率:0.9]
-      - 香港09 @BPJC_Group 2
+      - CN_1882 |13.29Mb
+      - CN_1877 |23.07Mb
+      - CN_1869 |95.42Mb
+      - _639 |24.79Mb
+      - _577 |64.21Mb
+      - _632 |85.95Mb
+      - HK_2339 |42.41Mb
+      - Relay_🇨🇳CN-🇨🇳CN_09
+      - sg
+      - 台湾-tg频道:@ripaojiedian
+      - _571 |60.11Mb
+      - 香港3-tg频道:@ripaojiedian
+      - Japan 04
+      - Japan 05
+      - ccc.wodaming.cf
+      - haxx.wodaming.cf-clone
+      - 日本-9.15MB/s(Youtube:不良林)
+      - United States 01
+      - _ 4.18Mb |10.30Mb
+      - Japan 02
+      - SG_2826 |23.95Mb
+      - 35.包括V2ray和Trojan
+      - Japan 01
+      - Japan 03
+      - JP 001
+      - 35.包括V2ray和Trojan 2
+      - 37.长期套餐覆盖IPLC专线
+      - Canada 01
+      - 33.公益等级線路嚴格限速
+      - 免费梯子https://t.me/mftizi
+      - 31.『ChinaG』几鸡-学习助理
+      - _1449 |16.53Mb
+      - US_2844
+      - 新加坡3
+      - 新加坡5
+      - 新加坡2
+      - 韩国KR-tg频道:@ripaojiedian
+      - 33.公益等级線路嚴格限速 2
+      - US_1955 |27.14Mb
+      - 新加坡 05  停机卡免流(其他请更换host)
+      - 36.中继中转隧道线路覆盖
+      - qqq.wodaming.cf
+      - 韩国 01 白嫖机场群:@BPJC_Group
+      - 香港HKT[ws]
+      - 36.中继中转隧道线路覆盖 2
+      - 31.『ChinaG』几鸡-学习助理 2
+      - 美国4|tg频道:@ripaojiedian
+      - 美国(yudou66.com 玉豆分享)
+      - 美国1|tg频道:@ripaojiedian
+      - US-高速节点推荐：v1.mk/vip
+      - bulink自建免费10线 三网
+      - bulink自建免费55线 三网
+      - bulink自建免费19线 三网
+      - 美国-5.66MB/s(Youtube:不良林)
+      - Relay_🇺🇸US-🇩🇪DE_22
+      - NL_1338
+      - Relay_🇨🇳CN-🇭🇰HK_249
+      - _CN_中国->🇭🇰_HK_香港
+      - CN_312 |10.16Mb
+      - NL_1384
+      - CN_1883 | 6.79Mb
+      - NL_1268
+      - _ 4.80Mb | 2.41Mb
+      - _148 |45.84Mb
+      - _CN_中国->🇭🇰_HK_香港 2
+      - Japan 06
+      - NL_1269
+      - NL_1455
+      - _NL_荷兰
+      - NL_1292
+      - NL_1322
+      - t.me/wbnet_🇳🇱_NL_1373
+      - NL_1348
+      - 34.捐赠解锁更多协议线路
+      - t.me/wbnet_🇳🇱_NL_1372
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -480,517 +348,340 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 日本 02|AzureCloud|大阪|1.0
-      - 深港专线5[倍率:2.5]
-      - _CN_n_10
-      - _CN_n_39
-      - 深港专线4[倍率:2.5]
-      - 广东移动转台湾HiNet[M][倍率:1]
-      - 深港专线转香港HGC商宽8[倍率:2.5]
-      - _CN_n523_403
-      - 湖南联通转日本NTT[倍率:0.8]
-      - 深港专线转香港HGC商宽7[倍率:2.5]
-      - _油管频道：全网最强白嫖
-      - 长沙联通转台湾HiNet2[倍率:1]
-      - _1544 |39.60Mb
-      - 长沙联通转香港icable[M][倍率:0.9]
-      - 广州移动转台湾HiNet[M][倍率:1]
-      - 广东移动转香港HKT[M][倍率:0.9]
-      - _1539 |54.57Mb
-      - _1538 |47.55Mb
+      - 韩国首尔-tg频道:@ripaojiedian
       - CN_387 | 9.27Mb
-      - 长沙联通转日本NTT[M][倍率:0.8]
-      - 长沙联通转香港NTT[倍率:0.8]
-      - 长沙联通转日本NTT5[倍率:0.8]
-      - 湖南联通转美国Cera2[倍率:0.8]
-      - 长沙联通转日本NTT2[M][倍率:0.8]
-      - _1542 |20.09Mb
-      - 湖南联通转香港HKT2[M][倍率:0.9]
-      - 广州移动转香港NTT3[倍率:0.9]
-      - 湖南联通转日本NTT3[M][倍率:0.8]
-      - 香港 02|HKT-GT|尖沙咀区|1.0
-      - CN_1997 |48.14Mb
-      - 广东移动转日本NTT[倍率:0.8]
-      - 长沙联通转日本NTT3[M][倍率:0.8]
-      - 湖南联通转美国DP[M][倍率:0.8]
-      - 深港专线转香港HGC商宽6[倍率:2.5]
-      - _CN_n523_275
-      - 广州移动转香港NTT[倍率:0.8]
-      - 韩国 04|한국|Microsoft|釜山|1.0
-      - 长沙联通转韩国NTT[倍率:1]
-      - 湖南联通转德国HE[倍率:0.8]
-      - 深港专线转香港Azure[倍率:2.5]
-      - 长沙联通转日本NTT4[倍率:0.8]
-      - 湖南联通转日本Azure[倍率:1]
-      - 香港07 @BPJC_Group
-      - 香港|V2Ray|流媒体解锁
-      - 湖南联通转香港HKT3[M][倍率:0.9]
-      - 长沙联通转美国DP[M][倍率:0.8]
-      - 长沙联通转香港HKBN[倍率:0.9]
-      - 湖南联通转美国HE[倍率:0.8]
-      - 湖南联通转香港Azure2[倍率:0.9]
-      - 长沙联通转香港HKT17[M][倍率:0.9]
-      - 广东移动转日本Webarena2[倍率:0.8]
-      - 广州移动转香港AWS[倍率:0.9]
-      - 广州移动转韩国NTT[倍率:0.8]
-      - 深港专线转香港HGC商宽[倍率:2.5]
-      - 广东移动转香港AWS[倍率:0.9]
-      - _CN_n_68
-      - 长沙联通转美国HE[倍率:0.8]
-      - 日本2-tg频道:@ripaojiedian
-      - 香港06 @BPJC_Group
-      - SG A 001
-      - 湖南联通转英国Azure[倍率:0.9]
-      - CN_1985 |53.45Mb
-      - 香港02 @BPJC_Group
-      - 湖南联通转香港Azure[倍率:0.9]
-      - 湖南联通转韩国Azure[倍率:0.9]
-      - _CN_n_33
-      - 广东移动转香港NTT[倍率:0.8]
-      - _CN_n_32
-      - 香港08 @BPJC_Group
-      - _CN_n_49
-      - 广东移动转马来西亚TM[M][倍率:1]
-      - 深港专线转香港HGC[倍率:2.5]
-      - 香港09 @BPJC_Group
-      - 广州移动转美国Azure[倍率:1]
-      - _CN_n_59
-      - HK3|10G|WS
-      - 深港专线2[倍率:2.5]
-      - 香港10 @BPJC_Group
-      - SG A 003
-      - 长沙联通转香港Azure[倍率:1]
-      - 香港03 @BPJC_Group
-      - SG A 005
-      - 长沙联通转德国VU[倍率:0.8]
-      - 香港04 @BPJC_Group
-      - 香港07 @BPJC_Group 2
-      - SG A 004
-      - 广州移动转美国DP[M][倍率:0.8]
-      - 香港01 电报群@BPJC_Group
-      - SG A 002
-      - 香港03 @BPJC_Group 2
-      - SG A 004 2
-      - 深港专线转香港HKTB[M][倍率:2.5]
-      - 香港08 @BPJC_Group 2
-      - 深港专线转香港HGC商宽3[倍率:2.5]
-      - 深港专线转香港HKTA[M][倍率:2.5]
-      - 香港02 @BPJC_Group 2
-      - SG A 002 2
-      - SG A 005 2
-      - 湖南联通转阿根廷NTT[倍率:0.8]
-      - HK4|10G|WS|独享|1.5x
-      - SG A 006
-      - 香港05 @BPJC_Group
-      - 香港06 @BPJC_Group 2
-      - SG A 003 2
-      - HK 104
-      - 香港01 电报群@BPJC_Group 2
-      - SG A 006 2
-      - _CN_n_26
-      - 广东移动转香港CM[M][倍率:0.9]
-      - 香港09 @BPJC_Group 2
+      - CN_1882 |13.29Mb
+      - CN_1877 |23.07Mb
+      - CN_1869 |95.42Mb
+      - _639 |24.79Mb
+      - _577 |64.21Mb
+      - _632 |85.95Mb
+      - HK_2339 |42.41Mb
+      - Relay_🇨🇳CN-🇨🇳CN_09
+      - sg
+      - 台湾-tg频道:@ripaojiedian
+      - _571 |60.11Mb
+      - 香港3-tg频道:@ripaojiedian
+      - Japan 04
+      - Japan 05
+      - ccc.wodaming.cf
+      - haxx.wodaming.cf-clone
+      - 日本-9.15MB/s(Youtube:不良林)
+      - United States 01
+      - _ 4.18Mb |10.30Mb
+      - Japan 02
+      - SG_2826 |23.95Mb
+      - 35.包括V2ray和Trojan
+      - Japan 01
+      - Japan 03
+      - JP 001
+      - 35.包括V2ray和Trojan 2
+      - 37.长期套餐覆盖IPLC专线
+      - Canada 01
+      - 33.公益等级線路嚴格限速
+      - 免费梯子https://t.me/mftizi
+      - 31.『ChinaG』几鸡-学习助理
+      - _1449 |16.53Mb
+      - US_2844
+      - 新加坡3
+      - 新加坡5
+      - 新加坡2
+      - 韩国KR-tg频道:@ripaojiedian
+      - 33.公益等级線路嚴格限速 2
+      - US_1955 |27.14Mb
+      - 新加坡 05  停机卡免流(其他请更换host)
+      - 36.中继中转隧道线路覆盖
+      - qqq.wodaming.cf
+      - 韩国 01 白嫖机场群:@BPJC_Group
+      - 香港HKT[ws]
+      - 36.中继中转隧道线路覆盖 2
+      - 31.『ChinaG』几鸡-学习助理 2
+      - 美国4|tg频道:@ripaojiedian
+      - 美国(yudou66.com 玉豆分享)
+      - 美国1|tg频道:@ripaojiedian
+      - US-高速节点推荐：v1.mk/vip
+      - bulink自建免费10线 三网
+      - bulink自建免费55线 三网
+      - bulink自建免费19线 三网
+      - 美国-5.66MB/s(Youtube:不良林)
+      - Relay_🇺🇸US-🇩🇪DE_22
+      - NL_1338
+      - Relay_🇨🇳CN-🇭🇰HK_249
+      - _CN_中国->🇭🇰_HK_香港
+      - CN_312 |10.16Mb
+      - NL_1384
+      - CN_1883 | 6.79Mb
+      - NL_1268
+      - _ 4.80Mb | 2.41Mb
+      - _148 |45.84Mb
+      - _CN_中国->🇭🇰_HK_香港 2
+      - Japan 06
+      - NL_1269
+      - NL_1455
+      - _NL_荷兰
+      - NL_1292
+      - NL_1322
+      - t.me/wbnet_🇳🇱_NL_1373
+      - NL_1348
+      - 34.捐赠解锁更多协议线路
+      - t.me/wbnet_🇳🇱_NL_1372
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 深港专线5[倍率:2.5]
-      - 深港专线4[倍率:2.5]
-      - 广东移动转台湾HiNet[M][倍率:1]
-      - 深港专线转香港HGC商宽8[倍率:2.5]
-      - 深港专线转香港HGC商宽7[倍率:2.5]
-      - 长沙联通转台湾HiNet2[倍率:1]
-      - 长沙联通转香港icable[M][倍率:0.9]
-      - 广州移动转台湾HiNet[M][倍率:1]
-      - 广东移动转香港HKT[M][倍率:0.9]
-      - 长沙联通转香港NTT[倍率:0.8]
-      - 湖南联通转香港HKT2[M][倍率:0.9]
-      - 广州移动转香港NTT3[倍率:0.9]
-      - 香港 02|HKT-GT|尖沙咀区|1.0
-      - 深港专线转香港HGC商宽6[倍率:2.5]
-      - 广州移动转香港NTT[倍率:0.8]
-      - 深港专线转香港Azure[倍率:2.5]
-      - 香港07 @BPJC_Group
-      - 香港|V2Ray|流媒体解锁
-      - 湖南联通转香港HKT3[M][倍率:0.9]
-      - 长沙联通转香港HKBN[倍率:0.9]
-      - 湖南联通转香港Azure2[倍率:0.9]
-      - 长沙联通转香港HKT17[M][倍率:0.9]
-      - 广州移动转香港AWS[倍率:0.9]
-      - 深港专线转香港HGC商宽[倍率:2.5]
-      - 广东移动转香港AWS[倍率:0.9]
-      - 香港06 @BPJC_Group
-      - 香港02 @BPJC_Group
-      - 湖南联通转香港Azure[倍率:0.9]
-      - 广东移动转香港NTT[倍率:0.8]
-      - 香港08 @BPJC_Group
-      - 深港专线转香港HGC[倍率:2.5]
-      - 香港09 @BPJC_Group
-      - 深港专线2[倍率:2.5]
-      - 香港10 @BPJC_Group
-      - 长沙联通转香港Azure[倍率:1]
-      - 香港03 @BPJC_Group
-      - 香港04 @BPJC_Group
-      - 香港07 @BPJC_Group 2
-      - 香港01 电报群@BPJC_Group
-      - 香港03 @BPJC_Group 2
-      - 深港专线转香港HKTB[M][倍率:2.5]
-      - 香港08 @BPJC_Group 2
-      - 深港专线转香港HGC商宽3[倍率:2.5]
-      - 深港专线转香港HKTA[M][倍率:2.5]
-      - 香港02 @BPJC_Group 2
-      - 香港05 @BPJC_Group
-      - 香港06 @BPJC_Group 2
-      - 香港01 电报群@BPJC_Group 2
-      - 广东移动转香港CM[M][倍率:0.9]
-      - 香港09 @BPJC_Group 2
+      - 台湾-tg频道:@ripaojiedian
+      - 香港3-tg频道:@ripaojiedian
+      - 香港HKT[ws]
+      - _CN_中国->🇭🇰_HK_香港
+      - _CN_中国->🇭🇰_HK_香港 2
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 日本 02|AzureCloud|大阪|1.0
-      - 深港专线5[倍率:2.5]
-      - _CN_n_10
-      - _CN_n_39
-      - 深港专线4[倍率:2.5]
-      - 广东移动转台湾HiNet[M][倍率:1]
-      - 深港专线转香港HGC商宽8[倍率:2.5]
-      - _CN_n523_403
-      - 湖南联通转日本NTT[倍率:0.8]
-      - 深港专线转香港HGC商宽7[倍率:2.5]
-      - _油管频道：全网最强白嫖
-      - 长沙联通转台湾HiNet2[倍率:1]
-      - _1544 |39.60Mb
-      - 长沙联通转香港icable[M][倍率:0.9]
-      - 广州移动转台湾HiNet[M][倍率:1]
-      - 广东移动转香港HKT[M][倍率:0.9]
-      - _1539 |54.57Mb
-      - _1538 |47.55Mb
+      - 韩国首尔-tg频道:@ripaojiedian
       - CN_387 | 9.27Mb
-      - 长沙联通转日本NTT[M][倍率:0.8]
-      - 长沙联通转香港NTT[倍率:0.8]
-      - 长沙联通转日本NTT5[倍率:0.8]
-      - 湖南联通转美国Cera2[倍率:0.8]
-      - 长沙联通转日本NTT2[M][倍率:0.8]
-      - _1542 |20.09Mb
-      - 湖南联通转香港HKT2[M][倍率:0.9]
-      - 广州移动转香港NTT3[倍率:0.9]
-      - 湖南联通转日本NTT3[M][倍率:0.8]
-      - 香港 02|HKT-GT|尖沙咀区|1.0
-      - CN_1997 |48.14Mb
-      - 广东移动转日本NTT[倍率:0.8]
-      - 长沙联通转日本NTT3[M][倍率:0.8]
-      - 湖南联通转美国DP[M][倍率:0.8]
-      - 深港专线转香港HGC商宽6[倍率:2.5]
-      - _CN_n523_275
-      - 广州移动转香港NTT[倍率:0.8]
-      - 韩国 04|한국|Microsoft|釜山|1.0
-      - 长沙联通转韩国NTT[倍率:1]
-      - 湖南联通转德国HE[倍率:0.8]
-      - 深港专线转香港Azure[倍率:2.5]
-      - 长沙联通转日本NTT4[倍率:0.8]
-      - 湖南联通转日本Azure[倍率:1]
-      - 香港07 @BPJC_Group
-      - 香港|V2Ray|流媒体解锁
-      - 湖南联通转香港HKT3[M][倍率:0.9]
-      - 长沙联通转美国DP[M][倍率:0.8]
-      - 长沙联通转香港HKBN[倍率:0.9]
-      - 湖南联通转美国HE[倍率:0.8]
-      - 湖南联通转香港Azure2[倍率:0.9]
-      - 长沙联通转香港HKT17[M][倍率:0.9]
-      - 广东移动转日本Webarena2[倍率:0.8]
-      - 广州移动转香港AWS[倍率:0.9]
-      - 广州移动转韩国NTT[倍率:0.8]
-      - 深港专线转香港HGC商宽[倍率:2.5]
-      - 广东移动转香港AWS[倍率:0.9]
-      - _CN_n_68
-      - 长沙联通转美国HE[倍率:0.8]
-      - 日本2-tg频道:@ripaojiedian
-      - 香港06 @BPJC_Group
-      - SG A 001
-      - 湖南联通转英国Azure[倍率:0.9]
-      - CN_1985 |53.45Mb
-      - 香港02 @BPJC_Group
-      - 湖南联通转香港Azure[倍率:0.9]
-      - 湖南联通转韩国Azure[倍率:0.9]
-      - _CN_n_33
-      - 广东移动转香港NTT[倍率:0.8]
-      - _CN_n_32
-      - 香港08 @BPJC_Group
-      - _CN_n_49
-      - 广东移动转马来西亚TM[M][倍率:1]
-      - 深港专线转香港HGC[倍率:2.5]
-      - 香港09 @BPJC_Group
-      - 广州移动转美国Azure[倍率:1]
-      - _CN_n_59
-      - HK3|10G|WS
-      - 深港专线2[倍率:2.5]
-      - 香港10 @BPJC_Group
-      - SG A 003
-      - 长沙联通转香港Azure[倍率:1]
-      - 香港03 @BPJC_Group
-      - SG A 005
-      - 长沙联通转德国VU[倍率:0.8]
-      - 香港04 @BPJC_Group
-      - 香港07 @BPJC_Group 2
-      - SG A 004
-      - 广州移动转美国DP[M][倍率:0.8]
-      - 香港01 电报群@BPJC_Group
-      - SG A 002
-      - 香港03 @BPJC_Group 2
-      - SG A 004 2
-      - 深港专线转香港HKTB[M][倍率:2.5]
-      - 香港08 @BPJC_Group 2
-      - 深港专线转香港HGC商宽3[倍率:2.5]
-      - 深港专线转香港HKTA[M][倍率:2.5]
-      - 香港02 @BPJC_Group 2
-      - SG A 002 2
-      - SG A 005 2
-      - 湖南联通转阿根廷NTT[倍率:0.8]
-      - HK4|10G|WS|独享|1.5x
-      - SG A 006
-      - 香港05 @BPJC_Group
-      - 香港06 @BPJC_Group 2
-      - SG A 003 2
-      - HK 104
-      - 香港01 电报群@BPJC_Group 2
-      - SG A 006 2
-      - _CN_n_26
-      - 广东移动转香港CM[M][倍率:0.9]
-      - 香港09 @BPJC_Group 2
+      - CN_1882 |13.29Mb
+      - CN_1877 |23.07Mb
+      - CN_1869 |95.42Mb
+      - _639 |24.79Mb
+      - _577 |64.21Mb
+      - _632 |85.95Mb
+      - HK_2339 |42.41Mb
+      - Relay_🇨🇳CN-🇨🇳CN_09
+      - sg
+      - 台湾-tg频道:@ripaojiedian
+      - _571 |60.11Mb
+      - 香港3-tg频道:@ripaojiedian
+      - Japan 04
+      - Japan 05
+      - ccc.wodaming.cf
+      - haxx.wodaming.cf-clone
+      - 日本-9.15MB/s(Youtube:不良林)
+      - United States 01
+      - _ 4.18Mb |10.30Mb
+      - Japan 02
+      - SG_2826 |23.95Mb
+      - 35.包括V2ray和Trojan
+      - Japan 01
+      - Japan 03
+      - JP 001
+      - 35.包括V2ray和Trojan 2
+      - 37.长期套餐覆盖IPLC专线
+      - Canada 01
+      - 33.公益等级線路嚴格限速
+      - 免费梯子https://t.me/mftizi
+      - 31.『ChinaG』几鸡-学习助理
+      - _1449 |16.53Mb
+      - US_2844
+      - 新加坡3
+      - 新加坡5
+      - 新加坡2
+      - 韩国KR-tg频道:@ripaojiedian
+      - 33.公益等级線路嚴格限速 2
+      - US_1955 |27.14Mb
+      - 新加坡 05  停机卡免流(其他请更换host)
+      - 36.中继中转隧道线路覆盖
+      - qqq.wodaming.cf
+      - 韩国 01 白嫖机场群:@BPJC_Group
+      - 香港HKT[ws]
+      - 36.中继中转隧道线路覆盖 2
+      - 31.『ChinaG』几鸡-学习助理 2
+      - 美国4|tg频道:@ripaojiedian
+      - 美国(yudou66.com 玉豆分享)
+      - 美国1|tg频道:@ripaojiedian
+      - US-高速节点推荐：v1.mk/vip
+      - bulink自建免费10线 三网
+      - bulink自建免费55线 三网
+      - bulink自建免费19线 三网
+      - 美国-5.66MB/s(Youtube:不良林)
+      - Relay_🇺🇸US-🇩🇪DE_22
+      - NL_1338
+      - Relay_🇨🇳CN-🇭🇰HK_249
+      - _CN_中国->🇭🇰_HK_香港
+      - CN_312 |10.16Mb
+      - NL_1384
+      - CN_1883 | 6.79Mb
+      - NL_1268
+      - _ 4.80Mb | 2.41Mb
+      - _148 |45.84Mb
+      - _CN_中国->🇭🇰_HK_香港 2
+      - Japan 06
+      - NL_1269
+      - NL_1455
+      - _NL_荷兰
+      - NL_1292
+      - NL_1322
+      - t.me/wbnet_🇳🇱_NL_1373
+      - NL_1348
+      - 34.捐赠解锁更多协议线路
+      - t.me/wbnet_🇳🇱_NL_1372
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 日本 02|AzureCloud|大阪|1.0
-      - 深港专线5[倍率:2.5]
-      - _CN_n_10
-      - _CN_n_39
-      - 深港专线4[倍率:2.5]
-      - 广东移动转台湾HiNet[M][倍率:1]
-      - 深港专线转香港HGC商宽8[倍率:2.5]
-      - _CN_n523_403
-      - 湖南联通转日本NTT[倍率:0.8]
-      - 深港专线转香港HGC商宽7[倍率:2.5]
-      - _油管频道：全网最强白嫖
-      - 长沙联通转台湾HiNet2[倍率:1]
-      - _1544 |39.60Mb
-      - 长沙联通转香港icable[M][倍率:0.9]
-      - 广州移动转台湾HiNet[M][倍率:1]
-      - 广东移动转香港HKT[M][倍率:0.9]
-      - _1539 |54.57Mb
-      - _1538 |47.55Mb
+      - 韩国首尔-tg频道:@ripaojiedian
       - CN_387 | 9.27Mb
-      - 长沙联通转日本NTT[M][倍率:0.8]
-      - 长沙联通转香港NTT[倍率:0.8]
-      - 长沙联通转日本NTT5[倍率:0.8]
-      - 湖南联通转美国Cera2[倍率:0.8]
-      - 长沙联通转日本NTT2[M][倍率:0.8]
-      - _1542 |20.09Mb
-      - 湖南联通转香港HKT2[M][倍率:0.9]
-      - 广州移动转香港NTT3[倍率:0.9]
-      - 湖南联通转日本NTT3[M][倍率:0.8]
-      - 香港 02|HKT-GT|尖沙咀区|1.0
-      - CN_1997 |48.14Mb
-      - 广东移动转日本NTT[倍率:0.8]
-      - 长沙联通转日本NTT3[M][倍率:0.8]
-      - 湖南联通转美国DP[M][倍率:0.8]
-      - 深港专线转香港HGC商宽6[倍率:2.5]
-      - _CN_n523_275
-      - 广州移动转香港NTT[倍率:0.8]
-      - 韩国 04|한국|Microsoft|釜山|1.0
-      - 长沙联通转韩国NTT[倍率:1]
-      - 湖南联通转德国HE[倍率:0.8]
-      - 深港专线转香港Azure[倍率:2.5]
-      - 长沙联通转日本NTT4[倍率:0.8]
-      - 湖南联通转日本Azure[倍率:1]
-      - 香港07 @BPJC_Group
-      - 香港|V2Ray|流媒体解锁
-      - 湖南联通转香港HKT3[M][倍率:0.9]
-      - 长沙联通转美国DP[M][倍率:0.8]
-      - 长沙联通转香港HKBN[倍率:0.9]
-      - 湖南联通转美国HE[倍率:0.8]
-      - 湖南联通转香港Azure2[倍率:0.9]
-      - 长沙联通转香港HKT17[M][倍率:0.9]
-      - 广东移动转日本Webarena2[倍率:0.8]
-      - 广州移动转香港AWS[倍率:0.9]
-      - 广州移动转韩国NTT[倍率:0.8]
-      - 深港专线转香港HGC商宽[倍率:2.5]
-      - 广东移动转香港AWS[倍率:0.9]
-      - _CN_n_68
-      - 长沙联通转美国HE[倍率:0.8]
-      - 日本2-tg频道:@ripaojiedian
-      - 香港06 @BPJC_Group
-      - SG A 001
-      - 湖南联通转英国Azure[倍率:0.9]
-      - CN_1985 |53.45Mb
-      - 香港02 @BPJC_Group
-      - 湖南联通转香港Azure[倍率:0.9]
-      - 湖南联通转韩国Azure[倍率:0.9]
-      - _CN_n_33
-      - 广东移动转香港NTT[倍率:0.8]
-      - _CN_n_32
-      - 香港08 @BPJC_Group
-      - _CN_n_49
-      - 广东移动转马来西亚TM[M][倍率:1]
-      - 深港专线转香港HGC[倍率:2.5]
-      - 香港09 @BPJC_Group
-      - 广州移动转美国Azure[倍率:1]
-      - _CN_n_59
-      - HK3|10G|WS
-      - 深港专线2[倍率:2.5]
-      - 香港10 @BPJC_Group
-      - SG A 003
-      - 长沙联通转香港Azure[倍率:1]
-      - 香港03 @BPJC_Group
-      - SG A 005
-      - 长沙联通转德国VU[倍率:0.8]
-      - 香港04 @BPJC_Group
-      - 香港07 @BPJC_Group 2
-      - SG A 004
-      - 广州移动转美国DP[M][倍率:0.8]
-      - 香港01 电报群@BPJC_Group
-      - SG A 002
-      - 香港03 @BPJC_Group 2
-      - SG A 004 2
-      - 深港专线转香港HKTB[M][倍率:2.5]
-      - 香港08 @BPJC_Group 2
-      - 深港专线转香港HGC商宽3[倍率:2.5]
-      - 深港专线转香港HKTA[M][倍率:2.5]
-      - 香港02 @BPJC_Group 2
-      - SG A 002 2
-      - SG A 005 2
-      - 湖南联通转阿根廷NTT[倍率:0.8]
-      - HK4|10G|WS|独享|1.5x
-      - SG A 006
-      - 香港05 @BPJC_Group
-      - 香港06 @BPJC_Group 2
-      - SG A 003 2
-      - HK 104
-      - 香港01 电报群@BPJC_Group 2
-      - SG A 006 2
-      - _CN_n_26
-      - 广东移动转香港CM[M][倍率:0.9]
-      - 香港09 @BPJC_Group 2
+      - CN_1882 |13.29Mb
+      - CN_1877 |23.07Mb
+      - CN_1869 |95.42Mb
+      - _639 |24.79Mb
+      - _577 |64.21Mb
+      - _632 |85.95Mb
+      - HK_2339 |42.41Mb
+      - Relay_🇨🇳CN-🇨🇳CN_09
+      - sg
+      - 台湾-tg频道:@ripaojiedian
+      - _571 |60.11Mb
+      - 香港3-tg频道:@ripaojiedian
+      - Japan 04
+      - Japan 05
+      - ccc.wodaming.cf
+      - haxx.wodaming.cf-clone
+      - 日本-9.15MB/s(Youtube:不良林)
+      - United States 01
+      - _ 4.18Mb |10.30Mb
+      - Japan 02
+      - SG_2826 |23.95Mb
+      - 35.包括V2ray和Trojan
+      - Japan 01
+      - Japan 03
+      - JP 001
+      - 35.包括V2ray和Trojan 2
+      - 37.长期套餐覆盖IPLC专线
+      - Canada 01
+      - 33.公益等级線路嚴格限速
+      - 免费梯子https://t.me/mftizi
+      - 31.『ChinaG』几鸡-学习助理
+      - _1449 |16.53Mb
+      - US_2844
+      - 新加坡3
+      - 新加坡5
+      - 新加坡2
+      - 韩国KR-tg频道:@ripaojiedian
+      - 33.公益等级線路嚴格限速 2
+      - US_1955 |27.14Mb
+      - 新加坡 05  停机卡免流(其他请更换host)
+      - 36.中继中转隧道线路覆盖
+      - qqq.wodaming.cf
+      - 韩国 01 白嫖机场群:@BPJC_Group
+      - 香港HKT[ws]
+      - 36.中继中转隧道线路覆盖 2
+      - 31.『ChinaG』几鸡-学习助理 2
+      - 美国4|tg频道:@ripaojiedian
+      - 美国(yudou66.com 玉豆分享)
+      - 美国1|tg频道:@ripaojiedian
+      - US-高速节点推荐：v1.mk/vip
+      - bulink自建免费10线 三网
+      - bulink自建免费55线 三网
+      - bulink自建免费19线 三网
+      - 美国-5.66MB/s(Youtube:不良林)
+      - Relay_🇺🇸US-🇩🇪DE_22
+      - NL_1338
+      - Relay_🇨🇳CN-🇭🇰HK_249
+      - _CN_中国->🇭🇰_HK_香港
+      - CN_312 |10.16Mb
+      - NL_1384
+      - CN_1883 | 6.79Mb
+      - NL_1268
+      - _ 4.80Mb | 2.41Mb
+      - _148 |45.84Mb
+      - _CN_中国->🇭🇰_HK_香港 2
+      - Japan 06
+      - NL_1269
+      - NL_1455
+      - _NL_荷兰
+      - NL_1292
+      - NL_1322
+      - t.me/wbnet_🇳🇱_NL_1373
+      - NL_1348
+      - 34.捐赠解锁更多协议线路
+      - t.me/wbnet_🇳🇱_NL_1372
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 日本 02|AzureCloud|大阪|1.0
-      - 深港专线5[倍率:2.5]
-      - _CN_n_10
-      - _CN_n_39
-      - 深港专线4[倍率:2.5]
-      - 广东移动转台湾HiNet[M][倍率:1]
-      - 深港专线转香港HGC商宽8[倍率:2.5]
-      - _CN_n523_403
-      - 湖南联通转日本NTT[倍率:0.8]
-      - 深港专线转香港HGC商宽7[倍率:2.5]
-      - _油管频道：全网最强白嫖
-      - 长沙联通转台湾HiNet2[倍率:1]
-      - _1544 |39.60Mb
-      - 长沙联通转香港icable[M][倍率:0.9]
-      - 广州移动转台湾HiNet[M][倍率:1]
-      - 广东移动转香港HKT[M][倍率:0.9]
-      - _1539 |54.57Mb
-      - _1538 |47.55Mb
+      - 韩国首尔-tg频道:@ripaojiedian
       - CN_387 | 9.27Mb
-      - 长沙联通转日本NTT[M][倍率:0.8]
-      - 长沙联通转香港NTT[倍率:0.8]
-      - 长沙联通转日本NTT5[倍率:0.8]
-      - 湖南联通转美国Cera2[倍率:0.8]
-      - 长沙联通转日本NTT2[M][倍率:0.8]
-      - _1542 |20.09Mb
-      - 湖南联通转香港HKT2[M][倍率:0.9]
-      - 广州移动转香港NTT3[倍率:0.9]
-      - 湖南联通转日本NTT3[M][倍率:0.8]
-      - 香港 02|HKT-GT|尖沙咀区|1.0
-      - CN_1997 |48.14Mb
-      - 广东移动转日本NTT[倍率:0.8]
-      - 长沙联通转日本NTT3[M][倍率:0.8]
-      - 湖南联通转美国DP[M][倍率:0.8]
-      - 深港专线转香港HGC商宽6[倍率:2.5]
-      - _CN_n523_275
-      - 广州移动转香港NTT[倍率:0.8]
-      - 韩国 04|한국|Microsoft|釜山|1.0
-      - 长沙联通转韩国NTT[倍率:1]
-      - 湖南联通转德国HE[倍率:0.8]
-      - 深港专线转香港Azure[倍率:2.5]
-      - 长沙联通转日本NTT4[倍率:0.8]
-      - 湖南联通转日本Azure[倍率:1]
-      - 香港07 @BPJC_Group
-      - 香港|V2Ray|流媒体解锁
-      - 湖南联通转香港HKT3[M][倍率:0.9]
-      - 长沙联通转美国DP[M][倍率:0.8]
-      - 长沙联通转香港HKBN[倍率:0.9]
-      - 湖南联通转美国HE[倍率:0.8]
-      - 湖南联通转香港Azure2[倍率:0.9]
-      - 长沙联通转香港HKT17[M][倍率:0.9]
-      - 广东移动转日本Webarena2[倍率:0.8]
-      - 广州移动转香港AWS[倍率:0.9]
-      - 广州移动转韩国NTT[倍率:0.8]
-      - 深港专线转香港HGC商宽[倍率:2.5]
-      - 广东移动转香港AWS[倍率:0.9]
-      - _CN_n_68
-      - 长沙联通转美国HE[倍率:0.8]
-      - 日本2-tg频道:@ripaojiedian
-      - 香港06 @BPJC_Group
-      - SG A 001
-      - 湖南联通转英国Azure[倍率:0.9]
-      - CN_1985 |53.45Mb
-      - 香港02 @BPJC_Group
-      - 湖南联通转香港Azure[倍率:0.9]
-      - 湖南联通转韩国Azure[倍率:0.9]
-      - _CN_n_33
-      - 广东移动转香港NTT[倍率:0.8]
-      - _CN_n_32
-      - 香港08 @BPJC_Group
-      - _CN_n_49
-      - 广东移动转马来西亚TM[M][倍率:1]
-      - 深港专线转香港HGC[倍率:2.5]
-      - 香港09 @BPJC_Group
-      - 广州移动转美国Azure[倍率:1]
-      - _CN_n_59
-      - HK3|10G|WS
-      - 深港专线2[倍率:2.5]
-      - 香港10 @BPJC_Group
-      - SG A 003
-      - 长沙联通转香港Azure[倍率:1]
-      - 香港03 @BPJC_Group
-      - SG A 005
-      - 长沙联通转德国VU[倍率:0.8]
-      - 香港04 @BPJC_Group
-      - 香港07 @BPJC_Group 2
-      - SG A 004
-      - 广州移动转美国DP[M][倍率:0.8]
-      - 香港01 电报群@BPJC_Group
-      - SG A 002
-      - 香港03 @BPJC_Group 2
-      - SG A 004 2
-      - 深港专线转香港HKTB[M][倍率:2.5]
-      - 香港08 @BPJC_Group 2
-      - 深港专线转香港HGC商宽3[倍率:2.5]
-      - 深港专线转香港HKTA[M][倍率:2.5]
-      - 香港02 @BPJC_Group 2
-      - SG A 002 2
-      - SG A 005 2
-      - 湖南联通转阿根廷NTT[倍率:0.8]
-      - HK4|10G|WS|独享|1.5x
-      - SG A 006
-      - 香港05 @BPJC_Group
-      - 香港06 @BPJC_Group 2
-      - SG A 003 2
-      - HK 104
-      - 香港01 电报群@BPJC_Group 2
-      - SG A 006 2
-      - _CN_n_26
-      - 广东移动转香港CM[M][倍率:0.9]
-      - 香港09 @BPJC_Group 2
+      - CN_1882 |13.29Mb
+      - CN_1877 |23.07Mb
+      - CN_1869 |95.42Mb
+      - _639 |24.79Mb
+      - _577 |64.21Mb
+      - _632 |85.95Mb
+      - HK_2339 |42.41Mb
+      - Relay_🇨🇳CN-🇨🇳CN_09
+      - sg
+      - 台湾-tg频道:@ripaojiedian
+      - _571 |60.11Mb
+      - 香港3-tg频道:@ripaojiedian
+      - Japan 04
+      - Japan 05
+      - ccc.wodaming.cf
+      - haxx.wodaming.cf-clone
+      - 日本-9.15MB/s(Youtube:不良林)
+      - United States 01
+      - _ 4.18Mb |10.30Mb
+      - Japan 02
+      - SG_2826 |23.95Mb
+      - 35.包括V2ray和Trojan
+      - Japan 01
+      - Japan 03
+      - JP 001
+      - 35.包括V2ray和Trojan 2
+      - 37.长期套餐覆盖IPLC专线
+      - Canada 01
+      - 33.公益等级線路嚴格限速
+      - 免费梯子https://t.me/mftizi
+      - 31.『ChinaG』几鸡-学习助理
+      - _1449 |16.53Mb
+      - US_2844
+      - 新加坡3
+      - 新加坡5
+      - 新加坡2
+      - 韩国KR-tg频道:@ripaojiedian
+      - 33.公益等级線路嚴格限速 2
+      - US_1955 |27.14Mb
+      - 新加坡 05  停机卡免流(其他请更换host)
+      - 36.中继中转隧道线路覆盖
+      - qqq.wodaming.cf
+      - 韩国 01 白嫖机场群:@BPJC_Group
+      - 香港HKT[ws]
+      - 36.中继中转隧道线路覆盖 2
+      - 31.『ChinaG』几鸡-学习助理 2
+      - 美国4|tg频道:@ripaojiedian
+      - 美国(yudou66.com 玉豆分享)
+      - 美国1|tg频道:@ripaojiedian
+      - US-高速节点推荐：v1.mk/vip
+      - bulink自建免费10线 三网
+      - bulink自建免费55线 三网
+      - bulink自建免费19线 三网
+      - 美国-5.66MB/s(Youtube:不良林)
+      - Relay_🇺🇸US-🇩🇪DE_22
+      - NL_1338
+      - Relay_🇨🇳CN-🇭🇰HK_249
+      - _CN_中国->🇭🇰_HK_香港
+      - CN_312 |10.16Mb
+      - NL_1384
+      - CN_1883 | 6.79Mb
+      - NL_1268
+      - _ 4.80Mb | 2.41Mb
+      - _148 |45.84Mb
+      - _CN_中国->🇭🇰_HK_香港 2
+      - Japan 06
+      - NL_1269
+      - NL_1455
+      - _NL_荷兰
+      - NL_1292
+      - NL_1322
+      - t.me/wbnet_🇳🇱_NL_1373
+      - NL_1348
+      - 34.捐赠解锁更多协议线路
+      - t.me/wbnet_🇳🇱_NL_1372
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -1006,116 +697,83 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 日本 02|AzureCloud|大阪|1.0
-      - 深港专线5[倍率:2.5]
-      - _CN_n_10
-      - _CN_n_39
-      - 深港专线4[倍率:2.5]
-      - 广东移动转台湾HiNet[M][倍率:1]
-      - 深港专线转香港HGC商宽8[倍率:2.5]
-      - _CN_n523_403
-      - 湖南联通转日本NTT[倍率:0.8]
-      - 深港专线转香港HGC商宽7[倍率:2.5]
-      - _油管频道：全网最强白嫖
-      - 长沙联通转台湾HiNet2[倍率:1]
-      - _1544 |39.60Mb
-      - 长沙联通转香港icable[M][倍率:0.9]
-      - 广州移动转台湾HiNet[M][倍率:1]
-      - 广东移动转香港HKT[M][倍率:0.9]
-      - _1539 |54.57Mb
-      - _1538 |47.55Mb
+      - 韩国首尔-tg频道:@ripaojiedian
       - CN_387 | 9.27Mb
-      - 长沙联通转日本NTT[M][倍率:0.8]
-      - 长沙联通转香港NTT[倍率:0.8]
-      - 长沙联通转日本NTT5[倍率:0.8]
-      - 湖南联通转美国Cera2[倍率:0.8]
-      - 长沙联通转日本NTT2[M][倍率:0.8]
-      - _1542 |20.09Mb
-      - 湖南联通转香港HKT2[M][倍率:0.9]
-      - 广州移动转香港NTT3[倍率:0.9]
-      - 湖南联通转日本NTT3[M][倍率:0.8]
-      - 香港 02|HKT-GT|尖沙咀区|1.0
-      - CN_1997 |48.14Mb
-      - 广东移动转日本NTT[倍率:0.8]
-      - 长沙联通转日本NTT3[M][倍率:0.8]
-      - 湖南联通转美国DP[M][倍率:0.8]
-      - 深港专线转香港HGC商宽6[倍率:2.5]
-      - _CN_n523_275
-      - 广州移动转香港NTT[倍率:0.8]
-      - 韩国 04|한국|Microsoft|釜山|1.0
-      - 长沙联通转韩国NTT[倍率:1]
-      - 湖南联通转德国HE[倍率:0.8]
-      - 深港专线转香港Azure[倍率:2.5]
-      - 长沙联通转日本NTT4[倍率:0.8]
-      - 湖南联通转日本Azure[倍率:1]
-      - 香港07 @BPJC_Group
-      - 香港|V2Ray|流媒体解锁
-      - 湖南联通转香港HKT3[M][倍率:0.9]
-      - 长沙联通转美国DP[M][倍率:0.8]
-      - 长沙联通转香港HKBN[倍率:0.9]
-      - 湖南联通转美国HE[倍率:0.8]
-      - 湖南联通转香港Azure2[倍率:0.9]
-      - 长沙联通转香港HKT17[M][倍率:0.9]
-      - 广东移动转日本Webarena2[倍率:0.8]
-      - 广州移动转香港AWS[倍率:0.9]
-      - 广州移动转韩国NTT[倍率:0.8]
-      - 深港专线转香港HGC商宽[倍率:2.5]
-      - 广东移动转香港AWS[倍率:0.9]
-      - _CN_n_68
-      - 长沙联通转美国HE[倍率:0.8]
-      - 日本2-tg频道:@ripaojiedian
-      - 香港06 @BPJC_Group
-      - SG A 001
-      - 湖南联通转英国Azure[倍率:0.9]
-      - CN_1985 |53.45Mb
-      - 香港02 @BPJC_Group
-      - 湖南联通转香港Azure[倍率:0.9]
-      - 湖南联通转韩国Azure[倍率:0.9]
-      - _CN_n_33
-      - 广东移动转香港NTT[倍率:0.8]
-      - _CN_n_32
-      - 香港08 @BPJC_Group
-      - _CN_n_49
-      - 广东移动转马来西亚TM[M][倍率:1]
-      - 深港专线转香港HGC[倍率:2.5]
-      - 香港09 @BPJC_Group
-      - 广州移动转美国Azure[倍率:1]
-      - _CN_n_59
-      - HK3|10G|WS
-      - 深港专线2[倍率:2.5]
-      - 香港10 @BPJC_Group
-      - SG A 003
-      - 长沙联通转香港Azure[倍率:1]
-      - 香港03 @BPJC_Group
-      - SG A 005
-      - 长沙联通转德国VU[倍率:0.8]
-      - 香港04 @BPJC_Group
-      - 香港07 @BPJC_Group 2
-      - SG A 004
-      - 广州移动转美国DP[M][倍率:0.8]
-      - 香港01 电报群@BPJC_Group
-      - SG A 002
-      - 香港03 @BPJC_Group 2
-      - SG A 004 2
-      - 深港专线转香港HKTB[M][倍率:2.5]
-      - 香港08 @BPJC_Group 2
-      - 深港专线转香港HGC商宽3[倍率:2.5]
-      - 深港专线转香港HKTA[M][倍率:2.5]
-      - 香港02 @BPJC_Group 2
-      - SG A 002 2
-      - SG A 005 2
-      - 湖南联通转阿根廷NTT[倍率:0.8]
-      - HK4|10G|WS|独享|1.5x
-      - SG A 006
-      - 香港05 @BPJC_Group
-      - 香港06 @BPJC_Group 2
-      - SG A 003 2
-      - HK 104
-      - 香港01 电报群@BPJC_Group 2
-      - SG A 006 2
-      - _CN_n_26
-      - 广东移动转香港CM[M][倍率:0.9]
-      - 香港09 @BPJC_Group 2
+      - CN_1882 |13.29Mb
+      - CN_1877 |23.07Mb
+      - CN_1869 |95.42Mb
+      - _639 |24.79Mb
+      - _577 |64.21Mb
+      - _632 |85.95Mb
+      - HK_2339 |42.41Mb
+      - Relay_🇨🇳CN-🇨🇳CN_09
+      - sg
+      - 台湾-tg频道:@ripaojiedian
+      - _571 |60.11Mb
+      - 香港3-tg频道:@ripaojiedian
+      - Japan 04
+      - Japan 05
+      - ccc.wodaming.cf
+      - haxx.wodaming.cf-clone
+      - 日本-9.15MB/s(Youtube:不良林)
+      - United States 01
+      - _ 4.18Mb |10.30Mb
+      - Japan 02
+      - SG_2826 |23.95Mb
+      - 35.包括V2ray和Trojan
+      - Japan 01
+      - Japan 03
+      - JP 001
+      - 35.包括V2ray和Trojan 2
+      - 37.长期套餐覆盖IPLC专线
+      - Canada 01
+      - 33.公益等级線路嚴格限速
+      - 免费梯子https://t.me/mftizi
+      - 31.『ChinaG』几鸡-学习助理
+      - _1449 |16.53Mb
+      - US_2844
+      - 新加坡3
+      - 新加坡5
+      - 新加坡2
+      - 韩国KR-tg频道:@ripaojiedian
+      - 33.公益等级線路嚴格限速 2
+      - US_1955 |27.14Mb
+      - 新加坡 05  停机卡免流(其他请更换host)
+      - 36.中继中转隧道线路覆盖
+      - qqq.wodaming.cf
+      - 韩国 01 白嫖机场群:@BPJC_Group
+      - 香港HKT[ws]
+      - 36.中继中转隧道线路覆盖 2
+      - 31.『ChinaG』几鸡-学习助理 2
+      - 美国4|tg频道:@ripaojiedian
+      - 美国(yudou66.com 玉豆分享)
+      - 美国1|tg频道:@ripaojiedian
+      - US-高速节点推荐：v1.mk/vip
+      - bulink自建免费10线 三网
+      - bulink自建免费55线 三网
+      - bulink自建免费19线 三网
+      - 美国-5.66MB/s(Youtube:不良林)
+      - Relay_🇺🇸US-🇩🇪DE_22
+      - NL_1338
+      - Relay_🇨🇳CN-🇭🇰HK_249
+      - _CN_中国->🇭🇰_HK_香港
+      - CN_312 |10.16Mb
+      - NL_1384
+      - CN_1883 | 6.79Mb
+      - NL_1268
+      - _ 4.80Mb | 2.41Mb
+      - _148 |45.84Mb
+      - _CN_中国->🇭🇰_HK_香港 2
+      - Japan 06
+      - NL_1269
+      - NL_1455
+      - _NL_荷兰
+      - NL_1292
+      - NL_1322
+      - t.me/wbnet_🇳🇱_NL_1373
+      - NL_1348
+      - 34.捐赠解锁更多协议线路
+      - t.me/wbnet_🇳🇱_NL_1372
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
