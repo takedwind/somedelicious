@@ -5,1223 +5,567 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 油管：最网最强白嫖, server: cn.zzv05.infonode.xyz, port: 17013, type: vmess, uuid: edac1153-eff4-3719-92a3-c7620ea00bd7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /v2ray, headers: {Host: cn.zzv05.infonode.xyz}}, udp: true}
-  - {name: Lv1.V05 湘日BGP-新加坡, server: cn.zzv06.infonode.xyz, port: 17015, type: vmess, uuid: edac1153-eff4-3719-92a3-c7620ea00bd7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /v2ray, headers: {Host: cn.zzv06.infonode.xyz}}, udp: true}
-  - {name: 油管：最网最强白嫖 2, server: cn.zzv06.infonode.xyz, port: 17013, type: vmess, uuid: edac1153-eff4-3719-92a3-c7620ea00bd7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /v2ray, headers: {Host: cn.zzv06.infonode.xyz}}, udp: true}
-  - {name: 油管：最网最强白嫖 3, server: cn.zzv01.infonode.xyz, port: 17013, type: vmess, uuid: edac1153-eff4-3719-92a3-c7620ea00bd7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /v2ray, headers: {Host: cn.zzv01.infonode.xyz}}, udp: true}
-  - {name: 油管：最网最强白嫖 4, server: cn.zzv07.infonode.xyz, port: 17013, type: vmess, uuid: edac1153-eff4-3719-92a3-c7620ea00bd7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /v2ray, headers: {Host: cn.zzv07.infonode.xyz}}, udp: true}
-  - {name: 油管：最网最强白嫖 5, server: cn.zzv07.infonode.xyz, port: 17015, type: vmess, uuid: edac1153-eff4-3719-92a3-c7620ea00bd7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /v2ray, headers: {Host: cn.zzv07.infonode.xyz}}, udp: true}
-  - {name: Lv1.V47 沪日BGP-新加坡, server: cn.zzv01.infonode.xyz, port: 17015, type: vmess, uuid: edac1153-eff4-3719-92a3-c7620ea00bd7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /v2ray, headers: {Host: cn.zzv01.infonode.xyz}}, udp: true}
-  - {name: Lv1.V*65 广州移动-新加坡, server: cn.zzv12.infonode.xyz, port: 17015, type: vmess, uuid: edac1153-eff4-3719-92a3-c7620ea00bd7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /v2ray, headers: {Host: cn.zzv12.infonode.xyz}}, udp: true}
-  - {name: 油管：最网最强白嫖 6, server: cn.zzv01.infonode.xyz, port: 17011, type: vmess, uuid: edac1153-eff4-3719-92a3-c7620ea00bd7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /v2ray, headers: {Host: cn.zzv01.infonode.xyz}}, udp: true}
-  - {name: 油管：最网最强白嫖 7, server: cn.zzv01.infonode.xyz, port: 17014, type: vmess, uuid: edac1153-eff4-3719-92a3-c7620ea00bd7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /v2ray, headers: {Host: cn.zzv01.infonode.xyz}}, udp: true}
-  - {name: 油管：最网最强白嫖 8, server: cn.zzv07.infonode.xyz, port: 17012, type: vmess, uuid: edac1153-eff4-3719-92a3-c7620ea00bd7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /v2ray, headers: {Host: cn.zzv07.infonode.xyz}}, udp: true}
-  - {name: Lv1.V16 东莞联通-美国, server: cn.zzv07.infonode.xyz, port: 17014, type: vmess, uuid: edac1153-eff4-3719-92a3-c7620ea00bd7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /v2ray, headers: {Host: cn.zzv07.infonode.xyz}}, udp: true}
-  - {name: Lv1.V62 广州移动-台湾, server: cn.zzv12.infonode.xyz, port: 17012, type: vmess, uuid: edac1153-eff4-3719-92a3-c7620ea00bd7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /v2ray, headers: {Host: cn.zzv12.infonode.xyz}}, udp: true}
-  - {name: 油管：最网最强白嫖 9, server: cn.zzv01.infonode.xyz, port: 17012, type: vmess, uuid: edac1153-eff4-3719-92a3-c7620ea00bd7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /v2ray, headers: {Host: cn.zzv01.infonode.xyz}}, udp: true}
-  - {name: 油管：最网最强白嫖 10, server: cn.zzv12.infonode.xyz, port: 17013, type: vmess, uuid: edac1153-eff4-3719-92a3-c7620ea00bd7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /v2ray, headers: {Host: cn.zzv12.infonode.xyz}}, udp: true}
-  - {name: 油管：最网最强白嫖 11, server: cn.zzv02.infonode.xyz, port: 17015, type: vmess, uuid: edac1153-eff4-3719-92a3-c7620ea00bd7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /v2ray, headers: {Host: cn.zzv02.infonode.xyz}}, udp: true}
-  - {name: CN_1850 |12.58Mb, server: 14.29.124.168, port: 25238, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: Lv1.V40 上海移动-美国, server: cn.zzv05.infonode.xyz, port: 17014, type: vmess, uuid: edac1153-eff4-3719-92a3-c7620ea00bd7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /v2ray, headers: {Host: cn.zzv05.infonode.xyz}}, udp: true}
-  - {name: Lv1.V04 湘日BGP-美国, server: cn.zzv06.infonode.xyz, port: 17014, type: vmess, uuid: edac1153-eff4-3719-92a3-c7620ea00bd7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /v2ray, headers: {Host: cn.zzv06.infonode.xyz}}, udp: true}
-  - {name: Lv1.V61 广州移动-香港, server: cn.zzv12.infonode.xyz, port: 17011, type: vmess, uuid: edac1153-eff4-3719-92a3-c7620ea00bd7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /v2ray, headers: {Host: cn.zzv12.infonode.xyz}}, udp: true}
-  - {name: 14.29.124.168:25270, server: 14.29.124.168, port: 25270, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: 油管：最网最强白嫖 12, server: cn.zzv02.infonode.xyz, port: 17016, type: vmess, uuid: edac1153-eff4-3719-92a3-c7620ea00bd7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /v2ray, headers: {Host: cn.zzv02.infonode.xyz}}, udp: true}
-  - {name: 油管：最网最强白嫖 13, server: cn.zzv12.infonode.xyz, port: 17014, type: vmess, uuid: edac1153-eff4-3719-92a3-c7620ea00bd7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /v2ray, headers: {Host: cn.zzv12.infonode.xyz}}, udp: true}
-  - {name: _油管频道：全网最强白嫖, server: 14.29.124.168, port: 25252, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: _632 |85.95Mb, server: 14.29.124.168, port: 25241, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: 14.29.124.168:25220, server: 14.29.124.168, port: 25220, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_281 | 3.90Mb, server: 14.29.124.168, port: 25218, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_1877 |23.07Mb, server: 14.29.124.168, port: 25295, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: _1418 |88.44Mb, server: 14.29.124.168, port: 25294, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_2, server: 14.29.124.168, port: 25271, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: 台湾原生-tg频道:@ripaojiedian, server: yd01.03ddns.cyou, port: 42107, type: vmess, uuid: 843b7f17-00fa-40f9-8525-4f1e1b8ba4f0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: CN_1842 | 8.96Mb, server: 14.29.124.168, port: 25210, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN 🇨🇳 @AzadNet, server: 14.29.124.168, port: 25297, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: _油管频道：全网最强白嫖 2, server: 14.29.124.168, port: 25231, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN 🇨🇳 @AzadNet 2, server: 14.29.124.168, port: 25286, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: _油管频道：全网最强白嫖 3, server: 14.29.124.168, port: 25268, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: _571 |60.11Mb, server: 14.29.124.168, port: 25217, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: 14.29.124.168:25289, server: 14.29.124.168, port: 25289, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_1849 | 8.80Mb, server: 14.29.124.168, port: 25259, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_271 |24.78Mb, server: 14.29.124.168, port: 25247, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: 日本-tg频道:@ripaojiedian, server: jp21301.cloudmatrix.xyz, port: 21301, type: vmess, uuid: 58bbd816-c5f2-39e2-8ca1-79e87c2c2b02, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: jp21301.cloudmatrix.xyz}}, udp: true}
+  - {name: 日本03, server: shanghai-cu2.kexueddns.club, port: 17188, type: trojan, password: 14e535ec-e706-4712-914b-8a8ae6460a51, sni: jp3-4.hongdou1.club, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇨🇳CN-🇨🇳CN_228, server: sxqxj.cn, port: 2164, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ws, headers: {Host: sxqxj.cn}}, udp: true}
+  - {name: 日本04, server: shanghai-cu2.kexueddns.club, port: 19821, type: trojan, password: 14e535ec-e706-4712-914b-8a8ae6460a51, sni: jp3-4.hongdou1.club, skip-cert-verify: true, udp: true}
   - {name: CN_261 |24.93Mb, server: 14.29.124.168, port: 25222, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN 🇨🇳 @AzadNet 3, server: 14.29.124.168, port: 25256, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: 14.29.124.168:25245, server: 14.29.124.168, port: 25245, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: _577 |64.21Mb, server: 14.29.124.168, port: 25267, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: _油管频道：全网最强白嫖 4, server: 14.29.124.168, port: 25266, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: 油管：最网最强白嫖 14, server: az.gunangzhui.cloud, port: 41534, type: trojan, password: 9e496875-e09c-451b-a99c-fe2f57e221c2, sni: hinet.ddag.xyz, skip-cert-verify: true, udp: true}
-  - {name: 台湾-tg频道:@ripaojiedian, server: yd01.03ddns.cyou, port: 52103, type: trojan, password: 843b7f17-00fa-40f9-8525-4f1e1b8ba4f0, sni: ssl.ddnsnode.com, skip-cert-verify: true, udp: true}
-  - {name: _568 | 9.14Mb, server: 14.29.124.168, port: 25233, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: 台湾02丨原生IP丨, server: bgp.keaiyun.top, port: 47519, type: vmess, uuid: 2b41ef2c-a339-3142-ae7b-9f5f6b531e16, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: CN_1869 |95.42Mb, server: 14.29.124.168, port: 25230, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: 美国-21.26MB/s(Youtube:不良林), server: hk02.bosaidong.buzz, port: 443, type: vmess, uuid: 96e19c0c-ba2f-47cf-b1d6-efef8f8fbb4d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /JJkuv3, headers: {Host: hk02.bosaidong.buzz}}, udp: true}
-  - {name: _335 | 9.08Mb, server: 14.29.124.168, port: 25293, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: _562 | 8.97Mb, server: 14.29.124.168, port: 25219, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: Lv1.V27 广州移动2-日本, server: cn.zzv08.infonode.xyz, port: 17013, type: vmess, uuid: edac1153-eff4-3719-92a3-c7620ea00bd7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /v2ray, headers: {Host: cn.zzv08.infonode.xyz}}, udp: true}
-  - {name: 油管：全网最强白嫖, server: cdn2.myuuusss.com, port: 30001, type: ss, cipher: chacha20-ietf-poly1305, password: b195963c-2631-442d-ab3a-6e78df25d904, udp: true}
-  - {name: HK_2339 |42.41Mb, server: yyyy.wwwbhjy.com, port: 2443, type: vmess, uuid: dee32eb7-e190-4c6f-dd27-aa9c82cd5490, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /8a76fb13/, headers: {Host: yyyy.wwwbhjy.com}}, udp: true}
-  - {name: Lv1.V*29 广州移动2-新加坡, server: cn.zzv08.infonode.xyz, port: 17015, type: vmess, uuid: edac1153-eff4-3719-92a3-c7620ea00bd7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /v2ray, headers: {Host: cn.zzv08.infonode.xyz}}, udp: true}
-  - {name: 香港阿伟科技atTG*油管_77_1404 |16.18Mb, server: hk01.bosaidong.buzz, port: 80, type: vmess, uuid: 2adef817-ff89-4d0c-8782-694ba4e8d899, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: hk01.bosaidong.buzz}}, udp: true}
-  - {name: JP_608 |28.98Mb, server: jpgithub.edgehelper.com, port: 53900, type: vmess, uuid: d8860258-4ce1-4412-9ede-ecfd8d827ca4, alterId: 2, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: 油管：最网最强白嫖 15, server: jp-zf1.jiashumao.net, port: 29881, type: trojan, password: 85c63b8c-8c01-3c72-9c97-60505efac224, sni: jp-linode.jiashumao.net, skip-cert-verify: true, udp: true}
-  - {name: US_3889 |10.59Mb, server: jp02-vm0.entry.ikuuu.casa, port: 448, type: vmess, uuid: e1241a61-e533-3aa0-a25e-ad86cf34cd64, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: jp02-vm0.entry.ikuuu.casa}}, udp: true}
-  - {name: 油管：最网最强白嫖 16, server: jp-zf1.jiashumao.net, port: 29881, type: trojan, password: c1f11b49-2421-326d-b95c-f58466e3060d, sni: jp-linode.jiashumao.net, skip-cert-verify: true, udp: true}
-  - {name: 美国-15.35MB/s(Youtube:不良林), server: hk01.bosaidong.buzz, port: 444, type: vmess, uuid: 96e19c0c-ba2f-47cf-b1d6-efef8f8fbb4d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /JJkuv3, headers: {Host: hk01.bosaidong.buzz}}, udp: true}
-  - {name: Lv1.V26 广州移动2-台湾, server: cn.zzv08.infonode.xyz, port: 17012, type: vmess, uuid: edac1153-eff4-3719-92a3-c7620ea00bd7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /v2ray, headers: {Host: cn.zzv08.infonode.xyz}}, udp: true}
-  - {name: 美国-tg频道:@ripaojiedian, server: cdn2.myuuusss.com, port: 32001, type: vmess, uuid: b195963c-2631-442d-ab3a-6e78df25d904, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: JP_592, server: jpgithub.edgehelper.com, port: 53900, type: vmess, uuid: d8860258-4ce1-4412-9ede-ecfd8d827ca4, alterId: 2, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: 油管：最网最强白嫖 17, server: sxdx-nf.jiashumao.net, port: 35401, type: trojan, password: c1f11b49-2421-326d-b95c-f58466e3060d, sni: nf.jiashumao.net, skip-cert-verify: true, udp: true}
-  - {name: _油管：全网最强白嫖, server: bgp.keaiyun.top, port: 47519, type: vmess, uuid: 2b41ef2c-a339-3142-ae7b-9f5f6b531e16, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 香港临时-tg频道:@ripaojiedian, server: hk02.bosaidong.buzz, port: 443, type: vmess, uuid: 96e19c0c-ba2f-47cf-b1d6-efef8f8fbb4d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /JJkuv3, headers: {Host: a.189.cn}}, udp: true}
-  - {name: US_1939, server: jp02-vm0.entry.ikuuu.casa, port: 444, type: vmess, uuid: 8477764d-c618-3398-9d15-ee2b3becf2d0, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: jp02-vm0.entry.ikuuu.casa}}, udp: true}
-  - {name: US_3887 |20.54Mb, server: jp02-vm0.entry.ikuuu.casa, port: 447, type: vmess, uuid: 3046e7e6-1c41-361f-8616-434c76c32d48, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: jp02-vm0.entry.ikuuu.casa}}, udp: true}
+  - {name: CN 🇨🇳 @AzadNet, server: 14.29.124.168, port: 25297, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: 油管：最网最强白嫖, server: 14.29.124.168, port: 25219, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_1842 | 8.96Mb, server: 14.29.124.168, port: 25210, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: LV1 新加坡 - 隧道「1.5x」, server: sg.youzi.win, port: 27773, type: vmess, uuid: 4ecb1a53-5923-41c3-8d21-2d31268e6c72, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /images, headers: {Host: v.qq.com}}, udp: true}
+  - {name: 新加坡-tg频道:@ripaojiedian, server: zj.haojiahuo.club, port: 30058, type: vmess, uuid: 1a689e21-7569-34c5-8d64-5b17a3e9e816, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /videos, headers: {Host: xuexi.cn}}, udp: true}
+  - {name: 油管：最网最强白嫖 2, server: 14.29.124.168, port: 25283, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_2, server: 14.29.124.168, port: 25271, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: LV1 日本 - 隧道「1.5x」, server: jp.youzi.win, port: 27775, type: vmess, uuid: 4ecb1a53-5923-41c3-8d21-2d31268e6c72, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /images, headers: {Host: v.qq.com}}, udp: true}
+  - {name: 14.29.124.168:25289, server: 14.29.124.168, port: 25289, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: LV1 韩国 - 隧道「1.5x」, server: kr.youzi.win, port: 27772, type: vmess, uuid: 4ecb1a53-5923-41c3-8d21-2d31268e6c72, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /images, headers: {Host: v.qq.com}}, udp: true}
+  - {name: CN 🇨🇳 @AzadNet 2, server: 14.29.124.168, port: 25256, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: 油管：最网最强白嫖 3, server: 14.29.124.168, port: 25245, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: _油管频道：全网最强白嫖, server: 14.29.124.168, port: 25268, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: v2cross.com, server: az.gunangzhui.cloud, port: 12716, type: trojan, password: 9e496875-e09c-451b-a99c-fe2f57e221c2, sni: hgc.ddag.xyz, skip-cert-verify: true, udp: true}
+  - {name: _油管频道：全网最强白嫖 2, server: 14.29.124.168, port: 25231, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN 🇨🇳 @AzadNet 3, server: 14.29.124.168, port: 25286, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: _571 |60.11Mb, server: 14.29.124.168, port: 25217, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
   - {name: CN_3, server: 14.29.124.168, port: 25235, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: 油管：最网最强白嫖 18, server: az.gunangzhui.cloud, port: 12716, type: trojan, password: 9e496875-e09c-451b-a99c-fe2f57e221c2, sni: hgc.ddag.xyz, skip-cert-verify: true, udp: true}
-  - {name: 油管：最网最强白嫖 19, server: ma-zf.jiashumao.net, port: 22983, type: trojan, password: 85c63b8c-8c01-3c72-9c97-60505efac224, sni: ma-ctm.jiashumao.net, skip-cert-verify: true, udp: true}
-  - {name: 油管：最网最强白嫖 20, server: bnbq-zf.jiashumao.net, port: 26381, type: trojan, password: 85c63b8c-8c01-3c72-9c97-60505efac224, sni: bnbq.jiashumao.net, skip-cert-verify: true, udp: true}
-  - {name: 油管：最网最强白嫖 21, server: ma-zf.jiashumao.net, port: 22983, type: trojan, password: c1f11b49-2421-326d-b95c-f58466e3060d, sni: ma-ctm.jiashumao.net, skip-cert-verify: true, udp: true}
-  - {name: github.com/freefq - 香港  20, server: imgU140111366548.hk.huawei-cacahe.com, port: 20224, type: vmess, uuid: d8860258-4ce1-4412-9ede-ecfd8d827ca4, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: imgU140111366548.hk.huawei-cacahe.com}}, udp: true}
-  - {name: 36.中继中转隧道线路覆盖, server: yqy2356.china-cdn-net.com, port: 2356, type: trojan, password: ca0fa66e-3495-360a-8ad1-1f3043450c40, sni: cdn-debian.org, skip-cert-verify: true, udp: true}
-  - {name: 油管：最网最强白嫖 22, server: szdx-anhb.jiashumao.net, port: 22481, type: trojan, password: 85c63b8c-8c01-3c72-9c97-60505efac224, sni: ahbn.jiashumao.net, skip-cert-verify: true, udp: true}
-  - {name: _1429 |49.17Mb, server: 20.243.69.62, port: 80, type: vmess, uuid: 5f405152-88b2-4e5e-9091-b730e65e8983, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: _油管：全网最强白嫖 2, server: 20.243.69.62, port: 80, type: vmess, uuid: 5f405152-88b2-4e5e-9091-b730e65e8983, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: aweikeji-YouTube}}, udp: true}
-  - {name: JP_2312 |17.35Mb, server: jp02-vm0.entry.ikuuu.casa, port: 447, type: vmess, uuid: 1574e157-8b18-3ec3-9b68-fc744fe8fdeb, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: jp02-vm0.entry.ikuuu.casa}}, udp: true}
-  - {name: 油管：全网最强白嫖 2, server: 20.243.69.62, port: 80, type: vmess, uuid: 5f405152-88b2-4e5e-9091-b730e65e8983, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 34.捐赠解锁更多协议线路, server: yqy2354.china-cdn-net.com, port: 2354, type: trojan, password: ca0fa66e-3495-360a-8ad1-1f3043450c40, sni: cdn-debian.org, skip-cert-verify: true, udp: true}
-  - {name: 美国TG频道:@kxswa, server: hksv1.project4gyuna.pw, port: 80, type: vmess, uuid: 0613c82b-1f56-432f-b94b-691e294d2314, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /project4gyuna.pw, headers: {Host: vietteltelecom.tv360.yunasnivip.akamaized.net}}, udp: true}
-  - {name: JP_2324 |42.71Mb, server: jp02-vm0.entry.ikuuu.casa, port: 447, type: vmess, uuid: cef5d1ec-67eb-3d25-84d0-c349645ba96c, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: jp02-vm0.entry.ikuuu.casa}}, udp: true}
-  - {name: 33.公益等级線路嚴格限速, server: yqy2353.china-cdn-net.com, port: 2353, type: trojan, password: ca0fa66e-3495-360a-8ad1-1f3043450c40, sni: cdn-debian.org, skip-cert-verify: true, udp: true}
-  - {name: 韩国2-tg频道:@ripaojiedian, server: 20.214.201.59, port: 8313, type: ss, cipher: chacha20-ietf-poly1305, password: ljqdalu13.., udp: true}
-  - {name: github_com/mianfeifq__🇰🇷韩国阿伟科技atTG*油管_15_1400 | 8.61Mb, server: 146.56.108.108, port: 26113, type: vmess, uuid: 1071810b-8a51-4fba-de7f-1efe88c87ea8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _1430 |28.15Mb, server: 20.222.106.239, port: 80, type: vmess, uuid: 5f405152-88b2-4e5e-9091-b730e65e8983, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: _油管：全网最强白嫖 17, server: 129.226.217.168, port: 15322, type: vmess, uuid: 7676a524-3603-473e-de41-2bc6273d52fc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 油管：最网最强白嫖 23, server: 129.226.216.150, port: 16984, type: vmess, uuid: 5a964737-0f49-4a42-9a70-b273207ecf5e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: US_2729, server: 150.230.249.169, port: 8888, type: vmess, uuid: f836d00e-73e0-4eb5-a0ac-18a8e9ee61ef, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: github.com/freefq - 新加坡腾讯云 26, server: 129.226.94.31, port: 21509, type: vmess, uuid: fbeb626c-8095-4e3b-aaf6-5a57971955b0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 油管：全网最强白嫖 3, server: 20.243.71.225, port: 80, type: vmess, uuid: 5f405152-88b2-4e5e-9091-b730e65e8983, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 美国-15.21MB/s(Youtube:不良林), server: 20.243.71.225, port: 80, type: vmess, uuid: 5f405152-88b2-4e5e-9091-b730e65e8983, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 20.243.71.225}}, udp: true}
-  - {name: KR_2353 | 2.23Mb, server: awskr2.698436.xyz, port: 54356, type: ss, cipher: aes-256-gcm, password: 5e04bdc6-6f09-4f5e-a3c7-edf4d3220ad3, udp: true}
-  - {name: SG-高速节点推荐：v1.mk/vip, server: 129.226.213.30, port: 35006, type: vmess, uuid: 1bdeedc8-ab5d-4d0e-ce89-72a8deb80b64, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _1358 |32.71Mb, server: 150.230.249.169, port: 8888, type: vmess, uuid: f836d00e-73e0-4eb5-a0ac-18a8e9ee61ef, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: US_3890 |20.30Mb, server: jp02-vm0.entry.ikuuu.casa, port: 447, type: vmess, uuid: 74bf73ff-b403-3a17-a662-67d024d0ffec, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: jp02-vm0.entry.ikuuu.casa}}, udp: true}
-  - {name: JP01, server: 13.215.203.52, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: _油管：全网最强白嫖 3, server: 129.226.217.168, port: 15322, type: vmess, uuid: 7676a524-3603-473e-de41-2bc6273d52fc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国-13.72MB/s(Youtube:不良林), server: 20.243.69.62, port: 80, type: vmess, uuid: 5f405152-88b2-4e5e-9091-b730e65e8983, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 20.243.69.62}}, udp: true}
-  - {name: SG_2723 | 6.29Mb, server: 129.226.95.188, port: 20792, type: vmess, uuid: b7335dae-b946-46ae-f341-acbf8df21c86, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: github.com/freefq - 美国Microsoft数据中心 9, server: 20.222.106.239, port: 80, type: vmess, uuid: 5f405152-88b2-4e5e-9091-b730e65e8983, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: tms.dingtalk.com}}, udp: true}
-  - {name: Singapore-Tencent 4, server: 129.226.217.168, port: 15322, type: vmess, uuid: 7676a524-3603-473e-de41-2bc6273d52fc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _油管：全网最强白嫖 4, server: 20.222.106.239, port: 80, type: vmess, uuid: 5f405152-88b2-4e5e-9091-b730e65e8983, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: aweikeji-YouTube}}, udp: true}
-  - {name: SG_2709 |24.03Mb, server: 129.226.213.30, port: 35006, type: vmess, uuid: 1bdeedc8-ab5d-4d0e-ce89-72a8deb80b64, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 油管：最网最强白嫖 24, server: szdx-anhb.jiashumao.net, port: 22481, type: trojan, password: c1f11b49-2421-326d-b95c-f58466e3060d, sni: ahbn.jiashumao.net, skip-cert-verify: true, udp: true}
-  - {name: github.com/freefq - 新加坡腾讯云 14, server: 129.226.94.246, port: 33357, type: vmess, uuid: f1fcdce3-ebd3-4506-b455-c3d3fde62658, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 油管：全网最强白嫖 4, server: 20.222.106.239, port: 80, type: vmess, uuid: 5f405152-88b2-4e5e-9091-b730e65e8983, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: SG-高速节点推荐：v1.mk/vip 2, server: 129.226.216.121, port: 49381, type: vmess, uuid: 2f6d0f82-80c4-42ed-fd46-c76e7cc81de0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国-4.12MB/s(Youtube:不良林), server: 20.222.106.239, port: 80, type: vmess, uuid: 5f405152-88b2-4e5e-9091-b730e65e8983, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 20.222.106.239}}, udp: true}
-  - {name: 日本阿伟科技atTG*油管_58_1402 |37.96Mb, server: ddns-kr01.ayanami.best, port: 80, type: vmess, uuid: 2adef817-ff89-4d0c-8782-694ba4e8d899, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: ddns-kr01.ayanami.best}}, udp: true}
-  - {name: github.com/freefq - 美国Microsoft数据中心 19, server: 20.243.71.225, port: 80, type: vmess, uuid: 5f405152-88b2-4e5e-9091-b730e65e8983, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: tms.dingtalk.com}}, udp: true}
-  - {name: US_3919 |30.28Mb, server: 20.243.71.225, port: 80, type: vmess, uuid: 5f405152-88b2-4e5e-9091-b730e65e8983, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: US_483 |94.87Mb, server: 20.243.71.225, port: 80, type: vmess, uuid: 5f405152-88b2-4e5e-9091-b730e65e8983, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: "%7B%22Host%22:%2220.243.71.225%22%7D"}}, udp: true}
-  - {name: 油管：全网最强白嫖 5, server: 129.226.216.121, port: 49381, type: vmess, uuid: 2f6d0f82-80c4-42ed-fd46-c76e7cc81de0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _油管：全网最强白嫖 5, server: 20.243.71.225, port: 80, type: vmess, uuid: 5f405152-88b2-4e5e-9091-b730e65e8983, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: aweikeji-YouTube}}, udp: true}
-  - {name: github.com/freefq - 新加坡腾讯云 9, server: 129.226.216.121, port: 49381, type: vmess, uuid: 2f6d0f82-80c4-42ed-fd46-c76e7cc81de0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: github.com/freefq - 美国Microsoft数据中心 17, server: 20.243.69.62, port: 80, type: vmess, uuid: 5f405152-88b2-4e5e-9091-b730e65e8983, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: v2cross.com - 新加坡腾讯云 1, server: 129.226.95.188, port: 20792, type: vmess, uuid: b7335dae-b946-46ae-f341-acbf8df21c86, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: JP_607 |16.39Mb, server: 146.56.108.108, port: 26113, type: vmess, uuid: 1071810b-8a51-4fba-de7f-1efe88c87ea8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: KR-高速节点推荐：v1.mk/vip, server: 132.226.22.158, port: 48921, type: vmess, uuid: b23e8a7b-f809-47ab-8519-6f24452399a2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 油管：最网最强白嫖 25, server: bnbq-zf.jiashumao.net, port: 26381, type: trojan, password: c1f11b49-2421-326d-b95c-f58466e3060d, sni: bnbq.jiashumao.net, skip-cert-verify: true, udp: true}
-  - {name: github.com/freefq - 新加坡腾讯云 126, server: 129.226.213.30, port: 35006, type: vmess, uuid: 1bdeedc8-ab5d-4d0e-ce89-72a8deb80b64, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: github.com/freefq - 新加坡腾讯云 136, server: 129.226.216.160, port: 49056, type: vmess, uuid: 89d7f316-c0d4-47f2-c6d3-fd9f37c11c7e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _油管：全网最强白嫖 6, server: 139.219.130.70, port: 443, type: ss, cipher: aes-256-cfb, password: E4DNMf73kHPrd8Qq7aqGPf7f, udp: true}
-  - {name: SG_1809 | 8.43Mb, server: 129.226.213.241, port: 24824, type: vmess, uuid: 8c1e17cf-c378-403f-862c-62897510116c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: github.com/freefq - 新加坡腾讯云 12, server: 129.226.95.71, port: 56916, type: vmess, uuid: 29d4cfd8-9aea-4796-9320-b2b9234fc141, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 香港, server: 20.187.119.138, port: 12388, type: trojan, password: 75c21921-619c-4f86-acd0-fe4c2ae6a737, sni: pull-hls-l11-source.douyincdn.com, skip-cert-verify: true, udp: true}
-  - {name: t.me/wbnet_🇷🇺_RU_1185, server: 213.183.53.214, port: 9000, type: ss, cipher: aes-256-cfb, password: a3GFYt36Sm82Vys9, udp: true}
-  - {name: _701, server: 213.183.53.221, port: 9042, type: ss, cipher: aes-256-cfb, password: S7KwUu7yBy58S3Ga, udp: true}
-  - {name: github.com/freefq - 俄罗斯莫斯科Melbicom数据中心 57, server: 213.183.53.214, port: 9015, type: ss, cipher: aes-256-cfb, password: ZpNDDKRu9MagNvaf, udp: true}
-  - {name: _582 | 3.15Mb, server: 213.183.53.214, port: 9037, type: ss, cipher: aes-256-cfb, password: TN2YqghxeFDKZfLU, udp: true}
-  - {name: _669 | 3.19Mb, server: 213.183.53.214, port: 9014, type: ss, cipher: aes-256-cfb, password: KnJGad3FqTvjqbaX, udp: true}
-  - {name: _381 |13.28Mb, server: 213.183.53.221, port: 9043, type: ss, cipher: aes-256-cfb, password: HSZuyJQcWe8dxNdF, udp: true}
-  - {name: _412 |29.99Mb, server: 213.183.53.214, port: 9045, type: ss, cipher: aes-256-cfb, password: Lp27rqyJq72bZsqX, udp: true}
-  - {name: LT_957, server: 213.183.53.214, port: 9070, type: ss, cipher: aes-256-cfb, password: bf7v334KKDV3YDhH, udp: true}
-  - {name: _690 | 0.08Mb, server: 213.183.53.221, port: 9008, type: ss, cipher: aes-256-cfb, password: y9VURyNzJWNRYEGQ, udp: true}
-  - {name: _635 | 2.71Mb, server: 213.183.53.207, port: 9010, type: ss, cipher: aes-256-cfb, password: f63gg8EruDnUrmz4, udp: true}
-  - {name: _368 |17.08Mb, server: 213.183.53.221, port: 9064, type: ss, cipher: aes-256-cfb, password: cp8pRSUAyLhTfVWH, udp: true}
-  - {name: t.me/wbnet_🇷🇺_RU_1202, server: 213.183.53.214, port: 9059, type: ss, cipher: aes-256-cfb, password: 9XwYyZsK8SNzQDtY, udp: true}
-  - {name: t.me/wbnet_🇷🇺_RU_1205, server: 213.183.53.214, port: 9064, type: ss, cipher: aes-256-cfb, password: cp8pRSUAyLhTfVWH, udp: true}
-  - {name: t.me/wbnet_🇷🇺_RU_1275, server: 213.183.53.198, port: 9053, type: ss, cipher: aes-256-cfb, password: SBM7R883jBmnqe6C, udp: true}
-  - {name: 油管：最网最强白嫖 26, server: 213.183.53.202, port: 9026, type: ss, cipher: aes-256-cfb, password: QWDDvVE9npNurQfA, udp: true}
-  - {name: LT_800, server: 213.183.53.202, port: 9020, type: ss, cipher: aes-256-cfb, password: BNmAXXxAHYpTRdzu, udp: true}
-  - {name: RU_2553 | 0.83Mb, server: 213.183.53.202, port: 9045, type: ss, cipher: aes-256-cfb, password: Lp27rqyJq72bZsqX, udp: true}
-  - {name: 油管：全网最强白嫖 6, server: 167.88.61.50, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: _426 |24.32Mb, server: 213.183.53.221, port: 9020, type: ss, cipher: aes-256-cfb, password: BNmAXXxAHYpTRdzu, udp: true}
-  - {name: _694 | 1.25Mb, server: 213.183.53.221, port: 9026, type: ss, cipher: aes-256-cfb, password: QWDDvVE9npNurQfA, udp: true}
-  - {name: _449 |20.92Mb, server: 213.183.53.214, port: 9031, type: ss, cipher: aes-256-cfb, password: BwcAUZk8hUFAkDGN, udp: true}
-  - {name: _380 |29.32Mb, server: 213.183.53.221, port: 9040, type: ss, cipher: aes-256-cfb, password: p9z5BVADH2YFs3MN, udp: true}
-  - {name: _446 | 8.19Mb, server: 213.183.53.214, port: 9058, type: ss, cipher: aes-256-cfb, password: dML2sfhbVwvtfNPe, udp: true}
-  - {name: _702 | 2.65Mb, server: 213.183.53.221, port: 9088, type: ss, cipher: aes-256-cfb, password: f8npKgNzdkss2ytn, udp: true}
-  - {name: _396 |12.14Mb, server: 213.183.53.208, port: 9019, type: ss, cipher: aes-256-cfb, password: GA9KzeEgvfxNrgmM, udp: true}
-  - {name: t.me/wbnet_🇷🇺_RU_799, server: 213.183.53.202, port: 9024, type: ss, cipher: aes-256-cfb, password: BejrQvtu9sqUeNuZ, udp: true}
-  - {name: RU 🇷🇺 Moscow @AzadNet, server: 213.183.53.202, port: 9019, type: ss, cipher: aes-256-cfb, password: GA9KzeEgvfxNrgmM, udp: true}
-  - {name: _693 |18.13Mb, server: 213.183.53.221, port: 9056, type: ss, cipher: aes-256-cfb, password: rNBfNuuANFCAk7KB, udp: true}
-  - {name: t.me/wbnet_🇷🇺_RU_1198, server: 213.183.53.214, port: 9042, type: ss, cipher: aes-256-cfb, password: S7KwUu7yBy58S3Ga, udp: true}
-  - {name: _723 |56.03Mb, server: 213.183.53.221, port: 9011, type: ss, cipher: aes-256-cfb, password: M3t2ZEQcMGRWBjRa, udp: true}
-  - {name: _375 |22.87Mb, server: 213.183.53.221, port: 9079, type: ss, cipher: aes-256-cfb, password: TPqX8edgbAURcAMb, udp: true}
-  - {name: RU_2662 | 2.91Mb, server: 213.183.53.202, port: 9015, type: ss, cipher: aes-256-cfb, password: ZpNDDKRu9MagNvaf, udp: true}
-  - {name: LT_942, server: 213.183.53.214, port: 9097, type: ss, cipher: aes-256-cfb, password: Sn5B7jTqr76aCJT8, udp: true}
-  - {name: US_3855 | 0.41Mb, server: 167.88.61.50, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: t.me/wbnet_🇺🇸_US_523, server: 167.88.61.50, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: t.me/wbnet_🇷🇺_RU_1209, server: 213.183.53.214, port: 9088, type: ss, cipher: aes-256-cfb, password: f8npKgNzdkss2ytn, udp: true}
-  - {name: RU_2606 | 2.76Mb, server: 213.183.53.202, port: 9084, type: ss, cipher: aes-256-cfb, password: c3NtHJ5ujV2tGDfj, udp: true}
-  - {name: _386 |21.64Mb, server: 213.183.53.221, port: 9025, type: ss, cipher: aes-256-cfb, password: XPtzA9sCug3SPR4c, udp: true}
-  - {name: RU 🇷🇺 Moscow @AzadNet 2, server: 213.183.53.202, port: 9031, type: ss, cipher: aes-256-cfb, password: BwcAUZk8hUFAkDGN, udp: true}
-  - {name: github.com/freefq - 俄罗斯莫斯科Melbicom数据中心 52, server: 213.183.53.198, port: 9064, type: ss, cipher: aes-256-cfb, password: cp8pRSUAyLhTfVWH, udp: true}
-  - {name: _424 |10.14Mb, server: 213.183.53.198, port: 9008, type: ss, cipher: aes-256-cfb, password: y9VURyNzJWNRYEGQ, udp: true}
-  - {name: github.com/freefq - 俄罗斯莫斯科Melbicom数据中心 41, server: 213.183.53.221, port: 9019, type: ss, cipher: aes-256-cfb, password: GA9KzeEgvfxNrgmM, udp: true}
-  - {name: _441 |35.44Mb, server: 213.183.53.214, port: 9053, type: ss, cipher: aes-256-cfb, password: SBM7R883jBmnqe6C, udp: true}
-  - {name: _715 | 5.26Mb, server: 213.183.53.207, port: 9070, type: ss, cipher: aes-256-cfb, password: bf7v334KKDV3YDhH, udp: true}
-  - {name: 23立陶宛∞直连, server: 213.183.53.177, port: 9094, type: ss, cipher: aes-256-cfb, password: rpgbNnU9rDDU4aWZ, udp: true}
-  - {name: t.me/wbnet_🇷🇺_RU_1234, server: 213.183.53.207, port: 9040, type: ss, cipher: aes-256-cfb, password: p9z5BVADH2YFs3MN, udp: true}
-  - {name: 油管：最网最强白嫖 27, server: 213.183.53.207, port: 9061, type: ss, cipher: aes-256-cfb, password: 4R3hUfZ2FHhDmNcP, udp: true}
-  - {name: LT_718, server: 213.183.53.208, port: 9080, type: ss, cipher: aes-256-cfb, password: VP8ZPxQpJtZRCjfZ, udp: true}
-  - {name: LT_770, server: 213.183.53.214, port: 9061, type: ss, cipher: aes-256-cfb, password: 4R3hUfZ2FHhDmNcP, udp: true}
-  - {name: LT_785, server: 213.183.53.207, port: 9080, type: ss, cipher: aes-256-cfb, password: VP8ZPxQpJtZRCjfZ, udp: true}
-  - {name: LT_1009, server: 213.183.53.221, port: 9010, type: ss, cipher: aes-256-cfb, password: f63gg8EruDnUrmz4, udp: true}
-  - {name: LT_993, server: 213.183.53.208, port: 9058, type: ss, cipher: aes-256-cfb, password: dML2sfhbVwvtfNPe, udp: true}
-  - {name: LT_1039, server: 213.183.53.207, port: 9031, type: ss, cipher: aes-256-cfb, password: BwcAUZk8hUFAkDGN, udp: true}
-  - {name: LT_1022, server: 213.183.53.202, port: 9001, type: ss, cipher: aes-256-cfb, password: UkXRsXvR6buDMG2Y, udp: true}
-  - {name: LT_874, server: 213.183.53.214, port: 9046, type: ss, cipher: aes-256-cfb, password: NvS8N4Vf8qAGPSCL, udp: true}
+  - {name: _油管频道：全网最强白嫖 3, server: 14.29.124.168, port: 25266, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: _577 |64.21Mb, server: 14.29.124.168, port: 25267, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: 香港03, server: hunan-cu.kexueddns.club, port: 12224, type: trojan, password: 14e535ec-e706-4712-914b-8a8ae6460a51, sni: azhk3.hongdou1.club, skip-cert-verify: true, udp: true}
+  - {name: 直连|香港多线|1.5x, server: hkt.wenxuedianzishu.xyz, port: 80, type: vmess, uuid: f0ccc4a9-078b-3aaf-9bf1-581edddec6fa, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /video, headers: {Host: hkt.wenxuedianzishu.xyz}}, udp: true}
+  - {name: 香港04, server: hunan-cu.kexueddns.club, port: 13331, type: trojan, password: 14e535ec-e706-4712-914b-8a8ae6460a51, sni: azhk4.hongdou1.club, skip-cert-verify: true, udp: true}
+  - {name: 油管：最网最强白嫖 4, server: 14.29.124.168, port: 25267, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: 新加坡03, server: shenzhen-cm.kexueddns.club, port: 23549, type: trojan, password: 14e535ec-e706-4712-914b-8a8ae6460a51, sni: sg3.hongdou1.club, skip-cert-verify: true, udp: true}
+  - {name: CN_1849 | 8.80Mb, server: 14.29.124.168, port: 25259, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: 新加坡01, server: sg_gy.kexueddns.club, port: 50047, type: trojan, password: 14e535ec-e706-4712-914b-8a8ae6460a51, sni: sg1.hongdou1.club, skip-cert-verify: true, udp: true}
+  - {name: 油管：最网最强白嫖 5, server: zz.666ya.top, port: 51005, type: ss, cipher: chacha20-ietf-poly1305, password: f253bd9d-971a-4552-9676-8fe3a8e34dc4, udp: true}
+  - {name: HK_2339 |42.41Mb, server: yyyy.wwwbhjy.com, port: 2443, type: vmess, uuid: dee32eb7-e190-4c6f-dd27-aa9c82cd5490, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /8a76fb13/, headers: {Host: yyyy.wwwbhjy.com}}, udp: true}
+  - {name: CN_271 |24.78Mb, server: 14.29.124.168, port: 25247, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: 油管：最网最强白嫖 6, server: az.gunangzhui.cloud, port: 12716, type: trojan, password: 9e496875-e09c-451b-a99c-fe2f57e221c2, sni: hgc.ddag.xyz, skip-cert-verify: true, udp: true}
+  - {name: 油管：最网最强白嫖 7, server: 14.29.124.168, port: 25233, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: Relay_🇭🇰HK-🇭🇰HK_574, server: 10.vip341.xyz, port: 443, type: vmess, uuid: 2f0415a4-9acd-3435-a780-e447a2ce79fb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /ny, headers: {Host: 10.vip341.xyz}}, udp: true}
+  - {name: 直连|日本三网|1.5x, server: jp.wenxuedianzishu.xyz, port: 80, type: vmess, uuid: f0ccc4a9-078b-3aaf-9bf1-581edddec6fa, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /video, headers: {Host: jp.wenxuedianzishu.xyz}}, udp: true}
+  - {name: Relay_🇺🇸US-🇺🇸US_2598, server: 2.vip341.xyz, port: 443, type: vmess, uuid: 2f0415a4-9acd-3435-a780-e447a2ce79fb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /ny, headers: {Host: 2.vip341.xyz}}, udp: true}
+  - {name: 新加坡04, server: shenzhen-cm.kexueddns.club, port: 43588, type: trojan, password: 14e535ec-e706-4712-914b-8a8ae6460a51, sni: sg4.hongdou1.club, skip-cert-verify: true, udp: true}
+  - {name: v2cross.com 2, server: zz.vip341.xyz, port: 48003, type: vmess, uuid: 2f0415a4-9acd-3435-a780-e447a2ce79fb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /ny, headers: {Host: zz.vip341.xyz}}, udp: true}
+  - {name: KR1, server: kr1.direct.iepl.pw, port: 443, type: trojan, password: 389ea04b-99fb-47db-9252-80046b6bfe3e, skip-cert-verify: true, udp: true}
+  - {name: LV1 美国 - 隧道「1.5x」, server: us.youzi.win, port: 27774, type: vmess, uuid: 4ecb1a53-5923-41c3-8d21-2d31268e6c72, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /images, headers: {Host: v.qq.com}}, udp: true}
+  - {name: v2cross.com 3, server: az.gunangzhui.cloud, port: 41534, type: trojan, password: 9e496875-e09c-451b-a99c-fe2f57e221c2, sni: hinet.ddag.xyz, skip-cert-verify: true, udp: true}
+  - {name: 油管：最网最强白嫖 8, server: az.gunangzhui.cloud, port: 41534, type: trojan, password: 9e496875-e09c-451b-a99c-fe2f57e221c2, sni: hinet.ddag.xyz, skip-cert-verify: true, udp: true}
+  - {name: 油管：最网最强白嫖 9, server: 14.29.124.168, port: 25220, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: 香港-tg频道:@ripaojiedian, server: 20.24.193.43, port: 80, type: vmess, uuid: f295e664-3c47-4f0a-b337-02ba9cd01bf4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: tms.dingtalk.com}}, udp: true}
+  - {name: KR_2265 | 1.69Mb, server: 138.2.125.157, port: 80, type: vmess, uuid: fa0702f4-8ec9-48e5-9b53-a0afb7c3717e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 联通优化节点「1x」, server: 01.youzi.win, port: 443, type: trojan, password: 4ecb1a53-5923-41c3-8d21-2d31268e6c72, sni: awsjp.karyl.cloud, skip-cert-verify: true, udp: true}
+  - {name: 油管：最网最强白嫖 10, server: 14.29.124.168, port: 25256, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: JP_2242 |32.60Mb, server: 20.210.240.228, port: 80, type: vmess, uuid: fa0702f4-8ec9-48e5-9b53-a0afb7c3717e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 油管：最网最强白嫖 11, server: hgc.ddag.xyz, port: 15225, type: trojan, password: 9e496875-e09c-451b-a99c-fe2f57e221c2, sni: hgc.ddag.xyz, skip-cert-verify: true, udp: true}
+  - {name: TW2, server: tw2.direct.iepl.pw, port: 443, type: trojan, password: 389ea04b-99fb-47db-9252-80046b6bfe3e, skip-cert-verify: true, udp: true}
+  - {name: 移动优化节点「1x」, server: 02.youzi.win, port: 443, type: trojan, password: 4ecb1a53-5923-41c3-8d21-2d31268e6c72, sni: awssg.karyl.cloud, skip-cert-verify: true, udp: true}
+  - {name: 印度孟买「1x」, server: 05.youzi.win, port: 443, type: trojan, password: 4ecb1a53-5923-41c3-8d21-2d31268e6c72, sni: awsin.karyl.cloud, skip-cert-verify: true, udp: true}
+  - {name: _1345 |12.19Mb, server: 212.81.47.16, port: 443, type: trojan, password: 3yFq7NCP53mVfpXJz3, skip-cert-verify: true, udp: true}
+  - {name: 韩国-tg频道:@ripaojiedian, server: 20.196.195.216, port: 80, type: vmess, uuid: f295e664-3c47-4f0a-b337-02ba9cd01bf4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 油管：最网最强白嫖 12, server: 212.81.47.18, port: 443, type: trojan, password: 3yFq7NCP53mVfpXJz3, sni: t.me.vpnhat, skip-cert-verify: true, udp: true}
+  - {name: _油管：全网最强白嫖, server: 212.81.47.12, port: 443, type: trojan, password: 3yFq7NCP53mVfpXJz3, sni: t.me.vpnhat, skip-cert-verify: true, udp: true}
+  - {name: "California, Tj", server: tj-node-5.gfwairport.net, port: 50001, type: trojan, password: b7f48c18-51af-4365-9a2c-621070dfc176, skip-cert-verify: true, udp: true}
+  - {name: _油管：全网最强白嫖 2, server: 212.81.47.11, port: 443, type: trojan, password: 3yFq7NCP53mVfpXJz3, sni: t.me.vpnhat, skip-cert-verify: true, udp: true}
+  - {name: 油管：最网最强白嫖 13, server: 212.81.47.11, port: 443, type: trojan, password: 3yFq7NCP53mVfpXJz3, sni: t.me.vpnhat, skip-cert-verify: true, udp: true}
   - {name: bulink自建免费19线 三网, server: la49.bulinkxyz.xyz, port: 443, type: vmess, uuid: dd01617b-7f89-45e1-89e7-d9ddcf15a210, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: JP_611 |30.20Mb, server: jp03-vm0.ikuuu.casa, port: 448, type: vmess, uuid: 3c7919b0-87bd-3399-abd2-a79cd334c0c2, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: jp03-vm0.ikuuu.casa}}, udp: true}
-  - {name: US_3236 |18.85Mb, server: 38.114.114.69, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: _油管：全网最强白嫖 7, server: 167.88.61.50, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: t.me/wbnet_🇷🇺_RU_1195, server: 213.183.53.214, port: 9032, type: ss, cipher: aes-256-cfb, password: UWZQeLRWnkqgkseq, udp: true}
-  - {name: t.me/wbnet_🇷🇺_RU_1232, server: 213.183.53.207, port: 9033, type: ss, cipher: aes-256-cfb, password: UTJA57ypk2XKQpnm, udp: true}
-  - {name: _448 |19.14Mb, server: 213.183.53.214, port: 9050, type: ss, cipher: aes-256-cfb, password: FG5ddLsMPbV5CutE, udp: true}
-  - {name: t.me/wbnet_🇷🇺_RU_1243, server: 213.183.53.207, port: 9057, type: ss, cipher: aes-256-cfb, password: wjTugX3ZtHMB9c3Z, udp: true}
-  - {name: _403 |12.85Mb, server: 213.183.53.208, port: 9033, type: ss, cipher: aes-256-cfb, password: UTJA57ypk2XKQpnm, udp: true}
-  - {name: _630 | 0.07Mb, server: 213.183.53.207, port: 9026, type: ss, cipher: aes-256-cfb, password: QWDDvVE9npNurQfA, udp: true}
-  - {name: t.me/wbnet_🇷🇺_RU_1239, server: 213.183.53.207, port: 9046, type: ss, cipher: aes-256-cfb, password: NvS8N4Vf8qAGPSCL, udp: true}
-  - {name: _611 |27.23Mb, server: 213.183.53.208, port: 9011, type: ss, cipher: aes-256-cfb, password: M3t2ZEQcMGRWBjRa, udp: true}
-  - {name: t.me/wbnet_🇷🇺_RU_1242, server: 213.183.53.207, port: 9056, type: ss, cipher: aes-256-cfb, password: rNBfNuuANFCAk7KB, udp: true}
-  - {name: _605 |17.04Mb, server: 213.183.53.214, port: 9007, type: ss, cipher: aes-256-cfb, password: kSPmvwdFzGMMW5pY, udp: true}
-  - {name: _418 |29.65Mb, server: 213.183.53.221, port: 9097, type: ss, cipher: aes-256-cfb, password: Sn5B7jTqr76aCJT8, udp: true}
-  - {name: _417 |14.08Mb, server: 213.183.53.221, port: 9070, type: ss, cipher: aes-256-cfb, password: bf7v334KKDV3YDhH, udp: true}
+  - {name: _油管：全网最强白嫖 3, server: 212.81.47.18, port: 443, type: trojan, password: 3yFq7NCP53mVfpXJz3, sni: t.me.vpnhat, skip-cert-verify: true, udp: true}
+  - {name: v2cross.com 4, server: au2-2.nigirocloud.com, port: 443, type: trojan, password: 3yFq7NCP53mVfpXJz3, sni: au2-2.nigirocloud.com, skip-cert-verify: true, udp: true}
+  - {name: v2cross.com 5, server: 169.197.142.39, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: v2cross.com 6, server: 169.197.142.39, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: _油管：全网最强白嫖 4, server: 212.81.47.15, port: 443, type: trojan, password: 3yFq7NCP53mVfpXJz3, sni: t.me.vpnhat, skip-cert-verify: true, udp: true}
+  - {name: _US_t.me/wbnet_173, server: 169.197.142.39, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: github.com/freefq - 日本东京Amazon数据中心 7, server: sh.moonfree.top, port: 11262, type: vmess, uuid: 6e9eeae6-c3d1-439e-9f7a-213fe09b2dbe, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: sh.moonfree.top}}, udp: true}
+  - {name: v2cross.com 7, server: 213.183.53.207, port: 9032, type: ss, cipher: aes-256-cfb, password: UWZQeLRWnkqgkseq, udp: true}
+  - {name: v2cross.com 8, server: 169.197.142.39, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: v2cross.com 9, server: 1chuan.top, port: 443, type: vmess, uuid: fa8f90e0-2fae-4b05-df7a-ea325bc517d8, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: 1chuan.top, network: ws, ws-opts: {path: /evo, headers: {Host: 1chuan.top}}, udp: true}
+  - {name: v2cross.com 10, server: 213.183.53.207, port: 9094, type: ss, cipher: aes-256-cfb, password: rpgbNnU9rDDU4aWZ, udp: true}
+  - {name: RU1, server: ru1.direct.iepl.pw, port: 443, type: trojan, password: 389ea04b-99fb-47db-9252-80046b6bfe3e, skip-cert-verify: true, udp: true}
+  - {name: v2cross.com 11, server: 213.183.53.207, port: 9073, type: ss, cipher: aes-256-cfb, password: daFYagqDdBdA6VTX, udp: true}
+  - {name: v2cross.com 12, server: 169.197.142.39, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: v2cross.com 13, server: 213.183.53.207, port: 9019, type: ss, cipher: aes-256-cfb, password: GA9KzeEgvfxNrgmM, udp: true}
+  - {name: v2cross.com 14, server: 213.183.53.207, port: 9060, type: ss, cipher: aes-256-cfb, password: ueLXVkvh4hckhErQ, udp: true}
+  - {name: v2cross.com 15, server: 169.197.142.39, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: v2cross.com 16, server: 169.197.142.39, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: TG群https://t.me/youzi_pro, server: lv0.youzi.win, port: 80, type: vmess, uuid: 4ecb1a53-5923-41c3-8d21-2d31268e6c72, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /images, headers: {Host: v.qq.com}}, udp: true}
+  - {name: t.me/wbnet_🇳🇱_NL_1333, server: 213.183.59.206, port: 9005, type: ss, cipher: aes-256-cfb, password: ZET59LF6DvCC8KVt, udp: true}
+  - {name: v2cross.com 17, server: 213.183.53.207, port: 9010, type: ss, cipher: aes-256-cfb, password: f63gg8EruDnUrmz4, udp: true}
+  - {name: CA_1663 | 8.81Mb, server: 134.195.196.231, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: v2cross.com 18, server: silicon.starspace.link, port: 443, type: trojan, password: 4ZPDeqJ6g766UKDJ, skip-cert-verify: true, udp: true}
+  - {name: _180 | 2.45Mb, server: 213.183.53.177, port: 9060, type: ss, cipher: aes-256-cfb, password: ueLXVkvh4hckhErQ, udp: true}
+  - {name: _823 | 5.63Mb, server: 213.183.59.206, port: 9084, type: ss, cipher: aes-256-cfb, password: c3NtHJ5ujV2tGDfj, udp: true}
+  - {name: 油管：最网最强白嫖 14, server: 169.197.142.39, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: v2cross.com 19, server: 14.29.124.174, port: 11003, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: v2cross.com 20, server: 14.29.124.174, port: 11048, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: t.me/wbnet_🇳🇱_NL_1399, server: 213.183.59.177, port: 9015, type: ss, cipher: aes-256-cfb, password: ZpNDDKRu9MagNvaf, udp: true}
+  - {name: _317 | 9.05Mb, server: 213.183.59.211, port: 9042, type: ss, cipher: aes-256-cfb, password: S7KwUu7yBy58S3Ga, udp: true}
+  - {name: v2cross.com 21, server: 169.197.142.39, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: v2cross.com 22, server: 14.29.124.174, port: 11016, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: v2cross.com 23, server: 14.29.124.168, port: 24009, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: t.me/wbnet_🇳🇱_NL_1423, server: 213.183.59.177, port: 9060, type: ss, cipher: aes-256-cfb, password: ueLXVkvh4hckhErQ, udp: true}
+  - {name: t.me/wbnet_🇳🇱_NL_1334, server: 213.183.59.206, port: 9006, type: ss, cipher: aes-256-cfb, password: FAdUvMJUq5vDgKEq, udp: true}
+  - {name: ZZ_2013, server: 169.197.141.109, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: ZZ_2066, server: 169.197.141.109, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: _US_t.me/wbnet_163, server: 169.197.142.39, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
   - {name: t.me/wbnet_🇷🇺_RU_1251, server: 213.183.53.207, port: 9093, type: ss, cipher: aes-256-cfb, password: wfLC2y7rzZyCmuyt, udp: true}
-  - {name: t.me/wbnet_🇷🇺_RU_1246, server: 213.183.53.207, port: 9060, type: ss, cipher: aes-256-cfb, password: ueLXVkvh4hckhErQ, udp: true}
-  - {name: LT_803, server: 213.183.53.202, port: 9070, type: ss, cipher: aes-256-cfb, password: bf7v334KKDV3YDhH, udp: true}
-  - {name: US_3888 |11.46Mb, server: jp06-vm0.entry.ikuuu.casa, port: 444, type: vmess, uuid: 62e7b8dd-b9fd-3ea5-aa62-d5e770dd389d, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: jp06-vm0.entry.ikuuu.casa}}, udp: true}
-  - {name: _US_t.me/wbnet_142, server: 169.197.142.39, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: _US_t.me/wbnet_171, server: 169.197.142.99, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: US_3183 |16.92Mb, server: 38.114.114.69, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: _油管：全网最强白嫖 8, server: 167.88.61.50, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: ZZ_3182, server: 169.197.142.99, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: t.me/wbnet_🇷🇺_RU_1186, server: 213.183.53.214, port: 9003, type: ss, cipher: aes-256-cfb, password: JdmRK9gMEqFgs8nP, udp: true}
-  - {name: RU_2597 | 4.07Mb, server: 213.183.53.202, port: 9094, type: ss, cipher: aes-256-cfb, password: rpgbNnU9rDDU4aWZ, udp: true}
-  - {name: _692 | 1.68Mb, server: 213.183.53.179, port: 9011, type: ss, cipher: aes-256-cfb, password: M3t2ZEQcMGRWBjRa, udp: true}
-  - {name: t.me/wbnet_🇷🇺_RU_1212, server: 213.183.53.214, port: 9098, type: ss, cipher: aes-256-cfb, password: aLpQtfEZe445QyHk, udp: true}
-  - {name: t.me/wbnet_🇷🇺_RU_802, server: 213.183.53.202, port: 9043, type: ss, cipher: aes-256-cfb, password: HSZuyJQcWe8dxNdF, udp: true}
-  - {name: _709, server: 213.183.53.221, port: 9014, type: ss, cipher: aes-256-cfb, password: KnJGad3FqTvjqbaX, udp: true}
-  - {name: _687 | 2.39Mb, server: 213.183.53.221, port: 9003, type: ss, cipher: aes-256-cfb, password: JdmRK9gMEqFgs8nP, udp: true}
-  - {name: _695 |14.42Mb, server: 213.183.53.221, port: 9037, type: ss, cipher: aes-256-cfb, password: TN2YqghxeFDKZfLU, udp: true}
-  - {name: _438 |24.49Mb, server: 213.183.53.179, port: 9037, type: ss, cipher: aes-256-cfb, password: TN2YqghxeFDKZfLU, udp: true}
-  - {name: t.me/wbnet_🇷🇺_RU_1192, server: 213.183.53.214, port: 9020, type: ss, cipher: aes-256-cfb, password: BNmAXXxAHYpTRdzu, udp: true}
-  - {name: _681 |18.95Mb, server: 213.183.53.179, port: 9030, type: ss, cipher: aes-256-cfb, password: GeregetR8cvQHzYr, udp: true}
-  - {name: _356 |17.07Mb, server: 213.183.53.208, port: 9041, type: ss, cipher: aes-256-cfb, password: U6qnYRhfyDmn8sgn, udp: true}
-  - {name: t.me/wbnet_🇷🇺_RU_1228, server: 213.183.53.207, port: 9018, type: ss, cipher: aes-256-cfb, password: fG2artUmHfNT2cX7, udp: true}
-  - {name: t.me/wbnet_🇷🇺_RU_1237, server: 213.183.53.207, port: 9043, type: ss, cipher: aes-256-cfb, password: HSZuyJQcWe8dxNdF, udp: true}
-  - {name: _447 |11.50Mb, server: 213.183.53.214, port: 9024, type: ss, cipher: aes-256-cfb, password: BejrQvtu9sqUeNuZ, udp: true}
-  - {name: _382 |37.27Mb, server: 213.183.53.179, port: 9014, type: ss, cipher: aes-256-cfb, password: KnJGad3FqTvjqbaX, udp: true}
-  - {name: _699, server: 213.183.53.221, port: 9018, type: ss, cipher: aes-256-cfb, password: fG2artUmHfNT2cX7, udp: true}
-  - {name: t.me/wbnet_🇷🇺_RU_1252, server: 213.183.53.207, port: 9098, type: ss, cipher: aes-256-cfb, password: aLpQtfEZe445QyHk, udp: true}
-  - {name: github.com/freefq - 俄罗斯莫斯科Melbicom数据中心 51, server: 213.183.53.221, port: 9005, type: ss, cipher: aes-256-cfb, password: ZET59LF6DvCC8KVt, udp: true}
-  - {name: t.me/wbnet_🇷🇺_RU_1266, server: 213.183.53.198, port: 9031, type: ss, cipher: aes-256-cfb, password: BwcAUZk8hUFAkDGN, udp: true}
-  - {name: t.me/wbnet_🇷🇺_RU_1221, server: 213.183.53.207, port: 9005, type: ss, cipher: aes-256-cfb, password: ZET59LF6DvCC8KVt, udp: true}
-  - {name: t.me/wbnet_🇷🇺_RU_1203, server: 213.183.53.214, port: 9060, type: ss, cipher: aes-256-cfb, password: ueLXVkvh4hckhErQ, udp: true}
-  - {name: LT_895, server: 213.183.53.208, port: 9043, type: ss, cipher: aes-256-cfb, password: HSZuyJQcWe8dxNdF, udp: true}
-  - {name: LT_1000, server: 213.183.53.221, port: 9024, type: ss, cipher: aes-256-cfb, password: BejrQvtu9sqUeNuZ, udp: true}
-  - {name: LT_1053, server: 213.183.53.179, port: 9005, type: ss, cipher: aes-256-cfb, password: ZET59LF6DvCC8KVt, udp: true}
-  - {name: 油管：最网最强白嫖 28, server: hgc.ddag.xyz, port: 15225, type: trojan, password: 9e496875-e09c-451b-a99c-fe2f57e221c2, sni: hgc.ddag.xyz, skip-cert-verify: true, udp: true}
-  - {name: 免费-日本4_6_1401 |36.72Mb, server: jp04-vm0.entry.ikuuu.casa, port: 446, type: vmess, uuid: 6e5f11f9-0cc1-3997-b245-56279f9894a5, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: jp04-vm0.entry.ikuuu.casa}}, udp: true}
-  - {name: Relay_🇯🇵JP-🇨🇿CZ_677, server: jp04-vm0.entry.ikuuu.casa, port: 446, type: vmess, uuid: 3566759d-f1e6-3198-bd7e-818936f07c37, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: jp04-vm0.entry.ikuuu.casa}}, udp: true}
-  - {name: US_3105 | 1.54Mb, server: 38.114.114.69, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: US_3187 | 3.51Mb, server: 38.114.114.69, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
-  - {name: US_3106 | 3.72Mb, server: 38.114.114.69, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: t.me/wbnet_🇺🇸_US_731, server: 167.88.61.50, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: _油管：全网最强白嫖 9, server: 167.88.61.50, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: US_3225 |15.41Mb, server: 38.75.136.135, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: US_3227 |16.36Mb, server: 38.75.136.135, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: US_3228 |12.82Mb, server: 38.75.136.135, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: t.me/wbnet_🇷🇺_RU_1281, server: 213.183.53.179, port: 9046, type: ss, cipher: aes-256-cfb, password: NvS8N4Vf8qAGPSCL, udp: true}
-  - {name: _673 | 4.10Mb, server: 213.183.53.221, port: 9030, type: ss, cipher: aes-256-cfb, password: GeregetR8cvQHzYr, udp: true}
-  - {name: t.me/wbnet_🇷🇺_RU_1229, server: 213.183.53.207, port: 9020, type: ss, cipher: aes-256-cfb, password: BNmAXXxAHYpTRdzu, udp: true}
-  - {name: RU_2608 | 3.18Mb, server: 213.183.53.202, port: 9042, type: ss, cipher: aes-256-cfb, password: S7KwUu7yBy58S3Ga, udp: true}
-  - {name: 21立陶宛∞直连, server: 213.183.53.177, port: 9070, type: ss, cipher: aes-256-cfb, password: bf7v334KKDV3YDhH, udp: true}
-  - {name: _704 | 0.17Mb, server: 213.183.53.221, port: 9027, type: ss, cipher: aes-256-cfb, password: EXN3S3eQpjE7EJu8, udp: true}
-  - {name: _719 |38.53Mb, server: 213.183.53.221, port: 9061, type: ss, cipher: aes-256-cfb, password: 4R3hUfZ2FHhDmNcP, udp: true}
-  - {name: t.me/wbnet_🇷🇺_RU_1199, server: 213.183.53.214, port: 9043, type: ss, cipher: aes-256-cfb, password: HSZuyJQcWe8dxNdF, udp: true}
-  - {name: _697 | 2.67Mb, server: 213.183.53.179, port: 9008, type: ss, cipher: aes-256-cfb, password: y9VURyNzJWNRYEGQ, udp: true}
-  - {name: _363 |38.83Mb, server: 213.183.53.179, port: 9058, type: ss, cipher: aes-256-cfb, password: dML2sfhbVwvtfNPe, udp: true}
-  - {name: _657 | 2.07Mb, server: 213.183.53.179, port: 9041, type: ss, cipher: aes-256-cfb, password: U6qnYRhfyDmn8sgn, udp: true}
-  - {name: github.com/freefq - 俄罗斯莫斯科Melbicom数据中心 36, server: 213.183.53.214, port: 9027, type: ss, cipher: aes-256-cfb, password: EXN3S3eQpjE7EJu8, udp: true}
-  - {name: t.me/wbnet_🇷🇺_RU_1193, server: 213.183.53.214, port: 9025, type: ss, cipher: aes-256-cfb, password: XPtzA9sCug3SPR4c, udp: true}
-  - {name: t.me/wbnet_🇷🇺_RU_1187, server: 213.183.53.214, port: 9005, type: ss, cipher: aes-256-cfb, password: ZET59LF6DvCC8KVt, udp: true}
-  - {name: _602 |34.67Mb, server: 213.183.53.214, port: 9026, type: ss, cipher: aes-256-cfb, password: QWDDvVE9npNurQfA, udp: true}
-  - {name: github.com/freefq - 俄罗斯莫斯科Melbicom数据中心 45, server: 213.183.53.198, port: 9061, type: ss, cipher: aes-256-cfb, password: 4R3hUfZ2FHhDmNcP, udp: true}
-  - {name: _383 |12.38Mb, server: 213.183.53.179, port: 9027, type: ss, cipher: aes-256-cfb, password: EXN3S3eQpjE7EJu8, udp: true}
-  - {name: t.me/wbnet_🇷🇺_RU_1207, server: 213.183.53.214, port: 9080, type: ss, cipher: aes-256-cfb, password: VP8ZPxQpJtZRCjfZ, udp: true}
-  - {name: _710 | 1.93Mb, server: 213.183.53.179, port: 9020, type: ss, cipher: aes-256-cfb, password: BNmAXXxAHYpTRdzu, udp: true}
-  - {name: _684 | 2.82Mb, server: 213.183.53.221, port: 9006, type: ss, cipher: aes-256-cfb, password: FAdUvMJUq5vDgKEq, udp: true}
-  - {name: RU_2605 | 6.22Mb, server: 213.183.53.200, port: 9031, type: ss, cipher: aes-256-cfb, password: BwcAUZk8hUFAkDGN, udp: true}
-  - {name: t.me/wbnet_🇷🇺_RU_1222, server: 213.183.53.207, port: 9006, type: ss, cipher: aes-256-cfb, password: FAdUvMJUq5vDgKEq, udp: true}
-  - {name: LT_711, server: 213.183.53.202, port: 9059, type: ss, cipher: aes-256-cfb, password: 9XwYyZsK8SNzQDtY, udp: true}
-  - {name: LT_741, server: 213.183.53.207, port: 9024, type: ss, cipher: aes-256-cfb, password: BejrQvtu9sqUeNuZ, udp: true}
-  - {name: LT_821, server: 213.183.53.202, port: 9010, type: ss, cipher: aes-256-cfb, password: f63gg8EruDnUrmz4, udp: true}
-  - {name: LT_794, server: 213.183.53.221, port: 9050, type: ss, cipher: aes-256-cfb, password: FG5ddLsMPbV5CutE, udp: true}
-  - {name: LT_933, server: 213.183.53.208, port: 9030, type: ss, cipher: aes-256-cfb, password: GeregetR8cvQHzYr, udp: true}
-  - {name: LT_917, server: 213.183.53.207, port: 9030, type: ss, cipher: aes-256-cfb, password: GeregetR8cvQHzYr, udp: true}
-  - {name: 213.183.53.200:9084, server: 213.183.53.200, port: 9084, type: ss, cipher: aes-256-cfb, password: c3NtHJ5ujV2tGDfj, udp: true}
-  - {name: 美国-2.49MB/s(Youtube:不良林), server: au2-3.nigirocloud.com, port: 443, type: trojan, password: 3yFq7NCP53mVfpXJz3, skip-cert-verify: true, udp: true}
-  - {name: _油管：全网最强白嫖 10, server: 212.81.47.18, port: 443, type: trojan, password: 3yFq7NCP53mVfpXJz3, sni: t.me.vpnhat, skip-cert-verify: true, udp: true}
-  - {name: SG-高速节点推荐：v2cross.com, server: 129.226.94.31, port: 21509, type: vmess, uuid: fbeb626c-8095-4e3b-aaf6-5a57971955b0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: JP_2313 | 7.16Mb, server: 138.2.52.84, port: 23140, type: vmess, uuid: e03f030e-87a6-4282-9656-461732cc3b1f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: US_3883 | 0.81Mb, server: 169.197.142.99, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: US_3180 | 5.99Mb, server: 38.114.114.69, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: _US_t.me/wbnet_126, server: 169.197.142.39, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: US_3544 | 0.99Mb, server: 169.197.142.39, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: US_3147 | 4.09Mb, server: 38.114.114.69, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: _油管：全网最强白嫖 11, server: 38.114.114.69, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: _油管：全网最强白嫖 12, server: 167.88.61.50, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: _油管：全网最强白嫖 13, server: 167.88.61.50, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_3220 | 2.62Mb, server: 38.75.136.135, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: US_3231 | 3.15Mb, server: 38.75.136.135, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: RU_2607 | 1.93Mb, server: 213.183.53.202, port: 9053, type: ss, cipher: aes-256-cfb, password: SBM7R883jBmnqe6C, udp: true}
-  - {name: t.me/wbnet_🇷🇺_RU_806, server: 213.183.53.202, port: 9011, type: ss, cipher: aes-256-cfb, password: M3t2ZEQcMGRWBjRa, udp: true}
-  - {name: t.me/wbnet_🇷🇺_RU_1191, server: 213.183.53.214, port: 9018, type: ss, cipher: aes-256-cfb, password: fG2artUmHfNT2cX7, udp: true}
-  - {name: _387 |17.64Mb, server: 213.183.53.179, port: 9032, type: ss, cipher: aes-256-cfb, password: UWZQeLRWnkqgkseq, udp: true}
-  - {name: _656 | 7.72Mb, server: 213.183.53.207, port: 9059, type: ss, cipher: aes-256-cfb, password: 9XwYyZsK8SNzQDtY, udp: true}
-  - {name: _672 | 2.38Mb, server: 213.183.53.221, port: 9031, type: ss, cipher: aes-256-cfb, password: BwcAUZk8hUFAkDGN, udp: true}
-  - {name: t.me/wbnet_🇷🇺_RU_1208, server: 213.183.53.214, port: 9084, type: ss, cipher: aes-256-cfb, password: c3NtHJ5ujV2tGDfj, udp: true}
-  - {name: t.me/wbnet_🇷🇺_RU_1230, server: 213.183.53.207, port: 9027, type: ss, cipher: aes-256-cfb, password: EXN3S3eQpjE7EJu8, udp: true}
-  - {name: _377 |21.96Mb, server: 213.183.53.221, port: 9057, type: ss, cipher: aes-256-cfb, password: wjTugX3ZtHMB9c3Z, udp: true}
-  - {name: t.me/wbnet_🇷🇺_RU_1196, server: 213.183.53.214, port: 9038, type: ss, cipher: aes-256-cfb, password: gYCYXfkUQEs2TaJQ, udp: true}
+  - {name: t.me/wbnet_🇷🇺_RU_1224, server: 213.183.53.207, port: 9008, type: ss, cipher: aes-256-cfb, password: y9VURyNzJWNRYEGQ, udp: true}
+  - {name: t.me/wbnet_🇳🇱_NL_1433, server: 213.183.59.177, port: 9094, type: ss, cipher: aes-256-cfb, password: rpgbNnU9rDDU4aWZ, udp: true}
+  - {name: t.me/wbnet_🇳🇱_NL_1419, server: 213.183.59.177, port: 9056, type: ss, cipher: aes-256-cfb, password: rNBfNuuANFCAk7KB, udp: true}
+  - {name: t.me/wbnet_🇳🇱_NL_1350, server: 213.183.59.206, port: 9093, type: ss, cipher: aes-256-cfb, password: wfLC2y7rzZyCmuyt, udp: true}
+  - {name: _ 4.80Mb | 2.41Mb, server: 213.183.59.214, port: 9056, type: ss, cipher: aes-256-cfb, password: rNBfNuuANFCAk7KB, udp: true}
+  - {name: ZZ_2009, server: 169.197.141.109, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: US_3530 | 4.91Mb, server: 169.197.142.39, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: 油管：最网最强白嫖 15, server: se2.project4gyuna.pw, port: 80, type: vmess, uuid: 0613c82b-1f56-432f-b94b-691e294d2314, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /project4gyuna.pw, headers: {Host: yuna4g.akamaized.net}}, udp: true}
+  - {name: 油管：最网最强白嫖 16, server: rackedgeuk510.moonfree.top, port: 443, type: vmess, uuid: 6e9eeae6-c3d1-439e-9f7a-213fe09b2dbe, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: rackedgeuk510.moonfree.top}}, udp: true}
+  - {name: CN_241 | 5.24Mb, server: 14.29.124.174, port: 11040, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_245 | 9.87Mb, server: 14.29.124.174, port: 11038, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: v2cross.com 24, server: 14.29.124.174, port: 11011, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: _1135 |21.99Mb, server: 152.89.210.84, port: 9042, type: ss, cipher: aes-256-cfb, password: S7KwUu7yBy58S3Ga, udp: true}
+  - {name: t.me/wbnet_🇳🇱_NL_1411, server: 213.183.59.177, port: 9037, type: ss, cipher: aes-256-cfb, password: TN2YqghxeFDKZfLU, udp: true}
+  - {name: t.me/wbnet_🇳🇱_NL_1414, server: 213.183.59.177, port: 9043, type: ss, cipher: aes-256-cfb, password: HSZuyJQcWe8dxNdF, udp: true}
+  - {name: NL_861 | 5.23Mb, server: 213.183.59.206, port: 9094, type: ss, cipher: aes-256-cfb, password: rpgbNnU9rDDU4aWZ, udp: true}
+  - {name: v2cross.com 25, server: 213.183.53.207, port: 9027, type: ss, cipher: aes-256-cfb, password: EXN3S3eQpjE7EJu8, udp: true}
+  - {name: ZZ_2010, server: 169.197.141.109, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: ZZ_2015, server: 169.197.141.109, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: ZZ_2017, server: 169.197.141.109, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: _油管：全网最强白嫖 5, server: 212.81.47.13, port: 443, type: trojan, password: 3yFq7NCP53mVfpXJz3, sni: t.me.vpnhat, skip-cert-verify: true, udp: true}
+  - {name: US-高速节点推荐：v1.mk/vip, server: wireless.starspace.link, port: 443, type: trojan, password: 5LN8SGTqxk336nFg, sni: wireless.starspace.link, skip-cert-verify: true, udp: true}
+  - {name: LT_743, server: 213.183.53.208, port: 9050, type: ss, cipher: aes-256-cfb, password: FG5ddLsMPbV5CutE, udp: true}
+  - {name: t.me/wbnet_🇳🇱_NL_1343, server: 213.183.59.206, port: 9040, type: ss, cipher: aes-256-cfb, password: p9z5BVADH2YFs3MN, udp: true}
+  - {name: _328 | 1.61Mb, server: 213.183.59.211, port: 9046, type: ss, cipher: aes-256-cfb, password: NvS8N4Vf8qAGPSCL, udp: true}
+  - {name: t.me/wbnet_🇳🇱_NL_1332, server: 213.183.59.211, port: 9094, type: ss, cipher: aes-256-cfb, password: rpgbNnU9rDDU4aWZ, udp: true}
+  - {name: v2cross.com 26, server: 213.183.53.208, port: 9080, type: ss, cipher: aes-256-cfb, password: VP8ZPxQpJtZRCjfZ, udp: true}
+  - {name: v2cross.com 27, server: 152.89.210.84, port: 9015, type: ss, cipher: aes-256-cfb, password: ZpNDDKRu9MagNvaf, udp: true}
+  - {name: v2cross.com 28, server: 213.183.53.207, port: 9000, type: ss, cipher: aes-256-cfb, password: a3GFYt36Sm82Vys9, udp: true}
+  - {name: ZZ_2016, server: 169.197.141.109, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: _1290 | 4.02Mb, server: 169.197.141.109, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: 油管：全网最强白嫖, server: rk59.moonfree.top, port: 443, type: vmess, uuid: 6e9eeae6-c3d1-439e-9f7a-213fe09b2dbe, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: rk59.moonfree.top}}, udp: true}
+  - {name: FI 🇫🇮 Helsinki @AzadNet, server: 185.204.1.253, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: V29BpbtkhWZr, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
+      - 日本-tg频道:@ripaojiedian
+      - 日本03
+      - Relay_🇨🇳CN-🇨🇳CN_228
+      - 日本04
+      - CN_261 |24.93Mb
+      - CN 🇨🇳 @AzadNet
       - 油管：最网最强白嫖
-      - Lv1.V05 湘日BGP-新加坡
+      - CN_1842 | 8.96Mb
+      - LV1 新加坡 - 隧道「1.5x」
+      - 新加坡-tg频道:@ripaojiedian
       - 油管：最网最强白嫖 2
+      - CN_2
+      - LV1 日本 - 隧道「1.5x」
+      - 14.29.124.168:25289
+      - LV1 韩国 - 隧道「1.5x」
+      - CN 🇨🇳 @AzadNet 2
       - 油管：最网最强白嫖 3
+      - _油管频道：全网最强白嫖
+      - v2cross.com
+      - _油管频道：全网最强白嫖 2
+      - CN 🇨🇳 @AzadNet 3
+      - _571 |60.11Mb
+      - CN_3
+      - _油管频道：全网最强白嫖 3
+      - _577 |64.21Mb
+      - 香港03
+      - 直连|香港多线|1.5x
+      - 香港04
       - 油管：最网最强白嫖 4
+      - 新加坡03
+      - CN_1849 | 8.80Mb
+      - 新加坡01
       - 油管：最网最强白嫖 5
-      - Lv1.V47 沪日BGP-新加坡
-      - Lv1.V*65 广州移动-新加坡
+      - HK_2339 |42.41Mb
+      - CN_271 |24.78Mb
       - 油管：最网最强白嫖 6
       - 油管：最网最强白嫖 7
+      - Relay_🇭🇰HK-🇭🇰HK_574
+      - 直连|日本三网|1.5x
+      - Relay_🇺🇸US-🇺🇸US_2598
+      - 新加坡04
+      - v2cross.com 2
+      - KR1
+      - LV1 美国 - 隧道「1.5x」
+      - v2cross.com 3
       - 油管：最网最强白嫖 8
-      - Lv1.V16 东莞联通-美国
-      - Lv1.V62 广州移动-台湾
       - 油管：最网最强白嫖 9
+      - 香港-tg频道:@ripaojiedian
+      - KR_2265 | 1.69Mb
+      - 联通优化节点「1x」
       - 油管：最网最强白嫖 10
+      - JP_2242 |32.60Mb
       - 油管：最网最强白嫖 11
-      - CN_1850 |12.58Mb
-      - Lv1.V40 上海移动-美国
-      - Lv1.V04 湘日BGP-美国
-      - Lv1.V61 广州移动-香港
-      - 14.29.124.168:25270
+      - TW2
+      - 移动优化节点「1x」
+      - 印度孟买「1x」
+      - _1345 |12.19Mb
+      - 韩国-tg频道:@ripaojiedian
       - 油管：最网最强白嫖 12
-      - 油管：最网最强白嫖 13
-      - _油管频道：全网最强白嫖
-      - _632 |85.95Mb
-      - 14.29.124.168:25220
-      - CN_281 | 3.90Mb
-      - CN_1877 |23.07Mb
-      - _1418 |88.44Mb
-      - CN_2
-      - 台湾原生-tg频道:@ripaojiedian
-      - CN_1842 | 8.96Mb
-      - CN 🇨🇳 @AzadNet
-      - _油管频道：全网最强白嫖 2
-      - CN 🇨🇳 @AzadNet 2
-      - _油管频道：全网最强白嫖 3
-      - _571 |60.11Mb
-      - 14.29.124.168:25289
-      - CN_1849 | 8.80Mb
-      - CN_271 |24.78Mb
-      - CN_261 |24.93Mb
-      - CN 🇨🇳 @AzadNet 3
-      - 14.29.124.168:25245
-      - _577 |64.21Mb
-      - _油管频道：全网最强白嫖 4
-      - 油管：最网最强白嫖 14
-      - 台湾-tg频道:@ripaojiedian
-      - _568 | 9.14Mb
-      - 台湾02丨原生IP丨
-      - CN_1869 |95.42Mb
-      - 美国-21.26MB/s(Youtube:不良林)
-      - _335 | 9.08Mb
-      - _562 | 8.97Mb
-      - Lv1.V27 广州移动2-日本
-      - 油管：全网最强白嫖
-      - HK_2339 |42.41Mb
-      - Lv1.V*29 广州移动2-新加坡
-      - 香港阿伟科技atTG*油管_77_1404 |16.18Mb
-      - JP_608 |28.98Mb
-      - 油管：最网最强白嫖 15
-      - US_3889 |10.59Mb
-      - 油管：最网最强白嫖 16
-      - 美国-15.35MB/s(Youtube:不良林)
-      - Lv1.V26 广州移动2-台湾
-      - 美国-tg频道:@ripaojiedian
-      - JP_592
-      - 油管：最网最强白嫖 17
       - _油管：全网最强白嫖
-      - 香港临时-tg频道:@ripaojiedian
-      - US_1939
-      - US_3887 |20.54Mb
-      - CN_3
-      - 油管：最网最强白嫖 18
-      - 油管：最网最强白嫖 19
-      - 油管：最网最强白嫖 20
-      - 油管：最网最强白嫖 21
-      - github.com/freefq - 香港  20
-      - 36.中继中转隧道线路覆盖
-      - 油管：最网最强白嫖 22
-      - _1429 |49.17Mb
+      - California, Tj
       - _油管：全网最强白嫖 2
-      - JP_2312 |17.35Mb
-      - 油管：全网最强白嫖 2
-      - 34.捐赠解锁更多协议线路
-      - 美国TG频道:@kxswa
-      - JP_2324 |42.71Mb
-      - 33.公益等级線路嚴格限速
-      - 韩国2-tg频道:@ripaojiedian
-      - github_com/mianfeifq__🇰🇷韩国阿伟科技atTG*油管_15_1400 | 8.61Mb
-      - _1430 |28.15Mb
-      - _油管：全网最强白嫖 17
-      - 油管：最网最强白嫖 23
-      - US_2729
-      - github.com/freefq - 新加坡腾讯云 26
-      - 油管：全网最强白嫖 3
-      - 美国-15.21MB/s(Youtube:不良林)
-      - KR_2353 | 2.23Mb
-      - SG-高速节点推荐：v1.mk/vip
-      - _1358 |32.71Mb
-      - US_3890 |20.30Mb
-      - JP01
-      - _油管：全网最强白嫖 3
-      - 美国-13.72MB/s(Youtube:不良林)
-      - SG_2723 | 6.29Mb
-      - github.com/freefq - 美国Microsoft数据中心 9
-      - Singapore-Tencent 4
-      - _油管：全网最强白嫖 4
-      - SG_2709 |24.03Mb
-      - 油管：最网最强白嫖 24
-      - github.com/freefq - 新加坡腾讯云 14
-      - 油管：全网最强白嫖 4
-      - SG-高速节点推荐：v1.mk/vip 2
-      - 美国-4.12MB/s(Youtube:不良林)
-      - 日本阿伟科技atTG*油管_58_1402 |37.96Mb
-      - github.com/freefq - 美国Microsoft数据中心 19
-      - US_3919 |30.28Mb
-      - US_483 |94.87Mb
-      - 油管：全网最强白嫖 5
-      - _油管：全网最强白嫖 5
-      - github.com/freefq - 新加坡腾讯云 9
-      - github.com/freefq - 美国Microsoft数据中心 17
-      - v2cross.com - 新加坡腾讯云 1
-      - JP_607 |16.39Mb
-      - KR-高速节点推荐：v1.mk/vip
-      - 油管：最网最强白嫖 25
-      - github.com/freefq - 新加坡腾讯云 126
-      - github.com/freefq - 新加坡腾讯云 136
-      - _油管：全网最强白嫖 6
-      - SG_1809 | 8.43Mb
-      - github.com/freefq - 新加坡腾讯云 12
-      - 香港
-      - t.me/wbnet_🇷🇺_RU_1185
-      - _701
-      - github.com/freefq - 俄罗斯莫斯科Melbicom数据中心 57
-      - _582 | 3.15Mb
-      - _669 | 3.19Mb
-      - _381 |13.28Mb
-      - _412 |29.99Mb
-      - LT_957
-      - _690 | 0.08Mb
-      - _635 | 2.71Mb
-      - _368 |17.08Mb
-      - t.me/wbnet_🇷🇺_RU_1202
-      - t.me/wbnet_🇷🇺_RU_1205
-      - t.me/wbnet_🇷🇺_RU_1275
-      - 油管：最网最强白嫖 26
-      - LT_800
-      - RU_2553 | 0.83Mb
-      - 油管：全网最强白嫖 6
-      - _426 |24.32Mb
-      - _694 | 1.25Mb
-      - _449 |20.92Mb
-      - _380 |29.32Mb
-      - _446 | 8.19Mb
-      - _702 | 2.65Mb
-      - _396 |12.14Mb
-      - t.me/wbnet_🇷🇺_RU_799
-      - RU 🇷🇺 Moscow @AzadNet
-      - _693 |18.13Mb
-      - t.me/wbnet_🇷🇺_RU_1198
-      - _723 |56.03Mb
-      - _375 |22.87Mb
-      - RU_2662 | 2.91Mb
-      - LT_942
-      - US_3855 | 0.41Mb
-      - t.me/wbnet_🇺🇸_US_523
-      - t.me/wbnet_🇷🇺_RU_1209
-      - RU_2606 | 2.76Mb
-      - _386 |21.64Mb
-      - RU 🇷🇺 Moscow @AzadNet 2
-      - github.com/freefq - 俄罗斯莫斯科Melbicom数据中心 52
-      - _424 |10.14Mb
-      - github.com/freefq - 俄罗斯莫斯科Melbicom数据中心 41
-      - _441 |35.44Mb
-      - _715 | 5.26Mb
-      - 23立陶宛∞直连
-      - t.me/wbnet_🇷🇺_RU_1234
-      - 油管：最网最强白嫖 27
-      - LT_718
-      - LT_770
-      - LT_785
-      - LT_1009
-      - LT_993
-      - LT_1039
-      - LT_1022
-      - LT_874
+      - 油管：最网最强白嫖 13
       - bulink自建免费19线 三网
-      - JP_611 |30.20Mb
-      - US_3236 |18.85Mb
-      - _油管：全网最强白嫖 7
-      - t.me/wbnet_🇷🇺_RU_1195
-      - t.me/wbnet_🇷🇺_RU_1232
-      - _448 |19.14Mb
-      - t.me/wbnet_🇷🇺_RU_1243
-      - _403 |12.85Mb
-      - _630 | 0.07Mb
-      - t.me/wbnet_🇷🇺_RU_1239
-      - _611 |27.23Mb
-      - t.me/wbnet_🇷🇺_RU_1242
-      - _605 |17.04Mb
-      - _418 |29.65Mb
-      - _417 |14.08Mb
+      - _油管：全网最强白嫖 3
+      - v2cross.com 4
+      - v2cross.com 5
+      - v2cross.com 6
+      - _油管：全网最强白嫖 4
+      - _US_t.me/wbnet_173
+      - github.com/freefq - 日本东京Amazon数据中心 7
+      - v2cross.com 7
+      - v2cross.com 8
+      - v2cross.com 9
+      - v2cross.com 10
+      - RU1
+      - v2cross.com 11
+      - v2cross.com 12
+      - v2cross.com 13
+      - v2cross.com 14
+      - v2cross.com 15
+      - v2cross.com 16
+      - TG群https://t.me/youzi_pro
+      - t.me/wbnet_🇳🇱_NL_1333
+      - v2cross.com 17
+      - CA_1663 | 8.81Mb
+      - v2cross.com 18
+      - _180 | 2.45Mb
+      - _823 | 5.63Mb
+      - 油管：最网最强白嫖 14
+      - v2cross.com 19
+      - v2cross.com 20
+      - t.me/wbnet_🇳🇱_NL_1399
+      - _317 | 9.05Mb
+      - v2cross.com 21
+      - v2cross.com 22
+      - v2cross.com 23
+      - t.me/wbnet_🇳🇱_NL_1423
+      - t.me/wbnet_🇳🇱_NL_1334
+      - ZZ_2013
+      - ZZ_2066
+      - _US_t.me/wbnet_163
       - t.me/wbnet_🇷🇺_RU_1251
-      - t.me/wbnet_🇷🇺_RU_1246
-      - LT_803
-      - US_3888 |11.46Mb
-      - _US_t.me/wbnet_142
-      - _US_t.me/wbnet_171
-      - US_3183 |16.92Mb
-      - _油管：全网最强白嫖 8
-      - ZZ_3182
-      - t.me/wbnet_🇷🇺_RU_1186
-      - RU_2597 | 4.07Mb
-      - _692 | 1.68Mb
-      - t.me/wbnet_🇷🇺_RU_1212
-      - t.me/wbnet_🇷🇺_RU_802
-      - _709
-      - _687 | 2.39Mb
-      - _695 |14.42Mb
-      - _438 |24.49Mb
-      - t.me/wbnet_🇷🇺_RU_1192
-      - _681 |18.95Mb
-      - _356 |17.07Mb
-      - t.me/wbnet_🇷🇺_RU_1228
-      - t.me/wbnet_🇷🇺_RU_1237
-      - _447 |11.50Mb
-      - _382 |37.27Mb
-      - _699
-      - t.me/wbnet_🇷🇺_RU_1252
-      - github.com/freefq - 俄罗斯莫斯科Melbicom数据中心 51
-      - t.me/wbnet_🇷🇺_RU_1266
-      - t.me/wbnet_🇷🇺_RU_1221
-      - t.me/wbnet_🇷🇺_RU_1203
-      - LT_895
-      - LT_1000
-      - LT_1053
-      - 油管：最网最强白嫖 28
-      - 免费-日本4_6_1401 |36.72Mb
-      - Relay_🇯🇵JP-🇨🇿CZ_677
-      - US_3105 | 1.54Mb
-      - US_3187 | 3.51Mb
-      - US_3106 | 3.72Mb
-      - t.me/wbnet_🇺🇸_US_731
-      - _油管：全网最强白嫖 9
-      - US_3225 |15.41Mb
-      - US_3227 |16.36Mb
-      - US_3228 |12.82Mb
-      - t.me/wbnet_🇷🇺_RU_1281
-      - _673 | 4.10Mb
-      - t.me/wbnet_🇷🇺_RU_1229
-      - RU_2608 | 3.18Mb
-      - 21立陶宛∞直连
-      - _704 | 0.17Mb
-      - _719 |38.53Mb
-      - t.me/wbnet_🇷🇺_RU_1199
-      - _697 | 2.67Mb
-      - _363 |38.83Mb
-      - _657 | 2.07Mb
-      - github.com/freefq - 俄罗斯莫斯科Melbicom数据中心 36
-      - t.me/wbnet_🇷🇺_RU_1193
-      - t.me/wbnet_🇷🇺_RU_1187
-      - _602 |34.67Mb
-      - github.com/freefq - 俄罗斯莫斯科Melbicom数据中心 45
-      - _383 |12.38Mb
-      - t.me/wbnet_🇷🇺_RU_1207
-      - _710 | 1.93Mb
-      - _684 | 2.82Mb
-      - RU_2605 | 6.22Mb
-      - t.me/wbnet_🇷🇺_RU_1222
-      - LT_711
-      - LT_741
-      - LT_821
-      - LT_794
-      - LT_933
-      - LT_917
-      - 213.183.53.200:9084
-      - 美国-2.49MB/s(Youtube:不良林)
-      - _油管：全网最强白嫖 10
-      - SG-高速节点推荐：v2cross.com
-      - JP_2313 | 7.16Mb
-      - US_3883 | 0.81Mb
-      - US_3180 | 5.99Mb
-      - _US_t.me/wbnet_126
-      - US_3544 | 0.99Mb
-      - US_3147 | 4.09Mb
-      - _油管：全网最强白嫖 11
-      - _油管：全网最强白嫖 12
-      - _油管：全网最强白嫖 13
-      - US_3220 | 2.62Mb
-      - US_3231 | 3.15Mb
-      - RU_2607 | 1.93Mb
-      - t.me/wbnet_🇷🇺_RU_806
-      - t.me/wbnet_🇷🇺_RU_1191
-      - _387 |17.64Mb
-      - _656 | 7.72Mb
-      - _672 | 2.38Mb
-      - t.me/wbnet_🇷🇺_RU_1208
-      - t.me/wbnet_🇷🇺_RU_1230
-      - _377 |21.96Mb
-      - t.me/wbnet_🇷🇺_RU_1196
+      - t.me/wbnet_🇷🇺_RU_1224
+      - t.me/wbnet_🇳🇱_NL_1433
+      - t.me/wbnet_🇳🇱_NL_1419
+      - t.me/wbnet_🇳🇱_NL_1350
+      - _ 4.80Mb | 2.41Mb
+      - ZZ_2009
+      - US_3530 | 4.91Mb
+      - 油管：最网最强白嫖 15
+      - 油管：最网最强白嫖 16
+      - CN_241 | 5.24Mb
+      - CN_245 | 9.87Mb
+      - v2cross.com 24
+      - _1135 |21.99Mb
+      - t.me/wbnet_🇳🇱_NL_1411
+      - t.me/wbnet_🇳🇱_NL_1414
+      - NL_861 | 5.23Mb
+      - v2cross.com 25
+      - ZZ_2010
+      - ZZ_2015
+      - ZZ_2017
+      - _油管：全网最强白嫖 5
+      - US-高速节点推荐：v1.mk/vip
+      - LT_743
+      - t.me/wbnet_🇳🇱_NL_1343
+      - _328 | 1.61Mb
+      - t.me/wbnet_🇳🇱_NL_1332
+      - v2cross.com 26
+      - v2cross.com 27
+      - v2cross.com 28
+      - ZZ_2016
+      - _1290 | 4.02Mb
+      - 油管：全网最强白嫖
+      - FI 🇫🇮 Helsinki @AzadNet
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
+      - 日本-tg频道:@ripaojiedian
+      - 日本03
+      - Relay_🇨🇳CN-🇨🇳CN_228
+      - 日本04
+      - CN_261 |24.93Mb
+      - CN 🇨🇳 @AzadNet
       - 油管：最网最强白嫖
-      - Lv1.V05 湘日BGP-新加坡
+      - CN_1842 | 8.96Mb
+      - LV1 新加坡 - 隧道「1.5x」
+      - 新加坡-tg频道:@ripaojiedian
       - 油管：最网最强白嫖 2
+      - CN_2
+      - LV1 日本 - 隧道「1.5x」
+      - 14.29.124.168:25289
+      - LV1 韩国 - 隧道「1.5x」
+      - CN 🇨🇳 @AzadNet 2
       - 油管：最网最强白嫖 3
+      - _油管频道：全网最强白嫖
+      - v2cross.com
+      - _油管频道：全网最强白嫖 2
+      - CN 🇨🇳 @AzadNet 3
+      - _571 |60.11Mb
+      - CN_3
+      - _油管频道：全网最强白嫖 3
+      - _577 |64.21Mb
+      - 香港03
+      - 直连|香港多线|1.5x
+      - 香港04
       - 油管：最网最强白嫖 4
+      - 新加坡03
+      - CN_1849 | 8.80Mb
+      - 新加坡01
       - 油管：最网最强白嫖 5
-      - Lv1.V47 沪日BGP-新加坡
-      - Lv1.V*65 广州移动-新加坡
+      - HK_2339 |42.41Mb
+      - CN_271 |24.78Mb
       - 油管：最网最强白嫖 6
       - 油管：最网最强白嫖 7
+      - Relay_🇭🇰HK-🇭🇰HK_574
+      - 直连|日本三网|1.5x
+      - Relay_🇺🇸US-🇺🇸US_2598
+      - 新加坡04
+      - v2cross.com 2
+      - KR1
+      - LV1 美国 - 隧道「1.5x」
+      - v2cross.com 3
       - 油管：最网最强白嫖 8
-      - Lv1.V16 东莞联通-美国
-      - Lv1.V62 广州移动-台湾
       - 油管：最网最强白嫖 9
+      - 香港-tg频道:@ripaojiedian
+      - KR_2265 | 1.69Mb
+      - 联通优化节点「1x」
       - 油管：最网最强白嫖 10
+      - JP_2242 |32.60Mb
       - 油管：最网最强白嫖 11
-      - CN_1850 |12.58Mb
-      - Lv1.V40 上海移动-美国
-      - Lv1.V04 湘日BGP-美国
-      - Lv1.V61 广州移动-香港
-      - 14.29.124.168:25270
+      - TW2
+      - 移动优化节点「1x」
+      - 印度孟买「1x」
+      - _1345 |12.19Mb
+      - 韩国-tg频道:@ripaojiedian
       - 油管：最网最强白嫖 12
-      - 油管：最网最强白嫖 13
-      - _油管频道：全网最强白嫖
-      - _632 |85.95Mb
-      - 14.29.124.168:25220
-      - CN_281 | 3.90Mb
-      - CN_1877 |23.07Mb
-      - _1418 |88.44Mb
-      - CN_2
-      - 台湾原生-tg频道:@ripaojiedian
-      - CN_1842 | 8.96Mb
-      - CN 🇨🇳 @AzadNet
-      - _油管频道：全网最强白嫖 2
-      - CN 🇨🇳 @AzadNet 2
-      - _油管频道：全网最强白嫖 3
-      - _571 |60.11Mb
-      - 14.29.124.168:25289
-      - CN_1849 | 8.80Mb
-      - CN_271 |24.78Mb
-      - CN_261 |24.93Mb
-      - CN 🇨🇳 @AzadNet 3
-      - 14.29.124.168:25245
-      - _577 |64.21Mb
-      - _油管频道：全网最强白嫖 4
-      - 油管：最网最强白嫖 14
-      - 台湾-tg频道:@ripaojiedian
-      - _568 | 9.14Mb
-      - 台湾02丨原生IP丨
-      - CN_1869 |95.42Mb
-      - 美国-21.26MB/s(Youtube:不良林)
-      - _335 | 9.08Mb
-      - _562 | 8.97Mb
-      - Lv1.V27 广州移动2-日本
-      - 油管：全网最强白嫖
-      - HK_2339 |42.41Mb
-      - Lv1.V*29 广州移动2-新加坡
-      - 香港阿伟科技atTG*油管_77_1404 |16.18Mb
-      - JP_608 |28.98Mb
-      - 油管：最网最强白嫖 15
-      - US_3889 |10.59Mb
-      - 油管：最网最强白嫖 16
-      - 美国-15.35MB/s(Youtube:不良林)
-      - Lv1.V26 广州移动2-台湾
-      - 美国-tg频道:@ripaojiedian
-      - JP_592
-      - 油管：最网最强白嫖 17
       - _油管：全网最强白嫖
-      - 香港临时-tg频道:@ripaojiedian
-      - US_1939
-      - US_3887 |20.54Mb
-      - CN_3
-      - 油管：最网最强白嫖 18
-      - 油管：最网最强白嫖 19
-      - 油管：最网最强白嫖 20
-      - 油管：最网最强白嫖 21
-      - github.com/freefq - 香港  20
-      - 36.中继中转隧道线路覆盖
-      - 油管：最网最强白嫖 22
-      - _1429 |49.17Mb
+      - California, Tj
       - _油管：全网最强白嫖 2
-      - JP_2312 |17.35Mb
-      - 油管：全网最强白嫖 2
-      - 34.捐赠解锁更多协议线路
-      - 美国TG频道:@kxswa
-      - JP_2324 |42.71Mb
-      - 33.公益等级線路嚴格限速
-      - 韩国2-tg频道:@ripaojiedian
-      - github_com/mianfeifq__🇰🇷韩国阿伟科技atTG*油管_15_1400 | 8.61Mb
-      - _1430 |28.15Mb
-      - _油管：全网最强白嫖 17
-      - 油管：最网最强白嫖 23
-      - US_2729
-      - github.com/freefq - 新加坡腾讯云 26
-      - 油管：全网最强白嫖 3
-      - 美国-15.21MB/s(Youtube:不良林)
-      - KR_2353 | 2.23Mb
-      - SG-高速节点推荐：v1.mk/vip
-      - _1358 |32.71Mb
-      - US_3890 |20.30Mb
-      - JP01
-      - _油管：全网最强白嫖 3
-      - 美国-13.72MB/s(Youtube:不良林)
-      - SG_2723 | 6.29Mb
-      - github.com/freefq - 美国Microsoft数据中心 9
-      - Singapore-Tencent 4
-      - _油管：全网最强白嫖 4
-      - SG_2709 |24.03Mb
-      - 油管：最网最强白嫖 24
-      - github.com/freefq - 新加坡腾讯云 14
-      - 油管：全网最强白嫖 4
-      - SG-高速节点推荐：v1.mk/vip 2
-      - 美国-4.12MB/s(Youtube:不良林)
-      - 日本阿伟科技atTG*油管_58_1402 |37.96Mb
-      - github.com/freefq - 美国Microsoft数据中心 19
-      - US_3919 |30.28Mb
-      - US_483 |94.87Mb
-      - 油管：全网最强白嫖 5
-      - _油管：全网最强白嫖 5
-      - github.com/freefq - 新加坡腾讯云 9
-      - github.com/freefq - 美国Microsoft数据中心 17
-      - v2cross.com - 新加坡腾讯云 1
-      - JP_607 |16.39Mb
-      - KR-高速节点推荐：v1.mk/vip
-      - 油管：最网最强白嫖 25
-      - github.com/freefq - 新加坡腾讯云 126
-      - github.com/freefq - 新加坡腾讯云 136
-      - _油管：全网最强白嫖 6
-      - SG_1809 | 8.43Mb
-      - github.com/freefq - 新加坡腾讯云 12
-      - 香港
-      - t.me/wbnet_🇷🇺_RU_1185
-      - _701
-      - github.com/freefq - 俄罗斯莫斯科Melbicom数据中心 57
-      - _582 | 3.15Mb
-      - _669 | 3.19Mb
-      - _381 |13.28Mb
-      - _412 |29.99Mb
-      - LT_957
-      - _690 | 0.08Mb
-      - _635 | 2.71Mb
-      - _368 |17.08Mb
-      - t.me/wbnet_🇷🇺_RU_1202
-      - t.me/wbnet_🇷🇺_RU_1205
-      - t.me/wbnet_🇷🇺_RU_1275
-      - 油管：最网最强白嫖 26
-      - LT_800
-      - RU_2553 | 0.83Mb
-      - 油管：全网最强白嫖 6
-      - _426 |24.32Mb
-      - _694 | 1.25Mb
-      - _449 |20.92Mb
-      - _380 |29.32Mb
-      - _446 | 8.19Mb
-      - _702 | 2.65Mb
-      - _396 |12.14Mb
-      - t.me/wbnet_🇷🇺_RU_799
-      - RU 🇷🇺 Moscow @AzadNet
-      - _693 |18.13Mb
-      - t.me/wbnet_🇷🇺_RU_1198
-      - _723 |56.03Mb
-      - _375 |22.87Mb
-      - RU_2662 | 2.91Mb
-      - LT_942
-      - US_3855 | 0.41Mb
-      - t.me/wbnet_🇺🇸_US_523
-      - t.me/wbnet_🇷🇺_RU_1209
-      - RU_2606 | 2.76Mb
-      - _386 |21.64Mb
-      - RU 🇷🇺 Moscow @AzadNet 2
-      - github.com/freefq - 俄罗斯莫斯科Melbicom数据中心 52
-      - _424 |10.14Mb
-      - github.com/freefq - 俄罗斯莫斯科Melbicom数据中心 41
-      - _441 |35.44Mb
-      - _715 | 5.26Mb
-      - 23立陶宛∞直连
-      - t.me/wbnet_🇷🇺_RU_1234
-      - 油管：最网最强白嫖 27
-      - LT_718
-      - LT_770
-      - LT_785
-      - LT_1009
-      - LT_993
-      - LT_1039
-      - LT_1022
-      - LT_874
+      - 油管：最网最强白嫖 13
       - bulink自建免费19线 三网
-      - JP_611 |30.20Mb
-      - US_3236 |18.85Mb
-      - _油管：全网最强白嫖 7
-      - t.me/wbnet_🇷🇺_RU_1195
-      - t.me/wbnet_🇷🇺_RU_1232
-      - _448 |19.14Mb
-      - t.me/wbnet_🇷🇺_RU_1243
-      - _403 |12.85Mb
-      - _630 | 0.07Mb
-      - t.me/wbnet_🇷🇺_RU_1239
-      - _611 |27.23Mb
-      - t.me/wbnet_🇷🇺_RU_1242
-      - _605 |17.04Mb
-      - _418 |29.65Mb
-      - _417 |14.08Mb
+      - _油管：全网最强白嫖 3
+      - v2cross.com 4
+      - v2cross.com 5
+      - v2cross.com 6
+      - _油管：全网最强白嫖 4
+      - _US_t.me/wbnet_173
+      - github.com/freefq - 日本东京Amazon数据中心 7
+      - v2cross.com 7
+      - v2cross.com 8
+      - v2cross.com 9
+      - v2cross.com 10
+      - RU1
+      - v2cross.com 11
+      - v2cross.com 12
+      - v2cross.com 13
+      - v2cross.com 14
+      - v2cross.com 15
+      - v2cross.com 16
+      - TG群https://t.me/youzi_pro
+      - t.me/wbnet_🇳🇱_NL_1333
+      - v2cross.com 17
+      - CA_1663 | 8.81Mb
+      - v2cross.com 18
+      - _180 | 2.45Mb
+      - _823 | 5.63Mb
+      - 油管：最网最强白嫖 14
+      - v2cross.com 19
+      - v2cross.com 20
+      - t.me/wbnet_🇳🇱_NL_1399
+      - _317 | 9.05Mb
+      - v2cross.com 21
+      - v2cross.com 22
+      - v2cross.com 23
+      - t.me/wbnet_🇳🇱_NL_1423
+      - t.me/wbnet_🇳🇱_NL_1334
+      - ZZ_2013
+      - ZZ_2066
+      - _US_t.me/wbnet_163
       - t.me/wbnet_🇷🇺_RU_1251
-      - t.me/wbnet_🇷🇺_RU_1246
-      - LT_803
-      - US_3888 |11.46Mb
-      - _US_t.me/wbnet_142
-      - _US_t.me/wbnet_171
-      - US_3183 |16.92Mb
-      - _油管：全网最强白嫖 8
-      - ZZ_3182
-      - t.me/wbnet_🇷🇺_RU_1186
-      - RU_2597 | 4.07Mb
-      - _692 | 1.68Mb
-      - t.me/wbnet_🇷🇺_RU_1212
-      - t.me/wbnet_🇷🇺_RU_802
-      - _709
-      - _687 | 2.39Mb
-      - _695 |14.42Mb
-      - _438 |24.49Mb
-      - t.me/wbnet_🇷🇺_RU_1192
-      - _681 |18.95Mb
-      - _356 |17.07Mb
-      - t.me/wbnet_🇷🇺_RU_1228
-      - t.me/wbnet_🇷🇺_RU_1237
-      - _447 |11.50Mb
-      - _382 |37.27Mb
-      - _699
-      - t.me/wbnet_🇷🇺_RU_1252
-      - github.com/freefq - 俄罗斯莫斯科Melbicom数据中心 51
-      - t.me/wbnet_🇷🇺_RU_1266
-      - t.me/wbnet_🇷🇺_RU_1221
-      - t.me/wbnet_🇷🇺_RU_1203
-      - LT_895
-      - LT_1000
-      - LT_1053
-      - 油管：最网最强白嫖 28
-      - 免费-日本4_6_1401 |36.72Mb
-      - Relay_🇯🇵JP-🇨🇿CZ_677
-      - US_3105 | 1.54Mb
-      - US_3187 | 3.51Mb
-      - US_3106 | 3.72Mb
-      - t.me/wbnet_🇺🇸_US_731
-      - _油管：全网最强白嫖 9
-      - US_3225 |15.41Mb
-      - US_3227 |16.36Mb
-      - US_3228 |12.82Mb
-      - t.me/wbnet_🇷🇺_RU_1281
-      - _673 | 4.10Mb
-      - t.me/wbnet_🇷🇺_RU_1229
-      - RU_2608 | 3.18Mb
-      - 21立陶宛∞直连
-      - _704 | 0.17Mb
-      - _719 |38.53Mb
-      - t.me/wbnet_🇷🇺_RU_1199
-      - _697 | 2.67Mb
-      - _363 |38.83Mb
-      - _657 | 2.07Mb
-      - github.com/freefq - 俄罗斯莫斯科Melbicom数据中心 36
-      - t.me/wbnet_🇷🇺_RU_1193
-      - t.me/wbnet_🇷🇺_RU_1187
-      - _602 |34.67Mb
-      - github.com/freefq - 俄罗斯莫斯科Melbicom数据中心 45
-      - _383 |12.38Mb
-      - t.me/wbnet_🇷🇺_RU_1207
-      - _710 | 1.93Mb
-      - _684 | 2.82Mb
-      - RU_2605 | 6.22Mb
-      - t.me/wbnet_🇷🇺_RU_1222
-      - LT_711
-      - LT_741
-      - LT_821
-      - LT_794
-      - LT_933
-      - LT_917
-      - 213.183.53.200:9084
-      - 美国-2.49MB/s(Youtube:不良林)
-      - _油管：全网最强白嫖 10
-      - SG-高速节点推荐：v2cross.com
-      - JP_2313 | 7.16Mb
-      - US_3883 | 0.81Mb
-      - US_3180 | 5.99Mb
-      - _US_t.me/wbnet_126
-      - US_3544 | 0.99Mb
-      - US_3147 | 4.09Mb
-      - _油管：全网最强白嫖 11
-      - _油管：全网最强白嫖 12
-      - _油管：全网最强白嫖 13
-      - US_3220 | 2.62Mb
-      - US_3231 | 3.15Mb
-      - RU_2607 | 1.93Mb
-      - t.me/wbnet_🇷🇺_RU_806
-      - t.me/wbnet_🇷🇺_RU_1191
-      - _387 |17.64Mb
-      - _656 | 7.72Mb
-      - _672 | 2.38Mb
-      - t.me/wbnet_🇷🇺_RU_1208
-      - t.me/wbnet_🇷🇺_RU_1230
-      - _377 |21.96Mb
-      - t.me/wbnet_🇷🇺_RU_1196
+      - t.me/wbnet_🇷🇺_RU_1224
+      - t.me/wbnet_🇳🇱_NL_1433
+      - t.me/wbnet_🇳🇱_NL_1419
+      - t.me/wbnet_🇳🇱_NL_1350
+      - _ 4.80Mb | 2.41Mb
+      - ZZ_2009
+      - US_3530 | 4.91Mb
+      - 油管：最网最强白嫖 15
+      - 油管：最网最强白嫖 16
+      - CN_241 | 5.24Mb
+      - CN_245 | 9.87Mb
+      - v2cross.com 24
+      - _1135 |21.99Mb
+      - t.me/wbnet_🇳🇱_NL_1411
+      - t.me/wbnet_🇳🇱_NL_1414
+      - NL_861 | 5.23Mb
+      - v2cross.com 25
+      - ZZ_2010
+      - ZZ_2015
+      - ZZ_2017
+      - _油管：全网最强白嫖 5
+      - US-高速节点推荐：v1.mk/vip
+      - LT_743
+      - t.me/wbnet_🇳🇱_NL_1343
+      - _328 | 1.61Mb
+      - t.me/wbnet_🇳🇱_NL_1332
+      - v2cross.com 26
+      - v2cross.com 27
+      - v2cross.com 28
+      - ZZ_2016
+      - _1290 | 4.02Mb
+      - 油管：全网最强白嫖
+      - FI 🇫🇮 Helsinki @AzadNet
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
+      - 日本-tg频道:@ripaojiedian
+      - 日本03
+      - Relay_🇨🇳CN-🇨🇳CN_228
+      - 日本04
+      - CN_261 |24.93Mb
+      - CN 🇨🇳 @AzadNet
       - 油管：最网最强白嫖
-      - Lv1.V05 湘日BGP-新加坡
+      - CN_1842 | 8.96Mb
+      - LV1 新加坡 - 隧道「1.5x」
+      - 新加坡-tg频道:@ripaojiedian
       - 油管：最网最强白嫖 2
+      - CN_2
+      - LV1 日本 - 隧道「1.5x」
+      - 14.29.124.168:25289
+      - LV1 韩国 - 隧道「1.5x」
+      - CN 🇨🇳 @AzadNet 2
       - 油管：最网最强白嫖 3
+      - _油管频道：全网最强白嫖
+      - v2cross.com
+      - _油管频道：全网最强白嫖 2
+      - CN 🇨🇳 @AzadNet 3
+      - _571 |60.11Mb
+      - CN_3
+      - _油管频道：全网最强白嫖 3
+      - _577 |64.21Mb
+      - 香港03
+      - 直连|香港多线|1.5x
+      - 香港04
       - 油管：最网最强白嫖 4
+      - 新加坡03
+      - CN_1849 | 8.80Mb
+      - 新加坡01
       - 油管：最网最强白嫖 5
-      - Lv1.V47 沪日BGP-新加坡
-      - Lv1.V*65 广州移动-新加坡
+      - HK_2339 |42.41Mb
+      - CN_271 |24.78Mb
       - 油管：最网最强白嫖 6
       - 油管：最网最强白嫖 7
+      - Relay_🇭🇰HK-🇭🇰HK_574
+      - 直连|日本三网|1.5x
+      - Relay_🇺🇸US-🇺🇸US_2598
+      - 新加坡04
+      - v2cross.com 2
+      - KR1
+      - LV1 美国 - 隧道「1.5x」
+      - v2cross.com 3
       - 油管：最网最强白嫖 8
-      - Lv1.V16 东莞联通-美国
-      - Lv1.V62 广州移动-台湾
       - 油管：最网最强白嫖 9
+      - 香港-tg频道:@ripaojiedian
+      - KR_2265 | 1.69Mb
+      - 联通优化节点「1x」
       - 油管：最网最强白嫖 10
+      - JP_2242 |32.60Mb
       - 油管：最网最强白嫖 11
-      - CN_1850 |12.58Mb
-      - Lv1.V40 上海移动-美国
-      - Lv1.V04 湘日BGP-美国
-      - Lv1.V61 广州移动-香港
-      - 14.29.124.168:25270
+      - TW2
+      - 移动优化节点「1x」
+      - 印度孟买「1x」
+      - _1345 |12.19Mb
+      - 韩国-tg频道:@ripaojiedian
       - 油管：最网最强白嫖 12
-      - 油管：最网最强白嫖 13
-      - _油管频道：全网最强白嫖
-      - _632 |85.95Mb
-      - 14.29.124.168:25220
-      - CN_281 | 3.90Mb
-      - CN_1877 |23.07Mb
-      - _1418 |88.44Mb
-      - CN_2
-      - 台湾原生-tg频道:@ripaojiedian
-      - CN_1842 | 8.96Mb
-      - CN 🇨🇳 @AzadNet
-      - _油管频道：全网最强白嫖 2
-      - CN 🇨🇳 @AzadNet 2
-      - _油管频道：全网最强白嫖 3
-      - _571 |60.11Mb
-      - 14.29.124.168:25289
-      - CN_1849 | 8.80Mb
-      - CN_271 |24.78Mb
-      - CN_261 |24.93Mb
-      - CN 🇨🇳 @AzadNet 3
-      - 14.29.124.168:25245
-      - _577 |64.21Mb
-      - _油管频道：全网最强白嫖 4
-      - 油管：最网最强白嫖 14
-      - 台湾-tg频道:@ripaojiedian
-      - _568 | 9.14Mb
-      - 台湾02丨原生IP丨
-      - CN_1869 |95.42Mb
-      - 美国-21.26MB/s(Youtube:不良林)
-      - _335 | 9.08Mb
-      - _562 | 8.97Mb
-      - Lv1.V27 广州移动2-日本
-      - 油管：全网最强白嫖
-      - HK_2339 |42.41Mb
-      - Lv1.V*29 广州移动2-新加坡
-      - 香港阿伟科技atTG*油管_77_1404 |16.18Mb
-      - JP_608 |28.98Mb
-      - 油管：最网最强白嫖 15
-      - US_3889 |10.59Mb
-      - 油管：最网最强白嫖 16
-      - 美国-15.35MB/s(Youtube:不良林)
-      - Lv1.V26 广州移动2-台湾
-      - 美国-tg频道:@ripaojiedian
-      - JP_592
-      - 油管：最网最强白嫖 17
       - _油管：全网最强白嫖
-      - 香港临时-tg频道:@ripaojiedian
-      - US_1939
-      - US_3887 |20.54Mb
-      - CN_3
-      - 油管：最网最强白嫖 18
-      - 油管：最网最强白嫖 19
-      - 油管：最网最强白嫖 20
-      - 油管：最网最强白嫖 21
-      - github.com/freefq - 香港  20
-      - 36.中继中转隧道线路覆盖
-      - 油管：最网最强白嫖 22
-      - _1429 |49.17Mb
+      - California, Tj
       - _油管：全网最强白嫖 2
-      - JP_2312 |17.35Mb
-      - 油管：全网最强白嫖 2
-      - 34.捐赠解锁更多协议线路
-      - 美国TG频道:@kxswa
-      - JP_2324 |42.71Mb
-      - 33.公益等级線路嚴格限速
-      - 韩国2-tg频道:@ripaojiedian
-      - github_com/mianfeifq__🇰🇷韩国阿伟科技atTG*油管_15_1400 | 8.61Mb
-      - _1430 |28.15Mb
-      - _油管：全网最强白嫖 17
-      - 油管：最网最强白嫖 23
-      - US_2729
-      - github.com/freefq - 新加坡腾讯云 26
-      - 油管：全网最强白嫖 3
-      - 美国-15.21MB/s(Youtube:不良林)
-      - KR_2353 | 2.23Mb
-      - SG-高速节点推荐：v1.mk/vip
-      - _1358 |32.71Mb
-      - US_3890 |20.30Mb
-      - JP01
-      - _油管：全网最强白嫖 3
-      - 美国-13.72MB/s(Youtube:不良林)
-      - SG_2723 | 6.29Mb
-      - github.com/freefq - 美国Microsoft数据中心 9
-      - Singapore-Tencent 4
-      - _油管：全网最强白嫖 4
-      - SG_2709 |24.03Mb
-      - 油管：最网最强白嫖 24
-      - github.com/freefq - 新加坡腾讯云 14
-      - 油管：全网最强白嫖 4
-      - SG-高速节点推荐：v1.mk/vip 2
-      - 美国-4.12MB/s(Youtube:不良林)
-      - 日本阿伟科技atTG*油管_58_1402 |37.96Mb
-      - github.com/freefq - 美国Microsoft数据中心 19
-      - US_3919 |30.28Mb
-      - US_483 |94.87Mb
-      - 油管：全网最强白嫖 5
-      - _油管：全网最强白嫖 5
-      - github.com/freefq - 新加坡腾讯云 9
-      - github.com/freefq - 美国Microsoft数据中心 17
-      - v2cross.com - 新加坡腾讯云 1
-      - JP_607 |16.39Mb
-      - KR-高速节点推荐：v1.mk/vip
-      - 油管：最网最强白嫖 25
-      - github.com/freefq - 新加坡腾讯云 126
-      - github.com/freefq - 新加坡腾讯云 136
-      - _油管：全网最强白嫖 6
-      - SG_1809 | 8.43Mb
-      - github.com/freefq - 新加坡腾讯云 12
-      - 香港
-      - t.me/wbnet_🇷🇺_RU_1185
-      - _701
-      - github.com/freefq - 俄罗斯莫斯科Melbicom数据中心 57
-      - _582 | 3.15Mb
-      - _669 | 3.19Mb
-      - _381 |13.28Mb
-      - _412 |29.99Mb
-      - LT_957
-      - _690 | 0.08Mb
-      - _635 | 2.71Mb
-      - _368 |17.08Mb
-      - t.me/wbnet_🇷🇺_RU_1202
-      - t.me/wbnet_🇷🇺_RU_1205
-      - t.me/wbnet_🇷🇺_RU_1275
-      - 油管：最网最强白嫖 26
-      - LT_800
-      - RU_2553 | 0.83Mb
-      - 油管：全网最强白嫖 6
-      - _426 |24.32Mb
-      - _694 | 1.25Mb
-      - _449 |20.92Mb
-      - _380 |29.32Mb
-      - _446 | 8.19Mb
-      - _702 | 2.65Mb
-      - _396 |12.14Mb
-      - t.me/wbnet_🇷🇺_RU_799
-      - RU 🇷🇺 Moscow @AzadNet
-      - _693 |18.13Mb
-      - t.me/wbnet_🇷🇺_RU_1198
-      - _723 |56.03Mb
-      - _375 |22.87Mb
-      - RU_2662 | 2.91Mb
-      - LT_942
-      - US_3855 | 0.41Mb
-      - t.me/wbnet_🇺🇸_US_523
-      - t.me/wbnet_🇷🇺_RU_1209
-      - RU_2606 | 2.76Mb
-      - _386 |21.64Mb
-      - RU 🇷🇺 Moscow @AzadNet 2
-      - github.com/freefq - 俄罗斯莫斯科Melbicom数据中心 52
-      - _424 |10.14Mb
-      - github.com/freefq - 俄罗斯莫斯科Melbicom数据中心 41
-      - _441 |35.44Mb
-      - _715 | 5.26Mb
-      - 23立陶宛∞直连
-      - t.me/wbnet_🇷🇺_RU_1234
-      - 油管：最网最强白嫖 27
-      - LT_718
-      - LT_770
-      - LT_785
-      - LT_1009
-      - LT_993
-      - LT_1039
-      - LT_1022
-      - LT_874
+      - 油管：最网最强白嫖 13
       - bulink自建免费19线 三网
-      - JP_611 |30.20Mb
-      - US_3236 |18.85Mb
-      - _油管：全网最强白嫖 7
-      - t.me/wbnet_🇷🇺_RU_1195
-      - t.me/wbnet_🇷🇺_RU_1232
-      - _448 |19.14Mb
-      - t.me/wbnet_🇷🇺_RU_1243
-      - _403 |12.85Mb
-      - _630 | 0.07Mb
-      - t.me/wbnet_🇷🇺_RU_1239
-      - _611 |27.23Mb
-      - t.me/wbnet_🇷🇺_RU_1242
-      - _605 |17.04Mb
-      - _418 |29.65Mb
-      - _417 |14.08Mb
+      - _油管：全网最强白嫖 3
+      - v2cross.com 4
+      - v2cross.com 5
+      - v2cross.com 6
+      - _油管：全网最强白嫖 4
+      - _US_t.me/wbnet_173
+      - github.com/freefq - 日本东京Amazon数据中心 7
+      - v2cross.com 7
+      - v2cross.com 8
+      - v2cross.com 9
+      - v2cross.com 10
+      - RU1
+      - v2cross.com 11
+      - v2cross.com 12
+      - v2cross.com 13
+      - v2cross.com 14
+      - v2cross.com 15
+      - v2cross.com 16
+      - TG群https://t.me/youzi_pro
+      - t.me/wbnet_🇳🇱_NL_1333
+      - v2cross.com 17
+      - CA_1663 | 8.81Mb
+      - v2cross.com 18
+      - _180 | 2.45Mb
+      - _823 | 5.63Mb
+      - 油管：最网最强白嫖 14
+      - v2cross.com 19
+      - v2cross.com 20
+      - t.me/wbnet_🇳🇱_NL_1399
+      - _317 | 9.05Mb
+      - v2cross.com 21
+      - v2cross.com 22
+      - v2cross.com 23
+      - t.me/wbnet_🇳🇱_NL_1423
+      - t.me/wbnet_🇳🇱_NL_1334
+      - ZZ_2013
+      - ZZ_2066
+      - _US_t.me/wbnet_163
       - t.me/wbnet_🇷🇺_RU_1251
-      - t.me/wbnet_🇷🇺_RU_1246
-      - LT_803
-      - US_3888 |11.46Mb
-      - _US_t.me/wbnet_142
-      - _US_t.me/wbnet_171
-      - US_3183 |16.92Mb
-      - _油管：全网最强白嫖 8
-      - ZZ_3182
-      - t.me/wbnet_🇷🇺_RU_1186
-      - RU_2597 | 4.07Mb
-      - _692 | 1.68Mb
-      - t.me/wbnet_🇷🇺_RU_1212
-      - t.me/wbnet_🇷🇺_RU_802
-      - _709
-      - _687 | 2.39Mb
-      - _695 |14.42Mb
-      - _438 |24.49Mb
-      - t.me/wbnet_🇷🇺_RU_1192
-      - _681 |18.95Mb
-      - _356 |17.07Mb
-      - t.me/wbnet_🇷🇺_RU_1228
-      - t.me/wbnet_🇷🇺_RU_1237
-      - _447 |11.50Mb
-      - _382 |37.27Mb
-      - _699
-      - t.me/wbnet_🇷🇺_RU_1252
-      - github.com/freefq - 俄罗斯莫斯科Melbicom数据中心 51
-      - t.me/wbnet_🇷🇺_RU_1266
-      - t.me/wbnet_🇷🇺_RU_1221
-      - t.me/wbnet_🇷🇺_RU_1203
-      - LT_895
-      - LT_1000
-      - LT_1053
-      - 油管：最网最强白嫖 28
-      - 免费-日本4_6_1401 |36.72Mb
-      - Relay_🇯🇵JP-🇨🇿CZ_677
-      - US_3105 | 1.54Mb
-      - US_3187 | 3.51Mb
-      - US_3106 | 3.72Mb
-      - t.me/wbnet_🇺🇸_US_731
-      - _油管：全网最强白嫖 9
-      - US_3225 |15.41Mb
-      - US_3227 |16.36Mb
-      - US_3228 |12.82Mb
-      - t.me/wbnet_🇷🇺_RU_1281
-      - _673 | 4.10Mb
-      - t.me/wbnet_🇷🇺_RU_1229
-      - RU_2608 | 3.18Mb
-      - 21立陶宛∞直连
-      - _704 | 0.17Mb
-      - _719 |38.53Mb
-      - t.me/wbnet_🇷🇺_RU_1199
-      - _697 | 2.67Mb
-      - _363 |38.83Mb
-      - _657 | 2.07Mb
-      - github.com/freefq - 俄罗斯莫斯科Melbicom数据中心 36
-      - t.me/wbnet_🇷🇺_RU_1193
-      - t.me/wbnet_🇷🇺_RU_1187
-      - _602 |34.67Mb
-      - github.com/freefq - 俄罗斯莫斯科Melbicom数据中心 45
-      - _383 |12.38Mb
-      - t.me/wbnet_🇷🇺_RU_1207
-      - _710 | 1.93Mb
-      - _684 | 2.82Mb
-      - RU_2605 | 6.22Mb
-      - t.me/wbnet_🇷🇺_RU_1222
-      - LT_711
-      - LT_741
-      - LT_821
-      - LT_794
-      - LT_933
-      - LT_917
-      - 213.183.53.200:9084
-      - 美国-2.49MB/s(Youtube:不良林)
-      - _油管：全网最强白嫖 10
-      - SG-高速节点推荐：v2cross.com
-      - JP_2313 | 7.16Mb
-      - US_3883 | 0.81Mb
-      - US_3180 | 5.99Mb
-      - _US_t.me/wbnet_126
-      - US_3544 | 0.99Mb
-      - US_3147 | 4.09Mb
-      - _油管：全网最强白嫖 11
-      - _油管：全网最强白嫖 12
-      - _油管：全网最强白嫖 13
-      - US_3220 | 2.62Mb
-      - US_3231 | 3.15Mb
-      - RU_2607 | 1.93Mb
-      - t.me/wbnet_🇷🇺_RU_806
-      - t.me/wbnet_🇷🇺_RU_1191
-      - _387 |17.64Mb
-      - _656 | 7.72Mb
-      - _672 | 2.38Mb
-      - t.me/wbnet_🇷🇺_RU_1208
-      - t.me/wbnet_🇷🇺_RU_1230
-      - _377 |21.96Mb
-      - t.me/wbnet_🇷🇺_RU_1196
+      - t.me/wbnet_🇷🇺_RU_1224
+      - t.me/wbnet_🇳🇱_NL_1433
+      - t.me/wbnet_🇳🇱_NL_1419
+      - t.me/wbnet_🇳🇱_NL_1350
+      - _ 4.80Mb | 2.41Mb
+      - ZZ_2009
+      - US_3530 | 4.91Mb
+      - 油管：最网最强白嫖 15
+      - 油管：最网最强白嫖 16
+      - CN_241 | 5.24Mb
+      - CN_245 | 9.87Mb
+      - v2cross.com 24
+      - _1135 |21.99Mb
+      - t.me/wbnet_🇳🇱_NL_1411
+      - t.me/wbnet_🇳🇱_NL_1414
+      - NL_861 | 5.23Mb
+      - v2cross.com 25
+      - ZZ_2010
+      - ZZ_2015
+      - ZZ_2017
+      - _油管：全网最强白嫖 5
+      - US-高速节点推荐：v1.mk/vip
+      - LT_743
+      - t.me/wbnet_🇳🇱_NL_1343
+      - _328 | 1.61Mb
+      - t.me/wbnet_🇳🇱_NL_1332
+      - v2cross.com 26
+      - v2cross.com 27
+      - v2cross.com 28
+      - ZZ_2016
+      - _1290 | 4.02Mb
+      - 油管：全网最强白嫖
+      - FI 🇫🇮 Helsinki @AzadNet
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -1240,1237 +584,575 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
+      - 日本-tg频道:@ripaojiedian
+      - 日本03
+      - Relay_🇨🇳CN-🇨🇳CN_228
+      - 日本04
+      - CN_261 |24.93Mb
+      - CN 🇨🇳 @AzadNet
       - 油管：最网最强白嫖
-      - Lv1.V05 湘日BGP-新加坡
+      - CN_1842 | 8.96Mb
+      - LV1 新加坡 - 隧道「1.5x」
+      - 新加坡-tg频道:@ripaojiedian
       - 油管：最网最强白嫖 2
+      - CN_2
+      - LV1 日本 - 隧道「1.5x」
+      - 14.29.124.168:25289
+      - LV1 韩国 - 隧道「1.5x」
+      - CN 🇨🇳 @AzadNet 2
       - 油管：最网最强白嫖 3
+      - _油管频道：全网最强白嫖
+      - v2cross.com
+      - _油管频道：全网最强白嫖 2
+      - CN 🇨🇳 @AzadNet 3
+      - _571 |60.11Mb
+      - CN_3
+      - _油管频道：全网最强白嫖 3
+      - _577 |64.21Mb
+      - 香港03
+      - 直连|香港多线|1.5x
+      - 香港04
       - 油管：最网最强白嫖 4
+      - 新加坡03
+      - CN_1849 | 8.80Mb
+      - 新加坡01
       - 油管：最网最强白嫖 5
-      - Lv1.V47 沪日BGP-新加坡
-      - Lv1.V*65 广州移动-新加坡
+      - HK_2339 |42.41Mb
+      - CN_271 |24.78Mb
       - 油管：最网最强白嫖 6
       - 油管：最网最强白嫖 7
+      - Relay_🇭🇰HK-🇭🇰HK_574
+      - 直连|日本三网|1.5x
+      - Relay_🇺🇸US-🇺🇸US_2598
+      - 新加坡04
+      - v2cross.com 2
+      - KR1
+      - LV1 美国 - 隧道「1.5x」
+      - v2cross.com 3
       - 油管：最网最强白嫖 8
-      - Lv1.V16 东莞联通-美国
-      - Lv1.V62 广州移动-台湾
       - 油管：最网最强白嫖 9
+      - 香港-tg频道:@ripaojiedian
+      - KR_2265 | 1.69Mb
+      - 联通优化节点「1x」
       - 油管：最网最强白嫖 10
+      - JP_2242 |32.60Mb
       - 油管：最网最强白嫖 11
-      - CN_1850 |12.58Mb
-      - Lv1.V40 上海移动-美国
-      - Lv1.V04 湘日BGP-美国
-      - Lv1.V61 广州移动-香港
-      - 14.29.124.168:25270
+      - TW2
+      - 移动优化节点「1x」
+      - 印度孟买「1x」
+      - _1345 |12.19Mb
+      - 韩国-tg频道:@ripaojiedian
       - 油管：最网最强白嫖 12
-      - 油管：最网最强白嫖 13
-      - _油管频道：全网最强白嫖
-      - _632 |85.95Mb
-      - 14.29.124.168:25220
-      - CN_281 | 3.90Mb
-      - CN_1877 |23.07Mb
-      - _1418 |88.44Mb
-      - CN_2
-      - 台湾原生-tg频道:@ripaojiedian
-      - CN_1842 | 8.96Mb
-      - CN 🇨🇳 @AzadNet
-      - _油管频道：全网最强白嫖 2
-      - CN 🇨🇳 @AzadNet 2
-      - _油管频道：全网最强白嫖 3
-      - _571 |60.11Mb
-      - 14.29.124.168:25289
-      - CN_1849 | 8.80Mb
-      - CN_271 |24.78Mb
-      - CN_261 |24.93Mb
-      - CN 🇨🇳 @AzadNet 3
-      - 14.29.124.168:25245
-      - _577 |64.21Mb
-      - _油管频道：全网最强白嫖 4
-      - 油管：最网最强白嫖 14
-      - 台湾-tg频道:@ripaojiedian
-      - _568 | 9.14Mb
-      - 台湾02丨原生IP丨
-      - CN_1869 |95.42Mb
-      - 美国-21.26MB/s(Youtube:不良林)
-      - _335 | 9.08Mb
-      - _562 | 8.97Mb
-      - Lv1.V27 广州移动2-日本
-      - 油管：全网最强白嫖
-      - HK_2339 |42.41Mb
-      - Lv1.V*29 广州移动2-新加坡
-      - 香港阿伟科技atTG*油管_77_1404 |16.18Mb
-      - JP_608 |28.98Mb
-      - 油管：最网最强白嫖 15
-      - US_3889 |10.59Mb
-      - 油管：最网最强白嫖 16
-      - 美国-15.35MB/s(Youtube:不良林)
-      - Lv1.V26 广州移动2-台湾
-      - 美国-tg频道:@ripaojiedian
-      - JP_592
-      - 油管：最网最强白嫖 17
       - _油管：全网最强白嫖
-      - 香港临时-tg频道:@ripaojiedian
-      - US_1939
-      - US_3887 |20.54Mb
-      - CN_3
-      - 油管：最网最强白嫖 18
-      - 油管：最网最强白嫖 19
-      - 油管：最网最强白嫖 20
-      - 油管：最网最强白嫖 21
-      - github.com/freefq - 香港  20
-      - 36.中继中转隧道线路覆盖
-      - 油管：最网最强白嫖 22
-      - _1429 |49.17Mb
+      - California, Tj
       - _油管：全网最强白嫖 2
-      - JP_2312 |17.35Mb
-      - 油管：全网最强白嫖 2
-      - 34.捐赠解锁更多协议线路
-      - 美国TG频道:@kxswa
-      - JP_2324 |42.71Mb
-      - 33.公益等级線路嚴格限速
-      - 韩国2-tg频道:@ripaojiedian
-      - github_com/mianfeifq__🇰🇷韩国阿伟科技atTG*油管_15_1400 | 8.61Mb
-      - _1430 |28.15Mb
-      - _油管：全网最强白嫖 17
-      - 油管：最网最强白嫖 23
-      - US_2729
-      - github.com/freefq - 新加坡腾讯云 26
-      - 油管：全网最强白嫖 3
-      - 美国-15.21MB/s(Youtube:不良林)
-      - KR_2353 | 2.23Mb
-      - SG-高速节点推荐：v1.mk/vip
-      - _1358 |32.71Mb
-      - US_3890 |20.30Mb
-      - JP01
-      - _油管：全网最强白嫖 3
-      - 美国-13.72MB/s(Youtube:不良林)
-      - SG_2723 | 6.29Mb
-      - github.com/freefq - 美国Microsoft数据中心 9
-      - Singapore-Tencent 4
-      - _油管：全网最强白嫖 4
-      - SG_2709 |24.03Mb
-      - 油管：最网最强白嫖 24
-      - github.com/freefq - 新加坡腾讯云 14
-      - 油管：全网最强白嫖 4
-      - SG-高速节点推荐：v1.mk/vip 2
-      - 美国-4.12MB/s(Youtube:不良林)
-      - 日本阿伟科技atTG*油管_58_1402 |37.96Mb
-      - github.com/freefq - 美国Microsoft数据中心 19
-      - US_3919 |30.28Mb
-      - US_483 |94.87Mb
-      - 油管：全网最强白嫖 5
-      - _油管：全网最强白嫖 5
-      - github.com/freefq - 新加坡腾讯云 9
-      - github.com/freefq - 美国Microsoft数据中心 17
-      - v2cross.com - 新加坡腾讯云 1
-      - JP_607 |16.39Mb
-      - KR-高速节点推荐：v1.mk/vip
-      - 油管：最网最强白嫖 25
-      - github.com/freefq - 新加坡腾讯云 126
-      - github.com/freefq - 新加坡腾讯云 136
-      - _油管：全网最强白嫖 6
-      - SG_1809 | 8.43Mb
-      - github.com/freefq - 新加坡腾讯云 12
-      - 香港
-      - t.me/wbnet_🇷🇺_RU_1185
-      - _701
-      - github.com/freefq - 俄罗斯莫斯科Melbicom数据中心 57
-      - _582 | 3.15Mb
-      - _669 | 3.19Mb
-      - _381 |13.28Mb
-      - _412 |29.99Mb
-      - LT_957
-      - _690 | 0.08Mb
-      - _635 | 2.71Mb
-      - _368 |17.08Mb
-      - t.me/wbnet_🇷🇺_RU_1202
-      - t.me/wbnet_🇷🇺_RU_1205
-      - t.me/wbnet_🇷🇺_RU_1275
-      - 油管：最网最强白嫖 26
-      - LT_800
-      - RU_2553 | 0.83Mb
-      - 油管：全网最强白嫖 6
-      - _426 |24.32Mb
-      - _694 | 1.25Mb
-      - _449 |20.92Mb
-      - _380 |29.32Mb
-      - _446 | 8.19Mb
-      - _702 | 2.65Mb
-      - _396 |12.14Mb
-      - t.me/wbnet_🇷🇺_RU_799
-      - RU 🇷🇺 Moscow @AzadNet
-      - _693 |18.13Mb
-      - t.me/wbnet_🇷🇺_RU_1198
-      - _723 |56.03Mb
-      - _375 |22.87Mb
-      - RU_2662 | 2.91Mb
-      - LT_942
-      - US_3855 | 0.41Mb
-      - t.me/wbnet_🇺🇸_US_523
-      - t.me/wbnet_🇷🇺_RU_1209
-      - RU_2606 | 2.76Mb
-      - _386 |21.64Mb
-      - RU 🇷🇺 Moscow @AzadNet 2
-      - github.com/freefq - 俄罗斯莫斯科Melbicom数据中心 52
-      - _424 |10.14Mb
-      - github.com/freefq - 俄罗斯莫斯科Melbicom数据中心 41
-      - _441 |35.44Mb
-      - _715 | 5.26Mb
-      - 23立陶宛∞直连
-      - t.me/wbnet_🇷🇺_RU_1234
-      - 油管：最网最强白嫖 27
-      - LT_718
-      - LT_770
-      - LT_785
-      - LT_1009
-      - LT_993
-      - LT_1039
-      - LT_1022
-      - LT_874
+      - 油管：最网最强白嫖 13
       - bulink自建免费19线 三网
-      - JP_611 |30.20Mb
-      - US_3236 |18.85Mb
-      - _油管：全网最强白嫖 7
-      - t.me/wbnet_🇷🇺_RU_1195
-      - t.me/wbnet_🇷🇺_RU_1232
-      - _448 |19.14Mb
-      - t.me/wbnet_🇷🇺_RU_1243
-      - _403 |12.85Mb
-      - _630 | 0.07Mb
-      - t.me/wbnet_🇷🇺_RU_1239
-      - _611 |27.23Mb
-      - t.me/wbnet_🇷🇺_RU_1242
-      - _605 |17.04Mb
-      - _418 |29.65Mb
-      - _417 |14.08Mb
+      - _油管：全网最强白嫖 3
+      - v2cross.com 4
+      - v2cross.com 5
+      - v2cross.com 6
+      - _油管：全网最强白嫖 4
+      - _US_t.me/wbnet_173
+      - github.com/freefq - 日本东京Amazon数据中心 7
+      - v2cross.com 7
+      - v2cross.com 8
+      - v2cross.com 9
+      - v2cross.com 10
+      - RU1
+      - v2cross.com 11
+      - v2cross.com 12
+      - v2cross.com 13
+      - v2cross.com 14
+      - v2cross.com 15
+      - v2cross.com 16
+      - TG群https://t.me/youzi_pro
+      - t.me/wbnet_🇳🇱_NL_1333
+      - v2cross.com 17
+      - CA_1663 | 8.81Mb
+      - v2cross.com 18
+      - _180 | 2.45Mb
+      - _823 | 5.63Mb
+      - 油管：最网最强白嫖 14
+      - v2cross.com 19
+      - v2cross.com 20
+      - t.me/wbnet_🇳🇱_NL_1399
+      - _317 | 9.05Mb
+      - v2cross.com 21
+      - v2cross.com 22
+      - v2cross.com 23
+      - t.me/wbnet_🇳🇱_NL_1423
+      - t.me/wbnet_🇳🇱_NL_1334
+      - ZZ_2013
+      - ZZ_2066
+      - _US_t.me/wbnet_163
       - t.me/wbnet_🇷🇺_RU_1251
-      - t.me/wbnet_🇷🇺_RU_1246
-      - LT_803
-      - US_3888 |11.46Mb
-      - _US_t.me/wbnet_142
-      - _US_t.me/wbnet_171
-      - US_3183 |16.92Mb
-      - _油管：全网最强白嫖 8
-      - ZZ_3182
-      - t.me/wbnet_🇷🇺_RU_1186
-      - RU_2597 | 4.07Mb
-      - _692 | 1.68Mb
-      - t.me/wbnet_🇷🇺_RU_1212
-      - t.me/wbnet_🇷🇺_RU_802
-      - _709
-      - _687 | 2.39Mb
-      - _695 |14.42Mb
-      - _438 |24.49Mb
-      - t.me/wbnet_🇷🇺_RU_1192
-      - _681 |18.95Mb
-      - _356 |17.07Mb
-      - t.me/wbnet_🇷🇺_RU_1228
-      - t.me/wbnet_🇷🇺_RU_1237
-      - _447 |11.50Mb
-      - _382 |37.27Mb
-      - _699
-      - t.me/wbnet_🇷🇺_RU_1252
-      - github.com/freefq - 俄罗斯莫斯科Melbicom数据中心 51
-      - t.me/wbnet_🇷🇺_RU_1266
-      - t.me/wbnet_🇷🇺_RU_1221
-      - t.me/wbnet_🇷🇺_RU_1203
-      - LT_895
-      - LT_1000
-      - LT_1053
-      - 油管：最网最强白嫖 28
-      - 免费-日本4_6_1401 |36.72Mb
-      - Relay_🇯🇵JP-🇨🇿CZ_677
-      - US_3105 | 1.54Mb
-      - US_3187 | 3.51Mb
-      - US_3106 | 3.72Mb
-      - t.me/wbnet_🇺🇸_US_731
-      - _油管：全网最强白嫖 9
-      - US_3225 |15.41Mb
-      - US_3227 |16.36Mb
-      - US_3228 |12.82Mb
-      - t.me/wbnet_🇷🇺_RU_1281
-      - _673 | 4.10Mb
-      - t.me/wbnet_🇷🇺_RU_1229
-      - RU_2608 | 3.18Mb
-      - 21立陶宛∞直连
-      - _704 | 0.17Mb
-      - _719 |38.53Mb
-      - t.me/wbnet_🇷🇺_RU_1199
-      - _697 | 2.67Mb
-      - _363 |38.83Mb
-      - _657 | 2.07Mb
-      - github.com/freefq - 俄罗斯莫斯科Melbicom数据中心 36
-      - t.me/wbnet_🇷🇺_RU_1193
-      - t.me/wbnet_🇷🇺_RU_1187
-      - _602 |34.67Mb
-      - github.com/freefq - 俄罗斯莫斯科Melbicom数据中心 45
-      - _383 |12.38Mb
-      - t.me/wbnet_🇷🇺_RU_1207
-      - _710 | 1.93Mb
-      - _684 | 2.82Mb
-      - RU_2605 | 6.22Mb
-      - t.me/wbnet_🇷🇺_RU_1222
-      - LT_711
-      - LT_741
-      - LT_821
-      - LT_794
-      - LT_933
-      - LT_917
-      - 213.183.53.200:9084
-      - 美国-2.49MB/s(Youtube:不良林)
-      - _油管：全网最强白嫖 10
-      - SG-高速节点推荐：v2cross.com
-      - JP_2313 | 7.16Mb
-      - US_3883 | 0.81Mb
-      - US_3180 | 5.99Mb
-      - _US_t.me/wbnet_126
-      - US_3544 | 0.99Mb
-      - US_3147 | 4.09Mb
-      - _油管：全网最强白嫖 11
-      - _油管：全网最强白嫖 12
-      - _油管：全网最强白嫖 13
-      - US_3220 | 2.62Mb
-      - US_3231 | 3.15Mb
-      - RU_2607 | 1.93Mb
-      - t.me/wbnet_🇷🇺_RU_806
-      - t.me/wbnet_🇷🇺_RU_1191
-      - _387 |17.64Mb
-      - _656 | 7.72Mb
-      - _672 | 2.38Mb
-      - t.me/wbnet_🇷🇺_RU_1208
-      - t.me/wbnet_🇷🇺_RU_1230
-      - _377 |21.96Mb
-      - t.me/wbnet_🇷🇺_RU_1196
+      - t.me/wbnet_🇷🇺_RU_1224
+      - t.me/wbnet_🇳🇱_NL_1433
+      - t.me/wbnet_🇳🇱_NL_1419
+      - t.me/wbnet_🇳🇱_NL_1350
+      - _ 4.80Mb | 2.41Mb
+      - ZZ_2009
+      - US_3530 | 4.91Mb
+      - 油管：最网最强白嫖 15
+      - 油管：最网最强白嫖 16
+      - CN_241 | 5.24Mb
+      - CN_245 | 9.87Mb
+      - v2cross.com 24
+      - _1135 |21.99Mb
+      - t.me/wbnet_🇳🇱_NL_1411
+      - t.me/wbnet_🇳🇱_NL_1414
+      - NL_861 | 5.23Mb
+      - v2cross.com 25
+      - ZZ_2010
+      - ZZ_2015
+      - ZZ_2017
+      - _油管：全网最强白嫖 5
+      - US-高速节点推荐：v1.mk/vip
+      - LT_743
+      - t.me/wbnet_🇳🇱_NL_1343
+      - _328 | 1.61Mb
+      - t.me/wbnet_🇳🇱_NL_1332
+      - v2cross.com 26
+      - v2cross.com 27
+      - v2cross.com 28
+      - ZZ_2016
+      - _1290 | 4.02Mb
+      - 油管：全网最强白嫖
+      - FI 🇫🇮 Helsinki @AzadNet
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - Lv1.V62 广州移动-台湾
-      - Lv1.V61 广州移动-香港
-      - 台湾原生-tg频道:@ripaojiedian
-      - 台湾-tg频道:@ripaojiedian
-      - 台湾02丨原生IP丨
-      - 香港阿伟科技atTG*油管_77_1404 |16.18Mb
-      - Lv1.V26 广州移动2-台湾
-      - 香港临时-tg频道:@ripaojiedian
-      - github.com/freefq - 香港  20
-      - 香港
+      - 香港03
+      - 直连|香港多线|1.5x
+      - 香港04
+      - 香港-tg频道:@ripaojiedian
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
+      - 日本-tg频道:@ripaojiedian
+      - 日本03
+      - Relay_🇨🇳CN-🇨🇳CN_228
+      - 日本04
+      - CN_261 |24.93Mb
+      - CN 🇨🇳 @AzadNet
       - 油管：最网最强白嫖
-      - Lv1.V05 湘日BGP-新加坡
+      - CN_1842 | 8.96Mb
+      - LV1 新加坡 - 隧道「1.5x」
+      - 新加坡-tg频道:@ripaojiedian
       - 油管：最网最强白嫖 2
+      - CN_2
+      - LV1 日本 - 隧道「1.5x」
+      - 14.29.124.168:25289
+      - LV1 韩国 - 隧道「1.5x」
+      - CN 🇨🇳 @AzadNet 2
       - 油管：最网最强白嫖 3
+      - _油管频道：全网最强白嫖
+      - v2cross.com
+      - _油管频道：全网最强白嫖 2
+      - CN 🇨🇳 @AzadNet 3
+      - _571 |60.11Mb
+      - CN_3
+      - _油管频道：全网最强白嫖 3
+      - _577 |64.21Mb
+      - 香港03
+      - 直连|香港多线|1.5x
+      - 香港04
       - 油管：最网最强白嫖 4
+      - 新加坡03
+      - CN_1849 | 8.80Mb
+      - 新加坡01
       - 油管：最网最强白嫖 5
-      - Lv1.V47 沪日BGP-新加坡
-      - Lv1.V*65 广州移动-新加坡
+      - HK_2339 |42.41Mb
+      - CN_271 |24.78Mb
       - 油管：最网最强白嫖 6
       - 油管：最网最强白嫖 7
+      - Relay_🇭🇰HK-🇭🇰HK_574
+      - 直连|日本三网|1.5x
+      - Relay_🇺🇸US-🇺🇸US_2598
+      - 新加坡04
+      - v2cross.com 2
+      - KR1
+      - LV1 美国 - 隧道「1.5x」
+      - v2cross.com 3
       - 油管：最网最强白嫖 8
-      - Lv1.V16 东莞联通-美国
-      - Lv1.V62 广州移动-台湾
       - 油管：最网最强白嫖 9
+      - 香港-tg频道:@ripaojiedian
+      - KR_2265 | 1.69Mb
+      - 联通优化节点「1x」
       - 油管：最网最强白嫖 10
+      - JP_2242 |32.60Mb
       - 油管：最网最强白嫖 11
-      - CN_1850 |12.58Mb
-      - Lv1.V40 上海移动-美国
-      - Lv1.V04 湘日BGP-美国
-      - Lv1.V61 广州移动-香港
-      - 14.29.124.168:25270
+      - TW2
+      - 移动优化节点「1x」
+      - 印度孟买「1x」
+      - _1345 |12.19Mb
+      - 韩国-tg频道:@ripaojiedian
       - 油管：最网最强白嫖 12
-      - 油管：最网最强白嫖 13
-      - _油管频道：全网最强白嫖
-      - _632 |85.95Mb
-      - 14.29.124.168:25220
-      - CN_281 | 3.90Mb
-      - CN_1877 |23.07Mb
-      - _1418 |88.44Mb
-      - CN_2
-      - 台湾原生-tg频道:@ripaojiedian
-      - CN_1842 | 8.96Mb
-      - CN 🇨🇳 @AzadNet
-      - _油管频道：全网最强白嫖 2
-      - CN 🇨🇳 @AzadNet 2
-      - _油管频道：全网最强白嫖 3
-      - _571 |60.11Mb
-      - 14.29.124.168:25289
-      - CN_1849 | 8.80Mb
-      - CN_271 |24.78Mb
-      - CN_261 |24.93Mb
-      - CN 🇨🇳 @AzadNet 3
-      - 14.29.124.168:25245
-      - _577 |64.21Mb
-      - _油管频道：全网最强白嫖 4
-      - 油管：最网最强白嫖 14
-      - 台湾-tg频道:@ripaojiedian
-      - _568 | 9.14Mb
-      - 台湾02丨原生IP丨
-      - CN_1869 |95.42Mb
-      - 美国-21.26MB/s(Youtube:不良林)
-      - _335 | 9.08Mb
-      - _562 | 8.97Mb
-      - Lv1.V27 广州移动2-日本
-      - 油管：全网最强白嫖
-      - HK_2339 |42.41Mb
-      - Lv1.V*29 广州移动2-新加坡
-      - 香港阿伟科技atTG*油管_77_1404 |16.18Mb
-      - JP_608 |28.98Mb
-      - 油管：最网最强白嫖 15
-      - US_3889 |10.59Mb
-      - 油管：最网最强白嫖 16
-      - 美国-15.35MB/s(Youtube:不良林)
-      - Lv1.V26 广州移动2-台湾
-      - 美国-tg频道:@ripaojiedian
-      - JP_592
-      - 油管：最网最强白嫖 17
       - _油管：全网最强白嫖
-      - 香港临时-tg频道:@ripaojiedian
-      - US_1939
-      - US_3887 |20.54Mb
-      - CN_3
-      - 油管：最网最强白嫖 18
-      - 油管：最网最强白嫖 19
-      - 油管：最网最强白嫖 20
-      - 油管：最网最强白嫖 21
-      - github.com/freefq - 香港  20
-      - 36.中继中转隧道线路覆盖
-      - 油管：最网最强白嫖 22
-      - _1429 |49.17Mb
+      - California, Tj
       - _油管：全网最强白嫖 2
-      - JP_2312 |17.35Mb
-      - 油管：全网最强白嫖 2
-      - 34.捐赠解锁更多协议线路
-      - 美国TG频道:@kxswa
-      - JP_2324 |42.71Mb
-      - 33.公益等级線路嚴格限速
-      - 韩国2-tg频道:@ripaojiedian
-      - github_com/mianfeifq__🇰🇷韩国阿伟科技atTG*油管_15_1400 | 8.61Mb
-      - _1430 |28.15Mb
-      - _油管：全网最强白嫖 17
-      - 油管：最网最强白嫖 23
-      - US_2729
-      - github.com/freefq - 新加坡腾讯云 26
-      - 油管：全网最强白嫖 3
-      - 美国-15.21MB/s(Youtube:不良林)
-      - KR_2353 | 2.23Mb
-      - SG-高速节点推荐：v1.mk/vip
-      - _1358 |32.71Mb
-      - US_3890 |20.30Mb
-      - JP01
-      - _油管：全网最强白嫖 3
-      - 美国-13.72MB/s(Youtube:不良林)
-      - SG_2723 | 6.29Mb
-      - github.com/freefq - 美国Microsoft数据中心 9
-      - Singapore-Tencent 4
-      - _油管：全网最强白嫖 4
-      - SG_2709 |24.03Mb
-      - 油管：最网最强白嫖 24
-      - github.com/freefq - 新加坡腾讯云 14
-      - 油管：全网最强白嫖 4
-      - SG-高速节点推荐：v1.mk/vip 2
-      - 美国-4.12MB/s(Youtube:不良林)
-      - 日本阿伟科技atTG*油管_58_1402 |37.96Mb
-      - github.com/freefq - 美国Microsoft数据中心 19
-      - US_3919 |30.28Mb
-      - US_483 |94.87Mb
-      - 油管：全网最强白嫖 5
-      - _油管：全网最强白嫖 5
-      - github.com/freefq - 新加坡腾讯云 9
-      - github.com/freefq - 美国Microsoft数据中心 17
-      - v2cross.com - 新加坡腾讯云 1
-      - JP_607 |16.39Mb
-      - KR-高速节点推荐：v1.mk/vip
-      - 油管：最网最强白嫖 25
-      - github.com/freefq - 新加坡腾讯云 126
-      - github.com/freefq - 新加坡腾讯云 136
-      - _油管：全网最强白嫖 6
-      - SG_1809 | 8.43Mb
-      - github.com/freefq - 新加坡腾讯云 12
-      - 香港
-      - t.me/wbnet_🇷🇺_RU_1185
-      - _701
-      - github.com/freefq - 俄罗斯莫斯科Melbicom数据中心 57
-      - _582 | 3.15Mb
-      - _669 | 3.19Mb
-      - _381 |13.28Mb
-      - _412 |29.99Mb
-      - LT_957
-      - _690 | 0.08Mb
-      - _635 | 2.71Mb
-      - _368 |17.08Mb
-      - t.me/wbnet_🇷🇺_RU_1202
-      - t.me/wbnet_🇷🇺_RU_1205
-      - t.me/wbnet_🇷🇺_RU_1275
-      - 油管：最网最强白嫖 26
-      - LT_800
-      - RU_2553 | 0.83Mb
-      - 油管：全网最强白嫖 6
-      - _426 |24.32Mb
-      - _694 | 1.25Mb
-      - _449 |20.92Mb
-      - _380 |29.32Mb
-      - _446 | 8.19Mb
-      - _702 | 2.65Mb
-      - _396 |12.14Mb
-      - t.me/wbnet_🇷🇺_RU_799
-      - RU 🇷🇺 Moscow @AzadNet
-      - _693 |18.13Mb
-      - t.me/wbnet_🇷🇺_RU_1198
-      - _723 |56.03Mb
-      - _375 |22.87Mb
-      - RU_2662 | 2.91Mb
-      - LT_942
-      - US_3855 | 0.41Mb
-      - t.me/wbnet_🇺🇸_US_523
-      - t.me/wbnet_🇷🇺_RU_1209
-      - RU_2606 | 2.76Mb
-      - _386 |21.64Mb
-      - RU 🇷🇺 Moscow @AzadNet 2
-      - github.com/freefq - 俄罗斯莫斯科Melbicom数据中心 52
-      - _424 |10.14Mb
-      - github.com/freefq - 俄罗斯莫斯科Melbicom数据中心 41
-      - _441 |35.44Mb
-      - _715 | 5.26Mb
-      - 23立陶宛∞直连
-      - t.me/wbnet_🇷🇺_RU_1234
-      - 油管：最网最强白嫖 27
-      - LT_718
-      - LT_770
-      - LT_785
-      - LT_1009
-      - LT_993
-      - LT_1039
-      - LT_1022
-      - LT_874
+      - 油管：最网最强白嫖 13
       - bulink自建免费19线 三网
-      - JP_611 |30.20Mb
-      - US_3236 |18.85Mb
-      - _油管：全网最强白嫖 7
-      - t.me/wbnet_🇷🇺_RU_1195
-      - t.me/wbnet_🇷🇺_RU_1232
-      - _448 |19.14Mb
-      - t.me/wbnet_🇷🇺_RU_1243
-      - _403 |12.85Mb
-      - _630 | 0.07Mb
-      - t.me/wbnet_🇷🇺_RU_1239
-      - _611 |27.23Mb
-      - t.me/wbnet_🇷🇺_RU_1242
-      - _605 |17.04Mb
-      - _418 |29.65Mb
-      - _417 |14.08Mb
+      - _油管：全网最强白嫖 3
+      - v2cross.com 4
+      - v2cross.com 5
+      - v2cross.com 6
+      - _油管：全网最强白嫖 4
+      - _US_t.me/wbnet_173
+      - github.com/freefq - 日本东京Amazon数据中心 7
+      - v2cross.com 7
+      - v2cross.com 8
+      - v2cross.com 9
+      - v2cross.com 10
+      - RU1
+      - v2cross.com 11
+      - v2cross.com 12
+      - v2cross.com 13
+      - v2cross.com 14
+      - v2cross.com 15
+      - v2cross.com 16
+      - TG群https://t.me/youzi_pro
+      - t.me/wbnet_🇳🇱_NL_1333
+      - v2cross.com 17
+      - CA_1663 | 8.81Mb
+      - v2cross.com 18
+      - _180 | 2.45Mb
+      - _823 | 5.63Mb
+      - 油管：最网最强白嫖 14
+      - v2cross.com 19
+      - v2cross.com 20
+      - t.me/wbnet_🇳🇱_NL_1399
+      - _317 | 9.05Mb
+      - v2cross.com 21
+      - v2cross.com 22
+      - v2cross.com 23
+      - t.me/wbnet_🇳🇱_NL_1423
+      - t.me/wbnet_🇳🇱_NL_1334
+      - ZZ_2013
+      - ZZ_2066
+      - _US_t.me/wbnet_163
       - t.me/wbnet_🇷🇺_RU_1251
-      - t.me/wbnet_🇷🇺_RU_1246
-      - LT_803
-      - US_3888 |11.46Mb
-      - _US_t.me/wbnet_142
-      - _US_t.me/wbnet_171
-      - US_3183 |16.92Mb
-      - _油管：全网最强白嫖 8
-      - ZZ_3182
-      - t.me/wbnet_🇷🇺_RU_1186
-      - RU_2597 | 4.07Mb
-      - _692 | 1.68Mb
-      - t.me/wbnet_🇷🇺_RU_1212
-      - t.me/wbnet_🇷🇺_RU_802
-      - _709
-      - _687 | 2.39Mb
-      - _695 |14.42Mb
-      - _438 |24.49Mb
-      - t.me/wbnet_🇷🇺_RU_1192
-      - _681 |18.95Mb
-      - _356 |17.07Mb
-      - t.me/wbnet_🇷🇺_RU_1228
-      - t.me/wbnet_🇷🇺_RU_1237
-      - _447 |11.50Mb
-      - _382 |37.27Mb
-      - _699
-      - t.me/wbnet_🇷🇺_RU_1252
-      - github.com/freefq - 俄罗斯莫斯科Melbicom数据中心 51
-      - t.me/wbnet_🇷🇺_RU_1266
-      - t.me/wbnet_🇷🇺_RU_1221
-      - t.me/wbnet_🇷🇺_RU_1203
-      - LT_895
-      - LT_1000
-      - LT_1053
-      - 油管：最网最强白嫖 28
-      - 免费-日本4_6_1401 |36.72Mb
-      - Relay_🇯🇵JP-🇨🇿CZ_677
-      - US_3105 | 1.54Mb
-      - US_3187 | 3.51Mb
-      - US_3106 | 3.72Mb
-      - t.me/wbnet_🇺🇸_US_731
-      - _油管：全网最强白嫖 9
-      - US_3225 |15.41Mb
-      - US_3227 |16.36Mb
-      - US_3228 |12.82Mb
-      - t.me/wbnet_🇷🇺_RU_1281
-      - _673 | 4.10Mb
-      - t.me/wbnet_🇷🇺_RU_1229
-      - RU_2608 | 3.18Mb
-      - 21立陶宛∞直连
-      - _704 | 0.17Mb
-      - _719 |38.53Mb
-      - t.me/wbnet_🇷🇺_RU_1199
-      - _697 | 2.67Mb
-      - _363 |38.83Mb
-      - _657 | 2.07Mb
-      - github.com/freefq - 俄罗斯莫斯科Melbicom数据中心 36
-      - t.me/wbnet_🇷🇺_RU_1193
-      - t.me/wbnet_🇷🇺_RU_1187
-      - _602 |34.67Mb
-      - github.com/freefq - 俄罗斯莫斯科Melbicom数据中心 45
-      - _383 |12.38Mb
-      - t.me/wbnet_🇷🇺_RU_1207
-      - _710 | 1.93Mb
-      - _684 | 2.82Mb
-      - RU_2605 | 6.22Mb
-      - t.me/wbnet_🇷🇺_RU_1222
-      - LT_711
-      - LT_741
-      - LT_821
-      - LT_794
-      - LT_933
-      - LT_917
-      - 213.183.53.200:9084
-      - 美国-2.49MB/s(Youtube:不良林)
-      - _油管：全网最强白嫖 10
-      - SG-高速节点推荐：v2cross.com
-      - JP_2313 | 7.16Mb
-      - US_3883 | 0.81Mb
-      - US_3180 | 5.99Mb
-      - _US_t.me/wbnet_126
-      - US_3544 | 0.99Mb
-      - US_3147 | 4.09Mb
-      - _油管：全网最强白嫖 11
-      - _油管：全网最强白嫖 12
-      - _油管：全网最强白嫖 13
-      - US_3220 | 2.62Mb
-      - US_3231 | 3.15Mb
-      - RU_2607 | 1.93Mb
-      - t.me/wbnet_🇷🇺_RU_806
-      - t.me/wbnet_🇷🇺_RU_1191
-      - _387 |17.64Mb
-      - _656 | 7.72Mb
-      - _672 | 2.38Mb
-      - t.me/wbnet_🇷🇺_RU_1208
-      - t.me/wbnet_🇷🇺_RU_1230
-      - _377 |21.96Mb
-      - t.me/wbnet_🇷🇺_RU_1196
+      - t.me/wbnet_🇷🇺_RU_1224
+      - t.me/wbnet_🇳🇱_NL_1433
+      - t.me/wbnet_🇳🇱_NL_1419
+      - t.me/wbnet_🇳🇱_NL_1350
+      - _ 4.80Mb | 2.41Mb
+      - ZZ_2009
+      - US_3530 | 4.91Mb
+      - 油管：最网最强白嫖 15
+      - 油管：最网最强白嫖 16
+      - CN_241 | 5.24Mb
+      - CN_245 | 9.87Mb
+      - v2cross.com 24
+      - _1135 |21.99Mb
+      - t.me/wbnet_🇳🇱_NL_1411
+      - t.me/wbnet_🇳🇱_NL_1414
+      - NL_861 | 5.23Mb
+      - v2cross.com 25
+      - ZZ_2010
+      - ZZ_2015
+      - ZZ_2017
+      - _油管：全网最强白嫖 5
+      - US-高速节点推荐：v1.mk/vip
+      - LT_743
+      - t.me/wbnet_🇳🇱_NL_1343
+      - _328 | 1.61Mb
+      - t.me/wbnet_🇳🇱_NL_1332
+      - v2cross.com 26
+      - v2cross.com 27
+      - v2cross.com 28
+      - ZZ_2016
+      - _1290 | 4.02Mb
+      - 油管：全网最强白嫖
+      - FI 🇫🇮 Helsinki @AzadNet
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
+      - 日本-tg频道:@ripaojiedian
+      - 日本03
+      - Relay_🇨🇳CN-🇨🇳CN_228
+      - 日本04
+      - CN_261 |24.93Mb
+      - CN 🇨🇳 @AzadNet
       - 油管：最网最强白嫖
-      - Lv1.V05 湘日BGP-新加坡
+      - CN_1842 | 8.96Mb
+      - LV1 新加坡 - 隧道「1.5x」
+      - 新加坡-tg频道:@ripaojiedian
       - 油管：最网最强白嫖 2
+      - CN_2
+      - LV1 日本 - 隧道「1.5x」
+      - 14.29.124.168:25289
+      - LV1 韩国 - 隧道「1.5x」
+      - CN 🇨🇳 @AzadNet 2
       - 油管：最网最强白嫖 3
+      - _油管频道：全网最强白嫖
+      - v2cross.com
+      - _油管频道：全网最强白嫖 2
+      - CN 🇨🇳 @AzadNet 3
+      - _571 |60.11Mb
+      - CN_3
+      - _油管频道：全网最强白嫖 3
+      - _577 |64.21Mb
+      - 香港03
+      - 直连|香港多线|1.5x
+      - 香港04
       - 油管：最网最强白嫖 4
+      - 新加坡03
+      - CN_1849 | 8.80Mb
+      - 新加坡01
       - 油管：最网最强白嫖 5
-      - Lv1.V47 沪日BGP-新加坡
-      - Lv1.V*65 广州移动-新加坡
+      - HK_2339 |42.41Mb
+      - CN_271 |24.78Mb
       - 油管：最网最强白嫖 6
       - 油管：最网最强白嫖 7
+      - Relay_🇭🇰HK-🇭🇰HK_574
+      - 直连|日本三网|1.5x
+      - Relay_🇺🇸US-🇺🇸US_2598
+      - 新加坡04
+      - v2cross.com 2
+      - KR1
+      - LV1 美国 - 隧道「1.5x」
+      - v2cross.com 3
       - 油管：最网最强白嫖 8
-      - Lv1.V16 东莞联通-美国
-      - Lv1.V62 广州移动-台湾
       - 油管：最网最强白嫖 9
+      - 香港-tg频道:@ripaojiedian
+      - KR_2265 | 1.69Mb
+      - 联通优化节点「1x」
       - 油管：最网最强白嫖 10
+      - JP_2242 |32.60Mb
       - 油管：最网最强白嫖 11
-      - CN_1850 |12.58Mb
-      - Lv1.V40 上海移动-美国
-      - Lv1.V04 湘日BGP-美国
-      - Lv1.V61 广州移动-香港
-      - 14.29.124.168:25270
+      - TW2
+      - 移动优化节点「1x」
+      - 印度孟买「1x」
+      - _1345 |12.19Mb
+      - 韩国-tg频道:@ripaojiedian
       - 油管：最网最强白嫖 12
-      - 油管：最网最强白嫖 13
-      - _油管频道：全网最强白嫖
-      - _632 |85.95Mb
-      - 14.29.124.168:25220
-      - CN_281 | 3.90Mb
-      - CN_1877 |23.07Mb
-      - _1418 |88.44Mb
-      - CN_2
-      - 台湾原生-tg频道:@ripaojiedian
-      - CN_1842 | 8.96Mb
-      - CN 🇨🇳 @AzadNet
-      - _油管频道：全网最强白嫖 2
-      - CN 🇨🇳 @AzadNet 2
-      - _油管频道：全网最强白嫖 3
-      - _571 |60.11Mb
-      - 14.29.124.168:25289
-      - CN_1849 | 8.80Mb
-      - CN_271 |24.78Mb
-      - CN_261 |24.93Mb
-      - CN 🇨🇳 @AzadNet 3
-      - 14.29.124.168:25245
-      - _577 |64.21Mb
-      - _油管频道：全网最强白嫖 4
-      - 油管：最网最强白嫖 14
-      - 台湾-tg频道:@ripaojiedian
-      - _568 | 9.14Mb
-      - 台湾02丨原生IP丨
-      - CN_1869 |95.42Mb
-      - 美国-21.26MB/s(Youtube:不良林)
-      - _335 | 9.08Mb
-      - _562 | 8.97Mb
-      - Lv1.V27 广州移动2-日本
-      - 油管：全网最强白嫖
-      - HK_2339 |42.41Mb
-      - Lv1.V*29 广州移动2-新加坡
-      - 香港阿伟科技atTG*油管_77_1404 |16.18Mb
-      - JP_608 |28.98Mb
-      - 油管：最网最强白嫖 15
-      - US_3889 |10.59Mb
-      - 油管：最网最强白嫖 16
-      - 美国-15.35MB/s(Youtube:不良林)
-      - Lv1.V26 广州移动2-台湾
-      - 美国-tg频道:@ripaojiedian
-      - JP_592
-      - 油管：最网最强白嫖 17
       - _油管：全网最强白嫖
-      - 香港临时-tg频道:@ripaojiedian
-      - US_1939
-      - US_3887 |20.54Mb
-      - CN_3
-      - 油管：最网最强白嫖 18
-      - 油管：最网最强白嫖 19
-      - 油管：最网最强白嫖 20
-      - 油管：最网最强白嫖 21
-      - github.com/freefq - 香港  20
-      - 36.中继中转隧道线路覆盖
-      - 油管：最网最强白嫖 22
-      - _1429 |49.17Mb
+      - California, Tj
       - _油管：全网最强白嫖 2
-      - JP_2312 |17.35Mb
-      - 油管：全网最强白嫖 2
-      - 34.捐赠解锁更多协议线路
-      - 美国TG频道:@kxswa
-      - JP_2324 |42.71Mb
-      - 33.公益等级線路嚴格限速
-      - 韩国2-tg频道:@ripaojiedian
-      - github_com/mianfeifq__🇰🇷韩国阿伟科技atTG*油管_15_1400 | 8.61Mb
-      - _1430 |28.15Mb
-      - _油管：全网最强白嫖 17
-      - 油管：最网最强白嫖 23
-      - US_2729
-      - github.com/freefq - 新加坡腾讯云 26
-      - 油管：全网最强白嫖 3
-      - 美国-15.21MB/s(Youtube:不良林)
-      - KR_2353 | 2.23Mb
-      - SG-高速节点推荐：v1.mk/vip
-      - _1358 |32.71Mb
-      - US_3890 |20.30Mb
-      - JP01
-      - _油管：全网最强白嫖 3
-      - 美国-13.72MB/s(Youtube:不良林)
-      - SG_2723 | 6.29Mb
-      - github.com/freefq - 美国Microsoft数据中心 9
-      - Singapore-Tencent 4
-      - _油管：全网最强白嫖 4
-      - SG_2709 |24.03Mb
-      - 油管：最网最强白嫖 24
-      - github.com/freefq - 新加坡腾讯云 14
-      - 油管：全网最强白嫖 4
-      - SG-高速节点推荐：v1.mk/vip 2
-      - 美国-4.12MB/s(Youtube:不良林)
-      - 日本阿伟科技atTG*油管_58_1402 |37.96Mb
-      - github.com/freefq - 美国Microsoft数据中心 19
-      - US_3919 |30.28Mb
-      - US_483 |94.87Mb
-      - 油管：全网最强白嫖 5
-      - _油管：全网最强白嫖 5
-      - github.com/freefq - 新加坡腾讯云 9
-      - github.com/freefq - 美国Microsoft数据中心 17
-      - v2cross.com - 新加坡腾讯云 1
-      - JP_607 |16.39Mb
-      - KR-高速节点推荐：v1.mk/vip
-      - 油管：最网最强白嫖 25
-      - github.com/freefq - 新加坡腾讯云 126
-      - github.com/freefq - 新加坡腾讯云 136
-      - _油管：全网最强白嫖 6
-      - SG_1809 | 8.43Mb
-      - github.com/freefq - 新加坡腾讯云 12
-      - 香港
-      - t.me/wbnet_🇷🇺_RU_1185
-      - _701
-      - github.com/freefq - 俄罗斯莫斯科Melbicom数据中心 57
-      - _582 | 3.15Mb
-      - _669 | 3.19Mb
-      - _381 |13.28Mb
-      - _412 |29.99Mb
-      - LT_957
-      - _690 | 0.08Mb
-      - _635 | 2.71Mb
-      - _368 |17.08Mb
-      - t.me/wbnet_🇷🇺_RU_1202
-      - t.me/wbnet_🇷🇺_RU_1205
-      - t.me/wbnet_🇷🇺_RU_1275
-      - 油管：最网最强白嫖 26
-      - LT_800
-      - RU_2553 | 0.83Mb
-      - 油管：全网最强白嫖 6
-      - _426 |24.32Mb
-      - _694 | 1.25Mb
-      - _449 |20.92Mb
-      - _380 |29.32Mb
-      - _446 | 8.19Mb
-      - _702 | 2.65Mb
-      - _396 |12.14Mb
-      - t.me/wbnet_🇷🇺_RU_799
-      - RU 🇷🇺 Moscow @AzadNet
-      - _693 |18.13Mb
-      - t.me/wbnet_🇷🇺_RU_1198
-      - _723 |56.03Mb
-      - _375 |22.87Mb
-      - RU_2662 | 2.91Mb
-      - LT_942
-      - US_3855 | 0.41Mb
-      - t.me/wbnet_🇺🇸_US_523
-      - t.me/wbnet_🇷🇺_RU_1209
-      - RU_2606 | 2.76Mb
-      - _386 |21.64Mb
-      - RU 🇷🇺 Moscow @AzadNet 2
-      - github.com/freefq - 俄罗斯莫斯科Melbicom数据中心 52
-      - _424 |10.14Mb
-      - github.com/freefq - 俄罗斯莫斯科Melbicom数据中心 41
-      - _441 |35.44Mb
-      - _715 | 5.26Mb
-      - 23立陶宛∞直连
-      - t.me/wbnet_🇷🇺_RU_1234
-      - 油管：最网最强白嫖 27
-      - LT_718
-      - LT_770
-      - LT_785
-      - LT_1009
-      - LT_993
-      - LT_1039
-      - LT_1022
-      - LT_874
+      - 油管：最网最强白嫖 13
       - bulink自建免费19线 三网
-      - JP_611 |30.20Mb
-      - US_3236 |18.85Mb
-      - _油管：全网最强白嫖 7
-      - t.me/wbnet_🇷🇺_RU_1195
-      - t.me/wbnet_🇷🇺_RU_1232
-      - _448 |19.14Mb
-      - t.me/wbnet_🇷🇺_RU_1243
-      - _403 |12.85Mb
-      - _630 | 0.07Mb
-      - t.me/wbnet_🇷🇺_RU_1239
-      - _611 |27.23Mb
-      - t.me/wbnet_🇷🇺_RU_1242
-      - _605 |17.04Mb
-      - _418 |29.65Mb
-      - _417 |14.08Mb
+      - _油管：全网最强白嫖 3
+      - v2cross.com 4
+      - v2cross.com 5
+      - v2cross.com 6
+      - _油管：全网最强白嫖 4
+      - _US_t.me/wbnet_173
+      - github.com/freefq - 日本东京Amazon数据中心 7
+      - v2cross.com 7
+      - v2cross.com 8
+      - v2cross.com 9
+      - v2cross.com 10
+      - RU1
+      - v2cross.com 11
+      - v2cross.com 12
+      - v2cross.com 13
+      - v2cross.com 14
+      - v2cross.com 15
+      - v2cross.com 16
+      - TG群https://t.me/youzi_pro
+      - t.me/wbnet_🇳🇱_NL_1333
+      - v2cross.com 17
+      - CA_1663 | 8.81Mb
+      - v2cross.com 18
+      - _180 | 2.45Mb
+      - _823 | 5.63Mb
+      - 油管：最网最强白嫖 14
+      - v2cross.com 19
+      - v2cross.com 20
+      - t.me/wbnet_🇳🇱_NL_1399
+      - _317 | 9.05Mb
+      - v2cross.com 21
+      - v2cross.com 22
+      - v2cross.com 23
+      - t.me/wbnet_🇳🇱_NL_1423
+      - t.me/wbnet_🇳🇱_NL_1334
+      - ZZ_2013
+      - ZZ_2066
+      - _US_t.me/wbnet_163
       - t.me/wbnet_🇷🇺_RU_1251
-      - t.me/wbnet_🇷🇺_RU_1246
-      - LT_803
-      - US_3888 |11.46Mb
-      - _US_t.me/wbnet_142
-      - _US_t.me/wbnet_171
-      - US_3183 |16.92Mb
-      - _油管：全网最强白嫖 8
-      - ZZ_3182
-      - t.me/wbnet_🇷🇺_RU_1186
-      - RU_2597 | 4.07Mb
-      - _692 | 1.68Mb
-      - t.me/wbnet_🇷🇺_RU_1212
-      - t.me/wbnet_🇷🇺_RU_802
-      - _709
-      - _687 | 2.39Mb
-      - _695 |14.42Mb
-      - _438 |24.49Mb
-      - t.me/wbnet_🇷🇺_RU_1192
-      - _681 |18.95Mb
-      - _356 |17.07Mb
-      - t.me/wbnet_🇷🇺_RU_1228
-      - t.me/wbnet_🇷🇺_RU_1237
-      - _447 |11.50Mb
-      - _382 |37.27Mb
-      - _699
-      - t.me/wbnet_🇷🇺_RU_1252
-      - github.com/freefq - 俄罗斯莫斯科Melbicom数据中心 51
-      - t.me/wbnet_🇷🇺_RU_1266
-      - t.me/wbnet_🇷🇺_RU_1221
-      - t.me/wbnet_🇷🇺_RU_1203
-      - LT_895
-      - LT_1000
-      - LT_1053
-      - 油管：最网最强白嫖 28
-      - 免费-日本4_6_1401 |36.72Mb
-      - Relay_🇯🇵JP-🇨🇿CZ_677
-      - US_3105 | 1.54Mb
-      - US_3187 | 3.51Mb
-      - US_3106 | 3.72Mb
-      - t.me/wbnet_🇺🇸_US_731
-      - _油管：全网最强白嫖 9
-      - US_3225 |15.41Mb
-      - US_3227 |16.36Mb
-      - US_3228 |12.82Mb
-      - t.me/wbnet_🇷🇺_RU_1281
-      - _673 | 4.10Mb
-      - t.me/wbnet_🇷🇺_RU_1229
-      - RU_2608 | 3.18Mb
-      - 21立陶宛∞直连
-      - _704 | 0.17Mb
-      - _719 |38.53Mb
-      - t.me/wbnet_🇷🇺_RU_1199
-      - _697 | 2.67Mb
-      - _363 |38.83Mb
-      - _657 | 2.07Mb
-      - github.com/freefq - 俄罗斯莫斯科Melbicom数据中心 36
-      - t.me/wbnet_🇷🇺_RU_1193
-      - t.me/wbnet_🇷🇺_RU_1187
-      - _602 |34.67Mb
-      - github.com/freefq - 俄罗斯莫斯科Melbicom数据中心 45
-      - _383 |12.38Mb
-      - t.me/wbnet_🇷🇺_RU_1207
-      - _710 | 1.93Mb
-      - _684 | 2.82Mb
-      - RU_2605 | 6.22Mb
-      - t.me/wbnet_🇷🇺_RU_1222
-      - LT_711
-      - LT_741
-      - LT_821
-      - LT_794
-      - LT_933
-      - LT_917
-      - 213.183.53.200:9084
-      - 美国-2.49MB/s(Youtube:不良林)
-      - _油管：全网最强白嫖 10
-      - SG-高速节点推荐：v2cross.com
-      - JP_2313 | 7.16Mb
-      - US_3883 | 0.81Mb
-      - US_3180 | 5.99Mb
-      - _US_t.me/wbnet_126
-      - US_3544 | 0.99Mb
-      - US_3147 | 4.09Mb
-      - _油管：全网最强白嫖 11
-      - _油管：全网最强白嫖 12
-      - _油管：全网最强白嫖 13
-      - US_3220 | 2.62Mb
-      - US_3231 | 3.15Mb
-      - RU_2607 | 1.93Mb
-      - t.me/wbnet_🇷🇺_RU_806
-      - t.me/wbnet_🇷🇺_RU_1191
-      - _387 |17.64Mb
-      - _656 | 7.72Mb
-      - _672 | 2.38Mb
-      - t.me/wbnet_🇷🇺_RU_1208
-      - t.me/wbnet_🇷🇺_RU_1230
-      - _377 |21.96Mb
-      - t.me/wbnet_🇷🇺_RU_1196
+      - t.me/wbnet_🇷🇺_RU_1224
+      - t.me/wbnet_🇳🇱_NL_1433
+      - t.me/wbnet_🇳🇱_NL_1419
+      - t.me/wbnet_🇳🇱_NL_1350
+      - _ 4.80Mb | 2.41Mb
+      - ZZ_2009
+      - US_3530 | 4.91Mb
+      - 油管：最网最强白嫖 15
+      - 油管：最网最强白嫖 16
+      - CN_241 | 5.24Mb
+      - CN_245 | 9.87Mb
+      - v2cross.com 24
+      - _1135 |21.99Mb
+      - t.me/wbnet_🇳🇱_NL_1411
+      - t.me/wbnet_🇳🇱_NL_1414
+      - NL_861 | 5.23Mb
+      - v2cross.com 25
+      - ZZ_2010
+      - ZZ_2015
+      - ZZ_2017
+      - _油管：全网最强白嫖 5
+      - US-高速节点推荐：v1.mk/vip
+      - LT_743
+      - t.me/wbnet_🇳🇱_NL_1343
+      - _328 | 1.61Mb
+      - t.me/wbnet_🇳🇱_NL_1332
+      - v2cross.com 26
+      - v2cross.com 27
+      - v2cross.com 28
+      - ZZ_2016
+      - _1290 | 4.02Mb
+      - 油管：全网最强白嫖
+      - FI 🇫🇮 Helsinki @AzadNet
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - 日本-tg频道:@ripaojiedian
+      - 日本03
+      - Relay_🇨🇳CN-🇨🇳CN_228
+      - 日本04
+      - CN_261 |24.93Mb
+      - CN 🇨🇳 @AzadNet
       - 油管：最网最强白嫖
-      - Lv1.V05 湘日BGP-新加坡
+      - CN_1842 | 8.96Mb
+      - LV1 新加坡 - 隧道「1.5x」
+      - 新加坡-tg频道:@ripaojiedian
       - 油管：最网最强白嫖 2
+      - CN_2
+      - LV1 日本 - 隧道「1.5x」
+      - 14.29.124.168:25289
+      - LV1 韩国 - 隧道「1.5x」
+      - CN 🇨🇳 @AzadNet 2
       - 油管：最网最强白嫖 3
+      - _油管频道：全网最强白嫖
+      - v2cross.com
+      - _油管频道：全网最强白嫖 2
+      - CN 🇨🇳 @AzadNet 3
+      - _571 |60.11Mb
+      - CN_3
+      - _油管频道：全网最强白嫖 3
+      - _577 |64.21Mb
+      - 香港03
+      - 直连|香港多线|1.5x
+      - 香港04
       - 油管：最网最强白嫖 4
+      - 新加坡03
+      - CN_1849 | 8.80Mb
+      - 新加坡01
       - 油管：最网最强白嫖 5
-      - Lv1.V47 沪日BGP-新加坡
-      - Lv1.V*65 广州移动-新加坡
+      - HK_2339 |42.41Mb
+      - CN_271 |24.78Mb
       - 油管：最网最强白嫖 6
       - 油管：最网最强白嫖 7
+      - Relay_🇭🇰HK-🇭🇰HK_574
+      - 直连|日本三网|1.5x
+      - Relay_🇺🇸US-🇺🇸US_2598
+      - 新加坡04
+      - v2cross.com 2
+      - KR1
+      - LV1 美国 - 隧道「1.5x」
+      - v2cross.com 3
       - 油管：最网最强白嫖 8
-      - Lv1.V16 东莞联通-美国
-      - Lv1.V62 广州移动-台湾
       - 油管：最网最强白嫖 9
+      - 香港-tg频道:@ripaojiedian
+      - KR_2265 | 1.69Mb
+      - 联通优化节点「1x」
       - 油管：最网最强白嫖 10
+      - JP_2242 |32.60Mb
       - 油管：最网最强白嫖 11
-      - CN_1850 |12.58Mb
-      - Lv1.V40 上海移动-美国
-      - Lv1.V04 湘日BGP-美国
-      - Lv1.V61 广州移动-香港
-      - 14.29.124.168:25270
+      - TW2
+      - 移动优化节点「1x」
+      - 印度孟买「1x」
+      - _1345 |12.19Mb
+      - 韩国-tg频道:@ripaojiedian
       - 油管：最网最强白嫖 12
-      - 油管：最网最强白嫖 13
-      - _油管频道：全网最强白嫖
-      - _632 |85.95Mb
-      - 14.29.124.168:25220
-      - CN_281 | 3.90Mb
-      - CN_1877 |23.07Mb
-      - _1418 |88.44Mb
-      - CN_2
-      - 台湾原生-tg频道:@ripaojiedian
-      - CN_1842 | 8.96Mb
-      - CN 🇨🇳 @AzadNet
-      - _油管频道：全网最强白嫖 2
-      - CN 🇨🇳 @AzadNet 2
-      - _油管频道：全网最强白嫖 3
-      - _571 |60.11Mb
-      - 14.29.124.168:25289
-      - CN_1849 | 8.80Mb
-      - CN_271 |24.78Mb
-      - CN_261 |24.93Mb
-      - CN 🇨🇳 @AzadNet 3
-      - 14.29.124.168:25245
-      - _577 |64.21Mb
-      - _油管频道：全网最强白嫖 4
-      - 油管：最网最强白嫖 14
-      - 台湾-tg频道:@ripaojiedian
-      - _568 | 9.14Mb
-      - 台湾02丨原生IP丨
-      - CN_1869 |95.42Mb
-      - 美国-21.26MB/s(Youtube:不良林)
-      - _335 | 9.08Mb
-      - _562 | 8.97Mb
-      - Lv1.V27 广州移动2-日本
-      - 油管：全网最强白嫖
-      - HK_2339 |42.41Mb
-      - Lv1.V*29 广州移动2-新加坡
-      - 香港阿伟科技atTG*油管_77_1404 |16.18Mb
-      - JP_608 |28.98Mb
-      - 油管：最网最强白嫖 15
-      - US_3889 |10.59Mb
-      - 油管：最网最强白嫖 16
-      - 美国-15.35MB/s(Youtube:不良林)
-      - Lv1.V26 广州移动2-台湾
-      - 美国-tg频道:@ripaojiedian
-      - JP_592
-      - 油管：最网最强白嫖 17
       - _油管：全网最强白嫖
-      - 香港临时-tg频道:@ripaojiedian
-      - US_1939
-      - US_3887 |20.54Mb
-      - CN_3
-      - 油管：最网最强白嫖 18
-      - 油管：最网最强白嫖 19
-      - 油管：最网最强白嫖 20
-      - 油管：最网最强白嫖 21
-      - github.com/freefq - 香港  20
-      - 36.中继中转隧道线路覆盖
-      - 油管：最网最强白嫖 22
-      - _1429 |49.17Mb
+      - California, Tj
       - _油管：全网最强白嫖 2
-      - JP_2312 |17.35Mb
-      - 油管：全网最强白嫖 2
-      - 34.捐赠解锁更多协议线路
-      - 美国TG频道:@kxswa
-      - JP_2324 |42.71Mb
-      - 33.公益等级線路嚴格限速
-      - 韩国2-tg频道:@ripaojiedian
-      - github_com/mianfeifq__🇰🇷韩国阿伟科技atTG*油管_15_1400 | 8.61Mb
-      - _1430 |28.15Mb
-      - _油管：全网最强白嫖 17
-      - 油管：最网最强白嫖 23
-      - US_2729
-      - github.com/freefq - 新加坡腾讯云 26
-      - 油管：全网最强白嫖 3
-      - 美国-15.21MB/s(Youtube:不良林)
-      - KR_2353 | 2.23Mb
-      - SG-高速节点推荐：v1.mk/vip
-      - _1358 |32.71Mb
-      - US_3890 |20.30Mb
-      - JP01
-      - _油管：全网最强白嫖 3
-      - 美国-13.72MB/s(Youtube:不良林)
-      - SG_2723 | 6.29Mb
-      - github.com/freefq - 美国Microsoft数据中心 9
-      - Singapore-Tencent 4
-      - _油管：全网最强白嫖 4
-      - SG_2709 |24.03Mb
-      - 油管：最网最强白嫖 24
-      - github.com/freefq - 新加坡腾讯云 14
-      - 油管：全网最强白嫖 4
-      - SG-高速节点推荐：v1.mk/vip 2
-      - 美国-4.12MB/s(Youtube:不良林)
-      - 日本阿伟科技atTG*油管_58_1402 |37.96Mb
-      - github.com/freefq - 美国Microsoft数据中心 19
-      - US_3919 |30.28Mb
-      - US_483 |94.87Mb
-      - 油管：全网最强白嫖 5
-      - _油管：全网最强白嫖 5
-      - github.com/freefq - 新加坡腾讯云 9
-      - github.com/freefq - 美国Microsoft数据中心 17
-      - v2cross.com - 新加坡腾讯云 1
-      - JP_607 |16.39Mb
-      - KR-高速节点推荐：v1.mk/vip
-      - 油管：最网最强白嫖 25
-      - github.com/freefq - 新加坡腾讯云 126
-      - github.com/freefq - 新加坡腾讯云 136
-      - _油管：全网最强白嫖 6
-      - SG_1809 | 8.43Mb
-      - github.com/freefq - 新加坡腾讯云 12
-      - 香港
-      - t.me/wbnet_🇷🇺_RU_1185
-      - _701
-      - github.com/freefq - 俄罗斯莫斯科Melbicom数据中心 57
-      - _582 | 3.15Mb
-      - _669 | 3.19Mb
-      - _381 |13.28Mb
-      - _412 |29.99Mb
-      - LT_957
-      - _690 | 0.08Mb
-      - _635 | 2.71Mb
-      - _368 |17.08Mb
-      - t.me/wbnet_🇷🇺_RU_1202
-      - t.me/wbnet_🇷🇺_RU_1205
-      - t.me/wbnet_🇷🇺_RU_1275
-      - 油管：最网最强白嫖 26
-      - LT_800
-      - RU_2553 | 0.83Mb
-      - 油管：全网最强白嫖 6
-      - _426 |24.32Mb
-      - _694 | 1.25Mb
-      - _449 |20.92Mb
-      - _380 |29.32Mb
-      - _446 | 8.19Mb
-      - _702 | 2.65Mb
-      - _396 |12.14Mb
-      - t.me/wbnet_🇷🇺_RU_799
-      - RU 🇷🇺 Moscow @AzadNet
-      - _693 |18.13Mb
-      - t.me/wbnet_🇷🇺_RU_1198
-      - _723 |56.03Mb
-      - _375 |22.87Mb
-      - RU_2662 | 2.91Mb
-      - LT_942
-      - US_3855 | 0.41Mb
-      - t.me/wbnet_🇺🇸_US_523
-      - t.me/wbnet_🇷🇺_RU_1209
-      - RU_2606 | 2.76Mb
-      - _386 |21.64Mb
-      - RU 🇷🇺 Moscow @AzadNet 2
-      - github.com/freefq - 俄罗斯莫斯科Melbicom数据中心 52
-      - _424 |10.14Mb
-      - github.com/freefq - 俄罗斯莫斯科Melbicom数据中心 41
-      - _441 |35.44Mb
-      - _715 | 5.26Mb
-      - 23立陶宛∞直连
-      - t.me/wbnet_🇷🇺_RU_1234
-      - 油管：最网最强白嫖 27
-      - LT_718
-      - LT_770
-      - LT_785
-      - LT_1009
-      - LT_993
-      - LT_1039
-      - LT_1022
-      - LT_874
+      - 油管：最网最强白嫖 13
       - bulink自建免费19线 三网
-      - JP_611 |30.20Mb
-      - US_3236 |18.85Mb
-      - _油管：全网最强白嫖 7
-      - t.me/wbnet_🇷🇺_RU_1195
-      - t.me/wbnet_🇷🇺_RU_1232
-      - _448 |19.14Mb
-      - t.me/wbnet_🇷🇺_RU_1243
-      - _403 |12.85Mb
-      - _630 | 0.07Mb
-      - t.me/wbnet_🇷🇺_RU_1239
-      - _611 |27.23Mb
-      - t.me/wbnet_🇷🇺_RU_1242
-      - _605 |17.04Mb
-      - _418 |29.65Mb
-      - _417 |14.08Mb
+      - _油管：全网最强白嫖 3
+      - v2cross.com 4
+      - v2cross.com 5
+      - v2cross.com 6
+      - _油管：全网最强白嫖 4
+      - _US_t.me/wbnet_173
+      - github.com/freefq - 日本东京Amazon数据中心 7
+      - v2cross.com 7
+      - v2cross.com 8
+      - v2cross.com 9
+      - v2cross.com 10
+      - RU1
+      - v2cross.com 11
+      - v2cross.com 12
+      - v2cross.com 13
+      - v2cross.com 14
+      - v2cross.com 15
+      - v2cross.com 16
+      - TG群https://t.me/youzi_pro
+      - t.me/wbnet_🇳🇱_NL_1333
+      - v2cross.com 17
+      - CA_1663 | 8.81Mb
+      - v2cross.com 18
+      - _180 | 2.45Mb
+      - _823 | 5.63Mb
+      - 油管：最网最强白嫖 14
+      - v2cross.com 19
+      - v2cross.com 20
+      - t.me/wbnet_🇳🇱_NL_1399
+      - _317 | 9.05Mb
+      - v2cross.com 21
+      - v2cross.com 22
+      - v2cross.com 23
+      - t.me/wbnet_🇳🇱_NL_1423
+      - t.me/wbnet_🇳🇱_NL_1334
+      - ZZ_2013
+      - ZZ_2066
+      - _US_t.me/wbnet_163
       - t.me/wbnet_🇷🇺_RU_1251
-      - t.me/wbnet_🇷🇺_RU_1246
-      - LT_803
-      - US_3888 |11.46Mb
-      - _US_t.me/wbnet_142
-      - _US_t.me/wbnet_171
-      - US_3183 |16.92Mb
-      - _油管：全网最强白嫖 8
-      - ZZ_3182
-      - t.me/wbnet_🇷🇺_RU_1186
-      - RU_2597 | 4.07Mb
-      - _692 | 1.68Mb
-      - t.me/wbnet_🇷🇺_RU_1212
-      - t.me/wbnet_🇷🇺_RU_802
-      - _709
-      - _687 | 2.39Mb
-      - _695 |14.42Mb
-      - _438 |24.49Mb
-      - t.me/wbnet_🇷🇺_RU_1192
-      - _681 |18.95Mb
-      - _356 |17.07Mb
-      - t.me/wbnet_🇷🇺_RU_1228
-      - t.me/wbnet_🇷🇺_RU_1237
-      - _447 |11.50Mb
-      - _382 |37.27Mb
-      - _699
-      - t.me/wbnet_🇷🇺_RU_1252
-      - github.com/freefq - 俄罗斯莫斯科Melbicom数据中心 51
-      - t.me/wbnet_🇷🇺_RU_1266
-      - t.me/wbnet_🇷🇺_RU_1221
-      - t.me/wbnet_🇷🇺_RU_1203
-      - LT_895
-      - LT_1000
-      - LT_1053
-      - 油管：最网最强白嫖 28
-      - 免费-日本4_6_1401 |36.72Mb
-      - Relay_🇯🇵JP-🇨🇿CZ_677
-      - US_3105 | 1.54Mb
-      - US_3187 | 3.51Mb
-      - US_3106 | 3.72Mb
-      - t.me/wbnet_🇺🇸_US_731
-      - _油管：全网最强白嫖 9
-      - US_3225 |15.41Mb
-      - US_3227 |16.36Mb
-      - US_3228 |12.82Mb
-      - t.me/wbnet_🇷🇺_RU_1281
-      - _673 | 4.10Mb
-      - t.me/wbnet_🇷🇺_RU_1229
-      - RU_2608 | 3.18Mb
-      - 21立陶宛∞直连
-      - _704 | 0.17Mb
-      - _719 |38.53Mb
-      - t.me/wbnet_🇷🇺_RU_1199
-      - _697 | 2.67Mb
-      - _363 |38.83Mb
-      - _657 | 2.07Mb
-      - github.com/freefq - 俄罗斯莫斯科Melbicom数据中心 36
-      - t.me/wbnet_🇷🇺_RU_1193
-      - t.me/wbnet_🇷🇺_RU_1187
-      - _602 |34.67Mb
-      - github.com/freefq - 俄罗斯莫斯科Melbicom数据中心 45
-      - _383 |12.38Mb
-      - t.me/wbnet_🇷🇺_RU_1207
-      - _710 | 1.93Mb
-      - _684 | 2.82Mb
-      - RU_2605 | 6.22Mb
-      - t.me/wbnet_🇷🇺_RU_1222
-      - LT_711
-      - LT_741
-      - LT_821
-      - LT_794
-      - LT_933
-      - LT_917
-      - 213.183.53.200:9084
-      - 美国-2.49MB/s(Youtube:不良林)
-      - _油管：全网最强白嫖 10
-      - SG-高速节点推荐：v2cross.com
-      - JP_2313 | 7.16Mb
-      - US_3883 | 0.81Mb
-      - US_3180 | 5.99Mb
-      - _US_t.me/wbnet_126
-      - US_3544 | 0.99Mb
-      - US_3147 | 4.09Mb
-      - _油管：全网最强白嫖 11
-      - _油管：全网最强白嫖 12
-      - _油管：全网最强白嫖 13
-      - US_3220 | 2.62Mb
-      - US_3231 | 3.15Mb
-      - RU_2607 | 1.93Mb
-      - t.me/wbnet_🇷🇺_RU_806
-      - t.me/wbnet_🇷🇺_RU_1191
-      - _387 |17.64Mb
-      - _656 | 7.72Mb
-      - _672 | 2.38Mb
-      - t.me/wbnet_🇷🇺_RU_1208
-      - t.me/wbnet_🇷🇺_RU_1230
-      - _377 |21.96Mb
-      - t.me/wbnet_🇷🇺_RU_1196
+      - t.me/wbnet_🇷🇺_RU_1224
+      - t.me/wbnet_🇳🇱_NL_1433
+      - t.me/wbnet_🇳🇱_NL_1419
+      - t.me/wbnet_🇳🇱_NL_1350
+      - _ 4.80Mb | 2.41Mb
+      - ZZ_2009
+      - US_3530 | 4.91Mb
+      - 油管：最网最强白嫖 15
+      - 油管：最网最强白嫖 16
+      - CN_241 | 5.24Mb
+      - CN_245 | 9.87Mb
+      - v2cross.com 24
+      - _1135 |21.99Mb
+      - t.me/wbnet_🇳🇱_NL_1411
+      - t.me/wbnet_🇳🇱_NL_1414
+      - NL_861 | 5.23Mb
+      - v2cross.com 25
+      - ZZ_2010
+      - ZZ_2015
+      - ZZ_2017
+      - _油管：全网最强白嫖 5
+      - US-高速节点推荐：v1.mk/vip
+      - LT_743
+      - t.me/wbnet_🇳🇱_NL_1343
+      - _328 | 1.61Mb
+      - t.me/wbnet_🇳🇱_NL_1332
+      - v2cross.com 26
+      - v2cross.com 27
+      - v2cross.com 28
+      - ZZ_2016
+      - _1290 | 4.02Mb
+      - 油管：全网最强白嫖
+      - FI 🇫🇮 Helsinki @AzadNet
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -2486,306 +1168,142 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - 日本-tg频道:@ripaojiedian
+      - 日本03
+      - Relay_🇨🇳CN-🇨🇳CN_228
+      - 日本04
+      - CN_261 |24.93Mb
+      - CN 🇨🇳 @AzadNet
       - 油管：最网最强白嫖
-      - Lv1.V05 湘日BGP-新加坡
+      - CN_1842 | 8.96Mb
+      - LV1 新加坡 - 隧道「1.5x」
+      - 新加坡-tg频道:@ripaojiedian
       - 油管：最网最强白嫖 2
+      - CN_2
+      - LV1 日本 - 隧道「1.5x」
+      - 14.29.124.168:25289
+      - LV1 韩国 - 隧道「1.5x」
+      - CN 🇨🇳 @AzadNet 2
       - 油管：最网最强白嫖 3
+      - _油管频道：全网最强白嫖
+      - v2cross.com
+      - _油管频道：全网最强白嫖 2
+      - CN 🇨🇳 @AzadNet 3
+      - _571 |60.11Mb
+      - CN_3
+      - _油管频道：全网最强白嫖 3
+      - _577 |64.21Mb
+      - 香港03
+      - 直连|香港多线|1.5x
+      - 香港04
       - 油管：最网最强白嫖 4
+      - 新加坡03
+      - CN_1849 | 8.80Mb
+      - 新加坡01
       - 油管：最网最强白嫖 5
-      - Lv1.V47 沪日BGP-新加坡
-      - Lv1.V*65 广州移动-新加坡
+      - HK_2339 |42.41Mb
+      - CN_271 |24.78Mb
       - 油管：最网最强白嫖 6
       - 油管：最网最强白嫖 7
+      - Relay_🇭🇰HK-🇭🇰HK_574
+      - 直连|日本三网|1.5x
+      - Relay_🇺🇸US-🇺🇸US_2598
+      - 新加坡04
+      - v2cross.com 2
+      - KR1
+      - LV1 美国 - 隧道「1.5x」
+      - v2cross.com 3
       - 油管：最网最强白嫖 8
-      - Lv1.V16 东莞联通-美国
-      - Lv1.V62 广州移动-台湾
       - 油管：最网最强白嫖 9
+      - 香港-tg频道:@ripaojiedian
+      - KR_2265 | 1.69Mb
+      - 联通优化节点「1x」
       - 油管：最网最强白嫖 10
+      - JP_2242 |32.60Mb
       - 油管：最网最强白嫖 11
-      - CN_1850 |12.58Mb
-      - Lv1.V40 上海移动-美国
-      - Lv1.V04 湘日BGP-美国
-      - Lv1.V61 广州移动-香港
-      - 14.29.124.168:25270
+      - TW2
+      - 移动优化节点「1x」
+      - 印度孟买「1x」
+      - _1345 |12.19Mb
+      - 韩国-tg频道:@ripaojiedian
       - 油管：最网最强白嫖 12
-      - 油管：最网最强白嫖 13
-      - _油管频道：全网最强白嫖
-      - _632 |85.95Mb
-      - 14.29.124.168:25220
-      - CN_281 | 3.90Mb
-      - CN_1877 |23.07Mb
-      - _1418 |88.44Mb
-      - CN_2
-      - 台湾原生-tg频道:@ripaojiedian
-      - CN_1842 | 8.96Mb
-      - CN 🇨🇳 @AzadNet
-      - _油管频道：全网最强白嫖 2
-      - CN 🇨🇳 @AzadNet 2
-      - _油管频道：全网最强白嫖 3
-      - _571 |60.11Mb
-      - 14.29.124.168:25289
-      - CN_1849 | 8.80Mb
-      - CN_271 |24.78Mb
-      - CN_261 |24.93Mb
-      - CN 🇨🇳 @AzadNet 3
-      - 14.29.124.168:25245
-      - _577 |64.21Mb
-      - _油管频道：全网最强白嫖 4
-      - 油管：最网最强白嫖 14
-      - 台湾-tg频道:@ripaojiedian
-      - _568 | 9.14Mb
-      - 台湾02丨原生IP丨
-      - CN_1869 |95.42Mb
-      - 美国-21.26MB/s(Youtube:不良林)
-      - _335 | 9.08Mb
-      - _562 | 8.97Mb
-      - Lv1.V27 广州移动2-日本
-      - 油管：全网最强白嫖
-      - HK_2339 |42.41Mb
-      - Lv1.V*29 广州移动2-新加坡
-      - 香港阿伟科技atTG*油管_77_1404 |16.18Mb
-      - JP_608 |28.98Mb
-      - 油管：最网最强白嫖 15
-      - US_3889 |10.59Mb
-      - 油管：最网最强白嫖 16
-      - 美国-15.35MB/s(Youtube:不良林)
-      - Lv1.V26 广州移动2-台湾
-      - 美国-tg频道:@ripaojiedian
-      - JP_592
-      - 油管：最网最强白嫖 17
       - _油管：全网最强白嫖
-      - 香港临时-tg频道:@ripaojiedian
-      - US_1939
-      - US_3887 |20.54Mb
-      - CN_3
-      - 油管：最网最强白嫖 18
-      - 油管：最网最强白嫖 19
-      - 油管：最网最强白嫖 20
-      - 油管：最网最强白嫖 21
-      - github.com/freefq - 香港  20
-      - 36.中继中转隧道线路覆盖
-      - 油管：最网最强白嫖 22
-      - _1429 |49.17Mb
+      - California, Tj
       - _油管：全网最强白嫖 2
-      - JP_2312 |17.35Mb
-      - 油管：全网最强白嫖 2
-      - 34.捐赠解锁更多协议线路
-      - 美国TG频道:@kxswa
-      - JP_2324 |42.71Mb
-      - 33.公益等级線路嚴格限速
-      - 韩国2-tg频道:@ripaojiedian
-      - github_com/mianfeifq__🇰🇷韩国阿伟科技atTG*油管_15_1400 | 8.61Mb
-      - _1430 |28.15Mb
-      - _油管：全网最强白嫖 17
-      - 油管：最网最强白嫖 23
-      - US_2729
-      - github.com/freefq - 新加坡腾讯云 26
-      - 油管：全网最强白嫖 3
-      - 美国-15.21MB/s(Youtube:不良林)
-      - KR_2353 | 2.23Mb
-      - SG-高速节点推荐：v1.mk/vip
-      - _1358 |32.71Mb
-      - US_3890 |20.30Mb
-      - JP01
-      - _油管：全网最强白嫖 3
-      - 美国-13.72MB/s(Youtube:不良林)
-      - SG_2723 | 6.29Mb
-      - github.com/freefq - 美国Microsoft数据中心 9
-      - Singapore-Tencent 4
-      - _油管：全网最强白嫖 4
-      - SG_2709 |24.03Mb
-      - 油管：最网最强白嫖 24
-      - github.com/freefq - 新加坡腾讯云 14
-      - 油管：全网最强白嫖 4
-      - SG-高速节点推荐：v1.mk/vip 2
-      - 美国-4.12MB/s(Youtube:不良林)
-      - 日本阿伟科技atTG*油管_58_1402 |37.96Mb
-      - github.com/freefq - 美国Microsoft数据中心 19
-      - US_3919 |30.28Mb
-      - US_483 |94.87Mb
-      - 油管：全网最强白嫖 5
-      - _油管：全网最强白嫖 5
-      - github.com/freefq - 新加坡腾讯云 9
-      - github.com/freefq - 美国Microsoft数据中心 17
-      - v2cross.com - 新加坡腾讯云 1
-      - JP_607 |16.39Mb
-      - KR-高速节点推荐：v1.mk/vip
-      - 油管：最网最强白嫖 25
-      - github.com/freefq - 新加坡腾讯云 126
-      - github.com/freefq - 新加坡腾讯云 136
-      - _油管：全网最强白嫖 6
-      - SG_1809 | 8.43Mb
-      - github.com/freefq - 新加坡腾讯云 12
-      - 香港
-      - t.me/wbnet_🇷🇺_RU_1185
-      - _701
-      - github.com/freefq - 俄罗斯莫斯科Melbicom数据中心 57
-      - _582 | 3.15Mb
-      - _669 | 3.19Mb
-      - _381 |13.28Mb
-      - _412 |29.99Mb
-      - LT_957
-      - _690 | 0.08Mb
-      - _635 | 2.71Mb
-      - _368 |17.08Mb
-      - t.me/wbnet_🇷🇺_RU_1202
-      - t.me/wbnet_🇷🇺_RU_1205
-      - t.me/wbnet_🇷🇺_RU_1275
-      - 油管：最网最强白嫖 26
-      - LT_800
-      - RU_2553 | 0.83Mb
-      - 油管：全网最强白嫖 6
-      - _426 |24.32Mb
-      - _694 | 1.25Mb
-      - _449 |20.92Mb
-      - _380 |29.32Mb
-      - _446 | 8.19Mb
-      - _702 | 2.65Mb
-      - _396 |12.14Mb
-      - t.me/wbnet_🇷🇺_RU_799
-      - RU 🇷🇺 Moscow @AzadNet
-      - _693 |18.13Mb
-      - t.me/wbnet_🇷🇺_RU_1198
-      - _723 |56.03Mb
-      - _375 |22.87Mb
-      - RU_2662 | 2.91Mb
-      - LT_942
-      - US_3855 | 0.41Mb
-      - t.me/wbnet_🇺🇸_US_523
-      - t.me/wbnet_🇷🇺_RU_1209
-      - RU_2606 | 2.76Mb
-      - _386 |21.64Mb
-      - RU 🇷🇺 Moscow @AzadNet 2
-      - github.com/freefq - 俄罗斯莫斯科Melbicom数据中心 52
-      - _424 |10.14Mb
-      - github.com/freefq - 俄罗斯莫斯科Melbicom数据中心 41
-      - _441 |35.44Mb
-      - _715 | 5.26Mb
-      - 23立陶宛∞直连
-      - t.me/wbnet_🇷🇺_RU_1234
-      - 油管：最网最强白嫖 27
-      - LT_718
-      - LT_770
-      - LT_785
-      - LT_1009
-      - LT_993
-      - LT_1039
-      - LT_1022
-      - LT_874
+      - 油管：最网最强白嫖 13
       - bulink自建免费19线 三网
-      - JP_611 |30.20Mb
-      - US_3236 |18.85Mb
-      - _油管：全网最强白嫖 7
-      - t.me/wbnet_🇷🇺_RU_1195
-      - t.me/wbnet_🇷🇺_RU_1232
-      - _448 |19.14Mb
-      - t.me/wbnet_🇷🇺_RU_1243
-      - _403 |12.85Mb
-      - _630 | 0.07Mb
-      - t.me/wbnet_🇷🇺_RU_1239
-      - _611 |27.23Mb
-      - t.me/wbnet_🇷🇺_RU_1242
-      - _605 |17.04Mb
-      - _418 |29.65Mb
-      - _417 |14.08Mb
+      - _油管：全网最强白嫖 3
+      - v2cross.com 4
+      - v2cross.com 5
+      - v2cross.com 6
+      - _油管：全网最强白嫖 4
+      - _US_t.me/wbnet_173
+      - github.com/freefq - 日本东京Amazon数据中心 7
+      - v2cross.com 7
+      - v2cross.com 8
+      - v2cross.com 9
+      - v2cross.com 10
+      - RU1
+      - v2cross.com 11
+      - v2cross.com 12
+      - v2cross.com 13
+      - v2cross.com 14
+      - v2cross.com 15
+      - v2cross.com 16
+      - TG群https://t.me/youzi_pro
+      - t.me/wbnet_🇳🇱_NL_1333
+      - v2cross.com 17
+      - CA_1663 | 8.81Mb
+      - v2cross.com 18
+      - _180 | 2.45Mb
+      - _823 | 5.63Mb
+      - 油管：最网最强白嫖 14
+      - v2cross.com 19
+      - v2cross.com 20
+      - t.me/wbnet_🇳🇱_NL_1399
+      - _317 | 9.05Mb
+      - v2cross.com 21
+      - v2cross.com 22
+      - v2cross.com 23
+      - t.me/wbnet_🇳🇱_NL_1423
+      - t.me/wbnet_🇳🇱_NL_1334
+      - ZZ_2013
+      - ZZ_2066
+      - _US_t.me/wbnet_163
       - t.me/wbnet_🇷🇺_RU_1251
-      - t.me/wbnet_🇷🇺_RU_1246
-      - LT_803
-      - US_3888 |11.46Mb
-      - _US_t.me/wbnet_142
-      - _US_t.me/wbnet_171
-      - US_3183 |16.92Mb
-      - _油管：全网最强白嫖 8
-      - ZZ_3182
-      - t.me/wbnet_🇷🇺_RU_1186
-      - RU_2597 | 4.07Mb
-      - _692 | 1.68Mb
-      - t.me/wbnet_🇷🇺_RU_1212
-      - t.me/wbnet_🇷🇺_RU_802
-      - _709
-      - _687 | 2.39Mb
-      - _695 |14.42Mb
-      - _438 |24.49Mb
-      - t.me/wbnet_🇷🇺_RU_1192
-      - _681 |18.95Mb
-      - _356 |17.07Mb
-      - t.me/wbnet_🇷🇺_RU_1228
-      - t.me/wbnet_🇷🇺_RU_1237
-      - _447 |11.50Mb
-      - _382 |37.27Mb
-      - _699
-      - t.me/wbnet_🇷🇺_RU_1252
-      - github.com/freefq - 俄罗斯莫斯科Melbicom数据中心 51
-      - t.me/wbnet_🇷🇺_RU_1266
-      - t.me/wbnet_🇷🇺_RU_1221
-      - t.me/wbnet_🇷🇺_RU_1203
-      - LT_895
-      - LT_1000
-      - LT_1053
-      - 油管：最网最强白嫖 28
-      - 免费-日本4_6_1401 |36.72Mb
-      - Relay_🇯🇵JP-🇨🇿CZ_677
-      - US_3105 | 1.54Mb
-      - US_3187 | 3.51Mb
-      - US_3106 | 3.72Mb
-      - t.me/wbnet_🇺🇸_US_731
-      - _油管：全网最强白嫖 9
-      - US_3225 |15.41Mb
-      - US_3227 |16.36Mb
-      - US_3228 |12.82Mb
-      - t.me/wbnet_🇷🇺_RU_1281
-      - _673 | 4.10Mb
-      - t.me/wbnet_🇷🇺_RU_1229
-      - RU_2608 | 3.18Mb
-      - 21立陶宛∞直连
-      - _704 | 0.17Mb
-      - _719 |38.53Mb
-      - t.me/wbnet_🇷🇺_RU_1199
-      - _697 | 2.67Mb
-      - _363 |38.83Mb
-      - _657 | 2.07Mb
-      - github.com/freefq - 俄罗斯莫斯科Melbicom数据中心 36
-      - t.me/wbnet_🇷🇺_RU_1193
-      - t.me/wbnet_🇷🇺_RU_1187
-      - _602 |34.67Mb
-      - github.com/freefq - 俄罗斯莫斯科Melbicom数据中心 45
-      - _383 |12.38Mb
-      - t.me/wbnet_🇷🇺_RU_1207
-      - _710 | 1.93Mb
-      - _684 | 2.82Mb
-      - RU_2605 | 6.22Mb
-      - t.me/wbnet_🇷🇺_RU_1222
-      - LT_711
-      - LT_741
-      - LT_821
-      - LT_794
-      - LT_933
-      - LT_917
-      - 213.183.53.200:9084
-      - 美国-2.49MB/s(Youtube:不良林)
-      - _油管：全网最强白嫖 10
-      - SG-高速节点推荐：v2cross.com
-      - JP_2313 | 7.16Mb
-      - US_3883 | 0.81Mb
-      - US_3180 | 5.99Mb
-      - _US_t.me/wbnet_126
-      - US_3544 | 0.99Mb
-      - US_3147 | 4.09Mb
-      - _油管：全网最强白嫖 11
-      - _油管：全网最强白嫖 12
-      - _油管：全网最强白嫖 13
-      - US_3220 | 2.62Mb
-      - US_3231 | 3.15Mb
-      - RU_2607 | 1.93Mb
-      - t.me/wbnet_🇷🇺_RU_806
-      - t.me/wbnet_🇷🇺_RU_1191
-      - _387 |17.64Mb
-      - _656 | 7.72Mb
-      - _672 | 2.38Mb
-      - t.me/wbnet_🇷🇺_RU_1208
-      - t.me/wbnet_🇷🇺_RU_1230
-      - _377 |21.96Mb
-      - t.me/wbnet_🇷🇺_RU_1196
+      - t.me/wbnet_🇷🇺_RU_1224
+      - t.me/wbnet_🇳🇱_NL_1433
+      - t.me/wbnet_🇳🇱_NL_1419
+      - t.me/wbnet_🇳🇱_NL_1350
+      - _ 4.80Mb | 2.41Mb
+      - ZZ_2009
+      - US_3530 | 4.91Mb
+      - 油管：最网最强白嫖 15
+      - 油管：最网最强白嫖 16
+      - CN_241 | 5.24Mb
+      - CN_245 | 9.87Mb
+      - v2cross.com 24
+      - _1135 |21.99Mb
+      - t.me/wbnet_🇳🇱_NL_1411
+      - t.me/wbnet_🇳🇱_NL_1414
+      - NL_861 | 5.23Mb
+      - v2cross.com 25
+      - ZZ_2010
+      - ZZ_2015
+      - ZZ_2017
+      - _油管：全网最强白嫖 5
+      - US-高速节点推荐：v1.mk/vip
+      - LT_743
+      - t.me/wbnet_🇳🇱_NL_1343
+      - _328 | 1.61Mb
+      - t.me/wbnet_🇳🇱_NL_1332
+      - v2cross.com 26
+      - v2cross.com 27
+      - v2cross.com 28
+      - ZZ_2016
+      - _1290 | 4.02Mb
+      - 油管：全网最强白嫖
+      - FI 🇫🇮 Helsinki @AzadNet
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
