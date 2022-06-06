@@ -1,0 +1,1965 @@
+mixed-port: 7890
+allow-lan: false
+bind-address: "*"
+mode: rule
+log-level: info
+ipv6: false
+external-controller: 127.0.0.1:9090
+hosts:
+  localhost: 127.0.0.1
+dns:
+  enable: true
+  listen: 0.0.0.0:10053
+  default-nameserver:
+    - 119.29.29.29
+    - 8.8.8.8
+  enhanced-mode: redir-host
+  fake-ip-range: 198.18.0.1/16
+  nameserver:
+    - 119.29.29.29
+    - tls://8.8.8.8:853
+    - https://doh.pub/dns-query
+    - https://1.1.1.1/dns-queryproxies
+proxies:
+  - name: 🇭🇰 HTTPS | 香港 | 1
+    server: h192837.strongpipe.live
+    port: 11543
+    type: http
+    username: dcf12c7e7d
+    password: 26bae9b023
+    tls: true
+    skip-cert-verify: true
+  - name: 🇭🇰 HTTPS | 香港 | 2
+    server: h192837.strongpipe.live
+    port: 11544
+    type: http
+    username: dcf12c7e7d
+    password: 26bae9b023
+    tls: true
+    skip-cert-verify: true
+  - name: 🇭🇰 HTTPS | 香港 | 3
+    server: h192837.strongpipe.live
+    port: 11545
+    type: http
+    username: dcf12c7e7d
+    password: 26bae9b023
+    tls: true
+    skip-cert-verify: true
+  - name: 🇭🇰 HTTPS | 香港 | 4
+    server: h517439.strongpipe.live
+    port: 11543
+    type: http
+    username: dcf12c7e7d
+    password: 26bae9b023
+    tls: true
+    skip-cert-verify: true
+  - name: 🇭🇰 HTTPS | 香港 | 5
+    server: h517439.strongpipe.live
+    port: 11544
+    type: http
+    username: dcf12c7e7d
+    password: 26bae9b023
+    tls: true
+    skip-cert-verify: true
+  - name: 🇭🇰 HTTPS | 香港 | 6
+    server: h517439.strongpipe.live
+    port: 11545
+    type: http
+    username: dcf12c7e7d
+    password: 26bae9b023
+    tls: true
+    skip-cert-verify: true
+  - name: 🇭🇰 HTTPS | 香港 | 7
+    server: h63956.strongpipe.live
+    port: 11543
+    type: http
+    username: dcf12c7e7d
+    password: 26bae9b023
+    tls: true
+    skip-cert-verify: true
+  - name: 🇭🇰 HTTPS | 香港 | 8
+    server: h63956.strongpipe.live
+    port: 11544
+    type: http
+    username: dcf12c7e7d
+    password: 26bae9b023
+    tls: true
+    skip-cert-verify: true
+  - name: 🇭🇰 HTTPS | 香港 | 9
+    server: h63956.strongpipe.live
+    port: 11545
+    type: http
+    username: dcf12c7e7d
+    password: 26bae9b023
+    tls: true
+    skip-cert-verify: true
+  - name: 🇭🇰 HTTPS | 香港 | 10
+    server: h738106.strongpipe.live
+    port: 11543
+    type: http
+    username: dcf12c7e7d
+    password: 26bae9b023
+    tls: true
+    skip-cert-verify: true
+  - name: 🇭🇰 HTTPS | 香港 | 11
+    server: h738106.strongpipe.live
+    port: 11544
+    type: http
+    username: dcf12c7e7d
+    password: 26bae9b023
+    tls: true
+    skip-cert-verify: true
+  - name: 🇭🇰 HTTPS | 香港 | 12
+    server: h738106.strongpipe.live
+    port: 11545
+    type: http
+    username: dcf12c7e7d
+    password: 26bae9b023
+    tls: true
+    skip-cert-verify: true
+  - name: 🇭🇰 HTTPS | 香港 | 13
+    server: h890361.strongpipe.live
+    port: 11543
+    type: http
+    username: dcf12c7e7d
+    password: 26bae9b023
+    tls: true
+    skip-cert-verify: true
+  - name: 🇭🇰 HTTPS | 香港 | 14
+    server: h890361.strongpipe.live
+    port: 11544
+    type: http
+    username: dcf12c7e7d
+    password: 26bae9b023
+    tls: true
+    skip-cert-verify: true
+  - name: 🇭🇰 HTTPS | 香港 | 15
+    server: h890361.strongpipe.live
+    port: 11545
+    type: http
+    username: dcf12c7e7d
+    password: 26bae9b023
+    tls: true
+    skip-cert-verify: true
+  - name: 🇭🇰 HTTPS | 香港 | 16
+    server: h961359.strongpipe.live
+    port: 11543
+    type: http
+    username: dcf12c7e7d
+    password: 26bae9b023
+    tls: true
+    skip-cert-verify: true
+  - name: 🇭🇰 HTTPS | 香港 | 17
+    server: h961359.strongpipe.live
+    port: 11544
+    type: http
+    username: dcf12c7e7d
+    password: 26bae9b023
+    tls: true
+    skip-cert-verify: true
+  - name: 🇭🇰 HTTPS | 香港 | 18
+    server: h961359.strongpipe.live
+    port: 11545
+    type: http
+    username: dcf12c7e7d
+    password: 26bae9b023
+    tls: true
+    skip-cert-verify: true
+  - name: 🇭🇰 HTTPS | 香港 | 19
+    server: h961684.strongpipe.live
+    port: 11543
+    type: http
+    username: dcf12c7e7d
+    password: 26bae9b023
+    tls: true
+    skip-cert-verify: true
+  - name: 🇭🇰 HTTPS | 香港 | 20
+    server: h961684.strongpipe.live
+    port: 11544
+    type: http
+    username: dcf12c7e7d
+    password: 26bae9b023
+    tls: true
+    skip-cert-verify: true
+  - name: 🇭🇰 HTTPS | 香港 | 21
+    server: h961684.strongpipe.live
+    port: 11545
+    type: http
+    username: dcf12c7e7d
+    password: 26bae9b023
+    tls: true
+    skip-cert-verify: true
+  - name: 🇯🇵 HTTPS | 日本 | 1
+    server: h192837.strongpipe.live
+    port: 11443
+    type: http
+    username: dcf12c7e7d
+    password: 26bae9b023
+    tls: true
+    skip-cert-verify: true
+  - name: 🇯🇵 HTTPS | 日本 | 2
+    server: h192837.strongpipe.live
+    port: 11444
+    type: http
+    username: dcf12c7e7d
+    password: 26bae9b023
+    tls: true
+    skip-cert-verify: true
+  - name: 🇯🇵 HTTPS | 日本 | 3
+    server: h192837.strongpipe.live
+    port: 11445
+    type: http
+    username: dcf12c7e7d
+    password: 26bae9b023
+    tls: true
+    skip-cert-verify: true
+  - name: 🇯🇵 HTTPS | 日本 | 4
+    server: h517439.strongpipe.live
+    port: 11443
+    type: http
+    username: dcf12c7e7d
+    password: 26bae9b023
+    tls: true
+    skip-cert-verify: true
+  - name: 🇯🇵 HTTPS | 日本 | 5
+    server: h517439.strongpipe.live
+    port: 11444
+    type: http
+    username: dcf12c7e7d
+    password: 26bae9b023
+    tls: true
+    skip-cert-verify: true
+  - name: 🇯🇵 HTTPS | 日本 | 6
+    server: h517439.strongpipe.live
+    port: 11445
+    type: http
+    username: dcf12c7e7d
+    password: 26bae9b023
+    tls: true
+    skip-cert-verify: true
+  - name: 🇯🇵 HTTPS | 日本 | 7
+    server: h63956.strongpipe.live
+    port: 11443
+    type: http
+    username: dcf12c7e7d
+    password: 26bae9b023
+    tls: true
+    skip-cert-verify: true
+  - name: 🇯🇵 HTTPS | 日本 | 8
+    server: h63956.strongpipe.live
+    port: 11444
+    type: http
+    username: dcf12c7e7d
+    password: 26bae9b023
+    tls: true
+    skip-cert-verify: true
+  - name: 🇯🇵 HTTPS | 日本 | 9
+    server: h63956.strongpipe.live
+    port: 11445
+    type: http
+    username: dcf12c7e7d
+    password: 26bae9b023
+    tls: true
+    skip-cert-verify: true
+  - name: 🇯🇵 HTTPS | 日本 | 10
+    server: h738106.strongpipe.live
+    port: 11443
+    type: http
+    username: dcf12c7e7d
+    password: 26bae9b023
+    tls: true
+    skip-cert-verify: true
+  - name: 🇯🇵 HTTPS | 日本 | 11
+    server: h738106.strongpipe.live
+    port: 11444
+    type: http
+    username: dcf12c7e7d
+    password: 26bae9b023
+    tls: true
+    skip-cert-verify: true
+  - name: 🇯🇵 HTTPS | 日本 | 12
+    server: h738106.strongpipe.live
+    port: 11445
+    type: http
+    username: dcf12c7e7d
+    password: 26bae9b023
+    tls: true
+    skip-cert-verify: true
+  - name: 🇯🇵 HTTPS | 日本 | 13
+    server: h890361.strongpipe.live
+    port: 11443
+    type: http
+    username: dcf12c7e7d
+    password: 26bae9b023
+    tls: true
+    skip-cert-verify: true
+  - name: 🇯🇵 HTTPS | 日本 | 14
+    server: h890361.strongpipe.live
+    port: 11444
+    type: http
+    username: dcf12c7e7d
+    password: 26bae9b023
+    tls: true
+    skip-cert-verify: true
+  - name: 🇯🇵 HTTPS | 日本 | 15
+    server: h890361.strongpipe.live
+    port: 11445
+    type: http
+    username: dcf12c7e7d
+    password: 26bae9b023
+    tls: true
+    skip-cert-verify: true
+  - name: 🇯🇵 HTTPS | 日本 | 16
+    server: h961359.strongpipe.live
+    port: 11443
+    type: http
+    username: dcf12c7e7d
+    password: 26bae9b023
+    tls: true
+    skip-cert-verify: true
+  - name: 🇯🇵 HTTPS | 日本 | 17
+    server: h961359.strongpipe.live
+    port: 11444
+    type: http
+    username: dcf12c7e7d
+    password: 26bae9b023
+    tls: true
+    skip-cert-verify: true
+  - name: 🇯🇵 HTTPS | 日本 | 18
+    server: h961359.strongpipe.live
+    port: 11445
+    type: http
+    username: dcf12c7e7d
+    password: 26bae9b023
+    tls: true
+    skip-cert-verify: true
+  - name: 🇯🇵 HTTPS | 日本 | 19
+    server: h961684.strongpipe.live
+    port: 11443
+    type: http
+    username: dcf12c7e7d
+    password: 26bae9b023
+    tls: true
+    skip-cert-verify: true
+  - name: 🇯🇵 HTTPS | 日本 | 20
+    server: h961684.strongpipe.live
+    port: 11444
+    type: http
+    username: dcf12c7e7d
+    password: 26bae9b023
+    tls: true
+    skip-cert-verify: true
+  - name: 🇯🇵 HTTPS | 日本 | 21
+    server: h961684.strongpipe.live
+    port: 11445
+    type: http
+    username: dcf12c7e7d
+    password: 26bae9b023
+    tls: true
+    skip-cert-verify: true
+  - name: 🇺🇸 HTTPS | 美国 | 1
+    server: h192837.strongpipe.live
+    port: 11243
+    type: http
+    username: dcf12c7e7d
+    password: 26bae9b023
+    tls: true
+    skip-cert-verify: true
+  - name: 🇺🇸 HTTPS | 美国 | 2
+    server: h192837.strongpipe.live
+    port: 11244
+    type: http
+    username: dcf12c7e7d
+    password: 26bae9b023
+    tls: true
+    skip-cert-verify: true
+  - name: 🇺🇸 HTTPS | 美国 | 3
+    server: h192837.strongpipe.live
+    port: 11245
+    type: http
+    username: dcf12c7e7d
+    password: 26bae9b023
+    tls: true
+    skip-cert-verify: true
+  - name: 🇺🇸 HTTPS | 美国 | 4
+    server: h517439.strongpipe.live
+    port: 11243
+    type: http
+    username: dcf12c7e7d
+    password: 26bae9b023
+    tls: true
+    skip-cert-verify: true
+  - name: 🇺🇸 HTTPS | 美国 | 5
+    server: h517439.strongpipe.live
+    port: 11244
+    type: http
+    username: dcf12c7e7d
+    password: 26bae9b023
+    tls: true
+    skip-cert-verify: true
+  - name: 🇺🇸 HTTPS | 美国 | 6
+    server: h517439.strongpipe.live
+    port: 11245
+    type: http
+    username: dcf12c7e7d
+    password: 26bae9b023
+    tls: true
+    skip-cert-verify: true
+  - name: 🇺🇸 HTTPS | 美国 | 7
+    server: h63956.strongpipe.live
+    port: 11243
+    type: http
+    username: dcf12c7e7d
+    password: 26bae9b023
+    tls: true
+    skip-cert-verify: true
+  - name: 🇺🇸 HTTPS | 美国 | 8
+    server: h63956.strongpipe.live
+    port: 11244
+    type: http
+    username: dcf12c7e7d
+    password: 26bae9b023
+    tls: true
+    skip-cert-verify: true
+  - name: 🇺🇸 HTTPS | 美国 | 9
+    server: h63956.strongpipe.live
+    port: 11245
+    type: http
+    username: dcf12c7e7d
+    password: 26bae9b023
+    tls: true
+    skip-cert-verify: true
+  - name: 🇺🇸 HTTPS | 美国 | 10
+    server: h738106.strongpipe.live
+    port: 11243
+    type: http
+    username: dcf12c7e7d
+    password: 26bae9b023
+    tls: true
+    skip-cert-verify: true
+  - name: 🇺🇸 HTTPS | 美国 | 11
+    server: h738106.strongpipe.live
+    port: 11244
+    type: http
+    username: dcf12c7e7d
+    password: 26bae9b023
+    tls: true
+    skip-cert-verify: true
+  - name: 🇺🇸 HTTPS | 美国 | 12
+    server: h738106.strongpipe.live
+    port: 11245
+    type: http
+    username: dcf12c7e7d
+    password: 26bae9b023
+    tls: true
+    skip-cert-verify: true
+  - name: 🇺🇸 HTTPS | 美国 | 13
+    server: h890361.strongpipe.live
+    port: 11243
+    type: http
+    username: dcf12c7e7d
+    password: 26bae9b023
+    tls: true
+    skip-cert-verify: true
+  - name: 🇺🇸 HTTPS | 美国 | 14
+    server: h890361.strongpipe.live
+    port: 11244
+    type: http
+    username: dcf12c7e7d
+    password: 26bae9b023
+    tls: true
+    skip-cert-verify: true
+  - name: 🇺🇸 HTTPS | 美国 | 15
+    server: h890361.strongpipe.live
+    port: 11245
+    type: http
+    username: dcf12c7e7d
+    password: 26bae9b023
+    tls: true
+    skip-cert-verify: true
+  - name: 🇺🇸 HTTPS | 美国 | 16
+    server: h961359.strongpipe.live
+    port: 11243
+    type: http
+    username: dcf12c7e7d
+    password: 26bae9b023
+    tls: true
+    skip-cert-verify: true
+  - name: 🇺🇸 HTTPS | 美国 | 17
+    server: h961359.strongpipe.live
+    port: 11244
+    type: http
+    username: dcf12c7e7d
+    password: 26bae9b023
+    tls: true
+    skip-cert-verify: true
+  - name: 🇺🇸 HTTPS | 美国 | 18
+    server: h961359.strongpipe.live
+    port: 11245
+    type: http
+    username: dcf12c7e7d
+    password: 26bae9b023
+    tls: true
+    skip-cert-verify: true
+  - name: 🇺🇸 HTTPS | 美国 | 19
+    server: h961684.strongpipe.live
+    port: 11243
+    type: http
+    username: dcf12c7e7d
+    password: 26bae9b023
+    tls: true
+    skip-cert-verify: true
+  - name: 🇺🇸 HTTPS | 美国 | 20
+    server: h961684.strongpipe.live
+    port: 11244
+    type: http
+    username: dcf12c7e7d
+    password: 26bae9b023
+    tls: true
+    skip-cert-verify: true
+  - name: 🇺🇸 HTTPS | 美国 | 21
+    server: h961684.strongpipe.live
+    port: 11245
+    type: http
+    username: dcf12c7e7d
+    password: 26bae9b023
+    tls: true
+    skip-cert-verify: true
+  - name: 🇩🇪 HTTPS | 德国 | 1
+    server: h192837.strongpipe.live
+    port: 11743
+    type: http
+    username: dcf12c7e7d
+    password: 26bae9b023
+    tls: true
+    skip-cert-verify: true
+  - name: 🇩🇪 HTTPS | 德国 | 2
+    server: h192837.strongpipe.live
+    port: 11744
+    type: http
+    username: dcf12c7e7d
+    password: 26bae9b023
+    tls: true
+    skip-cert-verify: true
+  - name: 🇩🇪 HTTPS | 德国 | 3
+    server: h192837.strongpipe.live
+    port: 11745
+    type: http
+    username: dcf12c7e7d
+    password: 26bae9b023
+    tls: true
+    skip-cert-verify: true
+  - name: 🇩🇪 HTTPS | 德国 | 4
+    server: h517439.strongpipe.live
+    port: 11743
+    type: http
+    username: dcf12c7e7d
+    password: 26bae9b023
+    tls: true
+    skip-cert-verify: true
+  - name: 🇩🇪 HTTPS | 德国 | 5
+    server: h517439.strongpipe.live
+    port: 11744
+    type: http
+    username: dcf12c7e7d
+    password: 26bae9b023
+    tls: true
+    skip-cert-verify: true
+  - name: 🇩🇪 HTTPS | 德国 | 6
+    server: h517439.strongpipe.live
+    port: 11745
+    type: http
+    username: dcf12c7e7d
+    password: 26bae9b023
+    tls: true
+    skip-cert-verify: true
+  - name: 🇩🇪 HTTPS | 德国 | 7
+    server: h63956.strongpipe.live
+    port: 11743
+    type: http
+    username: dcf12c7e7d
+    password: 26bae9b023
+    tls: true
+    skip-cert-verify: true
+  - name: 🇩🇪 HTTPS | 德国 | 8
+    server: h63956.strongpipe.live
+    port: 11744
+    type: http
+    username: dcf12c7e7d
+    password: 26bae9b023
+    tls: true
+    skip-cert-verify: true
+  - name: 🇩🇪 HTTPS | 德国 | 9
+    server: h63956.strongpipe.live
+    port: 11745
+    type: http
+    username: dcf12c7e7d
+    password: 26bae9b023
+    tls: true
+    skip-cert-verify: true
+  - name: 🇩🇪 HTTPS | 德国 | 10
+    server: h738106.strongpipe.live
+    port: 11743
+    type: http
+    username: dcf12c7e7d
+    password: 26bae9b023
+    tls: true
+    skip-cert-verify: true
+  - name: 🇩🇪 HTTPS | 德国 | 11
+    server: h738106.strongpipe.live
+    port: 11744
+    type: http
+    username: dcf12c7e7d
+    password: 26bae9b023
+    tls: true
+    skip-cert-verify: true
+  - name: 🇩🇪 HTTPS | 德国 | 12
+    server: h738106.strongpipe.live
+    port: 11745
+    type: http
+    username: dcf12c7e7d
+    password: 26bae9b023
+    tls: true
+    skip-cert-verify: true
+  - name: 🇩🇪 HTTPS | 德国 | 13
+    server: h890361.strongpipe.live
+    port: 11743
+    type: http
+    username: dcf12c7e7d
+    password: 26bae9b023
+    tls: true
+    skip-cert-verify: true
+  - name: 🇩🇪 HTTPS | 德国 | 14
+    server: h890361.strongpipe.live
+    port: 11744
+    type: http
+    username: dcf12c7e7d
+    password: 26bae9b023
+    tls: true
+    skip-cert-verify: true
+  - name: 🇩🇪 HTTPS | 德国 | 15
+    server: h890361.strongpipe.live
+    port: 11745
+    type: http
+    username: dcf12c7e7d
+    password: 26bae9b023
+    tls: true
+    skip-cert-verify: true
+  - name: 🇩🇪 HTTPS | 德国 | 16
+    server: h961359.strongpipe.live
+    port: 11743
+    type: http
+    username: dcf12c7e7d
+    password: 26bae9b023
+    tls: true
+    skip-cert-verify: true
+  - name: 🇩🇪 HTTPS | 德国 | 17
+    server: h961359.strongpipe.live
+    port: 11744
+    type: http
+    username: dcf12c7e7d
+    password: 26bae9b023
+    tls: true
+    skip-cert-verify: true
+  - name: 🇩🇪 HTTPS | 德国 | 18
+    server: h961359.strongpipe.live
+    port: 11745
+    type: http
+    username: dcf12c7e7d
+    password: 26bae9b023
+    tls: true
+    skip-cert-verify: true
+  - name: 🇩🇪 HTTPS | 德国 | 19
+    server: h961684.strongpipe.live
+    port: 11743
+    type: http
+    username: dcf12c7e7d
+    password: 26bae9b023
+    tls: true
+    skip-cert-verify: true
+  - name: 🇩🇪 HTTPS | 德国 | 20
+    server: h961684.strongpipe.live
+    port: 11744
+    type: http
+    username: dcf12c7e7d
+    password: 26bae9b023
+    tls: true
+    skip-cert-verify: true
+  - name: 🇩🇪 HTTPS | 德国 | 21
+    server: h961684.strongpipe.live
+    port: 11745
+    type: http
+    username: dcf12c7e7d
+    password: 26bae9b023
+    tls: true
+    skip-cert-verify: true
+  - name: 🇨🇳 HTTPS | 台湾 | 1
+    server: h3816tw.strongpipe.live
+    port: 20443
+    type: http
+    username: dcf12c7e7d
+    password: 26bae9b023
+    tls: true
+    skip-cert-verify: true
+  - name: 🇨🇳 HTTPS | 台湾 | 2
+    server: h3816tw.strongpipe.live
+    port: 20444
+    type: http
+    username: dcf12c7e7d
+    password: 26bae9b023
+    tls: true
+    skip-cert-verify: true
+  - name: 🇨🇳 HTTPS | 台湾 | 3
+    server: h3816tw.strongpipe.live
+    port: 20445
+    type: http
+    username: dcf12c7e7d
+    password: 26bae9b023
+    tls: true
+    skip-cert-verify: true
+  - name: 🇨🇳 HTTPS | 台湾 | 4
+    server: h3816tw.strongpipe.live
+    port: 20446
+    type: http
+    username: dcf12c7e7d
+    password: 26bae9b023
+    tls: true
+    skip-cert-verify: true
+  - name: 🇨🇳 HTTPS | 台湾 | 5
+    server: h3816tw.strongpipe.live
+    port: 20447
+    type: http
+    username: dcf12c7e7d
+    password: 26bae9b023
+    tls: true
+    skip-cert-verify: true
+  - name: 🇨🇳 HTTPS | 台湾 | 6
+    server: h3816tw.strongpipe.live
+    port: 20448
+    type: http
+    username: dcf12c7e7d
+    password: 26bae9b023
+    tls: true
+    skip-cert-verify: true
+  - name: 🇨🇳 HTTPS | 台湾 | 7
+    server: h3816tw.strongpipe.live
+    port: 20449
+    type: http
+    username: dcf12c7e7d
+    password: 26bae9b023
+    tls: true
+    skip-cert-verify: true
+  - name: 🇨🇳 HTTPS | 台湾 | 8
+    server: h192837.strongpipe.live
+    port: 11343
+    type: http
+    username: dcf12c7e7d
+    password: 26bae9b023
+    tls: true
+    skip-cert-verify: true
+  - name: 🇨🇳 HTTPS | 台湾 | 9
+    server: h192837.strongpipe.live
+    port: 11344
+    type: http
+    username: dcf12c7e7d
+    password: 26bae9b023
+    tls: true
+    skip-cert-verify: true
+  - name: 🇨🇳 HTTPS | 台湾 | 10
+    server: h192837.strongpipe.live
+    port: 11345
+    type: http
+    username: dcf12c7e7d
+    password: 26bae9b023
+    tls: true
+    skip-cert-verify: true
+  - name: 🇨🇳 HTTPS | 台湾 | 11
+    server: h517439.strongpipe.live
+    port: 11343
+    type: http
+    username: dcf12c7e7d
+    password: 26bae9b023
+    tls: true
+    skip-cert-verify: true
+  - name: 🇨🇳 HTTPS | 台湾 | 12
+    server: h517439.strongpipe.live
+    port: 11344
+    type: http
+    username: dcf12c7e7d
+    password: 26bae9b023
+    tls: true
+    skip-cert-verify: true
+  - name: 🇨🇳 HTTPS | 台湾 | 13
+    server: h517439.strongpipe.live
+    port: 11345
+    type: http
+    username: dcf12c7e7d
+    password: 26bae9b023
+    tls: true
+    skip-cert-verify: true
+  - name: 🇨🇳 HTTPS | 台湾 | 14
+    server: h63956.strongpipe.live
+    port: 11343
+    type: http
+    username: dcf12c7e7d
+    password: 26bae9b023
+    tls: true
+    skip-cert-verify: true
+  - name: 🇨🇳 HTTPS | 台湾 | 15
+    server: h63956.strongpipe.live
+    port: 11344
+    type: http
+    username: dcf12c7e7d
+    password: 26bae9b023
+    tls: true
+    skip-cert-verify: true
+  - name: 🇨🇳 HTTPS | 台湾 | 16
+    server: h63956.strongpipe.live
+    port: 11345
+    type: http
+    username: dcf12c7e7d
+    password: 26bae9b023
+    tls: true
+    skip-cert-verify: true
+  - name: 🇨🇳 HTTPS | 台湾 | 17
+    server: h738106.strongpipe.live
+    port: 11343
+    type: http
+    username: dcf12c7e7d
+    password: 26bae9b023
+    tls: true
+    skip-cert-verify: true
+  - name: 🇨🇳 HTTPS | 台湾 | 18
+    server: h738106.strongpipe.live
+    port: 11344
+    type: http
+    username: dcf12c7e7d
+    password: 26bae9b023
+    tls: true
+    skip-cert-verify: true
+  - name: 🇨🇳 HTTPS | 台湾 | 19
+    server: h738106.strongpipe.live
+    port: 11345
+    type: http
+    username: dcf12c7e7d
+    password: 26bae9b023
+    tls: true
+    skip-cert-verify: true
+  - name: 🇨🇳 HTTPS | 台湾 | 20
+    server: h890361.strongpipe.live
+    port: 11343
+    type: http
+    username: dcf12c7e7d
+    password: 26bae9b023
+    tls: true
+    skip-cert-verify: true
+  - name: 🇨🇳 HTTPS | 台湾 | 21
+    server: h890361.strongpipe.live
+    port: 11344
+    type: http
+    username: dcf12c7e7d
+    password: 26bae9b023
+    tls: true
+    skip-cert-verify: true
+  - name: 🇨🇳 HTTPS | 台湾 | 22
+    server: h890361.strongpipe.live
+    port: 11345
+    type: http
+    username: dcf12c7e7d
+    password: 26bae9b023
+    tls: true
+    skip-cert-verify: true
+  - name: 🇨🇳 HTTPS | 台湾 | 23
+    server: h961359.strongpipe.live
+    port: 11343
+    type: http
+    username: dcf12c7e7d
+    password: 26bae9b023
+    tls: true
+    skip-cert-verify: true
+  - name: 🇨🇳 HTTPS | 台湾 | 24
+    server: h961359.strongpipe.live
+    port: 11344
+    type: http
+    username: dcf12c7e7d
+    password: 26bae9b023
+    tls: true
+    skip-cert-verify: true
+  - name: 🇨🇳 HTTPS | 台湾 | 25
+    server: h961359.strongpipe.live
+    port: 11345
+    type: http
+    username: dcf12c7e7d
+    password: 26bae9b023
+    tls: true
+    skip-cert-verify: true
+  - name: 🇨🇳 HTTPS | 台湾 | 26
+    server: h961684.strongpipe.live
+    port: 11343
+    type: http
+    username: dcf12c7e7d
+    password: 26bae9b023
+    tls: true
+    skip-cert-verify: true
+  - name: 🇨🇳 HTTPS | 台湾 | 27
+    server: h961684.strongpipe.live
+    port: 11344
+    type: http
+    username: dcf12c7e7d
+    password: 26bae9b023
+    tls: true
+    skip-cert-verify: true
+  - name: 🇨🇳 HTTPS | 台湾 | 28
+    server: h961684.strongpipe.live
+    port: 11345
+    type: http
+    username: dcf12c7e7d
+    password: 26bae9b023
+    tls: true
+    skip-cert-verify: true
+
+proxy-groups:
+  - name: 🌐 节点选择
+    type: select
+    proxies:
+      - 💡 Auto
+      - 🇭🇰 HTTPS | 香港 | 1
+      - 🇭🇰 HTTPS | 香港 | 2
+      - 🇭🇰 HTTPS | 香港 | 3
+      - 🇭🇰 HTTPS | 香港 | 4
+      - 🇭🇰 HTTPS | 香港 | 5
+      - 🇭🇰 HTTPS | 香港 | 6
+      - 🇭🇰 HTTPS | 香港 | 7
+      - 🇭🇰 HTTPS | 香港 | 8
+      - 🇭🇰 HTTPS | 香港 | 9
+      - 🇭🇰 HTTPS | 香港 | 10
+      - 🇭🇰 HTTPS | 香港 | 11
+      - 🇭🇰 HTTPS | 香港 | 12
+      - 🇭🇰 HTTPS | 香港 | 13
+      - 🇭🇰 HTTPS | 香港 | 14
+      - 🇭🇰 HTTPS | 香港 | 15
+      - 🇭🇰 HTTPS | 香港 | 16
+      - 🇭🇰 HTTPS | 香港 | 17
+      - 🇭🇰 HTTPS | 香港 | 18
+      - 🇭🇰 HTTPS | 香港 | 19
+      - 🇭🇰 HTTPS | 香港 | 20
+      - 🇭🇰 HTTPS | 香港 | 21
+      - 🇯🇵 HTTPS | 日本 | 1
+      - 🇯🇵 HTTPS | 日本 | 2
+      - 🇯🇵 HTTPS | 日本 | 3
+      - 🇯🇵 HTTPS | 日本 | 4
+      - 🇯🇵 HTTPS | 日本 | 5
+      - 🇯🇵 HTTPS | 日本 | 6
+      - 🇯🇵 HTTPS | 日本 | 7
+      - 🇯🇵 HTTPS | 日本 | 8
+      - 🇯🇵 HTTPS | 日本 | 9
+      - 🇯🇵 HTTPS | 日本 | 10
+      - 🇯🇵 HTTPS | 日本 | 11
+      - 🇯🇵 HTTPS | 日本 | 12
+      - 🇯🇵 HTTPS | 日本 | 13
+      - 🇯🇵 HTTPS | 日本 | 14
+      - 🇯🇵 HTTPS | 日本 | 15
+      - 🇯🇵 HTTPS | 日本 | 16
+      - 🇯🇵 HTTPS | 日本 | 17
+      - 🇯🇵 HTTPS | 日本 | 18
+      - 🇯🇵 HTTPS | 日本 | 19
+      - 🇯🇵 HTTPS | 日本 | 20
+      - 🇯🇵 HTTPS | 日本 | 21
+      - 🇺🇸 HTTPS | 美国 | 1
+      - 🇺🇸 HTTPS | 美国 | 2
+      - 🇺🇸 HTTPS | 美国 | 3
+      - 🇺🇸 HTTPS | 美国 | 4
+      - 🇺🇸 HTTPS | 美国 | 5
+      - 🇺🇸 HTTPS | 美国 | 6
+      - 🇺🇸 HTTPS | 美国 | 7
+      - 🇺🇸 HTTPS | 美国 | 8
+      - 🇺🇸 HTTPS | 美国 | 9
+      - 🇺🇸 HTTPS | 美国 | 10
+      - 🇺🇸 HTTPS | 美国 | 11
+      - 🇺🇸 HTTPS | 美国 | 12
+      - 🇺🇸 HTTPS | 美国 | 13
+      - 🇺🇸 HTTPS | 美国 | 14
+      - 🇺🇸 HTTPS | 美国 | 15
+      - 🇺🇸 HTTPS | 美国 | 16
+      - 🇺🇸 HTTPS | 美国 | 17
+      - 🇺🇸 HTTPS | 美国 | 18
+      - 🇺🇸 HTTPS | 美国 | 19
+      - 🇺🇸 HTTPS | 美国 | 20
+      - 🇺🇸 HTTPS | 美国 | 21
+      - 🇩🇪 HTTPS | 德国 | 1
+      - 🇩🇪 HTTPS | 德国 | 2
+      - 🇩🇪 HTTPS | 德国 | 3
+      - 🇩🇪 HTTPS | 德国 | 4
+      - 🇩🇪 HTTPS | 德国 | 5
+      - 🇩🇪 HTTPS | 德国 | 6
+      - 🇩🇪 HTTPS | 德国 | 7
+      - 🇩🇪 HTTPS | 德国 | 8
+      - 🇩🇪 HTTPS | 德国 | 9
+      - 🇩🇪 HTTPS | 德国 | 10
+      - 🇩🇪 HTTPS | 德国 | 11
+      - 🇩🇪 HTTPS | 德国 | 12
+      - 🇩🇪 HTTPS | 德国 | 13
+      - 🇩🇪 HTTPS | 德国 | 14
+      - 🇩🇪 HTTPS | 德国 | 15
+      - 🇩🇪 HTTPS | 德国 | 16
+      - 🇩🇪 HTTPS | 德国 | 17
+      - 🇩🇪 HTTPS | 德国 | 18
+      - 🇩🇪 HTTPS | 德国 | 19
+      - 🇩🇪 HTTPS | 德国 | 20
+      - 🇩🇪 HTTPS | 德国 | 21
+      - 🇨🇳 HTTPS | 台湾 | 1
+      - 🇨🇳 HTTPS | 台湾 | 2
+      - 🇨🇳 HTTPS | 台湾 | 3
+      - 🇨🇳 HTTPS | 台湾 | 4
+      - 🇨🇳 HTTPS | 台湾 | 5
+      - 🇨🇳 HTTPS | 台湾 | 6
+      - 🇨🇳 HTTPS | 台湾 | 7
+      - 🇨🇳 HTTPS | 台湾 | 1
+      - 🇨🇳 HTTPS | 台湾 | 2
+      - 🇨🇳 HTTPS | 台湾 | 3
+      - 🇨🇳 HTTPS | 台湾 | 4
+      - 🇨🇳 HTTPS | 台湾 | 5
+      - 🇨🇳 HTTPS | 台湾 | 6
+      - 🇨🇳 HTTPS | 台湾 | 7
+      - 🇨🇳 HTTPS | 台湾 | 8
+      - 🇨🇳 HTTPS | 台湾 | 9
+      - 🇨🇳 HTTPS | 台湾 | 10
+      - 🇨🇳 HTTPS | 台湾 | 11
+      - 🇨🇳 HTTPS | 台湾 | 12
+      - 🇨🇳 HTTPS | 台湾 | 13
+      - 🇨🇳 HTTPS | 台湾 | 14
+      - 🇨🇳 HTTPS | 台湾 | 15
+      - 🇨🇳 HTTPS | 台湾 | 16
+      - 🇨🇳 HTTPS | 台湾 | 17
+      - 🇨🇳 HTTPS | 台湾 | 18
+      - 🇨🇳 HTTPS | 台湾 | 19
+      - 🇨🇳 HTTPS | 台湾 | 20
+      - 🇨🇳 HTTPS | 台湾 | 21
+  - name: ☁️ 直连
+    type: select
+    proxies:
+      - DIRECT
+      - 🌐 节点选择
+  - name: 🛡 拦截
+    type: select
+    proxies:
+      - REJECT
+      - DIRECT
+  - name: 💡 Auto
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 50
+    proxies:
+      - 🇭🇰 HTTPS | 香港 | 1
+      - 🇭🇰 HTTPS | 香港 | 2
+      - 🇭🇰 HTTPS | 香港 | 3
+      - 🇭🇰 HTTPS | 香港 | 4
+      - 🇭🇰 HTTPS | 香港 | 5
+      - 🇭🇰 HTTPS | 香港 | 6
+      - 🇭🇰 HTTPS | 香港 | 7
+      - 🇭🇰 HTTPS | 香港 | 8
+      - 🇭🇰 HTTPS | 香港 | 9
+      - 🇭🇰 HTTPS | 香港 | 10
+      - 🇭🇰 HTTPS | 香港 | 11
+      - 🇭🇰 HTTPS | 香港 | 12
+      - 🇭🇰 HTTPS | 香港 | 13
+      - 🇭🇰 HTTPS | 香港 | 14
+      - 🇭🇰 HTTPS | 香港 | 15
+      - 🇭🇰 HTTPS | 香港 | 16
+      - 🇭🇰 HTTPS | 香港 | 17
+      - 🇭🇰 HTTPS | 香港 | 18
+      - 🇭🇰 HTTPS | 香港 | 19
+      - 🇭🇰 HTTPS | 香港 | 20
+      - 🇭🇰 HTTPS | 香港 | 21
+      - 🇯🇵 HTTPS | 日本 | 1
+      - 🇯🇵 HTTPS | 日本 | 2
+      - 🇯🇵 HTTPS | 日本 | 3
+      - 🇯🇵 HTTPS | 日本 | 4
+      - 🇯🇵 HTTPS | 日本 | 5
+      - 🇯🇵 HTTPS | 日本 | 6
+      - 🇯🇵 HTTPS | 日本 | 7
+      - 🇯🇵 HTTPS | 日本 | 8
+      - 🇯🇵 HTTPS | 日本 | 9
+      - 🇯🇵 HTTPS | 日本 | 10
+      - 🇯🇵 HTTPS | 日本 | 11
+      - 🇯🇵 HTTPS | 日本 | 12
+      - 🇯🇵 HTTPS | 日本 | 13
+      - 🇯🇵 HTTPS | 日本 | 14
+      - 🇯🇵 HTTPS | 日本 | 15
+      - 🇯🇵 HTTPS | 日本 | 16
+      - 🇯🇵 HTTPS | 日本 | 17
+      - 🇯🇵 HTTPS | 日本 | 18
+      - 🇯🇵 HTTPS | 日本 | 19
+      - 🇯🇵 HTTPS | 日本 | 20
+      - 🇯🇵 HTTPS | 日本 | 21
+      - 🇺🇸 HTTPS | 美国 | 1
+      - 🇺🇸 HTTPS | 美国 | 2
+      - 🇺🇸 HTTPS | 美国 | 3
+      - 🇺🇸 HTTPS | 美国 | 4
+      - 🇺🇸 HTTPS | 美国 | 5
+      - 🇺🇸 HTTPS | 美国 | 6
+      - 🇺🇸 HTTPS | 美国 | 7
+      - 🇺🇸 HTTPS | 美国 | 8
+      - 🇺🇸 HTTPS | 美国 | 9
+      - 🇺🇸 HTTPS | 美国 | 10
+      - 🇺🇸 HTTPS | 美国 | 11
+      - 🇺🇸 HTTPS | 美国 | 12
+      - 🇺🇸 HTTPS | 美国 | 13
+      - 🇺🇸 HTTPS | 美国 | 14
+      - 🇺🇸 HTTPS | 美国 | 15
+      - 🇺🇸 HTTPS | 美国 | 16
+      - 🇺🇸 HTTPS | 美国 | 17
+      - 🇺🇸 HTTPS | 美国 | 18
+      - 🇺🇸 HTTPS | 美国 | 19
+      - 🇺🇸 HTTPS | 美国 | 20
+      - 🇺🇸 HTTPS | 美国 | 21
+      - 🇩🇪 HTTPS | 德国 | 1
+      - 🇩🇪 HTTPS | 德国 | 2
+      - 🇩🇪 HTTPS | 德国 | 3
+      - 🇩🇪 HTTPS | 德国 | 4
+      - 🇩🇪 HTTPS | 德国 | 5
+      - 🇩🇪 HTTPS | 德国 | 6
+      - 🇩🇪 HTTPS | 德国 | 7
+      - 🇩🇪 HTTPS | 德国 | 8
+      - 🇩🇪 HTTPS | 德国 | 9
+      - 🇩🇪 HTTPS | 德国 | 10
+      - 🇩🇪 HTTPS | 德国 | 11
+      - 🇩🇪 HTTPS | 德国 | 12
+      - 🇩🇪 HTTPS | 德国 | 13
+      - 🇩🇪 HTTPS | 德国 | 14
+      - 🇩🇪 HTTPS | 德国 | 15
+      - 🇩🇪 HTTPS | 德国 | 16
+      - 🇩🇪 HTTPS | 德国 | 17
+      - 🇩🇪 HTTPS | 德国 | 18
+      - 🇩🇪 HTTPS | 德国 | 19
+      - 🇩🇪 HTTPS | 德国 | 20
+      - 🇩🇪 HTTPS | 德国 | 21
+      - 🇨🇳 HTTPS | 台湾 | 1
+      - 🇨🇳 HTTPS | 台湾 | 2
+      - 🇨🇳 HTTPS | 台湾 | 3
+      - 🇨🇳 HTTPS | 台湾 | 4
+      - 🇨🇳 HTTPS | 台湾 | 5
+      - 🇨🇳 HTTPS | 台湾 | 6
+      - 🇨🇳 HTTPS | 台湾 | 7
+      - 🇨🇳 HTTPS | 台湾 | 1
+      - 🇨🇳 HTTPS | 台湾 | 2
+      - 🇨🇳 HTTPS | 台湾 | 3
+      - 🇨🇳 HTTPS | 台湾 | 4
+      - 🇨🇳 HTTPS | 台湾 | 5
+      - 🇨🇳 HTTPS | 台湾 | 6
+      - 🇨🇳 HTTPS | 台湾 | 7
+      - 🇨🇳 HTTPS | 台湾 | 8
+      - 🇨🇳 HTTPS | 台湾 | 9
+      - 🇨🇳 HTTPS | 台湾 | 10
+      - 🇨🇳 HTTPS | 台湾 | 11
+      - 🇨🇳 HTTPS | 台湾 | 12
+      - 🇨🇳 HTTPS | 台湾 | 13
+      - 🇨🇳 HTTPS | 台湾 | 14
+      - 🇨🇳 HTTPS | 台湾 | 15
+      - 🇨🇳 HTTPS | 台湾 | 16
+      - 🇨🇳 HTTPS | 台湾 | 17
+      - 🇨🇳 HTTPS | 台湾 | 18
+      - 🇨🇳 HTTPS | 台湾 | 19
+      - 🇨🇳 HTTPS | 台湾 | 20
+      - 🇨🇳 HTTPS | 台湾 | 21
+
+rules:
+  - DOMAIN-SUFFIX,digicert.com,🌐 节点选择
+  - DOMAIN,ocsp.comodoca.com,🌐 节点选择
+  - DOMAIN,ocsp.usertrust.com,🌐 节点选择
+  - DOMAIN,ocsp.sectigo.com,🌐 节点选择
+  - DOMAIN,ocsp.verisign.net,🌐 节点选择
+  - DOMAIN-KEYWORD,linkedin,🌐 节点选择
+  - DOMAIN-SUFFIX,1password.com,🌐 节点选择
+  - DOMAIN-SUFFIX,adguard.org,🌐 节点选择
+  - DOMAIN-SUFFIX,bit.no.com,🌐 节点选择
+  - DOMAIN-SUFFIX,btlibrary.me,🌐 节点选择
+  - DOMAIN-SUFFIX,cccat.io,🌐 节点选择
+  - DOMAIN-SUFFIX,cloudcone.com,🌐 节点选择
+  - DOMAIN-SUFFIX,dubox.com,🌐 节点选择
+  - DOMAIN-SUFFIX,gameloft.com,🌐 节点选择
+  - DOMAIN-SUFFIX,garena.com,🌐 节点选择
+  - DOMAIN-SUFFIX,hoyolab.com,🌐 节点选择
+  - DOMAIN-SUFFIX,inoreader.com,🌐 节点选择
+  - DOMAIN-SUFFIX,ip138.com,🌐 节点选择
+  - DOMAIN-SUFFIX,myteamspeak.com,🌐 节点选择
+  - DOMAIN-SUFFIX,notion.so,🌐 节点选择
+  - DOMAIN-SUFFIX,ping.pe,🌐 节点选择
+  - DOMAIN-SUFFIX,reddit.com,🌐 节点选择
+  - DOMAIN-SUFFIX,teddysun.com,🌐 节点选择
+  - DOMAIN-SUFFIX,tumbex.com,🌐 节点选择
+  - DOMAIN-SUFFIX,twdvd.com,🌐 节点选择
+  - DOMAIN-SUFFIX,unsplash.com,🌐 节点选择
+  - DOMAIN-SUFFIX,eu,🌐 节点选择
+  - DOMAIN-SUFFIX,hk,🌐 节点选择
+  - DOMAIN-SUFFIX,jp,🌐 节点选择
+  - DOMAIN-SUFFIX,kr,🌐 节点选择
+  - DOMAIN-SUFFIX,sg,🌐 节点选择
+  - DOMAIN-SUFFIX,tw,🌐 节点选择
+  - DOMAIN-SUFFIX,uk,🌐 节点选择
+  - DOMAIN-SUFFIX,us,🌐 节点选择
+  - DOMAIN-KEYWORD,1e100,🌐 节点选择
+  - DOMAIN-KEYWORD,abema,🌐 节点选择
+  - DOMAIN-KEYWORD,appledaily,🌐 节点选择
+  - DOMAIN-KEYWORD,avtb,🌐 节点选择
+  - DOMAIN-KEYWORD,beetalk,🌐 节点选择
+  - DOMAIN-KEYWORD,blogspot,🌐 节点选择
+  - DOMAIN-KEYWORD,dropbox,🌐 节点选择
+  - DOMAIN-KEYWORD,facebook,🌐 节点选择
+  - DOMAIN-KEYWORD,fbcdn,🌐 节点选择
+  - DOMAIN-KEYWORD,github,🌐 节点选择
+  - DOMAIN-KEYWORD,gmail,🌐 节点选择
+  - DOMAIN-KEYWORD,google,🌐 节点选择
+  - DOMAIN-KEYWORD,instagram,🌐 节点选择
+  - DOMAIN-KEYWORD,porn,🌐 节点选择
+  - DOMAIN-KEYWORD,sci-hub,🌐 节点选择
+  - DOMAIN-KEYWORD,spotify,🌐 节点选择
+  - DOMAIN-KEYWORD,telegram,🌐 节点选择
+  - DOMAIN-KEYWORD,twitter,🌐 节点选择
+  - DOMAIN-KEYWORD,whatsapp,🌐 节点选择
+  - DOMAIN-KEYWORD,youtube,🌐 节点选择
+  - DOMAIN-SUFFIX,4sqi.net,🌐 节点选择
+  - DOMAIN-SUFFIX,a248.e.akamai.net,🌐 节点选择
+  - DOMAIN-SUFFIX,adobedtm.com,🌐 节点选择
+  - DOMAIN-SUFFIX,ampproject.org,🌐 节点选择
+  - DOMAIN-SUFFIX,android.com,🌐 节点选择
+  - DOMAIN-SUFFIX,aolcdn.com,🌐 节点选择
+  - DOMAIN-SUFFIX,apkmirror.com,🌐 节点选择
+  - DOMAIN-SUFFIX,apkpure.com,🌐 节点选择
+  - DOMAIN-SUFFIX,app-measurement.com,🌐 节点选择
+  - DOMAIN-SUFFIX,appspot.com,🌐 节点选择
+  - DOMAIN-SUFFIX,archive.org,🌐 节点选择
+  - DOMAIN-SUFFIX,armorgames.com,🌐 节点选择
+  - DOMAIN-SUFFIX,aspnetcdn.com,🌐 节点选择
+  - DOMAIN-SUFFIX,awsstatic.com,🌐 节点选择
+  - DOMAIN-SUFFIX,azureedge.net,🌐 节点选择
+  - DOMAIN-SUFFIX,azurewebsites.net,🌐 节点选择
+  - DOMAIN-SUFFIX,bandwagonhost.com\,🌐 节点选择
+  - DOMAIN-SUFFIX,bkrtx.com,🌐 节点选择
+  - DOMAIN-SUFFIX,blogcdn.com,🌐 节点选择
+  - DOMAIN-SUFFIX,blogger.com,🌐 节点选择
+  - DOMAIN-SUFFIX,blogsmithmedia.com,🌐 节点选择
+  - DOMAIN-SUFFIX,blogspot.com,🌐 节点选择
+  - DOMAIN-SUFFIX,blogspot.hk,🌐 节点选择
+  - DOMAIN-SUFFIX,blogspot.jp,🌐 节点选择
+  - DOMAIN-SUFFIX,bloomberg.cn,🌐 节点选择
+  - DOMAIN-SUFFIX,bloomberg.com,🌐 节点选择
+  - DOMAIN-SUFFIX,box.com,🌐 节点选择
+  - DOMAIN-SUFFIX,cachefly.net,🌐 节点选择
+  - DOMAIN-SUFFIX,cdnst.net,🌐 节点选择
+  - DOMAIN-SUFFIX,cloudfront.net,🌐 节点选择
+  - DOMAIN-SUFFIX,daum.net,🌐 节点选择
+  - DOMAIN-SUFFIX,demdex.net,🌐 节点选择
+  - DOMAIN-SUFFIX,deskconnect.com,🌐 节点选择
+  - DOMAIN-SUFFIX,disqus.com,🌐 节点选择
+  - DOMAIN-SUFFIX,disquscdn.com,🌐 节点选择
+  - DOMAIN-SUFFIX,dropbox.com,🌐 节点选择
+  - DOMAIN-SUFFIX,dropboxapi.com,🌐 节点选择
+  - DOMAIN-SUFFIX,dropboxstatic.com,🌐 节点选择
+  - DOMAIN-SUFFIX,dropboxusercontent.com,🌐 节点选择
+  - DOMAIN-SUFFIX,duckduckgo.com,🌐 节点选择
+  - DOMAIN-SUFFIX,edgecastcdn.net,🌐 节点选择
+  - DOMAIN-SUFFIX,edgekey.net,🌐 节点选择
+  - DOMAIN-SUFFIX,edgesuite.net,🌐 节点选择
+  - DOMAIN-SUFFIX,eurekavpt.com,🌐 节点选择
+  - DOMAIN-SUFFIX,fastmail.com,🌐 节点选择
+  - DOMAIN-SUFFIX,firebaseio.com,🌐 节点选择
+  - DOMAIN-SUFFIX,flickr.com,🌐 节点选择
+  - DOMAIN-SUFFIX,flipboard.com,🌐 节点选择
+  - DOMAIN-SUFFIX,gfx.ms,🌐 节点选择
+  - DOMAIN-SUFFIX,gongm.in,🌐 节点选择
+  - DOMAIN-SUFFIX,hulu.com,🌐 节点选择
+  - DOMAIN-SUFFIX,id.heroku.com,🌐 节点选择
+  - DOMAIN-SUFFIX,io.io,🌐 节点选择
+  - DOMAIN-SUFFIX,issuu.com,🌐 节点选择
+  - DOMAIN-SUFFIX,ixquick.com,🌐 节点选择
+  - DOMAIN-SUFFIX,jtvnw.net,🌐 节点选择
+  - DOMAIN-SUFFIX,kat.cr,🌐 节点选择
+  - DOMAIN-SUFFIX,kik.com,🌐 节点选择
+  - DOMAIN-SUFFIX,kobo.com,🌐 节点选择
+  - DOMAIN-SUFFIX,kobobooks.com,🌐 节点选择
+  - DOMAIN-SUFFIX,livefilestore.com,🌐 节点选择
+  - DOMAIN-SUFFIX,llnwd.net,🌐 节点选择
+  - DOMAIN-SUFFIX,macrumors.com,🌐 节点选择
+  - DOMAIN-SUFFIX,medium.com,🌐 节点选择
+  - DOMAIN-SUFFIX,mega.nz,🌐 节点选择
+  - DOMAIN-SUFFIX,megaupload.com,🌐 节点选择
+  - DOMAIN-SUFFIX,messenger.com,🌐 节点选择
+  - DOMAIN-SUFFIX,netdna-cdn.com,🌐 节点选择
+  - DOMAIN-SUFFIX,nintendo.net,🌐 节点选择
+  - DOMAIN-SUFFIX,nsstatic.net,🌐 节点选择
+  - DOMAIN-SUFFIX,nytstyle.com,🌐 节点选择
+  - DOMAIN-SUFFIX,overcast.fm,🌐 节点选择
+  - DOMAIN-SUFFIX,periscope.tv,🌐 节点选择
+  - DOMAIN-SUFFIX,pinimg.com,🌐 节点选择
+  - DOMAIN-SUFFIX,pinterest.com,🌐 节点选择
+  - DOMAIN-SUFFIX,potato.im,🌐 节点选择
+  - DOMAIN-SUFFIX,prfct.co,🌐 节点选择
+  - DOMAIN-SUFFIX,pscp.tv,🌐 节点选择
+  - DOMAIN-SUFFIX,quora.com,🌐 节点选择
+  - DOMAIN-SUFFIX,resilio.com,🌐 节点选择
+  - DOMAIN-SUFFIX,sfx.ms,🌐 节点选择
+  - DOMAIN-SUFFIX,slack-edge.com,🌐 节点选择
+  - DOMAIN-SUFFIX,smartdnsproxy.com,🌐 节点选择
+  - DOMAIN-SUFFIX,sndcdn.com,🌐 节点选择
+  - DOMAIN-SUFFIX,soundcloud.com,🌐 节点选择
+  - DOMAIN-SUFFIX,startpage.com,🌐 节点选择
+  - DOMAIN-SUFFIX,staticflickr.com,🌐 节点选择
+  - DOMAIN-SUFFIX,symauth.com,🌐 节点选择
+  - DOMAIN-SUFFIX,symcb.com,🌐 节点选择
+  - DOMAIN-SUFFIX,symcd.com,🌐 节点选择
+  - DOMAIN-SUFFIX,textnow.com,🌐 节点选择
+  - DOMAIN-SUFFIX,textnow.me,🌐 节点选择
+  - DOMAIN-SUFFIX,thefacebook.com,🌐 节点选择
+  - DOMAIN-SUFFIX,thepiratebay.org,🌐 节点选择
+  - DOMAIN-SUFFIX,torproject.org,🌐 节点选择
+  - DOMAIN-SUFFIX,trustasiassl.com,🌐 节点选择
+  - DOMAIN-SUFFIX,tumblr.co,🌐 节点选择
+  - DOMAIN-SUFFIX,tumblr.com,🌐 节点选择
+  - DOMAIN-SUFFIX,tvb.com,🌐 节点选择
+  - DOMAIN-SUFFIX,txmblr.com,🌐 节点选择
+  - DOMAIN-SUFFIX,v2ex.com,🌐 节点选择
+  - DOMAIN-SUFFIX,vimeo.com,🌐 节点选择
+  - DOMAIN-SUFFIX,vine.co,🌐 节点选择
+  - DOMAIN-SUFFIX,vox-cdn.com,🌐 节点选择
+  - DOMAIN-SUFFIX,amazon.co.jp,🌐 节点选择
+  - DOMAIN-SUFFIX,amazon.com,🌐 节点选择
+  - DOMAIN-SUFFIX,amazonaws.com,🌐 节点选择
+  - IP-CIDR,13.32.0.0/15,🌐 节点选择,no-resolve
+  - IP-CIDR,13.35.0.0/17,🌐 节点选择,no-resolve
+  - IP-CIDR,18.184.0.0/15,🌐 节点选择,no-resolve
+  - IP-CIDR,18.194.0.0/15,🌐 节点选择,no-resolve
+  - IP-CIDR,18.208.0.0/13,🌐 节点选择,no-resolve
+  - IP-CIDR,18.232.0.0/14,🌐 节点选择,no-resolve
+  - IP-CIDR,52.58.0.0/15,🌐 节点选择,no-resolve
+  - IP-CIDR,52.74.0.0/16,🌐 节点选择,no-resolve
+  - IP-CIDR,52.77.0.0/16,🌐 节点选择,no-resolve
+  - IP-CIDR,52.84.0.0/15,🌐 节点选择,no-resolve
+  - IP-CIDR,52.200.0.0/13,🌐 节点选择,no-resolve
+  - IP-CIDR,54.93.0.0/16,🌐 节点选择,no-resolve
+  - IP-CIDR,54.156.0.0/14,🌐 节点选择,no-resolve
+  - IP-CIDR,54.226.0.0/15,🌐 节点选择,no-resolve
+  - IP-CIDR,54.230.156.0/22,🌐 节点选择,no-resolve
+  - DOMAIN-KEYWORD,uk-live,🌐 节点选择
+  - DOMAIN-SUFFIX,bbc.co,🌐 节点选择
+  - DOMAIN-SUFFIX,bbc.com,🌐 节点选择
+  - DOMAIN-SUFFIX,discord.co,🌐 节点选择
+  - DOMAIN-SUFFIX,discord.com,🌐 节点选择
+  - DOMAIN-SUFFIX,discord.gg,🌐 节点选择
+  - DOMAIN-SUFFIX,discord.media,🌐 节点选择
+  - DOMAIN-SUFFIX,discordapp.com,🌐 节点选择
+  - DOMAIN-SUFFIX,discordapp.net,🌐 节点选择
+  - DOMAIN-SUFFIX,facebook.com,🌐 节点选择
+  - DOMAIN-SUFFIX,fb.com,🌐 节点选择
+  - DOMAIN-SUFFIX,fb.me,🌐 节点选择
+  - DOMAIN-SUFFIX,fbcdn.com,🌐 节点选择
+  - DOMAIN-SUFFIX,fbcdn.net,🌐 节点选择
+  - IP-CIDR,31.13.24.0/21,🌐 节点选择,no-resolve
+  - IP-CIDR,31.13.64.0/18,🌐 节点选择,no-resolve
+  - IP-CIDR,45.64.40.0/22,🌐 节点选择,no-resolve
+  - IP-CIDR,66.220.144.0/20,🌐 节点选择,no-resolve
+  - IP-CIDR,69.63.176.0/20,🌐 节点选择,no-resolve
+  - IP-CIDR,69.171.224.0/19,🌐 节点选择,no-resolve
+  - IP-CIDR,74.119.76.0/22,🌐 节点选择,no-resolve
+  - IP-CIDR,103.4.96.0/22,🌐 节点选择,no-resolve
+  - IP-CIDR,129.134.0.0/17,🌐 节点选择,no-resolve
+  - IP-CIDR,157.240.0.0/17,🌐 节点选择,no-resolve
+  - IP-CIDR,173.252.64.0/18,🌐 节点选择,no-resolve
+  - IP-CIDR,179.60.192.0/22,🌐 节点选择,no-resolve
+  - IP-CIDR,185.60.216.0/22,🌐 节点选择,no-resolve
+  - IP-CIDR,204.15.20.0/22,🌐 节点选择,no-resolve
+  - DOMAIN-SUFFIX,github.com,🌐 节点选择
+  - DOMAIN-SUFFIX,github.io,🌐 节点选择
+  - DOMAIN-SUFFIX,githubapp.com,🌐 节点选择
+  - DOMAIN-SUFFIX,githubassets.com,🌐 节点选择
+  - DOMAIN-SUFFIX,githubusercontent.com,🌐 节点选择
+  - DOMAIN-SUFFIX,1e100.net,🌐 节点选择
+  - DOMAIN-SUFFIX,2mdn.net,🌐 节点选择
+  - DOMAIN-SUFFIX,app-measurement.net,🌐 节点选择
+  - DOMAIN-SUFFIX,g.co,🌐 节点选择
+  - DOMAIN-SUFFIX,ggpht.com,🌐 节点选择
+  - DOMAIN-SUFFIX,goo.gl,🌐 节点选择
+  - DOMAIN-SUFFIX,googleapis.cn,🌐 节点选择
+  - DOMAIN-SUFFIX,googleapis.com,🌐 节点选择
+  - DOMAIN-SUFFIX,gstatic.cn,🌐 节点选择
+  - DOMAIN-SUFFIX,gstatic.com,🌐 节点选择
+  - DOMAIN-SUFFIX,gvt0.com,🌐 节点选择
+  - DOMAIN-SUFFIX,gvt1.com,🌐 节点选择
+  - DOMAIN-SUFFIX,gvt2.com,🌐 节点选择
+  - DOMAIN-SUFFIX,gvt3.com,🌐 节点选择
+  - DOMAIN-SUFFIX,xn--ngstr-lra8j.com,🌐 节点选择
+  - DOMAIN-SUFFIX,youtu.be,🌐 节点选择
+  - DOMAIN-SUFFIX,youtube-nocookie.com,🌐 节点选择
+  - DOMAIN-SUFFIX,youtube.com,🌐 节点选择
+  - DOMAIN-SUFFIX,yt.be,🌐 节点选择
+  - DOMAIN-SUFFIX,ytimg.com,🌐 节点选择
+  - IP-CIDR,74.125.0.0/16,🌐 节点选择,no-resolve
+  - IP-CIDR,173.194.0.0/16,🌐 节点选择,no-resolve
+  - IP-CIDR,120.232.181.162/32,🌐 节点选择,no-resolve
+  - IP-CIDR,120.241.147.226/32,🌐 节点选择,no-resolve
+  - IP-CIDR,120.253.253.226/32,🌐 节点选择,no-resolve
+  - IP-CIDR,120.253.255.162/32,🌐 节点选择,no-resolve
+  - IP-CIDR,120.253.255.34/32,🌐 节点选择,no-resolve
+  - IP-CIDR,120.253.255.98/32,🌐 节点选择,no-resolve
+  - IP-CIDR,180.163.150.162/32,🌐 节点选择,no-resolve
+  - IP-CIDR,180.163.150.34/32,🌐 节点选择,no-resolve
+  - IP-CIDR,180.163.151.162/32,🌐 节点选择,no-resolve
+  - IP-CIDR,180.163.151.34/32,🌐 节点选择,no-resolve
+  - IP-CIDR,203.208.39.0/24,🌐 节点选择,no-resolve
+  - IP-CIDR,203.208.40.0/24,🌐 节点选择,no-resolve
+  - IP-CIDR,203.208.41.0/24,🌐 节点选择,no-resolve
+  - IP-CIDR,203.208.43.0/24,🌐 节点选择,no-resolve
+  - IP-CIDR,203.208.50.0/24,🌐 节点选择,no-resolve
+  - IP-CIDR,220.181.174.162/32,🌐 节点选择,no-resolve
+  - IP-CIDR,220.181.174.226/32,🌐 节点选择,no-resolve
+  - IP-CIDR,220.181.174.34/32,🌐 节点选择,no-resolve
+  - DOMAIN-SUFFIX,cdninstagram.com,🌐 节点选择
+  - DOMAIN-SUFFIX,instagram.com,🌐 节点选择
+  - DOMAIN-SUFFIX,instagr.am,🌐 节点选择
+  - DOMAIN-SUFFIX,kakao.com,🌐 节点选择
+  - DOMAIN-SUFFIX,kakao.co.kr,🌐 节点选择
+  - DOMAIN-SUFFIX,kakaocdn.net,🌐 节点选择
+  - IP-CIDR,1.201.0.0/24,🌐 节点选择,no-resolve
+  - IP-CIDR,27.0.236.0/22,🌐 节点选择,no-resolve
+  - IP-CIDR,103.27.148.0/22,🌐 节点选择,no-resolve
+  - IP-CIDR,103.246.56.0/22,🌐 节点选择,no-resolve
+  - IP-CIDR,110.76.140.0/22,🌐 节点选择,no-resolve
+  - IP-CIDR,113.61.104.0/22,🌐 节点选择,no-resolve
+  - DOMAIN-SUFFIX,lin.ee,🌐 节点选择
+  - DOMAIN-SUFFIX,line-apps.com,🌐 节点选择
+  - DOMAIN-SUFFIX,line-cdn.net,🌐 节点选择
+  - DOMAIN-SUFFIX,line-scdn.net,🌐 节点选择
+  - DOMAIN-SUFFIX,line.me,🌐 节点选择
+  - DOMAIN-SUFFIX,line.naver.jp,🌐 节点选择
+  - DOMAIN-SUFFIX,nhncorp.jp,🌐 节点选择
+  - IP-CIDR,103.2.28.0/24,🌐 节点选择,no-resolve
+  - IP-CIDR,103.2.30.0/23,🌐 节点选择,no-resolve
+  - IP-CIDR,119.235.224.0/24,🌐 节点选择,no-resolve
+  - IP-CIDR,119.235.232.0/24,🌐 节点选择,no-resolve
+  - IP-CIDR,119.235.235.0/24,🌐 节点选择,no-resolve
+  - IP-CIDR,119.235.236.0/23,🌐 节点选择,no-resolve
+  - IP-CIDR,147.92.128.0/17,🌐 节点选择,no-resolve
+  - IP-CIDR,203.104.128.0/19,🌐 节点选择,no-resolve
+  - DOMAIN-KEYWORD,1drv,🌐 节点选择
+  - DOMAIN-KEYWORD,onedrive,🌐 节点选择
+  - DOMAIN-KEYWORD,skydrive,🌐 节点选择
+  - DOMAIN-SUFFIX,livefilestore.com,🌐 节点选择
+  - DOMAIN-SUFFIX,oneclient.sfx.ms,🌐 节点选择
+  - DOMAIN-SUFFIX,onedrive.com,🌐 节点选择
+  - DOMAIN-SUFFIX,onedrive.live.com,🌐 节点选择
+  - DOMAIN-SUFFIX,photos.live.com,🌐 节点选择
+  - DOMAIN-SUFFIX,skydrive.wns.windows.com,🌐 节点选择
+  - DOMAIN-SUFFIX,spoprod-a.akamaihd.net,🌐 节点选择
+  - DOMAIN-SUFFIX,storage.live.com,🌐 节点选择
+  - DOMAIN-SUFFIX,storage.msn.com,🌐 节点选择
+  - DOMAIN-KEYWORD,porn,🌐 节点选择
+  - DOMAIN-SUFFIX,8teenxxx.com,🌐 节点选择
+  - DOMAIN-SUFFIX,ahcdn.com,🌐 节点选择
+  - DOMAIN-SUFFIX,bcvcdn.com,🌐 节点选择
+  - DOMAIN-SUFFIX,bongacams.com,🌐 节点选择
+  - DOMAIN-SUFFIX,chaturbate.com,🌐 节点选择
+  - DOMAIN-SUFFIX,dditscdn.com,🌐 节点选择
+  - DOMAIN-SUFFIX,livejasmin.com,🌐 节点选择
+  - DOMAIN-SUFFIX,phncdn.com,🌐 节点选择
+  - DOMAIN-SUFFIX,phprcdn.com,🌐 节点选择
+  - DOMAIN-SUFFIX,pornhub.com,🌐 节点选择
+  - DOMAIN-SUFFIX,pornhubpremium.com,🌐 节点选择
+  - DOMAIN-SUFFIX,rdtcdn.com,🌐 节点选择
+  - DOMAIN-SUFFIX,redtube.com,🌐 节点选择
+  - DOMAIN-SUFFIX,sb-cd.com,🌐 节点选择
+  - DOMAIN-SUFFIX,spankbang.com,🌐 节点选择
+  - DOMAIN-SUFFIX,t66y.com,🌐 节点选择
+  - DOMAIN-SUFFIX,xhamster.com,🌐 节点选择
+  - DOMAIN-SUFFIX,xnxx-cdn.com,🌐 节点选择
+  - DOMAIN-SUFFIX,xnxx.com,🌐 节点选择
+  - DOMAIN-SUFFIX,xvideos-cdn.com,🌐 节点选择
+  - DOMAIN-SUFFIX,xvideos.com,🌐 节点选择
+  - DOMAIN-SUFFIX,ypncdn.com,🌐 节点选择
+  - DOMAIN-SUFFIX,pixiv.net,🌐 节点选择
+  - DOMAIN-SUFFIX,pximg.net,🌐 节点选择
+  - DOMAIN-SUFFIX,amplitude.com,🌐 节点选择
+  - DOMAIN-SUFFIX,firebaseio.com,🌐 节点选择
+  - DOMAIN-SUFFIX,hockeyapp.net,🌐 节点选择
+  - DOMAIN-SUFFIX,readdle.com,🌐 节点选择
+  - DOMAIN-SUFFIX,smartmailcloud.com,🌐 节点选择
+  - DOMAIN-SUFFIX,fanatical.com,🌐 节点选择
+  - DOMAIN-SUFFIX,humblebundle.com,🌐 节点选择
+  - DOMAIN-SUFFIX,steamcommunity.com,🌐 节点选择
+  - DOMAIN-SUFFIX,tap.io,🌐 节点选择
+  - DOMAIN-SUFFIX,taptap.tw,🌐 节点选择
+  - DOMAIN-SUFFIX,twitch.tv,🌐 节点选择
+  - DOMAIN-SUFFIX,ttvnw.net,🌐 节点选择
+  - DOMAIN-SUFFIX,jtvnw.net,🌐 节点选择
+  - DOMAIN-KEYWORD,ttvnw,🌐 节点选择
+  - DOMAIN-SUFFIX,t.co,🌐 节点选择
+  - DOMAIN-SUFFIX,twimg.co,🌐 节点选择
+  - DOMAIN-SUFFIX,twimg.com,🌐 节点选择
+  - DOMAIN-SUFFIX,twimg.org,🌐 节点选择
+  - DOMAIN-SUFFIX,t.me,🌐 节点选择
+  - DOMAIN-SUFFIX,tdesktop.com,🌐 节点选择
+  - DOMAIN-SUFFIX,telegra.ph,🌐 节点选择
+  - DOMAIN-SUFFIX,telegram.me,🌐 节点选择
+  - DOMAIN-SUFFIX,telegram.org,🌐 节点选择
+  - DOMAIN-SUFFIX,telesco.pe,🌐 节点选择
+  - IP-CIDR,91.108.0.0/16,🌐 节点选择,no-resolve
+  - IP-CIDR,109.239.140.0/24,🌐 节点选择,no-resolve
+  - IP-CIDR,149.154.160.0/20,🌐 节点选择,no-resolve
+  - IP-CIDR6,2001:67c:4e8::/48,🌐 节点选择,no-resolve
+  - IP-CIDR6,2001:b28:f23d::/48,🌐 节点选择,no-resolve
+  - IP-CIDR6,2001:b28:f23f::/48,🌐 节点选择,no-resolve
+  - DOMAIN-SUFFIX,terabox.com,🌐 节点选择
+  - DOMAIN-SUFFIX,teraboxcdn.com,🌐 节点选择
+  - IP-CIDR,18.194.0.0/15,🌐 节点选择,no-resolve
+  - IP-CIDR,34.224.0.0/12,🌐 节点选择,no-resolve
+  - IP-CIDR,54.242.0.0/15,🌐 节点选择,no-resolve
+  - IP-CIDR,50.22.198.204/30,🌐 节点选择,no-resolve
+  - IP-CIDR,208.43.122.128/27,🌐 节点选择,no-resolve
+  - IP-CIDR,108.168.174.0/16,🌐 节点选择,no-resolve
+  - IP-CIDR,173.192.231.32/27,🌐 节点选择,no-resolve
+  - IP-CIDR,158.85.5.192/27,🌐 节点选择,no-resolve
+  - IP-CIDR,174.37.243.0/16,🌐 节点选择,no-resolve
+  - IP-CIDR,158.85.46.128/27,🌐 节点选择,no-resolve
+  - IP-CIDR,173.192.222.160/27,🌐 节点选择,no-resolve
+  - IP-CIDR,184.173.128.0/17,🌐 节点选择,no-resolve
+  - IP-CIDR,158.85.224.160/27,🌐 节点选择,no-resolve
+  - IP-CIDR,75.126.150.0/16,🌐 节点选择,no-resolve
+  - IP-CIDR,69.171.235.0/16,🌐 节点选择,no-resolve
+  - DOMAIN-SUFFIX,mediawiki.org,🌐 节点选择
+  - DOMAIN-SUFFIX,wikibooks.org,🌐 节点选择
+  - DOMAIN-SUFFIX,wikidata.org,🌐 节点选择
+  - DOMAIN-SUFFIX,wikileaks.org,🌐 节点选择
+  - DOMAIN-SUFFIX,wikimedia.org,🌐 节点选择
+  - DOMAIN-SUFFIX,wikinews.org,🌐 节点选择
+  - DOMAIN-SUFFIX,wikipedia.org,🌐 节点选择
+  - DOMAIN-SUFFIX,wikiquote.org,🌐 节点选择
+  - DOMAIN-SUFFIX,wikisource.org,🌐 节点选择
+  - DOMAIN-SUFFIX,wikiversity.org,🌐 节点选择
+  - DOMAIN-SUFFIX,wikivoyage.org,🌐 节点选择
+  - DOMAIN-SUFFIX,wiktionary.org,🌐 节点选择
+  - DOMAIN-SUFFIX,neulion.com,🌐 节点选择
+  - DOMAIN-SUFFIX,icntv.xyz,🌐 节点选择
+  - DOMAIN-SUFFIX,flzbcdn.xyz,🌐 节点选择
+  - DOMAIN-SUFFIX,ocnttv.com,🌐 节点选择
+  - DOMAIN-SUFFIX,sub.221515.xyz,☁️ 直连
+  - DOMAIN-SUFFIX,221515.xyz,☁️ 直连
+  - DOMAIN-SUFFIX,hi.221616.xyz,☁️ 直连
+  - DOMAIN-SUFFIX,sublink.221616.xyz,☁️ 直连
+  - DOMAIN-SUFFIX,statics.teams.cdn.office.net,☁️ 直连
+  - DOMAIN-SUFFIX,hi.moon365.workers.dev,☁️ 直连
+  - DOMAIN-KEYWORD,officeapps.live.com,☁️ 直连
+  - DOMAIN-KEYWORD,teams.skype.com,☁️ 直连
+  - DOMAIN-KEYWORD,teams.live.com,☁️ 直连
+  - DOMAIN-KEYWORD,cdn.live.net,☁️ 直连
+  - DOMAIN-KEYWORD,outlook,☁️ 直连
+  - PROCESS-NAME,aria2c.exe,☁️ 直连
+  - PROCESS-NAME,fdm.exe,☁️ 直连
+  - PROCESS-NAME,Folx.exe,☁️ 直连
+  - PROCESS-NAME,NetTransport.exe,☁️ 直连
+  - PROCESS-NAME,Thunder.exe,☁️ 直连
+  - PROCESS-NAME,Transmission.exe,☁️ 直连
+  - PROCESS-NAME,uTorrent.exe,☁️ 直连
+  - PROCESS-NAME,WebTorrent.exe,☁️ 直连
+  - PROCESS-NAME,WebTorrent Helper.exe,☁️ 直连
+  - DOMAIN-SUFFIX,smtp,☁️ 直连
+  - DOMAIN-KEYWORD,aria2,☁️ 直连
+  - PROCESS-NAME,DownloadService.exe,☁️ 直连
+  - PROCESS-NAME,Weiyun.exe,☁️ 直连
+  - DOMAIN-SUFFIX,cn,☁️ 直连
+  - DOMAIN-KEYWORD,-cn,☁️ 直连
+  - DOMAIN-SUFFIX,baidu.com,☁️ 直连
+  - DOMAIN-SUFFIX,baidubcr.com,☁️ 直连
+  - DOMAIN-SUFFIX,bdstatic.com,☁️ 直连
+  - DOMAIN-SUFFIX,yunjiasu-cdn.net,☁️ 直连
+  - DOMAIN-SUFFIX,taobao.com,☁️ 直连
+  - DOMAIN-SUFFIX,alicdn.com,☁️ 直连
+  - DOMAIN,blzddist1-a.akamaihd.net,☁️ 直连
+  - DOMAIN,cdn.angruo.com,☁️ 直连
+  - DOMAIN,download.jetbrains.com,☁️ 直连
+  - DOMAIN,file-igamecj.akamaized.net,☁️ 直连
+  - DOMAIN,images-cn.ssl-images-amazon.com,☁️ 直连
+  - DOMAIN,officecdn-microsoft-com.akamaized.net,☁️ 直连
+  - DOMAIN,speedtest.macpaw.com,☁️ 直连
+  - DOMAIN-SUFFIX,126.net,☁️ 直连
+  - DOMAIN-SUFFIX,127.net,☁️ 直连
+  - DOMAIN-SUFFIX,163.com,☁️ 直连
+  - DOMAIN-SUFFIX,163yun.com,☁️ 直连
+  - DOMAIN-SUFFIX,21cn.com,☁️ 直连
+  - DOMAIN-SUFFIX,343480.com,☁️ 直连
+  - DOMAIN-SUFFIX,360buyimg.com,☁️ 直连
+  - DOMAIN-SUFFIX,360in.com,☁️ 直连
+  - DOMAIN-SUFFIX,51ym.me,☁️ 直连
+  - DOMAIN-SUFFIX,71.am.com,☁️ 直连
+  - DOMAIN-SUFFIX,8686c.com,☁️ 直连
+  - DOMAIN-SUFFIX,abchina.com,☁️ 直连
+  - DOMAIN-SUFFIX,accuweather.com,☁️ 直连
+  - DOMAIN-SUFFIX,acgvideo.com,☁️ 直连
+  - DOMAIN-SUFFIX,acm.org,☁️ 直连
+  - DOMAIN-SUFFIX,acs.org,☁️ 直连
+  - DOMAIN-SUFFIX,aicoinstorge.com,☁️ 直连
+  - DOMAIN-SUFFIX,aip.org,☁️ 直连
+  - DOMAIN-SUFFIX,air-matters.com,☁️ 直连
+  - DOMAIN-SUFFIX,air-matters.io,☁️ 直连
+  - DOMAIN-SUFFIX,aixifan.com,☁️ 直连
+  - DOMAIN-SUFFIX,akadns.net,☁️ 直连
+  - DOMAIN-SUFFIX,alibaba.com,☁️ 直连
+  - DOMAIN-SUFFIX,alikunlun.com,☁️ 直连
+  - DOMAIN-SUFFIX,alipay.com,☁️ 直连
+  - DOMAIN-SUFFIX,amap.com,☁️ 直连
+  - DOMAIN-SUFFIX,amd.com,☁️ 直连
+  - DOMAIN-SUFFIX,ams.org,☁️ 直连
+  - DOMAIN-SUFFIX,animebytes.tv,☁️ 直连
+  - DOMAIN-SUFFIX,annualreviews.org,☁️ 直连
+  - DOMAIN-SUFFIX,aps.org,☁️ 直连
+  - DOMAIN-SUFFIX,ascelibrary.org,☁️ 直连
+  - DOMAIN-SUFFIX,asm.org,☁️ 直连
+  - DOMAIN-SUFFIX,asme.org,☁️ 直连
+  - DOMAIN-SUFFIX,astm.org,☁️ 直连
+  - DOMAIN-SUFFIX,autonavi.com,☁️ 直连
+  - DOMAIN-SUFFIX,awesome-hd.me,☁️ 直连
+  - DOMAIN-SUFFIX,b612.net,☁️ 直连
+  - DOMAIN-SUFFIX,baduziyuan.com,☁️ 直连
+  - DOMAIN-SUFFIX,battle.net,☁️ 直连
+  - DOMAIN-SUFFIX,bdatu.com,☁️ 直连
+  - DOMAIN-SUFFIX,beitaichufang.com,☁️ 直连
+  - DOMAIN-SUFFIX,biliapi.com,☁️ 直连
+  - DOMAIN-SUFFIX,biliapi.net,☁️ 直连
+  - DOMAIN-SUFFIX,bilibili.com,☁️ 直连
+  - DOMAIN-SUFFIX,bilibili.tv,☁️ 直连
+  - DOMAIN-SUFFIX,bjango.com,☁️ 直连
+  - DOMAIN-SUFFIX,blizzard.com,☁️ 直连
+  - DOMAIN-SUFFIX,bmj.com,☁️ 直连
+  - DOMAIN-SUFFIX,booking.com,☁️ 直连
+  - DOMAIN-SUFFIX,broadcasthe.net,☁️ 直连
+  - DOMAIN-SUFFIX,bstatic.com,☁️ 直连
+  - DOMAIN-SUFFIX,cailianpress.com,☁️ 直连
+  - DOMAIN-SUFFIX,cambridge.org,☁️ 直连
+  - DOMAIN-SUFFIX,camera360.com,☁️ 直连
+  - DOMAIN-SUFFIX,cas.org,☁️ 直连
+  - DOMAIN-SUFFIX,ccgslb.com,☁️ 直连
+  - DOMAIN-SUFFIX,ccgslb.net,☁️ 直连
+  - DOMAIN-SUFFIX,cctv.com,☁️ 直连
+  - DOMAIN-SUFFIX,cctvpic.com,☁️ 直连
+  - DOMAIN-SUFFIX,chdbits.co,☁️ 直连
+  - DOMAIN-SUFFIX,chinanetcenter.com,☁️ 直连
+  - DOMAIN-SUFFIX,chinaso.com,☁️ 直连
+  - DOMAIN-SUFFIX,chua.pro,☁️ 直连
+  - DOMAIN-SUFFIX,chuimg.com,☁️ 直连
+  - DOMAIN-SUFFIX,chunyu.mobi,☁️ 直连
+  - DOMAIN-SUFFIX,chushou.tv,☁️ 直连
+  - DOMAIN-SUFFIX,clarivate.com,☁️ 直连
+  - DOMAIN-SUFFIX,classix-unlimited.co.uk,☁️ 直连
+  - DOMAIN-SUFFIX,cmbchina.com,☁️ 直连
+  - DOMAIN-SUFFIX,cmbimg.com,☁️ 直连
+  - DOMAIN-SUFFIX,cn,☁️ 直连
+  - DOMAIN-SUFFIX,com-hs-hkdy.com,☁️ 直连
+  - DOMAIN-SUFFIX,ctrip.com,☁️ 直连
+  - DOMAIN-SUFFIX,czybjz.com,☁️ 直连
+  - DOMAIN-SUFFIX,dandanzan.com,☁️ 直连
+  - DOMAIN-SUFFIX,dfcfw.com,☁️ 直连
+  - DOMAIN-SUFFIX,didialift.com,☁️ 直连
+  - DOMAIN-SUFFIX,didiglobal.com,☁️ 直连
+  - DOMAIN-SUFFIX,dingtalk.com,☁️ 直连
+  - DOMAIN-SUFFIX,docschina.org,☁️ 直连
+  - DOMAIN-SUFFIX,douban.com,☁️ 直连
+  - DOMAIN-SUFFIX,doubanio.com,☁️ 直连
+  - DOMAIN-SUFFIX,douyu.com,☁️ 直连
+  - DOMAIN-SUFFIX,duokan.com,☁️ 直连
+  - DOMAIN-SUFFIX,dxycdn.com,☁️ 直连
+  - DOMAIN-SUFFIX,dytt8.net,☁️ 直连
+  - DOMAIN-SUFFIX,eastmoney.com,☁️ 直连
+  - DOMAIN-SUFFIX,ebscohost.com,☁️ 直连
+  - DOMAIN-SUFFIX,emerald.com,☁️ 直连
+  - DOMAIN-SUFFIX,empornium.me,☁️ 直连
+  - DOMAIN-SUFFIX,engineeringvillage.com,☁️ 直连
+  - DOMAIN-SUFFIX,eudic.net,☁️ 直连
+  - DOMAIN-SUFFIX,feiliao.com,☁️ 直连
+  - DOMAIN-SUFFIX,feng.com,☁️ 直连
+  - DOMAIN-SUFFIX,fengkongcloud.com,☁️ 直连
+  - DOMAIN-SUFFIX,fjhps.com,☁️ 直连
+  - DOMAIN-SUFFIX,frdic.com,☁️ 直连
+  - DOMAIN-SUFFIX,futu5.com,☁️ 直连
+  - DOMAIN-SUFFIX,futunn.com,☁️ 直连
+  - DOMAIN-SUFFIX,gandi.net,☁️ 直连
+  - DOMAIN-SUFFIX,gazellegames.net,☁️ 直连
+  - DOMAIN-SUFFIX,geilicdn.com,☁️ 直连
+  - DOMAIN-SUFFIX,getpricetag.com,☁️ 直连
+  - DOMAIN-SUFFIX,gifshow.com,☁️ 直连
+  - DOMAIN-SUFFIX,godic.net,☁️ 直连
+  - DOMAIN-SUFFIX,gtimg.com,☁️ 直连
+  - DOMAIN-SUFFIX,hdbits.org,☁️ 直连
+  - DOMAIN-SUFFIX,hdchina.org,☁️ 直连
+  - DOMAIN-SUFFIX,hdhome.org,☁️ 直连
+  - DOMAIN-SUFFIX,hdsky.me,☁️ 直连
+  - DOMAIN-SUFFIX,hdslb.com,☁️ 直连
+  - DOMAIN-SUFFIX,hicloud.com,☁️ 直连
+  - DOMAIN-SUFFIX,hitv.com,☁️ 直连
+  - DOMAIN-SUFFIX,hongxiu.com,☁️ 直连
+  - DOMAIN-SUFFIX,hostbuf.com,☁️ 直连
+  - DOMAIN-SUFFIX,huxiucdn.com,☁️ 直连
+  - DOMAIN-SUFFIX,huya.com,☁️ 直连
+  - DOMAIN-SUFFIX,icetorrent.org,☁️ 直连
+  - DOMAIN-SUFFIX,icevirtuallibrary.com,☁️ 直连
+  - DOMAIN-SUFFIX,iciba.com,☁️ 直连
+  - DOMAIN-SUFFIX,idqqimg.com,☁️ 直连
+  - DOMAIN-SUFFIX,ieee.org,☁️ 直连
+  - DOMAIN-SUFFIX,iesdouyin.com,☁️ 直连
+  - DOMAIN-SUFFIX,igamecj.com,☁️ 直连
+  - DOMAIN-SUFFIX,imf.org,☁️ 直连
+  - DOMAIN-SUFFIX,infinitynewtab.com,☁️ 直连
+  - DOMAIN-SUFFIX,iop.org,☁️ 直连
+  - DOMAIN-SUFFIX,ip-cdn.com,☁️ 直连
+  - DOMAIN-SUFFIX,ip.la,☁️ 直连
+  - DOMAIN-SUFFIX,ipip.net,☁️ 直连
+  - DOMAIN-SUFFIX,ipv6-test.com,☁️ 直连
+  - DOMAIN-SUFFIX,iqiyi.com,☁️ 直连
+  - DOMAIN-SUFFIX,iqiyipic.com,☁️ 直连
+  - DOMAIN-SUFFIX,ithome.com,☁️ 直连
+  - DOMAIN-SUFFIX,jamanetwork.com,☁️ 直连
+  - DOMAIN-SUFFIX,java.com,☁️ 直连
+  - DOMAIN-SUFFIX,jd.com,☁️ 直连
+  - DOMAIN-SUFFIX,jd.hk,☁️ 直连
+  - DOMAIN-SUFFIX,jdpay.com,☁️ 直连
+  - DOMAIN-SUFFIX,jhu.edu,☁️ 直连
+  - DOMAIN-SUFFIX,jidian.im,☁️ 直连
+  - DOMAIN-SUFFIX,jpopsuki.eu,☁️ 直连
+  - DOMAIN-SUFFIX,jstor.org,☁️ 直连
+  - DOMAIN-SUFFIX,jstucdn.com,☁️ 直连
+  - DOMAIN-SUFFIX,kaiyanapp.com,☁️ 直连
+  - DOMAIN-SUFFIX,karger.com,☁️ 直连
+  - DOMAIN-SUFFIX,kaspersky-labs.com,☁️ 直连
+  - DOMAIN-SUFFIX,keepcdn.com,☁️ 直连
+  - DOMAIN-SUFFIX,keepfrds.com,☁️ 直连
+  - DOMAIN-SUFFIX,kkmh.com,☁️ 直连
+  - DOMAIN-SUFFIX,ksosoft.com,☁️ 直连
+  - DOMAIN-SUFFIX,kuyunbo.club,☁️ 直连
+  - DOMAIN-SUFFIX,libguides.com,☁️ 直连
+  - DOMAIN-SUFFIX,livechina.com,☁️ 直连
+  - DOMAIN-SUFFIX,lofter.com,☁️ 直连
+  - DOMAIN-SUFFIX,loli.net,☁️ 直连
+  - DOMAIN-SUFFIX,luojilab.com,☁️ 直连
+  - DOMAIN-SUFFIX,m-team.cc,☁️ 直连
+  - DOMAIN-SUFFIX,madsrevolution.net,☁️ 直连
+  - DOMAIN-SUFFIX,maoyan.com,☁️ 直连
+  - DOMAIN-SUFFIX,maoyun.tv,☁️ 直连
+  - DOMAIN-SUFFIX,meipai.com,☁️ 直连
+  - DOMAIN-SUFFIX,meitu.com,☁️ 直连
+  - DOMAIN-SUFFIX,meituan.com,☁️ 直连
+  - DOMAIN-SUFFIX,meituan.net,☁️ 直连
+  - DOMAIN-SUFFIX,meitudata.com,☁️ 直连
+  - DOMAIN-SUFFIX,meitustat.com,☁️ 直连
+  - DOMAIN-SUFFIX,meixincdn.com,☁️ 直连
+  - DOMAIN-SUFFIX,mgtv.com,☁️ 直连
+  - DOMAIN-SUFFIX,mi-img.com,☁️ 直连
+  - DOMAIN-SUFFIX,microsoft.com,☁️ 直连
+  - DOMAIN-SUFFIX,miui.com,☁️ 直连
+  - DOMAIN-SUFFIX,miwifi.com,☁️ 直连
+  - DOMAIN-SUFFIX,mobike.com,☁️ 直连
+  - DOMAIN-SUFFIX,moke.com,☁️ 直连
+  - DOMAIN-SUFFIX,morethan.tv,☁️ 直连
+  - DOMAIN-SUFFIX,mpg.de,☁️ 直连
+  - DOMAIN-SUFFIX,msecnd.net,☁️ 直连
+  - DOMAIN-SUFFIX,mubu.com,☁️ 直连
+  - DOMAIN-SUFFIX,mxhichina.com,☁️ 直连
+  - DOMAIN-SUFFIX,myanonamouse.net,☁️ 直连
+  - DOMAIN-SUFFIX,myapp.com,☁️ 直连
+  - DOMAIN-SUFFIX,myilibrary.com,☁️ 直连
+  - DOMAIN-SUFFIX,myqcloud.com,☁️ 直连
+  - DOMAIN-SUFFIX,myzaker.com,☁️ 直连
+  - DOMAIN-SUFFIX,nanyangpt.com,☁️ 直连
+  - DOMAIN-SUFFIX,nature.com,☁️ 直连
+  - DOMAIN-SUFFIX,ncore.cc,☁️ 直连
+  - DOMAIN-SUFFIX,netease.com,☁️ 直连
+  - DOMAIN-SUFFIX,netspeedtestmaster.com,☁️ 直连
+  - DOMAIN-SUFFIX,nim-lang-cn.org,☁️ 直连
+  - DOMAIN-SUFFIX,nvidia.com,☁️ 直连
+  - DOMAIN-SUFFIX,oecd-ilibrary.org,☁️ 直连
+  - DOMAIN-SUFFIX,office365.com,☁️ 直连
+  - DOMAIN-SUFFIX,open.cd,☁️ 直连
+  - DOMAIN-SUFFIX,oracle.com,☁️ 直连
+  - DOMAIN-SUFFIX,osapublishing.org,☁️ 直连
+  - DOMAIN-SUFFIX,oup.com,☁️ 直连
+  - DOMAIN-SUFFIX,ourbits.club,☁️ 直连
+  - DOMAIN-SUFFIX,ourdvs.com,☁️ 直连
+  - DOMAIN-SUFFIX,outlook.com,☁️ 直连
+  - DOMAIN-SUFFIX,ovid.com,☁️ 直连
+  - DOMAIN-SUFFIX,oxfordartonline.com,☁️ 直连
+  - DOMAIN-SUFFIX,oxfordbibliographies.com,☁️ 直连
+  - DOMAIN-SUFFIX,oxfordmusiconline.com,☁️ 直连
+  - DOMAIN-SUFFIX,passthepopcorn.me,☁️ 直连
+  - DOMAIN-SUFFIX,paypal.com,☁️ 直连
+  - DOMAIN-SUFFIX,paypalobjects.com,☁️ 直连
+  - DOMAIN-SUFFIX,pnas.org,☁️ 直连
+  - DOMAIN-SUFFIX,privatehd.to,☁️ 直连
+  - DOMAIN-SUFFIX,proquest.com,☁️ 直连
+  - DOMAIN-SUFFIX,pstatp.com,☁️ 直连
+  - DOMAIN-SUFFIX,pterclub.com,☁️ 直连
+  - DOMAIN-SUFFIX,qdaily.com,☁️ 直连
+  - DOMAIN-SUFFIX,qhimg.com,☁️ 直连
+  - DOMAIN-SUFFIX,qhres.com,☁️ 直连
+  - DOMAIN-SUFFIX,qidian.com,☁️ 直连
+  - DOMAIN-SUFFIX,qq.com,☁️ 直连
+  - DOMAIN-SUFFIX,qyer.com,☁️ 直连
+  - DOMAIN-SUFFIX,qyerstatic.com,☁️ 直连
+  - DOMAIN-SUFFIX,raychase.net,☁️ 直连
+  - DOMAIN-SUFFIX,redacted.ch,☁️ 直连
+  - DOMAIN-SUFFIX,ronghub.com,☁️ 直连
+  - DOMAIN-SUFFIX,rsc.org,☁️ 直连
+  - DOMAIN-SUFFIX,ruguoapp.com,☁️ 直连
+  - DOMAIN-SUFFIX,s-microsoft.com,☁️ 直连
+  - DOMAIN-SUFFIX,s-reader.com,☁️ 直连
+  - DOMAIN-SUFFIX,sagepub.com,☁️ 直连
+  - DOMAIN-SUFFIX,sankuai.com,☁️ 直连
+  - DOMAIN-SUFFIX,sciencedirect.com,☁️ 直连
+  - DOMAIN-SUFFIX,sciencemag.org,☁️ 直连
+  - DOMAIN-SUFFIX,scomper.me,☁️ 直连
+  - DOMAIN-SUFFIX,scopus.com,☁️ 直连
+  - DOMAIN-SUFFIX,seafile.com,☁️ 直连
+  - DOMAIN-SUFFIX,servicewechat.com,☁️ 直连
+  - DOMAIN-SUFFIX,siam.org,☁️ 直连
+  - DOMAIN-SUFFIX,sina.com,☁️ 直连
+  - DOMAIN-SUFFIX,sm.ms,☁️ 直连
+  - DOMAIN-SUFFIX,smzdm.com,☁️ 直连
+  - DOMAIN-SUFFIX,snapdrop.net,☁️ 直连
+  - DOMAIN-SUFFIX,snssdk.com,☁️ 直连
+  - DOMAIN-SUFFIX,snwx.com,☁️ 直连
+  - DOMAIN-SUFFIX,sogo.com,☁️ 直连
+  - DOMAIN-SUFFIX,sogou.com,☁️ 直连
+  - DOMAIN-SUFFIX,sogoucdn.com,☁️ 直连
+  - DOMAIN-SUFFIX,sohu-inc.com,☁️ 直连
+  - DOMAIN-SUFFIX,sohu.com,☁️ 直连
+  - DOMAIN-SUFFIX,sohucs.com,☁️ 直连
+  - DOMAIN-SUFFIX,soku.com,☁️ 直连
+  - DOMAIN-SUFFIX,spiedigitallibrary.org,☁️ 直连
+  - DOMAIN-SUFFIX,springer.com,☁️ 直连
+  - DOMAIN-SUFFIX,springerlink.com,☁️ 直连
+  - DOMAIN-SUFFIX,springsunday.net,☁️ 直连
+  - DOMAIN-SUFFIX,sspai.com,☁️ 直连
+  - DOMAIN-SUFFIX,staticdn.net,☁️ 直连
+  - DOMAIN-SUFFIX,steam-chat.com,☁️ 直连
+  - DOMAIN-SUFFIX,steamcdn-a.akamaihd.net,☁️ 直连
+  - DOMAIN-SUFFIX,steamcontent.com,☁️ 直连
+  - DOMAIN-SUFFIX,steamgames.com,☁️ 直连
+  - DOMAIN-SUFFIX,steampowered.com,☁️ 直连
+  - DOMAIN-SUFFIX,steamstat.us,☁️ 直连
+  - DOMAIN-SUFFIX,steamstatic.com,☁️ 直连
+  - DOMAIN-SUFFIX,steamusercontent.com,☁️ 直连
+  - DOMAIN-SUFFIX,takungpao.com,☁️ 直连
+  - DOMAIN-SUFFIX,tandfonline.com,☁️ 直连
+  - DOMAIN-SUFFIX,teamviewer.com,☁️ 直连
+  - DOMAIN-SUFFIX,tencent-cloud.net,☁️ 直连
+  - DOMAIN-SUFFIX,tencent.com,☁️ 直连
+  - DOMAIN-SUFFIX,tenpay.com,☁️ 直连
+  - DOMAIN-SUFFIX,test-ipv6.com,☁️ 直连
+  - DOMAIN-SUFFIX,tianyancha.com,☁️ 直连
+  - DOMAIN-SUFFIX,tjupt.org,☁️ 直连
+  - DOMAIN-SUFFIX,tmall.com,☁️ 直连
+  - DOMAIN-SUFFIX,tmall.hk,☁️ 直连
+  - DOMAIN-SUFFIX,totheglory.im,☁️ 直连
+  - DOMAIN-SUFFIX,toutiao.com,☁️ 直连
+  - DOMAIN-SUFFIX,udache.com,☁️ 直连
+  - DOMAIN-SUFFIX,udacity.com,☁️ 直连
+  - DOMAIN-SUFFIX,un.org,☁️ 直连
+  - DOMAIN-SUFFIX,uni-bielefeld.de,☁️ 直连
+  - DOMAIN-SUFFIX,uning.com,☁️ 直连
+  - DOMAIN-SUFFIX,v-56.com,☁️ 直连
+  - DOMAIN-SUFFIX,visualstudio.com,☁️ 直连
+  - DOMAIN-SUFFIX,vmware.com,☁️ 直连
+  - DOMAIN-SUFFIX,wangsu.com,☁️ 直连
+  - DOMAIN-SUFFIX,weather.com,☁️ 直连
+  - DOMAIN-SUFFIX,webofknowledge.com,☁️ 直连
+  - DOMAIN-SUFFIX,wechat.com,☁️ 直连
+  - DOMAIN-SUFFIX,weibo.com,☁️ 直连
+  - DOMAIN-SUFFIX,weibocdn.com,☁️ 直连
+  - DOMAIN-SUFFIX,weico.cc,☁️ 直连
+  - DOMAIN-SUFFIX,weidian.com,☁️ 直连
+  - DOMAIN-SUFFIX,westlaw.com,☁️ 直连
+  - DOMAIN-SUFFIX,whatismyip.com,☁️ 直连
+  - DOMAIN-SUFFIX,wiley.com,☁️ 直连
+  - DOMAIN-SUFFIX,windows.com,☁️ 直连
+  - DOMAIN-SUFFIX,windowsupdate.com,☁️ 直连
+  - DOMAIN-SUFFIX,worldbank.org,☁️ 直连
+  - DOMAIN-SUFFIX,worldscientific.com,☁️ 直连
+  - DOMAIN-SUFFIX,xiachufang.com,☁️ 直连
+  - DOMAIN-SUFFIX,xiami.com,☁️ 直连
+  - DOMAIN-SUFFIX,xiami.net,☁️ 直连
+  - DOMAIN-SUFFIX,xiaomi.com,☁️ 直连
+  - DOMAIN-SUFFIX,ximalaya.com,☁️ 直连
+  - DOMAIN-SUFFIX,xinhuanet.com,☁️ 直连
+  - DOMAIN-SUFFIX,xmcdn.com,☁️ 直连
+  - DOMAIN-SUFFIX,yangkeduo.com,☁️ 直连
+  - DOMAIN-SUFFIX,ydstatic.com,☁️ 直连
+  - DOMAIN-SUFFIX,youku.com,☁️ 直连
+  - DOMAIN-SUFFIX,zhangzishi.cc,☁️ 直连
+  - DOMAIN-SUFFIX,zhihu.com,☁️ 直连
+  - DOMAIN-SUFFIX,zhimg.com,☁️ 直连
+  - DOMAIN-SUFFIX,zhuihd.com,☁️ 直连
+  - DOMAIN-SUFFIX,zimuzu.io,☁️ 直连
+  - DOMAIN-SUFFIX,zimuzu.tv,☁️ 直连
+  - DOMAIN-SUFFIX,zmz2019.com,☁️ 直连
+  - DOMAIN-SUFFIX,zmzapi.com,☁️ 直连
+  - DOMAIN-SUFFIX,zmzapi.net,☁️ 直连
+  - DOMAIN-SUFFIX,zmzfile.com,☁️ 直连
+  - DOMAIN-SUFFIX,google.cn,☁️ 直连
+  - DOMAIN-SUFFIX,manmanbuy.com,☁️ 直连
+  - DOMAIN,www-cdn.icloud.com.akadns.net,☁️ 直连
+  - DOMAIN-SUFFIX,aaplimg.com,☁️ 直连
+  - DOMAIN-SUFFIX,apple-cloudkit.com,☁️ 直连
+  - DOMAIN-SUFFIX,apple.co,☁️ 直连
+  - DOMAIN-SUFFIX,apple.com,☁️ 直连
+  - DOMAIN-SUFFIX,apple.com.cn,☁️ 直连
+  - DOMAIN-SUFFIX,appstore.com,☁️ 直连
+  - DOMAIN-SUFFIX,cdn-apple.com,☁️ 直连
+  - DOMAIN-SUFFIX,crashlytics.com,☁️ 直连
+  - DOMAIN-SUFFIX,icloud-content.com,☁️ 直连
+  - DOMAIN-SUFFIX,icloud.com,☁️ 直连
+  - DOMAIN-SUFFIX,icloud.com.cn,☁️ 直连
+  - DOMAIN-SUFFIX,me.com,☁️ 直连
+  - DOMAIN-SUFFIX,mzstatic.com,☁️ 直连
+  - DOMAIN,injections.adguard.org,☁️ 直连
+  - DOMAIN,local.adguard.org,☁️ 直连
+  - DOMAIN-SUFFIX,local,☁️ 直连
+  - IP-CIDR,127.0.0.0/8,☁️ 直连
+  - IP-CIDR,172.16.0.0/12,☁️ 直连
+  - IP-CIDR,192.168.0.0/16,☁️ 直连
+  - IP-CIDR,10.0.0.0/8,☁️ 直连
+  - IP-CIDR,17.0.0.0/8,☁️ 直连
+  - IP-CIDR,100.64.0.0/10,☁️ 直连
+  - IP-CIDR,224.0.0.0/4,☁️ 直连
+  - IP-CIDR6,fe80::/10,☁️ 直连
+  - DOMAIN-KEYWORD,admaster,🛡 拦截
+  - DOMAIN-SUFFIX,lbyczf.com,🛡 拦截
+  - DOMAIN-SUFFIX,faster.goodfrog.net,🛡 拦截
+  - DOMAIN-KEYWORD,adsage,🛡 拦截
+  - DOMAIN-SUFFIX,cylink.me,🛡 拦截
+  - DOMAIN-KEYWORD,admarvel,🛡 拦截
+  - DOMAIN-KEYWORD,admaster,🛡 拦截
+  - DOMAIN-KEYWORD,adsage,🛡 拦截
+  - DOMAIN-KEYWORD,adsmogo,🛡 拦截
+  - DOMAIN-KEYWORD,adsrvmedia,🛡 拦截
+  - DOMAIN-KEYWORD,adwords,🛡 拦截
+  - DOMAIN-KEYWORD,adservice,🛡 拦截
+  - DOMAIN-SUFFIX,appsflyer.com,🛡 拦截
+  - DOMAIN-KEYWORD,domob,🛡 拦截
+  - DOMAIN-SUFFIX,doubleclick.net,🛡 拦截
+  - DOMAIN-KEYWORD,duomeng,🛡 拦截
+  - DOMAIN-KEYWORD,dwtrack,🛡 拦截
+  - DOMAIN-KEYWORD,guanggao,🛡 拦截
+  - DOMAIN-KEYWORD,lianmeng,🛡 拦截
+  - DOMAIN-SUFFIX,mmstat.com,🛡 拦截
+  - DOMAIN-KEYWORD,mopub,🛡 拦截
+  - DOMAIN-KEYWORD,omgmta,🛡 拦截
+  - DOMAIN-KEYWORD,openx,🛡 拦截
+  - DOMAIN-KEYWORD,partnerad,🛡 拦截
+  - DOMAIN-KEYWORD,pingfore,🛡 拦截
+  - DOMAIN-KEYWORD,supersonicads,🛡 拦截
+  - DOMAIN-KEYWORD,uedas,🛡 拦截
+  - DOMAIN-KEYWORD,umeng,🛡 拦截
+  - DOMAIN-KEYWORD,usage,🛡 拦截
+  - DOMAIN-SUFFIX,vungle.com,🛡 拦截
+  - DOMAIN-KEYWORD,wlmonitor,🛡 拦截
+  - DOMAIN-KEYWORD,zjtoolbar,🛡 拦截
+  - GEOIP,CN,☁️ 直连
+  - MATCH,🌐 节点选择
+proxy-providers: {}
+rule-providers: {}
