@@ -5,963 +5,523 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: CN_210, server: 117.28.242.156, port: 2164, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ws}, udp: true}
-  - {name: _油管：全网最强白嫖, server: 223.166.129.29, port: 63087, type: vmess, uuid: d9ac2f26-cc36-3faf-80c4-e2345cb25680, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /mugua, headers: {Host: t.me.vpnhat}}, udp: true}
-  - {name: Unlimited Việt Nam (6), server: vietnam.hn6.shopvpn.net, port: 80, type: vmess, uuid: 23959a9d-be8b-45d7-b284-5a3f9f29039a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /shopvpn.net, headers: {Host: quangtien.akamaized.net}}, udp: true}
-  - {name: CN 286, server: zj.haojiahuo.ml, port: 30043, type: vmess, uuid: 0bff49b2-6e66-3572-897b-9d16ce612965, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /videos, headers: {Host: zj.haojiahuo.ml}}, udp: true}
-  - {name: CN_54 TG@peekfun | 3.02Mb, server: 14.29.124.168, port: 25296, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN 215, server: zj.haojiahuo.ml, port: 30042, type: vmess, uuid: 0bff49b2-6e66-3572-897b-9d16ce612965, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /videos, headers: {Host: zj.haojiahuo.ml}}, udp: true}
-  - {name: _油管：全网最强白嫖 2, server: 117.28.242.156, port: 2164, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ws, headers: {Host: sxqxj.cn}}, udp: true}
-  - {name: CN 172, server: gzyd1.xxcv.cc, port: 20100, type: trojan, password: 71b785a5-2809-4d4c-ba85-4879f96e5c06, sni: gzyd1.xxcv.cc, skip-cert-verify: true, udp: true}
-  - {name: CN 187, server: hn.dxmax2.com, port: 17202, type: ss, cipher: aes-128-gcm, password: 7de1f1e5-907d-426b-8e4d-51d46f6a4607, udp: true}
-  - {name: CN 183, server: hn.dxmax2.com, port: 40008, type: ss, cipher: chacha20-ietf-poly1305, password: 7de1f1e5-907d-426b-8e4d-51d46f6a4607, udp: true}
-  - {name: CN 197, server: gzbgp.gkdnode.top, port: 21817, type: ss, cipher: chacha20-ietf-poly1305, password: b0eec1ba-c636-3b41-96a1-3363d0a04567, udp: true}
-  - {name: CN 242, server: gkdcu.gkdnode.top, port: 21820, type: ss, cipher: chacha20-ietf-poly1305, password: b0eec1ba-c636-3b41-96a1-3363d0a04567, udp: true}
-  - {name: CN 173, server: gzyd1.xxcv.cc, port: 20130, type: trojan, password: 71b785a5-2809-4d4c-ba85-4879f96e5c06, sni: gzyd1.xxcv.cc, skip-cert-verify: true, udp: true}
-  - {name: CN 270, server: zj.haojiahuo.ml, port: 60046, type: vmess, uuid: 0bff49b2-6e66-3572-897b-9d16ce612965, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /videos, headers: {Host: zj.haojiahuo.ml}}, udp: true}
-  - {name: CN 272, server: zj.haojiahuo.ml, port: 30029, type: vmess, uuid: 0bff49b2-6e66-3572-897b-9d16ce612965, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /videos, headers: {Host: zj.haojiahuo.ml}}, udp: true}
-  - {name: CN 244, server: hn.dxmax2.com, port: 17204, type: trojan, password: 7de1f1e5-907d-426b-8e4d-51d46f6a4607, sni: hn.dxmax2.com, skip-cert-verify: true, udp: true}
-  - {name: CN 180, server: 120.241.236.152, port: 51103, type: ss, cipher: chacha20-ietf-poly1305, password: b2f1a0b4-1fbd-43b6-87bc-b5ab36b3c0f2, udp: true}
-  - {name: CN 201, server: hn.dxmax2.com, port: 40010, type: ss, cipher: aes-256-gcm, password: 7de1f1e5-907d-426b-8e4d-51d46f6a4607, udp: true}
-  - {name: CN 177, server: hn.dxmax2.com, port: 17211, type: trojan, password: 7de1f1e5-907d-426b-8e4d-51d46f6a4607, sni: hn.dxmax2.com, skip-cert-verify: true, udp: true}
-  - {name: CN 210, server: hn.dxmax2.com, port: 17206, type: ss, cipher: aes-256-gcm, password: 7de1f1e5-907d-426b-8e4d-51d46f6a4607, udp: true}
-  - {name: CN 225, server: gkdcu.gkdnode.top, port: 21813, type: ss, cipher: chacha20-ietf-poly1305, password: b0eec1ba-c636-3b41-96a1-3363d0a04567, udp: true}
-  - {name: CN 14, server: cm-gz.okvpn.xyz, port: 20005, type: trojan, password: 2c100ffe-4f52-4133-8c5c-d053fed7b270, sni: cm-gz.okvpn.xyz, skip-cert-verify: true, udp: true}
-  - {name: CN 144, server: 120.241.236.150, port: 51103, type: ss, cipher: chacha20-ietf-poly1305, password: b2f1a0b4-1fbd-43b6-87bc-b5ab36b3c0f2, udp: true}
-  - {name: CN 153, server: hn.dxmax2.com, port: 12581, type: ss, cipher: chacha20-ietf-poly1305, password: 7de1f1e5-907d-426b-8e4d-51d46f6a4607, udp: true}
-  - {name: CN 178, server: gzyd2.xxcv.cc, port: 20130, type: trojan, password: 71b785a5-2809-4d4c-ba85-4879f96e5c06, sni: gzyd2.xxcv.cc, skip-cert-verify: true, udp: true}
-  - {name: CN 237, server: gzbgp.gkdnode.top, port: 21816, type: ss, cipher: chacha20-ietf-poly1305, password: b0eec1ba-c636-3b41-96a1-3363d0a04567, udp: true}
-  - {name: CN 307, server: zj.haojiahuo.ml, port: 30069, type: vmess, uuid: 0bff49b2-6e66-3572-897b-9d16ce612965, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /videos, headers: {Host: zj.haojiahuo.ml}}, udp: true}
-  - {name: 中国(TG频道:@kxswa), server: cu-cs.okvpn.xyz, port: 20009, type: trojan, password: 2c100ffe-4f52-4133-8c5c-d053fed7b270, sni: cu-cs.okvpn.xyz, skip-cert-verify: true, udp: true}
-  - {name: CN 198, server: hn.dxmax2.com, port: 17208, type: ss, cipher: chacha20-ietf-poly1305, password: 7de1f1e5-907d-426b-8e4d-51d46f6a4607, udp: true}
-  - {name: CN 311, server: 120.241.236.152, port: 51102, type: ss, cipher: chacha20-ietf-poly1305, password: b2f1a0b4-1fbd-43b6-87bc-b5ab36b3c0f2, udp: true}
-  - {name: CN 416, server: 223.166.129.29, port: 63087, type: vmess, uuid: d9ac2f26-cc36-3faf-80c4-e2345cb25680, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /mugua, headers: {Host: 223.166.129.29}}, udp: true}
-  - {name: CN 26, server: mole-ho.i.sxldns.com, port: 23034, type: ss, cipher: chacha20-ietf-poly1305, password: 9hPjFqGEHj7iN7NmvUF0J62v, udp: true}
-  - {name: CN 185, server: hn.dxmax2.com, port: 17200, type: ss, cipher: aes-256-gcm, password: 7de1f1e5-907d-426b-8e4d-51d46f6a4607, udp: true}
-  - {name: CN 222, server: gzyd1.xxcv.cc, port: 20110, type: trojan, password: 71b785a5-2809-4d4c-ba85-4879f96e5c06, sni: gzyd1.xxcv.cc, skip-cert-verify: true, udp: true}
-  - {name: CN 285, server: hn.dxmax2.com, port: 36003, type: ss, cipher: chacha20-ietf-poly1305, password: 7de1f1e5-907d-426b-8e4d-51d46f6a4607, udp: true}
-  - {name: CN 332, server: 120.241.236.152, port: 55102, type: ss, cipher: chacha20-ietf-poly1305, password: b2f1a0b4-1fbd-43b6-87bc-b5ab36b3c0f2, udp: true}
-  - {name: CN 175, server: gkdcm.gkdnode.top, port: 21807, type: ss, cipher: chacha20-ietf-poly1305, password: b0eec1ba-c636-3b41-96a1-3363d0a04567, udp: true}
-  - {name: CN 217, server: gkdcu.gkdnode.top, port: 21823, type: ss, cipher: chacha20-ietf-poly1305, password: b0eec1ba-c636-3b41-96a1-3363d0a04567, udp: true}
-  - {name: CN 253, server: hn.dxmax2.com, port: 17212, type: trojan, password: 7de1f1e5-907d-426b-8e4d-51d46f6a4607, sni: hn.dxmax2.com, skip-cert-verify: true, udp: true}
-  - {name: CN 168, server: gkdcm.gkdnode.top, port: 21808, type: ss, cipher: chacha20-ietf-poly1305, password: b0eec1ba-c636-3b41-96a1-3363d0a04567, udp: true}
-  - {name: CN 202, server: hn.dxmax2.com, port: 17217, type: trojan, password: 7de1f1e5-907d-426b-8e4d-51d46f6a4607, sni: hn.dxmax2.com, skip-cert-verify: true, udp: true}
-  - {name: CN 176, server: gzyd1.xxcv.cc, port: 20020, type: trojan, password: 71b785a5-2809-4d4c-ba85-4879f96e5c06, sni: gzyd1.xxcv.cc, skip-cert-verify: true, udp: true}
-  - {name: CN 283, server: gzyd2.xxcv.cc, port: 20090, type: trojan, password: 71b785a5-2809-4d4c-ba85-4879f96e5c06, sni: gzyd2.xxcv.cc, skip-cert-verify: true, udp: true}
-  - {name: CN 139, server: gy.ziqiyun.xyz, port: 57762, type: ss, cipher: chacha20-ietf-poly1305, password: 297545c2-a59d-4610-9580-a7baa3657a57, udp: true}
-  - {name: CN 205, server: gkdcm.gkdnode.top, port: 21823, type: ss, cipher: chacha20-ietf-poly1305, password: b0eec1ba-c636-3b41-96a1-3363d0a04567, udp: true}
-  - {name: CN 278, server: gzbgp.gkdnode.top, port: 21815, type: ss, cipher: chacha20-ietf-poly1305, password: b0eec1ba-c636-3b41-96a1-3363d0a04567, udp: true}
-  - {name: Relay_🇨🇳CN-🇹🇼TW_211, server: 116.129.253.130, port: 3389, type: trojan, password: 9a27800ca7b52ee0, skip-cert-verify: true, udp: true}
-  - {name: CN 174, server: hnyd.xxcv.cc, port: 20130, type: trojan, password: 71b785a5-2809-4d4c-ba85-4879f96e5c06, sni: hnyd.xxcv.cc, skip-cert-verify: true, udp: true}
-  - {name: CN 287, server: hn.dxmax2.com, port: 17218, type: ss, cipher: aes-128-gcm, password: 7de1f1e5-907d-426b-8e4d-51d46f6a4607, udp: true}
-  - {name: 喵喵是骚零, server: 116.129.254.78, port: 63087, type: vmess, uuid: d9ac2f26-cc36-3faf-80c4-e2345cb25680, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /mugua, headers: {Host: t.me.vpnhat}}, udp: true}
-  - {name: CN 232, server: gkdcm.gkdnode.top, port: 21820, type: ss, cipher: chacha20-ietf-poly1305, password: b0eec1ba-c636-3b41-96a1-3363d0a04567, udp: true}
-  - {name: CN 249, server: gkdcm.gkdnode.top, port: 21814, type: ss, cipher: chacha20-ietf-poly1305, password: b0eec1ba-c636-3b41-96a1-3363d0a04567, udp: true}
-  - {name: CN 165, server: 120.241.236.150, port: 53102, type: ss, cipher: chacha20-ietf-poly1305, password: b2f1a0b4-1fbd-43b6-87bc-b5ab36b3c0f2, udp: true}
-  - {name: CN 275, server: gzyd1.xxcv.cc, port: 20070, type: trojan, password: 71b785a5-2809-4d4c-ba85-4879f96e5c06, sni: gzyd1.xxcv.cc, skip-cert-verify: true, udp: true}
-  - {name: CN 184, server: hnyd.xxcv.cc, port: 20010, type: trojan, password: 71b785a5-2809-4d4c-ba85-4879f96e5c06, sni: hnyd.xxcv.cc, skip-cert-verify: true, udp: true}
-  - {name: CN 221, server: gzyd2.xxcv.cc, port: 20050, type: trojan, password: 71b785a5-2809-4d4c-ba85-4879f96e5c06, sni: gzyd2.xxcv.cc, skip-cert-verify: true, udp: true}
-  - {name: CN 240, server: hnyd.xxcv.cc, port: 36660, type: vmess, uuid: 71b785a5-2809-4d4c-ba85-4879f96e5c06, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: "/guolicheng/hinet?ed=2048", headers: {Host: hnyd.xxcv.cc}}, udp: true}
-  - {name: CN 340, server: cu-cs.okvpn.xyz, port: 20004, type: trojan, password: 2c100ffe-4f52-4133-8c5c-d053fed7b270, sni: cu-cs.okvpn.xyz, skip-cert-verify: true, udp: true}
-  - {name: CN 19, server: cu-cs.okvpn.xyz, port: 20006, type: trojan, password: 2c100ffe-4f52-4133-8c5c-d053fed7b270, sni: cu-cs.okvpn.xyz, skip-cert-verify: true, udp: true}
-  - {name: CN 160, server: gzyd2.xxcv.cc, port: 20100, type: trojan, password: 71b785a5-2809-4d4c-ba85-4879f96e5c06, sni: gzyd2.xxcv.cc, skip-cert-verify: true, udp: true}
-  - {name: CN 203, server: hnyd.xxcv.cc, port: 20110, type: trojan, password: 71b785a5-2809-4d4c-ba85-4879f96e5c06, sni: hnyd.xxcv.cc, skip-cert-verify: true, udp: true}
-  - {name: CN 224, server: hnyd.xxcv.cc, port: 20040, type: trojan, password: 71b785a5-2809-4d4c-ba85-4879f96e5c06, sni: hnyd.xxcv.cc, skip-cert-verify: true, udp: true}
-  - {name: CN 171, server: gkdcm.gkdnode.top, port: 21806, type: ss, cipher: chacha20-ietf-poly1305, password: b0eec1ba-c636-3b41-96a1-3363d0a04567, udp: true}
-  - {name: 喵喵是骚零 2, server: 116.129.254.78, port: 63051, type: vmess, uuid: d9ac2f26-cc36-3faf-80c4-e2345cb25680, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /hls, headers: {Host: t.me.vpnhat}}, udp: true}
-  - {name: CN 159, server: gkdcm.gkdnode.top, port: 21812, type: ss, cipher: chacha20-ietf-poly1305, password: b0eec1ba-c636-3b41-96a1-3363d0a04567, udp: true}
-  - {name: CN 239, server: gkdcm.gkdnode.top, port: 21815, type: ss, cipher: chacha20-ietf-poly1305, password: b0eec1ba-c636-3b41-96a1-3363d0a04567, udp: true}
-  - {name: CN 298, server: hn.dxmax2.com, port: 17219, type: ss, cipher: aes-128-gcm, password: 7de1f1e5-907d-426b-8e4d-51d46f6a4607, udp: true}
-  - {name: CN 256, server: gzyd1.xxcv.cc, port: 20140, type: trojan, password: 71b785a5-2809-4d4c-ba85-4879f96e5c06, sni: gzyd1.xxcv.cc, skip-cert-verify: true, udp: true}
-  - {name: CN 188, server: hnyd.xxcv.cc, port: 20020, type: trojan, password: 71b785a5-2809-4d4c-ba85-4879f96e5c06, sni: hnyd.xxcv.cc, skip-cert-verify: true, udp: true}
-  - {name: CN 220, server: gkdcm.gkdnode.top, port: 21809, type: ss, cipher: chacha20-ietf-poly1305, password: b0eec1ba-c636-3b41-96a1-3363d0a04567, udp: true}
-  - {name: CN 226, server: gzyd2.xxcv.cc, port: 20040, type: trojan, password: 71b785a5-2809-4d4c-ba85-4879f96e5c06, sni: gzyd2.xxcv.cc, skip-cert-verify: true, udp: true}
-  - {name: CN 301, server: gzyd2.xxcv.cc, port: 20070, type: trojan, password: 71b785a5-2809-4d4c-ba85-4879f96e5c06, sni: gzyd2.xxcv.cc, skip-cert-verify: true, udp: true}
-  - {name: CN 347, server: Intranet.dedicated.line.monaiyun.top, port: 53101, type: vmess, uuid: 5bea4a9f-9c1f-355d-afd4-9ff3ee081143, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: CN 400, server: gzyd2.xxcv.cc, port: 20060, type: trojan, password: 71b785a5-2809-4d4c-ba85-4879f96e5c06, sni: gzyd2.xxcv.cc, skip-cert-verify: true, udp: true}
-  - {name: CN 211, server: Intranet.dedicated.line.monaiyun.top, port: 53101, type: vmess, uuid: 5bea4a9f-9c1f-355d-afd4-9ff3ee081143, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: CN 179, server: hnyd.xxcv.cc, port: 20100, type: trojan, password: 71b785a5-2809-4d4c-ba85-4879f96e5c06, sni: hnyd.xxcv.cc, skip-cert-verify: true, udp: true}
-  - {name: CN 280, server: hnyd.xxcv.cc, port: 20060, type: trojan, password: 71b785a5-2809-4d4c-ba85-4879f96e5c06, sni: hnyd.xxcv.cc, skip-cert-verify: true, udp: true}
-  - {name: KR 51, server: 193.122.122.208, port: 26471, type: vmess, uuid: 35137513-8f0a-4f74-84f8-ef9f5a8f85a6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: CN 238, server: Intranet.dedicated.line.monaiyun.top, port: 53106, type: vmess, uuid: 5bea4a9f-9c1f-355d-afd4-9ff3ee081143, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: CN 275 2, server: gzyd2.xxcv.cc, port: 20030, type: trojan, password: 71b785a5-2809-4d4c-ba85-4879f96e5c06, sni: gzyd2.xxcv.cc, skip-cert-verify: true, udp: true}
-  - {name: CN 357, server: Intranet.dedicated.line.monaiyun.top, port: 53103, type: vmess, uuid: 5bea4a9f-9c1f-355d-afd4-9ff3ee081143, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: CN 721, server: 14.29.124.174, port: 11015, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: 中国(TG频道:@kxswa) 2, server: 116.129.254.78, port: 63051, type: vmess, uuid: d9ac2f26-cc36-3faf-80c4-e2345cb25680, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /hls, headers: {Host: 116.129.254.78}}, udp: true}
-  - {name: CN 337, server: cm-gz.okvpn.xyz, port: 20009, type: trojan, password: 2c100ffe-4f52-4133-8c5c-d053fed7b270, sni: cm-gz.okvpn.xyz, skip-cert-verify: true, udp: true}
-  - {name: CN 23, server: cm-gz.okvpn.xyz, port: 20006, type: trojan, password: 2c100ffe-4f52-4133-8c5c-d053fed7b270, sni: cm-gz.okvpn.xyz, skip-cert-verify: true, udp: true}
-  - {name: CN 259, server: hnyd.xxcv.cc, port: 20080, type: trojan, password: 71b785a5-2809-4d4c-ba85-4879f96e5c06, sni: hnyd.xxcv.cc, skip-cert-verify: true, udp: true}
-  - {name: CN 268, server: gkdcm.gkdnode.top, port: 21821, type: ss, cipher: chacha20-ietf-poly1305, password: b0eec1ba-c636-3b41-96a1-3363d0a04567, udp: true}
-  - {name: CN 218, server: gkdcm.gkdnode.top, port: 21816, type: ss, cipher: chacha20-ietf-poly1305, password: b0eec1ba-c636-3b41-96a1-3363d0a04567, udp: true}
-  - {name: CN 387, server: Intranet.dedicated.line.monaiyun.top, port: 53108, type: vmess, uuid: 5bea4a9f-9c1f-355d-afd4-9ff3ee081143, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: US_2464, server: hkaz3.xmrth-node.xyz, port: 14390, type: vmess, uuid: ff51ca4a-6050-3e26-a037-88b0dd62d138, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /index, headers: {Host: hkaz3.xmrth-node.xyz}}, udp: true}
-  - {name: CN 277, server: gkdcm.gkdnode.top, port: 21819, type: ss, cipher: chacha20-ietf-poly1305, password: b0eec1ba-c636-3b41-96a1-3363d0a04567, udp: true}
-  - {name: _油管：全网最强白嫖 3, server: 223.166.129.29, port: 63028, type: vmess, uuid: d9ac2f26-cc36-3faf-80c4-e2345cb25680, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: _油管：全网最强白嫖 4, server: 223.166.129.29, port: 63028, type: vmess, uuid: d9ac2f26-cc36-3faf-80c4-e2345cb25680, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: HK 243, server: 20.205.63.134, port: 28443, type: trojan, password: 71b785a5-2809-4d4c-ba85-4879f96e5c06, skip-cert-verify: true, udp: true}
-  - {name: CN 295, server: Intranet.dedicated.line.monaiyun.top, port: 53107, type: vmess, uuid: 5bea4a9f-9c1f-355d-afd4-9ff3ee081143, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 日本高速, server: crus2.gzfxd.xyz, port: 16616, type: vmess, uuid: d50374ed-a9aa-4d3c-9b9c-704d333a72d0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: crus2.gzfxd.xyz}}, udp: true}
-  - {name: CN 207, server: 120.241.236.152, port: 52101, type: ss, cipher: chacha20-ietf-poly1305, password: b2f1a0b4-1fbd-43b6-87bc-b5ab36b3c0f2, udp: true}
-  - {name: HK 27, server: hk6711.fans8.xyz, port: 443, type: vmess, uuid: 7f4ff2e1-c08f-35bd-afe7-4a6a386907aa, alterId: 2, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ray, headers: {Host: hk6711.fans8.xyz}}, udp: true}
-  - {name: JP 200, server: 175.41.237.24, port: 28443, type: trojan, password: 71b785a5-2809-4d4c-ba85-4879f96e5c06, skip-cert-verify: true, udp: true}
-  - {name: KR 236, server: 144.24.87.99, port: 28443, type: trojan, password: 71b785a5-2809-4d4c-ba85-4879f96e5c06, skip-cert-verify: true, udp: true}
-  - {name: KR 250, server: 144.24.90.94, port: 28443, type: trojan, password: 71b785a5-2809-4d4c-ba85-4879f96e5c06, skip-cert-verify: true, udp: true}
-  - {name: CN 711, server: cm-gz.okvpn.xyz, port: 20000, type: trojan, password: 2c100ffe-4f52-4133-8c5c-d053fed7b270, sni: cm-gz.okvpn.xyz, skip-cert-verify: true, udp: true}
-  - {name: CN 5, server: cm.spacez.cloud, port: 30003, type: trojan, password: c9a3a61d-5d49-4158-9e60-6fa32684b122, skip-cert-verify: true, udp: true}
-  - {name: VN 284, server: 103.173.255.21, port: 28443, type: trojan, password: 71b785a5-2809-4d4c-ba85-4879f96e5c06, skip-cert-verify: true, udp: true}
-  - {name: VN 266, server: 103.173.255.127, port: 28443, type: trojan, password: 71b785a5-2809-4d4c-ba85-4879f96e5c06, skip-cert-verify: true, udp: true}
   - {name: CN_163, server: 14.29.124.168, port: 25219, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: Relay_🇯🇵JP-🇯🇵JP_483, server: jgw2.gaox.ml, port: 443, type: trojan, password: f2117e99-9b6e-47fd-b0a9-634a0b15b998, skip-cert-verify: true, udp: true}
-  - {name: JP 4, server: s1.hazz.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, skip-cert-verify: true, udp: true}
-  - {name: KR 246, server: 144.24.69.60, port: 28443, type: trojan, password: 71b785a5-2809-4d4c-ba85-4879f96e5c06, skip-cert-verify: true, udp: true}
-  - {name: KR|韩国, server: hg.jiashumao.net, port: 20888, type: trojan, password: f0217382-ea8e-3d34-9c96-6268523fd8b0, skip-cert-verify: true, udp: true}
-  - {name: JP 247, server: 35.78.118.63, port: 28443, type: trojan, password: 71b785a5-2809-4d4c-ba85-4879f96e5c06, skip-cert-verify: true, udp: true}
-  - {name: HK 17, server: iplchk.znetnodes.com, port: 22030, type: vmess, uuid: 9c2acfcb-8ae3-3d4c-b6b2-b115f1ab6dc3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /v2ray, headers: {Host: iplchk.znetnodes.com}}, udp: true}
-  - {name: HK 58, server: hk6712.fans8.xyz, port: 443, type: vmess, uuid: 7f4ff2e1-c08f-35bd-afe7-4a6a386907aa, alterId: 2, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ray, headers: {Host: hk6712.fans8.xyz}}, udp: true}
-  - {name: 美国(nodefree.org免费节点日更)_2, server: ifffffffuuuuuuus.qiqicdn2.cf, port: 443, type: vmess, uuid: 5a36cce4-0527-4d36-bf4a-6c215ef9c524, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /5a36cce4-0527-4d36-bf4a-6c215ef9c524-vmess, headers: {Host: ifffffffuuuuuuus.qiqicdn2.cf}}, udp: true}
-  - {name: JP 230, server: 54.199.133.35, port: 28443, type: trojan, password: 71b785a5-2809-4d4c-ba85-4879f96e5c06, skip-cert-verify: true, udp: true}
-  - {name: VN 260, server: 103.173.255.228, port: 28443, type: trojan, password: 71b785a5-2809-4d4c-ba85-4879f96e5c06, skip-cert-verify: true, udp: true}
-  - {name: KR 43, server: 146.56.45.173, port: 21365, type: vmess, uuid: 49526417-e201-4949-8055-81b0fb264be5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: KR 262, server: 144.24.77.154, port: 28443, type: trojan, password: 71b785a5-2809-4d4c-ba85-4879f96e5c06, skip-cert-verify: true, udp: true}
-  - {name: 台湾(nodefree.org日更免费节点)_2, server: bgpv2.ktyjsq.com, port: 12222, type: vmess, uuid: 9ea70d57-9cb6-3bd0-ae41-5601e516dcc6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: HK 228, server: www.anlocl.gq, port: 10330, type: vmess, uuid: 6efebf2f-e675-4798-a3f0-c9b225701800, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /v2ray, headers: {Host: www.anlocl.gq}}, udp: true}
-  - {name: Relay_🇰🇷KR-🇭🇰HK_485, server: kraws003.xmrth-node.xyz, port: 15861, type: vmess, uuid: 3053c66e-9e57-30ba-b8fe-d0cdeabc0fa5, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /index, headers: {Host: kraws003.xmrth-node.xyz}}, udp: true}
-  - {name: US 258, server: 23.225.77.192, port: 28443, type: trojan, password: 71b785a5-2809-4d4c-ba85-4879f96e5c06, skip-cert-verify: true, udp: true}
-  - {name: HK 121, server: azqt001.xiba1.xyz, port: 20735, type: trojan, password: 30d830d3-f301-33a1-bc0c-29acbca168ec, sni: ssl.ssl12.xyz, skip-cert-verify: true, udp: true}
-  - {name: US 267, server: 23.225.77.226, port: 28443, type: trojan, password: 71b785a5-2809-4d4c-ba85-4879f96e5c06, skip-cert-verify: true, udp: true}
-  - {name: US_20, server: 143.110.145.33, port: 12315, type: vmess, uuid: 63297c39-3e69-4fd0-8632-da4c708f139f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国-295.1KB/s(Youtube:不良林), server: 107.167.24.6, port: 17001, type: trojan, password: d4e9e6bb-daa4-44ed-aa29-d1b8d00ba7d6, skip-cert-verify: true, udp: true}
-  - {name: AU 35, server: au2-3.nigirocloud.com, port: 443, type: trojan, password: 3yFq7NCP53mVfpXJz3, sni: au2-3.nigirocloud.com, skip-cert-verify: true, udp: true}
-  - {name: 中国(TG频道:@kxswa) 3, server: 139.9.88.116, port: 5800, type: vmess, uuid: 63c04e85-c6a0-4503-b2f7-ebf733e55db2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _油管：全网最强白嫖, server: 14.29.124.168, port: 25272, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: _油管：全网最强白嫖 2, server: 14.29.124.168, port: 25251, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: 香港SSR-tg频道:@ripaojiedian, server: 36.138.176.120, port: 48620, type: ssr, cipher: aes-256-cfb, password: GjRQkK, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 1062:tLkKEk, obfs-param: 1466f1062.microsoft.com, udp: true}
+  - {name: CN_54 TG@peekfun | 3.02Mb, server: 14.29.124.168, port: 25296, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: _379 |29.18Mb, server: 14.29.124.168, port: 25283, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: _油管：全网最强白嫖 3, server: 14.29.124.168, port: 25254, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: 香港ssr-tg频道:@ripaojiedian, server: ca01.mellanox.info, port: 2498, type: ssr, cipher: rc4-md5, password: 0xcriY, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: download.windowsupdate.com, udp: true}
+  - {name: _960 |19.04Mb, server: 14.29.124.168, port: 25215, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: 中国(TG频道:@kxswa), server: 14.29.124.168, port: 25235, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: _油管：全网最强白嫖 4, server: 14.29.124.168, port: 25230, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: _油管：全网最强白嫖 5, server: 14.29.124.168, port: 25289, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: _958 |15.81Mb, server: 14.29.124.168, port: 25229, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: 中国(TG频道:@kxswa) 2, server: 14.29.124.168, port: 25252, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: _油管：全网最强白嫖 6, server: 14.29.124.168, port: 25247, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: _油管：全网最强白嫖 7, server: 14.29.124.168, port: 25222, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: _油管：全网最强白嫖 8, server: 14.29.124.168, port: 25294, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: _油管：全网最强白嫖 9, server: sxqxj.cn, port: 2164, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ws, headers: {Host: sxqxj.cn}}, udp: true}
+  - {name: _油管：全网最强白嫖 10, server: 14.29.124.168, port: 25287, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: _油管：全网最强白嫖 11, server: 14.29.124.168, port: 25280, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: _油管：全网最强白嫖 12, server: 14.29.124.168, port: 25297, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: _油管：全网最强白嫖 13, server: 14.29.124.168, port: 25261, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: _390 |33.19Mb, server: 14.29.124.168, port: 25267, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: 中国(TG频道:@kxswa) 3, server: 14.29.124.168, port: 25286, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: _963 |58.30Mb, server: 14.29.124.168, port: 25284, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: _1585 |44.33Mb, server: 116.129.253.130, port: 3389, type: trojan, password: d66013c645b93c5c, skip-cert-verify: true, udp: true}
+  - {name: _1578 |24.28Mb, server: 116.129.254.47, port: 3389, type: trojan, password: ffec9f6ea19e1dd1, skip-cert-verify: true, udp: true}
+  - {name: HK 85, server: azhk.r.optage.moe, port: 44609, type: trojan, password: 12dbfb53-1249-47e6-bf2c-795a92727034, sni: hkt.node.qchwnd.moe, skip-cert-verify: true, udp: true}
+  - {name: _油管：全网最强白嫖 14, server: sxqxj.cn, port: 2164, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ws, headers: {Host: sxqxj.cn}}, udp: true}
+  - {name: HK 27, server: hk6711.fans8.xyz, port: 443, type: vmess, uuid: 7f4ff2e1-c08f-35bd-afe7-4a6a386907aa, alterId: 2, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ray, headers: {Host: hk6711.fans8.xyz}}, udp: true}
+  - {name: "[Azure]香港5•HKT", server: azhk.r.optage.moe, port: 44609, type: trojan, password: e9561799-2eee-47c5-a384-fc369f0eb792, sni: hkt.node.qchwnd.moe, skip-cert-verify: true, udp: true}
+  - {name: 中国(TG频道:@kxswa) 4, server: cu-cs.okvpn.xyz, port: 20009, type: trojan, password: 2c100ffe-4f52-4133-8c5c-d053fed7b270, sni: cu-cs.okvpn.xyz, skip-cert-verify: true, udp: true}
+  - {name: _油管：全网最强白嫖 15, server: 116.129.253.130, port: 3389, type: trojan, password: e37c6d7efa845d60, skip-cert-verify: true, udp: true}
+  - {name: "[Azure]香港3•HGC", server: azhk.r.optage.moe, port: 44601, type: trojan, password: e9561799-2eee-47c5-a384-fc369f0eb792, sni: hk.node.qchwnd.moe, skip-cert-verify: true, udp: true}
+  - {name: 中国(TG频道:@kxswa) 5, server: 14.29.124.168, port: 25293, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: 香港高速|tg频道:@ripaojiedian, server: v1hugang4.kuli888.xyz, port: 11151, type: trojan, password: 2187303b-d0d9-3916-b455-d9da7f7bb4af, sni: hg05dcwjdjdanc.kulime.space, skip-cert-verify: true, udp: true}
+  - {name: CN 337, server: cm-gz.okvpn.xyz, port: 20009, type: trojan, password: 2c100ffe-4f52-4133-8c5c-d053fed7b270, sni: cm-gz.okvpn.xyz, skip-cert-verify: true, udp: true}
+  - {name: CN 19, server: cu-cs.okvpn.xyz, port: 20006, type: trojan, password: 2c100ffe-4f52-4133-8c5c-d053fed7b270, sni: cu-cs.okvpn.xyz, skip-cert-verify: true, udp: true}
+  - {name: HK_2194 |41.56Mb, server: yyyy.wwwbhjy.com, port: 2443, type: vmess, uuid: dee32eb7-e190-4c6f-dd27-aa9c82cd5490, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /8a76fb13/, headers: {Host: yyyy.wwwbhjy.com}}, udp: true}
+  - {name: "[Azure]台湾1", server: azhk.r.optage.moe, port: 44608, type: trojan, password: e9561799-2eee-47c5-a384-fc369f0eb792, sni: tw.node.qchwnd.moe, skip-cert-verify: true, udp: true}
+  - {name: 中国(TG频道:@kxswa) 6, server: 14.29.124.168, port: 25217, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN 23, server: cm-gz.okvpn.xyz, port: 20006, type: trojan, password: 2c100ffe-4f52-4133-8c5c-d053fed7b270, sni: cm-gz.okvpn.xyz, skip-cert-verify: true, udp: true}
+  - {name: 香港(TG频道:@kxswa), server: azhk.r.optage.moe, port: 44605, type: trojan, password: 12dbfb53-1249-47e6-bf2c-795a92727034, sni: azhk.r.optage.moe, skip-cert-verify: true, udp: true}
+  - {name: 日本2-tg频道:@ripaojiedian, server: jp03.xniuniu888.xyz, port: 30326, type: vmess, uuid: 1bd166b8-62e5-3ab8-a20e-e045a884807c, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: JP-A|日本, server: jpa-zf.jiashumao.net, port: 29881, type: trojan, password: 86e6c7b3-51e8-309d-9e1c-551bcb12a603, sni: jpa.jiashumao.net, skip-cert-verify: true, udp: true}
+  - {name: "[Azure]新加坡", server: azhk.r.optage.moe, port: 44605, type: trojan, password: e9561799-2eee-47c5-a384-fc369f0eb792, sni: cdn.qchwnd.moe, skip-cert-verify: true, udp: true}
+  - {name: HK 105, server: azhk.r.optage.moe, port: 44607, type: trojan, password: 12dbfb53-1249-47e6-bf2c-795a92727034, sni: id.node.qchwnd.moe, skip-cert-verify: true, udp: true}
+  - {name: 中国(TG频道:@kxswa) 7, server: 14.29.124.168, port: 25218, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: "[Azure]法国1", server: azhk.r.optage.moe, port: 44612, type: trojan, password: e9561799-2eee-47c5-a384-fc369f0eb792, sni: fr.node.qchwnd.moe, skip-cert-verify: true, udp: true}
+  - {name: HK-A|香港, server: szdx-anhb.jiashumao.net, port: 22481, type: trojan, password: 86e6c7b3-51e8-309d-9e1c-551bcb12a603, sni: ahbn.jiashumao.net, skip-cert-verify: true, udp: true}
+  - {name: SG|新加坡, server: sg-zf.jiashumao.net, port: 29465, type: trojan, password: 86e6c7b3-51e8-309d-9e1c-551bcb12a603, sni: sg.jiashumao.net, skip-cert-verify: true, udp: true}
+  - {name: JP-B|日本, server: jpb-zf.jiashumao.net, port: 20479, type: trojan, password: 86e6c7b3-51e8-309d-9e1c-551bcb12a603, sni: jpb.jiashumao.net, skip-cert-verify: true, udp: true}
+  - {name: 香港(TG频道:@kxswa) 2, server: azhk.n.optage.moe, port: 44602, type: trojan, password: 12dbfb53-1249-47e6-bf2c-795a92727034, sni: azhk.n.optage.moe, skip-cert-verify: true, udp: true}
+  - {name: 香港4•HKT, server: hkt.n.optage.moe, port: 44609, type: trojan, password: e9561799-2eee-47c5-a384-fc369f0eb792, sni: hkt.node.qchwnd.moe, skip-cert-verify: true, udp: true}
+  - {name: 新加坡2-tg频道:@ripaojiedian, server: sg03.xniuniu888.xyz, port: 30366, type: vmess, uuid: 1bd166b8-62e5-3ab8-a20e-e045a884807c, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 新加坡2-tg频道:@ripaojiedian 2, server: sg03.xniuniu888.xyz, port: 30366, type: vmess, uuid: 1bd166b8-62e5-3ab8-a20e-e045a884807c, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN_1885 |62.81Mb, server: 14.29.124.168, port: 25271, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: 东京-tg频道:@ripaojiedian, server: 13.114.218.200, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: "[Azure]印度尼西亚", server: azhk.r.optage.moe, port: 44607, type: trojan, password: e9561799-2eee-47c5-a384-fc369f0eb792, sni: id.node.qchwnd.moe, skip-cert-verify: true, udp: true}
+  - {name: CN 12, server: 14.29.124.168, port: 25279, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: 中国(TG频道:@kxswa) 8, server: 14.29.124.168, port: 25238, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: _油管：全网最强白嫖 16, server: 14.29.124.168, port: 25259, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: "@SSRSUB-V09-付费推荐:suo.yt/ssrsub", server: ingress-i1.onebox6.org, port: 38701, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: ingress-i1.onebox6.org}}, udp: true}
   - {name: 台湾(nodefree.org免费节点日更)_3, server: ingress-i1.onebox6.org, port: 38201, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: ingress-i1.onebox6.org}}, udp: true}
-  - {name: bulink自建免费11线 三网, server: la56.burstlinker.com.fobzs.com, port: 443, type: vmess, uuid: 764a5384-ca4a-4728-af68-28f215ba9fa7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ws, headers: {Host: la56.burstlinker.com.fobzs.com}}, udp: true}
-  - {name: 台湾优化-tg频道:@ripaojiedian, server: 67tw01.fans8.xyz, port: 443, type: trojan, password: 332cf3f1-47d5-454d-a6ae-fdffdbe7e85e, sni: 67tw01.fans8.xyz, skip-cert-verify: true, udp: true}
+  - {name: 纽约-tg频道:@ripaojiedian, server: us01.xniuniu888.xyz, port: 30149, type: vmess, uuid: 1bd166b8-62e5-3ab8-a20e-e045a884807c, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 日本3-tg频道:@ripaojiedian, server: 18.183.174.6, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: "[Azure]俄罗斯2", server: azhk.r.optage.moe, port: 44606, type: trojan, password: e9561799-2eee-47c5-a384-fc369f0eb792, sni: ru.node.qchwnd.moe, skip-cert-verify: true, udp: true}
+  - {name: 纽约-tg频道:@ripaojiedian 2, server: us01.xniuniu888.xyz, port: 30149, type: vmess, uuid: 1bd166b8-62e5-3ab8-a20e-e045a884807c, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: JP 4, server: s1.hazz.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, skip-cert-verify: true, udp: true}
+  - {name: HK-A|香港 2, server: szdx-anhb.jiashumao.net, port: 22481, type: trojan, password: f0217382-ea8e-3d34-9c96-6268523fd8b0, skip-cert-verify: true, udp: true}
+  - {name: _1524 |44.16Mb, server: 20.210.229.72, port: 3389, type: trojan, password: ca4596fb9bc63cf2, skip-cert-verify: true, udp: true}
+  - {name: 中国(TG频道:@kxswa) 9, server: 139.9.88.116, port: 5800, type: vmess, uuid: 63c04e85-c6a0-4503-b2f7-ebf733e55db2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 日本2-tg频道:@ripaojiedian 2, server: jp03.xniuniu888.xyz, port: 30326, type: vmess, uuid: 1bd166b8-62e5-3ab8-a20e-e045a884807c, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: KR|韩国, server: hg.jiashumao.net, port: 20888, type: trojan, password: f0217382-ea8e-3d34-9c96-6268523fd8b0, skip-cert-verify: true, udp: true}
+  - {name: KR|韩国 2, server: hg.jiashumao.net, port: 20888, type: trojan, password: 86e6c7b3-51e8-309d-9e1c-551bcb12a603, sni: hg.jiashumao.net, skip-cert-verify: true, udp: true}
   - {name: CN_191 | 5.61Mb, server: 139.9.88.116, port: 5800, type: vmess, uuid: 63c04e85-c6a0-4503-b2f7-ebf733e55db2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: JP 265, server: 155.248.162.12, port: 28443, type: trojan, password: 71b785a5-2809-4d4c-ba85-4879f96e5c06, skip-cert-verify: true, udp: true}
-  - {name: JP 297, server: 139.162.124.250, port: 28443, type: trojan, password: 71b785a5-2809-4d4c-ba85-4879f96e5c06, skip-cert-verify: true, udp: true}
-  - {name: 高速节点推荐：v1.mk/vip, server: ruvds.testx.eu.org, port: 443, type: vmess, uuid: 0e7036c1-6de1-4a83-ef4f-e0d56c67fa10, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: "/vmess-share/?ed=2048", headers: {Host: ruvds.testx.eu.org}}, udp: true}
-  - {name: _41|13.55Mb, server: 139.9.88.116, port: 5800, type: vmess, uuid: 63c04e85-c6a0-4503-b2f7-ebf733e55db2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: HK 110, server: azhj001.xiba1.xyz, port: 20723, type: trojan, password: 30d830d3-f301-33a1-bc0c-29acbca168ec, sni: ssl.ssl12.xyz, skip-cert-verify: true, udp: true}
-  - {name: VN 273, server: 103.173.155.72, port: 28443, type: trojan, password: 71b785a5-2809-4d4c-ba85-4879f96e5c06, skip-cert-verify: true, udp: true}
-  - {name: "@SSRSUB-V04-付费推荐:v2cross.com", server: nnv.chitacdn.xyz, port: 54242, type: vmess, uuid: f2393d82-94c4-4b12-8267-293a7500e487, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: Relay_-🇬🇧GB_03, server: nnv.chitacdn.xyz, port: 54242, type: vmess, uuid: f2393d82-94c4-4b12-8267-293a7500e487, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: JP01, server: jp1-2.shadowflycn.com, port: 6666, type: vmess, uuid: 21292bcb-dc5d-3e7a-85df-edd4c11f34b0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /baidu, headers: {Host: jp1-2.shadowflycn.com}}, udp: true}
+  - {name: MY|马来西亚, server: mlxy-zf.jiashumao.net, port: 27171, type: trojan, password: 86e6c7b3-51e8-309d-9e1c-551bcb12a603, sni: mlxy.jiashumao.net, skip-cert-verify: true, udp: true}
+  - {name: _1456 |12.71Mb, server: 175.178.163.153, port: 443, type: vmess, uuid: 9b4d4f9c-c5bf-4a3b-a6ea-f675989d9cbd, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: _油管：全网最强白嫖 17, server: 223.166.129.29, port: 63087, type: vmess, uuid: d9ac2f26-cc36-3faf-80c4-e2345cb25680, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /mugua, headers: {Host: t.me.vpnhat}}, udp: true}
+  - {name: _油管：全网最强白嫖 18, server: in-sg-1.onebox6.org, port: 38701, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: www.ivpnpro.net}}, udp: true}
+  - {name: HK-B|香港, server: bnbq-zf.jiashumao.net, port: 26381, type: trojan, password: 86e6c7b3-51e8-309d-9e1c-551bcb12a603, sni: bnbq.jiashumao.net, skip-cert-verify: true, udp: true}
+  - {name: _1341, server: 104.243.30.252, port: 246, type: ss, cipher: aes-256-cfb, password: bwhskrskr03, udp: true}
+  - {name: NF|奈飞, server: sxdx-nf.jiashumao.net, port: 35401, type: trojan, password: 86e6c7b3-51e8-309d-9e1c-551bcb12a603, sni: nf.jiashumao.net, skip-cert-verify: true, udp: true}
+  - {name: US 103, server: 107.148.23.159, port: 26969, type: trojan, password: 1f316deb-02e7-4050-acd9-abcb3942fd37, sni: us-06.bbbb.pw, skip-cert-verify: true, udp: true}
+  - {name: AU 35, server: au2-3.nigirocloud.com, port: 443, type: trojan, password: 3yFq7NCP53mVfpXJz3, sni: au2-3.nigirocloud.com, skip-cert-verify: true, udp: true}
+  - {name: US|美国, server: us-cera.jiashumao.net, port: 12001, type: trojan, password: 86e6c7b3-51e8-309d-9e1c-551bcb12a603, sni: us-cera.jiashumao.net, skip-cert-verify: true, udp: true}
   - {name: CN_263 | 4.39Mb, server: 14.29.124.174, port: 11010, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: Unlimited Gaming (1), server: vietnam1.shopvpn.net, port: 80, type: vmess, uuid: 23959a9d-be8b-45d7-b284-5a3f9f29039a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /shopvpn.net, headers: {Host: quangtien.akamaized.net}}, udp: true}
-  - {name: "[V2ray·1x]莫斯科 CloudFlare", server: ru.nuker.biz, port: 443, type: vmess, uuid: fd1f9cd5-057f-46e4-996c-d21000ccedd6, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: ru.nuker.biz}}, udp: true}
-  - {name: VN01, server: vn01-ipt-sn127727290.shadowflycn.com, port: 5055, type: vmess, uuid: 21292bcb-dc5d-3e7a-85df-edd4c11f34b0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /baidu, headers: {Host: vn01-ipt-sn127727290.shadowflycn.com}}, udp: true}
-  - {name: CN 379, server: gy.ziqiyun.xyz, port: 44041, type: ss, cipher: chacha20-ietf-poly1305, password: 297545c2-a59d-4610-9580-a7baa3657a57, udp: true}
-  - {name: univstar-Seoul-AWS_1, server: 223.166.129.29, port: 63004, type: vmess, uuid: d9ac2f26-cc36-3faf-80c4-e2345cb25680, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: HK 119, server: azqt001.xiba1.xyz, port: 20736, type: trojan, password: 30d830d3-f301-33a1-bc0c-29acbca168ec, sni: ssl.ssl12.xyz, skip-cert-verify: true, udp: true}
-  - {name: HK 122, server: azqt001.xiba1.xyz, port: 20742, type: trojan, password: 30d830d3-f301-33a1-bc0c-29acbca168ec, sni: ssl.ssl12.xyz, skip-cert-verify: true, udp: true}
-  - {name: 中国(TG频道:@kxswa) 4, server: sg01.caiyuanzi.life, port: 63212, type: ss, cipher: chacha20-ietf-poly1305, password: 68a401ed-9403-4d69-a564-aeba67204b35, udp: true}
-  - {name: 香港_0606138, server: 47.243.87.171, port: 443, type: vmess, uuid: 4af38112-0854-48d8-9387-5ece4078a599, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /szGxn}, udp: true}
-  - {name: "[v2ray·0.6x]Amazon_Frankfurt", server: 18.185.91.14, port: 44579, type: vmess, uuid: fd1f9cd5-057f-46e4-996c-d21000ccedd6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 中国(TG频道:@kxswa) 5, server: pass5.jiasuyuan.shop, port: 33342, type: ss, cipher: chacha20-ietf-poly1305, password: 68a401ed-9403-4d69-a564-aeba67204b35, udp: true}
-  - {name: "★群: t.me/bujidaoChat", server: 51.158.152.30, port: 443, type: vmess, uuid: e3289141-7d98-3831-9fb6-25ed4f7b3b6d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: v2-nl-001.xiaoxiaobujidao.xyz}}, udp: true}
-  - {name: ✯洛杉矶000|0.10元/G|Trojan|, server: 104.149.142.138, port: 10443, type: trojan, password: e3289141-7d98-3831-9fb6-25ed4f7b3b6d, sni: v2-los-000.xiaoxiaobujidao.xyz, skip-cert-verify: true, udp: true}
-  - {name: IT 10, server: 92.223.93.233, port: 1035, type: ss, cipher: chacha20-ietf-poly1305, password: )1N1E6v0SU_rGTpg, udp: true}
-  - {name: HK-A|香港, server: szdx-anhb.jiashumao.net, port: 22481, type: trojan, password: f0217382-ea8e-3d34-9c96-6268523fd8b0, skip-cert-verify: true, udp: true}
-  - {name: DE 20, server: s4.hazz.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, sni: edge.apple.com, skip-cert-verify: true, udp: true}
-  - {name: HK 102, server: azhj001.xiba1.xyz, port: 20727, type: trojan, password: 30d830d3-f301-33a1-bc0c-29acbca168ec, sni: ssl.ssl12.xyz, skip-cert-verify: true, udp: true}
-  - {name: HK 118, server: azqt001.xiba1.xyz, port: 20734, type: trojan, password: 30d830d3-f301-33a1-bc0c-29acbca168ec, sni: ssl.ssl12.xyz, skip-cert-verify: true, udp: true}
-  - {name: HK_437, server: hkaz6.xmrth-node.xyz, port: 13890, type: vmess, uuid: ff51ca4a-6050-3e26-a037-88b0dd62d138, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /index, headers: {Host: hkaz6.xmrth-node.xyz}}, udp: true}
-  - {name: github.com/freefq - 加拿大  16, server: 527hk1.fans8.xyz, port: 80, type: vmess, uuid: 7f4ff2e1-c08f-35bd-afe7-4a6a386907aa, alterId: 2, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ray, headers: {Host: 527hk1.fans8.xyz}}, udp: true}
-  - {name: Relay_🇨🇦CA-🇨🇦CA_07, server: 527hk1.fans8.xyz, port: 80, type: vmess, uuid: 7f4ff2e1-c08f-35bd-afe7-4a6a386907aa, alterId: 2, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ray, headers: {Host: 527hk1.fans8.xyz}}, udp: true}
-  - {name: Relay_🏁ZZ-🇹🇼TW_2850, server: 5.44.249.43, port: 3389, type: trojan, password: cd39f62aed7b90f6, skip-cert-verify: true, udp: true}
-  - {name: Relay_🏁ZZ-🇹🇼TW_2851, server: 5.44.249.43, port: 3389, type: trojan, password: 6f0a9d0fa39d65fa, skip-cert-verify: true, udp: true}
-  - {name: Relay_🏁ZZ-🇹🇼TW_2853, server: 5.44.249.43, port: 3389, type: trojan, password: ca4596fb9bc63cf2, skip-cert-verify: true, udp: true}
-  - {name: "[V2ray·0.5x]莫斯科 GT直连#公益", server: 46.17.42.135, port: 44368, type: vmess, uuid: fd1f9cd5-057f-46e4-996c-d21000ccedd6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇫🇷FR-🇫🇷FR_365, server: 54.37.192.112, port: 443, type: vmess, uuid: 9f58234c-355b-4065-ae21-d4a63099aba5, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/120208301422}, udp: true}
-  - {name: Relay_🏁ZZ-🇹🇼TW_2854, server: 5.44.249.43, port: 3389, type: trojan, password: ffec9f6ea19e1dd1, skip-cert-verify: true, udp: true}
-  - {name: Pool_🇺🇸US_2440, server: 104.166.135.10, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ws, headers: {Host: ahdaeph8.com}}, udp: true}
-  - {name: DE 281, server: 172.104.244.36, port: 28443, type: trojan, password: 71b785a5-2809-4d4c-ba85-4879f96e5c06, skip-cert-verify: true, udp: true}
-  - {name: DE 299, server: 172.104.251.52, port: 28443, type: trojan, password: 71b785a5-2809-4d4c-ba85-4879f96e5c06, skip-cert-verify: true, udp: true}
-  - {name: US 71, server: bai-piao-wang-zhe-iplc12.98848.xyz, port: 19222, type: trojan, password: 2b815eb6-3982-4f09-9181-3c02c479d4d1, sni: bai-piao-wang-zhe-iplc12.98848.xyz, skip-cert-verify: true, udp: true}
-  - {name: CN 115, server: tw02.beibei456.xyz, port: 33352, type: ss, cipher: chacha20-ietf-poly1305, password: 68a401ed-9403-4d69-a564-aeba67204b35, udp: true}
-  - {name: 中国(TG频道:@kxswa) 6, server: hg.tgdaili.xyz, port: 32000, type: ss, cipher: chacha20-ietf-poly1305, password: 68a401ed-9403-4d69-a564-aeba67204b35, udp: true}
-  - {name: Relay_🏁ZZ-🇹🇼TW_2848, server: 5.44.249.43, port: 3389, type: trojan, password: 9a27800ca7b52ee0, skip-cert-verify: true, udp: true}
-  - {name: US 🇺🇸 Miami @AzadNet, server: 37.218.241.118, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: exwNDD6fpvXk, udp: true}
-  - {name: 日本(nodefree.org免费节点日更)_1, server: 150.230.99.46, port: 22222, type: vmess, uuid: e6c55d36-022c-4ebc-b9c2-e1220a7184f4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: CN 11, server: 139.217.229.103, port: 41203, type: vmess, uuid: 039aeb43-a240-3208-a447-ca80be12a290, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: Unlimited Việt Nam (13), server: vietnam.hn13.shopvpn.net, port: 80, type: vmess, uuid: 23959a9d-be8b-45d7-b284-5a3f9f29039a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /shopvpn.net, headers: {Host: quangtien.akamaized.net}}, udp: true}
-  - {name: US 6, server: bwg2.gushidawang.cc, port: 57539, type: vmess, uuid: fcf7202c-bd1a-44e9-a25e-bf152f6e5c11, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 法国-1.11MB/s(Youtube:不良林), server: 54.37.192.112, port: 443, type: vmess, uuid: 9f58234c-355b-4065-ae21-d4a63099aba5, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/120208301422, headers: {Host: 54.37.192.112}}, udp: true}
-  - {name: CN 28, server: pass4.jiasuyuan.shop, port: 33341, type: ss, cipher: chacha20-ietf-poly1305, password: 68a401ed-9403-4d69-a564-aeba67204b35, udp: true}
-  - {name: 喵喵是骚零 3, server: 223.166.129.29, port: 63051, type: vmess, uuid: d9ac2f26-cc36-3faf-80c4-e2345cb25680, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /hls, headers: {Host: t.me.vpnhat}}, udp: true}
-  - {name: AU 306, server: 192.9.183.183, port: 28443, type: trojan, password: 71b785a5-2809-4d4c-ba85-4879f96e5c06, skip-cert-verify: true, udp: true}
-  - {name: bulink自建免费10线 三网, server: la41.bulink.xyz.fobzs.com, port: 443, type: vmess, uuid: dd01617b-7f89-45e1-89e7-d9ddcf15a210, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ws, headers: {Host: la41.bulink.xyz.fobzs.com}}, udp: true}
-  - {name: _油管：全网最强白嫖 5, server: in-sg-1.onebox6.org, port: 38701, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: www.ivpnpro.net}}, udp: true}
-  - {name: HK_437 2, server: hkaz6.xmrth-node.xyz, port: 13890, type: vmess, uuid: ff51ca4a-6050-3e26-a037-88b0dd62d138, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /index, headers: {Host: www.baidu.com}}, udp: true}
-  - {name: US_3490 | 2.02Mb, server: 50.114.56.20, port: 4440, type: vmess, uuid: 8d13dc0f-c4c9-3f66-b8de-d9a5d432842a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /v2ray}, udp: true}
-  - {name: Relay_🏁ZZ-🇹🇼TW_2849, server: 5.44.249.43, port: 3389, type: trojan, password: d66013c645b93c5c, skip-cert-verify: true, udp: true}
-  - {name: Relay_🏁ZZ-🇹🇼TW_2852, server: 5.44.249.43, port: 3389, type: trojan, password: 711aabc21e45ae31, skip-cert-verify: true, udp: true}
-  - {name: US 41, server: sg01.czsx1624.tk, port: 443, type: vmess, uuid: d002b422-eace-4e01-bf58-e4bb0bcfe7af, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /3a8545177/, headers: {Host: sg01.czsx1624.tk}}, udp: true}
-  - {name: JP02, server: jp1-2.shadowflycn.com, port: 4007, type: vmess, uuid: 21292bcb-dc5d-3e7a-85df-edd4c11f34b0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /baidu, headers: {Host: jp1-2.shadowflycn.com}}, udp: true}
-  - {name: 新加坡3-tg频道:@ripaojiedian, server: cf.fullcloud.tk, port: 2053, type: vmess, uuid: bf67437e-6c90-45ca-abc2-c7240a5ce2aa, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /eisasqa, headers: {Host: foxsg.fovi.tk}}, udp: true}
-  - {name: HK 112, server: cat224.kuyi.org, port: 443, type: vmess, uuid: c026994d-2ecb-31d2-afd2-360404690665, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /es/gogogo, headers: {Host: cat224.kuyi.org}}, udp: true}
-  - {name: 新加坡优化-tg频道:@ripaojiedian, server: 67sg01.fans8.xyz, port: 443, type: trojan, password: 332cf3f1-47d5-454d-a6ae-fdffdbe7e85e, sni: 67sg01.fans8.xyz, skip-cert-verify: true, udp: true}
-  - {name: CN_230 | 1.92Mb, server: 14.29.124.174, port: 11037, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: US 8, server: taobao.babazhuji.com, port: 443, type: vmess, uuid: 36712be8-f2ff-4875-8c67-95efd66ac994, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /didi, headers: {Host: taobao.babazhuji.com}}, udp: true}
-  - {name: CN 9, server: gycd1.csccdd.xyz, port: 52340, type: vmess, uuid: 1dc13504-e4ba-3c49-8e0b-6a3eb4e40335, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /index, headers: {Host: gycd1.csccdd.xyz}}, udp: true}
-  - {name: CN 21, server: pass1.jiasuyuan.shop, port: 63211, type: ss, cipher: chacha20-ietf-poly1305, password: 68a401ed-9403-4d69-a564-aeba67204b35, udp: true}
-  - {name: CN 25, server: bgpv2.ktyjsq.com, port: 12221, type: vmess, uuid: 9ea70d57-9cb6-3bd0-ae41-5601e516dcc6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: CN 44, server: bgpv2.ktyjsq.com, port: 12229, type: vmess, uuid: 9ea70d57-9cb6-3bd0-ae41-5601e516dcc6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: CN 104, server: bgpv2.ktyjsq.com, port: 12229, type: vmess, uuid: 9ea70d57-9cb6-3bd0-ae41-5601e516dcc6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇨🇳CN-🇺🇸US_14, server: cm01.db-link.in, port: 13302, type: vmess, uuid: c4fa06ca-c18f-37a4-ba0e-63537c0fb672, alterId: 1, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /db, headers: {Host: cm01.db-link.in}}, udp: true}
-  - {name: CN-高速节点推荐：v1.mk/vip, server: bgpv2.ktyjsq.com, port: 12229, type: vmess, uuid: 9ea70d57-9cb6-3bd0-ae41-5601e516dcc6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 台湾-1.49MB/s(Youtube:不良林), server: 330tw.fans8.xyz, port: 443, type: vmess, uuid: 7f4ff2e1-c08f-35bd-afe7-4a6a386907aa, alterId: 2, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ray, headers: {Host: 330tw.fans8.xyz}}, udp: true}
-  - {name: 英国(nodefree.org免费节点日更)_1, server: bgpv2.ktyjsq.com, port: 12229, type: vmess, uuid: 9ea70d57-9cb6-3bd0-ae41-5601e516dcc6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国(nodefree.org免费节点日更)_2 2, server: bgpv2.ktyjsq.com, port: 12205, type: vmess, uuid: 9ea70d57-9cb6-3bd0-ae41-5601e516dcc6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: CN 34, server: bgpv2.ktyjsq.com, port: 12224, type: vmess, uuid: 9ea70d57-9cb6-3bd0-ae41-5601e516dcc6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: CN 333, server: 14.29.124.174, port: 11043, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN 122, server: sg02.caiyuanzi.life, port: 63222, type: ss, cipher: chacha20-ietf-poly1305, password: 68a401ed-9403-4d69-a564-aeba67204b35, udp: true}
-  - {name: Relay_🇭🇰HK-🇭🇰HK_601, server: hk003.369boy.com, port: 32502, type: trojan, password: d4e9e6bb-daa4-44ed-aa29-d1b8d00ba7d6, skip-cert-verify: true, udp: true}
-  - {name: 日本(nodefree.org免费节点日更)_2, server: bgpv2.ktyjsq.com, port: 12205, type: vmess, uuid: 9ea70d57-9cb6-3bd0-ae41-5601e516dcc6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: CN 30, server: bgpv2.ktyjsq.com, port: 12223, type: vmess, uuid: 9ea70d57-9cb6-3bd0-ae41-5601e516dcc6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: CN 49, server: bgpv2.ktyjsq.com, port: 12224, type: vmess, uuid: 9ea70d57-9cb6-3bd0-ae41-5601e516dcc6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: CN 53, server: bgpv2.ktyjsq.com, port: 12205, type: vmess, uuid: 9ea70d57-9cb6-3bd0-ae41-5601e516dcc6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 台湾(nodefree.org免费节点日更)_1, server: 331tw.fans8.xyz, port: 80, type: vmess, uuid: 7f4ff2e1c08f35bdafe74a6a386907aa, alterId: 2, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ray, headers: {Host: 331tw.fans8.xyz}}, udp: true}
-  - {name: CN_224 | 6.00Mb, server: 14.29.124.174, port: 11020, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_231, server: 14.29.124.174, port: 11038, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: Relay_🇨🇳CN-🇭🇰HK_153, server: 14.29.124.174, port: 11008, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN-高速节点推荐：v1.mk/vip 2, server: 139.217.229.103, port: 41203, type: vmess, uuid: 039aeb43-a240-3208-a447-ca80be12a290, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 台湾(nodefree.org免费节点日更)_2, server: bgpv2.ktyjsq.com, port: 12222, type: vmess, uuid: 9ea70d57-9cb6-3bd0-ae41-5601e516dcc6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: CN 39, server: bgpv2.ktyjsq.com, port: 12005, type: vmess, uuid: 9ea70d57-9cb6-3bd0-ae41-5601e516dcc6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: CN 50, server: bgpv2.ktyjsq.com, port: 12005, type: vmess, uuid: 9ea70d57-9cb6-3bd0-ae41-5601e516dcc6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: CN 123, server: 14.29.124.174, port: 11045, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN 89, server: bgpv2.ktyjsq.com, port: 12224, type: vmess, uuid: 9ea70d57-9cb6-3bd0-ae41-5601e516dcc6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: CN 90, server: bgpv2.ktyjsq.com, port: 12221, type: vmess, uuid: 9ea70d57-9cb6-3bd0-ae41-5601e516dcc6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: CN 92, server: bgpv2.ktyjsq.com, port: 12005, type: vmess, uuid: 9ea70d57-9cb6-3bd0-ae41-5601e516dcc6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: HK 210, server: azqt001.xiba1.xyz, port: 20728, type: trojan, password: 30d830d3-f301-33a1-bc0c-29acbca168ec, sni: ssl.ssl12.xyz, skip-cert-verify: true, udp: true}
-  - {name: 香港优化-tg频道:@ripaojiedian, server: 527hk5.fans8.xyz, port: 443, type: trojan, password: 332cf3f1-47d5-454d-a6ae-fdffdbe7e85e, sni: 527hk5.fans8.xyz, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇨🇦CA-🇨🇦CA_08, server: 331tw.fans8.xyz, port: 80, type: vmess, uuid: 7f4ff2e1-c08f-35bd-afe7-4a6a386907aa, alterId: 2, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ray, headers: {Host: 331tw.fans8.xyz}}, udp: true}
   - {name: CN_216 |10.02Mb, server: 14.29.124.174, port: 11007, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_265 |10.00Mb, server: 14.29.124.174, port: 11044, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN 35, server: tw01.beibei456.xyz, port: 33351, type: ss, cipher: chacha20-ietf-poly1305, password: 68a401ed-9403-4d69-a564-aeba67204b35, udp: true}
-  - {name: Pool_🇺🇸US_2440 2, server: 104.166.135.10, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ws}, udp: true}
+  - {name: US 62, server: usgt.n.optage.moe, port: 44610, type: trojan, password: 12dbfb53-1249-47e6-bf2c-795a92727034, sni: usgt.node.qchwnd.moe, skip-cert-verify: true, udp: true}
+  - {name: _油管：全网最强白嫖 19, server: 14.29.124.174, port: 11002, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: "[V2ray·0.5x]莫斯科 GT直连#公益", server: 46.17.42.135, port: 44368, type: vmess, uuid: fd1f9cd5-057f-46e4-996c-d21000ccedd6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 中国(TG频道:@kxswa) 10, server: 14.29.124.168, port: 25241, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_231, server: 14.29.124.174, port: 11038, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: US 🇺🇸 Miami @AzadNet, server: 37.218.241.118, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: exwNDD6fpvXk, udp: true}
+  - {name: github.com/freefq - 广东省珠海市电信 23, server: ingress-i1.onebox6.org, port: 38201, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: www.ivpnpro.net}}, udp: true}
+  - {name: DE 20, server: s4.hazz.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, sni: edge.apple.com, skip-cert-verify: true, udp: true}
+  - {name: 德国, server: dg.jiashumao.net, port: 29957, type: trojan, password: 86e6c7b3-51e8-309d-9e1c-551bcb12a603, sni: dg.jiashumao.net, skip-cert-verify: true, udp: true}
+  - {name: _41|13.55Mb, server: 139.9.88.116, port: 5800, type: vmess, uuid: 63c04e85-c6a0-4503-b2f7-ebf733e55db2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: TW|台湾, server: tw-hinet.jiashumao.net, port: 20888, type: trojan, password: 86e6c7b3-51e8-309d-9e1c-551bcb12a603, sni: tw-hinet.jiashumao.net, skip-cert-verify: true, udp: true}
+  - {name: 法国1, server: fr.n.optage.moe, port: 44612, type: trojan, password: e9561799-2eee-47c5-a384-fc369f0eb792, sni: fr.node.qchwnd.moe, skip-cert-verify: true, udp: true}
+  - {name: 法国-1.11MB/s(Youtube:不良林), server: 54.37.192.112, port: 443, type: vmess, uuid: 9f58234c-355b-4065-ae21-d4a63099aba5, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/120208301422, headers: {Host: 54.37.192.112}}, udp: true}
+  - {name: _油管：全网最强白嫖 20, server: ingress-i1.onebox6.org, port: 38701, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: aweikeji-YouTube}}, udp: true}
+  - {name: 加拿大, server: jnd.jiashumao.net, port: 30519, type: trojan, password: 86e6c7b3-51e8-309d-9e1c-551bcb12a603, sni: jnd.jiashumao.net, skip-cert-verify: true, udp: true}
+  - {name: Relay_🏁ZZ-🇹🇼TW_2854, server: 5.44.249.43, port: 3389, type: trojan, password: ffec9f6ea19e1dd1, skip-cert-verify: true, udp: true}
+  - {name: 日本JP|tg频道:@ripaojiedian, server: yd1000-c.zsclouddns.club, port: 13008, type: vmess, uuid: 67c50f6a-816d-3555-89b4-19dd29608f8b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: US_3490 | 2.02Mb, server: 50.114.56.20, port: 4440, type: vmess, uuid: 8d13dc0f-c4c9-3f66-b8de-d9a5d432842a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /v2ray}, udp: true}
+  - {name: Relay_🏁ZZ-🇹🇼TW_2852, server: 5.44.249.43, port: 3389, type: trojan, password: 711aabc21e45ae31, skip-cert-verify: true, udp: true}
+  - {name: 广州, server: 175.178.163.153, port: 443, type: vmess, uuid: 9b4d4f9c-c5bf-4a3b-a6ea-f675989d9cbd, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: tms.dingtalk.com}}, udp: true}
+  - {name: 日本JP|tg频道:@ripaojiedian 2, server: yd1000-c.zsclouddns.club, port: 13008, type: vmess, uuid: 67c50f6a-816d-3555-89b4-19dd29608f8b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: RU 🇷🇺 @AzadNet, server: 91.132.197.153, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: SDWRMEicdVAJ, udp: true}
+  - {name: _1478 | 3.44Mb, server: 103.172.116.113, port: 3389, type: trojan, password: 9a27800ca7b52ee0, skip-cert-verify: true, udp: true}
+  - {name: KR 51, server: 193.122.122.208, port: 26471, type: vmess, uuid: 35137513-8f0a-4f74-84f8-ef9f5a8f85a6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: bulink自建免费10线 三网, server: la41.bulink.xyz.fobzs.com, port: 443, type: vmess, uuid: dd01617b-7f89-45e1-89e7-d9ddcf15a210, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ws, headers: {Host: la41.bulink.xyz.fobzs.com}}, udp: true}
+  - {name: DE 🇩🇪 Nuremberg @AzadNet, server: 144.91.109.76, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 8CA7Ii8iC9G5, udp: true}
+  - {name: 英国, server: yg.jiashumao.net, port: 36419, type: trojan, password: 86e6c7b3-51e8-309d-9e1c-551bcb12a603, sni: yg.jiashumao.net, skip-cert-verify: true, udp: true}
+  - {name: (TG频道:@kxswa), server: 103.172.116.113, port: 3389, type: trojan, password: 711aabc21e45ae31, skip-cert-verify: true, udp: true}
+  - {name: FR 109, server: fr.n.optage.moe, port: 44612, type: trojan, password: 12dbfb53-1249-47e6-bf2c-795a92727034, sni: fr.node.qchwnd.moe, skip-cert-verify: true, udp: true}
+  - {name: 英国1, server: uk.n.optage.moe, port: 44613, type: trojan, password: e9561799-2eee-47c5-a384-fc369f0eb792, sni: uk.node.qchwnd.moe, skip-cert-verify: true, udp: true}
+  - {name: 美国1, server: usgt.n.optage.moe, port: 44610, type: trojan, password: e9561799-2eee-47c5-a384-fc369f0eb792, sni: usgt.node.qchwnd.moe, skip-cert-verify: true, udp: true}
+  - {name: _1517 | 2.85Mb, server: 103.172.116.113, port: 3389, type: trojan, password: ca4596fb9bc63cf2, skip-cert-verify: true, udp: true}
+  - {name: Relay_🏁ZZ-🇹🇼TW_2849, server: 5.44.249.43, port: 3389, type: trojan, password: d66013c645b93c5c, skip-cert-verify: true, udp: true}
+  - {name: 14.29.124.174:11005, server: 14.29.124.174, port: 11005, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: github.com/freefq - 英国  2, server: 193.122.122.208, port: 26471, type: vmess, uuid: 35137513-8f0a-4f74-84f8-ef9f5a8f85a6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Unlimited Việt Nam (13), server: vietnam.hn13.shopvpn.net, port: 80, type: vmess, uuid: 23959a9d-be8b-45d7-b284-5a3f9f29039a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /shopvpn.net, headers: {Host: quangtien.akamaized.net}}, udp: true}
+  - {name: FR 🇫🇷 @AzadNet, server: 46.226.108.25, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 4HjnePliOMqo, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - CN_210
-      - _油管：全网最强白嫖
-      - Unlimited Việt Nam (6)
-      - CN 286
-      - CN_54 TG@peekfun | 3.02Mb
-      - CN 215
-      - _油管：全网最强白嫖 2
-      - CN 172
-      - CN 187
-      - CN 183
-      - CN 197
-      - CN 242
-      - CN 173
-      - CN 270
-      - CN 272
-      - CN 244
-      - CN 180
-      - CN 201
-      - CN 177
-      - CN 210
-      - CN 225
-      - CN 14
-      - CN 144
-      - CN 153
-      - CN 178
-      - CN 237
-      - CN 307
-      - 中国(TG频道:@kxswa)
-      - CN 198
-      - CN 311
-      - CN 416
-      - CN 26
-      - CN 185
-      - CN 222
-      - CN 285
-      - CN 332
-      - CN 175
-      - CN 217
-      - CN 253
-      - CN 168
-      - CN 202
-      - CN 176
-      - CN 283
-      - CN 139
-      - CN 205
-      - CN 278
-      - Relay_🇨🇳CN-🇹🇼TW_211
-      - CN 174
-      - CN 287
-      - 喵喵是骚零
-      - CN 232
-      - CN 249
-      - CN 165
-      - CN 275
-      - CN 184
-      - CN 221
-      - CN 240
-      - CN 340
-      - CN 19
-      - CN 160
-      - CN 203
-      - CN 224
-      - CN 171
-      - 喵喵是骚零 2
-      - CN 159
-      - CN 239
-      - CN 298
-      - CN 256
-      - CN 188
-      - CN 220
-      - CN 226
-      - CN 301
-      - CN 347
-      - CN 400
-      - CN 211
-      - CN 179
-      - CN 280
-      - KR 51
-      - CN 238
-      - CN 275 2
-      - CN 357
-      - CN 721
-      - 中国(TG频道:@kxswa) 2
-      - CN 337
-      - CN 23
-      - CN 259
-      - CN 268
-      - CN 218
-      - CN 387
-      - US_2464
-      - CN 277
-      - _油管：全网最强白嫖 3
-      - _油管：全网最强白嫖 4
-      - HK 243
-      - CN 295
-      - 日本高速
-      - CN 207
-      - HK 27
-      - JP 200
-      - KR 236
-      - KR 250
-      - CN 711
-      - CN 5
-      - VN 284
-      - VN 266
       - CN_163
-      - Relay_🇯🇵JP-🇯🇵JP_483
-      - JP 4
-      - KR 246
-      - KR|韩国
-      - JP 247
-      - HK 17
-      - HK 58
-      - 美国(nodefree.org免费节点日更)_2
-      - JP 230
-      - VN 260
-      - KR 43
-      - KR 262
-      - 台湾(nodefree.org日更免费节点)_2
-      - HK 228
-      - Relay_🇰🇷KR-🇭🇰HK_485
-      - US 258
-      - HK 121
-      - US 267
-      - US_20
-      - 美国-295.1KB/s(Youtube:不良林)
-      - AU 35
-      - 中国(TG频道:@kxswa) 3
-      - 台湾(nodefree.org免费节点日更)_3
-      - bulink自建免费11线 三网
-      - 台湾优化-tg频道:@ripaojiedian
-      - CN_191 | 5.61Mb
-      - JP 265
-      - JP 297
-      - 高速节点推荐：v1.mk/vip
-      - _41|13.55Mb
-      - HK 110
-      - VN 273
-      - "@SSRSUB-V04-付费推荐:v2cross.com"
-      - Relay_-🇬🇧GB_03
-      - JP01
-      - CN_263 | 4.39Mb
-      - Unlimited Gaming (1)
-      - "[V2ray·1x]莫斯科 CloudFlare"
-      - VN01
-      - CN 379
-      - univstar-Seoul-AWS_1
-      - HK 119
-      - HK 122
-      - 中国(TG频道:@kxswa) 4
-      - 香港_0606138
-      - "[v2ray·0.6x]Amazon_Frankfurt"
-      - 中国(TG频道:@kxswa) 5
-      - "★群: t.me/bujidaoChat"
-      - ✯洛杉矶000|0.10元/G|Trojan|
-      - IT 10
-      - HK-A|香港
-      - DE 20
-      - HK 102
-      - HK 118
-      - HK_437
-      - github.com/freefq - 加拿大  16
-      - Relay_🇨🇦CA-🇨🇦CA_07
-      - Relay_🏁ZZ-🇹🇼TW_2850
-      - Relay_🏁ZZ-🇹🇼TW_2851
-      - Relay_🏁ZZ-🇹🇼TW_2853
-      - "[V2ray·0.5x]莫斯科 GT直连#公益"
-      - Relay_🇫🇷FR-🇫🇷FR_365
-      - Relay_🏁ZZ-🇹🇼TW_2854
-      - Pool_🇺🇸US_2440
-      - DE 281
-      - DE 299
-      - US 71
-      - CN 115
-      - 中国(TG频道:@kxswa) 6
-      - Relay_🏁ZZ-🇹🇼TW_2848
-      - US 🇺🇸 Miami @AzadNet
-      - 日本(nodefree.org免费节点日更)_1
-      - CN 11
-      - Unlimited Việt Nam (13)
-      - US 6
-      - 法国-1.11MB/s(Youtube:不良林)
-      - CN 28
-      - 喵喵是骚零 3
-      - AU 306
-      - bulink自建免费10线 三网
+      - _油管：全网最强白嫖
+      - _油管：全网最强白嫖 2
+      - 香港SSR-tg频道:@ripaojiedian
+      - CN_54 TG@peekfun | 3.02Mb
+      - _379 |29.18Mb
+      - _油管：全网最强白嫖 3
+      - 香港ssr-tg频道:@ripaojiedian
+      - _960 |19.04Mb
+      - 中国(TG频道:@kxswa)
+      - _油管：全网最强白嫖 4
       - _油管：全网最强白嫖 5
-      - HK_437 2
-      - US_3490 | 2.02Mb
-      - Relay_🏁ZZ-🇹🇼TW_2849
-      - Relay_🏁ZZ-🇹🇼TW_2852
-      - US 41
-      - JP02
-      - 新加坡3-tg频道:@ripaojiedian
-      - HK 112
-      - 新加坡优化-tg频道:@ripaojiedian
-      - CN_230 | 1.92Mb
-      - US 8
-      - CN 9
-      - CN 21
-      - CN 25
-      - CN 44
-      - CN 104
-      - Relay_🇨🇳CN-🇺🇸US_14
-      - CN-高速节点推荐：v1.mk/vip
-      - 台湾-1.49MB/s(Youtube:不良林)
-      - 英国(nodefree.org免费节点日更)_1
-      - 美国(nodefree.org免费节点日更)_2 2
-      - CN 34
-      - CN 333
-      - CN 122
-      - Relay_🇭🇰HK-🇭🇰HK_601
-      - 日本(nodefree.org免费节点日更)_2
-      - CN 30
-      - CN 49
-      - CN 53
-      - 台湾(nodefree.org免费节点日更)_1
-      - CN_224 | 6.00Mb
-      - CN_231
-      - Relay_🇨🇳CN-🇭🇰HK_153
-      - CN-高速节点推荐：v1.mk/vip 2
-      - 台湾(nodefree.org免费节点日更)_2
-      - CN 39
-      - CN 50
-      - CN 123
-      - CN 89
-      - CN 90
-      - CN 92
-      - HK 210
-      - 香港优化-tg频道:@ripaojiedian
-      - Relay_🇨🇦CA-🇨🇦CA_08
+      - _958 |15.81Mb
+      - 中国(TG频道:@kxswa) 2
+      - _油管：全网最强白嫖 6
+      - _油管：全网最强白嫖 7
+      - _油管：全网最强白嫖 8
+      - _油管：全网最强白嫖 9
+      - _油管：全网最强白嫖 10
+      - _油管：全网最强白嫖 11
+      - _油管：全网最强白嫖 12
+      - _油管：全网最强白嫖 13
+      - _390 |33.19Mb
+      - 中国(TG频道:@kxswa) 3
+      - _963 |58.30Mb
+      - _1585 |44.33Mb
+      - _1578 |24.28Mb
+      - HK 85
+      - _油管：全网最强白嫖 14
+      - HK 27
+      - "[Azure]香港5•HKT"
+      - 中国(TG频道:@kxswa) 4
+      - _油管：全网最强白嫖 15
+      - "[Azure]香港3•HGC"
+      - 中国(TG频道:@kxswa) 5
+      - 香港高速|tg频道:@ripaojiedian
+      - CN 337
+      - CN 19
+      - HK_2194 |41.56Mb
+      - "[Azure]台湾1"
+      - 中国(TG频道:@kxswa) 6
+      - CN 23
+      - 香港(TG频道:@kxswa)
+      - 日本2-tg频道:@ripaojiedian
+      - JP-A|日本
+      - "[Azure]新加坡"
+      - HK 105
+      - 中国(TG频道:@kxswa) 7
+      - "[Azure]法国1"
+      - HK-A|香港
+      - SG|新加坡
+      - JP-B|日本
+      - 香港(TG频道:@kxswa) 2
+      - 香港4•HKT
+      - 新加坡2-tg频道:@ripaojiedian
+      - 新加坡2-tg频道:@ripaojiedian 2
+      - CN_1885 |62.81Mb
+      - 东京-tg频道:@ripaojiedian
+      - "[Azure]印度尼西亚"
+      - CN 12
+      - 中国(TG频道:@kxswa) 8
+      - _油管：全网最强白嫖 16
+      - "@SSRSUB-V09-付费推荐:suo.yt/ssrsub"
+      - 台湾(nodefree.org免费节点日更)_3
+      - 纽约-tg频道:@ripaojiedian
+      - 日本3-tg频道:@ripaojiedian
+      - "[Azure]俄罗斯2"
+      - 纽约-tg频道:@ripaojiedian 2
+      - JP 4
+      - HK-A|香港 2
+      - _1524 |44.16Mb
+      - 中国(TG频道:@kxswa) 9
+      - 日本2-tg频道:@ripaojiedian 2
+      - KR|韩国
+      - KR|韩国 2
+      - CN_191 | 5.61Mb
+      - MY|马来西亚
+      - _1456 |12.71Mb
+      - _油管：全网最强白嫖 17
+      - _油管：全网最强白嫖 18
+      - HK-B|香港
+      - _1341
+      - NF|奈飞
+      - US 103
+      - AU 35
+      - US|美国
+      - CN_263 | 4.39Mb
       - CN_216 |10.02Mb
-      - CN_265 |10.00Mb
-      - CN 35
-      - Pool_🇺🇸US_2440 2
+      - US 62
+      - _油管：全网最强白嫖 19
+      - "[V2ray·0.5x]莫斯科 GT直连#公益"
+      - 中国(TG频道:@kxswa) 10
+      - CN_231
+      - US 🇺🇸 Miami @AzadNet
+      - github.com/freefq - 广东省珠海市电信 23
+      - DE 20
+      - 德国
+      - _41|13.55Mb
+      - TW|台湾
+      - 法国1
+      - 法国-1.11MB/s(Youtube:不良林)
+      - _油管：全网最强白嫖 20
+      - 加拿大
+      - Relay_🏁ZZ-🇹🇼TW_2854
+      - 日本JP|tg频道:@ripaojiedian
+      - US_3490 | 2.02Mb
+      - Relay_🏁ZZ-🇹🇼TW_2852
+      - 广州
+      - 日本JP|tg频道:@ripaojiedian 2
+      - RU 🇷🇺 @AzadNet
+      - _1478 | 3.44Mb
+      - KR 51
+      - bulink自建免费10线 三网
+      - DE 🇩🇪 Nuremberg @AzadNet
+      - 英国
+      - (TG频道:@kxswa)
+      - FR 109
+      - 英国1
+      - 美国1
+      - _1517 | 2.85Mb
+      - Relay_🏁ZZ-🇹🇼TW_2849
+      - 14.29.124.174:11005
+      - github.com/freefq - 英国  2
+      - Unlimited Việt Nam (13)
+      - FR 🇫🇷 @AzadNet
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - CN_210
-      - _油管：全网最强白嫖
-      - Unlimited Việt Nam (6)
-      - CN 286
-      - CN_54 TG@peekfun | 3.02Mb
-      - CN 215
-      - _油管：全网最强白嫖 2
-      - CN 172
-      - CN 187
-      - CN 183
-      - CN 197
-      - CN 242
-      - CN 173
-      - CN 270
-      - CN 272
-      - CN 244
-      - CN 180
-      - CN 201
-      - CN 177
-      - CN 210
-      - CN 225
-      - CN 14
-      - CN 144
-      - CN 153
-      - CN 178
-      - CN 237
-      - CN 307
-      - 中国(TG频道:@kxswa)
-      - CN 198
-      - CN 311
-      - CN 416
-      - CN 26
-      - CN 185
-      - CN 222
-      - CN 285
-      - CN 332
-      - CN 175
-      - CN 217
-      - CN 253
-      - CN 168
-      - CN 202
-      - CN 176
-      - CN 283
-      - CN 139
-      - CN 205
-      - CN 278
-      - Relay_🇨🇳CN-🇹🇼TW_211
-      - CN 174
-      - CN 287
-      - 喵喵是骚零
-      - CN 232
-      - CN 249
-      - CN 165
-      - CN 275
-      - CN 184
-      - CN 221
-      - CN 240
-      - CN 340
-      - CN 19
-      - CN 160
-      - CN 203
-      - CN 224
-      - CN 171
-      - 喵喵是骚零 2
-      - CN 159
-      - CN 239
-      - CN 298
-      - CN 256
-      - CN 188
-      - CN 220
-      - CN 226
-      - CN 301
-      - CN 347
-      - CN 400
-      - CN 211
-      - CN 179
-      - CN 280
-      - KR 51
-      - CN 238
-      - CN 275 2
-      - CN 357
-      - CN 721
-      - 中国(TG频道:@kxswa) 2
-      - CN 337
-      - CN 23
-      - CN 259
-      - CN 268
-      - CN 218
-      - CN 387
-      - US_2464
-      - CN 277
-      - _油管：全网最强白嫖 3
-      - _油管：全网最强白嫖 4
-      - HK 243
-      - CN 295
-      - 日本高速
-      - CN 207
-      - HK 27
-      - JP 200
-      - KR 236
-      - KR 250
-      - CN 711
-      - CN 5
-      - VN 284
-      - VN 266
       - CN_163
-      - Relay_🇯🇵JP-🇯🇵JP_483
-      - JP 4
-      - KR 246
-      - KR|韩国
-      - JP 247
-      - HK 17
-      - HK 58
-      - 美国(nodefree.org免费节点日更)_2
-      - JP 230
-      - VN 260
-      - KR 43
-      - KR 262
-      - 台湾(nodefree.org日更免费节点)_2
-      - HK 228
-      - Relay_🇰🇷KR-🇭🇰HK_485
-      - US 258
-      - HK 121
-      - US 267
-      - US_20
-      - 美国-295.1KB/s(Youtube:不良林)
-      - AU 35
-      - 中国(TG频道:@kxswa) 3
-      - 台湾(nodefree.org免费节点日更)_3
-      - bulink自建免费11线 三网
-      - 台湾优化-tg频道:@ripaojiedian
-      - CN_191 | 5.61Mb
-      - JP 265
-      - JP 297
-      - 高速节点推荐：v1.mk/vip
-      - _41|13.55Mb
-      - HK 110
-      - VN 273
-      - "@SSRSUB-V04-付费推荐:v2cross.com"
-      - Relay_-🇬🇧GB_03
-      - JP01
-      - CN_263 | 4.39Mb
-      - Unlimited Gaming (1)
-      - "[V2ray·1x]莫斯科 CloudFlare"
-      - VN01
-      - CN 379
-      - univstar-Seoul-AWS_1
-      - HK 119
-      - HK 122
-      - 中国(TG频道:@kxswa) 4
-      - 香港_0606138
-      - "[v2ray·0.6x]Amazon_Frankfurt"
-      - 中国(TG频道:@kxswa) 5
-      - "★群: t.me/bujidaoChat"
-      - ✯洛杉矶000|0.10元/G|Trojan|
-      - IT 10
-      - HK-A|香港
-      - DE 20
-      - HK 102
-      - HK 118
-      - HK_437
-      - github.com/freefq - 加拿大  16
-      - Relay_🇨🇦CA-🇨🇦CA_07
-      - Relay_🏁ZZ-🇹🇼TW_2850
-      - Relay_🏁ZZ-🇹🇼TW_2851
-      - Relay_🏁ZZ-🇹🇼TW_2853
-      - "[V2ray·0.5x]莫斯科 GT直连#公益"
-      - Relay_🇫🇷FR-🇫🇷FR_365
-      - Relay_🏁ZZ-🇹🇼TW_2854
-      - Pool_🇺🇸US_2440
-      - DE 281
-      - DE 299
-      - US 71
-      - CN 115
-      - 中国(TG频道:@kxswa) 6
-      - Relay_🏁ZZ-🇹🇼TW_2848
-      - US 🇺🇸 Miami @AzadNet
-      - 日本(nodefree.org免费节点日更)_1
-      - CN 11
-      - Unlimited Việt Nam (13)
-      - US 6
-      - 法国-1.11MB/s(Youtube:不良林)
-      - CN 28
-      - 喵喵是骚零 3
-      - AU 306
-      - bulink自建免费10线 三网
+      - _油管：全网最强白嫖
+      - _油管：全网最强白嫖 2
+      - 香港SSR-tg频道:@ripaojiedian
+      - CN_54 TG@peekfun | 3.02Mb
+      - _379 |29.18Mb
+      - _油管：全网最强白嫖 3
+      - 香港ssr-tg频道:@ripaojiedian
+      - _960 |19.04Mb
+      - 中国(TG频道:@kxswa)
+      - _油管：全网最强白嫖 4
       - _油管：全网最强白嫖 5
-      - HK_437 2
-      - US_3490 | 2.02Mb
-      - Relay_🏁ZZ-🇹🇼TW_2849
-      - Relay_🏁ZZ-🇹🇼TW_2852
-      - US 41
-      - JP02
-      - 新加坡3-tg频道:@ripaojiedian
-      - HK 112
-      - 新加坡优化-tg频道:@ripaojiedian
-      - CN_230 | 1.92Mb
-      - US 8
-      - CN 9
-      - CN 21
-      - CN 25
-      - CN 44
-      - CN 104
-      - Relay_🇨🇳CN-🇺🇸US_14
-      - CN-高速节点推荐：v1.mk/vip
-      - 台湾-1.49MB/s(Youtube:不良林)
-      - 英国(nodefree.org免费节点日更)_1
-      - 美国(nodefree.org免费节点日更)_2 2
-      - CN 34
-      - CN 333
-      - CN 122
-      - Relay_🇭🇰HK-🇭🇰HK_601
-      - 日本(nodefree.org免费节点日更)_2
-      - CN 30
-      - CN 49
-      - CN 53
-      - 台湾(nodefree.org免费节点日更)_1
-      - CN_224 | 6.00Mb
-      - CN_231
-      - Relay_🇨🇳CN-🇭🇰HK_153
-      - CN-高速节点推荐：v1.mk/vip 2
-      - 台湾(nodefree.org免费节点日更)_2
-      - CN 39
-      - CN 50
-      - CN 123
-      - CN 89
-      - CN 90
-      - CN 92
-      - HK 210
-      - 香港优化-tg频道:@ripaojiedian
-      - Relay_🇨🇦CA-🇨🇦CA_08
+      - _958 |15.81Mb
+      - 中国(TG频道:@kxswa) 2
+      - _油管：全网最强白嫖 6
+      - _油管：全网最强白嫖 7
+      - _油管：全网最强白嫖 8
+      - _油管：全网最强白嫖 9
+      - _油管：全网最强白嫖 10
+      - _油管：全网最强白嫖 11
+      - _油管：全网最强白嫖 12
+      - _油管：全网最强白嫖 13
+      - _390 |33.19Mb
+      - 中国(TG频道:@kxswa) 3
+      - _963 |58.30Mb
+      - _1585 |44.33Mb
+      - _1578 |24.28Mb
+      - HK 85
+      - _油管：全网最强白嫖 14
+      - HK 27
+      - "[Azure]香港5•HKT"
+      - 中国(TG频道:@kxswa) 4
+      - _油管：全网最强白嫖 15
+      - "[Azure]香港3•HGC"
+      - 中国(TG频道:@kxswa) 5
+      - 香港高速|tg频道:@ripaojiedian
+      - CN 337
+      - CN 19
+      - HK_2194 |41.56Mb
+      - "[Azure]台湾1"
+      - 中国(TG频道:@kxswa) 6
+      - CN 23
+      - 香港(TG频道:@kxswa)
+      - 日本2-tg频道:@ripaojiedian
+      - JP-A|日本
+      - "[Azure]新加坡"
+      - HK 105
+      - 中国(TG频道:@kxswa) 7
+      - "[Azure]法国1"
+      - HK-A|香港
+      - SG|新加坡
+      - JP-B|日本
+      - 香港(TG频道:@kxswa) 2
+      - 香港4•HKT
+      - 新加坡2-tg频道:@ripaojiedian
+      - 新加坡2-tg频道:@ripaojiedian 2
+      - CN_1885 |62.81Mb
+      - 东京-tg频道:@ripaojiedian
+      - "[Azure]印度尼西亚"
+      - CN 12
+      - 中国(TG频道:@kxswa) 8
+      - _油管：全网最强白嫖 16
+      - "@SSRSUB-V09-付费推荐:suo.yt/ssrsub"
+      - 台湾(nodefree.org免费节点日更)_3
+      - 纽约-tg频道:@ripaojiedian
+      - 日本3-tg频道:@ripaojiedian
+      - "[Azure]俄罗斯2"
+      - 纽约-tg频道:@ripaojiedian 2
+      - JP 4
+      - HK-A|香港 2
+      - _1524 |44.16Mb
+      - 中国(TG频道:@kxswa) 9
+      - 日本2-tg频道:@ripaojiedian 2
+      - KR|韩国
+      - KR|韩国 2
+      - CN_191 | 5.61Mb
+      - MY|马来西亚
+      - _1456 |12.71Mb
+      - _油管：全网最强白嫖 17
+      - _油管：全网最强白嫖 18
+      - HK-B|香港
+      - _1341
+      - NF|奈飞
+      - US 103
+      - AU 35
+      - US|美国
+      - CN_263 | 4.39Mb
       - CN_216 |10.02Mb
-      - CN_265 |10.00Mb
-      - CN 35
-      - Pool_🇺🇸US_2440 2
+      - US 62
+      - _油管：全网最强白嫖 19
+      - "[V2ray·0.5x]莫斯科 GT直连#公益"
+      - 中国(TG频道:@kxswa) 10
+      - CN_231
+      - US 🇺🇸 Miami @AzadNet
+      - github.com/freefq - 广东省珠海市电信 23
+      - DE 20
+      - 德国
+      - _41|13.55Mb
+      - TW|台湾
+      - 法国1
+      - 法国-1.11MB/s(Youtube:不良林)
+      - _油管：全网最强白嫖 20
+      - 加拿大
+      - Relay_🏁ZZ-🇹🇼TW_2854
+      - 日本JP|tg频道:@ripaojiedian
+      - US_3490 | 2.02Mb
+      - Relay_🏁ZZ-🇹🇼TW_2852
+      - 广州
+      - 日本JP|tg频道:@ripaojiedian 2
+      - RU 🇷🇺 @AzadNet
+      - _1478 | 3.44Mb
+      - KR 51
+      - bulink自建免费10线 三网
+      - DE 🇩🇪 Nuremberg @AzadNet
+      - 英国
+      - (TG频道:@kxswa)
+      - FR 109
+      - 英国1
+      - 美国1
+      - _1517 | 2.85Mb
+      - Relay_🏁ZZ-🇹🇼TW_2849
+      - 14.29.124.174:11005
+      - github.com/freefq - 英国  2
+      - Unlimited Việt Nam (13)
+      - FR 🇫🇷 @AzadNet
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - CN_210
-      - _油管：全网最强白嫖
-      - Unlimited Việt Nam (6)
-      - CN 286
-      - CN_54 TG@peekfun | 3.02Mb
-      - CN 215
-      - _油管：全网最强白嫖 2
-      - CN 172
-      - CN 187
-      - CN 183
-      - CN 197
-      - CN 242
-      - CN 173
-      - CN 270
-      - CN 272
-      - CN 244
-      - CN 180
-      - CN 201
-      - CN 177
-      - CN 210
-      - CN 225
-      - CN 14
-      - CN 144
-      - CN 153
-      - CN 178
-      - CN 237
-      - CN 307
-      - 中国(TG频道:@kxswa)
-      - CN 198
-      - CN 311
-      - CN 416
-      - CN 26
-      - CN 185
-      - CN 222
-      - CN 285
-      - CN 332
-      - CN 175
-      - CN 217
-      - CN 253
-      - CN 168
-      - CN 202
-      - CN 176
-      - CN 283
-      - CN 139
-      - CN 205
-      - CN 278
-      - Relay_🇨🇳CN-🇹🇼TW_211
-      - CN 174
-      - CN 287
-      - 喵喵是骚零
-      - CN 232
-      - CN 249
-      - CN 165
-      - CN 275
-      - CN 184
-      - CN 221
-      - CN 240
-      - CN 340
-      - CN 19
-      - CN 160
-      - CN 203
-      - CN 224
-      - CN 171
-      - 喵喵是骚零 2
-      - CN 159
-      - CN 239
-      - CN 298
-      - CN 256
-      - CN 188
-      - CN 220
-      - CN 226
-      - CN 301
-      - CN 347
-      - CN 400
-      - CN 211
-      - CN 179
-      - CN 280
-      - KR 51
-      - CN 238
-      - CN 275 2
-      - CN 357
-      - CN 721
-      - 中国(TG频道:@kxswa) 2
-      - CN 337
-      - CN 23
-      - CN 259
-      - CN 268
-      - CN 218
-      - CN 387
-      - US_2464
-      - CN 277
-      - _油管：全网最强白嫖 3
-      - _油管：全网最强白嫖 4
-      - HK 243
-      - CN 295
-      - 日本高速
-      - CN 207
-      - HK 27
-      - JP 200
-      - KR 236
-      - KR 250
-      - CN 711
-      - CN 5
-      - VN 284
-      - VN 266
       - CN_163
-      - Relay_🇯🇵JP-🇯🇵JP_483
-      - JP 4
-      - KR 246
-      - KR|韩国
-      - JP 247
-      - HK 17
-      - HK 58
-      - 美国(nodefree.org免费节点日更)_2
-      - JP 230
-      - VN 260
-      - KR 43
-      - KR 262
-      - 台湾(nodefree.org日更免费节点)_2
-      - HK 228
-      - Relay_🇰🇷KR-🇭🇰HK_485
-      - US 258
-      - HK 121
-      - US 267
-      - US_20
-      - 美国-295.1KB/s(Youtube:不良林)
-      - AU 35
-      - 中国(TG频道:@kxswa) 3
-      - 台湾(nodefree.org免费节点日更)_3
-      - bulink自建免费11线 三网
-      - 台湾优化-tg频道:@ripaojiedian
-      - CN_191 | 5.61Mb
-      - JP 265
-      - JP 297
-      - 高速节点推荐：v1.mk/vip
-      - _41|13.55Mb
-      - HK 110
-      - VN 273
-      - "@SSRSUB-V04-付费推荐:v2cross.com"
-      - Relay_-🇬🇧GB_03
-      - JP01
-      - CN_263 | 4.39Mb
-      - Unlimited Gaming (1)
-      - "[V2ray·1x]莫斯科 CloudFlare"
-      - VN01
-      - CN 379
-      - univstar-Seoul-AWS_1
-      - HK 119
-      - HK 122
-      - 中国(TG频道:@kxswa) 4
-      - 香港_0606138
-      - "[v2ray·0.6x]Amazon_Frankfurt"
-      - 中国(TG频道:@kxswa) 5
-      - "★群: t.me/bujidaoChat"
-      - ✯洛杉矶000|0.10元/G|Trojan|
-      - IT 10
-      - HK-A|香港
-      - DE 20
-      - HK 102
-      - HK 118
-      - HK_437
-      - github.com/freefq - 加拿大  16
-      - Relay_🇨🇦CA-🇨🇦CA_07
-      - Relay_🏁ZZ-🇹🇼TW_2850
-      - Relay_🏁ZZ-🇹🇼TW_2851
-      - Relay_🏁ZZ-🇹🇼TW_2853
-      - "[V2ray·0.5x]莫斯科 GT直连#公益"
-      - Relay_🇫🇷FR-🇫🇷FR_365
-      - Relay_🏁ZZ-🇹🇼TW_2854
-      - Pool_🇺🇸US_2440
-      - DE 281
-      - DE 299
-      - US 71
-      - CN 115
-      - 中国(TG频道:@kxswa) 6
-      - Relay_🏁ZZ-🇹🇼TW_2848
-      - US 🇺🇸 Miami @AzadNet
-      - 日本(nodefree.org免费节点日更)_1
-      - CN 11
-      - Unlimited Việt Nam (13)
-      - US 6
-      - 法国-1.11MB/s(Youtube:不良林)
-      - CN 28
-      - 喵喵是骚零 3
-      - AU 306
-      - bulink自建免费10线 三网
+      - _油管：全网最强白嫖
+      - _油管：全网最强白嫖 2
+      - 香港SSR-tg频道:@ripaojiedian
+      - CN_54 TG@peekfun | 3.02Mb
+      - _379 |29.18Mb
+      - _油管：全网最强白嫖 3
+      - 香港ssr-tg频道:@ripaojiedian
+      - _960 |19.04Mb
+      - 中国(TG频道:@kxswa)
+      - _油管：全网最强白嫖 4
       - _油管：全网最强白嫖 5
-      - HK_437 2
-      - US_3490 | 2.02Mb
-      - Relay_🏁ZZ-🇹🇼TW_2849
-      - Relay_🏁ZZ-🇹🇼TW_2852
-      - US 41
-      - JP02
-      - 新加坡3-tg频道:@ripaojiedian
-      - HK 112
-      - 新加坡优化-tg频道:@ripaojiedian
-      - CN_230 | 1.92Mb
-      - US 8
-      - CN 9
-      - CN 21
-      - CN 25
-      - CN 44
-      - CN 104
-      - Relay_🇨🇳CN-🇺🇸US_14
-      - CN-高速节点推荐：v1.mk/vip
-      - 台湾-1.49MB/s(Youtube:不良林)
-      - 英国(nodefree.org免费节点日更)_1
-      - 美国(nodefree.org免费节点日更)_2 2
-      - CN 34
-      - CN 333
-      - CN 122
-      - Relay_🇭🇰HK-🇭🇰HK_601
-      - 日本(nodefree.org免费节点日更)_2
-      - CN 30
-      - CN 49
-      - CN 53
-      - 台湾(nodefree.org免费节点日更)_1
-      - CN_224 | 6.00Mb
-      - CN_231
-      - Relay_🇨🇳CN-🇭🇰HK_153
-      - CN-高速节点推荐：v1.mk/vip 2
-      - 台湾(nodefree.org免费节点日更)_2
-      - CN 39
-      - CN 50
-      - CN 123
-      - CN 89
-      - CN 90
-      - CN 92
-      - HK 210
-      - 香港优化-tg频道:@ripaojiedian
-      - Relay_🇨🇦CA-🇨🇦CA_08
+      - _958 |15.81Mb
+      - 中国(TG频道:@kxswa) 2
+      - _油管：全网最强白嫖 6
+      - _油管：全网最强白嫖 7
+      - _油管：全网最强白嫖 8
+      - _油管：全网最强白嫖 9
+      - _油管：全网最强白嫖 10
+      - _油管：全网最强白嫖 11
+      - _油管：全网最强白嫖 12
+      - _油管：全网最强白嫖 13
+      - _390 |33.19Mb
+      - 中国(TG频道:@kxswa) 3
+      - _963 |58.30Mb
+      - _1585 |44.33Mb
+      - _1578 |24.28Mb
+      - HK 85
+      - _油管：全网最强白嫖 14
+      - HK 27
+      - "[Azure]香港5•HKT"
+      - 中国(TG频道:@kxswa) 4
+      - _油管：全网最强白嫖 15
+      - "[Azure]香港3•HGC"
+      - 中国(TG频道:@kxswa) 5
+      - 香港高速|tg频道:@ripaojiedian
+      - CN 337
+      - CN 19
+      - HK_2194 |41.56Mb
+      - "[Azure]台湾1"
+      - 中国(TG频道:@kxswa) 6
+      - CN 23
+      - 香港(TG频道:@kxswa)
+      - 日本2-tg频道:@ripaojiedian
+      - JP-A|日本
+      - "[Azure]新加坡"
+      - HK 105
+      - 中国(TG频道:@kxswa) 7
+      - "[Azure]法国1"
+      - HK-A|香港
+      - SG|新加坡
+      - JP-B|日本
+      - 香港(TG频道:@kxswa) 2
+      - 香港4•HKT
+      - 新加坡2-tg频道:@ripaojiedian
+      - 新加坡2-tg频道:@ripaojiedian 2
+      - CN_1885 |62.81Mb
+      - 东京-tg频道:@ripaojiedian
+      - "[Azure]印度尼西亚"
+      - CN 12
+      - 中国(TG频道:@kxswa) 8
+      - _油管：全网最强白嫖 16
+      - "@SSRSUB-V09-付费推荐:suo.yt/ssrsub"
+      - 台湾(nodefree.org免费节点日更)_3
+      - 纽约-tg频道:@ripaojiedian
+      - 日本3-tg频道:@ripaojiedian
+      - "[Azure]俄罗斯2"
+      - 纽约-tg频道:@ripaojiedian 2
+      - JP 4
+      - HK-A|香港 2
+      - _1524 |44.16Mb
+      - 中国(TG频道:@kxswa) 9
+      - 日本2-tg频道:@ripaojiedian 2
+      - KR|韩国
+      - KR|韩国 2
+      - CN_191 | 5.61Mb
+      - MY|马来西亚
+      - _1456 |12.71Mb
+      - _油管：全网最强白嫖 17
+      - _油管：全网最强白嫖 18
+      - HK-B|香港
+      - _1341
+      - NF|奈飞
+      - US 103
+      - AU 35
+      - US|美国
+      - CN_263 | 4.39Mb
       - CN_216 |10.02Mb
-      - CN_265 |10.00Mb
-      - CN 35
-      - Pool_🇺🇸US_2440 2
+      - US 62
+      - _油管：全网最强白嫖 19
+      - "[V2ray·0.5x]莫斯科 GT直连#公益"
+      - 中国(TG频道:@kxswa) 10
+      - CN_231
+      - US 🇺🇸 Miami @AzadNet
+      - github.com/freefq - 广东省珠海市电信 23
+      - DE 20
+      - 德国
+      - _41|13.55Mb
+      - TW|台湾
+      - 法国1
+      - 法国-1.11MB/s(Youtube:不良林)
+      - _油管：全网最强白嫖 20
+      - 加拿大
+      - Relay_🏁ZZ-🇹🇼TW_2854
+      - 日本JP|tg频道:@ripaojiedian
+      - US_3490 | 2.02Mb
+      - Relay_🏁ZZ-🇹🇼TW_2852
+      - 广州
+      - 日本JP|tg频道:@ripaojiedian 2
+      - RU 🇷🇺 @AzadNet
+      - _1478 | 3.44Mb
+      - KR 51
+      - bulink自建免费10线 三网
+      - DE 🇩🇪 Nuremberg @AzadNet
+      - 英国
+      - (TG频道:@kxswa)
+      - FR 109
+      - 英国1
+      - 美国1
+      - _1517 | 2.85Mb
+      - Relay_🏁ZZ-🇹🇼TW_2849
+      - 14.29.124.174:11005
+      - github.com/freefq - 英国  2
+      - Unlimited Việt Nam (13)
+      - FR 🇫🇷 @AzadNet
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -980,976 +540,541 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - CN_210
-      - _油管：全网最强白嫖
-      - Unlimited Việt Nam (6)
-      - CN 286
-      - CN_54 TG@peekfun | 3.02Mb
-      - CN 215
-      - _油管：全网最强白嫖 2
-      - CN 172
-      - CN 187
-      - CN 183
-      - CN 197
-      - CN 242
-      - CN 173
-      - CN 270
-      - CN 272
-      - CN 244
-      - CN 180
-      - CN 201
-      - CN 177
-      - CN 210
-      - CN 225
-      - CN 14
-      - CN 144
-      - CN 153
-      - CN 178
-      - CN 237
-      - CN 307
-      - 中国(TG频道:@kxswa)
-      - CN 198
-      - CN 311
-      - CN 416
-      - CN 26
-      - CN 185
-      - CN 222
-      - CN 285
-      - CN 332
-      - CN 175
-      - CN 217
-      - CN 253
-      - CN 168
-      - CN 202
-      - CN 176
-      - CN 283
-      - CN 139
-      - CN 205
-      - CN 278
-      - Relay_🇨🇳CN-🇹🇼TW_211
-      - CN 174
-      - CN 287
-      - 喵喵是骚零
-      - CN 232
-      - CN 249
-      - CN 165
-      - CN 275
-      - CN 184
-      - CN 221
-      - CN 240
-      - CN 340
-      - CN 19
-      - CN 160
-      - CN 203
-      - CN 224
-      - CN 171
-      - 喵喵是骚零 2
-      - CN 159
-      - CN 239
-      - CN 298
-      - CN 256
-      - CN 188
-      - CN 220
-      - CN 226
-      - CN 301
-      - CN 347
-      - CN 400
-      - CN 211
-      - CN 179
-      - CN 280
-      - KR 51
-      - CN 238
-      - CN 275 2
-      - CN 357
-      - CN 721
-      - 中国(TG频道:@kxswa) 2
-      - CN 337
-      - CN 23
-      - CN 259
-      - CN 268
-      - CN 218
-      - CN 387
-      - US_2464
-      - CN 277
-      - _油管：全网最强白嫖 3
-      - _油管：全网最强白嫖 4
-      - HK 243
-      - CN 295
-      - 日本高速
-      - CN 207
-      - HK 27
-      - JP 200
-      - KR 236
-      - KR 250
-      - CN 711
-      - CN 5
-      - VN 284
-      - VN 266
       - CN_163
-      - Relay_🇯🇵JP-🇯🇵JP_483
-      - JP 4
-      - KR 246
-      - KR|韩国
-      - JP 247
-      - HK 17
-      - HK 58
-      - 美国(nodefree.org免费节点日更)_2
-      - JP 230
-      - VN 260
-      - KR 43
-      - KR 262
-      - 台湾(nodefree.org日更免费节点)_2
-      - HK 228
-      - Relay_🇰🇷KR-🇭🇰HK_485
-      - US 258
-      - HK 121
-      - US 267
-      - US_20
-      - 美国-295.1KB/s(Youtube:不良林)
-      - AU 35
-      - 中国(TG频道:@kxswa) 3
-      - 台湾(nodefree.org免费节点日更)_3
-      - bulink自建免费11线 三网
-      - 台湾优化-tg频道:@ripaojiedian
-      - CN_191 | 5.61Mb
-      - JP 265
-      - JP 297
-      - 高速节点推荐：v1.mk/vip
-      - _41|13.55Mb
-      - HK 110
-      - VN 273
-      - "@SSRSUB-V04-付费推荐:v2cross.com"
-      - Relay_-🇬🇧GB_03
-      - JP01
-      - CN_263 | 4.39Mb
-      - Unlimited Gaming (1)
-      - "[V2ray·1x]莫斯科 CloudFlare"
-      - VN01
-      - CN 379
-      - univstar-Seoul-AWS_1
-      - HK 119
-      - HK 122
-      - 中国(TG频道:@kxswa) 4
-      - 香港_0606138
-      - "[v2ray·0.6x]Amazon_Frankfurt"
-      - 中国(TG频道:@kxswa) 5
-      - "★群: t.me/bujidaoChat"
-      - ✯洛杉矶000|0.10元/G|Trojan|
-      - IT 10
-      - HK-A|香港
-      - DE 20
-      - HK 102
-      - HK 118
-      - HK_437
-      - github.com/freefq - 加拿大  16
-      - Relay_🇨🇦CA-🇨🇦CA_07
-      - Relay_🏁ZZ-🇹🇼TW_2850
-      - Relay_🏁ZZ-🇹🇼TW_2851
-      - Relay_🏁ZZ-🇹🇼TW_2853
-      - "[V2ray·0.5x]莫斯科 GT直连#公益"
-      - Relay_🇫🇷FR-🇫🇷FR_365
-      - Relay_🏁ZZ-🇹🇼TW_2854
-      - Pool_🇺🇸US_2440
-      - DE 281
-      - DE 299
-      - US 71
-      - CN 115
-      - 中国(TG频道:@kxswa) 6
-      - Relay_🏁ZZ-🇹🇼TW_2848
-      - US 🇺🇸 Miami @AzadNet
-      - 日本(nodefree.org免费节点日更)_1
-      - CN 11
-      - Unlimited Việt Nam (13)
-      - US 6
-      - 法国-1.11MB/s(Youtube:不良林)
-      - CN 28
-      - 喵喵是骚零 3
-      - AU 306
-      - bulink自建免费10线 三网
+      - _油管：全网最强白嫖
+      - _油管：全网最强白嫖 2
+      - 香港SSR-tg频道:@ripaojiedian
+      - CN_54 TG@peekfun | 3.02Mb
+      - _379 |29.18Mb
+      - _油管：全网最强白嫖 3
+      - 香港ssr-tg频道:@ripaojiedian
+      - _960 |19.04Mb
+      - 中国(TG频道:@kxswa)
+      - _油管：全网最强白嫖 4
       - _油管：全网最强白嫖 5
-      - HK_437 2
-      - US_3490 | 2.02Mb
-      - Relay_🏁ZZ-🇹🇼TW_2849
-      - Relay_🏁ZZ-🇹🇼TW_2852
-      - US 41
-      - JP02
-      - 新加坡3-tg频道:@ripaojiedian
-      - HK 112
-      - 新加坡优化-tg频道:@ripaojiedian
-      - CN_230 | 1.92Mb
-      - US 8
-      - CN 9
-      - CN 21
-      - CN 25
-      - CN 44
-      - CN 104
-      - Relay_🇨🇳CN-🇺🇸US_14
-      - CN-高速节点推荐：v1.mk/vip
-      - 台湾-1.49MB/s(Youtube:不良林)
-      - 英国(nodefree.org免费节点日更)_1
-      - 美国(nodefree.org免费节点日更)_2 2
-      - CN 34
-      - CN 333
-      - CN 122
-      - Relay_🇭🇰HK-🇭🇰HK_601
-      - 日本(nodefree.org免费节点日更)_2
-      - CN 30
-      - CN 49
-      - CN 53
-      - 台湾(nodefree.org免费节点日更)_1
-      - CN_224 | 6.00Mb
-      - CN_231
-      - Relay_🇨🇳CN-🇭🇰HK_153
-      - CN-高速节点推荐：v1.mk/vip 2
-      - 台湾(nodefree.org免费节点日更)_2
-      - CN 39
-      - CN 50
-      - CN 123
-      - CN 89
-      - CN 90
-      - CN 92
-      - HK 210
-      - 香港优化-tg频道:@ripaojiedian
-      - Relay_🇨🇦CA-🇨🇦CA_08
+      - _958 |15.81Mb
+      - 中国(TG频道:@kxswa) 2
+      - _油管：全网最强白嫖 6
+      - _油管：全网最强白嫖 7
+      - _油管：全网最强白嫖 8
+      - _油管：全网最强白嫖 9
+      - _油管：全网最强白嫖 10
+      - _油管：全网最强白嫖 11
+      - _油管：全网最强白嫖 12
+      - _油管：全网最强白嫖 13
+      - _390 |33.19Mb
+      - 中国(TG频道:@kxswa) 3
+      - _963 |58.30Mb
+      - _1585 |44.33Mb
+      - _1578 |24.28Mb
+      - HK 85
+      - _油管：全网最强白嫖 14
+      - HK 27
+      - "[Azure]香港5•HKT"
+      - 中国(TG频道:@kxswa) 4
+      - _油管：全网最强白嫖 15
+      - "[Azure]香港3•HGC"
+      - 中国(TG频道:@kxswa) 5
+      - 香港高速|tg频道:@ripaojiedian
+      - CN 337
+      - CN 19
+      - HK_2194 |41.56Mb
+      - "[Azure]台湾1"
+      - 中国(TG频道:@kxswa) 6
+      - CN 23
+      - 香港(TG频道:@kxswa)
+      - 日本2-tg频道:@ripaojiedian
+      - JP-A|日本
+      - "[Azure]新加坡"
+      - HK 105
+      - 中国(TG频道:@kxswa) 7
+      - "[Azure]法国1"
+      - HK-A|香港
+      - SG|新加坡
+      - JP-B|日本
+      - 香港(TG频道:@kxswa) 2
+      - 香港4•HKT
+      - 新加坡2-tg频道:@ripaojiedian
+      - 新加坡2-tg频道:@ripaojiedian 2
+      - CN_1885 |62.81Mb
+      - 东京-tg频道:@ripaojiedian
+      - "[Azure]印度尼西亚"
+      - CN 12
+      - 中国(TG频道:@kxswa) 8
+      - _油管：全网最强白嫖 16
+      - "@SSRSUB-V09-付费推荐:suo.yt/ssrsub"
+      - 台湾(nodefree.org免费节点日更)_3
+      - 纽约-tg频道:@ripaojiedian
+      - 日本3-tg频道:@ripaojiedian
+      - "[Azure]俄罗斯2"
+      - 纽约-tg频道:@ripaojiedian 2
+      - JP 4
+      - HK-A|香港 2
+      - _1524 |44.16Mb
+      - 中国(TG频道:@kxswa) 9
+      - 日本2-tg频道:@ripaojiedian 2
+      - KR|韩国
+      - KR|韩国 2
+      - CN_191 | 5.61Mb
+      - MY|马来西亚
+      - _1456 |12.71Mb
+      - _油管：全网最强白嫖 17
+      - _油管：全网最强白嫖 18
+      - HK-B|香港
+      - _1341
+      - NF|奈飞
+      - US 103
+      - AU 35
+      - US|美国
+      - CN_263 | 4.39Mb
       - CN_216 |10.02Mb
-      - CN_265 |10.00Mb
-      - CN 35
-      - Pool_🇺🇸US_2440 2
+      - US 62
+      - _油管：全网最强白嫖 19
+      - "[V2ray·0.5x]莫斯科 GT直连#公益"
+      - 中国(TG频道:@kxswa) 10
+      - CN_231
+      - US 🇺🇸 Miami @AzadNet
+      - github.com/freefq - 广东省珠海市电信 23
+      - DE 20
+      - 德国
+      - _41|13.55Mb
+      - TW|台湾
+      - 法国1
+      - 法国-1.11MB/s(Youtube:不良林)
+      - _油管：全网最强白嫖 20
+      - 加拿大
+      - Relay_🏁ZZ-🇹🇼TW_2854
+      - 日本JP|tg频道:@ripaojiedian
+      - US_3490 | 2.02Mb
+      - Relay_🏁ZZ-🇹🇼TW_2852
+      - 广州
+      - 日本JP|tg频道:@ripaojiedian 2
+      - RU 🇷🇺 @AzadNet
+      - _1478 | 3.44Mb
+      - KR 51
+      - bulink自建免费10线 三网
+      - DE 🇩🇪 Nuremberg @AzadNet
+      - 英国
+      - (TG频道:@kxswa)
+      - FR 109
+      - 英国1
+      - 美国1
+      - _1517 | 2.85Mb
+      - Relay_🏁ZZ-🇹🇼TW_2849
+      - 14.29.124.174:11005
+      - github.com/freefq - 英国  2
+      - Unlimited Việt Nam (13)
+      - FR 🇫🇷 @AzadNet
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 台湾(nodefree.org日更免费节点)_2
-      - 台湾(nodefree.org免费节点日更)_3
-      - 台湾优化-tg频道:@ripaojiedian
-      - 香港_0606138
+      - 香港SSR-tg频道:@ripaojiedian
+      - 香港ssr-tg频道:@ripaojiedian
+      - "[Azure]香港5•HKT"
+      - "[Azure]香港3•HGC"
+      - 香港高速|tg频道:@ripaojiedian
+      - "[Azure]台湾1"
+      - 香港(TG频道:@kxswa)
       - HK-A|香港
-      - 台湾-1.49MB/s(Youtube:不良林)
-      - 台湾(nodefree.org免费节点日更)_1
-      - 台湾(nodefree.org免费节点日更)_2
-      - 香港优化-tg频道:@ripaojiedian
+      - 香港(TG频道:@kxswa) 2
+      - 香港4•HKT
+      - 台湾(nodefree.org免费节点日更)_3
+      - HK-A|香港 2
+      - HK-B|香港
+      - TW|台湾
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - CN_210
-      - _油管：全网最强白嫖
-      - Unlimited Việt Nam (6)
-      - CN 286
-      - CN_54 TG@peekfun | 3.02Mb
-      - CN 215
-      - _油管：全网最强白嫖 2
-      - CN 172
-      - CN 187
-      - CN 183
-      - CN 197
-      - CN 242
-      - CN 173
-      - CN 270
-      - CN 272
-      - CN 244
-      - CN 180
-      - CN 201
-      - CN 177
-      - CN 210
-      - CN 225
-      - CN 14
-      - CN 144
-      - CN 153
-      - CN 178
-      - CN 237
-      - CN 307
-      - 中国(TG频道:@kxswa)
-      - CN 198
-      - CN 311
-      - CN 416
-      - CN 26
-      - CN 185
-      - CN 222
-      - CN 285
-      - CN 332
-      - CN 175
-      - CN 217
-      - CN 253
-      - CN 168
-      - CN 202
-      - CN 176
-      - CN 283
-      - CN 139
-      - CN 205
-      - CN 278
-      - Relay_🇨🇳CN-🇹🇼TW_211
-      - CN 174
-      - CN 287
-      - 喵喵是骚零
-      - CN 232
-      - CN 249
-      - CN 165
-      - CN 275
-      - CN 184
-      - CN 221
-      - CN 240
-      - CN 340
-      - CN 19
-      - CN 160
-      - CN 203
-      - CN 224
-      - CN 171
-      - 喵喵是骚零 2
-      - CN 159
-      - CN 239
-      - CN 298
-      - CN 256
-      - CN 188
-      - CN 220
-      - CN 226
-      - CN 301
-      - CN 347
-      - CN 400
-      - CN 211
-      - CN 179
-      - CN 280
-      - KR 51
-      - CN 238
-      - CN 275 2
-      - CN 357
-      - CN 721
-      - 中国(TG频道:@kxswa) 2
-      - CN 337
-      - CN 23
-      - CN 259
-      - CN 268
-      - CN 218
-      - CN 387
-      - US_2464
-      - CN 277
-      - _油管：全网最强白嫖 3
-      - _油管：全网最强白嫖 4
-      - HK 243
-      - CN 295
-      - 日本高速
-      - CN 207
-      - HK 27
-      - JP 200
-      - KR 236
-      - KR 250
-      - CN 711
-      - CN 5
-      - VN 284
-      - VN 266
       - CN_163
-      - Relay_🇯🇵JP-🇯🇵JP_483
-      - JP 4
-      - KR 246
-      - KR|韩国
-      - JP 247
-      - HK 17
-      - HK 58
-      - 美国(nodefree.org免费节点日更)_2
-      - JP 230
-      - VN 260
-      - KR 43
-      - KR 262
-      - 台湾(nodefree.org日更免费节点)_2
-      - HK 228
-      - Relay_🇰🇷KR-🇭🇰HK_485
-      - US 258
-      - HK 121
-      - US 267
-      - US_20
-      - 美国-295.1KB/s(Youtube:不良林)
-      - AU 35
-      - 中国(TG频道:@kxswa) 3
-      - 台湾(nodefree.org免费节点日更)_3
-      - bulink自建免费11线 三网
-      - 台湾优化-tg频道:@ripaojiedian
-      - CN_191 | 5.61Mb
-      - JP 265
-      - JP 297
-      - 高速节点推荐：v1.mk/vip
-      - _41|13.55Mb
-      - HK 110
-      - VN 273
-      - "@SSRSUB-V04-付费推荐:v2cross.com"
-      - Relay_-🇬🇧GB_03
-      - JP01
-      - CN_263 | 4.39Mb
-      - Unlimited Gaming (1)
-      - "[V2ray·1x]莫斯科 CloudFlare"
-      - VN01
-      - CN 379
-      - univstar-Seoul-AWS_1
-      - HK 119
-      - HK 122
-      - 中国(TG频道:@kxswa) 4
-      - 香港_0606138
-      - "[v2ray·0.6x]Amazon_Frankfurt"
-      - 中国(TG频道:@kxswa) 5
-      - "★群: t.me/bujidaoChat"
-      - ✯洛杉矶000|0.10元/G|Trojan|
-      - IT 10
-      - HK-A|香港
-      - DE 20
-      - HK 102
-      - HK 118
-      - HK_437
-      - github.com/freefq - 加拿大  16
-      - Relay_🇨🇦CA-🇨🇦CA_07
-      - Relay_🏁ZZ-🇹🇼TW_2850
-      - Relay_🏁ZZ-🇹🇼TW_2851
-      - Relay_🏁ZZ-🇹🇼TW_2853
-      - "[V2ray·0.5x]莫斯科 GT直连#公益"
-      - Relay_🇫🇷FR-🇫🇷FR_365
-      - Relay_🏁ZZ-🇹🇼TW_2854
-      - Pool_🇺🇸US_2440
-      - DE 281
-      - DE 299
-      - US 71
-      - CN 115
-      - 中国(TG频道:@kxswa) 6
-      - Relay_🏁ZZ-🇹🇼TW_2848
-      - US 🇺🇸 Miami @AzadNet
-      - 日本(nodefree.org免费节点日更)_1
-      - CN 11
-      - Unlimited Việt Nam (13)
-      - US 6
-      - 法国-1.11MB/s(Youtube:不良林)
-      - CN 28
-      - 喵喵是骚零 3
-      - AU 306
-      - bulink自建免费10线 三网
+      - _油管：全网最强白嫖
+      - _油管：全网最强白嫖 2
+      - 香港SSR-tg频道:@ripaojiedian
+      - CN_54 TG@peekfun | 3.02Mb
+      - _379 |29.18Mb
+      - _油管：全网最强白嫖 3
+      - 香港ssr-tg频道:@ripaojiedian
+      - _960 |19.04Mb
+      - 中国(TG频道:@kxswa)
+      - _油管：全网最强白嫖 4
       - _油管：全网最强白嫖 5
-      - HK_437 2
-      - US_3490 | 2.02Mb
-      - Relay_🏁ZZ-🇹🇼TW_2849
-      - Relay_🏁ZZ-🇹🇼TW_2852
-      - US 41
-      - JP02
-      - 新加坡3-tg频道:@ripaojiedian
-      - HK 112
-      - 新加坡优化-tg频道:@ripaojiedian
-      - CN_230 | 1.92Mb
-      - US 8
-      - CN 9
-      - CN 21
-      - CN 25
-      - CN 44
-      - CN 104
-      - Relay_🇨🇳CN-🇺🇸US_14
-      - CN-高速节点推荐：v1.mk/vip
-      - 台湾-1.49MB/s(Youtube:不良林)
-      - 英国(nodefree.org免费节点日更)_1
-      - 美国(nodefree.org免费节点日更)_2 2
-      - CN 34
-      - CN 333
-      - CN 122
-      - Relay_🇭🇰HK-🇭🇰HK_601
-      - 日本(nodefree.org免费节点日更)_2
-      - CN 30
-      - CN 49
-      - CN 53
-      - 台湾(nodefree.org免费节点日更)_1
-      - CN_224 | 6.00Mb
-      - CN_231
-      - Relay_🇨🇳CN-🇭🇰HK_153
-      - CN-高速节点推荐：v1.mk/vip 2
-      - 台湾(nodefree.org免费节点日更)_2
-      - CN 39
-      - CN 50
-      - CN 123
-      - CN 89
-      - CN 90
-      - CN 92
-      - HK 210
-      - 香港优化-tg频道:@ripaojiedian
-      - Relay_🇨🇦CA-🇨🇦CA_08
+      - _958 |15.81Mb
+      - 中国(TG频道:@kxswa) 2
+      - _油管：全网最强白嫖 6
+      - _油管：全网最强白嫖 7
+      - _油管：全网最强白嫖 8
+      - _油管：全网最强白嫖 9
+      - _油管：全网最强白嫖 10
+      - _油管：全网最强白嫖 11
+      - _油管：全网最强白嫖 12
+      - _油管：全网最强白嫖 13
+      - _390 |33.19Mb
+      - 中国(TG频道:@kxswa) 3
+      - _963 |58.30Mb
+      - _1585 |44.33Mb
+      - _1578 |24.28Mb
+      - HK 85
+      - _油管：全网最强白嫖 14
+      - HK 27
+      - "[Azure]香港5•HKT"
+      - 中国(TG频道:@kxswa) 4
+      - _油管：全网最强白嫖 15
+      - "[Azure]香港3•HGC"
+      - 中国(TG频道:@kxswa) 5
+      - 香港高速|tg频道:@ripaojiedian
+      - CN 337
+      - CN 19
+      - HK_2194 |41.56Mb
+      - "[Azure]台湾1"
+      - 中国(TG频道:@kxswa) 6
+      - CN 23
+      - 香港(TG频道:@kxswa)
+      - 日本2-tg频道:@ripaojiedian
+      - JP-A|日本
+      - "[Azure]新加坡"
+      - HK 105
+      - 中国(TG频道:@kxswa) 7
+      - "[Azure]法国1"
+      - HK-A|香港
+      - SG|新加坡
+      - JP-B|日本
+      - 香港(TG频道:@kxswa) 2
+      - 香港4•HKT
+      - 新加坡2-tg频道:@ripaojiedian
+      - 新加坡2-tg频道:@ripaojiedian 2
+      - CN_1885 |62.81Mb
+      - 东京-tg频道:@ripaojiedian
+      - "[Azure]印度尼西亚"
+      - CN 12
+      - 中国(TG频道:@kxswa) 8
+      - _油管：全网最强白嫖 16
+      - "@SSRSUB-V09-付费推荐:suo.yt/ssrsub"
+      - 台湾(nodefree.org免费节点日更)_3
+      - 纽约-tg频道:@ripaojiedian
+      - 日本3-tg频道:@ripaojiedian
+      - "[Azure]俄罗斯2"
+      - 纽约-tg频道:@ripaojiedian 2
+      - JP 4
+      - HK-A|香港 2
+      - _1524 |44.16Mb
+      - 中国(TG频道:@kxswa) 9
+      - 日本2-tg频道:@ripaojiedian 2
+      - KR|韩国
+      - KR|韩国 2
+      - CN_191 | 5.61Mb
+      - MY|马来西亚
+      - _1456 |12.71Mb
+      - _油管：全网最强白嫖 17
+      - _油管：全网最强白嫖 18
+      - HK-B|香港
+      - _1341
+      - NF|奈飞
+      - US 103
+      - AU 35
+      - US|美国
+      - CN_263 | 4.39Mb
       - CN_216 |10.02Mb
-      - CN_265 |10.00Mb
-      - CN 35
-      - Pool_🇺🇸US_2440 2
+      - US 62
+      - _油管：全网最强白嫖 19
+      - "[V2ray·0.5x]莫斯科 GT直连#公益"
+      - 中国(TG频道:@kxswa) 10
+      - CN_231
+      - US 🇺🇸 Miami @AzadNet
+      - github.com/freefq - 广东省珠海市电信 23
+      - DE 20
+      - 德国
+      - _41|13.55Mb
+      - TW|台湾
+      - 法国1
+      - 法国-1.11MB/s(Youtube:不良林)
+      - _油管：全网最强白嫖 20
+      - 加拿大
+      - Relay_🏁ZZ-🇹🇼TW_2854
+      - 日本JP|tg频道:@ripaojiedian
+      - US_3490 | 2.02Mb
+      - Relay_🏁ZZ-🇹🇼TW_2852
+      - 广州
+      - 日本JP|tg频道:@ripaojiedian 2
+      - RU 🇷🇺 @AzadNet
+      - _1478 | 3.44Mb
+      - KR 51
+      - bulink自建免费10线 三网
+      - DE 🇩🇪 Nuremberg @AzadNet
+      - 英国
+      - (TG频道:@kxswa)
+      - FR 109
+      - 英国1
+      - 美国1
+      - _1517 | 2.85Mb
+      - Relay_🏁ZZ-🇹🇼TW_2849
+      - 14.29.124.174:11005
+      - github.com/freefq - 英国  2
+      - Unlimited Việt Nam (13)
+      - FR 🇫🇷 @AzadNet
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - CN_210
-      - _油管：全网最强白嫖
-      - Unlimited Việt Nam (6)
-      - CN 286
-      - CN_54 TG@peekfun | 3.02Mb
-      - CN 215
-      - _油管：全网最强白嫖 2
-      - CN 172
-      - CN 187
-      - CN 183
-      - CN 197
-      - CN 242
-      - CN 173
-      - CN 270
-      - CN 272
-      - CN 244
-      - CN 180
-      - CN 201
-      - CN 177
-      - CN 210
-      - CN 225
-      - CN 14
-      - CN 144
-      - CN 153
-      - CN 178
-      - CN 237
-      - CN 307
-      - 中国(TG频道:@kxswa)
-      - CN 198
-      - CN 311
-      - CN 416
-      - CN 26
-      - CN 185
-      - CN 222
-      - CN 285
-      - CN 332
-      - CN 175
-      - CN 217
-      - CN 253
-      - CN 168
-      - CN 202
-      - CN 176
-      - CN 283
-      - CN 139
-      - CN 205
-      - CN 278
-      - Relay_🇨🇳CN-🇹🇼TW_211
-      - CN 174
-      - CN 287
-      - 喵喵是骚零
-      - CN 232
-      - CN 249
-      - CN 165
-      - CN 275
-      - CN 184
-      - CN 221
-      - CN 240
-      - CN 340
-      - CN 19
-      - CN 160
-      - CN 203
-      - CN 224
-      - CN 171
-      - 喵喵是骚零 2
-      - CN 159
-      - CN 239
-      - CN 298
-      - CN 256
-      - CN 188
-      - CN 220
-      - CN 226
-      - CN 301
-      - CN 347
-      - CN 400
-      - CN 211
-      - CN 179
-      - CN 280
-      - KR 51
-      - CN 238
-      - CN 275 2
-      - CN 357
-      - CN 721
-      - 中国(TG频道:@kxswa) 2
-      - CN 337
-      - CN 23
-      - CN 259
-      - CN 268
-      - CN 218
-      - CN 387
-      - US_2464
-      - CN 277
-      - _油管：全网最强白嫖 3
-      - _油管：全网最强白嫖 4
-      - HK 243
-      - CN 295
-      - 日本高速
-      - CN 207
-      - HK 27
-      - JP 200
-      - KR 236
-      - KR 250
-      - CN 711
-      - CN 5
-      - VN 284
-      - VN 266
       - CN_163
-      - Relay_🇯🇵JP-🇯🇵JP_483
-      - JP 4
-      - KR 246
-      - KR|韩国
-      - JP 247
-      - HK 17
-      - HK 58
-      - 美国(nodefree.org免费节点日更)_2
-      - JP 230
-      - VN 260
-      - KR 43
-      - KR 262
-      - 台湾(nodefree.org日更免费节点)_2
-      - HK 228
-      - Relay_🇰🇷KR-🇭🇰HK_485
-      - US 258
-      - HK 121
-      - US 267
-      - US_20
-      - 美国-295.1KB/s(Youtube:不良林)
-      - AU 35
-      - 中国(TG频道:@kxswa) 3
-      - 台湾(nodefree.org免费节点日更)_3
-      - bulink自建免费11线 三网
-      - 台湾优化-tg频道:@ripaojiedian
-      - CN_191 | 5.61Mb
-      - JP 265
-      - JP 297
-      - 高速节点推荐：v1.mk/vip
-      - _41|13.55Mb
-      - HK 110
-      - VN 273
-      - "@SSRSUB-V04-付费推荐:v2cross.com"
-      - Relay_-🇬🇧GB_03
-      - JP01
-      - CN_263 | 4.39Mb
-      - Unlimited Gaming (1)
-      - "[V2ray·1x]莫斯科 CloudFlare"
-      - VN01
-      - CN 379
-      - univstar-Seoul-AWS_1
-      - HK 119
-      - HK 122
-      - 中国(TG频道:@kxswa) 4
-      - 香港_0606138
-      - "[v2ray·0.6x]Amazon_Frankfurt"
-      - 中国(TG频道:@kxswa) 5
-      - "★群: t.me/bujidaoChat"
-      - ✯洛杉矶000|0.10元/G|Trojan|
-      - IT 10
-      - HK-A|香港
-      - DE 20
-      - HK 102
-      - HK 118
-      - HK_437
-      - github.com/freefq - 加拿大  16
-      - Relay_🇨🇦CA-🇨🇦CA_07
-      - Relay_🏁ZZ-🇹🇼TW_2850
-      - Relay_🏁ZZ-🇹🇼TW_2851
-      - Relay_🏁ZZ-🇹🇼TW_2853
-      - "[V2ray·0.5x]莫斯科 GT直连#公益"
-      - Relay_🇫🇷FR-🇫🇷FR_365
-      - Relay_🏁ZZ-🇹🇼TW_2854
-      - Pool_🇺🇸US_2440
-      - DE 281
-      - DE 299
-      - US 71
-      - CN 115
-      - 中国(TG频道:@kxswa) 6
-      - Relay_🏁ZZ-🇹🇼TW_2848
-      - US 🇺🇸 Miami @AzadNet
-      - 日本(nodefree.org免费节点日更)_1
-      - CN 11
-      - Unlimited Việt Nam (13)
-      - US 6
-      - 法国-1.11MB/s(Youtube:不良林)
-      - CN 28
-      - 喵喵是骚零 3
-      - AU 306
-      - bulink自建免费10线 三网
+      - _油管：全网最强白嫖
+      - _油管：全网最强白嫖 2
+      - 香港SSR-tg频道:@ripaojiedian
+      - CN_54 TG@peekfun | 3.02Mb
+      - _379 |29.18Mb
+      - _油管：全网最强白嫖 3
+      - 香港ssr-tg频道:@ripaojiedian
+      - _960 |19.04Mb
+      - 中国(TG频道:@kxswa)
+      - _油管：全网最强白嫖 4
       - _油管：全网最强白嫖 5
-      - HK_437 2
-      - US_3490 | 2.02Mb
-      - Relay_🏁ZZ-🇹🇼TW_2849
-      - Relay_🏁ZZ-🇹🇼TW_2852
-      - US 41
-      - JP02
-      - 新加坡3-tg频道:@ripaojiedian
-      - HK 112
-      - 新加坡优化-tg频道:@ripaojiedian
-      - CN_230 | 1.92Mb
-      - US 8
-      - CN 9
-      - CN 21
-      - CN 25
-      - CN 44
-      - CN 104
-      - Relay_🇨🇳CN-🇺🇸US_14
-      - CN-高速节点推荐：v1.mk/vip
-      - 台湾-1.49MB/s(Youtube:不良林)
-      - 英国(nodefree.org免费节点日更)_1
-      - 美国(nodefree.org免费节点日更)_2 2
-      - CN 34
-      - CN 333
-      - CN 122
-      - Relay_🇭🇰HK-🇭🇰HK_601
-      - 日本(nodefree.org免费节点日更)_2
-      - CN 30
-      - CN 49
-      - CN 53
-      - 台湾(nodefree.org免费节点日更)_1
-      - CN_224 | 6.00Mb
-      - CN_231
-      - Relay_🇨🇳CN-🇭🇰HK_153
-      - CN-高速节点推荐：v1.mk/vip 2
-      - 台湾(nodefree.org免费节点日更)_2
-      - CN 39
-      - CN 50
-      - CN 123
-      - CN 89
-      - CN 90
-      - CN 92
-      - HK 210
-      - 香港优化-tg频道:@ripaojiedian
-      - Relay_🇨🇦CA-🇨🇦CA_08
+      - _958 |15.81Mb
+      - 中国(TG频道:@kxswa) 2
+      - _油管：全网最强白嫖 6
+      - _油管：全网最强白嫖 7
+      - _油管：全网最强白嫖 8
+      - _油管：全网最强白嫖 9
+      - _油管：全网最强白嫖 10
+      - _油管：全网最强白嫖 11
+      - _油管：全网最强白嫖 12
+      - _油管：全网最强白嫖 13
+      - _390 |33.19Mb
+      - 中国(TG频道:@kxswa) 3
+      - _963 |58.30Mb
+      - _1585 |44.33Mb
+      - _1578 |24.28Mb
+      - HK 85
+      - _油管：全网最强白嫖 14
+      - HK 27
+      - "[Azure]香港5•HKT"
+      - 中国(TG频道:@kxswa) 4
+      - _油管：全网最强白嫖 15
+      - "[Azure]香港3•HGC"
+      - 中国(TG频道:@kxswa) 5
+      - 香港高速|tg频道:@ripaojiedian
+      - CN 337
+      - CN 19
+      - HK_2194 |41.56Mb
+      - "[Azure]台湾1"
+      - 中国(TG频道:@kxswa) 6
+      - CN 23
+      - 香港(TG频道:@kxswa)
+      - 日本2-tg频道:@ripaojiedian
+      - JP-A|日本
+      - "[Azure]新加坡"
+      - HK 105
+      - 中国(TG频道:@kxswa) 7
+      - "[Azure]法国1"
+      - HK-A|香港
+      - SG|新加坡
+      - JP-B|日本
+      - 香港(TG频道:@kxswa) 2
+      - 香港4•HKT
+      - 新加坡2-tg频道:@ripaojiedian
+      - 新加坡2-tg频道:@ripaojiedian 2
+      - CN_1885 |62.81Mb
+      - 东京-tg频道:@ripaojiedian
+      - "[Azure]印度尼西亚"
+      - CN 12
+      - 中国(TG频道:@kxswa) 8
+      - _油管：全网最强白嫖 16
+      - "@SSRSUB-V09-付费推荐:suo.yt/ssrsub"
+      - 台湾(nodefree.org免费节点日更)_3
+      - 纽约-tg频道:@ripaojiedian
+      - 日本3-tg频道:@ripaojiedian
+      - "[Azure]俄罗斯2"
+      - 纽约-tg频道:@ripaojiedian 2
+      - JP 4
+      - HK-A|香港 2
+      - _1524 |44.16Mb
+      - 中国(TG频道:@kxswa) 9
+      - 日本2-tg频道:@ripaojiedian 2
+      - KR|韩国
+      - KR|韩国 2
+      - CN_191 | 5.61Mb
+      - MY|马来西亚
+      - _1456 |12.71Mb
+      - _油管：全网最强白嫖 17
+      - _油管：全网最强白嫖 18
+      - HK-B|香港
+      - _1341
+      - NF|奈飞
+      - US 103
+      - AU 35
+      - US|美国
+      - CN_263 | 4.39Mb
       - CN_216 |10.02Mb
-      - CN_265 |10.00Mb
-      - CN 35
-      - Pool_🇺🇸US_2440 2
+      - US 62
+      - _油管：全网最强白嫖 19
+      - "[V2ray·0.5x]莫斯科 GT直连#公益"
+      - 中国(TG频道:@kxswa) 10
+      - CN_231
+      - US 🇺🇸 Miami @AzadNet
+      - github.com/freefq - 广东省珠海市电信 23
+      - DE 20
+      - 德国
+      - _41|13.55Mb
+      - TW|台湾
+      - 法国1
+      - 法国-1.11MB/s(Youtube:不良林)
+      - _油管：全网最强白嫖 20
+      - 加拿大
+      - Relay_🏁ZZ-🇹🇼TW_2854
+      - 日本JP|tg频道:@ripaojiedian
+      - US_3490 | 2.02Mb
+      - Relay_🏁ZZ-🇹🇼TW_2852
+      - 广州
+      - 日本JP|tg频道:@ripaojiedian 2
+      - RU 🇷🇺 @AzadNet
+      - _1478 | 3.44Mb
+      - KR 51
+      - bulink自建免费10线 三网
+      - DE 🇩🇪 Nuremberg @AzadNet
+      - 英国
+      - (TG频道:@kxswa)
+      - FR 109
+      - 英国1
+      - 美国1
+      - _1517 | 2.85Mb
+      - Relay_🏁ZZ-🇹🇼TW_2849
+      - 14.29.124.174:11005
+      - github.com/freefq - 英国  2
+      - Unlimited Việt Nam (13)
+      - FR 🇫🇷 @AzadNet
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - CN_210
-      - _油管：全网最强白嫖
-      - Unlimited Việt Nam (6)
-      - CN 286
-      - CN_54 TG@peekfun | 3.02Mb
-      - CN 215
-      - _油管：全网最强白嫖 2
-      - CN 172
-      - CN 187
-      - CN 183
-      - CN 197
-      - CN 242
-      - CN 173
-      - CN 270
-      - CN 272
-      - CN 244
-      - CN 180
-      - CN 201
-      - CN 177
-      - CN 210
-      - CN 225
-      - CN 14
-      - CN 144
-      - CN 153
-      - CN 178
-      - CN 237
-      - CN 307
-      - 中国(TG频道:@kxswa)
-      - CN 198
-      - CN 311
-      - CN 416
-      - CN 26
-      - CN 185
-      - CN 222
-      - CN 285
-      - CN 332
-      - CN 175
-      - CN 217
-      - CN 253
-      - CN 168
-      - CN 202
-      - CN 176
-      - CN 283
-      - CN 139
-      - CN 205
-      - CN 278
-      - Relay_🇨🇳CN-🇹🇼TW_211
-      - CN 174
-      - CN 287
-      - 喵喵是骚零
-      - CN 232
-      - CN 249
-      - CN 165
-      - CN 275
-      - CN 184
-      - CN 221
-      - CN 240
-      - CN 340
-      - CN 19
-      - CN 160
-      - CN 203
-      - CN 224
-      - CN 171
-      - 喵喵是骚零 2
-      - CN 159
-      - CN 239
-      - CN 298
-      - CN 256
-      - CN 188
-      - CN 220
-      - CN 226
-      - CN 301
-      - CN 347
-      - CN 400
-      - CN 211
-      - CN 179
-      - CN 280
-      - KR 51
-      - CN 238
-      - CN 275 2
-      - CN 357
-      - CN 721
-      - 中国(TG频道:@kxswa) 2
-      - CN 337
-      - CN 23
-      - CN 259
-      - CN 268
-      - CN 218
-      - CN 387
-      - US_2464
-      - CN 277
-      - _油管：全网最强白嫖 3
-      - _油管：全网最强白嫖 4
-      - HK 243
-      - CN 295
-      - 日本高速
-      - CN 207
-      - HK 27
-      - JP 200
-      - KR 236
-      - KR 250
-      - CN 711
-      - CN 5
-      - VN 284
-      - VN 266
       - CN_163
-      - Relay_🇯🇵JP-🇯🇵JP_483
-      - JP 4
-      - KR 246
-      - KR|韩国
-      - JP 247
-      - HK 17
-      - HK 58
-      - 美国(nodefree.org免费节点日更)_2
-      - JP 230
-      - VN 260
-      - KR 43
-      - KR 262
-      - 台湾(nodefree.org日更免费节点)_2
-      - HK 228
-      - Relay_🇰🇷KR-🇭🇰HK_485
-      - US 258
-      - HK 121
-      - US 267
-      - US_20
-      - 美国-295.1KB/s(Youtube:不良林)
-      - AU 35
-      - 中国(TG频道:@kxswa) 3
-      - 台湾(nodefree.org免费节点日更)_3
-      - bulink自建免费11线 三网
-      - 台湾优化-tg频道:@ripaojiedian
-      - CN_191 | 5.61Mb
-      - JP 265
-      - JP 297
-      - 高速节点推荐：v1.mk/vip
-      - _41|13.55Mb
-      - HK 110
-      - VN 273
-      - "@SSRSUB-V04-付费推荐:v2cross.com"
-      - Relay_-🇬🇧GB_03
-      - JP01
-      - CN_263 | 4.39Mb
-      - Unlimited Gaming (1)
-      - "[V2ray·1x]莫斯科 CloudFlare"
-      - VN01
-      - CN 379
-      - univstar-Seoul-AWS_1
-      - HK 119
-      - HK 122
-      - 中国(TG频道:@kxswa) 4
-      - 香港_0606138
-      - "[v2ray·0.6x]Amazon_Frankfurt"
-      - 中国(TG频道:@kxswa) 5
-      - "★群: t.me/bujidaoChat"
-      - ✯洛杉矶000|0.10元/G|Trojan|
-      - IT 10
-      - HK-A|香港
-      - DE 20
-      - HK 102
-      - HK 118
-      - HK_437
-      - github.com/freefq - 加拿大  16
-      - Relay_🇨🇦CA-🇨🇦CA_07
-      - Relay_🏁ZZ-🇹🇼TW_2850
-      - Relay_🏁ZZ-🇹🇼TW_2851
-      - Relay_🏁ZZ-🇹🇼TW_2853
-      - "[V2ray·0.5x]莫斯科 GT直连#公益"
-      - Relay_🇫🇷FR-🇫🇷FR_365
-      - Relay_🏁ZZ-🇹🇼TW_2854
-      - Pool_🇺🇸US_2440
-      - DE 281
-      - DE 299
-      - US 71
-      - CN 115
-      - 中国(TG频道:@kxswa) 6
-      - Relay_🏁ZZ-🇹🇼TW_2848
-      - US 🇺🇸 Miami @AzadNet
-      - 日本(nodefree.org免费节点日更)_1
-      - CN 11
-      - Unlimited Việt Nam (13)
-      - US 6
-      - 法国-1.11MB/s(Youtube:不良林)
-      - CN 28
-      - 喵喵是骚零 3
-      - AU 306
-      - bulink自建免费10线 三网
+      - _油管：全网最强白嫖
+      - _油管：全网最强白嫖 2
+      - 香港SSR-tg频道:@ripaojiedian
+      - CN_54 TG@peekfun | 3.02Mb
+      - _379 |29.18Mb
+      - _油管：全网最强白嫖 3
+      - 香港ssr-tg频道:@ripaojiedian
+      - _960 |19.04Mb
+      - 中国(TG频道:@kxswa)
+      - _油管：全网最强白嫖 4
       - _油管：全网最强白嫖 5
-      - HK_437 2
-      - US_3490 | 2.02Mb
-      - Relay_🏁ZZ-🇹🇼TW_2849
-      - Relay_🏁ZZ-🇹🇼TW_2852
-      - US 41
-      - JP02
-      - 新加坡3-tg频道:@ripaojiedian
-      - HK 112
-      - 新加坡优化-tg频道:@ripaojiedian
-      - CN_230 | 1.92Mb
-      - US 8
-      - CN 9
-      - CN 21
-      - CN 25
-      - CN 44
-      - CN 104
-      - Relay_🇨🇳CN-🇺🇸US_14
-      - CN-高速节点推荐：v1.mk/vip
-      - 台湾-1.49MB/s(Youtube:不良林)
-      - 英国(nodefree.org免费节点日更)_1
-      - 美国(nodefree.org免费节点日更)_2 2
-      - CN 34
-      - CN 333
-      - CN 122
-      - Relay_🇭🇰HK-🇭🇰HK_601
-      - 日本(nodefree.org免费节点日更)_2
-      - CN 30
-      - CN 49
-      - CN 53
-      - 台湾(nodefree.org免费节点日更)_1
-      - CN_224 | 6.00Mb
-      - CN_231
-      - Relay_🇨🇳CN-🇭🇰HK_153
-      - CN-高速节点推荐：v1.mk/vip 2
-      - 台湾(nodefree.org免费节点日更)_2
-      - CN 39
-      - CN 50
-      - CN 123
-      - CN 89
-      - CN 90
-      - CN 92
-      - HK 210
-      - 香港优化-tg频道:@ripaojiedian
-      - Relay_🇨🇦CA-🇨🇦CA_08
+      - _958 |15.81Mb
+      - 中国(TG频道:@kxswa) 2
+      - _油管：全网最强白嫖 6
+      - _油管：全网最强白嫖 7
+      - _油管：全网最强白嫖 8
+      - _油管：全网最强白嫖 9
+      - _油管：全网最强白嫖 10
+      - _油管：全网最强白嫖 11
+      - _油管：全网最强白嫖 12
+      - _油管：全网最强白嫖 13
+      - _390 |33.19Mb
+      - 中国(TG频道:@kxswa) 3
+      - _963 |58.30Mb
+      - _1585 |44.33Mb
+      - _1578 |24.28Mb
+      - HK 85
+      - _油管：全网最强白嫖 14
+      - HK 27
+      - "[Azure]香港5•HKT"
+      - 中国(TG频道:@kxswa) 4
+      - _油管：全网最强白嫖 15
+      - "[Azure]香港3•HGC"
+      - 中国(TG频道:@kxswa) 5
+      - 香港高速|tg频道:@ripaojiedian
+      - CN 337
+      - CN 19
+      - HK_2194 |41.56Mb
+      - "[Azure]台湾1"
+      - 中国(TG频道:@kxswa) 6
+      - CN 23
+      - 香港(TG频道:@kxswa)
+      - 日本2-tg频道:@ripaojiedian
+      - JP-A|日本
+      - "[Azure]新加坡"
+      - HK 105
+      - 中国(TG频道:@kxswa) 7
+      - "[Azure]法国1"
+      - HK-A|香港
+      - SG|新加坡
+      - JP-B|日本
+      - 香港(TG频道:@kxswa) 2
+      - 香港4•HKT
+      - 新加坡2-tg频道:@ripaojiedian
+      - 新加坡2-tg频道:@ripaojiedian 2
+      - CN_1885 |62.81Mb
+      - 东京-tg频道:@ripaojiedian
+      - "[Azure]印度尼西亚"
+      - CN 12
+      - 中国(TG频道:@kxswa) 8
+      - _油管：全网最强白嫖 16
+      - "@SSRSUB-V09-付费推荐:suo.yt/ssrsub"
+      - 台湾(nodefree.org免费节点日更)_3
+      - 纽约-tg频道:@ripaojiedian
+      - 日本3-tg频道:@ripaojiedian
+      - "[Azure]俄罗斯2"
+      - 纽约-tg频道:@ripaojiedian 2
+      - JP 4
+      - HK-A|香港 2
+      - _1524 |44.16Mb
+      - 中国(TG频道:@kxswa) 9
+      - 日本2-tg频道:@ripaojiedian 2
+      - KR|韩国
+      - KR|韩国 2
+      - CN_191 | 5.61Mb
+      - MY|马来西亚
+      - _1456 |12.71Mb
+      - _油管：全网最强白嫖 17
+      - _油管：全网最强白嫖 18
+      - HK-B|香港
+      - _1341
+      - NF|奈飞
+      - US 103
+      - AU 35
+      - US|美国
+      - CN_263 | 4.39Mb
       - CN_216 |10.02Mb
-      - CN_265 |10.00Mb
-      - CN 35
-      - Pool_🇺🇸US_2440 2
+      - US 62
+      - _油管：全网最强白嫖 19
+      - "[V2ray·0.5x]莫斯科 GT直连#公益"
+      - 中国(TG频道:@kxswa) 10
+      - CN_231
+      - US 🇺🇸 Miami @AzadNet
+      - github.com/freefq - 广东省珠海市电信 23
+      - DE 20
+      - 德国
+      - _41|13.55Mb
+      - TW|台湾
+      - 法国1
+      - 法国-1.11MB/s(Youtube:不良林)
+      - _油管：全网最强白嫖 20
+      - 加拿大
+      - Relay_🏁ZZ-🇹🇼TW_2854
+      - 日本JP|tg频道:@ripaojiedian
+      - US_3490 | 2.02Mb
+      - Relay_🏁ZZ-🇹🇼TW_2852
+      - 广州
+      - 日本JP|tg频道:@ripaojiedian 2
+      - RU 🇷🇺 @AzadNet
+      - _1478 | 3.44Mb
+      - KR 51
+      - bulink自建免费10线 三网
+      - DE 🇩🇪 Nuremberg @AzadNet
+      - 英国
+      - (TG频道:@kxswa)
+      - FR 109
+      - 英国1
+      - 美国1
+      - _1517 | 2.85Mb
+      - Relay_🏁ZZ-🇹🇼TW_2849
+      - 14.29.124.174:11005
+      - github.com/freefq - 英国  2
+      - Unlimited Việt Nam (13)
+      - FR 🇫🇷 @AzadNet
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -1965,241 +1090,131 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - CN_210
-      - _油管：全网最强白嫖
-      - Unlimited Việt Nam (6)
-      - CN 286
-      - CN_54 TG@peekfun | 3.02Mb
-      - CN 215
-      - _油管：全网最强白嫖 2
-      - CN 172
-      - CN 187
-      - CN 183
-      - CN 197
-      - CN 242
-      - CN 173
-      - CN 270
-      - CN 272
-      - CN 244
-      - CN 180
-      - CN 201
-      - CN 177
-      - CN 210
-      - CN 225
-      - CN 14
-      - CN 144
-      - CN 153
-      - CN 178
-      - CN 237
-      - CN 307
-      - 中国(TG频道:@kxswa)
-      - CN 198
-      - CN 311
-      - CN 416
-      - CN 26
-      - CN 185
-      - CN 222
-      - CN 285
-      - CN 332
-      - CN 175
-      - CN 217
-      - CN 253
-      - CN 168
-      - CN 202
-      - CN 176
-      - CN 283
-      - CN 139
-      - CN 205
-      - CN 278
-      - Relay_🇨🇳CN-🇹🇼TW_211
-      - CN 174
-      - CN 287
-      - 喵喵是骚零
-      - CN 232
-      - CN 249
-      - CN 165
-      - CN 275
-      - CN 184
-      - CN 221
-      - CN 240
-      - CN 340
-      - CN 19
-      - CN 160
-      - CN 203
-      - CN 224
-      - CN 171
-      - 喵喵是骚零 2
-      - CN 159
-      - CN 239
-      - CN 298
-      - CN 256
-      - CN 188
-      - CN 220
-      - CN 226
-      - CN 301
-      - CN 347
-      - CN 400
-      - CN 211
-      - CN 179
-      - CN 280
-      - KR 51
-      - CN 238
-      - CN 275 2
-      - CN 357
-      - CN 721
-      - 中国(TG频道:@kxswa) 2
-      - CN 337
-      - CN 23
-      - CN 259
-      - CN 268
-      - CN 218
-      - CN 387
-      - US_2464
-      - CN 277
-      - _油管：全网最强白嫖 3
-      - _油管：全网最强白嫖 4
-      - HK 243
-      - CN 295
-      - 日本高速
-      - CN 207
-      - HK 27
-      - JP 200
-      - KR 236
-      - KR 250
-      - CN 711
-      - CN 5
-      - VN 284
-      - VN 266
       - CN_163
-      - Relay_🇯🇵JP-🇯🇵JP_483
-      - JP 4
-      - KR 246
-      - KR|韩国
-      - JP 247
-      - HK 17
-      - HK 58
-      - 美国(nodefree.org免费节点日更)_2
-      - JP 230
-      - VN 260
-      - KR 43
-      - KR 262
-      - 台湾(nodefree.org日更免费节点)_2
-      - HK 228
-      - Relay_🇰🇷KR-🇭🇰HK_485
-      - US 258
-      - HK 121
-      - US 267
-      - US_20
-      - 美国-295.1KB/s(Youtube:不良林)
-      - AU 35
-      - 中国(TG频道:@kxswa) 3
-      - 台湾(nodefree.org免费节点日更)_3
-      - bulink自建免费11线 三网
-      - 台湾优化-tg频道:@ripaojiedian
-      - CN_191 | 5.61Mb
-      - JP 265
-      - JP 297
-      - 高速节点推荐：v1.mk/vip
-      - _41|13.55Mb
-      - HK 110
-      - VN 273
-      - "@SSRSUB-V04-付费推荐:v2cross.com"
-      - Relay_-🇬🇧GB_03
-      - JP01
-      - CN_263 | 4.39Mb
-      - Unlimited Gaming (1)
-      - "[V2ray·1x]莫斯科 CloudFlare"
-      - VN01
-      - CN 379
-      - univstar-Seoul-AWS_1
-      - HK 119
-      - HK 122
-      - 中国(TG频道:@kxswa) 4
-      - 香港_0606138
-      - "[v2ray·0.6x]Amazon_Frankfurt"
-      - 中国(TG频道:@kxswa) 5
-      - "★群: t.me/bujidaoChat"
-      - ✯洛杉矶000|0.10元/G|Trojan|
-      - IT 10
-      - HK-A|香港
-      - DE 20
-      - HK 102
-      - HK 118
-      - HK_437
-      - github.com/freefq - 加拿大  16
-      - Relay_🇨🇦CA-🇨🇦CA_07
-      - Relay_🏁ZZ-🇹🇼TW_2850
-      - Relay_🏁ZZ-🇹🇼TW_2851
-      - Relay_🏁ZZ-🇹🇼TW_2853
-      - "[V2ray·0.5x]莫斯科 GT直连#公益"
-      - Relay_🇫🇷FR-🇫🇷FR_365
-      - Relay_🏁ZZ-🇹🇼TW_2854
-      - Pool_🇺🇸US_2440
-      - DE 281
-      - DE 299
-      - US 71
-      - CN 115
-      - 中国(TG频道:@kxswa) 6
-      - Relay_🏁ZZ-🇹🇼TW_2848
-      - US 🇺🇸 Miami @AzadNet
-      - 日本(nodefree.org免费节点日更)_1
-      - CN 11
-      - Unlimited Việt Nam (13)
-      - US 6
-      - 法国-1.11MB/s(Youtube:不良林)
-      - CN 28
-      - 喵喵是骚零 3
-      - AU 306
-      - bulink自建免费10线 三网
+      - _油管：全网最强白嫖
+      - _油管：全网最强白嫖 2
+      - 香港SSR-tg频道:@ripaojiedian
+      - CN_54 TG@peekfun | 3.02Mb
+      - _379 |29.18Mb
+      - _油管：全网最强白嫖 3
+      - 香港ssr-tg频道:@ripaojiedian
+      - _960 |19.04Mb
+      - 中国(TG频道:@kxswa)
+      - _油管：全网最强白嫖 4
       - _油管：全网最强白嫖 5
-      - HK_437 2
-      - US_3490 | 2.02Mb
-      - Relay_🏁ZZ-🇹🇼TW_2849
-      - Relay_🏁ZZ-🇹🇼TW_2852
-      - US 41
-      - JP02
-      - 新加坡3-tg频道:@ripaojiedian
-      - HK 112
-      - 新加坡优化-tg频道:@ripaojiedian
-      - CN_230 | 1.92Mb
-      - US 8
-      - CN 9
-      - CN 21
-      - CN 25
-      - CN 44
-      - CN 104
-      - Relay_🇨🇳CN-🇺🇸US_14
-      - CN-高速节点推荐：v1.mk/vip
-      - 台湾-1.49MB/s(Youtube:不良林)
-      - 英国(nodefree.org免费节点日更)_1
-      - 美国(nodefree.org免费节点日更)_2 2
-      - CN 34
-      - CN 333
-      - CN 122
-      - Relay_🇭🇰HK-🇭🇰HK_601
-      - 日本(nodefree.org免费节点日更)_2
-      - CN 30
-      - CN 49
-      - CN 53
-      - 台湾(nodefree.org免费节点日更)_1
-      - CN_224 | 6.00Mb
-      - CN_231
-      - Relay_🇨🇳CN-🇭🇰HK_153
-      - CN-高速节点推荐：v1.mk/vip 2
-      - 台湾(nodefree.org免费节点日更)_2
-      - CN 39
-      - CN 50
-      - CN 123
-      - CN 89
-      - CN 90
-      - CN 92
-      - HK 210
-      - 香港优化-tg频道:@ripaojiedian
-      - Relay_🇨🇦CA-🇨🇦CA_08
+      - _958 |15.81Mb
+      - 中国(TG频道:@kxswa) 2
+      - _油管：全网最强白嫖 6
+      - _油管：全网最强白嫖 7
+      - _油管：全网最强白嫖 8
+      - _油管：全网最强白嫖 9
+      - _油管：全网最强白嫖 10
+      - _油管：全网最强白嫖 11
+      - _油管：全网最强白嫖 12
+      - _油管：全网最强白嫖 13
+      - _390 |33.19Mb
+      - 中国(TG频道:@kxswa) 3
+      - _963 |58.30Mb
+      - _1585 |44.33Mb
+      - _1578 |24.28Mb
+      - HK 85
+      - _油管：全网最强白嫖 14
+      - HK 27
+      - "[Azure]香港5•HKT"
+      - 中国(TG频道:@kxswa) 4
+      - _油管：全网最强白嫖 15
+      - "[Azure]香港3•HGC"
+      - 中国(TG频道:@kxswa) 5
+      - 香港高速|tg频道:@ripaojiedian
+      - CN 337
+      - CN 19
+      - HK_2194 |41.56Mb
+      - "[Azure]台湾1"
+      - 中国(TG频道:@kxswa) 6
+      - CN 23
+      - 香港(TG频道:@kxswa)
+      - 日本2-tg频道:@ripaojiedian
+      - JP-A|日本
+      - "[Azure]新加坡"
+      - HK 105
+      - 中国(TG频道:@kxswa) 7
+      - "[Azure]法国1"
+      - HK-A|香港
+      - SG|新加坡
+      - JP-B|日本
+      - 香港(TG频道:@kxswa) 2
+      - 香港4•HKT
+      - 新加坡2-tg频道:@ripaojiedian
+      - 新加坡2-tg频道:@ripaojiedian 2
+      - CN_1885 |62.81Mb
+      - 东京-tg频道:@ripaojiedian
+      - "[Azure]印度尼西亚"
+      - CN 12
+      - 中国(TG频道:@kxswa) 8
+      - _油管：全网最强白嫖 16
+      - "@SSRSUB-V09-付费推荐:suo.yt/ssrsub"
+      - 台湾(nodefree.org免费节点日更)_3
+      - 纽约-tg频道:@ripaojiedian
+      - 日本3-tg频道:@ripaojiedian
+      - "[Azure]俄罗斯2"
+      - 纽约-tg频道:@ripaojiedian 2
+      - JP 4
+      - HK-A|香港 2
+      - _1524 |44.16Mb
+      - 中国(TG频道:@kxswa) 9
+      - 日本2-tg频道:@ripaojiedian 2
+      - KR|韩国
+      - KR|韩国 2
+      - CN_191 | 5.61Mb
+      - MY|马来西亚
+      - _1456 |12.71Mb
+      - _油管：全网最强白嫖 17
+      - _油管：全网最强白嫖 18
+      - HK-B|香港
+      - _1341
+      - NF|奈飞
+      - US 103
+      - AU 35
+      - US|美国
+      - CN_263 | 4.39Mb
       - CN_216 |10.02Mb
-      - CN_265 |10.00Mb
-      - CN 35
-      - Pool_🇺🇸US_2440 2
+      - US 62
+      - _油管：全网最强白嫖 19
+      - "[V2ray·0.5x]莫斯科 GT直连#公益"
+      - 中国(TG频道:@kxswa) 10
+      - CN_231
+      - US 🇺🇸 Miami @AzadNet
+      - github.com/freefq - 广东省珠海市电信 23
+      - DE 20
+      - 德国
+      - _41|13.55Mb
+      - TW|台湾
+      - 法国1
+      - 法国-1.11MB/s(Youtube:不良林)
+      - _油管：全网最强白嫖 20
+      - 加拿大
+      - Relay_🏁ZZ-🇹🇼TW_2854
+      - 日本JP|tg频道:@ripaojiedian
+      - US_3490 | 2.02Mb
+      - Relay_🏁ZZ-🇹🇼TW_2852
+      - 广州
+      - 日本JP|tg频道:@ripaojiedian 2
+      - RU 🇷🇺 @AzadNet
+      - _1478 | 3.44Mb
+      - KR 51
+      - bulink自建免费10线 三网
+      - DE 🇩🇪 Nuremberg @AzadNet
+      - 英国
+      - (TG频道:@kxswa)
+      - FR 109
+      - 英国1
+      - 美国1
+      - _1517 | 2.85Mb
+      - Relay_🏁ZZ-🇹🇼TW_2849
+      - 14.29.124.174:11005
+      - github.com/freefq - 英国  2
+      - Unlimited Việt Nam (13)
+      - FR 🇫🇷 @AzadNet
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
