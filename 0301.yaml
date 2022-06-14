@@ -52,7 +52,6 @@ proxies:
   - {name: HK 1111, server: transit1.fanqiang.eu, port: 15020, type: trojan, password: 7259391b-9f01-4ede-90dc-3955cf1c4998, skip-cert-verify: true, udp: true}
   - {name: CN 161, server: relaybgp_pro.flyxxl.xyz, port: 45550, type: ss, cipher: chacha20-ietf-poly1305, password: fff34c21-0a19-41f5-ae83-27b115066a92, udp: true}
   - {name: 关注tg频道@moneyflychat 速度-58.81Mb", server: 14.29.124.168, port: 25245, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: :中国-ss-14.29.124.168:25241-可用-直连-完全不支持NF, server: 14.29.124.168, port: 25241, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
   - {name: CN_20, server: 14.29.124.168, port: 25219, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
   - {name: (Youtube技术分享室)🇨🇳中国 16, server: 14.29.124.168, port: 25279, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
   - {name: 关注tg频道@moneyflychat 速度-62.96Mb", server: 14.29.124.168, port: 25293, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
@@ -111,7 +110,6 @@ proxies:
   - {name: HK 1050, server: transit1.fanqiang.eu, port: 15009, type: trojan, password: 7259391b-9f01-4ede-90dc-3955cf1c4998, skip-cert-verify: true, udp: true}
   - {name: HK-A|香港, server: szdx-anhb.jiashumao.net, port: 22481, type: trojan, password: f0217382-ea8e-3d34-9c96-6268523fd8b0, skip-cert-verify: true, udp: true}
   - {name: HK 1254, server: zq-vip-05.com, port: 443, type: trojan, password: 7TFhMMPRFjkEe9Bl, skip-cert-verify: true, udp: true}
-  - {name: :中国-ss-14.29.124.168:25296-可用-直连-完全不支持NF, server: 14.29.124.168, port: 25296, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
   - {name: CN 5, server: 14.29.124.168, port: 25233, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
   - {name: _油管：全网最强白嫖 (130), server: 14.29.124.168, port: 25295, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
   - {name: CN_30, server: 14.29.124.168, port: 25235, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
@@ -374,7 +372,6 @@ proxy-groups:
       - HK 1111
       - CN 161
       - 关注tg频道@moneyflychat 速度-58.81Mb"
-      - :中国-ss-14.29.124.168:25241-可用-直连-完全不支持NF
       - CN_20
       - (Youtube技术分享室)🇨🇳中国 16
       - 关注tg频道@moneyflychat 速度-62.96Mb"
@@ -433,7 +430,6 @@ proxy-groups:
       - HK 1050
       - HK-A|香港
       - HK 1254
-      - :中国-ss-14.29.124.168:25296-可用-直连-完全不支持NF
       - CN 5
       - _油管：全网最强白嫖 (130)
       - CN_30
@@ -695,7 +691,6 @@ proxy-groups:
       - HK 1111
       - CN 161
       - 关注tg频道@moneyflychat 速度-58.81Mb"
-      - :中国-ss-14.29.124.168:25241-可用-直连-完全不支持NF
       - CN_20
       - (Youtube技术分享室)🇨🇳中国 16
       - 关注tg频道@moneyflychat 速度-62.96Mb"
@@ -754,7 +749,6 @@ proxy-groups:
       - HK 1050
       - HK-A|香港
       - HK 1254
-      - :中国-ss-14.29.124.168:25296-可用-直连-完全不支持NF
       - CN 5
       - _油管：全网最强白嫖 (130)
       - CN_30
@@ -1017,7 +1011,6 @@ proxy-groups:
       - HK 1111
       - CN 161
       - 关注tg频道@moneyflychat 速度-58.81Mb"
-      - :中国-ss-14.29.124.168:25241-可用-直连-完全不支持NF
       - CN_20
       - (Youtube技术分享室)🇨🇳中国 16
       - 关注tg频道@moneyflychat 速度-62.96Mb"
@@ -1076,7 +1069,6 @@ proxy-groups:
       - HK 1050
       - HK-A|香港
       - HK 1254
-      - :中国-ss-14.29.124.168:25296-可用-直连-完全不支持NF
       - CN 5
       - _油管：全网最强白嫖 (130)
       - CN_30
@@ -1351,7 +1343,6 @@ proxy-groups:
       - HK 1111
       - CN 161
       - 关注tg频道@moneyflychat 速度-58.81Mb"
-      - :中国-ss-14.29.124.168:25241-可用-直连-完全不支持NF
       - CN_20
       - (Youtube技术分享室)🇨🇳中国 16
       - 关注tg频道@moneyflychat 速度-62.96Mb"
@@ -1410,7 +1401,6 @@ proxy-groups:
       - HK 1050
       - HK-A|香港
       - HK 1254
-      - :中国-ss-14.29.124.168:25296-可用-直连-完全不支持NF
       - CN 5
       - _油管：全网最强白嫖 (130)
       - CN_30
@@ -1697,7 +1687,6 @@ proxy-groups:
       - HK 1111
       - CN 161
       - 关注tg频道@moneyflychat 速度-58.81Mb"
-      - :中国-ss-14.29.124.168:25241-可用-直连-完全不支持NF
       - CN_20
       - (Youtube技术分享室)🇨🇳中国 16
       - 关注tg频道@moneyflychat 速度-62.96Mb"
@@ -1756,7 +1745,6 @@ proxy-groups:
       - HK 1050
       - HK-A|香港
       - HK 1254
-      - :中国-ss-14.29.124.168:25296-可用-直连-完全不支持NF
       - CN 5
       - _油管：全网最强白嫖 (130)
       - CN_30
@@ -2018,7 +2006,6 @@ proxy-groups:
       - HK 1111
       - CN 161
       - 关注tg频道@moneyflychat 速度-58.81Mb"
-      - :中国-ss-14.29.124.168:25241-可用-直连-完全不支持NF
       - CN_20
       - (Youtube技术分享室)🇨🇳中国 16
       - 关注tg频道@moneyflychat 速度-62.96Mb"
@@ -2077,7 +2064,6 @@ proxy-groups:
       - HK 1050
       - HK-A|香港
       - HK 1254
-      - :中国-ss-14.29.124.168:25296-可用-直连-完全不支持NF
       - CN 5
       - _油管：全网最强白嫖 (130)
       - CN_30
@@ -2340,7 +2326,6 @@ proxy-groups:
       - HK 1111
       - CN 161
       - 关注tg频道@moneyflychat 速度-58.81Mb"
-      - :中国-ss-14.29.124.168:25241-可用-直连-完全不支持NF
       - CN_20
       - (Youtube技术分享室)🇨🇳中国 16
       - 关注tg频道@moneyflychat 速度-62.96Mb"
@@ -2399,7 +2384,6 @@ proxy-groups:
       - HK 1050
       - HK-A|香港
       - HK 1254
-      - :中国-ss-14.29.124.168:25296-可用-直连-完全不支持NF
       - CN 5
       - _油管：全网最强白嫖 (130)
       - CN_30
@@ -2671,7 +2655,6 @@ proxy-groups:
       - HK 1111
       - CN 161
       - 关注tg频道@moneyflychat 速度-58.81Mb"
-      - :中国-ss-14.29.124.168:25241-可用-直连-完全不支持NF
       - CN_20
       - (Youtube技术分享室)🇨🇳中国 16
       - 关注tg频道@moneyflychat 速度-62.96Mb"
@@ -2730,7 +2713,6 @@ proxy-groups:
       - HK 1050
       - HK-A|香港
       - HK 1254
-      - :中国-ss-14.29.124.168:25296-可用-直连-完全不支持NF
       - CN 5
       - _油管：全网最强白嫖 (130)
       - CN_30
