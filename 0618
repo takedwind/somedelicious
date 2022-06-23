@@ -129,7 +129,6 @@ proxies:
   - {name: _1315 | 6.93Mb, server: 213.183.53.177, port: 9043, type: ss, cipher: aes-256-cfb, password: HSZuyJQcWe8dxNdF, udp: true}
   - {name: LT_657, server: 213.183.53.208, port: 9098, type: ss, cipher: aes-256-cfb, password: aLpQtfEZe445QyHk, udp: true}
   - {name: 3.70|香港TrojanE08x黃金港區流媒體解鎖, server: azhj001.xiba1.xyz, port: 20722, type: trojan, password: 77de43cc-9443-31d6-bc3d-6bf60186594d, sni: azhj001.xiba1.xyz, skip-cert-verify: true, udp: true}
-  - {name: ukukaz.tkvmess-grpc, server: 20.108.158.18, port: 443, type: vmess, uuid: 5c9994b3-f67e-4b10-aabc-0b448c6080af, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: grpc, servername: ukaz.tk, grpc-opts: {grpc-service-name: 4017e048}, udp: true}
   - {name: LT_792, server: 213.183.53.177, port: 9084, type: ss, cipher: aes-256-cfb, password: c3NtHJ5ujV2tGDfj, udp: true}
   - {name: LT_533, server: 213.183.53.207, port: 9000, type: ss, cipher: aes-256-cfb, password: a3GFYt36Sm82Vys9, udp: true}
   - {name: cacaaz.mlvmess-grpc, server: 20.220.72.183, port: 443, type: vmess, uuid: 3796e400-f346-440d-ae6c-c4592993e462, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: grpc, servername: caaz.ml, grpc-opts: {grpc-service-name: d04e7a0d}, udp: true}
@@ -386,7 +385,6 @@ proxy-groups:
       - _1315 | 6.93Mb
       - LT_657
       - 3.70|香港TrojanE08x黃金港區流媒體解鎖
-      - ukukaz.tkvmess-grpc
       - LT_792
       - LT_533
       - cacaaz.mlvmess-grpc
@@ -642,7 +640,6 @@ proxy-groups:
       - _1315 | 6.93Mb
       - LT_657
       - 3.70|香港TrojanE08x黃金港區流媒體解鎖
-      - ukukaz.tkvmess-grpc
       - LT_792
       - LT_533
       - cacaaz.mlvmess-grpc
@@ -899,7 +896,6 @@ proxy-groups:
       - _1315 | 6.93Mb
       - LT_657
       - 3.70|香港TrojanE08x黃金港區流媒體解鎖
-      - ukukaz.tkvmess-grpc
       - LT_792
       - LT_533
       - cacaaz.mlvmess-grpc
@@ -1168,7 +1164,6 @@ proxy-groups:
       - _1315 | 6.93Mb
       - LT_657
       - 3.70|香港TrojanE08x黃金港區流媒體解鎖
-      - ukukaz.tkvmess-grpc
       - LT_792
       - LT_533
       - cacaaz.mlvmess-grpc
@@ -1460,7 +1455,6 @@ proxy-groups:
       - _1315 | 6.93Mb
       - LT_657
       - 3.70|香港TrojanE08x黃金港區流媒體解鎖
-      - ukukaz.tkvmess-grpc
       - LT_792
       - LT_533
       - cacaaz.mlvmess-grpc
@@ -1716,7 +1710,6 @@ proxy-groups:
       - _1315 | 6.93Mb
       - LT_657
       - 3.70|香港TrojanE08x黃金港區流媒體解鎖
-      - ukukaz.tkvmess-grpc
       - LT_792
       - LT_533
       - cacaaz.mlvmess-grpc
@@ -1973,7 +1966,6 @@ proxy-groups:
       - _1315 | 6.93Mb
       - LT_657
       - 3.70|香港TrojanE08x黃金港區流媒體解鎖
-      - ukukaz.tkvmess-grpc
       - LT_792
       - LT_533
       - cacaaz.mlvmess-grpc
@@ -2239,7 +2231,6 @@ proxy-groups:
       - _1315 | 6.93Mb
       - LT_657
       - 3.70|香港TrojanE08x黃金港區流媒體解鎖
-      - ukukaz.tkvmess-grpc
       - LT_792
       - LT_533
       - cacaaz.mlvmess-grpc
