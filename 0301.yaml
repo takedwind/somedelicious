@@ -5,919 +5,831 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: beikui059, server: 112.wgong1.top, port: 52212, type: vmess, uuid: 6078bc14-d8ec-3a1a-8aee-58c2b8476358, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: beikui054, server: 31.wgong1.top, port: 52231, type: vmess, uuid: 6078bc14-d8ec-3a1a-8aee-58c2b8476358, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: beikui 054, server: 31.wgong1.top, port: 52231, type: vmess, uuid: 6078bc14-d8ec-3a1a-8aee-58c2b8476358, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 香港11 | 上海, server: sh.bgp.zf.edu.ge, port: 19414, type: ss, cipher: chacha20-ietf-poly1305, password: c3245891-3655-4640-823a-d408b3e77d97, udp: true}
-  - {name: 香港06 | 上海, server: sh.bgp.zf.edu.ge, port: 19406, type: ss, cipher: chacha20-ietf-poly1305, password: c3245891-3655-4640-823a-d408b3e77d97, udp: true}
-  - {name: beikui 074, server: 135.wgong1.top, port: 52335, type: vmess, uuid: 6078bc14-d8ec-3a1a-8aee-58c2b8476358, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: beikui064, server: 117.wgong1.top, port: 52217, type: vmess, uuid: 6078bc14-d8ec-3a1a-8aee-58c2b8476358, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: beikui056, server: 33.wgong1.top, port: 52233, type: vmess, uuid: 6078bc14-d8ec-3a1a-8aee-58c2b8476358, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 日本02, server: ss.jp.zf.edu.ge, port: 18603, type: ss, cipher: chacha20-ietf-poly1305, password: c3245891-3655-4640-823a-d408b3e77d97, udp: true}
-  - {name: 新加坡09 | IEPL | 上海 | 4x, server: sh.zf.edu.ge, port: 38409, type: ss, cipher: chacha20-ietf-poly1305, password: c3245891-3655-4640-823a-d408b3e77d97, udp: true}
-  - {name: 香港06 | IEPL | 上海 | 4x, server: sh.zf.edu.ge, port: 39406, type: ss, cipher: chacha20-ietf-poly1305, password: c3245891-3655-4640-823a-d408b3e77d97, udp: true}
-  - {name: beikui 091, server: 102.wgong2.xyz, port: 11221, type: vmess, uuid: 6078bc14-d8ec-3a1a-8aee-58c2b8476358, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 新加坡07 | IEPL | 上海 | 4x, server: sh.zf.edu.ge, port: 38407, type: ss, cipher: chacha20-ietf-poly1305, password: c3245891-3655-4640-823a-d408b3e77d97, udp: true}
-  - {name: beikui098, server: 110.wgong2.xyz, port: 52210, type: vmess, uuid: 6078bc14-d8ec-3a1a-8aee-58c2b8476358, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 香港07 | 上海, server: sh.bgp.zf.edu.ge, port: 19407, type: ss, cipher: chacha20-ietf-poly1305, password: c3245891-3655-4640-823a-d408b3e77d97, udp: true}
-  - {name: beikui074, server: 135.wgong1.top, port: 52335, type: vmess, uuid: 6078bc14-d8ec-3a1a-8aee-58c2b8476358, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 新加坡05 | IEPL | 上海 | 4x, server: sh.zf.edu.ge, port: 38405, type: ss, cipher: chacha20-ietf-poly1305, password: c3245891-3655-4640-823a-d408b3e77d97, udp: true}
-  - {name: 新加坡08 | IEPL | 上海 | 4x, server: sh.zf.edu.ge, port: 38408, type: ss, cipher: chacha20-ietf-poly1305, password: c3245891-3655-4640-823a-d408b3e77d97, udp: true}
-  - {name: beikui 064, server: 117.wgong1.top, port: 52217, type: vmess, uuid: 6078bc14-d8ec-3a1a-8aee-58c2b8476358, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 新加坡04 | 上海, server: sh.bgp.zf.edu.ge, port: 18404, type: ss, cipher: chacha20-ietf-poly1305, password: c3245891-3655-4640-823a-d408b3e77d97, udp: true}
-  - {name: beikui 098, server: 110.wgong2.xyz, port: 52210, type: vmess, uuid: 6078bc14-d8ec-3a1a-8aee-58c2b8476358, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 新加坡02 | IEPL | 上海 | 4x, server: sh.zf.edu.ge, port: 38402, type: ss, cipher: chacha20-ietf-poly1305, password: c3245891-3655-4640-823a-d408b3e77d97, udp: true}
-  - {name: 新加坡02 | 广港, server: sh.bgp.zf.edu.ge, port: 18402, type: ss, cipher: chacha20-ietf-poly1305, password: c3245891-3655-4640-823a-d408b3e77d97, udp: true}
-  - {name: beikui 080, server: 80.wgong2.xyz, port: 52280, type: vmess, uuid: 6078bc14-d8ec-3a1a-8aee-58c2b8476358, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: beikui 056, server: 33.wgong1.top, port: 52233, type: vmess, uuid: 6078bc14-d8ec-3a1a-8aee-58c2b8476358, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: beikui 060, server: 113.wgong1.top, port: 52213, type: vmess, uuid: 6078bc14-d8ec-3a1a-8aee-58c2b8476358, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: beikui080, server: 80.wgong2.xyz, port: 52280, type: vmess, uuid: 6078bc14-d8ec-3a1a-8aee-58c2b8476358, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: beikui093, server: 104.wgong2.xyz, port: 11222, type: vmess, uuid: 6078bc14-d8ec-3a1a-8aee-58c2b8476358, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: beikui 059, server: 112.wgong1.top, port: 52212, type: vmess, uuid: 6078bc14-d8ec-3a1a-8aee-58c2b8476358, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: beikui 093, server: 104.wgong2.xyz, port: 11222, type: vmess, uuid: 6078bc14-d8ec-3a1a-8aee-58c2b8476358, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: beikui092, server: 103.wgong2.xyz, port: 52203, type: vmess, uuid: 6078bc14-d8ec-3a1a-8aee-58c2b8476358, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: beikui062, server: 115.wgong1.top, port: 52215, type: vmess, uuid: 6078bc14-d8ec-3a1a-8aee-58c2b8476358, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: beikui 065, server: 118.wgong1.top, port: 52218, type: vmess, uuid: 6078bc14-d8ec-3a1a-8aee-58c2b8476358, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: beikui 092, server: 103.wgong2.xyz, port: 52203, type: vmess, uuid: 6078bc14-d8ec-3a1a-8aee-58c2b8476358, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: beikui 081, server: 81.wgong2.xyz, port: 52281, type: vmess, uuid: 6078bc14-d8ec-3a1a-8aee-58c2b8476358, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: beikui 055, server: 32.wgong1.top, port: 52232, type: vmess, uuid: 6078bc14-d8ec-3a1a-8aee-58c2b8476358, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: beikui058, server: 111.wgong1.top, port: 52211, type: vmess, uuid: 6078bc14-d8ec-3a1a-8aee-58c2b8476358, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美西原生IPLC中转, server: lm.nicedns.xyz, port: 36257, type: vmess, uuid: 0c0c2823-a865-40cf-bd59-32f9b34779cd, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 新加坡04 | IEPL | 上海 | 4x, server: sh.zf.edu.ge, port: 38404, type: ss, cipher: chacha20-ietf-poly1305, password: c3245891-3655-4640-823a-d408b3e77d97, udp: true}
-  - {name: AJKSOS.TOP_9, server: shyd.ddnsguru.com, port: 31817, type: vmess, uuid: 67d81d00-66de-3f68-91c6-0ac560181418, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: shyd.ddnsguru.com}}, udp: true}
-  - {name: beikui 057, server: 34.wgong1.top, port: 52234, type: vmess, uuid: 6078bc14-d8ec-3a1a-8aee-58c2b8476358, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 新加坡01 | 上海, server: sh.bgp.zf.edu.ge, port: 18401, type: ss, cipher: chacha20-ietf-poly1305, password: c3245891-3655-4640-823a-d408b3e77d97, udp: true}
-  - {name: beikui 071, server: 124.wgong1.top, port: 52224, type: vmess, uuid: 6078bc14-d8ec-3a1a-8aee-58c2b8476358, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: beikui068, server: 121.wgong1.top, port: 52221, type: vmess, uuid: 6078bc14-d8ec-3a1a-8aee-58c2b8476358, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 新加坡03 | IEPL | 上海 | 4x, server: sh.zf.edu.ge, port: 38403, type: ss, cipher: chacha20-ietf-poly1305, password: c3245891-3655-4640-823a-d408b3e77d97, udp: true}
-  - {name: beikui073, server: 134.wgong1.top, port: 52334, type: vmess, uuid: 6078bc14-d8ec-3a1a-8aee-58c2b8476358, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: beikui091, server: 102.wgong2.xyz, port: 11221, type: vmess, uuid: 6078bc14-d8ec-3a1a-8aee-58c2b8476358, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: beikui078, server: 78.wgong2.xyz, port: 52278, type: vmess, uuid: 6078bc14-d8ec-3a1a-8aee-58c2b8476358, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: beikui055, server: 32.wgong1.top, port: 52232, type: vmess, uuid: 6078bc14-d8ec-3a1a-8aee-58c2b8476358, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: beikui072, server: 133.wgong1.top, port: 52333, type: vmess, uuid: 6078bc14-d8ec-3a1a-8aee-58c2b8476358, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: beikui081, server: 81.wgong2.xyz, port: 52281, type: vmess, uuid: 6078bc14-d8ec-3a1a-8aee-58c2b8476358, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: beikui057, server: 34.wgong1.top, port: 52234, type: vmess, uuid: 6078bc14-d8ec-3a1a-8aee-58c2b8476358, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: beikui 073, server: 134.wgong1.top, port: 52334, type: vmess, uuid: 6078bc14-d8ec-3a1a-8aee-58c2b8476358, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: beikui070, server: 123.wgong1.top, port: 52223, type: vmess, uuid: 6078bc14-d8ec-3a1a-8aee-58c2b8476358, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 新加坡07 | 上海, server: sh.bgp.zf.edu.ge, port: 18407, type: ss, cipher: chacha20-ietf-poly1305, password: c3245891-3655-4640-823a-d408b3e77d97, udp: true}
-  - {name: 美国02, server: ss.us.zf.edu.ge, port: 19002, type: ss, cipher: chacha20-ietf-poly1305, password: c3245891-3655-4640-823a-d408b3e77d97, udp: true}
-  - {name: beikui 062, server: 115.wgong1.top, port: 52215, type: vmess, uuid: 6078bc14-d8ec-3a1a-8aee-58c2b8476358, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: beikui 052, server: 29.wgong1.top, port: 52229, type: vmess, uuid: 6078bc14-d8ec-3a1a-8aee-58c2b8476358, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: beikui 072, server: 133.wgong1.top, port: 52333, type: vmess, uuid: 6078bc14-d8ec-3a1a-8aee-58c2b8476358, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: beikui069, server: 122.wgong1.top, port: 52222, type: vmess, uuid: 6078bc14-d8ec-3a1a-8aee-58c2b8476358, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: beikui 069, server: 122.wgong1.top, port: 52222, type: vmess, uuid: 6078bc14-d8ec-3a1a-8aee-58c2b8476358, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国05, server: ss.us.zf.edu.ge, port: 19006, type: ss, cipher: chacha20-ietf-poly1305, password: c3245891-3655-4640-823a-d408b3e77d97, udp: true}
-  - {name: 香港11 | 湖南, server: hn.zf.edu.ge, port: 19414, type: ss, cipher: chacha20-ietf-poly1305, password: c3245891-3655-4640-823a-d408b3e77d97, udp: true}
-  - {name: 新加坡05 | 上海, server: sh.bgp.zf.edu.ge, port: 18405, type: ss, cipher: chacha20-ietf-poly1305, password: c3245891-3655-4640-823a-d408b3e77d97, udp: true}
-  - {name: 🇨🇳, server: 14.29.124.168, port: 25251, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: 香港03 | IEPL | 北京 | 4x, server: bj.zf.edu.ge, port: 39403, type: ss, cipher: chacha20-ietf-poly1305, password: c3245891-3655-4640-823a-d408b3e77d97, udp: true}
-  - {name: 新加坡05 | IEPL | 北京 | 4x, server: bj.zf.edu.ge, port: 38405, type: ss, cipher: chacha20-ietf-poly1305, password: c3245891-3655-4640-823a-d408b3e77d97, udp: true}
-  - {name: _HK_香港, server: xui.zbao56.com, port: 50670, type: vmess, uuid: 61db0192-b016-4d17-fd54-140d9980edaa, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: 日本 VIP2节点23-中转, server: zzgz.h5game.xyz, port: 31090, type: vmess, uuid: 805d77ab-25fa-3853-abd5-25686abcf877, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /game1, headers: {Host: br5.h5game.xyz}}, udp: true}
-  - {name: 香港07 | IEPL | 北京 | 4x, server: bj.zf.edu.ge, port: 39407, type: ss, cipher: chacha20-ietf-poly1305, password: c3245891-3655-4640-823a-d408b3e77d97, udp: true}
-  - {name: 中国-2.58MB/s(Youtube:不良林), server: hn.zfnode.org, port: 30217, type: trojan, password: 63ec756d-1f6a-36c8-a9fd-025f4acfc74f, skip-cert-verify: true, udp: true}
-  - {name: 新加坡02 | IEPL | 北京 | 4x, server: bj.zf.edu.ge, port: 38402, type: ss, cipher: chacha20-ietf-poly1305, password: c3245891-3655-4640-823a-d408b3e77d97, udp: true}
-  - {name: 台湾120G流量001, server: 36.139.154.17, port: 45394, type: vmess, uuid: 865f317d-156b-4b4c-947b-78e18d3cebce, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: beikui097, server: 109.wgong2.xyz, port: 52209, type: vmess, uuid: 6078bc14-d8ec-3a1a-8aee-58c2b8476358, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 广港隧道-台湾, server: 36.139.154.162, port: 45273, type: ss, cipher: chacha20-ietf-poly1305, password: 3c636292-2bf3-4c3e-a13e-fb6ecf917b26, udp: true}
-  - {name: 香港HKT-优化, server: u.mjmjmjmj.cyou, port: 16620, type: vmess, uuid: c6f3da42-43e8-4fdc-8fc7-b57b8fa54c06, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: u.mjmjmjmj.cyou}}, udp: true}
-  - {name: 香港07 | 广港, server: gz.bgp2.zf.edu.ge, port: 49407, type: ss, cipher: chacha20-ietf-poly1305, password: c3245891-3655-4640-823a-d408b3e77d97, udp: true}
-  - {name: 香港06 | IEPL | 北京 | 4x, server: bj.zf.edu.ge, port: 39406, type: ss, cipher: chacha20-ietf-poly1305, password: c3245891-3655-4640-823a-d408b3e77d97, udp: true}
-  - {name: 香港2-tg频道:@ripaojiedian, server: 36.139.154.162, port: 45276, type: ss, cipher: chacha20-ietf-poly1305, password: 3c636292-2bf3-4c3e-a13e-fb6ecf917b26, udp: true}
-  - {name: 台湾120G流量 002, server: 36.139.154.17, port: 45394, type: vmess, uuid: c030fd57-c96b-452d-84d4-fad02b86e467, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 36.139.154.17}}, udp: true}
-  - {name: 新加坡09 | IEPL | 北京 | 4x, server: bj.zf.edu.ge, port: 38409, type: ss, cipher: chacha20-ietf-poly1305, password: c3245891-3655-4640-823a-d408b3e77d97, udp: true}
-  - {name: 新加坡03 | IEPL | 北京 | 4x, server: bj.zf.edu.ge, port: 38403, type: ss, cipher: chacha20-ietf-poly1305, password: c3245891-3655-4640-823a-d408b3e77d97, udp: true}
-  - {name: 香港优化-tg频道:@ripaojiedian, server: 625hk05.ok365.cyou, port: 443, type: trojan, password: 2523fe1a-1295-4525-be2c-d78ff1465d2a, sni: 625hk05.ok365.cyou, skip-cert-verify: true, udp: true}
-  - {name: 香港11 | IEPL | 北京, server: bj2.zf.edu.ge, port: 39414, type: ss, cipher: chacha20-ietf-poly1305, password: c3245891-3655-4640-823a-d408b3e77d97, udp: true}
-  - {name: 台湾120G流量+003, server: 36.139.154.17, port: 45392, type: ss, cipher: chacha20-ietf-poly1305, password: c0a4c4d8-50ff-40fe-9120-18501874364e, udp: true}
-  - {name: 日本 VIP2节点11 原生IP-中转, server: zzgz.h5game.xyz, port: 18775, type: vmess, uuid: 805d77ab-25fa-3853-abd5-25686abcf877, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /h5game, headers: {Host: br2.h5game.xyz}}, udp: true}
-  - {name: 新加坡08 | 广港, server: gz.bgp.zf.edu.ge, port: 48408, type: ss, cipher: chacha20-ietf-poly1305, password: c3245891-3655-4640-823a-d408b3e77d97, udp: true}
-  - {name: 台湾120g流量, server: 36.139.154.17, port: 45392, type: ss, cipher: chacha20-ietf-poly1305, password: 46c4efd6-50bc-45e0-becd-5d96f759ae76, udp: true}
-  - {name: 新加坡04 | IEPL | 北京 | 4x, server: bj.zf.edu.ge, port: 38404, type: ss, cipher: chacha20-ietf-poly1305, password: c3245891-3655-4640-823a-d408b3e77d97, udp: true}
-  - {name: 新加坡08 | IEPL | 北京 | 4x, server: bj.zf.edu.ge, port: 38408, type: ss, cipher: chacha20-ietf-poly1305, password: c3245891-3655-4640-823a-d408b3e77d97, udp: true}
-  - {name: 香港HKIX | 广港, server: gz.bgp2.zf.edu.ge, port: 49412, type: ss, cipher: chacha20-ietf-poly1305, password: c3245891-3655-4640-823a-d408b3e77d97, udp: true}
-  - {name: 香港07 | IEPL | 北京, server: bj2.zf.edu.ge, port: 39407, type: ss, cipher: chacha20-ietf-poly1305, password: c3245891-3655-4640-823a-d408b3e77d97, udp: true}
-  - {name: 香港03 | 广港, server: gz.bgp2.zf.edu.ge, port: 49403, type: ss, cipher: chacha20-ietf-poly1305, password: c3245891-3655-4640-823a-d408b3e77d97, udp: true}
-  - {name: 新加坡08 | IEPL | 北京, server: bj2.zf.edu.ge, port: 38408, type: ss, cipher: chacha20-ietf-poly1305, password: c3245891-3655-4640-823a-d408b3e77d97, udp: true}
-  - {name: 新加坡03 | 广港, server: gz.bgp.zf.edu.ge, port: 48403, type: ss, cipher: chacha20-ietf-poly1305, password: c3245891-3655-4640-823a-d408b3e77d97, udp: true}
-  - {name: beikui 095, server: 106.wgong2.xyz, port: 11223, type: vmess, uuid: 6078bc14-d8ec-3a1a-8aee-58c2b8476358, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 香港HGC | IEPL | 北京, server: bj2.zf.edu.ge, port: 39400, type: ss, cipher: chacha20-ietf-poly1305, password: c3245891-3655-4640-823a-d408b3e77d97, udp: true}
-  - {name: beikui095, server: 106.wgong2.xyz, port: 11223, type: vmess, uuid: 6078bc14-d8ec-3a1a-8aee-58c2b8476358, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 新加坡09 | 广港, server: gz.bgp.zf.edu.ge, port: 48409, type: ss, cipher: chacha20-ietf-poly1305, password: c3245891-3655-4640-823a-d408b3e77d97, udp: true}
-  - {name: 香港03 | IEPL | 北京, server: bj2.zf.edu.ge, port: 39403, type: ss, cipher: chacha20-ietf-poly1305, password: c3245891-3655-4640-823a-d408b3e77d97, udp: true}
-  - {name: 俄罗斯, server: ru.zf.edu.ge, port: 33571, type: ss, cipher: chacha20-ietf-poly1305, password: c3245891-3655-4640-823a-d408b3e77d97, udp: true}
-  - {name: 🇨🇳 2, server: 14.29.124.168, port: 25219, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: 美国120G流量, server: 36.139.154.17, port: 45190, type: ss, cipher: chacha20-ietf-poly1305, password: afd78a4e-b0ff-4e30-acd5-3a88ff6cac25, udp: true}
-  - {name: _CN_中国_禁止刷大流量_3, server: 101.36.159.240, port: 443, type: vmess, uuid: 145242ce-23d4-4e17-a1a7-d4c6dd02c1a6, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /145242ce-23d4-4e17-a1a7-d4c6dd02c1a6-vmess, headers: {Host: white.lhw123a.workers.dev}}, udp: true}
-  - {name: 官址：xf.gl, server: gz.bgp2.zf.edu.ge, port: 49400, type: ss, cipher: chacha20-ietf-poly1305, password: c3245891-3655-4640-823a-d408b3e77d97, udp: true}
-  - {name: 英国120G流量, server: 36.139.154.17, port: 45413, type: vmess, uuid: 20f731db-9c56-451f-b926-4e33186dfcbc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: beikui076, server: 76.wgong2.xyz, port: 52276, type: vmess, uuid: 6078bc14-d8ec-3a1a-8aee-58c2b8476358, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: beikui 097, server: 109.wgong2.xyz, port: 52209, type: vmess, uuid: 6078bc14-d8ec-3a1a-8aee-58c2b8476358, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: hk1dawz.cfvmess-grpc, server: 20.239.87.136, port: 443, type: vmess, uuid: decc8af4-16f7-4fc6-ac79-f83d6dd5d8a6, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: grpc, servername: "", grpc-opts: {grpc-service-name: 0d0e68b1}, udp: true}
-  - {name: 俄罗斯 VIP2节点1-中转, server: zzgz.h5game.xyz, port: 36557, type: vmess, uuid: 805d77ab-25fa-3853-abd5-25686abcf877, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /h5game, headers: {Host: sle.h5game.xyz}}, udp: true}
-  - {name: 19.HongKong💥, server: hk1.fuzzypn.me, port: 80, type: vmess, uuid: 5158aa9b-194f-4d48-a40a-17ae49650a9a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/fuzzypn?ed=2048", headers: {Host: hk1.fuzzypn.me}}, udp: true}
-  - {name: beikui086, server: 86.wgong2.xyz, port: 52286, type: vmess, uuid: 6078bc14-d8ec-3a1a-8aee-58c2b8476358, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: beikui 090, server: 101.wgong2.xyz, port: 52201, type: vmess, uuid: 6078bc14-d8ec-3a1a-8aee-58c2b8476358, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: beikui 079, server: 79.wgong2.xyz, port: 52279, type: vmess, uuid: 6078bc14-d8ec-3a1a-8aee-58c2b8476358, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: beikui 076, server: 76.wgong2.xyz, port: 52276, type: vmess, uuid: 6078bc14-d8ec-3a1a-8aee-58c2b8476358, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 19. HongKong💥, server: hk1.fuzzypn.me, port: 80, type: vmess, uuid: 5158aa9b-194f-4d48-a40a-17ae49650a9a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/fuzzypn?ed=2048", headers: {Host: 4gvpn.akamaized.net}}, udp: true}
-  - {name: 20.🇭🇰HongkongTLS, server: hk.fuzzypn.me, port: 443, type: vmess, uuid: 5158aa9b-194f-4d48-a40a-17ae49650a9a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: grpc, servername: hk.fuzzypn.me, grpc-opts: {grpc-service-name: fuzzypn}, udp: true}
-  - {name: beikui084, server: 84.wgong2.xyz, port: 52284, type: vmess, uuid: 6078bc14-d8ec-3a1a-8aee-58c2b8476358, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: beikui 077, server: 77.wgong2.xyz, port: 52277, type: vmess, uuid: 6078bc14-d8ec-3a1a-8aee-58c2b8476358, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 日本_TG@nodesharing_12, server: 20.89.94.62, port: 443, type: vmess, uuid: c85b08cb-e81a-4d8b-997f-e43870dc52dc, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: grpc, servername: 20.89.94.62, grpc-opts: {grpc-service-name: b357b3f2}, udp: true}
-  - {name: 20. 🇭🇰 Hongkong TLS, server: hk.fuzzypn.me, port: 443, type: vmess, uuid: 5158aa9b-194f-4d48-a40a-17ae49650a9a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: hk.fuzzypn.me, network: grpc, grpc-opts: {grpc-service-name: fuzzypn}, udp: true}
-  - {name: jp3sgaz.gavmess-grpc, server: 20.222.51.248, port: 443, type: vmess, uuid: a6765cf2-4858-4cbd-bda8-eb6151729e3c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: grpc, servername: sgaz.cf, grpc-opts: {grpc-service-name: fe39d984}, udp: true}
-  - {name: beikui079, server: 79.wgong2.xyz, port: 52279, type: vmess, uuid: 6078bc14-d8ec-3a1a-8aee-58c2b8476358, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 日本_TG@nodesharing_45, server: 20.89.94.62, port: 443, type: vmess, uuid: c85b08cb-e81a-4d8b-997f-e43870dc52dc, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: grpc, servername: "", grpc-opts: {grpc-service-name: b357b3f2}, udp: true}
-  - {name: beikui085, server: 85.wgong2.xyz, port: 52285, type: vmess, uuid: 6078bc14-d8ec-3a1a-8aee-58c2b8476358, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: beikui 085, server: 85.wgong2.xyz, port: 52285, type: vmess, uuid: 6078bc14-d8ec-3a1a-8aee-58c2b8476358, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: beikui 087, server: 98.wgong2.xyz, port: 52298, type: vmess, uuid: 6078bc14-d8ec-3a1a-8aee-58c2b8476358, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: beikui 088, server: 99.wgong2.xyz, port: 52299, type: vmess, uuid: 6078bc14-d8ec-3a1a-8aee-58c2b8476358, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: beikui096, server: 108.wgong2.xyz, port: 11224, type: vmess, uuid: 6078bc14-d8ec-3a1a-8aee-58c2b8476358, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: hk1dawz.cfvmess-grpc 2, server: 20.239.87.136, port: 443, type: vmess, uuid: decc8af4-16f7-4fc6-ac79-f83d6dd5d8a6, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: grpc, servername: 20-239-87-136.nhost.00cdn.com, grpc-opts: {grpc-service-name: 0d0e68b1}, udp: true}
-  - {name: beikui 096, server: 108.wgong2.xyz, port: 11224, type: vmess, uuid: 6078bc14-d8ec-3a1a-8aee-58c2b8476358, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: jp3sgaz.gavmess-grpc 2, server: 20.222.51.248, port: 443, type: vmess, uuid: a6765cf2-4858-4cbd-bda8-eb6151729e3c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: grpc, servername: "", grpc-opts: {grpc-service-name: fe39d984}, udp: true}
-  - {name: beikui 084, server: 84.wgong2.xyz, port: 52284, type: vmess, uuid: 6078bc14-d8ec-3a1a-8aee-58c2b8476358, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: beikui075, server: 75.wgong2.xyz, port: 52275, type: vmess, uuid: 6078bc14-d8ec-3a1a-8aee-58c2b8476358, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _1276 | 0.64Mb, server: 14.29.124.168, port: 25293, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: beikui087, server: 98.wgong2.xyz, port: 52298, type: vmess, uuid: 6078bc14-d8ec-3a1a-8aee-58c2b8476358, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: beikui 094, server: 105.wgong2.xyz, port: 52205, type: vmess, uuid: 6078bc14-d8ec-3a1a-8aee-58c2b8476358, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: beikui094, server: 105.wgong2.xyz, port: 52205, type: vmess, uuid: 6078bc14-d8ec-3a1a-8aee-58c2b8476358, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 香港, server: azhj001.xiba1.xyz, port: 20719, type: trojan, password: 46ceba76-28b9-37df-8b08-b288e75aa646, sni: azhj001.xiba1.xyz, skip-cert-verify: true, udp: true}
-  - {name: beikui 001, server: 52.140.223.251, port: 55782, type: vmess, uuid: e38a3615-e1b0-46d4-a965-5642ff066430, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: beikui089, server: 100.wgong2.xyz, port: 11220, type: vmess, uuid: 6078bc14-d8ec-3a1a-8aee-58c2b8476358, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: beikui001, server: 52.140.223.251, port: 55782, type: vmess, uuid: e38a3615-e1b0-46d4-a965-5642ff066430, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: CN_200, server: 14.29.124.168, port: 25280, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: 香港A, server: t.mjmjmjmj.cyou, port: 16627, type: vmess, uuid: c6f3da42-43e8-4fdc-8fc7-b57b8fa54c06, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: t.mjmjmjmj.cyou}}, udp: true}
+  - {name: 越南 | 深港IEPL, server: fjct.20220512.cyou, port: 40115, type: trojan, password: 45a02ace-0d89-45a8-92a1-ecaf81d870b9, sni: yl.chunyua.online, skip-cert-verify: true, udp: true}
   - {name: CN_158, server: 14.29.124.168, port: 25215, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: beikui088, server: 99.wgong2.xyz, port: 52299, type: vmess, uuid: 6078bc14-d8ec-3a1a-8aee-58c2b8476358, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 香港杨枝甘露+03-D_1, server: 104.208.84.160, port: 12369, type: trojan, password: bbb001ed-df3d-4e9b-aae3-d1fc278c20b1, sni: 20-187-95-105.nhost.00cdn.com, skip-cert-verify: true, udp: true}
-  - {name: _油管频道：全网最强白嫖, server: cm.spacez.cloud, port: 30002, type: trojan, password: c9a3a61d-5d49-4158-9e60-6fa32684b122, skip-cert-verify: true, udp: true}
-  - {name: Eva - US - GIA CN2 - V2ray, server: eva.marythunt.xyz, port: 33243, type: vmess, uuid: d022f57c-484d-4a17-b405-967d7497efdb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: eva.marythunt.xyz}}, udp: true}
+  - {name: _油管：全网最强白嫖, server: 112.64.53.176, port: 63004, type: vmess, uuid: 352ba93c-fd92-3055-ad10-b3599ff2802f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: mugua-kr01.covid19.rip}}, udp: true}
+  - {name: TG@nodesharing_33, server: q8eq.cdn.node.a.ddns-ounk.xyz, port: 13094, type: vmess, uuid: 11f4b99a-a5d5-3679-b7ca-1099556c852e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /2294-44e2-a528-d9fb1adaa35f.v4..live01.m3u8, headers: {Host: q8eq.cdn.node.a.ddns-ounk.xyz}}, udp: true}
+  - {name: CN_240 | 9.97Mb, server: 116.129.253.134, port: 3384, type: trojan, password: 9a27800ca7b52ee0, skip-cert-verify: true, udp: true}
+  - {name: 日本 VIP2节点11 原生IP-中转, server: zzgz.h5game.xyz, port: 18775, type: vmess, uuid: 805d77ab-25fa-3853-abd5-25686abcf877, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /h5game, headers: {Host: br2.h5game.xyz}}, udp: true}
+  - {name: TG@nodesharing_40, server: u.mjmjmjmj.cyou, port: 16620, type: vmess, uuid: c6f3da42-43e8-4fdc-8fc7-b57b8fa54c06, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: u.mjmjmjmj.cyou}}, udp: true}
+  - {name: BGP-01-香港-多地优化, server: iepl-zebra.19900101.xyz, port: 902, type: ss, cipher: chacha20-ietf, password: Gqre0R, plugin: obfs, plugin-opts: {mode: http, host: 1d2e3501.itunes.apple.com}, udp: true}
+  - {name: CN_241 | 9.51Mb, server: 116.129.253.134, port: 3384, type: trojan, password: d66013c645b93c5c, skip-cert-verify: true, udp: true}
+  - {name: TG@nodesharing_23, server: 36.139.154.162, port: 45149, type: vmess, uuid: 25066212-3c68-4f60-9845-80632aa27a20, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 36.139.154.162}}, udp: true}
+  - {name: 韩国 | 广港隧道, server: 36.139.154.162, port: 45303, type: trojan, password: 45a02ace-0d89-45a8-92a1-ecaf81d870b9, sni: hg01.chunyua.online, skip-cert-verify: true, udp: true}
+  - {name: TG@nodesharing_58, server: 626sg.ok365.cyou, port: 443, type: trojan, password: ef6c7fc6-6551-472b-921c-8f28606785de, sni: 626sg.ok365.cyou, skip-cert-verify: true, udp: true}
+  - {name: 12, server: 36.139.154.162, port: 45149, type: vmess, uuid: 25066212-3c68-4f60-9845-80632aa27a20, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 美国120g流量, server: 36.139.154.17, port: 45190, type: ss, cipher: chacha20-ietf-poly1305, password: 60ee343c-6574-43ba-9f89-26ba2a154999, udp: true}
+  - {name: TG@nodesharing_49, server: tw-hinet.jiashumao.net, port: 20888, type: trojan, password: d0278116-eeb6-3c95-b719-aa9e045e30c4, sni: tw-hinet.jiashumao.net, skip-cert-verify: true, udp: true}
+  - {name: TG@nodesharing_44, server: 36.139.154.17, port: 45194, type: vmess, uuid: 37991120-21c6-41e2-a557-8115b9983386, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 36.139.154.17}}, udp: true}
+  - {name: beikui, server: azgy001.xiba1.xyz, port: 20714, type: trojan, password: 0a8f3ff8-eb06-3384-85b2-e093d46f4368, skip-cert-verify: true, udp: true}
+  - {name: CN 8｜openit.ml, server: 103.56.60.235, port: 3385, type: trojan, password: 9a27800ca7b52ee0, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳, server: 14.29.124.168, port: 25256, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN-高速节点推荐：v1.mk/vip（浏览器打开） 23, server: 14.29.124.168, port: 25294, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: AJKSOS.TOP_9, server: shyd.ddnsguru.com, port: 31817, type: vmess, uuid: 67d81d00-66de-3f68-91c6-0ac560181418, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: shyd.ddnsguru.com}}, udp: true}
+  - {name: Alien, server: 43.155.101.188, port: 2292, type: vmess, uuid: 7731d35e-ddf5-47cb-f841-fa7d6e714735, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: HK_38, server: 116.129.254.65, port: 63086, type: vmess, uuid: 352ba93c-fd92-3055-ad10-b3599ff2802f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /mugua}, udp: true}
+  - {name: _油管：全网最强白嫖 2, server: 116.129.254.65, port: 63004, type: vmess, uuid: 352ba93c-fd92-3055-ad10-b3599ff2802f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: mugua-kr01.covid19.rip}}, udp: true}
+  - {name: _油管：全网最强白嫖 3, server: 116.129.254.65, port: 63086, type: vmess, uuid: 352ba93c-fd92-3055-ad10-b3599ff2802f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /mugua, headers: {Host: jp-balancer.myn1des.com}}, udp: true}
+  - {name: beikui 2, server: azgy001.xiba1.xyz, port: 20711, type: trojan, password: 00301563-a02b-30b9-a17a-8ba7db573dea, skip-cert-verify: true, udp: true}
+  - {name: _CN_中国_禁止刷大流量_3, server: 101.36.159.240, port: 443, type: vmess, uuid: 145242ce-23d4-4e17-a1a7-d4c6dd02c1a6, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /145242ce-23d4-4e17-a1a7-d4c6dd02c1a6-vmess, headers: {Host: white.lhw123a.workers.dev}}, udp: true}
+  - {name: _CN_中国_禁止刷大流量_7, server: 101.36.159.240, port: 443, type: vmess, uuid: ae21792b-944f-4496-b027-e669462c9b8f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ae21792b-944f-4496-b027-e669462c9b8f-vmess, headers: {Host: ancient.lhw123a.workers.dev}}, udp: true}
+  - {name: _CN_中国_禁止刷大流量_9, server: 101.36.159.240, port: 443, type: vmess, uuid: a598c4c7-0a89-4d9e-ad30-1a2735f481bd, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ray, headers: {Host: little.lhw123a.workers.dev}}, udp: true}
+  - {name: beikui 22, server: azhj001.xiba1.xyz, port: 20726, type: trojan, password: 97808a17-2e97-3840-8a36-b7bc5203200c, skip-cert-verify: true, udp: true}
+  - {name: hk1dawz.cfvmess-grpc, server: 20.239.87.136, port: 443, type: vmess, uuid: decc8af4-16f7-4fc6-ac79-f83d6dd5d8a6, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: grpc, servername: 20-239-87-136.nhost.00cdn.com, grpc-opts: {grpc-service-name: 0d0e68b1}, udp: true}
+  - {name: 印度01 A | 1.5x, server: 112.64.98.133, port: 63051, type: vmess, uuid: 352ba93c-fd92-3055-ad10-b3599ff2802f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /hls, headers: {Host: "%7B%22Host%22:%22mugua-in01.airport-v2.com%22%7D"}}, udp: true}
+  - {name: jp3sgaz.gavmess-grpc, server: 20.222.51.248, port: 443, type: vmess, uuid: a6765cf2-4858-4cbd-bda8-eb6151729e3c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: grpc, servername: sgaz.cf, grpc-opts: {grpc-service-name: fe39d984}, udp: true}
+  - {name: beikui 3, server: azgy001.xiba1.xyz, port: 20710, type: trojan, password: 00301563-a02b-30b9-a17a-8ba7db573dea, skip-cert-verify: true, udp: true}
+  - {name: beikui 7, server: azgy001.xiba1.xyz, port: 20714, type: trojan, password: 97808a17-2e97-3840-8a36-b7bc5203200c, skip-cert-verify: true, udp: true}
+  - {name: TG@nodesharing_7, server: azhj001.xiba1.xyz, port: 20718, type: trojan, password: 97808a17-2e97-3840-8a36-b7bc5203200c, sni: ssl.ssl12.xyz, skip-cert-verify: true, udp: true}
+  - {name: CN-高速节点推荐：v1.mk/vip（浏览器打开） 22, server: 175.178.163.153, port: 443, type: vmess, uuid: 651749d8-3a7f-4500-aad3-06e3b8300c6a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 175.178.163.153}}, udp: true}
+  - {name: beikui 18, server: azhj001.xiba1.xyz, port: 20722, type: trojan, password: 97808a17-2e97-3840-8a36-b7bc5203200c, skip-cert-verify: true, udp: true}
+  - {name: beikui 23, server: azhj001.xiba1.xyz, port: 20727, type: trojan, password: 97808a17-2e97-3840-8a36-b7bc5203200c, skip-cert-verify: true, udp: true}
+  - {name: beikui 4, server: azgy001.xiba1.xyz, port: 20710, type: trojan, password: 2a9b7d4b-f44e-3998-ac23-52e548a9d258, skip-cert-verify: true, udp: true}
+  - {name: beikui 5, server: azhj001.xiba1.xyz, port: 20726, type: trojan, password: 00301563-a02b-30b9-a17a-8ba7db573dea, skip-cert-verify: true, udp: true}
+  - {name: beikui 6, server: azgy001.xiba1.xyz, port: 20711, type: trojan, password: 0a8f3ff8-eb06-3384-85b2-e093d46f4368, skip-cert-verify: true, udp: true}
+  - {name: TG@nodesharing_36, server: 626hk02.ok365.cyou, port: 80, type: trojan, password: ef6c7fc6-6551-472b-921c-8f28606785de, sni: 626hk02.ok365.cyou, skip-cert-verify: true, udp: true}
+  - {name: beikui 8, server: azgy001.xiba1.xyz, port: 20711, type: trojan, password: 2a9b7d4b-f44e-3998-ac23-52e548a9d258, skip-cert-verify: true, udp: true}
+  - {name: beikui 12, server: azgy001.xiba1.xyz, port: 20710, type: trojan, password: 97808a17-2e97-3840-8a36-b7bc5203200c, skip-cert-verify: true, udp: true}
+  - {name: JPB002, server: jpaz2.xmrth-node.xyz, port: 15888, type: vmess, uuid: 454b28a9-83b1-39e6-a622-27961c067c76, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /index, headers: {Host: jpaz2.xmrth-node.xyz}}, udp: true}
+  - {name: beikui 9, server: azgy001.xiba1.xyz, port: 20716, type: trojan, password: 2a9b7d4b-f44e-3998-ac23-52e548a9d258, skip-cert-verify: true, udp: true}
+  - {name: beikui 13, server: azgy001.xiba1.xyz, port: 20711, type: trojan, password: 97808a17-2e97-3840-8a36-b7bc5203200c, skip-cert-verify: true, udp: true}
   - {name: Eva - US - Trojan, server: eva.marythunt.xyz, port: 443, type: trojan, password: !<str> 372815193, skip-cert-verify: true, udp: true}
-  - {name: JP_5500 @WangCai_1, server: 85.208.108.19, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: beikui 11, server: azgy001.xiba1.xyz, port: 20712, type: trojan, password: 97808a17-2e97-3840-8a36-b7bc5203200c, skip-cert-verify: true, udp: true}
+  - {name: TG@nodesharing_39, server: shyd.ddnsguru.com, port: 31817, type: vmess, uuid: 25cd8c1e-8f3a-3633-928c-58e818a4d52c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: shyd.ddnsguru.com}}, udp: true}
+  - {name: 14.29.124.168:25252, server: 14.29.124.168, port: 25252, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: _1852 | 4.88Mb, server: 104.255.65.112, port: 30718, type: vmess, uuid: f0f63386-d747-4d44-8d16-6e2d254f0ed3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CA_122, server: 104.255.65.112, port: 30718, type: vmess, uuid: f0f63386-d747-4d44-8d16-6e2d254f0ed3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: TG@nodesharing_43, server: 625us.ok365.cyou, port: 443, type: trojan, password: ef6c7fc6-6551-472b-921c-8f28606785de, sni: 625us.ok365.cyou, skip-cert-verify: true, udp: true}
+  - {name: beikui 10, server: azhj001.xiba1.xyz, port: 20725, type: trojan, password: 2a9b7d4b-f44e-3998-ac23-52e548a9d258, skip-cert-verify: true, udp: true}
   - {name: Zero - US - Trojan, server: zero.marythunt.xyz, port: 443, type: trojan, password: !<str> 372815193, skip-cert-verify: true, udp: true}
-  - {name: 台湾优化-tg频道:@ripaojiedian, server: 625tw.ok365.cyou, port: 443, type: trojan, password: 2523fe1a-1295-4525-be2c-d78ff1465d2a, sni: 625tw.ok365.cyou, skip-cert-verify: true, udp: true}
-  - {name: 1.🦁 Hà Nội, server: hn4.fuzzypn.me, port: 443, type: vmess, uuid: 5158aa9b-194f-4d48-a40a-17ae49650a9a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: hn4.fuzzypn.me, network: grpc, grpc-opts: {grpc-service-name: fuzzypn}, udp: true}
-  - {name: 107.172.102.90:5997, server: 107.172.102.90, port: 5997, type: ss, cipher: chacha20-ietf-poly1305, password: 4bSLVHbxQ2sn9, udp: true}
-  - {name: 美国洛杉矶-cc, server: www.xyxdbp.xyz, port: 34136, type: vmess, uuid: 52e9ffc9-0831-4c9d-e8ec-e4312caad4c6, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: SG A 004, server: hkaz4.xmrth-node.xyz, port: 15380, type: vmess, uuid: 30670cc5-0160-3ec8-98d5-606237ec5169, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /index, headers: {Host: www.baidu.com}}, udp: true}
-  - {name: 美国04|CF优选中转|免费, server: rn.102498.eu.org, port: 2053, type: vmess, uuid: bdae0db0-9387-3a0d-a2dc-e706151bb3f9, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /microsoft, headers: {Host: rn.102498.eu.org}}, udp: true}
-  - {name: cacaaz.mlvmess-grpc, server: 20.220.72.183, port: 443, type: vmess, uuid: 3796e400-f346-440d-ae6c-c4592993e462, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: grpc, servername: caaz.ml, grpc-opts: {grpc-service-name: d04e7a0d}, udp: true}
   - {name: 14.29.124.174:11009, server: 14.29.124.174, port: 11009, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_176, server: 14.29.124.168, port: 25210, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CA_124, server: 138.197.166.205, port: 811, type: ss, cipher: chacha20-ietf-poly1305, password: Ultr@r00t_2017, udp: true}
-  - {name: TG@nodesharing_108, server: v47.v2dns.bar, port: 2052, type: vmess, uuid: 0c68af8a-961a-3065-a3a7-1800ebc70bdb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /v47-unlimitndxd, headers: {Host: v47.v2dns.bar}}, udp: true}
-  - {name: 美国-tg频道:@ripaojiedian, server: usfree2.jiantian.xyz, port: 32462, type: trojan, password: cb5e2135-4d64-4454-be98-5bae4f2618d1, sni: usfree2.jiantian.xyz, skip-cert-verify: true, udp: true}
-  - {name: 🇨🇳 3, server: 14.29.124.168, port: 25220, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_187, server: 14.29.124.168, port: 25286, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: 🇨🇳 4, server: 14.29.124.168, port: 25230, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: Polaris - US - V2ray, server: polaris.marythunt.xyz, port: 33401, type: vmess, uuid: a9db5820-ec66-4428-9e16-2a604db50c08, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: polaris.marythunt.xyz}}, udp: true}
-  - {name: 中国_TG@nodesharing_41, server: 139.227.78.64, port: 17006, type: vmess, uuid: 21dcbec8-eee8-3d20-82b6-f8c16fe6dc8d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: Mosaic - DE - Trojan, server: mosaic.marythunt.xyz, port: 443, type: trojan, password: !<str> 372815193, skip-cert-verify: true, udp: true}
-  - {name: CN_169, server: 14.29.124.168, port: 25218, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: JP_8090 @WangCai_1, server: 85.208.108.19, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: JP_8000 @WangCai_1, server: 85.208.108.19, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: TG@nodesharing_112, server: v47.v2dns.bar, port: 2052, type: vmess, uuid: 0c68af8a-961a-3065-a3a7-1800ebc70bdb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /v47-unlimitndxd, headers: {Host: v47.v2dns.bar}}, udp: true}
-  - {name: JP_2758 | 7.33Mb, server: jp1.wanss.win, port: 23344, type: vmess, uuid: 48C166B2-BFC2-512E-4D67-47C2F7B2CE5C, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: jp1.wanss.win}}, udp: true}
-  - {name: _油管：全网最强白嫖, server: 54.37.192.112, port: 443, type: vmess, uuid: 9f58234c-355b-4065-ae21-d4a63099aba5, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/120208301422}, udp: true}
-  - {name: 中国_TG@nodesharing_61, server: 36.139.115.52, port: 11206, type: vmess, uuid: 21dcbec8-eee8-3d20-82b6-f8c16fe6dc8d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 俄罗斯 VIP2节点24-中转, server: zzgz.h5game.xyz, port: 53037, type: vmess, uuid: 805d77ab-25fa-3853-abd5-25686abcf877, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /h5game, headers: {Host: sle2.h5game.xyz}}, udp: true}
-  - {name: 美国001, server: v2.emovpn.xyz, port: 1253, type: vmess, uuid: 55db94f9-16ce-46c4-ba31-7541f9e544ad, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: v2.emovpn.xyz}}, udp: true}
-  - {name: _油管：全网最强白嫖 2, server: 139.227.78.64, port: 17010, type: vmess, uuid: 21dcbec8-eee8-3d20-82b6-f8c16fe6dc8d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 3.✴️HàNội10Gb/s, server: 103.187.1.243, port: 80, type: vmess, uuid: 5c609459-82f5-430d-8e1b-84a8527cfb22, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /kvw0870h/}, udp: true}
-  - {name: unknown 1｜openit.ml, server: usyy.884899.cf, port: 443, type: trojan, password: 2debb06b-95ce-4e9b-956a-6cf7cadac30c, sni: usyy.884899.cf, skip-cert-verify: true, udp: true}
-  - {name: "US, Los Angeles", server: 65.49.208.202, port: 253, type: ss, cipher: aes-256-cfb, password: bwhskrskr06, udp: true}
-  - {name: JP_5000 @WangCai_1, server: 85.208.108.19, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 慢速稳定丨韩国-3（仅防失联）, server: v25.heduian.online, port: 51024, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /oooo, headers: {Host: v25.heduian.online}}, udp: true}
-  - {name: 美国 003, server: v20.emovpn.xyz, port: 1256, type: vmess, uuid: 55db94f9-16ce-46c4-ba31-7541f9e544ad, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: pull.free.video.10010.com}}, udp: true}
-  - {name: 美国 001, server: v2.emovpn.xyz, port: 1253, type: vmess, uuid: 55db94f9-16ce-46c4-ba31-7541f9e544ad, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: pull.free.video.10010.com}}, udp: true}
-  - {name: Cindy - KR - CN2 - V2ray, server: cindy.marythunt.xyz, port: 23333, type: vmess, uuid: a8fb075f-8b18-42e5-9f72-c2f91fb20e2d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: cindy.marythunt.xyz}}, udp: true}
-  - {name: tktrojan, server: wangqifei.tk, port: 59972, type: trojan, password: S1k6yPgFhc, skip-cert-verify: true, udp: true}
-  - {name: 加拿大_TG@nodesharing_144, server: ca-trojan.bonds.id, port: 443, type: trojan, password: c4581a60-ed23-11ec-a22a-1239d0255272, sni: ca-trojan.bonds.id, skip-cert-verify: true, udp: true}
-  - {name: CN_180, server: 14.29.124.168, port: 25279, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: JP_5600 @WangCai_1, server: 85.208.108.19, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 丨日本-2, server: v6.heduian.online, port: 30866, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /oooo, headers: {Host: baidu.com}}, udp: true}
-  - {name: 慢速稳定丨韩国-3（仅防失联） 2, server: v25.heduian.online, port: 51024, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /oooo, headers: {Host: baidu.com}}, udp: true}
+  - {name: beikui 14, server: hj001.xiba1.xyz, port: 20770, type: trojan, password: 2a9b7d4b-f44e-3998-ac23-52e548a9d258, skip-cert-verify: true, udp: true}
+  - {name: beikui 15, server: azhj001.xiba1.xyz, port: 20718, type: trojan, password: 0a8f3ff8-eb06-3384-85b2-e093d46f4368, skip-cert-verify: true, udp: true}
+  - {name: beikui 16, server: azhj001.xiba1.xyz, port: 20727, type: trojan, password: 00301563-a02b-30b9-a17a-8ba7db573dea, skip-cert-verify: true, udp: true}
+  - {name: beikui 17, server: hj001.xiba1.xyz, port: 20769, type: trojan, password: 2a9b7d4b-f44e-3998-ac23-52e548a9d258, skip-cert-verify: true, udp: true}
+  - {name: beikui 19, server: azhj001.xiba1.xyz, port: 20721, type: trojan, password: 2a9b7d4b-f44e-3998-ac23-52e548a9d258, skip-cert-verify: true, udp: true}
+  - {name: beikui 20, server: hj001.xiba1.xyz, port: 20769, type: trojan, password: 00301563-a02b-30b9-a17a-8ba7db573dea, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 2, server: 14.29.124.168, port: 25251, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN-高速节点推荐：v1.mk/vip（浏览器打开）, server: 14.29.124.174, port: 11034, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: beikui 21, server: azhj001.xiba1.xyz, port: 20726, type: trojan, password: 2a9b7d4b-f44e-3998-ac23-52e548a9d258, skip-cert-verify: true, udp: true}
+  - {name: beikui 24, server: azhj001.xiba1.xyz, port: 20720, type: trojan, password: 00301563-a02b-30b9-a17a-8ba7db573dea, skip-cert-verify: true, udp: true}
+  - {name: 🇷🇺, server: 185.4.65.6, port: 21247, type: ss, cipher: aes-256-cfb, password: vDS9G2p, udp: true}
+  - {name: 美国03 A |  1.5x, server: 112.64.98.133, port: 63069, type: vmess, uuid: 352ba93c-fd92-3055-ad10-b3599ff2802f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: "%7B%22Host%22:%22mugua-us03.covid19.rip%22%7D"}}, udp: true}
+  - {name: 美国洛杉矶-cc, server: www.xyxdbp.xyz, port: 34136, type: vmess, uuid: 52e9ffc9-0831-4c9d-e8ec-e4312caad4c6, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: beikui 25, server: azhj001.xiba1.xyz, port: 20723, type: trojan, password: 0a8f3ff8-eb06-3384-85b2-e093d46f4368, skip-cert-verify: true, udp: true}
+  - {name: 土耳其01 D | 2x, server: 159.27.90.254, port: 63028, type: vmess, uuid: 352ba93c-fd92-3055-ad10-b3599ff2802f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: mugua-tr01.covid19.rip}}, udp: true}
+  - {name: tkvmess, server: wangqifei.tk, port: 26226, type: vmess, uuid: 44549b7e-d6e1-4728-ad0f-bd17bebf7505, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: beikui 26, server: azhj001.xiba1.xyz, port: 20719, type: trojan, password: 2a9b7d4b-f44e-3998-ac23-52e548a9d258, skip-cert-verify: true, udp: true}
+  - {name: beikui 27, server: azhj001.xiba1.xyz, port: 20720, type: trojan, password: 2a9b7d4b-f44e-3998-ac23-52e548a9d258, skip-cert-verify: true, udp: true}
+  - {name: CN_2385 | 0.74Mb, server: 14.29.124.174, port: 11008, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: TG@nodesharing_86, server: 104.18.152.205, port: 443, type: vmess, uuid: de461076-bc21-4b96-dfd4-8382fea86eb7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /xx, headers: {Host: nickchan.xyz}}, udp: true}
+  - {name: CN_62, server: 14.29.124.168, port: 25283, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: _油管：全网最强白嫖 4, server: 112.64.98.133, port: 63069, type: vmess, uuid: 352ba93c-fd92-3055-ad10-b3599ff2802f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: mugua-us03.covid19.rip}}, udp: true}
+  - {name: univstar-台湾, server: 139.227.78.64, port: 17006, type: vmess, uuid: 21dcbec8-eee8-3d20-82b6-f8c16fe6dc8d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: TG@nodesharing_93, server: api.qiscus.com, port: 443, type: vmess, uuid: 47e37af6-06b0-f5d8-0e1d-b601474c1351, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /726f5dd4/, headers: {Host: sgazure-d.solusihost.my.id}}, udp: true}
+  - {name: 美国04|CF优选中转|免费, server: rn.102498.eu.org, port: 2053, type: vmess, uuid: bdae0db0-9387-3a0d-a2dc-e706151bb3f9, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /microsoft, headers: {Host: rn.102498.eu.org}}, udp: true}
+  - {name: beikui 28, server: azhj001.xiba1.xyz, port: 20721, type: trojan, password: 0a8f3ff8-eb06-3384-85b2-e093d46f4368, skip-cert-verify: true, udp: true}
+  - {name: beikui 29, server: hj001.xiba1.xyz, port: 20770, type: trojan, password: 0a8f3ff8-eb06-3384-85b2-e093d46f4368, skip-cert-verify: true, udp: true}
+  - {name: github.com/freefq - 美国3COM公司企业网 3, server: ss.2046.gq, port: 4443, type: trojan, password: 794871c6-022b-4498-b816-296e8a581d86, skip-cert-verify: true, udp: true}
+  - {name: TG@nodesharing_45, server: 139.227.78.64, port: 17111, type: vmess, uuid: 21dcbec8-eee8-3d20-82b6-f8c16fe6dc8d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: TG@nodesharing_53, server: 139.227.78.64, port: 17112, type: vmess, uuid: 21dcbec8-eee8-3d20-82b6-f8c16fe6dc8d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: univstar-TR, server: 139.227.78.64, port: 17111, type: vmess, uuid: 21dcbec8-eee8-3d20-82b6-f8c16fe6dc8d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: TG@nodesharing_38, server: 36.139.115.52, port: 11203, type: vmess, uuid: 21dcbec8-eee8-3d20-82b6-f8c16fe6dc8d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: beikui 30, server: hj001.xiba1.xyz, port: 20768, type: trojan, password: 2a9b7d4b-f44e-3998-ac23-52e548a9d258, skip-cert-verify: true, udp: true}
+  - {name: CN-高速节点推荐：v1.mk/vip（浏览器打开） 48, server: 14.29.124.168, port: 25222, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: univstar-BR, server: 139.227.78.64, port: 17112, type: vmess, uuid: 21dcbec8-eee8-3d20-82b6-f8c16fe6dc8d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: 防失联节点-tg频道:@ripaojiedian, server: cf.fullcloud.tk, port: 2053, type: vmess, uuid: bf67437e-6c90-45ca-abc2-c7240a5ce2aa, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /eisasqa, headers: {Host: foxusa.fovi.tk}}, udp: true}
-  - {name: univstar-SG_2 2, server: 139.227.78.64, port: 17010, type: vmess, uuid: 21dcbec8-eee8-3d20-82b6-f8c16fe6dc8d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 7.💣Vnetwork1, server: 103.151.241.57, port: 80, type: vmess, uuid: 5c609459-82f5-430d-8e1b-84a8527cfb22, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /kvw0870h/}, udp: true}
-  - {name: Cindy - KR - Trojan, server: cindy.marythunt.xyz, port: 443, type: trojan, password: !<str> 372815193, skip-cert-verify: true, udp: true}
-  - {name: JP_5004 @WangCai_1, server: 85.208.108.19, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: 中国_TG@nodesharing_189, server: 36.139.115.52, port: 11204, type: vmess, uuid: 21dcbec8-eee8-3d20-82b6-f8c16fe6dc8d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _油管：全网最强白嫖 3, server: 120.233.7.221, port: 18002, type: vmess, uuid: 21dcbec8-eee8-3d20-82b6-f8c16fe6dc8d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: NL 1｜, server: 41.216.177.41, port: 443, type: trojan, password: 274c1b23-2bfe-40ac-943c-ebc1aa044b22, skip-cert-verify: true, udp: true}
-  - {name: JP_2376 @WangCai_1, server: 85.208.108.19, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: TG@nodesharing_75, server: 625tw.ok365.cyou, port: 443, type: trojan, password: ef6c7fc6-6551-472b-921c-8f28606785de, sni: 625tw.ok365.cyou, skip-cert-verify: true, udp: true}
+  - {name: beikui 31, server: hj001.xiba1.xyz, port: 20769, type: trojan, password: 0a8f3ff8-eb06-3384-85b2-e093d46f4368, skip-cert-verify: true, udp: true}
+  - {name: CN_200, server: 14.29.124.168, port: 25280, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_46, server: 14.29.124.168, port: 25207, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: 韩国01 A | x1.5, server: 112.64.98.133, port: 63004, type: vmess, uuid: 352ba93c-fd92-3055-ad10-b3599ff2802f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: "%7B%22Host%22:%22mugua-kr01.covid19.rip%22%7D"}}, udp: true}
+  - {name: 韩国01 A | x1.5 2, server: 112.64.98.133, port: 63004, type: vmess, uuid: 352ba93c-fd92-3055-ad10-b3599ff2802f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: mugua-kr01.covid19.rip}}, udp: true}
+  - {name: 东京直连V2, server: 138.2.49.230, port: 10021, type: vmess, uuid: 405c48dc-2722-4095-bbf0-2591daad873d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: CN_74, server: 14.29.124.168, port: 25245, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN-高速节点推荐：v1.mk/vip（浏览器打开） 31, server: 14.29.124.168, port: 25231, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: JP_3389+@WangCai_1, server: 85.208.108.94, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: 美国03 B |  1.5x, server: 116.129.254.65, port: 63069, type: vmess, uuid: 352ba93c-fd92-3055-ad10-b3599ff2802f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: mugua-us03.covid19.rip}}, udp: true}
+  - {name: 中国_TG@nodesharing_41, server: 139.227.78.64, port: 17006, type: vmess, uuid: 21dcbec8-eee8-3d20-82b6-f8c16fe6dc8d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: TG@nodesharing_51, server: 139.227.78.64, port: 17105, type: vmess, uuid: 21dcbec8-eee8-3d20-82b6-f8c16fe6dc8d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Polaris - US - V2ray, server: polaris.marythunt.xyz, port: 33401, type: vmess, uuid: a9db5820-ec66-4428-9e16-2a604db50c08, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: polaris.marythunt.xyz}}, udp: true}
+  - {name: Mosaic - DE - Trojan, server: mosaic.marythunt.xyz, port: 443, type: trojan, password: !<str> 372815193, skip-cert-verify: true, udp: true}
+  - {name: _1895 | 5.99Mb, server: ru1.nodegz.top, port: 443, type: trojan, password: 5e5f8e9c-36b3-3b3c-9e6c-c0e7635621b1, skip-cert-verify: true, udp: true}
+  - {name: JP_8888+@WangCai_1, server: 85.208.108.94, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: JP_8118+@WangCai_1, server: 85.208.108.94, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: JP_8008+@WangCai_1, server: 85.208.108.94, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: JP_8000+@WangCai_1, server: 85.208.108.94, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: JP_5600+@WangCai_1, server: 85.208.108.94, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: JP_5003+@WangCai_1, server: 85.208.108.94, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: 东京直连V2 2, server: 138.2.49.230, port: 10021, type: vmess, uuid: 405c48dc-2722-4095-bbf0-2591daad873d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 138.2.49.230}}, udp: true}
+  - {name: TG@nodesharing_37, server: 139.227.78.64, port: 17006, type: vmess, uuid: 21dcbec8-eee8-3d20-82b6-f8c16fe6dc8d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: US-高速节点推荐：v2cross.com（浏览器打开）, server: 51.81.223.32, port: 443, type: vmess, uuid: c0156451-4efb-45e2-84fc-8d315c4650db, alterId: 32, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: Australia🇦🇺, server: vau1.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /chat, headers: {Host: vau1.0bad.com}}, udp: true}
-  - {name: 丨日本-2 2, server: v6.heduian.online, port: 30866, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /oooo, headers: {Host: v6.heduian.online}}, udp: true}
-  - {name: 4. 🎭Garena LOL 2, server: 27.71.235.154, port: 80, type: vmess, uuid: 5158aa9b-194f-4d48-a40a-17ae49650a9a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/fuzzypn?ed=121212", headers: {Host: 4gvpn.akamaized.net}}, udp: true}
-  - {name: 7. 💣Vnetwork 1, server: 103.151.241.57, port: 80, type: vmess, uuid: 5c609459-82f5-430d-8e1b-84a8527cfb22, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /kvw0870h/, headers: {Host: 4gvpn.akamaized.net}}, udp: true}
-  - {name: _1590 | 3.86Mb, server: 92.38.176.81, port: 811, type: ss, cipher: chacha20-ietf-poly1305, password: Ultr@r00t_2017, udp: true}
-  - {name: 韩国-tg频道:@ripaojiedian, server: lc-kr02-direct01.lc-kr02.lc-node.com, port: 443, type: vmess, uuid: ec736482-173e-3eff-9114-b49df8056e7d, alterId: 2, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: lc-kr02-direct01.lc-kr02.lc-node.com}}, udp: true}
-  - {name: 免费梯子https://t.me/mftizi, server: i1.v2.gay, port: 443, type: vmess, uuid: ec736482-173e-3eff-9114-b49df8056e7d, alterId: 2, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: lc-kr02-direct01.lc-kr02.lc-node.com}}, udp: true}
-  - {name: 4.🎭GarenaLOL2, server: 27.71.235.154, port: 80, type: vmess, uuid: 5158aa9b-194f-4d48-a40a-17ae49650a9a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/fuzzypn?ed=121212"}, udp: true}
-  - {name: 台湾-711.6KB/s(Youtube:不良林), server: lc-hk01-direct01.lc-hk01.lc-node.com, port: 443, type: vmess, uuid: ec736482-173e-3eff-9114-b49df8056e7d, alterId: 2, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: lc-hk01-direct01.lc-hk01.lc-node.com}}, udp: true}
-  - {name: 13.💥HCM-Gaming, server: hcmpre.fuzzypn.me, port: 80, type: vmess, uuid: 5158aa9b-194f-4d48-a40a-17ae49650a9a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /fuzzypn, headers: {Host: hcmpre.fuzzypn.me}}, udp: true}
-  - {name: 中国_TG@nodesharing_129, server: 36.139.115.52, port: 11403, type: vmess, uuid: 21dcbec8-eee8-3d20-82b6-f8c16fe6dc8d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _油管：全网最强白嫖 4, server: 139.227.78.64, port: 17003, type: vmess, uuid: 21dcbec8-eee8-3d20-82b6-f8c16fe6dc8d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: univstar-JP-iepl, server: 120.233.7.221, port: 32004, type: vmess, uuid: 21dcbec8-eee8-3d20-82b6-f8c16fe6dc8d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 意大利-1.26MB/s(Youtube:不良林), server: 92.223.93.233, port: 1035, type: ss, cipher: chacha20-ietf-poly1305, password: )1N1E6v0SU_rGTpg, udp: true}
-  - {name: "@SSRSUB-美国V04-付费推荐:dlj.tf/ssrsub", server: v04.ssrsub.com, port: 153, type: vmess, uuid: fb61d738-ef95-446d-9004-c93a1a975cad, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /api/v3/download.getFile, headers: {Host: d76bb35696.laowanxiang.com}}, udp: true}
-  - {name: US_3933 | 6.22Mb, server: inap005.xmrth-node.xyz, port: 15555, type: vmess, uuid: 53ad95b1-8693-34e3-98d7-2010ad24aaf9, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /index, headers: {Host: inap005.xmrth-node.xyz}}, udp: true}
-  - {name: 13. 💥HCM-Gaming, server: hcmpre.fuzzypn.me, port: 80, type: vmess, uuid: 5158aa9b-194f-4d48-a40a-17ae49650a9a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /fuzzypn, headers: {Host: v.akamaized.net}}, udp: true}
-  - {name: 2.🦁HồChíMinh, server: hcm2.fuzzypn.me, port: 443, type: vmess, uuid: 5158aa9b-194f-4d48-a40a-17ae49650a9a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: grpc, servername: hcm2.fuzzypn.me, grpc-opts: {grpc-service-name: fuzzypn}, udp: true}
+  - {name: TG@nodesharing_98, server: ss2.2046.gq, port: 4443, type: trojan, password: 794871c6-022b-4498-b816-296e8a581d86, skip-cert-verify: true, udp: true}
+  - {name: JP_9101+@WangCai_1, server: 85.208.108.94, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: JP_8882+@WangCai_1, server: 85.208.108.94, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: JP_8091+@WangCai_1, server: 85.208.108.94, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: JP_8090+@WangCai_1, server: 85.208.108.94, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: JP_8009+@WangCai_1, server: 85.208.108.94, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: JP_7306+@WangCai_1, server: 85.208.108.94, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: JP_5004+@WangCai_1, server: 85.208.108.94, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: JP_2376+@WangCai_1, server: 85.208.108.94, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: JP_2375+@WangCai_1, server: 85.208.108.94, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: 新加坡直连-1, server: 129.150.44.76, port: 10021, type: vmess, uuid: 405c48dc-2722-4095-bbf0-2591daad873d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 129.150.44.76}}, udp: true}
+  - {name: univstar-GB_2, server: 139.227.78.64, port: 17105, type: vmess, uuid: 21dcbec8-eee8-3d20-82b6-f8c16fe6dc8d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 俄罗斯01 D | x1.2, server: 159.27.90.254, port: 63071, type: vmess, uuid: 352ba93c-fd92-3055-ad10-b3599ff2802f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: mugua-ru01.myn1des.com}}, udp: true}
+  - {name: _1113 | 0.01Mb, server: 178.62.16.161, port: 811, type: ss, cipher: chacha20-ietf-poly1305, password: Ultr@r00t_2017, udp: true}
+  - {name: beikui 32, server: azhj001.xiba1.xyz, port: 20718, type: trojan, password: 00301563-a02b-30b9-a17a-8ba7db573dea, skip-cert-verify: true, udp: true}
+  - {name: 美国(TG频道:@kxswa)22, server: bai-piao-wang-zhe10.98848.xyz, port: 50858, type: trojan, password: 685022af-2086-454c-8725-8ff6b6ab1d13, sni: bai-piao-wang-zhe10.98848.xyz, skip-cert-verify: true, udp: true}
+  - {name: beikui 33, server: hj001.xiba1.xyz, port: 20767, type: trojan, password: 0a8f3ff8-eb06-3384-85b2-e093d46f4368, skip-cert-verify: true, udp: true}
+  - {name: CN-高速节点推荐：v1.mk/vip（浏览器打开） 6, server: 14.29.124.168, port: 25270, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: JP_5500+@WangCai_1, server: 85.208.108.94, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: JP_5000+@WangCai_1, server: 85.208.108.94, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: _油管：全网最强白嫖 5, server: 112.64.98.133, port: 63051, type: vmess, uuid: 352ba93c-fd92-3055-ad10-b3599ff2802f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /hls, headers: {Host: mugua-in01.airport-v2.com}}, udp: true}
+  - {name: JP_8881+@WangCai_1, server: 85.208.108.94, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: JP_6697+@WangCai_1, server: 85.208.108.94, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: JP_6379+@WangCai_1, server: 85.208.108.94, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
+  - {name: 印度01 E | 1.5x, server: 112.64.53.176, port: 63051, type: vmess, uuid: 352ba93c-fd92-3055-ad10-b3599ff2802f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /hls, headers: {Host: mugua-in01.airport-v2.com}}, udp: true}
+  - {name: 印度01 D | 1.5x, server: 159.27.90.254, port: 63051, type: vmess, uuid: 352ba93c-fd92-3055-ad10-b3599ff2802f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /hls, headers: {Host: mugua-in01.airport-v2.com}}, udp: true}
+  - {name: TG@nodesharing_70, server: 36.139.115.52, port: 11303, type: vmess, uuid: 21dcbec8-eee8-3d20-82b6-f8c16fe6dc8d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 14.29.124.174:11047, server: 14.29.124.174, port: 11047, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: univstar-GB_1, server: 139.227.78.64, port: 17104, type: vmess, uuid: 21dcbec8-eee8-3d20-82b6-f8c16fe6dc8d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: univstar-香港HKBN-dip, server: 183.178.223.60, port: 39999, type: vmess, uuid: 21dcbec8-eee8-3d20-82b6-f8c16fe6dc8d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: 中国_TG@nodesharing_91, server: 36.139.115.52, port: 11303, type: vmess, uuid: 21dcbec8-eee8-3d20-82b6-f8c16fe6dc8d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: SG_794 | 4.96Mb, server: 194.124.35.48, port: 801, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
+  - {name: _ca4072071898, server: sgg.2046.gq, port: 4443, type: trojan, password: 794871c6-022b-4498-b816-296e8a581d86, skip-cert-verify: true, udp: true}
+  - {name: tktrojan, server: wangqifei.tk, port: 59972, type: trojan, password: S1k6yPgFhc, skip-cert-verify: true, udp: true}
+  - {name: _c8ca3c366, server: 14.29.124.168, port: 25259, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_57, server: 14.29.124.168, port: 25235, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: univstar-台湾-iepl_2, server: 120.233.7.221, port: 18004, type: vmess, uuid: 21dcbec8-eee8-3d20-82b6-f8c16fe6dc8d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: TG@nodesharing_94, server: 120.233.7.221, port: 18003, type: vmess, uuid: 21dcbec8-eee8-3d20-82b6-f8c16fe6dc8d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: DE_295 |46.37Mb, server: 146.0.42.87, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ws}, udp: true}
+  - {name: ip1, server: 23.19.26.198, port: 48210, type: vmess, uuid: 2448fff3-bb63-4982-addb-ac9faff5ef41, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /kpUxnuYL/}, udp: true}
+  - {name: TG@nodesharing_97, server: 36.139.115.52, port: 11206, type: vmess, uuid: 21dcbec8-eee8-3d20-82b6-f8c16fe6dc8d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _油管频道：全网最强白嫖, server: 54.37.192.112, port: 443, type: vmess, uuid: 9f58234c-355b-4065-ae21-d4a63099aba5, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/120208301422, headers: {Host: 54.37.192.112}}, udp: true}
+  - {name: github.com/freefq - 广东省珠海市电信 34, server: data-hk-v2.shwjfkw.cn, port: 50205, type: vmess, uuid: b1478e24-4916-3abe-8f17-15931012ecbe, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: data-hk-v2.shwjfkw.cn}}, udp: true}
+  - {name: _油管：全网最强白嫖 6, server: data-hk-v2.shwjfkw.cn, port: 50206, type: vmess, uuid: b1478e24-4916-3abe-8f17-15931012ecbe, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: aweikeji-YouTube}}, udp: true}
+  - {name: 关注电报https://t.me/mftizi, server: g8.v2.gay, port: 443, type: vmess, uuid: c0156451-4efb-45e2-84fc-8d315c4650db, alterId: 32, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _油管：全网最强白嫖 7, server: ingress-i1.onebox6.org, port: 38201, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: ingress-i1.onebox6.org}}, udp: true}
+  - {name: Relay_🇨🇳CN-🇺🇸US_214, server: ingress-i1.onebox6.org, port: 38106, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: www.ivpnpro.net}}, udp: true}
+  - {name: TG@nodesharing_108, server: v47.v2dns.bar, port: 2052, type: vmess, uuid: 0c68af8a-961a-3065-a3a7-1800ebc70bdb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /v47-unlimitndxd, headers: {Host: v47.v2dns.bar}}, udp: true}
+  - {name: RU 1｜openit.ml, server: 141.98.168.251, port: 443, type: trojan, password: LiX1tV, sni: cdnu2.ft2.us, skip-cert-verify: true, udp: true}
+  - {name: CN-高速节点推荐：v1.mk/vip（浏览器打开） 2, server: 14.29.124.174, port: 11036, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: _77 | 4.05Mb, server: 14.29.124.174, port: 11049, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: JP_8080+@WangCai_1, server: 85.208.108.94, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: JP_6679+@WangCai_1, server: 85.208.108.94, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: 美国01 B | 1.5x, server: 116.129.254.65, port: 63014, type: vmess, uuid: 352ba93c-fd92-3055-ad10-b3599ff2802f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /mg, headers: {Host: mugua-us01.covid19.rip}}, udp: true}
+  - {name: 德国-1.15MB/s(Youtube:不良林), server: 146.0.42.87, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ws, headers: {Host: 146.0.42.87}}, udp: true}
+  - {name: US_2242, server: 51.81.223.10, port: 443, type: vmess, uuid: c0156451-4efb-45e2-84fc-8d315c4650db, alterId: 32, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国_TG@nodesharing_127, server: 51.81.223.29, port: 443, type: vmess, uuid: c0156451-4efb-45e2-84fc-8d315c4650db, alterId: 32, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: US-高速节点推荐：v1.mk/vip（浏览器打开）, server: 51.81.223.32, port: 443, type: vmess, uuid: c0156451-4efb-45e2-84fc-8d315c4650db, alterId: 32, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _油管：全网最强白嫖 5, server: 139.227.78.64, port: 17102, type: vmess, uuid: 21dcbec8-eee8-3d20-82b6-f8c16fe6dc8d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _油管：全网最强白嫖 6, server: 120.233.7.221, port: 18006, type: vmess, uuid: 21dcbec8-eee8-3d20-82b6-f8c16fe6dc8d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: Hoàng HN7, server: 103.179.189.98, port: 80, type: vmess, uuid: d97ee737-7bc0-4dca-acf1-85135ed4d97e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: hoangdz.akamaized.net}}, udp: true}
+  - {name: "@SSRSUB-V08-付费推荐:suo.yt/ssrsub", server: 51.81.223.32, port: 443, type: vmess, uuid: c0156451-4efb-45e2-84fc-8d315c4650db, alterId: 32, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "@SSRSUB-V08-付费推荐:suo.yt/ssrsub 2", server: 51.81.223.32, port: 443, type: vmess, uuid: c0156451-4efb-45e2-84fc-8d315c4650db, alterId: 32, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _ca4072078, server: 51.81.223.32, port: 443, type: vmess, uuid: c0156451-4efb-45e2-84fc-8d315c4650db, alterId: 32, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: TG@nodesharing_112, server: v47.v2dns.bar, port: 2052, type: vmess, uuid: 0c68af8a-961a-3065-a3a7-1800ebc70bdb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /v47-unlimitndxd, headers: {Host: v47.v2dns.bar}}, udp: true}
+  - {name: 丨日本-2, server: v6.heduian.online, port: 30866, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /oooo, headers: {Host: baidu.com}}, udp: true}
+  - {name: SG-高速节点推荐：v1.mk/vip（浏览器打开）, server: s4.hazz.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, skip-cert-verify: true, udp: true}
+  - {name: unknown 1｜openit.ml, server: usyy.884899.cf, port: 443, type: trojan, password: 2debb06b-95ce-4e9b-956a-6cf7cadac30c, sni: usyy.884899.cf, skip-cert-verify: true, udp: true}
+  - {name: CN-高速节点推荐：v1.mk/vip（浏览器打开） 3, server: 14.29.124.174, port: 11016, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: 俄罗斯01 B | x1.2, server: 116.129.254.65, port: 63071, type: vmess, uuid: 352ba93c-fd92-3055-ad10-b3599ff2802f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: mugua-ru01.myn1des.com}}, udp: true}
+  - {name: univstar-香港-iepl_4, server: 120.233.7.221, port: 18002, type: vmess, uuid: 21dcbec8-eee8-3d20-82b6-f8c16fe6dc8d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: univstar-香港_1 002, server: 139.227.78.64, port: 17001, type: vmess, uuid: 21dcbec8-eee8-3d20-82b6-f8c16fe6dc8d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: univstar-KR_1 002, server: 139.227.78.64, port: 17101, type: vmess, uuid: 21dcbec8-eee8-3d20-82b6-f8c16fe6dc8d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 中国_TG@nodesharing_200, server: 36.139.115.52, port: 11402, type: vmess, uuid: 21dcbec8-eee8-3d20-82b6-f8c16fe6dc8d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: univstar-US_2 001, server: 36.139.115.52, port: 11402, type: vmess, uuid: 21dcbec8-eee8-3d20-82b6-f8c16fe6dc8d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: US_2171, server: 51.81.223.10, port: 443, type: vmess, uuid: c0156451-4efb-45e2-84fc-8d315c4650db, alterId: 32, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "@SSRSUB-V14-付费推荐:suo.yt/ssrsub", server: 51.81.223.10, port: 443, type: vmess, uuid: c0156451-4efb-45e2-84fc-8d315c4650db, alterId: 32, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: US_2102, server: 51.81.223.10, port: 443, type: vmess, uuid: c0156451-4efb-45e2-84fc-8d315c4650db, alterId: 32, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: TG@nodesharing_61, server: 51.81.223.32, port: 443, type: vmess, uuid: c0156451-4efb-45e2-84fc-8d315c4650db, alterId: 32, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: ☆白嫖联盟_______9, server: v04.ssrsub.com, port: 153, type: vmess, uuid: 8fefb1b5-bee7-4736-8e00-cad32ab113d1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /api/v3/download.getFile, headers: {Host: d76bb35696.laowanxiang.com}}, udp: true}
+  - {name: CN_176, server: 14.29.124.168, port: 25210, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: _油管：全网最强白嫖 8, server: 139.227.78.64, port: 17010, type: vmess, uuid: 21dcbec8-eee8-3d20-82b6-f8c16fe6dc8d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: US-高速节点推荐：v1.mk/vip, server: 51.81.223.10, port: 443, type: vmess, uuid: c0156451-4efb-45e2-84fc-8d315c4650db, alterId: 32, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: US_1514, server: 51.81.223.10, port: 443, type: vmess, uuid: c0156451-4efb-45e2-84fc-8d315c4650db, alterId: 32, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - beikui059
-      - beikui054
-      - beikui 054
-      - 香港11 | 上海
-      - 香港06 | 上海
-      - beikui 074
-      - beikui064
-      - beikui056
-      - 日本02
-      - 新加坡09 | IEPL | 上海 | 4x
-      - 香港06 | IEPL | 上海 | 4x
-      - beikui 091
-      - 新加坡07 | IEPL | 上海 | 4x
-      - beikui098
-      - 香港07 | 上海
-      - beikui074
-      - 新加坡05 | IEPL | 上海 | 4x
-      - 新加坡08 | IEPL | 上海 | 4x
-      - beikui 064
-      - 新加坡04 | 上海
-      - beikui 098
-      - 新加坡02 | IEPL | 上海 | 4x
-      - 新加坡02 | 广港
-      - beikui 080
-      - beikui 056
-      - beikui 060
-      - beikui080
-      - beikui093
-      - beikui 059
-      - beikui 093
-      - beikui092
-      - beikui062
-      - beikui 065
-      - beikui 092
-      - beikui 081
-      - beikui 055
-      - beikui058
-      - 美西原生IPLC中转
-      - 新加坡04 | IEPL | 上海 | 4x
-      - AJKSOS.TOP_9
-      - beikui 057
-      - 新加坡01 | 上海
-      - beikui 071
-      - beikui068
-      - 新加坡03 | IEPL | 上海 | 4x
-      - beikui073
-      - beikui091
-      - beikui078
-      - beikui055
-      - beikui072
-      - beikui081
-      - beikui057
-      - beikui 073
-      - beikui070
-      - 新加坡07 | 上海
-      - 美国02
-      - beikui 062
-      - beikui 052
-      - beikui 072
-      - beikui069
-      - beikui 069
-      - 美国05
-      - 香港11 | 湖南
-      - 新加坡05 | 上海
-      - 🇨🇳
-      - 香港03 | IEPL | 北京 | 4x
-      - 新加坡05 | IEPL | 北京 | 4x
-      - _HK_香港
-      - 日本 VIP2节点23-中转
-      - 香港07 | IEPL | 北京 | 4x
-      - 中国-2.58MB/s(Youtube:不良林)
-      - 新加坡02 | IEPL | 北京 | 4x
-      - 台湾120G流量001
-      - beikui097
-      - 广港隧道-台湾
-      - 香港HKT-优化
-      - 香港07 | 广港
-      - 香港06 | IEPL | 北京 | 4x
-      - 香港2-tg频道:@ripaojiedian
-      - 台湾120G流量 002
-      - 新加坡09 | IEPL | 北京 | 4x
-      - 新加坡03 | IEPL | 北京 | 4x
-      - 香港优化-tg频道:@ripaojiedian
-      - 香港11 | IEPL | 北京
-      - 台湾120G流量+003
-      - 日本 VIP2节点11 原生IP-中转
-      - 新加坡08 | 广港
-      - 台湾120g流量
-      - 新加坡04 | IEPL | 北京 | 4x
-      - 新加坡08 | IEPL | 北京 | 4x
-      - 香港HKIX | 广港
-      - 香港07 | IEPL | 北京
-      - 香港03 | 广港
-      - 新加坡08 | IEPL | 北京
-      - 新加坡03 | 广港
-      - beikui 095
-      - 香港HGC | IEPL | 北京
-      - beikui095
-      - 新加坡09 | 广港
-      - 香港03 | IEPL | 北京
-      - 俄罗斯
-      - 🇨🇳 2
-      - 美国120G流量
-      - _CN_中国_禁止刷大流量_3
-      - 官址：xf.gl
-      - 英国120G流量
-      - beikui076
-      - beikui 097
-      - hk1dawz.cfvmess-grpc
-      - 俄罗斯 VIP2节点1-中转
-      - 19.HongKong💥
-      - beikui086
-      - beikui 090
-      - beikui 079
-      - beikui 076
-      - 19. HongKong💥
-      - 20.🇭🇰HongkongTLS
-      - beikui084
-      - beikui 077
-      - 日本_TG@nodesharing_12
-      - 20. 🇭🇰 Hongkong TLS
-      - jp3sgaz.gavmess-grpc
-      - beikui079
-      - 日本_TG@nodesharing_45
-      - beikui085
-      - beikui 085
-      - beikui 087
-      - beikui 088
-      - beikui096
-      - hk1dawz.cfvmess-grpc 2
-      - beikui 096
-      - jp3sgaz.gavmess-grpc 2
-      - beikui 084
-      - beikui075
-      - _1276 | 0.64Mb
-      - beikui087
-      - beikui 094
-      - beikui094
-      - 香港
-      - beikui 001
-      - beikui089
-      - beikui001
-      - CN_200
+      - 香港A
+      - 越南 | 深港IEPL
       - CN_158
-      - beikui088
-      - 香港杨枝甘露+03-D_1
-      - _油管频道：全网最强白嫖
-      - Eva - US - GIA CN2 - V2ray
-      - Eva - US - Trojan
-      - JP_5500 @WangCai_1
-      - Zero - US - Trojan
-      - 台湾优化-tg频道:@ripaojiedian
-      - 1.🦁 Hà Nội
-      - 107.172.102.90:5997
-      - 美国洛杉矶-cc
-      - SG A 004
-      - 美国04|CF优选中转|免费
-      - cacaaz.mlvmess-grpc
-      - 14.29.124.174:11009
-      - CN_176
-      - CA_124
-      - TG@nodesharing_108
-      - 美国-tg频道:@ripaojiedian
-      - 🇨🇳 3
-      - CN_187
-      - 🇨🇳 4
-      - Polaris - US - V2ray
-      - 中国_TG@nodesharing_41
-      - Mosaic - DE - Trojan
-      - CN_169
-      - JP_8090 @WangCai_1
-      - JP_8000 @WangCai_1
-      - TG@nodesharing_112
-      - JP_2758 | 7.33Mb
       - _油管：全网最强白嫖
-      - 中国_TG@nodesharing_61
-      - 俄罗斯 VIP2节点24-中转
-      - 美国001
+      - TG@nodesharing_33
+      - CN_240 | 9.97Mb
+      - 日本 VIP2节点11 原生IP-中转
+      - TG@nodesharing_40
+      - BGP-01-香港-多地优化
+      - CN_241 | 9.51Mb
+      - TG@nodesharing_23
+      - 韩国 | 广港隧道
+      - TG@nodesharing_58
+      - 12
+      - 美国120g流量
+      - TG@nodesharing_49
+      - TG@nodesharing_44
+      - beikui
+      - CN 8｜openit.ml
+      - 🇨🇳
+      - CN-高速节点推荐：v1.mk/vip（浏览器打开） 23
+      - AJKSOS.TOP_9
+      - Alien
+      - HK_38
       - _油管：全网最强白嫖 2
-      - 3.✴️HàNội10Gb/s
-      - unknown 1｜openit.ml
-      - US, Los Angeles
-      - JP_5000 @WangCai_1
-      - 慢速稳定丨韩国-3（仅防失联）
-      - 美国 003
-      - 美国 001
-      - Cindy - KR - CN2 - V2ray
-      - tktrojan
-      - 加拿大_TG@nodesharing_144
-      - CN_180
-      - JP_5600 @WangCai_1
-      - 丨日本-2
-      - 慢速稳定丨韩国-3（仅防失联） 2
-      - 防失联节点-tg频道:@ripaojiedian
-      - univstar-SG_2 2
-      - 7.💣Vnetwork1
-      - Cindy - KR - Trojan
-      - JP_5004 @WangCai_1
-      - 中国_TG@nodesharing_189
       - _油管：全网最强白嫖 3
-      - NL 1｜
-      - JP_2376 @WangCai_1
-      - Australia🇦🇺
-      - 丨日本-2 2
-      - 4. 🎭Garena LOL 2
-      - 7. 💣Vnetwork 1
-      - _1590 | 3.86Mb
-      - 韩国-tg频道:@ripaojiedian
-      - 免费梯子https://t.me/mftizi
-      - 4.🎭GarenaLOL2
-      - 台湾-711.6KB/s(Youtube:不良林)
-      - 13.💥HCM-Gaming
-      - 中国_TG@nodesharing_129
+      - beikui 2
+      - _CN_中国_禁止刷大流量_3
+      - _CN_中国_禁止刷大流量_7
+      - _CN_中国_禁止刷大流量_9
+      - beikui 22
+      - hk1dawz.cfvmess-grpc
+      - 印度01 A | 1.5x
+      - jp3sgaz.gavmess-grpc
+      - beikui 3
+      - beikui 7
+      - TG@nodesharing_7
+      - CN-高速节点推荐：v1.mk/vip（浏览器打开） 22
+      - beikui 18
+      - beikui 23
+      - beikui 4
+      - beikui 5
+      - beikui 6
+      - TG@nodesharing_36
+      - beikui 8
+      - beikui 12
+      - JPB002
+      - beikui 9
+      - beikui 13
+      - Eva - US - Trojan
+      - beikui 11
+      - TG@nodesharing_39
+      - 14.29.124.168:25252
+      - _1852 | 4.88Mb
+      - CA_122
+      - TG@nodesharing_43
+      - beikui 10
+      - Zero - US - Trojan
+      - 14.29.124.174:11009
+      - beikui 14
+      - beikui 15
+      - beikui 16
+      - beikui 17
+      - beikui 19
+      - beikui 20
+      - 🇨🇳 2
+      - CN-高速节点推荐：v1.mk/vip（浏览器打开）
+      - beikui 21
+      - beikui 24
+      - 🇷🇺
+      - 美国03 A |  1.5x
+      - 美国洛杉矶-cc
+      - beikui 25
+      - 土耳其01 D | 2x
+      - tkvmess
+      - beikui 26
+      - beikui 27
+      - CN_2385 | 0.74Mb
+      - TG@nodesharing_86
+      - CN_62
       - _油管：全网最强白嫖 4
-      - univstar-JP-iepl
-      - 意大利-1.26MB/s(Youtube:不良林)
-      - "@SSRSUB-美国V04-付费推荐:dlj.tf/ssrsub"
-      - US_3933 | 6.22Mb
-      - 13. 💥HCM-Gaming
-      - 2.🦁HồChíMinh
-      - US-高速节点推荐：v1.mk/vip（浏览器打开）
+      - univstar-台湾
+      - TG@nodesharing_93
+      - 美国04|CF优选中转|免费
+      - beikui 28
+      - beikui 29
+      - github.com/freefq - 美国3COM公司企业网 3
+      - TG@nodesharing_45
+      - TG@nodesharing_53
+      - univstar-TR
+      - TG@nodesharing_38
+      - beikui 30
+      - CN-高速节点推荐：v1.mk/vip（浏览器打开） 48
+      - univstar-BR
+      - 防失联节点-tg频道:@ripaojiedian
+      - TG@nodesharing_75
+      - beikui 31
+      - CN_200
+      - CN_46
+      - 韩国01 A | x1.5
+      - 韩国01 A | x1.5 2
+      - 东京直连V2
+      - CN_74
+      - CN-高速节点推荐：v1.mk/vip（浏览器打开） 31
+      - JP_3389+@WangCai_1
+      - 美国03 B |  1.5x
+      - 中国_TG@nodesharing_41
+      - TG@nodesharing_51
+      - Polaris - US - V2ray
+      - Mosaic - DE - Trojan
+      - _1895 | 5.99Mb
+      - JP_8888+@WangCai_1
+      - JP_8118+@WangCai_1
+      - JP_8008+@WangCai_1
+      - JP_8000+@WangCai_1
+      - JP_5600+@WangCai_1
+      - JP_5003+@WangCai_1
+      - 东京直连V2 2
+      - TG@nodesharing_37
+      - US-高速节点推荐：v2cross.com（浏览器打开）
+      - Australia🇦🇺
+      - TG@nodesharing_98
+      - JP_9101+@WangCai_1
+      - JP_8882+@WangCai_1
+      - JP_8091+@WangCai_1
+      - JP_8090+@WangCai_1
+      - JP_8009+@WangCai_1
+      - JP_7306+@WangCai_1
+      - JP_5004+@WangCai_1
+      - JP_2376+@WangCai_1
+      - JP_2375+@WangCai_1
+      - 新加坡直连-1
+      - univstar-GB_2
+      - 俄罗斯01 D | x1.2
+      - _1113 | 0.01Mb
+      - beikui 32
+      - 美国(TG频道:@kxswa)22
+      - beikui 33
+      - CN-高速节点推荐：v1.mk/vip（浏览器打开） 6
+      - JP_5500+@WangCai_1
+      - JP_5000+@WangCai_1
       - _油管：全网最强白嫖 5
+      - JP_8881+@WangCai_1
+      - JP_6697+@WangCai_1
+      - JP_6379+@WangCai_1
+      - 印度01 E | 1.5x
+      - 印度01 D | 1.5x
+      - TG@nodesharing_70
+      - 14.29.124.174:11047
+      - univstar-GB_1
+      - univstar-香港HKBN-dip
+      - 中国_TG@nodesharing_91
+      - SG_794 | 4.96Mb
+      - _ca4072071898
+      - tktrojan
+      - _c8ca3c366
+      - CN_57
+      - univstar-台湾-iepl_2
+      - TG@nodesharing_94
+      - DE_295 |46.37Mb
+      - ip1
+      - TG@nodesharing_97
+      - _油管频道：全网最强白嫖
+      - github.com/freefq - 广东省珠海市电信 34
       - _油管：全网最强白嫖 6
-      - Hoàng HN7
+      - 关注电报https://t.me/mftizi
+      - _油管：全网最强白嫖 7
+      - Relay_🇨🇳CN-🇺🇸US_214
+      - TG@nodesharing_108
+      - RU 1｜openit.ml
+      - CN-高速节点推荐：v1.mk/vip（浏览器打开） 2
+      - _77 | 4.05Mb
+      - JP_8080+@WangCai_1
+      - JP_6679+@WangCai_1
+      - 美国01 B | 1.5x
+      - 德国-1.15MB/s(Youtube:不良林)
+      - US_2242
+      - 美国_TG@nodesharing_127
+      - US-高速节点推荐：v1.mk/vip（浏览器打开）
+      - "@SSRSUB-V08-付费推荐:suo.yt/ssrsub"
+      - "@SSRSUB-V08-付费推荐:suo.yt/ssrsub 2"
+      - _ca4072078
+      - TG@nodesharing_112
+      - 丨日本-2
+      - SG-高速节点推荐：v1.mk/vip（浏览器打开）
+      - unknown 1｜openit.ml
+      - CN-高速节点推荐：v1.mk/vip（浏览器打开） 3
+      - 俄罗斯01 B | x1.2
+      - univstar-香港-iepl_4
+      - univstar-香港_1 002
+      - univstar-KR_1 002
+      - 中国_TG@nodesharing_200
+      - univstar-US_2 001
+      - US_2171
+      - "@SSRSUB-V14-付费推荐:suo.yt/ssrsub"
+      - US_2102
+      - TG@nodesharing_61
+      - ☆白嫖联盟_______9
+      - CN_176
+      - _油管：全网最强白嫖 8
+      - US-高速节点推荐：v1.mk/vip
+      - US_1514
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - beikui059
-      - beikui054
-      - beikui 054
-      - 香港11 | 上海
-      - 香港06 | 上海
-      - beikui 074
-      - beikui064
-      - beikui056
-      - 日本02
-      - 新加坡09 | IEPL | 上海 | 4x
-      - 香港06 | IEPL | 上海 | 4x
-      - beikui 091
-      - 新加坡07 | IEPL | 上海 | 4x
-      - beikui098
-      - 香港07 | 上海
-      - beikui074
-      - 新加坡05 | IEPL | 上海 | 4x
-      - 新加坡08 | IEPL | 上海 | 4x
-      - beikui 064
-      - 新加坡04 | 上海
-      - beikui 098
-      - 新加坡02 | IEPL | 上海 | 4x
-      - 新加坡02 | 广港
-      - beikui 080
-      - beikui 056
-      - beikui 060
-      - beikui080
-      - beikui093
-      - beikui 059
-      - beikui 093
-      - beikui092
-      - beikui062
-      - beikui 065
-      - beikui 092
-      - beikui 081
-      - beikui 055
-      - beikui058
-      - 美西原生IPLC中转
-      - 新加坡04 | IEPL | 上海 | 4x
-      - AJKSOS.TOP_9
-      - beikui 057
-      - 新加坡01 | 上海
-      - beikui 071
-      - beikui068
-      - 新加坡03 | IEPL | 上海 | 4x
-      - beikui073
-      - beikui091
-      - beikui078
-      - beikui055
-      - beikui072
-      - beikui081
-      - beikui057
-      - beikui 073
-      - beikui070
-      - 新加坡07 | 上海
-      - 美国02
-      - beikui 062
-      - beikui 052
-      - beikui 072
-      - beikui069
-      - beikui 069
-      - 美国05
-      - 香港11 | 湖南
-      - 新加坡05 | 上海
-      - 🇨🇳
-      - 香港03 | IEPL | 北京 | 4x
-      - 新加坡05 | IEPL | 北京 | 4x
-      - _HK_香港
-      - 日本 VIP2节点23-中转
-      - 香港07 | IEPL | 北京 | 4x
-      - 中国-2.58MB/s(Youtube:不良林)
-      - 新加坡02 | IEPL | 北京 | 4x
-      - 台湾120G流量001
-      - beikui097
-      - 广港隧道-台湾
-      - 香港HKT-优化
-      - 香港07 | 广港
-      - 香港06 | IEPL | 北京 | 4x
-      - 香港2-tg频道:@ripaojiedian
-      - 台湾120G流量 002
-      - 新加坡09 | IEPL | 北京 | 4x
-      - 新加坡03 | IEPL | 北京 | 4x
-      - 香港优化-tg频道:@ripaojiedian
-      - 香港11 | IEPL | 北京
-      - 台湾120G流量+003
-      - 日本 VIP2节点11 原生IP-中转
-      - 新加坡08 | 广港
-      - 台湾120g流量
-      - 新加坡04 | IEPL | 北京 | 4x
-      - 新加坡08 | IEPL | 北京 | 4x
-      - 香港HKIX | 广港
-      - 香港07 | IEPL | 北京
-      - 香港03 | 广港
-      - 新加坡08 | IEPL | 北京
-      - 新加坡03 | 广港
-      - beikui 095
-      - 香港HGC | IEPL | 北京
-      - beikui095
-      - 新加坡09 | 广港
-      - 香港03 | IEPL | 北京
-      - 俄罗斯
-      - 🇨🇳 2
-      - 美国120G流量
-      - _CN_中国_禁止刷大流量_3
-      - 官址：xf.gl
-      - 英国120G流量
-      - beikui076
-      - beikui 097
-      - hk1dawz.cfvmess-grpc
-      - 俄罗斯 VIP2节点1-中转
-      - 19.HongKong💥
-      - beikui086
-      - beikui 090
-      - beikui 079
-      - beikui 076
-      - 19. HongKong💥
-      - 20.🇭🇰HongkongTLS
-      - beikui084
-      - beikui 077
-      - 日本_TG@nodesharing_12
-      - 20. 🇭🇰 Hongkong TLS
-      - jp3sgaz.gavmess-grpc
-      - beikui079
-      - 日本_TG@nodesharing_45
-      - beikui085
-      - beikui 085
-      - beikui 087
-      - beikui 088
-      - beikui096
-      - hk1dawz.cfvmess-grpc 2
-      - beikui 096
-      - jp3sgaz.gavmess-grpc 2
-      - beikui 084
-      - beikui075
-      - _1276 | 0.64Mb
-      - beikui087
-      - beikui 094
-      - beikui094
-      - 香港
-      - beikui 001
-      - beikui089
-      - beikui001
-      - CN_200
+      - 香港A
+      - 越南 | 深港IEPL
       - CN_158
-      - beikui088
-      - 香港杨枝甘露+03-D_1
-      - _油管频道：全网最强白嫖
-      - Eva - US - GIA CN2 - V2ray
-      - Eva - US - Trojan
-      - JP_5500 @WangCai_1
-      - Zero - US - Trojan
-      - 台湾优化-tg频道:@ripaojiedian
-      - 1.🦁 Hà Nội
-      - 107.172.102.90:5997
-      - 美国洛杉矶-cc
-      - SG A 004
-      - 美国04|CF优选中转|免费
-      - cacaaz.mlvmess-grpc
-      - 14.29.124.174:11009
-      - CN_176
-      - CA_124
-      - TG@nodesharing_108
-      - 美国-tg频道:@ripaojiedian
-      - 🇨🇳 3
-      - CN_187
-      - 🇨🇳 4
-      - Polaris - US - V2ray
-      - 中国_TG@nodesharing_41
-      - Mosaic - DE - Trojan
-      - CN_169
-      - JP_8090 @WangCai_1
-      - JP_8000 @WangCai_1
-      - TG@nodesharing_112
-      - JP_2758 | 7.33Mb
       - _油管：全网最强白嫖
-      - 中国_TG@nodesharing_61
-      - 俄罗斯 VIP2节点24-中转
-      - 美国001
+      - TG@nodesharing_33
+      - CN_240 | 9.97Mb
+      - 日本 VIP2节点11 原生IP-中转
+      - TG@nodesharing_40
+      - BGP-01-香港-多地优化
+      - CN_241 | 9.51Mb
+      - TG@nodesharing_23
+      - 韩国 | 广港隧道
+      - TG@nodesharing_58
+      - 12
+      - 美国120g流量
+      - TG@nodesharing_49
+      - TG@nodesharing_44
+      - beikui
+      - CN 8｜openit.ml
+      - 🇨🇳
+      - CN-高速节点推荐：v1.mk/vip（浏览器打开） 23
+      - AJKSOS.TOP_9
+      - Alien
+      - HK_38
       - _油管：全网最强白嫖 2
-      - 3.✴️HàNội10Gb/s
-      - unknown 1｜openit.ml
-      - US, Los Angeles
-      - JP_5000 @WangCai_1
-      - 慢速稳定丨韩国-3（仅防失联）
-      - 美国 003
-      - 美国 001
-      - Cindy - KR - CN2 - V2ray
-      - tktrojan
-      - 加拿大_TG@nodesharing_144
-      - CN_180
-      - JP_5600 @WangCai_1
-      - 丨日本-2
-      - 慢速稳定丨韩国-3（仅防失联） 2
-      - 防失联节点-tg频道:@ripaojiedian
-      - univstar-SG_2 2
-      - 7.💣Vnetwork1
-      - Cindy - KR - Trojan
-      - JP_5004 @WangCai_1
-      - 中国_TG@nodesharing_189
       - _油管：全网最强白嫖 3
-      - NL 1｜
-      - JP_2376 @WangCai_1
-      - Australia🇦🇺
-      - 丨日本-2 2
-      - 4. 🎭Garena LOL 2
-      - 7. 💣Vnetwork 1
-      - _1590 | 3.86Mb
-      - 韩国-tg频道:@ripaojiedian
-      - 免费梯子https://t.me/mftizi
-      - 4.🎭GarenaLOL2
-      - 台湾-711.6KB/s(Youtube:不良林)
-      - 13.💥HCM-Gaming
-      - 中国_TG@nodesharing_129
+      - beikui 2
+      - _CN_中国_禁止刷大流量_3
+      - _CN_中国_禁止刷大流量_7
+      - _CN_中国_禁止刷大流量_9
+      - beikui 22
+      - hk1dawz.cfvmess-grpc
+      - 印度01 A | 1.5x
+      - jp3sgaz.gavmess-grpc
+      - beikui 3
+      - beikui 7
+      - TG@nodesharing_7
+      - CN-高速节点推荐：v1.mk/vip（浏览器打开） 22
+      - beikui 18
+      - beikui 23
+      - beikui 4
+      - beikui 5
+      - beikui 6
+      - TG@nodesharing_36
+      - beikui 8
+      - beikui 12
+      - JPB002
+      - beikui 9
+      - beikui 13
+      - Eva - US - Trojan
+      - beikui 11
+      - TG@nodesharing_39
+      - 14.29.124.168:25252
+      - _1852 | 4.88Mb
+      - CA_122
+      - TG@nodesharing_43
+      - beikui 10
+      - Zero - US - Trojan
+      - 14.29.124.174:11009
+      - beikui 14
+      - beikui 15
+      - beikui 16
+      - beikui 17
+      - beikui 19
+      - beikui 20
+      - 🇨🇳 2
+      - CN-高速节点推荐：v1.mk/vip（浏览器打开）
+      - beikui 21
+      - beikui 24
+      - 🇷🇺
+      - 美国03 A |  1.5x
+      - 美国洛杉矶-cc
+      - beikui 25
+      - 土耳其01 D | 2x
+      - tkvmess
+      - beikui 26
+      - beikui 27
+      - CN_2385 | 0.74Mb
+      - TG@nodesharing_86
+      - CN_62
       - _油管：全网最强白嫖 4
-      - univstar-JP-iepl
-      - 意大利-1.26MB/s(Youtube:不良林)
-      - "@SSRSUB-美国V04-付费推荐:dlj.tf/ssrsub"
-      - US_3933 | 6.22Mb
-      - 13. 💥HCM-Gaming
-      - 2.🦁HồChíMinh
-      - US-高速节点推荐：v1.mk/vip（浏览器打开）
+      - univstar-台湾
+      - TG@nodesharing_93
+      - 美国04|CF优选中转|免费
+      - beikui 28
+      - beikui 29
+      - github.com/freefq - 美国3COM公司企业网 3
+      - TG@nodesharing_45
+      - TG@nodesharing_53
+      - univstar-TR
+      - TG@nodesharing_38
+      - beikui 30
+      - CN-高速节点推荐：v1.mk/vip（浏览器打开） 48
+      - univstar-BR
+      - 防失联节点-tg频道:@ripaojiedian
+      - TG@nodesharing_75
+      - beikui 31
+      - CN_200
+      - CN_46
+      - 韩国01 A | x1.5
+      - 韩国01 A | x1.5 2
+      - 东京直连V2
+      - CN_74
+      - CN-高速节点推荐：v1.mk/vip（浏览器打开） 31
+      - JP_3389+@WangCai_1
+      - 美国03 B |  1.5x
+      - 中国_TG@nodesharing_41
+      - TG@nodesharing_51
+      - Polaris - US - V2ray
+      - Mosaic - DE - Trojan
+      - _1895 | 5.99Mb
+      - JP_8888+@WangCai_1
+      - JP_8118+@WangCai_1
+      - JP_8008+@WangCai_1
+      - JP_8000+@WangCai_1
+      - JP_5600+@WangCai_1
+      - JP_5003+@WangCai_1
+      - 东京直连V2 2
+      - TG@nodesharing_37
+      - US-高速节点推荐：v2cross.com（浏览器打开）
+      - Australia🇦🇺
+      - TG@nodesharing_98
+      - JP_9101+@WangCai_1
+      - JP_8882+@WangCai_1
+      - JP_8091+@WangCai_1
+      - JP_8090+@WangCai_1
+      - JP_8009+@WangCai_1
+      - JP_7306+@WangCai_1
+      - JP_5004+@WangCai_1
+      - JP_2376+@WangCai_1
+      - JP_2375+@WangCai_1
+      - 新加坡直连-1
+      - univstar-GB_2
+      - 俄罗斯01 D | x1.2
+      - _1113 | 0.01Mb
+      - beikui 32
+      - 美国(TG频道:@kxswa)22
+      - beikui 33
+      - CN-高速节点推荐：v1.mk/vip（浏览器打开） 6
+      - JP_5500+@WangCai_1
+      - JP_5000+@WangCai_1
       - _油管：全网最强白嫖 5
+      - JP_8881+@WangCai_1
+      - JP_6697+@WangCai_1
+      - JP_6379+@WangCai_1
+      - 印度01 E | 1.5x
+      - 印度01 D | 1.5x
+      - TG@nodesharing_70
+      - 14.29.124.174:11047
+      - univstar-GB_1
+      - univstar-香港HKBN-dip
+      - 中国_TG@nodesharing_91
+      - SG_794 | 4.96Mb
+      - _ca4072071898
+      - tktrojan
+      - _c8ca3c366
+      - CN_57
+      - univstar-台湾-iepl_2
+      - TG@nodesharing_94
+      - DE_295 |46.37Mb
+      - ip1
+      - TG@nodesharing_97
+      - _油管频道：全网最强白嫖
+      - github.com/freefq - 广东省珠海市电信 34
       - _油管：全网最强白嫖 6
-      - Hoàng HN7
+      - 关注电报https://t.me/mftizi
+      - _油管：全网最强白嫖 7
+      - Relay_🇨🇳CN-🇺🇸US_214
+      - TG@nodesharing_108
+      - RU 1｜openit.ml
+      - CN-高速节点推荐：v1.mk/vip（浏览器打开） 2
+      - _77 | 4.05Mb
+      - JP_8080+@WangCai_1
+      - JP_6679+@WangCai_1
+      - 美国01 B | 1.5x
+      - 德国-1.15MB/s(Youtube:不良林)
+      - US_2242
+      - 美国_TG@nodesharing_127
+      - US-高速节点推荐：v1.mk/vip（浏览器打开）
+      - "@SSRSUB-V08-付费推荐:suo.yt/ssrsub"
+      - "@SSRSUB-V08-付费推荐:suo.yt/ssrsub 2"
+      - _ca4072078
+      - TG@nodesharing_112
+      - 丨日本-2
+      - SG-高速节点推荐：v1.mk/vip（浏览器打开）
+      - unknown 1｜openit.ml
+      - CN-高速节点推荐：v1.mk/vip（浏览器打开） 3
+      - 俄罗斯01 B | x1.2
+      - univstar-香港-iepl_4
+      - univstar-香港_1 002
+      - univstar-KR_1 002
+      - 中国_TG@nodesharing_200
+      - univstar-US_2 001
+      - US_2171
+      - "@SSRSUB-V14-付费推荐:suo.yt/ssrsub"
+      - US_2102
+      - TG@nodesharing_61
+      - ☆白嫖联盟_______9
+      - CN_176
+      - _油管：全网最强白嫖 8
+      - US-高速节点推荐：v1.mk/vip
+      - US_1514
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - beikui059
-      - beikui054
-      - beikui 054
-      - 香港11 | 上海
-      - 香港06 | 上海
-      - beikui 074
-      - beikui064
-      - beikui056
-      - 日本02
-      - 新加坡09 | IEPL | 上海 | 4x
-      - 香港06 | IEPL | 上海 | 4x
-      - beikui 091
-      - 新加坡07 | IEPL | 上海 | 4x
-      - beikui098
-      - 香港07 | 上海
-      - beikui074
-      - 新加坡05 | IEPL | 上海 | 4x
-      - 新加坡08 | IEPL | 上海 | 4x
-      - beikui 064
-      - 新加坡04 | 上海
-      - beikui 098
-      - 新加坡02 | IEPL | 上海 | 4x
-      - 新加坡02 | 广港
-      - beikui 080
-      - beikui 056
-      - beikui 060
-      - beikui080
-      - beikui093
-      - beikui 059
-      - beikui 093
-      - beikui092
-      - beikui062
-      - beikui 065
-      - beikui 092
-      - beikui 081
-      - beikui 055
-      - beikui058
-      - 美西原生IPLC中转
-      - 新加坡04 | IEPL | 上海 | 4x
-      - AJKSOS.TOP_9
-      - beikui 057
-      - 新加坡01 | 上海
-      - beikui 071
-      - beikui068
-      - 新加坡03 | IEPL | 上海 | 4x
-      - beikui073
-      - beikui091
-      - beikui078
-      - beikui055
-      - beikui072
-      - beikui081
-      - beikui057
-      - beikui 073
-      - beikui070
-      - 新加坡07 | 上海
-      - 美国02
-      - beikui 062
-      - beikui 052
-      - beikui 072
-      - beikui069
-      - beikui 069
-      - 美国05
-      - 香港11 | 湖南
-      - 新加坡05 | 上海
-      - 🇨🇳
-      - 香港03 | IEPL | 北京 | 4x
-      - 新加坡05 | IEPL | 北京 | 4x
-      - _HK_香港
-      - 日本 VIP2节点23-中转
-      - 香港07 | IEPL | 北京 | 4x
-      - 中国-2.58MB/s(Youtube:不良林)
-      - 新加坡02 | IEPL | 北京 | 4x
-      - 台湾120G流量001
-      - beikui097
-      - 广港隧道-台湾
-      - 香港HKT-优化
-      - 香港07 | 广港
-      - 香港06 | IEPL | 北京 | 4x
-      - 香港2-tg频道:@ripaojiedian
-      - 台湾120G流量 002
-      - 新加坡09 | IEPL | 北京 | 4x
-      - 新加坡03 | IEPL | 北京 | 4x
-      - 香港优化-tg频道:@ripaojiedian
-      - 香港11 | IEPL | 北京
-      - 台湾120G流量+003
-      - 日本 VIP2节点11 原生IP-中转
-      - 新加坡08 | 广港
-      - 台湾120g流量
-      - 新加坡04 | IEPL | 北京 | 4x
-      - 新加坡08 | IEPL | 北京 | 4x
-      - 香港HKIX | 广港
-      - 香港07 | IEPL | 北京
-      - 香港03 | 广港
-      - 新加坡08 | IEPL | 北京
-      - 新加坡03 | 广港
-      - beikui 095
-      - 香港HGC | IEPL | 北京
-      - beikui095
-      - 新加坡09 | 广港
-      - 香港03 | IEPL | 北京
-      - 俄罗斯
-      - 🇨🇳 2
-      - 美国120G流量
-      - _CN_中国_禁止刷大流量_3
-      - 官址：xf.gl
-      - 英国120G流量
-      - beikui076
-      - beikui 097
-      - hk1dawz.cfvmess-grpc
-      - 俄罗斯 VIP2节点1-中转
-      - 19.HongKong💥
-      - beikui086
-      - beikui 090
-      - beikui 079
-      - beikui 076
-      - 19. HongKong💥
-      - 20.🇭🇰HongkongTLS
-      - beikui084
-      - beikui 077
-      - 日本_TG@nodesharing_12
-      - 20. 🇭🇰 Hongkong TLS
-      - jp3sgaz.gavmess-grpc
-      - beikui079
-      - 日本_TG@nodesharing_45
-      - beikui085
-      - beikui 085
-      - beikui 087
-      - beikui 088
-      - beikui096
-      - hk1dawz.cfvmess-grpc 2
-      - beikui 096
-      - jp3sgaz.gavmess-grpc 2
-      - beikui 084
-      - beikui075
-      - _1276 | 0.64Mb
-      - beikui087
-      - beikui 094
-      - beikui094
-      - 香港
-      - beikui 001
-      - beikui089
-      - beikui001
-      - CN_200
+      - 香港A
+      - 越南 | 深港IEPL
       - CN_158
-      - beikui088
-      - 香港杨枝甘露+03-D_1
-      - _油管频道：全网最强白嫖
-      - Eva - US - GIA CN2 - V2ray
-      - Eva - US - Trojan
-      - JP_5500 @WangCai_1
-      - Zero - US - Trojan
-      - 台湾优化-tg频道:@ripaojiedian
-      - 1.🦁 Hà Nội
-      - 107.172.102.90:5997
-      - 美国洛杉矶-cc
-      - SG A 004
-      - 美国04|CF优选中转|免费
-      - cacaaz.mlvmess-grpc
-      - 14.29.124.174:11009
-      - CN_176
-      - CA_124
-      - TG@nodesharing_108
-      - 美国-tg频道:@ripaojiedian
-      - 🇨🇳 3
-      - CN_187
-      - 🇨🇳 4
-      - Polaris - US - V2ray
-      - 中国_TG@nodesharing_41
-      - Mosaic - DE - Trojan
-      - CN_169
-      - JP_8090 @WangCai_1
-      - JP_8000 @WangCai_1
-      - TG@nodesharing_112
-      - JP_2758 | 7.33Mb
       - _油管：全网最强白嫖
-      - 中国_TG@nodesharing_61
-      - 俄罗斯 VIP2节点24-中转
-      - 美国001
+      - TG@nodesharing_33
+      - CN_240 | 9.97Mb
+      - 日本 VIP2节点11 原生IP-中转
+      - TG@nodesharing_40
+      - BGP-01-香港-多地优化
+      - CN_241 | 9.51Mb
+      - TG@nodesharing_23
+      - 韩国 | 广港隧道
+      - TG@nodesharing_58
+      - 12
+      - 美国120g流量
+      - TG@nodesharing_49
+      - TG@nodesharing_44
+      - beikui
+      - CN 8｜openit.ml
+      - 🇨🇳
+      - CN-高速节点推荐：v1.mk/vip（浏览器打开） 23
+      - AJKSOS.TOP_9
+      - Alien
+      - HK_38
       - _油管：全网最强白嫖 2
-      - 3.✴️HàNội10Gb/s
-      - unknown 1｜openit.ml
-      - US, Los Angeles
-      - JP_5000 @WangCai_1
-      - 慢速稳定丨韩国-3（仅防失联）
-      - 美国 003
-      - 美国 001
-      - Cindy - KR - CN2 - V2ray
-      - tktrojan
-      - 加拿大_TG@nodesharing_144
-      - CN_180
-      - JP_5600 @WangCai_1
-      - 丨日本-2
-      - 慢速稳定丨韩国-3（仅防失联） 2
-      - 防失联节点-tg频道:@ripaojiedian
-      - univstar-SG_2 2
-      - 7.💣Vnetwork1
-      - Cindy - KR - Trojan
-      - JP_5004 @WangCai_1
-      - 中国_TG@nodesharing_189
       - _油管：全网最强白嫖 3
-      - NL 1｜
-      - JP_2376 @WangCai_1
-      - Australia🇦🇺
-      - 丨日本-2 2
-      - 4. 🎭Garena LOL 2
-      - 7. 💣Vnetwork 1
-      - _1590 | 3.86Mb
-      - 韩国-tg频道:@ripaojiedian
-      - 免费梯子https://t.me/mftizi
-      - 4.🎭GarenaLOL2
-      - 台湾-711.6KB/s(Youtube:不良林)
-      - 13.💥HCM-Gaming
-      - 中国_TG@nodesharing_129
+      - beikui 2
+      - _CN_中国_禁止刷大流量_3
+      - _CN_中国_禁止刷大流量_7
+      - _CN_中国_禁止刷大流量_9
+      - beikui 22
+      - hk1dawz.cfvmess-grpc
+      - 印度01 A | 1.5x
+      - jp3sgaz.gavmess-grpc
+      - beikui 3
+      - beikui 7
+      - TG@nodesharing_7
+      - CN-高速节点推荐：v1.mk/vip（浏览器打开） 22
+      - beikui 18
+      - beikui 23
+      - beikui 4
+      - beikui 5
+      - beikui 6
+      - TG@nodesharing_36
+      - beikui 8
+      - beikui 12
+      - JPB002
+      - beikui 9
+      - beikui 13
+      - Eva - US - Trojan
+      - beikui 11
+      - TG@nodesharing_39
+      - 14.29.124.168:25252
+      - _1852 | 4.88Mb
+      - CA_122
+      - TG@nodesharing_43
+      - beikui 10
+      - Zero - US - Trojan
+      - 14.29.124.174:11009
+      - beikui 14
+      - beikui 15
+      - beikui 16
+      - beikui 17
+      - beikui 19
+      - beikui 20
+      - 🇨🇳 2
+      - CN-高速节点推荐：v1.mk/vip（浏览器打开）
+      - beikui 21
+      - beikui 24
+      - 🇷🇺
+      - 美国03 A |  1.5x
+      - 美国洛杉矶-cc
+      - beikui 25
+      - 土耳其01 D | 2x
+      - tkvmess
+      - beikui 26
+      - beikui 27
+      - CN_2385 | 0.74Mb
+      - TG@nodesharing_86
+      - CN_62
       - _油管：全网最强白嫖 4
-      - univstar-JP-iepl
-      - 意大利-1.26MB/s(Youtube:不良林)
-      - "@SSRSUB-美国V04-付费推荐:dlj.tf/ssrsub"
-      - US_3933 | 6.22Mb
-      - 13. 💥HCM-Gaming
-      - 2.🦁HồChíMinh
-      - US-高速节点推荐：v1.mk/vip（浏览器打开）
+      - univstar-台湾
+      - TG@nodesharing_93
+      - 美国04|CF优选中转|免费
+      - beikui 28
+      - beikui 29
+      - github.com/freefq - 美国3COM公司企业网 3
+      - TG@nodesharing_45
+      - TG@nodesharing_53
+      - univstar-TR
+      - TG@nodesharing_38
+      - beikui 30
+      - CN-高速节点推荐：v1.mk/vip（浏览器打开） 48
+      - univstar-BR
+      - 防失联节点-tg频道:@ripaojiedian
+      - TG@nodesharing_75
+      - beikui 31
+      - CN_200
+      - CN_46
+      - 韩国01 A | x1.5
+      - 韩国01 A | x1.5 2
+      - 东京直连V2
+      - CN_74
+      - CN-高速节点推荐：v1.mk/vip（浏览器打开） 31
+      - JP_3389+@WangCai_1
+      - 美国03 B |  1.5x
+      - 中国_TG@nodesharing_41
+      - TG@nodesharing_51
+      - Polaris - US - V2ray
+      - Mosaic - DE - Trojan
+      - _1895 | 5.99Mb
+      - JP_8888+@WangCai_1
+      - JP_8118+@WangCai_1
+      - JP_8008+@WangCai_1
+      - JP_8000+@WangCai_1
+      - JP_5600+@WangCai_1
+      - JP_5003+@WangCai_1
+      - 东京直连V2 2
+      - TG@nodesharing_37
+      - US-高速节点推荐：v2cross.com（浏览器打开）
+      - Australia🇦🇺
+      - TG@nodesharing_98
+      - JP_9101+@WangCai_1
+      - JP_8882+@WangCai_1
+      - JP_8091+@WangCai_1
+      - JP_8090+@WangCai_1
+      - JP_8009+@WangCai_1
+      - JP_7306+@WangCai_1
+      - JP_5004+@WangCai_1
+      - JP_2376+@WangCai_1
+      - JP_2375+@WangCai_1
+      - 新加坡直连-1
+      - univstar-GB_2
+      - 俄罗斯01 D | x1.2
+      - _1113 | 0.01Mb
+      - beikui 32
+      - 美国(TG频道:@kxswa)22
+      - beikui 33
+      - CN-高速节点推荐：v1.mk/vip（浏览器打开） 6
+      - JP_5500+@WangCai_1
+      - JP_5000+@WangCai_1
       - _油管：全网最强白嫖 5
+      - JP_8881+@WangCai_1
+      - JP_6697+@WangCai_1
+      - JP_6379+@WangCai_1
+      - 印度01 E | 1.5x
+      - 印度01 D | 1.5x
+      - TG@nodesharing_70
+      - 14.29.124.174:11047
+      - univstar-GB_1
+      - univstar-香港HKBN-dip
+      - 中国_TG@nodesharing_91
+      - SG_794 | 4.96Mb
+      - _ca4072071898
+      - tktrojan
+      - _c8ca3c366
+      - CN_57
+      - univstar-台湾-iepl_2
+      - TG@nodesharing_94
+      - DE_295 |46.37Mb
+      - ip1
+      - TG@nodesharing_97
+      - _油管频道：全网最强白嫖
+      - github.com/freefq - 广东省珠海市电信 34
       - _油管：全网最强白嫖 6
-      - Hoàng HN7
+      - 关注电报https://t.me/mftizi
+      - _油管：全网最强白嫖 7
+      - Relay_🇨🇳CN-🇺🇸US_214
+      - TG@nodesharing_108
+      - RU 1｜openit.ml
+      - CN-高速节点推荐：v1.mk/vip（浏览器打开） 2
+      - _77 | 4.05Mb
+      - JP_8080+@WangCai_1
+      - JP_6679+@WangCai_1
+      - 美国01 B | 1.5x
+      - 德国-1.15MB/s(Youtube:不良林)
+      - US_2242
+      - 美国_TG@nodesharing_127
+      - US-高速节点推荐：v1.mk/vip（浏览器打开）
+      - "@SSRSUB-V08-付费推荐:suo.yt/ssrsub"
+      - "@SSRSUB-V08-付费推荐:suo.yt/ssrsub 2"
+      - _ca4072078
+      - TG@nodesharing_112
+      - 丨日本-2
+      - SG-高速节点推荐：v1.mk/vip（浏览器打开）
+      - unknown 1｜openit.ml
+      - CN-高速节点推荐：v1.mk/vip（浏览器打开） 3
+      - 俄罗斯01 B | x1.2
+      - univstar-香港-iepl_4
+      - univstar-香港_1 002
+      - univstar-KR_1 002
+      - 中国_TG@nodesharing_200
+      - univstar-US_2 001
+      - US_2171
+      - "@SSRSUB-V14-付费推荐:suo.yt/ssrsub"
+      - US_2102
+      - TG@nodesharing_61
+      - ☆白嫖联盟_______9
+      - CN_176
+      - _油管：全网最强白嫖 8
+      - US-高速节点推荐：v1.mk/vip
+      - US_1514
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -936,959 +848,845 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - beikui059
-      - beikui054
-      - beikui 054
-      - 香港11 | 上海
-      - 香港06 | 上海
-      - beikui 074
-      - beikui064
-      - beikui056
-      - 日本02
-      - 新加坡09 | IEPL | 上海 | 4x
-      - 香港06 | IEPL | 上海 | 4x
-      - beikui 091
-      - 新加坡07 | IEPL | 上海 | 4x
-      - beikui098
-      - 香港07 | 上海
-      - beikui074
-      - 新加坡05 | IEPL | 上海 | 4x
-      - 新加坡08 | IEPL | 上海 | 4x
-      - beikui 064
-      - 新加坡04 | 上海
-      - beikui 098
-      - 新加坡02 | IEPL | 上海 | 4x
-      - 新加坡02 | 广港
-      - beikui 080
-      - beikui 056
-      - beikui 060
-      - beikui080
-      - beikui093
-      - beikui 059
-      - beikui 093
-      - beikui092
-      - beikui062
-      - beikui 065
-      - beikui 092
-      - beikui 081
-      - beikui 055
-      - beikui058
-      - 美西原生IPLC中转
-      - 新加坡04 | IEPL | 上海 | 4x
-      - AJKSOS.TOP_9
-      - beikui 057
-      - 新加坡01 | 上海
-      - beikui 071
-      - beikui068
-      - 新加坡03 | IEPL | 上海 | 4x
-      - beikui073
-      - beikui091
-      - beikui078
-      - beikui055
-      - beikui072
-      - beikui081
-      - beikui057
-      - beikui 073
-      - beikui070
-      - 新加坡07 | 上海
-      - 美国02
-      - beikui 062
-      - beikui 052
-      - beikui 072
-      - beikui069
-      - beikui 069
-      - 美国05
-      - 香港11 | 湖南
-      - 新加坡05 | 上海
-      - 🇨🇳
-      - 香港03 | IEPL | 北京 | 4x
-      - 新加坡05 | IEPL | 北京 | 4x
-      - _HK_香港
-      - 日本 VIP2节点23-中转
-      - 香港07 | IEPL | 北京 | 4x
-      - 中国-2.58MB/s(Youtube:不良林)
-      - 新加坡02 | IEPL | 北京 | 4x
-      - 台湾120G流量001
-      - beikui097
-      - 广港隧道-台湾
-      - 香港HKT-优化
-      - 香港07 | 广港
-      - 香港06 | IEPL | 北京 | 4x
-      - 香港2-tg频道:@ripaojiedian
-      - 台湾120G流量 002
-      - 新加坡09 | IEPL | 北京 | 4x
-      - 新加坡03 | IEPL | 北京 | 4x
-      - 香港优化-tg频道:@ripaojiedian
-      - 香港11 | IEPL | 北京
-      - 台湾120G流量+003
-      - 日本 VIP2节点11 原生IP-中转
-      - 新加坡08 | 广港
-      - 台湾120g流量
-      - 新加坡04 | IEPL | 北京 | 4x
-      - 新加坡08 | IEPL | 北京 | 4x
-      - 香港HKIX | 广港
-      - 香港07 | IEPL | 北京
-      - 香港03 | 广港
-      - 新加坡08 | IEPL | 北京
-      - 新加坡03 | 广港
-      - beikui 095
-      - 香港HGC | IEPL | 北京
-      - beikui095
-      - 新加坡09 | 广港
-      - 香港03 | IEPL | 北京
-      - 俄罗斯
-      - 🇨🇳 2
-      - 美国120G流量
-      - _CN_中国_禁止刷大流量_3
-      - 官址：xf.gl
-      - 英国120G流量
-      - beikui076
-      - beikui 097
-      - hk1dawz.cfvmess-grpc
-      - 俄罗斯 VIP2节点1-中转
-      - 19.HongKong💥
-      - beikui086
-      - beikui 090
-      - beikui 079
-      - beikui 076
-      - 19. HongKong💥
-      - 20.🇭🇰HongkongTLS
-      - beikui084
-      - beikui 077
-      - 日本_TG@nodesharing_12
-      - 20. 🇭🇰 Hongkong TLS
-      - jp3sgaz.gavmess-grpc
-      - beikui079
-      - 日本_TG@nodesharing_45
-      - beikui085
-      - beikui 085
-      - beikui 087
-      - beikui 088
-      - beikui096
-      - hk1dawz.cfvmess-grpc 2
-      - beikui 096
-      - jp3sgaz.gavmess-grpc 2
-      - beikui 084
-      - beikui075
-      - _1276 | 0.64Mb
-      - beikui087
-      - beikui 094
-      - beikui094
-      - 香港
-      - beikui 001
-      - beikui089
-      - beikui001
-      - CN_200
+      - 香港A
+      - 越南 | 深港IEPL
       - CN_158
-      - beikui088
-      - 香港杨枝甘露+03-D_1
-      - _油管频道：全网最强白嫖
-      - Eva - US - GIA CN2 - V2ray
-      - Eva - US - Trojan
-      - JP_5500 @WangCai_1
-      - Zero - US - Trojan
-      - 台湾优化-tg频道:@ripaojiedian
-      - 1.🦁 Hà Nội
-      - 107.172.102.90:5997
-      - 美国洛杉矶-cc
-      - SG A 004
-      - 美国04|CF优选中转|免费
-      - cacaaz.mlvmess-grpc
-      - 14.29.124.174:11009
-      - CN_176
-      - CA_124
-      - TG@nodesharing_108
-      - 美国-tg频道:@ripaojiedian
-      - 🇨🇳 3
-      - CN_187
-      - 🇨🇳 4
-      - Polaris - US - V2ray
-      - 中国_TG@nodesharing_41
-      - Mosaic - DE - Trojan
-      - CN_169
-      - JP_8090 @WangCai_1
-      - JP_8000 @WangCai_1
-      - TG@nodesharing_112
-      - JP_2758 | 7.33Mb
       - _油管：全网最强白嫖
-      - 中国_TG@nodesharing_61
-      - 俄罗斯 VIP2节点24-中转
-      - 美国001
+      - TG@nodesharing_33
+      - CN_240 | 9.97Mb
+      - 日本 VIP2节点11 原生IP-中转
+      - TG@nodesharing_40
+      - BGP-01-香港-多地优化
+      - CN_241 | 9.51Mb
+      - TG@nodesharing_23
+      - 韩国 | 广港隧道
+      - TG@nodesharing_58
+      - 12
+      - 美国120g流量
+      - TG@nodesharing_49
+      - TG@nodesharing_44
+      - beikui
+      - CN 8｜openit.ml
+      - 🇨🇳
+      - CN-高速节点推荐：v1.mk/vip（浏览器打开） 23
+      - AJKSOS.TOP_9
+      - Alien
+      - HK_38
       - _油管：全网最强白嫖 2
-      - 3.✴️HàNội10Gb/s
-      - unknown 1｜openit.ml
-      - US, Los Angeles
-      - JP_5000 @WangCai_1
-      - 慢速稳定丨韩国-3（仅防失联）
-      - 美国 003
-      - 美国 001
-      - Cindy - KR - CN2 - V2ray
-      - tktrojan
-      - 加拿大_TG@nodesharing_144
-      - CN_180
-      - JP_5600 @WangCai_1
-      - 丨日本-2
-      - 慢速稳定丨韩国-3（仅防失联） 2
-      - 防失联节点-tg频道:@ripaojiedian
-      - univstar-SG_2 2
-      - 7.💣Vnetwork1
-      - Cindy - KR - Trojan
-      - JP_5004 @WangCai_1
-      - 中国_TG@nodesharing_189
       - _油管：全网最强白嫖 3
-      - NL 1｜
-      - JP_2376 @WangCai_1
-      - Australia🇦🇺
-      - 丨日本-2 2
-      - 4. 🎭Garena LOL 2
-      - 7. 💣Vnetwork 1
-      - _1590 | 3.86Mb
-      - 韩国-tg频道:@ripaojiedian
-      - 免费梯子https://t.me/mftizi
-      - 4.🎭GarenaLOL2
-      - 台湾-711.6KB/s(Youtube:不良林)
-      - 13.💥HCM-Gaming
-      - 中国_TG@nodesharing_129
+      - beikui 2
+      - _CN_中国_禁止刷大流量_3
+      - _CN_中国_禁止刷大流量_7
+      - _CN_中国_禁止刷大流量_9
+      - beikui 22
+      - hk1dawz.cfvmess-grpc
+      - 印度01 A | 1.5x
+      - jp3sgaz.gavmess-grpc
+      - beikui 3
+      - beikui 7
+      - TG@nodesharing_7
+      - CN-高速节点推荐：v1.mk/vip（浏览器打开） 22
+      - beikui 18
+      - beikui 23
+      - beikui 4
+      - beikui 5
+      - beikui 6
+      - TG@nodesharing_36
+      - beikui 8
+      - beikui 12
+      - JPB002
+      - beikui 9
+      - beikui 13
+      - Eva - US - Trojan
+      - beikui 11
+      - TG@nodesharing_39
+      - 14.29.124.168:25252
+      - _1852 | 4.88Mb
+      - CA_122
+      - TG@nodesharing_43
+      - beikui 10
+      - Zero - US - Trojan
+      - 14.29.124.174:11009
+      - beikui 14
+      - beikui 15
+      - beikui 16
+      - beikui 17
+      - beikui 19
+      - beikui 20
+      - 🇨🇳 2
+      - CN-高速节点推荐：v1.mk/vip（浏览器打开）
+      - beikui 21
+      - beikui 24
+      - 🇷🇺
+      - 美国03 A |  1.5x
+      - 美国洛杉矶-cc
+      - beikui 25
+      - 土耳其01 D | 2x
+      - tkvmess
+      - beikui 26
+      - beikui 27
+      - CN_2385 | 0.74Mb
+      - TG@nodesharing_86
+      - CN_62
       - _油管：全网最强白嫖 4
-      - univstar-JP-iepl
-      - 意大利-1.26MB/s(Youtube:不良林)
-      - "@SSRSUB-美国V04-付费推荐:dlj.tf/ssrsub"
-      - US_3933 | 6.22Mb
-      - 13. 💥HCM-Gaming
-      - 2.🦁HồChíMinh
-      - US-高速节点推荐：v1.mk/vip（浏览器打开）
+      - univstar-台湾
+      - TG@nodesharing_93
+      - 美国04|CF优选中转|免费
+      - beikui 28
+      - beikui 29
+      - github.com/freefq - 美国3COM公司企业网 3
+      - TG@nodesharing_45
+      - TG@nodesharing_53
+      - univstar-TR
+      - TG@nodesharing_38
+      - beikui 30
+      - CN-高速节点推荐：v1.mk/vip（浏览器打开） 48
+      - univstar-BR
+      - 防失联节点-tg频道:@ripaojiedian
+      - TG@nodesharing_75
+      - beikui 31
+      - CN_200
+      - CN_46
+      - 韩国01 A | x1.5
+      - 韩国01 A | x1.5 2
+      - 东京直连V2
+      - CN_74
+      - CN-高速节点推荐：v1.mk/vip（浏览器打开） 31
+      - JP_3389+@WangCai_1
+      - 美国03 B |  1.5x
+      - 中国_TG@nodesharing_41
+      - TG@nodesharing_51
+      - Polaris - US - V2ray
+      - Mosaic - DE - Trojan
+      - _1895 | 5.99Mb
+      - JP_8888+@WangCai_1
+      - JP_8118+@WangCai_1
+      - JP_8008+@WangCai_1
+      - JP_8000+@WangCai_1
+      - JP_5600+@WangCai_1
+      - JP_5003+@WangCai_1
+      - 东京直连V2 2
+      - TG@nodesharing_37
+      - US-高速节点推荐：v2cross.com（浏览器打开）
+      - Australia🇦🇺
+      - TG@nodesharing_98
+      - JP_9101+@WangCai_1
+      - JP_8882+@WangCai_1
+      - JP_8091+@WangCai_1
+      - JP_8090+@WangCai_1
+      - JP_8009+@WangCai_1
+      - JP_7306+@WangCai_1
+      - JP_5004+@WangCai_1
+      - JP_2376+@WangCai_1
+      - JP_2375+@WangCai_1
+      - 新加坡直连-1
+      - univstar-GB_2
+      - 俄罗斯01 D | x1.2
+      - _1113 | 0.01Mb
+      - beikui 32
+      - 美国(TG频道:@kxswa)22
+      - beikui 33
+      - CN-高速节点推荐：v1.mk/vip（浏览器打开） 6
+      - JP_5500+@WangCai_1
+      - JP_5000+@WangCai_1
       - _油管：全网最强白嫖 5
+      - JP_8881+@WangCai_1
+      - JP_6697+@WangCai_1
+      - JP_6379+@WangCai_1
+      - 印度01 E | 1.5x
+      - 印度01 D | 1.5x
+      - TG@nodesharing_70
+      - 14.29.124.174:11047
+      - univstar-GB_1
+      - univstar-香港HKBN-dip
+      - 中国_TG@nodesharing_91
+      - SG_794 | 4.96Mb
+      - _ca4072071898
+      - tktrojan
+      - _c8ca3c366
+      - CN_57
+      - univstar-台湾-iepl_2
+      - TG@nodesharing_94
+      - DE_295 |46.37Mb
+      - ip1
+      - TG@nodesharing_97
+      - _油管频道：全网最强白嫖
+      - github.com/freefq - 广东省珠海市电信 34
       - _油管：全网最强白嫖 6
-      - Hoàng HN7
+      - 关注电报https://t.me/mftizi
+      - _油管：全网最强白嫖 7
+      - Relay_🇨🇳CN-🇺🇸US_214
+      - TG@nodesharing_108
+      - RU 1｜openit.ml
+      - CN-高速节点推荐：v1.mk/vip（浏览器打开） 2
+      - _77 | 4.05Mb
+      - JP_8080+@WangCai_1
+      - JP_6679+@WangCai_1
+      - 美国01 B | 1.5x
+      - 德国-1.15MB/s(Youtube:不良林)
+      - US_2242
+      - 美国_TG@nodesharing_127
+      - US-高速节点推荐：v1.mk/vip（浏览器打开）
+      - "@SSRSUB-V08-付费推荐:suo.yt/ssrsub"
+      - "@SSRSUB-V08-付费推荐:suo.yt/ssrsub 2"
+      - _ca4072078
+      - TG@nodesharing_112
+      - 丨日本-2
+      - SG-高速节点推荐：v1.mk/vip（浏览器打开）
+      - unknown 1｜openit.ml
+      - CN-高速节点推荐：v1.mk/vip（浏览器打开） 3
+      - 俄罗斯01 B | x1.2
+      - univstar-香港-iepl_4
+      - univstar-香港_1 002
+      - univstar-KR_1 002
+      - 中国_TG@nodesharing_200
+      - univstar-US_2 001
+      - US_2171
+      - "@SSRSUB-V14-付费推荐:suo.yt/ssrsub"
+      - US_2102
+      - TG@nodesharing_61
+      - ☆白嫖联盟_______9
+      - CN_176
+      - _油管：全网最强白嫖 8
+      - US-高速节点推荐：v1.mk/vip
+      - US_1514
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 香港11 | 上海
-      - 香港06 | 上海
-      - 香港06 | IEPL | 上海 | 4x
-      - 香港07 | 上海
-      - 新加坡02 | 广港
-      - 香港11 | 湖南
-      - 香港03 | IEPL | 北京 | 4x
-      - _HK_香港
-      - 香港07 | IEPL | 北京 | 4x
-      - 台湾120G流量001
-      - 广港隧道-台湾
-      - 香港HKT-优化
-      - 香港07 | 广港
-      - 香港06 | IEPL | 北京 | 4x
-      - 香港2-tg频道:@ripaojiedian
-      - 台湾120G流量 002
-      - 香港优化-tg频道:@ripaojiedian
-      - 香港11 | IEPL | 北京
-      - 台湾120G流量+003
-      - 新加坡08 | 广港
-      - 台湾120g流量
-      - 香港HKIX | 广港
-      - 香港07 | IEPL | 北京
-      - 香港03 | 广港
-      - 新加坡03 | 广港
-      - 香港HGC | IEPL | 北京
-      - 新加坡09 | 广港
-      - 香港03 | IEPL | 北京
+      - 香港A
+      - 越南 | 深港IEPL
+      - BGP-01-香港-多地优化
+      - 韩国 | 广港隧道
       - hk1dawz.cfvmess-grpc
-      - hk1dawz.cfvmess-grpc 2
-      - 香港
-      - 香港杨枝甘露+03-D_1
-      - 台湾优化-tg频道:@ripaojiedian
-      - 7.💣Vnetwork1
-      - 7. 💣Vnetwork 1
-      - 台湾-711.6KB/s(Youtube:不良林)
+      - univstar-台湾
+      - univstar-香港HKBN-dip
+      - univstar-台湾-iepl_2
+      - univstar-香港-iepl_4
+      - univstar-香港_1 002
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - beikui059
-      - beikui054
-      - beikui 054
-      - 香港11 | 上海
-      - 香港06 | 上海
-      - beikui 074
-      - beikui064
-      - beikui056
-      - 日本02
-      - 新加坡09 | IEPL | 上海 | 4x
-      - 香港06 | IEPL | 上海 | 4x
-      - beikui 091
-      - 新加坡07 | IEPL | 上海 | 4x
-      - beikui098
-      - 香港07 | 上海
-      - beikui074
-      - 新加坡05 | IEPL | 上海 | 4x
-      - 新加坡08 | IEPL | 上海 | 4x
-      - beikui 064
-      - 新加坡04 | 上海
-      - beikui 098
-      - 新加坡02 | IEPL | 上海 | 4x
-      - 新加坡02 | 广港
-      - beikui 080
-      - beikui 056
-      - beikui 060
-      - beikui080
-      - beikui093
-      - beikui 059
-      - beikui 093
-      - beikui092
-      - beikui062
-      - beikui 065
-      - beikui 092
-      - beikui 081
-      - beikui 055
-      - beikui058
-      - 美西原生IPLC中转
-      - 新加坡04 | IEPL | 上海 | 4x
-      - AJKSOS.TOP_9
-      - beikui 057
-      - 新加坡01 | 上海
-      - beikui 071
-      - beikui068
-      - 新加坡03 | IEPL | 上海 | 4x
-      - beikui073
-      - beikui091
-      - beikui078
-      - beikui055
-      - beikui072
-      - beikui081
-      - beikui057
-      - beikui 073
-      - beikui070
-      - 新加坡07 | 上海
-      - 美国02
-      - beikui 062
-      - beikui 052
-      - beikui 072
-      - beikui069
-      - beikui 069
-      - 美国05
-      - 香港11 | 湖南
-      - 新加坡05 | 上海
-      - 🇨🇳
-      - 香港03 | IEPL | 北京 | 4x
-      - 新加坡05 | IEPL | 北京 | 4x
-      - _HK_香港
-      - 日本 VIP2节点23-中转
-      - 香港07 | IEPL | 北京 | 4x
-      - 中国-2.58MB/s(Youtube:不良林)
-      - 新加坡02 | IEPL | 北京 | 4x
-      - 台湾120G流量001
-      - beikui097
-      - 广港隧道-台湾
-      - 香港HKT-优化
-      - 香港07 | 广港
-      - 香港06 | IEPL | 北京 | 4x
-      - 香港2-tg频道:@ripaojiedian
-      - 台湾120G流量 002
-      - 新加坡09 | IEPL | 北京 | 4x
-      - 新加坡03 | IEPL | 北京 | 4x
-      - 香港优化-tg频道:@ripaojiedian
-      - 香港11 | IEPL | 北京
-      - 台湾120G流量+003
-      - 日本 VIP2节点11 原生IP-中转
-      - 新加坡08 | 广港
-      - 台湾120g流量
-      - 新加坡04 | IEPL | 北京 | 4x
-      - 新加坡08 | IEPL | 北京 | 4x
-      - 香港HKIX | 广港
-      - 香港07 | IEPL | 北京
-      - 香港03 | 广港
-      - 新加坡08 | IEPL | 北京
-      - 新加坡03 | 广港
-      - beikui 095
-      - 香港HGC | IEPL | 北京
-      - beikui095
-      - 新加坡09 | 广港
-      - 香港03 | IEPL | 北京
-      - 俄罗斯
-      - 🇨🇳 2
-      - 美国120G流量
-      - _CN_中国_禁止刷大流量_3
-      - 官址：xf.gl
-      - 英国120G流量
-      - beikui076
-      - beikui 097
-      - hk1dawz.cfvmess-grpc
-      - 俄罗斯 VIP2节点1-中转
-      - 19.HongKong💥
-      - beikui086
-      - beikui 090
-      - beikui 079
-      - beikui 076
-      - 19. HongKong💥
-      - 20.🇭🇰HongkongTLS
-      - beikui084
-      - beikui 077
-      - 日本_TG@nodesharing_12
-      - 20. 🇭🇰 Hongkong TLS
-      - jp3sgaz.gavmess-grpc
-      - beikui079
-      - 日本_TG@nodesharing_45
-      - beikui085
-      - beikui 085
-      - beikui 087
-      - beikui 088
-      - beikui096
-      - hk1dawz.cfvmess-grpc 2
-      - beikui 096
-      - jp3sgaz.gavmess-grpc 2
-      - beikui 084
-      - beikui075
-      - _1276 | 0.64Mb
-      - beikui087
-      - beikui 094
-      - beikui094
-      - 香港
-      - beikui 001
-      - beikui089
-      - beikui001
-      - CN_200
+      - 香港A
+      - 越南 | 深港IEPL
       - CN_158
-      - beikui088
-      - 香港杨枝甘露+03-D_1
-      - _油管频道：全网最强白嫖
-      - Eva - US - GIA CN2 - V2ray
-      - Eva - US - Trojan
-      - JP_5500 @WangCai_1
-      - Zero - US - Trojan
-      - 台湾优化-tg频道:@ripaojiedian
-      - 1.🦁 Hà Nội
-      - 107.172.102.90:5997
-      - 美国洛杉矶-cc
-      - SG A 004
-      - 美国04|CF优选中转|免费
-      - cacaaz.mlvmess-grpc
-      - 14.29.124.174:11009
-      - CN_176
-      - CA_124
-      - TG@nodesharing_108
-      - 美国-tg频道:@ripaojiedian
-      - 🇨🇳 3
-      - CN_187
-      - 🇨🇳 4
-      - Polaris - US - V2ray
-      - 中国_TG@nodesharing_41
-      - Mosaic - DE - Trojan
-      - CN_169
-      - JP_8090 @WangCai_1
-      - JP_8000 @WangCai_1
-      - TG@nodesharing_112
-      - JP_2758 | 7.33Mb
       - _油管：全网最强白嫖
-      - 中国_TG@nodesharing_61
-      - 俄罗斯 VIP2节点24-中转
-      - 美国001
+      - TG@nodesharing_33
+      - CN_240 | 9.97Mb
+      - 日本 VIP2节点11 原生IP-中转
+      - TG@nodesharing_40
+      - BGP-01-香港-多地优化
+      - CN_241 | 9.51Mb
+      - TG@nodesharing_23
+      - 韩国 | 广港隧道
+      - TG@nodesharing_58
+      - 12
+      - 美国120g流量
+      - TG@nodesharing_49
+      - TG@nodesharing_44
+      - beikui
+      - CN 8｜openit.ml
+      - 🇨🇳
+      - CN-高速节点推荐：v1.mk/vip（浏览器打开） 23
+      - AJKSOS.TOP_9
+      - Alien
+      - HK_38
       - _油管：全网最强白嫖 2
-      - 3.✴️HàNội10Gb/s
-      - unknown 1｜openit.ml
-      - US, Los Angeles
-      - JP_5000 @WangCai_1
-      - 慢速稳定丨韩国-3（仅防失联）
-      - 美国 003
-      - 美国 001
-      - Cindy - KR - CN2 - V2ray
-      - tktrojan
-      - 加拿大_TG@nodesharing_144
-      - CN_180
-      - JP_5600 @WangCai_1
-      - 丨日本-2
-      - 慢速稳定丨韩国-3（仅防失联） 2
-      - 防失联节点-tg频道:@ripaojiedian
-      - univstar-SG_2 2
-      - 7.💣Vnetwork1
-      - Cindy - KR - Trojan
-      - JP_5004 @WangCai_1
-      - 中国_TG@nodesharing_189
       - _油管：全网最强白嫖 3
-      - NL 1｜
-      - JP_2376 @WangCai_1
-      - Australia🇦🇺
-      - 丨日本-2 2
-      - 4. 🎭Garena LOL 2
-      - 7. 💣Vnetwork 1
-      - _1590 | 3.86Mb
-      - 韩国-tg频道:@ripaojiedian
-      - 免费梯子https://t.me/mftizi
-      - 4.🎭GarenaLOL2
-      - 台湾-711.6KB/s(Youtube:不良林)
-      - 13.💥HCM-Gaming
-      - 中国_TG@nodesharing_129
+      - beikui 2
+      - _CN_中国_禁止刷大流量_3
+      - _CN_中国_禁止刷大流量_7
+      - _CN_中国_禁止刷大流量_9
+      - beikui 22
+      - hk1dawz.cfvmess-grpc
+      - 印度01 A | 1.5x
+      - jp3sgaz.gavmess-grpc
+      - beikui 3
+      - beikui 7
+      - TG@nodesharing_7
+      - CN-高速节点推荐：v1.mk/vip（浏览器打开） 22
+      - beikui 18
+      - beikui 23
+      - beikui 4
+      - beikui 5
+      - beikui 6
+      - TG@nodesharing_36
+      - beikui 8
+      - beikui 12
+      - JPB002
+      - beikui 9
+      - beikui 13
+      - Eva - US - Trojan
+      - beikui 11
+      - TG@nodesharing_39
+      - 14.29.124.168:25252
+      - _1852 | 4.88Mb
+      - CA_122
+      - TG@nodesharing_43
+      - beikui 10
+      - Zero - US - Trojan
+      - 14.29.124.174:11009
+      - beikui 14
+      - beikui 15
+      - beikui 16
+      - beikui 17
+      - beikui 19
+      - beikui 20
+      - 🇨🇳 2
+      - CN-高速节点推荐：v1.mk/vip（浏览器打开）
+      - beikui 21
+      - beikui 24
+      - 🇷🇺
+      - 美国03 A |  1.5x
+      - 美国洛杉矶-cc
+      - beikui 25
+      - 土耳其01 D | 2x
+      - tkvmess
+      - beikui 26
+      - beikui 27
+      - CN_2385 | 0.74Mb
+      - TG@nodesharing_86
+      - CN_62
       - _油管：全网最强白嫖 4
-      - univstar-JP-iepl
-      - 意大利-1.26MB/s(Youtube:不良林)
-      - "@SSRSUB-美国V04-付费推荐:dlj.tf/ssrsub"
-      - US_3933 | 6.22Mb
-      - 13. 💥HCM-Gaming
-      - 2.🦁HồChíMinh
-      - US-高速节点推荐：v1.mk/vip（浏览器打开）
+      - univstar-台湾
+      - TG@nodesharing_93
+      - 美国04|CF优选中转|免费
+      - beikui 28
+      - beikui 29
+      - github.com/freefq - 美国3COM公司企业网 3
+      - TG@nodesharing_45
+      - TG@nodesharing_53
+      - univstar-TR
+      - TG@nodesharing_38
+      - beikui 30
+      - CN-高速节点推荐：v1.mk/vip（浏览器打开） 48
+      - univstar-BR
+      - 防失联节点-tg频道:@ripaojiedian
+      - TG@nodesharing_75
+      - beikui 31
+      - CN_200
+      - CN_46
+      - 韩国01 A | x1.5
+      - 韩国01 A | x1.5 2
+      - 东京直连V2
+      - CN_74
+      - CN-高速节点推荐：v1.mk/vip（浏览器打开） 31
+      - JP_3389+@WangCai_1
+      - 美国03 B |  1.5x
+      - 中国_TG@nodesharing_41
+      - TG@nodesharing_51
+      - Polaris - US - V2ray
+      - Mosaic - DE - Trojan
+      - _1895 | 5.99Mb
+      - JP_8888+@WangCai_1
+      - JP_8118+@WangCai_1
+      - JP_8008+@WangCai_1
+      - JP_8000+@WangCai_1
+      - JP_5600+@WangCai_1
+      - JP_5003+@WangCai_1
+      - 东京直连V2 2
+      - TG@nodesharing_37
+      - US-高速节点推荐：v2cross.com（浏览器打开）
+      - Australia🇦🇺
+      - TG@nodesharing_98
+      - JP_9101+@WangCai_1
+      - JP_8882+@WangCai_1
+      - JP_8091+@WangCai_1
+      - JP_8090+@WangCai_1
+      - JP_8009+@WangCai_1
+      - JP_7306+@WangCai_1
+      - JP_5004+@WangCai_1
+      - JP_2376+@WangCai_1
+      - JP_2375+@WangCai_1
+      - 新加坡直连-1
+      - univstar-GB_2
+      - 俄罗斯01 D | x1.2
+      - _1113 | 0.01Mb
+      - beikui 32
+      - 美国(TG频道:@kxswa)22
+      - beikui 33
+      - CN-高速节点推荐：v1.mk/vip（浏览器打开） 6
+      - JP_5500+@WangCai_1
+      - JP_5000+@WangCai_1
       - _油管：全网最强白嫖 5
+      - JP_8881+@WangCai_1
+      - JP_6697+@WangCai_1
+      - JP_6379+@WangCai_1
+      - 印度01 E | 1.5x
+      - 印度01 D | 1.5x
+      - TG@nodesharing_70
+      - 14.29.124.174:11047
+      - univstar-GB_1
+      - univstar-香港HKBN-dip
+      - 中国_TG@nodesharing_91
+      - SG_794 | 4.96Mb
+      - _ca4072071898
+      - tktrojan
+      - _c8ca3c366
+      - CN_57
+      - univstar-台湾-iepl_2
+      - TG@nodesharing_94
+      - DE_295 |46.37Mb
+      - ip1
+      - TG@nodesharing_97
+      - _油管频道：全网最强白嫖
+      - github.com/freefq - 广东省珠海市电信 34
       - _油管：全网最强白嫖 6
-      - Hoàng HN7
+      - 关注电报https://t.me/mftizi
+      - _油管：全网最强白嫖 7
+      - Relay_🇨🇳CN-🇺🇸US_214
+      - TG@nodesharing_108
+      - RU 1｜openit.ml
+      - CN-高速节点推荐：v1.mk/vip（浏览器打开） 2
+      - _77 | 4.05Mb
+      - JP_8080+@WangCai_1
+      - JP_6679+@WangCai_1
+      - 美国01 B | 1.5x
+      - 德国-1.15MB/s(Youtube:不良林)
+      - US_2242
+      - 美国_TG@nodesharing_127
+      - US-高速节点推荐：v1.mk/vip（浏览器打开）
+      - "@SSRSUB-V08-付费推荐:suo.yt/ssrsub"
+      - "@SSRSUB-V08-付费推荐:suo.yt/ssrsub 2"
+      - _ca4072078
+      - TG@nodesharing_112
+      - 丨日本-2
+      - SG-高速节点推荐：v1.mk/vip（浏览器打开）
+      - unknown 1｜openit.ml
+      - CN-高速节点推荐：v1.mk/vip（浏览器打开） 3
+      - 俄罗斯01 B | x1.2
+      - univstar-香港-iepl_4
+      - univstar-香港_1 002
+      - univstar-KR_1 002
+      - 中国_TG@nodesharing_200
+      - univstar-US_2 001
+      - US_2171
+      - "@SSRSUB-V14-付费推荐:suo.yt/ssrsub"
+      - US_2102
+      - TG@nodesharing_61
+      - ☆白嫖联盟_______9
+      - CN_176
+      - _油管：全网最强白嫖 8
+      - US-高速节点推荐：v1.mk/vip
+      - US_1514
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - beikui059
-      - beikui054
-      - beikui 054
-      - 香港11 | 上海
-      - 香港06 | 上海
-      - beikui 074
-      - beikui064
-      - beikui056
-      - 日本02
-      - 新加坡09 | IEPL | 上海 | 4x
-      - 香港06 | IEPL | 上海 | 4x
-      - beikui 091
-      - 新加坡07 | IEPL | 上海 | 4x
-      - beikui098
-      - 香港07 | 上海
-      - beikui074
-      - 新加坡05 | IEPL | 上海 | 4x
-      - 新加坡08 | IEPL | 上海 | 4x
-      - beikui 064
-      - 新加坡04 | 上海
-      - beikui 098
-      - 新加坡02 | IEPL | 上海 | 4x
-      - 新加坡02 | 广港
-      - beikui 080
-      - beikui 056
-      - beikui 060
-      - beikui080
-      - beikui093
-      - beikui 059
-      - beikui 093
-      - beikui092
-      - beikui062
-      - beikui 065
-      - beikui 092
-      - beikui 081
-      - beikui 055
-      - beikui058
-      - 美西原生IPLC中转
-      - 新加坡04 | IEPL | 上海 | 4x
-      - AJKSOS.TOP_9
-      - beikui 057
-      - 新加坡01 | 上海
-      - beikui 071
-      - beikui068
-      - 新加坡03 | IEPL | 上海 | 4x
-      - beikui073
-      - beikui091
-      - beikui078
-      - beikui055
-      - beikui072
-      - beikui081
-      - beikui057
-      - beikui 073
-      - beikui070
-      - 新加坡07 | 上海
-      - 美国02
-      - beikui 062
-      - beikui 052
-      - beikui 072
-      - beikui069
-      - beikui 069
-      - 美国05
-      - 香港11 | 湖南
-      - 新加坡05 | 上海
-      - 🇨🇳
-      - 香港03 | IEPL | 北京 | 4x
-      - 新加坡05 | IEPL | 北京 | 4x
-      - _HK_香港
-      - 日本 VIP2节点23-中转
-      - 香港07 | IEPL | 北京 | 4x
-      - 中国-2.58MB/s(Youtube:不良林)
-      - 新加坡02 | IEPL | 北京 | 4x
-      - 台湾120G流量001
-      - beikui097
-      - 广港隧道-台湾
-      - 香港HKT-优化
-      - 香港07 | 广港
-      - 香港06 | IEPL | 北京 | 4x
-      - 香港2-tg频道:@ripaojiedian
-      - 台湾120G流量 002
-      - 新加坡09 | IEPL | 北京 | 4x
-      - 新加坡03 | IEPL | 北京 | 4x
-      - 香港优化-tg频道:@ripaojiedian
-      - 香港11 | IEPL | 北京
-      - 台湾120G流量+003
-      - 日本 VIP2节点11 原生IP-中转
-      - 新加坡08 | 广港
-      - 台湾120g流量
-      - 新加坡04 | IEPL | 北京 | 4x
-      - 新加坡08 | IEPL | 北京 | 4x
-      - 香港HKIX | 广港
-      - 香港07 | IEPL | 北京
-      - 香港03 | 广港
-      - 新加坡08 | IEPL | 北京
-      - 新加坡03 | 广港
-      - beikui 095
-      - 香港HGC | IEPL | 北京
-      - beikui095
-      - 新加坡09 | 广港
-      - 香港03 | IEPL | 北京
-      - 俄罗斯
-      - 🇨🇳 2
-      - 美国120G流量
-      - _CN_中国_禁止刷大流量_3
-      - 官址：xf.gl
-      - 英国120G流量
-      - beikui076
-      - beikui 097
-      - hk1dawz.cfvmess-grpc
-      - 俄罗斯 VIP2节点1-中转
-      - 19.HongKong💥
-      - beikui086
-      - beikui 090
-      - beikui 079
-      - beikui 076
-      - 19. HongKong💥
-      - 20.🇭🇰HongkongTLS
-      - beikui084
-      - beikui 077
-      - 日本_TG@nodesharing_12
-      - 20. 🇭🇰 Hongkong TLS
-      - jp3sgaz.gavmess-grpc
-      - beikui079
-      - 日本_TG@nodesharing_45
-      - beikui085
-      - beikui 085
-      - beikui 087
-      - beikui 088
-      - beikui096
-      - hk1dawz.cfvmess-grpc 2
-      - beikui 096
-      - jp3sgaz.gavmess-grpc 2
-      - beikui 084
-      - beikui075
-      - _1276 | 0.64Mb
-      - beikui087
-      - beikui 094
-      - beikui094
-      - 香港
-      - beikui 001
-      - beikui089
-      - beikui001
-      - CN_200
+      - 香港A
+      - 越南 | 深港IEPL
       - CN_158
-      - beikui088
-      - 香港杨枝甘露+03-D_1
-      - _油管频道：全网最强白嫖
-      - Eva - US - GIA CN2 - V2ray
-      - Eva - US - Trojan
-      - JP_5500 @WangCai_1
-      - Zero - US - Trojan
-      - 台湾优化-tg频道:@ripaojiedian
-      - 1.🦁 Hà Nội
-      - 107.172.102.90:5997
-      - 美国洛杉矶-cc
-      - SG A 004
-      - 美国04|CF优选中转|免费
-      - cacaaz.mlvmess-grpc
-      - 14.29.124.174:11009
-      - CN_176
-      - CA_124
-      - TG@nodesharing_108
-      - 美国-tg频道:@ripaojiedian
-      - 🇨🇳 3
-      - CN_187
-      - 🇨🇳 4
-      - Polaris - US - V2ray
-      - 中国_TG@nodesharing_41
-      - Mosaic - DE - Trojan
-      - CN_169
-      - JP_8090 @WangCai_1
-      - JP_8000 @WangCai_1
-      - TG@nodesharing_112
-      - JP_2758 | 7.33Mb
       - _油管：全网最强白嫖
-      - 中国_TG@nodesharing_61
-      - 俄罗斯 VIP2节点24-中转
-      - 美国001
+      - TG@nodesharing_33
+      - CN_240 | 9.97Mb
+      - 日本 VIP2节点11 原生IP-中转
+      - TG@nodesharing_40
+      - BGP-01-香港-多地优化
+      - CN_241 | 9.51Mb
+      - TG@nodesharing_23
+      - 韩国 | 广港隧道
+      - TG@nodesharing_58
+      - 12
+      - 美国120g流量
+      - TG@nodesharing_49
+      - TG@nodesharing_44
+      - beikui
+      - CN 8｜openit.ml
+      - 🇨🇳
+      - CN-高速节点推荐：v1.mk/vip（浏览器打开） 23
+      - AJKSOS.TOP_9
+      - Alien
+      - HK_38
       - _油管：全网最强白嫖 2
-      - 3.✴️HàNội10Gb/s
-      - unknown 1｜openit.ml
-      - US, Los Angeles
-      - JP_5000 @WangCai_1
-      - 慢速稳定丨韩国-3（仅防失联）
-      - 美国 003
-      - 美国 001
-      - Cindy - KR - CN2 - V2ray
-      - tktrojan
-      - 加拿大_TG@nodesharing_144
-      - CN_180
-      - JP_5600 @WangCai_1
-      - 丨日本-2
-      - 慢速稳定丨韩国-3（仅防失联） 2
-      - 防失联节点-tg频道:@ripaojiedian
-      - univstar-SG_2 2
-      - 7.💣Vnetwork1
-      - Cindy - KR - Trojan
-      - JP_5004 @WangCai_1
-      - 中国_TG@nodesharing_189
       - _油管：全网最强白嫖 3
-      - NL 1｜
-      - JP_2376 @WangCai_1
-      - Australia🇦🇺
-      - 丨日本-2 2
-      - 4. 🎭Garena LOL 2
-      - 7. 💣Vnetwork 1
-      - _1590 | 3.86Mb
-      - 韩国-tg频道:@ripaojiedian
-      - 免费梯子https://t.me/mftizi
-      - 4.🎭GarenaLOL2
-      - 台湾-711.6KB/s(Youtube:不良林)
-      - 13.💥HCM-Gaming
-      - 中国_TG@nodesharing_129
+      - beikui 2
+      - _CN_中国_禁止刷大流量_3
+      - _CN_中国_禁止刷大流量_7
+      - _CN_中国_禁止刷大流量_9
+      - beikui 22
+      - hk1dawz.cfvmess-grpc
+      - 印度01 A | 1.5x
+      - jp3sgaz.gavmess-grpc
+      - beikui 3
+      - beikui 7
+      - TG@nodesharing_7
+      - CN-高速节点推荐：v1.mk/vip（浏览器打开） 22
+      - beikui 18
+      - beikui 23
+      - beikui 4
+      - beikui 5
+      - beikui 6
+      - TG@nodesharing_36
+      - beikui 8
+      - beikui 12
+      - JPB002
+      - beikui 9
+      - beikui 13
+      - Eva - US - Trojan
+      - beikui 11
+      - TG@nodesharing_39
+      - 14.29.124.168:25252
+      - _1852 | 4.88Mb
+      - CA_122
+      - TG@nodesharing_43
+      - beikui 10
+      - Zero - US - Trojan
+      - 14.29.124.174:11009
+      - beikui 14
+      - beikui 15
+      - beikui 16
+      - beikui 17
+      - beikui 19
+      - beikui 20
+      - 🇨🇳 2
+      - CN-高速节点推荐：v1.mk/vip（浏览器打开）
+      - beikui 21
+      - beikui 24
+      - 🇷🇺
+      - 美国03 A |  1.5x
+      - 美国洛杉矶-cc
+      - beikui 25
+      - 土耳其01 D | 2x
+      - tkvmess
+      - beikui 26
+      - beikui 27
+      - CN_2385 | 0.74Mb
+      - TG@nodesharing_86
+      - CN_62
       - _油管：全网最强白嫖 4
-      - univstar-JP-iepl
-      - 意大利-1.26MB/s(Youtube:不良林)
-      - "@SSRSUB-美国V04-付费推荐:dlj.tf/ssrsub"
-      - US_3933 | 6.22Mb
-      - 13. 💥HCM-Gaming
-      - 2.🦁HồChíMinh
-      - US-高速节点推荐：v1.mk/vip（浏览器打开）
+      - univstar-台湾
+      - TG@nodesharing_93
+      - 美国04|CF优选中转|免费
+      - beikui 28
+      - beikui 29
+      - github.com/freefq - 美国3COM公司企业网 3
+      - TG@nodesharing_45
+      - TG@nodesharing_53
+      - univstar-TR
+      - TG@nodesharing_38
+      - beikui 30
+      - CN-高速节点推荐：v1.mk/vip（浏览器打开） 48
+      - univstar-BR
+      - 防失联节点-tg频道:@ripaojiedian
+      - TG@nodesharing_75
+      - beikui 31
+      - CN_200
+      - CN_46
+      - 韩国01 A | x1.5
+      - 韩国01 A | x1.5 2
+      - 东京直连V2
+      - CN_74
+      - CN-高速节点推荐：v1.mk/vip（浏览器打开） 31
+      - JP_3389+@WangCai_1
+      - 美国03 B |  1.5x
+      - 中国_TG@nodesharing_41
+      - TG@nodesharing_51
+      - Polaris - US - V2ray
+      - Mosaic - DE - Trojan
+      - _1895 | 5.99Mb
+      - JP_8888+@WangCai_1
+      - JP_8118+@WangCai_1
+      - JP_8008+@WangCai_1
+      - JP_8000+@WangCai_1
+      - JP_5600+@WangCai_1
+      - JP_5003+@WangCai_1
+      - 东京直连V2 2
+      - TG@nodesharing_37
+      - US-高速节点推荐：v2cross.com（浏览器打开）
+      - Australia🇦🇺
+      - TG@nodesharing_98
+      - JP_9101+@WangCai_1
+      - JP_8882+@WangCai_1
+      - JP_8091+@WangCai_1
+      - JP_8090+@WangCai_1
+      - JP_8009+@WangCai_1
+      - JP_7306+@WangCai_1
+      - JP_5004+@WangCai_1
+      - JP_2376+@WangCai_1
+      - JP_2375+@WangCai_1
+      - 新加坡直连-1
+      - univstar-GB_2
+      - 俄罗斯01 D | x1.2
+      - _1113 | 0.01Mb
+      - beikui 32
+      - 美国(TG频道:@kxswa)22
+      - beikui 33
+      - CN-高速节点推荐：v1.mk/vip（浏览器打开） 6
+      - JP_5500+@WangCai_1
+      - JP_5000+@WangCai_1
       - _油管：全网最强白嫖 5
+      - JP_8881+@WangCai_1
+      - JP_6697+@WangCai_1
+      - JP_6379+@WangCai_1
+      - 印度01 E | 1.5x
+      - 印度01 D | 1.5x
+      - TG@nodesharing_70
+      - 14.29.124.174:11047
+      - univstar-GB_1
+      - univstar-香港HKBN-dip
+      - 中国_TG@nodesharing_91
+      - SG_794 | 4.96Mb
+      - _ca4072071898
+      - tktrojan
+      - _c8ca3c366
+      - CN_57
+      - univstar-台湾-iepl_2
+      - TG@nodesharing_94
+      - DE_295 |46.37Mb
+      - ip1
+      - TG@nodesharing_97
+      - _油管频道：全网最强白嫖
+      - github.com/freefq - 广东省珠海市电信 34
       - _油管：全网最强白嫖 6
-      - Hoàng HN7
+      - 关注电报https://t.me/mftizi
+      - _油管：全网最强白嫖 7
+      - Relay_🇨🇳CN-🇺🇸US_214
+      - TG@nodesharing_108
+      - RU 1｜openit.ml
+      - CN-高速节点推荐：v1.mk/vip（浏览器打开） 2
+      - _77 | 4.05Mb
+      - JP_8080+@WangCai_1
+      - JP_6679+@WangCai_1
+      - 美国01 B | 1.5x
+      - 德国-1.15MB/s(Youtube:不良林)
+      - US_2242
+      - 美国_TG@nodesharing_127
+      - US-高速节点推荐：v1.mk/vip（浏览器打开）
+      - "@SSRSUB-V08-付费推荐:suo.yt/ssrsub"
+      - "@SSRSUB-V08-付费推荐:suo.yt/ssrsub 2"
+      - _ca4072078
+      - TG@nodesharing_112
+      - 丨日本-2
+      - SG-高速节点推荐：v1.mk/vip（浏览器打开）
+      - unknown 1｜openit.ml
+      - CN-高速节点推荐：v1.mk/vip（浏览器打开） 3
+      - 俄罗斯01 B | x1.2
+      - univstar-香港-iepl_4
+      - univstar-香港_1 002
+      - univstar-KR_1 002
+      - 中国_TG@nodesharing_200
+      - univstar-US_2 001
+      - US_2171
+      - "@SSRSUB-V14-付费推荐:suo.yt/ssrsub"
+      - US_2102
+      - TG@nodesharing_61
+      - ☆白嫖联盟_______9
+      - CN_176
+      - _油管：全网最强白嫖 8
+      - US-高速节点推荐：v1.mk/vip
+      - US_1514
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - beikui059
-      - beikui054
-      - beikui 054
-      - 香港11 | 上海
-      - 香港06 | 上海
-      - beikui 074
-      - beikui064
-      - beikui056
-      - 日本02
-      - 新加坡09 | IEPL | 上海 | 4x
-      - 香港06 | IEPL | 上海 | 4x
-      - beikui 091
-      - 新加坡07 | IEPL | 上海 | 4x
-      - beikui098
-      - 香港07 | 上海
-      - beikui074
-      - 新加坡05 | IEPL | 上海 | 4x
-      - 新加坡08 | IEPL | 上海 | 4x
-      - beikui 064
-      - 新加坡04 | 上海
-      - beikui 098
-      - 新加坡02 | IEPL | 上海 | 4x
-      - 新加坡02 | 广港
-      - beikui 080
-      - beikui 056
-      - beikui 060
-      - beikui080
-      - beikui093
-      - beikui 059
-      - beikui 093
-      - beikui092
-      - beikui062
-      - beikui 065
-      - beikui 092
-      - beikui 081
-      - beikui 055
-      - beikui058
-      - 美西原生IPLC中转
-      - 新加坡04 | IEPL | 上海 | 4x
-      - AJKSOS.TOP_9
-      - beikui 057
-      - 新加坡01 | 上海
-      - beikui 071
-      - beikui068
-      - 新加坡03 | IEPL | 上海 | 4x
-      - beikui073
-      - beikui091
-      - beikui078
-      - beikui055
-      - beikui072
-      - beikui081
-      - beikui057
-      - beikui 073
-      - beikui070
-      - 新加坡07 | 上海
-      - 美国02
-      - beikui 062
-      - beikui 052
-      - beikui 072
-      - beikui069
-      - beikui 069
-      - 美国05
-      - 香港11 | 湖南
-      - 新加坡05 | 上海
-      - 🇨🇳
-      - 香港03 | IEPL | 北京 | 4x
-      - 新加坡05 | IEPL | 北京 | 4x
-      - _HK_香港
-      - 日本 VIP2节点23-中转
-      - 香港07 | IEPL | 北京 | 4x
-      - 中国-2.58MB/s(Youtube:不良林)
-      - 新加坡02 | IEPL | 北京 | 4x
-      - 台湾120G流量001
-      - beikui097
-      - 广港隧道-台湾
-      - 香港HKT-优化
-      - 香港07 | 广港
-      - 香港06 | IEPL | 北京 | 4x
-      - 香港2-tg频道:@ripaojiedian
-      - 台湾120G流量 002
-      - 新加坡09 | IEPL | 北京 | 4x
-      - 新加坡03 | IEPL | 北京 | 4x
-      - 香港优化-tg频道:@ripaojiedian
-      - 香港11 | IEPL | 北京
-      - 台湾120G流量+003
-      - 日本 VIP2节点11 原生IP-中转
-      - 新加坡08 | 广港
-      - 台湾120g流量
-      - 新加坡04 | IEPL | 北京 | 4x
-      - 新加坡08 | IEPL | 北京 | 4x
-      - 香港HKIX | 广港
-      - 香港07 | IEPL | 北京
-      - 香港03 | 广港
-      - 新加坡08 | IEPL | 北京
-      - 新加坡03 | 广港
-      - beikui 095
-      - 香港HGC | IEPL | 北京
-      - beikui095
-      - 新加坡09 | 广港
-      - 香港03 | IEPL | 北京
-      - 俄罗斯
-      - 🇨🇳 2
-      - 美国120G流量
-      - _CN_中国_禁止刷大流量_3
-      - 官址：xf.gl
-      - 英国120G流量
-      - beikui076
-      - beikui 097
-      - hk1dawz.cfvmess-grpc
-      - 俄罗斯 VIP2节点1-中转
-      - 19.HongKong💥
-      - beikui086
-      - beikui 090
-      - beikui 079
-      - beikui 076
-      - 19. HongKong💥
-      - 20.🇭🇰HongkongTLS
-      - beikui084
-      - beikui 077
-      - 日本_TG@nodesharing_12
-      - 20. 🇭🇰 Hongkong TLS
-      - jp3sgaz.gavmess-grpc
-      - beikui079
-      - 日本_TG@nodesharing_45
-      - beikui085
-      - beikui 085
-      - beikui 087
-      - beikui 088
-      - beikui096
-      - hk1dawz.cfvmess-grpc 2
-      - beikui 096
-      - jp3sgaz.gavmess-grpc 2
-      - beikui 084
-      - beikui075
-      - _1276 | 0.64Mb
-      - beikui087
-      - beikui 094
-      - beikui094
-      - 香港
-      - beikui 001
-      - beikui089
-      - beikui001
-      - CN_200
+      - 香港A
+      - 越南 | 深港IEPL
       - CN_158
-      - beikui088
-      - 香港杨枝甘露+03-D_1
-      - _油管频道：全网最强白嫖
-      - Eva - US - GIA CN2 - V2ray
-      - Eva - US - Trojan
-      - JP_5500 @WangCai_1
-      - Zero - US - Trojan
-      - 台湾优化-tg频道:@ripaojiedian
-      - 1.🦁 Hà Nội
-      - 107.172.102.90:5997
-      - 美国洛杉矶-cc
-      - SG A 004
-      - 美国04|CF优选中转|免费
-      - cacaaz.mlvmess-grpc
-      - 14.29.124.174:11009
-      - CN_176
-      - CA_124
-      - TG@nodesharing_108
-      - 美国-tg频道:@ripaojiedian
-      - 🇨🇳 3
-      - CN_187
-      - 🇨🇳 4
-      - Polaris - US - V2ray
-      - 中国_TG@nodesharing_41
-      - Mosaic - DE - Trojan
-      - CN_169
-      - JP_8090 @WangCai_1
-      - JP_8000 @WangCai_1
-      - TG@nodesharing_112
-      - JP_2758 | 7.33Mb
       - _油管：全网最强白嫖
-      - 中国_TG@nodesharing_61
-      - 俄罗斯 VIP2节点24-中转
-      - 美国001
+      - TG@nodesharing_33
+      - CN_240 | 9.97Mb
+      - 日本 VIP2节点11 原生IP-中转
+      - TG@nodesharing_40
+      - BGP-01-香港-多地优化
+      - CN_241 | 9.51Mb
+      - TG@nodesharing_23
+      - 韩国 | 广港隧道
+      - TG@nodesharing_58
+      - 12
+      - 美国120g流量
+      - TG@nodesharing_49
+      - TG@nodesharing_44
+      - beikui
+      - CN 8｜openit.ml
+      - 🇨🇳
+      - CN-高速节点推荐：v1.mk/vip（浏览器打开） 23
+      - AJKSOS.TOP_9
+      - Alien
+      - HK_38
       - _油管：全网最强白嫖 2
-      - 3.✴️HàNội10Gb/s
-      - unknown 1｜openit.ml
-      - US, Los Angeles
-      - JP_5000 @WangCai_1
-      - 慢速稳定丨韩国-3（仅防失联）
-      - 美国 003
-      - 美国 001
-      - Cindy - KR - CN2 - V2ray
-      - tktrojan
-      - 加拿大_TG@nodesharing_144
-      - CN_180
-      - JP_5600 @WangCai_1
-      - 丨日本-2
-      - 慢速稳定丨韩国-3（仅防失联） 2
-      - 防失联节点-tg频道:@ripaojiedian
-      - univstar-SG_2 2
-      - 7.💣Vnetwork1
-      - Cindy - KR - Trojan
-      - JP_5004 @WangCai_1
-      - 中国_TG@nodesharing_189
       - _油管：全网最强白嫖 3
-      - NL 1｜
-      - JP_2376 @WangCai_1
-      - Australia🇦🇺
-      - 丨日本-2 2
-      - 4. 🎭Garena LOL 2
-      - 7. 💣Vnetwork 1
-      - _1590 | 3.86Mb
-      - 韩国-tg频道:@ripaojiedian
-      - 免费梯子https://t.me/mftizi
-      - 4.🎭GarenaLOL2
-      - 台湾-711.6KB/s(Youtube:不良林)
-      - 13.💥HCM-Gaming
-      - 中国_TG@nodesharing_129
+      - beikui 2
+      - _CN_中国_禁止刷大流量_3
+      - _CN_中国_禁止刷大流量_7
+      - _CN_中国_禁止刷大流量_9
+      - beikui 22
+      - hk1dawz.cfvmess-grpc
+      - 印度01 A | 1.5x
+      - jp3sgaz.gavmess-grpc
+      - beikui 3
+      - beikui 7
+      - TG@nodesharing_7
+      - CN-高速节点推荐：v1.mk/vip（浏览器打开） 22
+      - beikui 18
+      - beikui 23
+      - beikui 4
+      - beikui 5
+      - beikui 6
+      - TG@nodesharing_36
+      - beikui 8
+      - beikui 12
+      - JPB002
+      - beikui 9
+      - beikui 13
+      - Eva - US - Trojan
+      - beikui 11
+      - TG@nodesharing_39
+      - 14.29.124.168:25252
+      - _1852 | 4.88Mb
+      - CA_122
+      - TG@nodesharing_43
+      - beikui 10
+      - Zero - US - Trojan
+      - 14.29.124.174:11009
+      - beikui 14
+      - beikui 15
+      - beikui 16
+      - beikui 17
+      - beikui 19
+      - beikui 20
+      - 🇨🇳 2
+      - CN-高速节点推荐：v1.mk/vip（浏览器打开）
+      - beikui 21
+      - beikui 24
+      - 🇷🇺
+      - 美国03 A |  1.5x
+      - 美国洛杉矶-cc
+      - beikui 25
+      - 土耳其01 D | 2x
+      - tkvmess
+      - beikui 26
+      - beikui 27
+      - CN_2385 | 0.74Mb
+      - TG@nodesharing_86
+      - CN_62
       - _油管：全网最强白嫖 4
-      - univstar-JP-iepl
-      - 意大利-1.26MB/s(Youtube:不良林)
-      - "@SSRSUB-美国V04-付费推荐:dlj.tf/ssrsub"
-      - US_3933 | 6.22Mb
-      - 13. 💥HCM-Gaming
-      - 2.🦁HồChíMinh
-      - US-高速节点推荐：v1.mk/vip（浏览器打开）
+      - univstar-台湾
+      - TG@nodesharing_93
+      - 美国04|CF优选中转|免费
+      - beikui 28
+      - beikui 29
+      - github.com/freefq - 美国3COM公司企业网 3
+      - TG@nodesharing_45
+      - TG@nodesharing_53
+      - univstar-TR
+      - TG@nodesharing_38
+      - beikui 30
+      - CN-高速节点推荐：v1.mk/vip（浏览器打开） 48
+      - univstar-BR
+      - 防失联节点-tg频道:@ripaojiedian
+      - TG@nodesharing_75
+      - beikui 31
+      - CN_200
+      - CN_46
+      - 韩国01 A | x1.5
+      - 韩国01 A | x1.5 2
+      - 东京直连V2
+      - CN_74
+      - CN-高速节点推荐：v1.mk/vip（浏览器打开） 31
+      - JP_3389+@WangCai_1
+      - 美国03 B |  1.5x
+      - 中国_TG@nodesharing_41
+      - TG@nodesharing_51
+      - Polaris - US - V2ray
+      - Mosaic - DE - Trojan
+      - _1895 | 5.99Mb
+      - JP_8888+@WangCai_1
+      - JP_8118+@WangCai_1
+      - JP_8008+@WangCai_1
+      - JP_8000+@WangCai_1
+      - JP_5600+@WangCai_1
+      - JP_5003+@WangCai_1
+      - 东京直连V2 2
+      - TG@nodesharing_37
+      - US-高速节点推荐：v2cross.com（浏览器打开）
+      - Australia🇦🇺
+      - TG@nodesharing_98
+      - JP_9101+@WangCai_1
+      - JP_8882+@WangCai_1
+      - JP_8091+@WangCai_1
+      - JP_8090+@WangCai_1
+      - JP_8009+@WangCai_1
+      - JP_7306+@WangCai_1
+      - JP_5004+@WangCai_1
+      - JP_2376+@WangCai_1
+      - JP_2375+@WangCai_1
+      - 新加坡直连-1
+      - univstar-GB_2
+      - 俄罗斯01 D | x1.2
+      - _1113 | 0.01Mb
+      - beikui 32
+      - 美国(TG频道:@kxswa)22
+      - beikui 33
+      - CN-高速节点推荐：v1.mk/vip（浏览器打开） 6
+      - JP_5500+@WangCai_1
+      - JP_5000+@WangCai_1
       - _油管：全网最强白嫖 5
+      - JP_8881+@WangCai_1
+      - JP_6697+@WangCai_1
+      - JP_6379+@WangCai_1
+      - 印度01 E | 1.5x
+      - 印度01 D | 1.5x
+      - TG@nodesharing_70
+      - 14.29.124.174:11047
+      - univstar-GB_1
+      - univstar-香港HKBN-dip
+      - 中国_TG@nodesharing_91
+      - SG_794 | 4.96Mb
+      - _ca4072071898
+      - tktrojan
+      - _c8ca3c366
+      - CN_57
+      - univstar-台湾-iepl_2
+      - TG@nodesharing_94
+      - DE_295 |46.37Mb
+      - ip1
+      - TG@nodesharing_97
+      - _油管频道：全网最强白嫖
+      - github.com/freefq - 广东省珠海市电信 34
       - _油管：全网最强白嫖 6
-      - Hoàng HN7
+      - 关注电报https://t.me/mftizi
+      - _油管：全网最强白嫖 7
+      - Relay_🇨🇳CN-🇺🇸US_214
+      - TG@nodesharing_108
+      - RU 1｜openit.ml
+      - CN-高速节点推荐：v1.mk/vip（浏览器打开） 2
+      - _77 | 4.05Mb
+      - JP_8080+@WangCai_1
+      - JP_6679+@WangCai_1
+      - 美国01 B | 1.5x
+      - 德国-1.15MB/s(Youtube:不良林)
+      - US_2242
+      - 美国_TG@nodesharing_127
+      - US-高速节点推荐：v1.mk/vip（浏览器打开）
+      - "@SSRSUB-V08-付费推荐:suo.yt/ssrsub"
+      - "@SSRSUB-V08-付费推荐:suo.yt/ssrsub 2"
+      - _ca4072078
+      - TG@nodesharing_112
+      - 丨日本-2
+      - SG-高速节点推荐：v1.mk/vip（浏览器打开）
+      - unknown 1｜openit.ml
+      - CN-高速节点推荐：v1.mk/vip（浏览器打开） 3
+      - 俄罗斯01 B | x1.2
+      - univstar-香港-iepl_4
+      - univstar-香港_1 002
+      - univstar-KR_1 002
+      - 中国_TG@nodesharing_200
+      - univstar-US_2 001
+      - US_2171
+      - "@SSRSUB-V14-付费推荐:suo.yt/ssrsub"
+      - US_2102
+      - TG@nodesharing_61
+      - ☆白嫖联盟_______9
+      - CN_176
+      - _油管：全网最强白嫖 8
+      - US-高速节点推荐：v1.mk/vip
+      - US_1514
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -1904,230 +1702,208 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - beikui059
-      - beikui054
-      - beikui 054
-      - 香港11 | 上海
-      - 香港06 | 上海
-      - beikui 074
-      - beikui064
-      - beikui056
-      - 日本02
-      - 新加坡09 | IEPL | 上海 | 4x
-      - 香港06 | IEPL | 上海 | 4x
-      - beikui 091
-      - 新加坡07 | IEPL | 上海 | 4x
-      - beikui098
-      - 香港07 | 上海
-      - beikui074
-      - 新加坡05 | IEPL | 上海 | 4x
-      - 新加坡08 | IEPL | 上海 | 4x
-      - beikui 064
-      - 新加坡04 | 上海
-      - beikui 098
-      - 新加坡02 | IEPL | 上海 | 4x
-      - 新加坡02 | 广港
-      - beikui 080
-      - beikui 056
-      - beikui 060
-      - beikui080
-      - beikui093
-      - beikui 059
-      - beikui 093
-      - beikui092
-      - beikui062
-      - beikui 065
-      - beikui 092
-      - beikui 081
-      - beikui 055
-      - beikui058
-      - 美西原生IPLC中转
-      - 新加坡04 | IEPL | 上海 | 4x
-      - AJKSOS.TOP_9
-      - beikui 057
-      - 新加坡01 | 上海
-      - beikui 071
-      - beikui068
-      - 新加坡03 | IEPL | 上海 | 4x
-      - beikui073
-      - beikui091
-      - beikui078
-      - beikui055
-      - beikui072
-      - beikui081
-      - beikui057
-      - beikui 073
-      - beikui070
-      - 新加坡07 | 上海
-      - 美国02
-      - beikui 062
-      - beikui 052
-      - beikui 072
-      - beikui069
-      - beikui 069
-      - 美国05
-      - 香港11 | 湖南
-      - 新加坡05 | 上海
-      - 🇨🇳
-      - 香港03 | IEPL | 北京 | 4x
-      - 新加坡05 | IEPL | 北京 | 4x
-      - _HK_香港
-      - 日本 VIP2节点23-中转
-      - 香港07 | IEPL | 北京 | 4x
-      - 中国-2.58MB/s(Youtube:不良林)
-      - 新加坡02 | IEPL | 北京 | 4x
-      - 台湾120G流量001
-      - beikui097
-      - 广港隧道-台湾
-      - 香港HKT-优化
-      - 香港07 | 广港
-      - 香港06 | IEPL | 北京 | 4x
-      - 香港2-tg频道:@ripaojiedian
-      - 台湾120G流量 002
-      - 新加坡09 | IEPL | 北京 | 4x
-      - 新加坡03 | IEPL | 北京 | 4x
-      - 香港优化-tg频道:@ripaojiedian
-      - 香港11 | IEPL | 北京
-      - 台湾120G流量+003
-      - 日本 VIP2节点11 原生IP-中转
-      - 新加坡08 | 广港
-      - 台湾120g流量
-      - 新加坡04 | IEPL | 北京 | 4x
-      - 新加坡08 | IEPL | 北京 | 4x
-      - 香港HKIX | 广港
-      - 香港07 | IEPL | 北京
-      - 香港03 | 广港
-      - 新加坡08 | IEPL | 北京
-      - 新加坡03 | 广港
-      - beikui 095
-      - 香港HGC | IEPL | 北京
-      - beikui095
-      - 新加坡09 | 广港
-      - 香港03 | IEPL | 北京
-      - 俄罗斯
-      - 🇨🇳 2
-      - 美国120G流量
-      - _CN_中国_禁止刷大流量_3
-      - 官址：xf.gl
-      - 英国120G流量
-      - beikui076
-      - beikui 097
-      - hk1dawz.cfvmess-grpc
-      - 俄罗斯 VIP2节点1-中转
-      - 19.HongKong💥
-      - beikui086
-      - beikui 090
-      - beikui 079
-      - beikui 076
-      - 19. HongKong💥
-      - 20.🇭🇰HongkongTLS
-      - beikui084
-      - beikui 077
-      - 日本_TG@nodesharing_12
-      - 20. 🇭🇰 Hongkong TLS
-      - jp3sgaz.gavmess-grpc
-      - beikui079
-      - 日本_TG@nodesharing_45
-      - beikui085
-      - beikui 085
-      - beikui 087
-      - beikui 088
-      - beikui096
-      - hk1dawz.cfvmess-grpc 2
-      - beikui 096
-      - jp3sgaz.gavmess-grpc 2
-      - beikui 084
-      - beikui075
-      - _1276 | 0.64Mb
-      - beikui087
-      - beikui 094
-      - beikui094
-      - 香港
-      - beikui 001
-      - beikui089
-      - beikui001
-      - CN_200
+      - 香港A
+      - 越南 | 深港IEPL
       - CN_158
-      - beikui088
-      - 香港杨枝甘露+03-D_1
-      - _油管频道：全网最强白嫖
-      - Eva - US - GIA CN2 - V2ray
-      - Eva - US - Trojan
-      - JP_5500 @WangCai_1
-      - Zero - US - Trojan
-      - 台湾优化-tg频道:@ripaojiedian
-      - 1.🦁 Hà Nội
-      - 107.172.102.90:5997
-      - 美国洛杉矶-cc
-      - SG A 004
-      - 美国04|CF优选中转|免费
-      - cacaaz.mlvmess-grpc
-      - 14.29.124.174:11009
-      - CN_176
-      - CA_124
-      - TG@nodesharing_108
-      - 美国-tg频道:@ripaojiedian
-      - 🇨🇳 3
-      - CN_187
-      - 🇨🇳 4
-      - Polaris - US - V2ray
-      - 中国_TG@nodesharing_41
-      - Mosaic - DE - Trojan
-      - CN_169
-      - JP_8090 @WangCai_1
-      - JP_8000 @WangCai_1
-      - TG@nodesharing_112
-      - JP_2758 | 7.33Mb
       - _油管：全网最强白嫖
-      - 中国_TG@nodesharing_61
-      - 俄罗斯 VIP2节点24-中转
-      - 美国001
+      - TG@nodesharing_33
+      - CN_240 | 9.97Mb
+      - 日本 VIP2节点11 原生IP-中转
+      - TG@nodesharing_40
+      - BGP-01-香港-多地优化
+      - CN_241 | 9.51Mb
+      - TG@nodesharing_23
+      - 韩国 | 广港隧道
+      - TG@nodesharing_58
+      - 12
+      - 美国120g流量
+      - TG@nodesharing_49
+      - TG@nodesharing_44
+      - beikui
+      - CN 8｜openit.ml
+      - 🇨🇳
+      - CN-高速节点推荐：v1.mk/vip（浏览器打开） 23
+      - AJKSOS.TOP_9
+      - Alien
+      - HK_38
       - _油管：全网最强白嫖 2
-      - 3.✴️HàNội10Gb/s
-      - unknown 1｜openit.ml
-      - US, Los Angeles
-      - JP_5000 @WangCai_1
-      - 慢速稳定丨韩国-3（仅防失联）
-      - 美国 003
-      - 美国 001
-      - Cindy - KR - CN2 - V2ray
-      - tktrojan
-      - 加拿大_TG@nodesharing_144
-      - CN_180
-      - JP_5600 @WangCai_1
-      - 丨日本-2
-      - 慢速稳定丨韩国-3（仅防失联） 2
-      - 防失联节点-tg频道:@ripaojiedian
-      - univstar-SG_2 2
-      - 7.💣Vnetwork1
-      - Cindy - KR - Trojan
-      - JP_5004 @WangCai_1
-      - 中国_TG@nodesharing_189
       - _油管：全网最强白嫖 3
-      - NL 1｜
-      - JP_2376 @WangCai_1
-      - Australia🇦🇺
-      - 丨日本-2 2
-      - 4. 🎭Garena LOL 2
-      - 7. 💣Vnetwork 1
-      - _1590 | 3.86Mb
-      - 韩国-tg频道:@ripaojiedian
-      - 免费梯子https://t.me/mftizi
-      - 4.🎭GarenaLOL2
-      - 台湾-711.6KB/s(Youtube:不良林)
-      - 13.💥HCM-Gaming
-      - 中国_TG@nodesharing_129
+      - beikui 2
+      - _CN_中国_禁止刷大流量_3
+      - _CN_中国_禁止刷大流量_7
+      - _CN_中国_禁止刷大流量_9
+      - beikui 22
+      - hk1dawz.cfvmess-grpc
+      - 印度01 A | 1.5x
+      - jp3sgaz.gavmess-grpc
+      - beikui 3
+      - beikui 7
+      - TG@nodesharing_7
+      - CN-高速节点推荐：v1.mk/vip（浏览器打开） 22
+      - beikui 18
+      - beikui 23
+      - beikui 4
+      - beikui 5
+      - beikui 6
+      - TG@nodesharing_36
+      - beikui 8
+      - beikui 12
+      - JPB002
+      - beikui 9
+      - beikui 13
+      - Eva - US - Trojan
+      - beikui 11
+      - TG@nodesharing_39
+      - 14.29.124.168:25252
+      - _1852 | 4.88Mb
+      - CA_122
+      - TG@nodesharing_43
+      - beikui 10
+      - Zero - US - Trojan
+      - 14.29.124.174:11009
+      - beikui 14
+      - beikui 15
+      - beikui 16
+      - beikui 17
+      - beikui 19
+      - beikui 20
+      - 🇨🇳 2
+      - CN-高速节点推荐：v1.mk/vip（浏览器打开）
+      - beikui 21
+      - beikui 24
+      - 🇷🇺
+      - 美国03 A |  1.5x
+      - 美国洛杉矶-cc
+      - beikui 25
+      - 土耳其01 D | 2x
+      - tkvmess
+      - beikui 26
+      - beikui 27
+      - CN_2385 | 0.74Mb
+      - TG@nodesharing_86
+      - CN_62
       - _油管：全网最强白嫖 4
-      - univstar-JP-iepl
-      - 意大利-1.26MB/s(Youtube:不良林)
-      - "@SSRSUB-美国V04-付费推荐:dlj.tf/ssrsub"
-      - US_3933 | 6.22Mb
-      - 13. 💥HCM-Gaming
-      - 2.🦁HồChíMinh
-      - US-高速节点推荐：v1.mk/vip（浏览器打开）
+      - univstar-台湾
+      - TG@nodesharing_93
+      - 美国04|CF优选中转|免费
+      - beikui 28
+      - beikui 29
+      - github.com/freefq - 美国3COM公司企业网 3
+      - TG@nodesharing_45
+      - TG@nodesharing_53
+      - univstar-TR
+      - TG@nodesharing_38
+      - beikui 30
+      - CN-高速节点推荐：v1.mk/vip（浏览器打开） 48
+      - univstar-BR
+      - 防失联节点-tg频道:@ripaojiedian
+      - TG@nodesharing_75
+      - beikui 31
+      - CN_200
+      - CN_46
+      - 韩国01 A | x1.5
+      - 韩国01 A | x1.5 2
+      - 东京直连V2
+      - CN_74
+      - CN-高速节点推荐：v1.mk/vip（浏览器打开） 31
+      - JP_3389+@WangCai_1
+      - 美国03 B |  1.5x
+      - 中国_TG@nodesharing_41
+      - TG@nodesharing_51
+      - Polaris - US - V2ray
+      - Mosaic - DE - Trojan
+      - _1895 | 5.99Mb
+      - JP_8888+@WangCai_1
+      - JP_8118+@WangCai_1
+      - JP_8008+@WangCai_1
+      - JP_8000+@WangCai_1
+      - JP_5600+@WangCai_1
+      - JP_5003+@WangCai_1
+      - 东京直连V2 2
+      - TG@nodesharing_37
+      - US-高速节点推荐：v2cross.com（浏览器打开）
+      - Australia🇦🇺
+      - TG@nodesharing_98
+      - JP_9101+@WangCai_1
+      - JP_8882+@WangCai_1
+      - JP_8091+@WangCai_1
+      - JP_8090+@WangCai_1
+      - JP_8009+@WangCai_1
+      - JP_7306+@WangCai_1
+      - JP_5004+@WangCai_1
+      - JP_2376+@WangCai_1
+      - JP_2375+@WangCai_1
+      - 新加坡直连-1
+      - univstar-GB_2
+      - 俄罗斯01 D | x1.2
+      - _1113 | 0.01Mb
+      - beikui 32
+      - 美国(TG频道:@kxswa)22
+      - beikui 33
+      - CN-高速节点推荐：v1.mk/vip（浏览器打开） 6
+      - JP_5500+@WangCai_1
+      - JP_5000+@WangCai_1
       - _油管：全网最强白嫖 5
+      - JP_8881+@WangCai_1
+      - JP_6697+@WangCai_1
+      - JP_6379+@WangCai_1
+      - 印度01 E | 1.5x
+      - 印度01 D | 1.5x
+      - TG@nodesharing_70
+      - 14.29.124.174:11047
+      - univstar-GB_1
+      - univstar-香港HKBN-dip
+      - 中国_TG@nodesharing_91
+      - SG_794 | 4.96Mb
+      - _ca4072071898
+      - tktrojan
+      - _c8ca3c366
+      - CN_57
+      - univstar-台湾-iepl_2
+      - TG@nodesharing_94
+      - DE_295 |46.37Mb
+      - ip1
+      - TG@nodesharing_97
+      - _油管频道：全网最强白嫖
+      - github.com/freefq - 广东省珠海市电信 34
       - _油管：全网最强白嫖 6
-      - Hoàng HN7
+      - 关注电报https://t.me/mftizi
+      - _油管：全网最强白嫖 7
+      - Relay_🇨🇳CN-🇺🇸US_214
+      - TG@nodesharing_108
+      - RU 1｜openit.ml
+      - CN-高速节点推荐：v1.mk/vip（浏览器打开） 2
+      - _77 | 4.05Mb
+      - JP_8080+@WangCai_1
+      - JP_6679+@WangCai_1
+      - 美国01 B | 1.5x
+      - 德国-1.15MB/s(Youtube:不良林)
+      - US_2242
+      - 美国_TG@nodesharing_127
+      - US-高速节点推荐：v1.mk/vip（浏览器打开）
+      - "@SSRSUB-V08-付费推荐:suo.yt/ssrsub"
+      - "@SSRSUB-V08-付费推荐:suo.yt/ssrsub 2"
+      - _ca4072078
+      - TG@nodesharing_112
+      - 丨日本-2
+      - SG-高速节点推荐：v1.mk/vip（浏览器打开）
+      - unknown 1｜openit.ml
+      - CN-高速节点推荐：v1.mk/vip（浏览器打开） 3
+      - 俄罗斯01 B | x1.2
+      - univstar-香港-iepl_4
+      - univstar-香港_1 002
+      - univstar-KR_1 002
+      - 中国_TG@nodesharing_200
+      - univstar-US_2 001
+      - US_2171
+      - "@SSRSUB-V14-付费推荐:suo.yt/ssrsub"
+      - US_2102
+      - TG@nodesharing_61
+      - ☆白嫖联盟_______9
+      - CN_176
+      - _油管：全网最强白嫖 8
+      - US-高速节点推荐：v1.mk/vip
+      - US_1514
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
