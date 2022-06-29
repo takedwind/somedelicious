@@ -120,7 +120,6 @@ proxies:
   - {name: HK_ 390, server: hj001.xiba1.xyz, port: 20762, type: trojan, password: c2d62c65-5d48-3d17-8982-b4e85377c8c1, sni: hj001.xiba1.xyz, skip-cert-verify: true, udp: true}
   - {name: CN-高速节点推荐：v1.mk/vip（浏览器打开）+91, server: 14.29.124.168, port: 25245, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
   - {name: 美国极速004B, server: mm004.zhuan666.top, port: 11509, type: ss, cipher: chacha20-ietf-poly1305, password: d6c01f5c-e3d0-45ff-b923-15bc358cf57a, udp: true}
-  - {name: 酷通洛杉矶, server: 120.82.67.216, port: 93, type: ss, cipher: aes-128-gcm, password: 83XvX4Vo%*3a, plugin: v2ray-plugin, plugin-opts: {mode: "", host: "", path: "", tls: false, mux: false, skip-cert-verify: true}, udp: true}
   - {name: CN-高速节点推荐：v1.mk/vip（浏览器打开）+72, server: 14.29.124.168, port: 25296, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
   - {name: 美国129, server: azhj001.xiba1.xyz, port: 20725, type: trojan, password: c2d62c65-5d48-3d17-8982-b4e85377c8c1, sni: ssl.ssl12.xyz, skip-cert-verify: true, udp: true}
   - {name: HK 88, server: hj001.xiba1.xyz, port: 20769, type: trojan, password: c2d62c65-5d48-3d17-8982-b4e85377c8c1, skip-cert-verify: true, udp: true}
@@ -607,7 +606,6 @@ proxy-groups:
       - HK_ 390
       - CN-高速节点推荐：v1.mk/vip（浏览器打开）+91
       - 美国极速004B
-      - 酷通洛杉矶
       - CN-高速节点推荐：v1.mk/vip（浏览器打开）+72
       - 美国129
       - HK 88
@@ -1093,7 +1091,6 @@ proxy-groups:
       - HK_ 390
       - CN-高速节点推荐：v1.mk/vip（浏览器打开）+91
       - 美国极速004B
-      - 酷通洛杉矶
       - CN-高速节点推荐：v1.mk/vip（浏览器打开）+72
       - 美国129
       - HK 88
@@ -1580,7 +1577,6 @@ proxy-groups:
       - HK_ 390
       - CN-高速节点推荐：v1.mk/vip（浏览器打开）+91
       - 美国极速004B
-      - 酷通洛杉矶
       - CN-高速节点推荐：v1.mk/vip（浏览器打开）+72
       - 美国129
       - HK 88
@@ -2079,7 +2075,6 @@ proxy-groups:
       - HK_ 390
       - CN-高速节点推荐：v1.mk/vip（浏览器打开）+91
       - 美国极速004B
-      - 酷通洛杉矶
       - CN-高速节点推荐：v1.mk/vip（浏览器打开）+72
       - 美国129
       - HK 88
@@ -2635,7 +2630,6 @@ proxy-groups:
       - HK_ 390
       - CN-高速节点推荐：v1.mk/vip（浏览器打开）+91
       - 美国极速004B
-      - 酷通洛杉矶
       - CN-高速节点推荐：v1.mk/vip（浏览器打开）+72
       - 美国129
       - HK 88
@@ -3121,7 +3115,6 @@ proxy-groups:
       - HK_ 390
       - CN-高速节点推荐：v1.mk/vip（浏览器打开）+91
       - 美国极速004B
-      - 酷通洛杉矶
       - CN-高速节点推荐：v1.mk/vip（浏览器打开）+72
       - 美国129
       - HK 88
@@ -3608,7 +3601,6 @@ proxy-groups:
       - HK_ 390
       - CN-高速节点推荐：v1.mk/vip（浏览器打开）+91
       - 美国极速004B
-      - 酷通洛杉矶
       - CN-高速节点推荐：v1.mk/vip（浏览器打开）+72
       - 美国129
       - HK 88
@@ -4104,7 +4096,6 @@ proxy-groups:
       - HK_ 390
       - CN-高速节点推荐：v1.mk/vip（浏览器打开）+91
       - 美国极速004B
-      - 酷通洛杉矶
       - CN-高速节点推荐：v1.mk/vip（浏览器打开）+72
       - 美国129
       - HK 88
