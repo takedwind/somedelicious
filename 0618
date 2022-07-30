@@ -10,7 +10,6 @@ proxies:
   - {name: "[隧道]-SS-香港01-专线", server: bgp.xraysrv.xyz, port: 16101, type: ss, cipher: aes-128-gcm, password: 3fb6ad9e-a9f5-4001-a02e-712f84e1f5c5, udp: true}
   - {name: 香港01（流媒体解锁）【SS】「2x」, server: media.v2gyy.top, port: 62001, type: ss, cipher: chacha20-ietf-poly1305, password: e2892d66-7e9f-4e4b-93f1-0e488f406adf, udp: true}
   - {name: 香港04【SS】「1x」, server: hk.v2gyy.top, port: 26004, type: ss, cipher: chacha20-ietf-poly1305, password: e2892d66-7e9f-4e4b-93f1-0e488f406adf, udp: true}
-  - {name: "[隧道]-SS-新加坡01-专线[M]", server: bgp.xraysrv.xyz, port: 16100, type: ss, cipher: aes-128-gcm, password: 3fb6ad9e-a9f5-4001-a02e-712f84e1f5c5, udp: true}
   - {name: 香港03【SS】「1x」, server: hk.v2gyy.top, port: 26003, type: ss, cipher: chacha20-ietf-poly1305, password: e2892d66-7e9f-4e4b-93f1-0e488f406adf, udp: true}
   - {name: "[隧道]-SS-日本02-专线", server: bgp.xraysrv.xyz, port: 16302, type: ss, cipher: aes-128-gcm, password: 3fb6ad9e-a9f5-4001-a02e-712f84e1f5c5, udp: true}
   - {name: vpnhat, server: 103.56.60.235, port: 3389, type: trojan, password: ab29af390ff9f4a7, skip-cert-verify: true, udp: true}
@@ -186,9 +185,7 @@ proxies:
   - {name: "@wbnet_🇯🇵_JP_106", server: 85.208.108.91, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
   - {name: CN 152 SSS, server: 14.29.124.168, port: 25296, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
   - {name: CH_11 @WangCai_1, server: 45.12.206.110, port: 811, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
-  - {name: 0811, server: 96.43.86.28, port: 36251, type: vmess, uuid: 8ff08790-e9fa-456e-f843-725d65729ccb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: 小刘, server: 174.137.48.51, port: 37448, type: vmess, uuid: 1e9fb2ad-cae2-4a2f-9ab8-55fcc9fdc879, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 0821, server: 96.43.86.28, port: 35992, type: vmess, uuid: 86f84d4d-08f2-4b7f-f335-1e808e55d5c8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: GLORIA, server: 174.137.48.51, port: 31237, type: vmess, uuid: 645c6186-3a02-4fae-ba98-d8e1c69ef548, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: "@wbnet_🇯🇵_JP_101", server: 85.208.108.91, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
   - {name: "@wbnet_🇯🇵_JP_100", server: 85.208.108.91, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
@@ -316,7 +313,6 @@ proxy-groups:
       - "[隧道]-SS-香港01-专线"
       - 香港01（流媒体解锁）【SS】「2x」
       - 香港04【SS】「1x」
-      - "[隧道]-SS-新加坡01-专线[M]"
       - 香港03【SS】「1x」
       - "[隧道]-SS-日本02-专线"
       - vpnhat
@@ -492,9 +488,7 @@ proxy-groups:
       - "@wbnet_🇯🇵_JP_106"
       - CN 152 SSS
       - CH_11 @WangCai_1
-      - 0811
       - 小刘
-      - 0821
       - GLORIA
       - "@wbnet_🇯🇵_JP_101"
       - "@wbnet_🇯🇵_JP_100"
@@ -621,7 +615,6 @@ proxy-groups:
       - "[隧道]-SS-香港01-专线"
       - 香港01（流媒体解锁）【SS】「2x」
       - 香港04【SS】「1x」
-      - "[隧道]-SS-新加坡01-专线[M]"
       - 香港03【SS】「1x」
       - "[隧道]-SS-日本02-专线"
       - vpnhat
@@ -797,9 +790,7 @@ proxy-groups:
       - "@wbnet_🇯🇵_JP_106"
       - CN 152 SSS
       - CH_11 @WangCai_1
-      - 0811
       - 小刘
-      - 0821
       - GLORIA
       - "@wbnet_🇯🇵_JP_101"
       - "@wbnet_🇯🇵_JP_100"
@@ -927,7 +918,6 @@ proxy-groups:
       - "[隧道]-SS-香港01-专线"
       - 香港01（流媒体解锁）【SS】「2x」
       - 香港04【SS】「1x」
-      - "[隧道]-SS-新加坡01-专线[M]"
       - 香港03【SS】「1x」
       - "[隧道]-SS-日本02-专线"
       - vpnhat
@@ -1103,9 +1093,7 @@ proxy-groups:
       - "@wbnet_🇯🇵_JP_106"
       - CN 152 SSS
       - CH_11 @WangCai_1
-      - 0811
       - 小刘
-      - 0821
       - GLORIA
       - "@wbnet_🇯🇵_JP_101"
       - "@wbnet_🇯🇵_JP_100"
@@ -1245,7 +1233,6 @@ proxy-groups:
       - "[隧道]-SS-香港01-专线"
       - 香港01（流媒体解锁）【SS】「2x」
       - 香港04【SS】「1x」
-      - "[隧道]-SS-新加坡01-专线[M]"
       - 香港03【SS】「1x」
       - "[隧道]-SS-日本02-专线"
       - vpnhat
@@ -1421,9 +1408,7 @@ proxy-groups:
       - "@wbnet_🇯🇵_JP_106"
       - CN 152 SSS
       - CH_11 @WangCai_1
-      - 0811
       - 小刘
-      - 0821
       - GLORIA
       - "@wbnet_🇯🇵_JP_101"
       - "@wbnet_🇯🇵_JP_100"
@@ -1575,7 +1560,6 @@ proxy-groups:
       - "[隧道]-SS-香港01-专线"
       - 香港01（流媒体解锁）【SS】「2x」
       - 香港04【SS】「1x」
-      - "[隧道]-SS-新加坡01-专线[M]"
       - 香港03【SS】「1x」
       - "[隧道]-SS-日本02-专线"
       - vpnhat
@@ -1751,9 +1735,7 @@ proxy-groups:
       - "@wbnet_🇯🇵_JP_106"
       - CN 152 SSS
       - CH_11 @WangCai_1
-      - 0811
       - 小刘
-      - 0821
       - GLORIA
       - "@wbnet_🇯🇵_JP_101"
       - "@wbnet_🇯🇵_JP_100"
@@ -1880,7 +1862,6 @@ proxy-groups:
       - "[隧道]-SS-香港01-专线"
       - 香港01（流媒体解锁）【SS】「2x」
       - 香港04【SS】「1x」
-      - "[隧道]-SS-新加坡01-专线[M]"
       - 香港03【SS】「1x」
       - "[隧道]-SS-日本02-专线"
       - vpnhat
@@ -2056,9 +2037,7 @@ proxy-groups:
       - "@wbnet_🇯🇵_JP_106"
       - CN 152 SSS
       - CH_11 @WangCai_1
-      - 0811
       - 小刘
-      - 0821
       - GLORIA
       - "@wbnet_🇯🇵_JP_101"
       - "@wbnet_🇯🇵_JP_100"
@@ -2186,7 +2165,6 @@ proxy-groups:
       - "[隧道]-SS-香港01-专线"
       - 香港01（流媒体解锁）【SS】「2x」
       - 香港04【SS】「1x」
-      - "[隧道]-SS-新加坡01-专线[M]"
       - 香港03【SS】「1x」
       - "[隧道]-SS-日本02-专线"
       - vpnhat
@@ -2362,9 +2340,7 @@ proxy-groups:
       - "@wbnet_🇯🇵_JP_106"
       - CN 152 SSS
       - CH_11 @WangCai_1
-      - 0811
       - 小刘
-      - 0821
       - GLORIA
       - "@wbnet_🇯🇵_JP_101"
       - "@wbnet_🇯🇵_JP_100"
@@ -2501,7 +2477,6 @@ proxy-groups:
       - "[隧道]-SS-香港01-专线"
       - 香港01（流媒体解锁）【SS】「2x」
       - 香港04【SS】「1x」
-      - "[隧道]-SS-新加坡01-专线[M]"
       - 香港03【SS】「1x」
       - "[隧道]-SS-日本02-专线"
       - vpnhat
@@ -2677,9 +2652,7 @@ proxy-groups:
       - "@wbnet_🇯🇵_JP_106"
       - CN 152 SSS
       - CH_11 @WangCai_1
-      - 0811
       - 小刘
-      - 0821
       - GLORIA
       - "@wbnet_🇯🇵_JP_101"
       - "@wbnet_🇯🇵_JP_100"
